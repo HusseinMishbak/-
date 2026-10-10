@@ -1277,7 +1277,7 @@
  function preferredFrenchVoice(){
   const voices=availableSpeechVoices();
   const french=voices.filter(v=>/^fr(?:[-_]|$)/i.test(v.lang||''));
-  const normalName=v=>String(v.name||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase();
+  const normalName=v=>String(v.name||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
   const amelie=french.find(v=>normalName(v).includes('amelie')&&normalName(v).includes('premium'))
    ||french.find(v=>normalName(v).includes('amelie'));
   if(amelie)return amelie;
@@ -1294,8 +1294,9 @@
   }
  }
  function makeFrenchUtterance(text,rate,onFinished){
-  const utterance=new SpeechSynthesisUtterance(text);utterance.lang='fr-FR';utterance.rate=rate;
-  const voice=preferredFrenchVoice();if(voice)utterance.voice=voice;
+  const utterance=new SpeechSynthesisUtterance(text);
+  const voice=preferredFrenchVoice();utterance.lang=voice&&voice.lang?voice.lang:'fr-FR';utterance.rate=rate;
+  if(voice)utterance.voice=voice;
   if(onFinished){utterance.onend=onFinished;utterance.onerror=onFinished;}
   else utterance.onerror=()=>toast('تعذر تشغيل النطق. تحقق من إعدادات الصوت في جهازك.');
   return utterance;
