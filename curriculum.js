@@ -15072,6 +15072,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 1,
           "why": "الإجابة الطبيعية تشرح سبباً حقيقياً ومحدداً."
+        },
+        {
+          "q": "Que signifie « J’habite à… » ?",
+          "options": [
+            "أنا من…",
+            "أسكن في…",
+            "اسمي…"
+          ],
+          "answer": 1,
+          "why": "راجع المفردات في سياق الوحدة: « J’habite à… » تعني « أسكن في… »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « أرغب في المشاركة في حياة المجتمع الفرنسي. ». اختر العبارة الصحيحة.",
+          "options": [
+            "Pourquoi apprenez-vous le français ?",
+            "Pouvez-vous vous présenter ?",
+            "Je souhaite participer à la vie de la société française."
+          ],
+          "answer": 2,
+          "why": "العبارة المناسبة هي: Je souhaite participer à la vie de la société française. — أرغب في المشاركة في حياة المجتمع الفرنسي.."
+        },
+        {
+          "q": "Que signifie cette réplique : « Je m’appelle Samir. Je viens d’Irak et j’habite à Nancy. J’apprends le français pour communiquer plus facilement et participer à la vie quotidienne. » ?",
+          "options": [
+            "مرحباً، التدفئة لا تعمل منذ الأمس.",
+            "اسمي سمير. أنا من العراق وأسكن في نانسي. أتعلم الفرنسية لأتواصل بسهولة أكبر وأشارك في الحياة اليومية.",
+            "شكراً. هل يمكنك توضيح طلبك وتاريخ الإيداع؟"
+          ],
+          "answer": 1,
+          "why": "المعنى الصحيح للعبارة هو: اسمي سمير. أنا من العراق وأسكن في نانسي. أتعلم الفرنسية لأتواصل بسهولة أكبر وأشارك في الحياة اليومية."
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « التعريف بالنفس والدافع الحقيقي »؟",
+          "options": [
+            "أن تقدم نفسك بوضوح وتشرح دوافعك الحقيقية لتعلّم الفرنسية والاندماج في المجتمع.",
+            "أن يصف محل سكنه والحي، ويشرح حاجة عملية مثل إصلاح عطل أو البحث عن خدمة.",
+            "أن يذكر بياناته الأساسية، ويقرأ تاريخاً وعنواناً، ويطلب موعداً أو يوضح أن وثيقة ناقصة."
+          ],
+          "answer": 0,
+          "why": "الهدف الصحيح: أن تقدم نفسك بوضوح وتشرح دوافعك الحقيقية لتعلّم الفرنسية والاندماج في المجتمع."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « هل يمكنك تقديم نفسك؟ » ?",
+          "options": [
+            "Pourquoi apprenez-vous le français ?",
+            "Je souhaite participer à la vie de la société française.",
+            "Pouvez-vous vous présenter ?"
+          ],
+          "answer": 2,
+          "why": "العبارة الأنسب هي: Pouvez-vous vous présenter ? — هل يمكنك تقديم نفسك؟."
         }
       ],
       "model": "Je m’appelle Samir, je viens d’Irak et j’habite en France depuis quelque temps. J’apprends le français régulièrement. Je souhaite mieux comprendre la société française, communiquer de façon autonome et participer à la vie de mon quartier.",
@@ -15175,6 +15225,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 1,
           "why": "اطلب الإعادة بوضوح وتهذيب."
+        },
+        {
+          "q": "Que signifie « un dossier » ?",
+          "options": [
+            "ملف معاملة",
+            "وثيقة هوية",
+            "إثبات السكن"
+          ],
+          "answer": 0,
+          "why": "راجع المفردات في سياق الوحدة: « un dossier » تعني « ملف معاملة »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « ما الوثائق التي يجب أن أحضرها؟ ». اختر العبارة الصحيحة.",
+          "options": [
+            "Pourriez-vous répéter la date, s’il vous plaît ?",
+            "Quels documents dois-je apporter ?",
+            "Je voudrais prendre rendez-vous."
+          ],
+          "answer": 1,
+          "why": "العبارة المناسبة هي: Quels documents dois-je apporter ? — ما الوثائق التي يجب أن أحضرها؟."
+        },
+        {
+          "q": "Que signifie cette réplique : « Avez-vous les documents demandés ? » ?",
+          "options": [
+            "ماذا تعني المساواة؟",
+            "أود حجز موعد مع الطبيب. لدي ألم في الحلق منذ يومين.",
+            "هل لديك الوثائق المطلوبة؟"
+          ],
+          "answer": 2,
+          "why": "المعنى الصحيح للعبارة هو: هل لديك الوثائق المطلوبة؟"
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « الهوية والعنوان والمواعيد الإدارية »؟",
+          "options": [
+            "أن يصف محل سكنه والحي، ويشرح حاجة عملية مثل إصلاح عطل أو البحث عن خدمة.",
+            "أن يذكر بياناته الأساسية، ويقرأ تاريخاً وعنواناً، ويطلب موعداً أو يوضح أن وثيقة ناقصة.",
+            "أن يحجز موعداً طبياً، ويصف أعراضاً عامة، ويفهم تعليمات إدارية أو صحية بسيطة."
+          ],
+          "answer": 1,
+          "why": "الهدف الصحيح: أن يذكر بياناته الأساسية، ويقرأ تاريخاً وعنواناً، ويطلب موعداً أو يوضح أن وثيقة ناقصة."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « أود حجز موعد. » ?",
+          "options": [
+            "Je voudrais prendre rendez-vous.",
+            "Pourriez-vous répéter la date, s’il vous plaît ?",
+            "Quels documents dois-je apporter ?"
+          ],
+          "answer": 0,
+          "why": "العبارة الأنسب هي: Je voudrais prendre rendez-vous. — أود حجز موعد.."
         }
       ],
       "model": "Bonjour, je voudrais vérifier les pièces nécessaires pour mon dossier. J’ai une pièce d’identité et un justificatif de domicile. Pourriez-vous me confirmer la date du rendez-vous ?",
@@ -15278,6 +15378,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "صياغة واضحة ومحايدة مناسبة للتعامل الإداري."
+        },
+        {
+          "q": "Que signifie « un quartier » ?",
+          "options": [
+            "إيجار",
+            "بلدية / مقر البلدية",
+            "حيّ"
+          ],
+          "answer": 2,
+          "why": "راجع المفردات في سياق الوحدة: « un quartier » تعني « حيّ »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « توجد صيدلية قرب منزلي. ». اختر العبارة الصحيحة.",
+          "options": [
+            "Il y a une pharmacie près de chez moi.",
+            "Où se trouve la mairie ?",
+            "Je voudrais signaler un problème dans le logement."
+          ],
+          "answer": 0,
+          "why": "العبارة المناسبة هي: Il y a une pharmacie près de chez moi. — توجد صيدلية قرب منزلي.."
+        },
+        {
+          "q": "Que signifie cette réplique : « D’accord. Pouvez-vous préciser le problème et votre adresse ? » ?",
+          "options": [
+            "لا. إنها تحمي حرية الضمير وتلزم الدولة بالحياد. وتختلف القواعد المحددة بحسب السياق، مثل وضع الموظف العام.",
+            "حسناً. هل يمكنك توضيح المشكلة وعنوانك؟",
+            "مرحباً، أتواصل معكم بخصوص ملفي."
+          ],
+          "answer": 1,
+          "why": "المعنى الصحيح للعبارة هو: حسناً. هل يمكنك توضيح المشكلة وعنوانك؟"
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « السكن والحي والخدمات القريبة »؟",
+          "options": [
+            "أن يصف خبرته ومؤهلاته وخطته المهنية، وأن يجيب عن سؤال حول مساهمته في المجتمع.",
+            "أن يحجز موعداً طبياً، ويصف أعراضاً عامة، ويفهم تعليمات إدارية أو صحية بسيطة.",
+            "أن يصف محل سكنه والحي، ويشرح حاجة عملية مثل إصلاح عطل أو البحث عن خدمة."
+          ],
+          "answer": 2,
+          "why": "الهدف الصحيح: أن يصف محل سكنه والحي، ويشرح حاجة عملية مثل إصلاح عطل أو البحث عن خدمة."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « أود الإبلاغ عن مشكلة في السكن. » ?",
+          "options": [
+            "Où se trouve la mairie ?",
+            "Je voudrais signaler un problème dans le logement.",
+            "Il y a une pharmacie près de chez moi."
+          ],
+          "answer": 1,
+          "why": "العبارة الأنسب هي: Je voudrais signaler un problème dans le logement. — أود الإبلاغ عن مشكلة في السكن.."
         }
       ],
       "model": "Mon quartier est bien desservi par les transports. Il y a une pharmacie, une école et plusieurs commerces à proximité. Si j’ai un problème dans mon logement, je contacte le responsable et j’explique la situation poliment.",
@@ -15381,6 +15531,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 1,
           "why": "اطلب الإبطاء بأدب بدلاً من التخمين."
+        },
+        {
+          "q": "Que signifie « une ordonnance » ?",
+          "options": [
+            "وصفة طبية",
+            "بطاقة التأمين الصحي الفرنسية",
+            "طبيب عام"
+          ],
+          "answer": 0,
+          "why": "راجع المفردات في سياق الوحدة: « une ordonnance » تعني « وصفة طبية »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « هل يمكنك التحدث ببطء أكثر؟ ». اختر العبارة الصحيحة.",
+          "options": [
+            "Depuis quand avez-vous ces symptômes ?",
+            "Je voudrais prendre un rendez-vous.",
+            "Pourriez-vous parler un peu plus lentement ?"
+          ],
+          "answer": 2,
+          "why": "العبارة المناسبة هي: Pourriez-vous parler un peu plus lentement ? — هل يمكنك التحدث ببطء أكثر؟."
+        },
+        {
+          "q": "Que signifie cette réplique : « Quel est le motif de votre appel ? » ?",
+          "options": [
+            "ما سبب اتصالك؟",
+            "العلم ثلاثي الألوان رمز وطني. وشعار الجمهورية هو الحرية والمساواة والإخاء.",
+            "ما وظيفة البرلمان؟"
+          ],
+          "answer": 0,
+          "why": "المعنى الصحيح للعبارة هو: ما سبب اتصالك؟"
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « الصحة والمواعيد وفهم التعليمات »؟",
+          "options": [
+            "أن يكتب رسالة مهذبة لطلب معلومة أو إرفاق وثيقة أو متابعة ملف.",
+            "أن يحجز موعداً طبياً، ويصف أعراضاً عامة، ويفهم تعليمات إدارية أو صحية بسيطة.",
+            "أن يصف خبرته ومؤهلاته وخطته المهنية، وأن يجيب عن سؤال حول مساهمته في المجتمع."
+          ],
+          "answer": 1,
+          "why": "الهدف الصحيح: أن يحجز موعداً طبياً، ويصف أعراضاً عامة، ويفهم تعليمات إدارية أو صحية بسيطة."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « منذ متى لديك هذه الأعراض؟ » ?",
+          "options": [
+            "Pourriez-vous parler un peu plus lentement ?",
+            "Je voudrais prendre un rendez-vous.",
+            "Depuis quand avez-vous ces symptômes ?"
+          ],
+          "answer": 2,
+          "why": "العبارة الأنسب هي: Depuis quand avez-vous ces symptômes ? — منذ متى لديك هذه الأعراض؟."
         }
       ],
       "model": "Bonjour, je voudrais prendre rendez-vous avec le médecin. J’ai mal à la gorge depuis deux jours. Pourriez-vous me proposer un créneau et confirmer l’adresse du cabinet, s’il vous plaît ?",
@@ -15484,6 +15684,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "عبارة مباشرة تتضمن هدفاً قابلاً للفهم."
+        },
+        {
+          "q": "Que signifie « une compétence » ?",
+          "options": [
+            "خبرة مهنية",
+            "مهارة / كفاءة",
+            "تدريب / تكوين"
+          ],
+          "answer": 1,
+          "why": "راجع المفردات في سياق الوحدة: « une compétence » تعني « مهارة / كفاءة »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « ما خبراتك المهنية؟ ». اختر العبارة الصحيحة.",
+          "options": [
+            "Quelles sont vos expériences professionnelles ?",
+            "Comment participez-vous à la vie locale ?",
+            "Je souhaite continuer à me former."
+          ],
+          "answer": 0,
+          "why": "العبارة المناسبة هي: Quelles sont vos expériences professionnelles ? — ما خبراتك المهنية؟."
+        },
+        {
+          "q": "Que signifie cette réplique : « J’ai étudié l’ingénierie et j’ai travaillé sur plusieurs projets. Aujourd’hui, j’améliore mon français pour élargir mes possibilités professionnelles et participer davantage à la vie locale. » ?",
+          "options": [
+            "هل تعني العلمانية أن المواطنين لا يحق لهم اعتناق دين؟",
+            "يمكنك التواصل مع بلدية المنطقة المعنية.",
+            "درست الهندسة وعملت في عدة مشاريع. اليوم أطور لغتي الفرنسية لتوسيع فرصي المهنية والمشاركة بصورة أكبر في الحياة المحلية."
+          ],
+          "answer": 2,
+          "why": "المعنى الصحيح للعبارة هو: درست الهندسة وعملت في عدة مشاريع. اليوم أطور لغتي الفرنسية لتوسيع فرصي المهنية والمشاركة بصورة أكبر في الحياة المحلية."
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « العمل والدراسة والخبرة والاندماج »؟",
+          "options": [
+            "أن يصف خبرته ومؤهلاته وخطته المهنية، وأن يجيب عن سؤال حول مساهمته في المجتمع.",
+            "أن يكتب رسالة مهذبة لطلب معلومة أو إرفاق وثيقة أو متابعة ملف.",
+            "أن يتعرف إلى العلم والنشيد وماريان وشعار الجمهورية والعيد الوطني، ويشرحها بجمل فرنسية بسيطة."
+          ],
+          "answer": 0,
+          "why": "الهدف الصحيح: أن يصف خبرته ومؤهلاته وخطته المهنية، وأن يجيب عن سؤال حول مساهمته في المجتمع."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « أرغب في مواصلة التأهيل والتعلم. » ?",
+          "options": [
+            "Comment participez-vous à la vie locale ?",
+            "Je souhaite continuer à me former.",
+            "Quelles sont vos expériences professionnelles ?"
+          ],
+          "answer": 1,
+          "why": "العبارة الأنسب هي: Je souhaite continuer à me former. — أرغب في مواصلة التأهيل والتعلم.."
         }
       ],
       "model": "Mon parcours m’a permis de développer des compétences techniques et de travailler en équipe. En France, je souhaite continuer à apprendre, respecter les règles communes et participer à la vie professionnelle et locale.",
@@ -15587,6 +15837,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "استعمال الشرط يعطي طلباً مهذباً."
+        },
+        {
+          "q": "Que signifie « un accusé de réception » ?",
+          "options": [
+            "مرفق",
+            "طلب",
+            "إشعار استلام"
+          ],
+          "answer": 2,
+          "why": "راجع المفردات في سياق الوحدة: « un accusé de réception » تعني « إشعار استلام »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « ستجدون الوثيقة المطلوبة مرفقة. ». اختر العبارة الصحيحة.",
+          "options": [
+            "Je me permets de vous contacter au sujet de…",
+            "Vous trouverez le document demandé en pièce jointe.",
+            "Je vous remercie par avance pour votre réponse."
+          ],
+          "answer": 1,
+          "why": "العبارة المناسبة هي: Vous trouverez le document demandé en pièce jointe. — ستجدون الوثيقة المطلوبة مرفقة.."
+        },
+        {
+          "q": "Que signifie cette réplique : « Bonjour, je me permets de vous contacter au sujet de mon dossier. » ?",
+          "options": [
+            "مرحباً، أتواصل معكم بخصوص ملفي.",
+            "لماذا يجب احترام القوانين؟",
+            "يمكنني تسجيل الوقائع والاحتفاظ بالوثائق المفيدة وطلب المشورة من جهة مختصة."
+          ],
+          "answer": 0,
+          "why": "المعنى الصحيح للعبارة هو: مرحباً، أتواصل معكم بخصوص ملفي."
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « التواصل مع الإدارات وكتابة بريد رسمي »؟",
+          "options": [
+            "أن يتعرف إلى العلم والنشيد وماريان وشعار الجمهورية والعيد الوطني، ويشرحها بجمل فرنسية بسيطة.",
+            "أن يشرح القيم الثلاث بمثال حياتي، ويميّز بين حرية الفرد واحترام حقوق الآخرين والقانون.",
+            "أن يكتب رسالة مهذبة لطلب معلومة أو إرفاق وثيقة أو متابعة ملف."
+          ],
+          "answer": 2,
+          "why": "الهدف الصحيح: أن يكتب رسالة مهذبة لطلب معلومة أو إرفاق وثيقة أو متابعة ملف."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « أشكركم مقدماً على ردكم. » ?",
+          "options": [
+            "Je vous remercie par avance pour votre réponse.",
+            "Je me permets de vous contacter au sujet de…",
+            "Vous trouverez le document demandé en pièce jointe."
+          ],
+          "answer": 0,
+          "why": "العبارة الأنسب هي: Je vous remercie par avance pour votre réponse. — أشكركم مقدماً على ردكم.."
         }
       ],
       "model": "Madame, Monsieur, je me permets de vous contacter au sujet de mon dossier. Pourriez-vous m’indiquer si une pièce complémentaire est nécessaire et quel est le délai estimé de traitement ? Je vous remercie par avance pour votre aide. Cordialement.",
@@ -15690,6 +15990,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 1,
           "why": "العيد الوطني الفرنسي هو 14 يوليو."
+        },
+        {
+          "q": "Que signifie « le drapeau tricolore » ?",
+          "options": [
+            "الشعار",
+            "العلم ثلاثي الألوان",
+            "النشيد الوطني الفرنسي"
+          ],
+          "answer": 1,
+          "why": "راجع المفردات في سياق الوحدة: « le drapeau tricolore » تعني « العلم ثلاثي الألوان »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « الرابع عشر من يوليو هو العيد الوطني الفرنسي. ». اختر العبارة الصحيحة.",
+          "options": [
+            "La devise de la République est « Liberté, Égalité, Fraternité ».",
+            "Quelles sont les couleurs du drapeau français ?",
+            "Le 14 juillet est la fête nationale française."
+          ],
+          "answer": 2,
+          "why": "العبارة المناسبة هي: Le 14 juillet est la fête nationale française. — الرابع عشر من يوليو هو العيد الوطني الفرنسي.."
+        },
+        {
+          "q": "Que signifie cette réplique : « Le drapeau tricolore est un symbole national. La devise républicaine est « Liberté, Égalité, Fraternité ». » ?",
+          "options": [
+            "مرحباً، أود الحصول على وثيقة من السجل المدني. إلى أين أتوجه؟",
+            "العلم ثلاثي الألوان رمز وطني. وشعار الجمهورية هو الحرية والمساواة والإخاء.",
+            "إنها تمثل بداية الثورة الفرنسية. كما يعود إعلان حقوق الإنسان والمواطن إلى تلك الفترة."
+          ],
+          "answer": 1,
+          "why": "المعنى الصحيح للعبارة هو: العلم ثلاثي الألوان رمز وطني. وشعار الجمهورية هو الحرية والمساواة والإخاء."
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « رموز الجمهورية الفرنسية »؟",
+          "options": [
+            "أن يتعرف إلى العلم والنشيد وماريان وشعار الجمهورية والعيد الوطني، ويشرحها بجمل فرنسية بسيطة.",
+            "أن يشرح مبدأ laïcité بوصفه حياد الدولة وحرية الضمير، ويميّز بين قواعد المؤسسات العامة وسلوك الأفراد في مختلف السياقات.",
+            "أن يشرح القيم الثلاث بمثال حياتي، ويميّز بين حرية الفرد واحترام حقوق الآخرين والقانون."
+          ],
+          "answer": 0,
+          "why": "الهدف الصحيح: أن يتعرف إلى العلم والنشيد وماريان وشعار الجمهورية والعيد الوطني، ويشرحها بجمل فرنسية بسيطة."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « ما ألوان العلم الفرنسي؟ » ?",
+          "options": [
+            "La devise de la République est « Liberté, Égalité, Fraternité ».",
+            "Le 14 juillet est la fête nationale française.",
+            "Quelles sont les couleurs du drapeau français ?"
+          ],
+          "answer": 2,
+          "why": "العبارة الأنسب هي: Quelles sont les couleurs du drapeau français ? — ما ألوان العلم الفرنسي؟."
         }
       ],
       "model": "La République française possède des symboles communs. Le drapeau est bleu, blanc et rouge. La devise est « Liberté, Égalité, Fraternité ». La fête nationale a lieu le 14 juillet.",
@@ -15793,6 +16143,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 1,
           "why": "الحرية ليست ترخيصاً بانتهاك حقوق الآخرين."
+        },
+        {
+          "q": "Que signifie « l’égalité » ?",
+          "options": [
+            "المساواة",
+            "الحرية",
+            "الإخاء والتضامن"
+          ],
+          "answer": 0,
+          "why": "راجع المفردات في سياق الوحدة: « l’égalité » تعني « المساواة »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « الحرية ترافقها مسؤوليات. ». اختر العبارة الصحيحة.",
+          "options": [
+            "La fraternité se traduit notamment par la solidarité.",
+            "La liberté s’accompagne de responsabilités.",
+            "L’égalité signifie que chacun a les mêmes droits devant la loi."
+          ],
+          "answer": 1,
+          "why": "العبارة المناسبة هي: La liberté s’accompagne de responsabilités. — الحرية ترافقها مسؤوليات.."
+        },
+        {
+          "q": "Que signifie cette réplique : « Que signifie l’égalité ? » ?",
+          "options": [
+            "ما العلاقة بين فرنسا والاتحاد الأوروبي؟",
+            "يمكن التصويت عند استيفاء الشروط، ومتابعة المعلومات، والمشاركة في جمعية والحوار باحترام.",
+            "ماذا تعني المساواة؟"
+          ],
+          "answer": 2,
+          "why": "المعنى الصحيح للعبارة هو: ماذا تعني المساواة؟"
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « قيم الجمهورية: الحرية والمساواة والإخاء »؟",
+          "options": [
+            "أن يشرح مبدأ laïcité بوصفه حياد الدولة وحرية الضمير، ويميّز بين قواعد المؤسسات العامة وسلوك الأفراد في مختلف السياقات.",
+            "أن يشرح القيم الثلاث بمثال حياتي، ويميّز بين حرية الفرد واحترام حقوق الآخرين والقانون.",
+            "أن يشرح مبدأ المساواة ويصف كيفية التصرف أو طلب المساعدة عند مواجهة تمييز."
+          ],
+          "answer": 1,
+          "why": "الهدف الصحيح: أن يشرح القيم الثلاث بمثال حياتي، ويميّز بين حرية الفرد واحترام حقوق الآخرين والقانون."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « تعني المساواة أن لكل شخص الحقوق نفسها أمام القانون. » ?",
+          "options": [
+            "L’égalité signifie que chacun a les mêmes droits devant la loi.",
+            "La fraternité se traduit notamment par la solidarité.",
+            "La liberté s’accompagne de responsabilités."
+          ],
+          "answer": 0,
+          "why": "العبارة الأنسب هي: L’égalité signifie que chacun a les mêmes droits devant la loi. — تعني المساواة أن لكل شخص الحقوق نفسها أمام القانون.."
         }
       ],
       "model": "Les valeurs de la République sont la liberté, l’égalité et la fraternité. La liberté permet à chacun d’exprimer ses idées dans le respect de la loi. L’égalité protège les personnes contre les discriminations et la fraternité encourage la solidarité.",
@@ -15896,6 +16296,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 1,
           "why": "السياق القانوني والوظيفي مهم لتفسير القاعدة."
+        },
+        {
+          "q": "Que signifie « la neutralité » ?",
+          "options": [
+            "العلمانية في النظام الجمهوري الفرنسي",
+            "حرية الضمير",
+            "الحياد"
+          ],
+          "answer": 2,
+          "why": "راجع المفردات في سياق الوحدة: « la neutralité » تعني « الحياد »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « الدولة محايدة تجاه الأديان. ». اختر العبارة الصحيحة.",
+          "options": [
+            "L’État est neutre à l’égard des religions.",
+            "La laïcité protège la liberté de conscience.",
+            "Les règles peuvent varier selon le lieu et la fonction."
+          ],
+          "answer": 0,
+          "why": "العبارة المناسبة هي: L’État est neutre à l’égard des religions. — الدولة محايدة تجاه الأديان.."
+        },
+        {
+          "q": "Que signifie cette réplique : « Non. Elle protège la liberté de conscience et impose la neutralité à l’État. Les règles précises dépendent du contexte, par exemple du statut d’agent public. » ?",
+          "options": [
+            "تعتمد على وضعك. راجع الشروط الرسمية وجهّز الإثباتات المطلوبة.",
+            "لا. إنها تحمي حرية الضمير وتلزم الدولة بالحياد. وتختلف القواعد المحددة بحسب السياق، مثل وضع الموظف العام.",
+            "لماذا يُعد عام 1789 مهماً؟"
+          ],
+          "answer": 1,
+          "why": "المعنى الصحيح للعبارة هو: لا. إنها تحمي حرية الضمير وتلزم الدولة بالحياد. وتختلف القواعد المحددة بحسب السياق، مثل وضع الموظف العام."
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « العلمانية وحرية الضمير »؟",
+          "options": [
+            "أن يميّز بين دور رئيس الجمهورية والحكومة والجمعية الوطنية ومجلس الشيوخ.",
+            "أن يشرح مبدأ المساواة ويصف كيفية التصرف أو طلب المساعدة عند مواجهة تمييز.",
+            "أن يشرح مبدأ laïcité بوصفه حياد الدولة وحرية الضمير، ويميّز بين قواعد المؤسسات العامة وسلوك الأفراد في مختلف السياقات."
+          ],
+          "answer": 2,
+          "why": "الهدف الصحيح: أن يشرح مبدأ laïcité بوصفه حياد الدولة وحرية الضمير، ويميّز بين قواعد المؤسسات العامة وسلوك الأفراد في مختلف السياقات."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « قد تختلف القواعد بحسب المكان والوظيفة. » ?",
+          "options": [
+            "La laïcité protège la liberté de conscience.",
+            "Les règles peuvent varier selon le lieu et la fonction.",
+            "L’État est neutre à l’égard des religions."
+          ],
+          "answer": 1,
+          "why": "العبارة الأنسب هي: Les règles peuvent varier selon le lieu et la fonction. — قد تختلف القواعد بحسب المكان والوظيفة.."
         }
       ],
       "model": "La laïcité est un principe de la République française. Elle garantit la liberté de conscience et la neutralité de l’État. Elle ne signifie pas que tous les citoyens doivent avoir les mêmes convictions.",
@@ -15999,6 +16449,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "« en raison de » تعني بسبب."
+        },
+        {
+          "q": "Que signifie « signaler un fait » ?",
+          "options": [
+            "الإبلاغ عن واقعة",
+            "المساواة بين النساء والرجال",
+            "التمييز"
+          ],
+          "answer": 0,
+          "why": "راجع المفردات في سياق الوحدة: « signaler un fait » تعني « الإبلاغ عن واقعة »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « يمكنني طلب المشورة من جهة مختصة. ». اختر العبارة الصحيحة.",
+          "options": [
+            "Personne ne doit être discriminé en raison de son origine.",
+            "Les femmes et les hommes ont les mêmes droits.",
+            "Je peux demander conseil à un service compétent."
+          ],
+          "answer": 2,
+          "why": "العبارة المناسبة هي: Je peux demander conseil à un service compétent. — يمكنني طلب المشورة من جهة مختصة.."
+        },
+        {
+          "q": "Que signifie cette réplique : « Que pouvez-vous faire si vous êtes victime de discrimination ? » ?",
+          "options": [
+            "ماذا يمكنك أن تفعل إذا تعرضت للتمييز؟",
+            "لا. تشمل الجمهورية أيضاً أقاليم ما وراء البحار في مناطق مختلفة من العالم.",
+            "لا أفهم هذا البند في العقد. هل يمكن توضيحه؟"
+          ],
+          "answer": 0,
+          "why": "المعنى الصحيح للعبارة هو: ماذا يمكنك أن تفعل إذا تعرضت للتمييز؟"
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « المساواة بين النساء والرجال ومكافحة التمييز »؟",
+          "options": [
+            "أن يعرف دور البلدية والماير والمحافظة والمنطقة، وأن يوجّه سؤالاً إلى الجهة المناسبة.",
+            "أن يشرح مبدأ المساواة ويصف كيفية التصرف أو طلب المساعدة عند مواجهة تمييز.",
+            "أن يميّز بين دور رئيس الجمهورية والحكومة والجمعية الوطنية ومجلس الشيوخ."
+          ],
+          "answer": 1,
+          "why": "الهدف الصحيح: أن يشرح مبدأ المساواة ويصف كيفية التصرف أو طلب المساعدة عند مواجهة تمييز."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « لا ينبغي التمييز ضد أي شخص بسبب أصله. » ?",
+          "options": [
+            "Je peux demander conseil à un service compétent.",
+            "Les femmes et les hommes ont les mêmes droits.",
+            "Personne ne doit être discriminé en raison de son origine."
+          ],
+          "answer": 2,
+          "why": "العبارة الأنسب هي: Personne ne doit être discriminé en raison de son origine. — لا ينبغي التمييز ضد أي شخص بسبب أصله.."
         }
       ],
       "model": "L’égalité est importante pour toute la société. Les femmes et les hommes doivent bénéficier des mêmes droits. Lorsqu’une personne rencontre une discrimination, elle peut conserver les éléments utiles et demander conseil à un service compétent.",
@@ -16102,6 +16602,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "الحكومة تقود السياسة العامة وتنفذها ضمن النظام الدستوري."
+        },
+        {
+          "q": "Que signifie « le président de la République » ?",
+          "options": [
+            "الحكومة",
+            "رئيس الجمهورية",
+            "الجمعية الوطنية"
+          ],
+          "answer": 1,
+          "why": "راجع المفردات في سياق الوحدة: « le président de la République » تعني « رئيس الجمهورية »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « يصوّت البرلمان على القوانين ويراقب عمل الحكومة. ». اختر العبارة الصحيحة.",
+          "options": [
+            "Le Parlement vote la loi et contrôle l’action du gouvernement.",
+            "Les institutions ont des rôles différents.",
+            "Le gouvernement met en œuvre la politique publique."
+          ],
+          "answer": 0,
+          "why": "العبارة المناسبة هي: Le Parlement vote la loi et contrôle l’action du gouvernement. — يصوّت البرلمان على القوانين ويراقب عمل الحكومة.."
+        },
+        {
+          "q": "Que signifie cette réplique : « Le Parlement vote les lois. Il contrôle aussi l’action du gouvernement. Il comprend l’Assemblée nationale et le Sénat. » ?",
+          "options": [
+            "ما شروط الاستفادة من هذه الإعانة؟",
+            "أتابع عدة وسائل إعلام وأتحقق من المعلومات المهمة. أميز بين الوقائع المؤكدة والتعليقات وأقارن المصادر قبل تكوين رأيي.",
+            "يصوّت البرلمان على القوانين. كما يراقب عمل الحكومة. ويتكون من الجمعية الوطنية ومجلس الشيوخ."
+          ],
+          "answer": 2,
+          "why": "المعنى الصحيح للعبارة هو: يصوّت البرلمان على القوانين. كما يراقب عمل الحكومة. ويتكون من الجمعية الوطنية ومجلس الشيوخ."
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « المؤسسات الوطنية: رئيس الجمهورية والحكومة والبرلمان »؟",
+          "options": [
+            "أن يميّز بين دور رئيس الجمهورية والحكومة والجمعية الوطنية ومجلس الشيوخ.",
+            "أن يعرف دور البلدية والماير والمحافظة والمنطقة، وأن يوجّه سؤالاً إلى الجهة المناسبة.",
+            "أن يشرح أهمية الانتخابات والتصويت والمشاركة المجتمعية، ويميّز بين حق التصويت للمواطنين وقواعد الانتخابات المحلية والأوروبية للمقيمين المؤهلين."
+          ],
+          "answer": 0,
+          "why": "الهدف الصحيح: أن يميّز بين دور رئيس الجمهورية والحكومة والجمعية الوطنية ومجلس الشيوخ."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « تنفذ الحكومة السياسة العامة. » ?",
+          "options": [
+            "Les institutions ont des rôles différents.",
+            "Le gouvernement met en œuvre la politique publique.",
+            "Le Parlement vote la loi et contrôle l’action du gouvernement."
+          ],
+          "answer": 1,
+          "why": "العبارة الأنسب هي: Le gouvernement met en œuvre la politique publique. — تنفذ الحكومة السياسة العامة.."
         }
       ],
       "model": "Les institutions françaises ont des fonctions distinctes. Le Parlement vote les lois et contrôle l’action du gouvernement. Il comprend l’Assemblée nationale et le Sénat. Le gouvernement conduit la politique de la Nation.",
@@ -16205,6 +16755,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "راجع الجهة الرسمية لتفادي الأخطاء وحماية بياناتك."
+        },
+        {
+          "q": "Que signifie « le maire / la maire » ?",
+          "options": [
+            "مقر المحافظة / إدارة ممثل الدولة",
+            "البلدية / الوحدة البلدية",
+            "رئيس / رئيسة البلدية"
+          ],
+          "answer": 2,
+          "why": "راجع المفردات في سياق الوحدة: « le maire / la maire » تعني « رئيس / رئيسة البلدية »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « يقع مقر البلدية قرب محطة القطار. ». اختر العبارة الصحيحة.",
+          "options": [
+            "Pour cette démarche, à quel service dois-je m’adresser ?",
+            "La mairie se trouve près de la gare.",
+            "La préfecture représente l’État au niveau territorial."
+          ],
+          "answer": 1,
+          "why": "العبارة المناسبة هي: La mairie se trouve près de la gare. — يقع مقر البلدية قرب محطة القطار.."
+        },
+        {
+          "q": "Que signifie cette réplique : « Bonjour, je souhaite obtenir un acte d’état civil. Où dois-je m’adresser ? » ?",
+          "options": [
+            "مرحباً، أود الحصول على وثيقة من السجل المدني. إلى أين أتوجه؟",
+            "لماذا ترغب في اكتساب الجنسية الفرنسية؟",
+            "تتيح فحص الوقائع وفق قواعد مشتركة وحماية حقوق الأشخاص."
+          ],
+          "answer": 0,
+          "why": "المعنى الصحيح للعبارة هو: مرحباً، أود الحصول على وثيقة من السجل المدني. إلى أين أتوجه؟"
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « المؤسسات المحلية: البلدية والمحافظة والمنطقة »؟",
+          "options": [
+            "أن يشرح أهمية الانتخابات والتصويت والمشاركة المجتمعية، ويميّز بين حق التصويت للمواطنين وقواعد الانتخابات المحلية والأوروبية للمقيمين المؤهلين.",
+            "أن يشرح حقوقاً وواجبات أساسية، ويفهم أن الحقوق والحريات تمارس في إطار القانون واحترام الآخرين.",
+            "أن يعرف دور البلدية والماير والمحافظة والمنطقة، وأن يوجّه سؤالاً إلى الجهة المناسبة."
+          ],
+          "answer": 2,
+          "why": "الهدف الصحيح: أن يعرف دور البلدية والماير والمحافظة والمنطقة، وأن يوجّه سؤالاً إلى الجهة المناسبة."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « تمثل المحافظة الدولة على المستوى الإقليمي. » ?",
+          "options": [
+            "La préfecture représente l’État au niveau territorial.",
+            "Pour cette démarche, à quel service dois-je m’adresser ?",
+            "La mairie se trouve près de la gare."
+          ],
+          "answer": 0,
+          "why": "العبارة الأنسب هي: La préfecture représente l’État au niveau territorial. — تمثل المحافظة الدولة على المستوى الإقليمي.."
         }
       ],
       "model": "Pour une démarche administrative, je vérifie d’abord le site officiel. Selon le sujet, je peux contacter la mairie, la préfecture ou un autre service compétent. Je prépare les documents demandés avant le rendez-vous.",
@@ -16308,6 +16908,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "الجمعيات والتطوع وسائل للمشاركة المحلية."
+        },
+        {
+          "q": "Que signifie « un bulletin de vote » ?",
+          "options": [
+            "يصوّت",
+            "ورقة اقتراع",
+            "انتخابات"
+          ],
+          "answer": 1,
+          "why": "راجع المفردات في سياق الوحدة: « un bulletin de vote » تعني « ورقة اقتراع »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « يمكنني المشاركة في الحياة المحلية عبر جمعية. ». اختر العبارة الصحيحة.",
+          "options": [
+            "Les élections permettent de choisir des représentants.",
+            "La participation citoyenne ne se limite pas au vote.",
+            "Je peux participer à la vie locale par une association."
+          ],
+          "answer": 2,
+          "why": "العبارة المناسبة هي: Je peux participer à la vie locale par une association. — يمكنني المشاركة في الحياة المحلية عبر جمعية.."
+        },
+        {
+          "q": "Que signifie cette réplique : « On peut voter lorsque l’on remplit les conditions, s’informer, participer à une association et échanger respectueusement avec les autres. » ?",
+          "options": [
+            "كيف تتابع الأخبار؟",
+            "يمكن التصويت عند استيفاء الشروط، ومتابعة المعلومات، والمشاركة في جمعية والحوار باحترام.",
+            "أتدرب على المهارات اللغوية الأربع بمستوى B2 وأراجع موضوعات الامتحان المدني بالمصادر الرسمية. كما أتحقق من الشروط التي تنطبق على مساري."
+          ],
+          "answer": 1,
+          "why": "المعنى الصحيح للعبارة هو: يمكن التصويت عند استيفاء الشروط، ومتابعة المعلومات، والمشاركة في جمعية والحوار باحترام."
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « الانتخابات والمشاركة الديمقراطية »؟",
+          "options": [
+            "أن يشرح أهمية الانتخابات والتصويت والمشاركة المجتمعية، ويميّز بين حق التصويت للمواطنين وقواعد الانتخابات المحلية والأوروبية للمقيمين المؤهلين.",
+            "أن يذكر محطات تاريخية معروفة ويربطها بجمل زمنية دون الحاجة إلى حفظ تفاصيل سطحية كثيرة.",
+            "أن يشرح حقوقاً وواجبات أساسية، ويفهم أن الحقوق والحريات تمارس في إطار القانون واحترام الآخرين."
+          ],
+          "answer": 0,
+          "why": "الهدف الصحيح: أن يشرح أهمية الانتخابات والتصويت والمشاركة المجتمعية، ويميّز بين حق التصويت للمواطنين وقواعد الانتخابات المحلية والأوروبية للمقيمين المؤهلين."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « لا تقتصر المشاركة المدنية على التصويت. » ?",
+          "options": [
+            "Les élections permettent de choisir des représentants.",
+            "Je peux participer à la vie locale par une association.",
+            "La participation citoyenne ne se limite pas au vote."
+          ],
+          "answer": 2,
+          "why": "العبارة الأنسب هي: La participation citoyenne ne se limite pas au vote. — لا تقتصر المشاركة المدنية على التصويت.."
         }
       ],
       "model": "La démocratie repose notamment sur des élections et sur la participation des citoyens. On peut aussi contribuer à la vie locale en s’informant, en participant à une association et en respectant les opinions différentes.",
@@ -16411,6 +17061,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "المواطنة تجمع الحقوق والواجبات."
+        },
+        {
+          "q": "Que signifie « un devoir » ?",
+          "options": [
+            "واجب",
+            "احترام القانون",
+            "دفع الضرائب"
+          ],
+          "answer": 0,
+          "why": "راجع المفردات في سياق الوحدة: « un devoir » تعني « واجب »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « الحقوق ترافقها واجبات. ». اختر العبارة الصحيحة.",
+          "options": [
+            "Les impôts contribuent aux services publics.",
+            "Les droits s’accompagnent de devoirs.",
+            "Je dois respecter la loi et les droits d’autrui."
+          ],
+          "answer": 1,
+          "why": "العبارة المناسبة هي: Les droits s’accompagnent de devoirs. — الحقوق ترافقها واجبات.."
+        },
+        {
+          "q": "Que signifie cette réplique : « Pourquoi faut-il respecter les lois ? » ?",
+          "options": [
+            "هل لديك الوثائق المطلوبة؟",
+            "في رأيي نعم، خصوصاً في المناطق ضعيفة الخدمة. فقد يقلل ذلك الاعتماد على السيارة. لكن يجب تقييم الكلفة وسهولة الوصول واحتياجات السكان.",
+            "لماذا يجب احترام القوانين؟"
+          ],
+          "answer": 2,
+          "why": "المعنى الصحيح للعبارة هو: لماذا يجب احترام القوانين؟"
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « الحقوق والواجبات والقانون »؟",
+          "options": [
+            "أن يذكر محطات تاريخية معروفة ويربطها بجمل زمنية دون الحاجة إلى حفظ تفاصيل سطحية كثيرة.",
+            "أن يشرح حقوقاً وواجبات أساسية، ويفهم أن الحقوق والحريات تمارس في إطار القانون واحترام الآخرين.",
+            "أن يحدد باريس والمدن والمناطق الأساسية، ويفهم التنوع الجغرافي والثقافي للأقاليم الفرنسية."
+          ],
+          "answer": 1,
+          "why": "الهدف الصحيح: أن يشرح حقوقاً وواجبات أساسية، ويفهم أن الحقوق والحريات تمارس في إطار القانون واحترام الآخرين."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « يجب أن أحترم القانون وحقوق الآخرين. » ?",
+          "options": [
+            "Je dois respecter la loi et les droits d’autrui.",
+            "Les impôts contribuent aux services publics.",
+            "Les droits s’accompagnent de devoirs."
+          ],
+          "answer": 0,
+          "why": "العبارة الأنسب هي: Je dois respecter la loi et les droits d’autrui. — يجب أن أحترم القانون وحقوق الآخرين.."
         }
       ],
       "model": "Dans une société démocratique, les droits sont protégés par la loi. Les citoyens doivent aussi respecter les règles communes et les droits d’autrui. Les impôts permettent de financer de nombreux services publics.",
@@ -16514,6 +17214,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "قانون 1905 من المحطات المرتبطة بفصل الكنائس عن الدولة."
+        },
+        {
+          "q": "Que signifie « la Révolution française » ?",
+          "options": [
+            "إعلان حقوق الإنسان والمواطن",
+            "الجمهورية الخامسة",
+            "الثورة الفرنسية"
+          ],
+          "answer": 2,
+          "why": "راجع المفردات في سياق الوحدة: « la Révolution française » تعني « الثورة الفرنسية »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « تأسست الجمهورية الخامسة عام 1958. ». اختر العبارة الصحيحة.",
+          "options": [
+            "La Ve République est fondée en 1958.",
+            "En 1789, la Révolution française commence.",
+            "Les événements historiques ont transformé les institutions."
+          ],
+          "answer": 0,
+          "why": "العبارة المناسبة هي: La Ve République est fondée en 1958. — تأسست الجمهورية الخامسة عام 1958.."
+        },
+        {
+          "q": "Que signifie cette réplique : « Elle marque le début de la Révolution française. La Déclaration des droits de l’homme et du citoyen date aussi de cette période. » ?",
+          "options": [
+            "حسناً. هل يمكنك توضيح المشكلة وعنوانك؟",
+            "إنها تمثل بداية الثورة الفرنسية. كما يعود إعلان حقوق الإنسان والمواطن إلى تلك الفترة.",
+            "كيف تستعد لإجراءات الجنسية؟"
+          ],
+          "answer": 1,
+          "why": "المعنى الصحيح للعبارة هو: إنها تمثل بداية الثورة الفرنسية. كما يعود إعلان حقوق الإنسان والمواطن إلى تلك الفترة."
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « محطات أساسية في التاريخ الفرنسي »؟",
+          "options": [
+            "أن يشرح باختصار علاقة فرنسا بالاتحاد الأوروبي، ويميز بين مؤسسات الاتحاد والسلطات الوطنية.",
+            "أن يحدد باريس والمدن والمناطق الأساسية، ويفهم التنوع الجغرافي والثقافي للأقاليم الفرنسية.",
+            "أن يذكر محطات تاريخية معروفة ويربطها بجمل زمنية دون الحاجة إلى حفظ تفاصيل سطحية كثيرة."
+          ],
+          "answer": 2,
+          "why": "الهدف الصحيح: أن يذكر محطات تاريخية معروفة ويربطها بجمل زمنية دون الحاجة إلى حفظ تفاصيل سطحية كثيرة."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « غيّرت الأحداث التاريخية المؤسسات. » ?",
+          "options": [
+            "En 1789, la Révolution française commence.",
+            "Les événements historiques ont transformé les institutions.",
+            "La Ve République est fondée en 1958."
+          ],
+          "answer": 1,
+          "why": "العبارة الأنسب هي: Les événements historiques ont transformé les institutions. — غيّرت الأحداث التاريخية المؤسسات.."
         }
       ],
       "model": "L’histoire française a transformé les droits et les institutions. La Révolution commence en 1789. La loi de 1905 organise la séparation des Églises et de l’État. La Ve République est fondée en 1958.",
@@ -16617,6 +17367,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 1,
           "why": "التنوع يعني وجود خصائص جغرافية ومحلية مختلفة."
+        },
+        {
+          "q": "Que signifie « une région » ?",
+          "options": [
+            "منطقة إدارية",
+            "الأقاليم ما وراء البحار",
+            "العاصمة"
+          ],
+          "answer": 0,
+          "why": "راجع المفردات في سياق الوحدة: « une région » تعني « منطقة إدارية »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « للأقاليم الفرنسية ظروف وخصائص مختلفة. ». اختر العبارة الصحيحة.",
+          "options": [
+            "Paris est la capitale de la France.",
+            "La France comprend des territoires en Europe et outre-mer.",
+            "Les territoires français ont des réalités différentes."
+          ],
+          "answer": 2,
+          "why": "العبارة المناسبة هي: Les territoires français ont des réalités différentes. — للأقاليم الفرنسية ظروف وخصائص مختلفة.."
+        },
+        {
+          "q": "Que signifie cette réplique : « La France se limite-t-elle au territoire européen ? » ?",
+          "options": [
+            "هل تقتصر فرنسا على أراضيها الأوروبية؟",
+            "اسمي سمير. أنا من العراق وأسكن في نانسي. أتعلم الفرنسية لأتواصل بسهولة أكبر وأشارك في الحياة اليومية.",
+            "هل يمكنك عرض مسارك؟"
+          ],
+          "answer": 0,
+          "why": "المعنى الصحيح للعبارة هو: هل تقتصر فرنسا على أراضيها الأوروبية؟"
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « جغرافية فرنسا وتنوع أقاليمها »؟",
+          "options": [
+            "أن يشرح كيفية استخدام بعض الخدمات العامة وأن يتحدث عن التعليم والصحة والمساعدة الاجتماعية بحذر ودقة.",
+            "أن يحدد باريس والمدن والمناطق الأساسية، ويفهم التنوع الجغرافي والثقافي للأقاليم الفرنسية.",
+            "أن يشرح باختصار علاقة فرنسا بالاتحاد الأوروبي، ويميز بين مؤسسات الاتحاد والسلطات الوطنية."
+          ],
+          "answer": 1,
+          "why": "الهدف الصحيح: أن يحدد باريس والمدن والمناطق الأساسية، ويفهم التنوع الجغرافي والثقافي للأقاليم الفرنسية."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « باريس عاصمة فرنسا. » ?",
+          "options": [
+            "Les territoires français ont des réalités différentes.",
+            "La France comprend des territoires en Europe et outre-mer.",
+            "Paris est la capitale de la France."
+          ],
+          "answer": 2,
+          "why": "العبارة الأنسب هي: Paris est la capitale de la France. — باريس عاصمة فرنسا.."
         }
       ],
       "model": "Paris est la capitale de la France. Le pays possède des territoires en Europe et outre-mer. Les régions présentent des paysages, des activités économiques et des réalités culturelles variés.",
@@ -16720,6 +17520,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 1,
           "why": "لكل مستوى مؤسسات واختصاصات مختلفة."
+        },
+        {
+          "q": "Que signifie « le Parlement européen » ?",
+          "options": [
+            "الاتحاد الأوروبي",
+            "البرلمان الأوروبي",
+            "دولة عضو"
+          ],
+          "answer": 1,
+          "why": "راجع المفردات في سياق الوحدة: « le Parlement européen » تعني « البرلمان الأوروبي »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « فرنسا عضو في الاتحاد الأوروبي. ». اختر العبارة الصحيحة.",
+          "options": [
+            "La France est membre de l’Union européenne.",
+            "L’Union européenne et l’État français ont des institutions distinctes.",
+            "Tous les pays de l’Union européenne n’utilisent pas l’euro."
+          ],
+          "answer": 0,
+          "why": "العبارة المناسبة هي: La France est membre de l’Union européenne. — فرنسا عضو في الاتحاد الأوروبي.."
+        },
+        {
+          "q": "Que signifie cette réplique : « La France est un État membre de l’Union européenne. Elle participe aux décisions européennes, tout en conservant ses propres institutions nationales. » ?",
+          "options": [
+            "مرحباً، التدفئة لا تعمل منذ الأمس.",
+            "شكراً. هل يمكنك توضيح طلبك وتاريخ الإيداع؟",
+            "فرنسا دولة عضو في الاتحاد الأوروبي. وتشارك في القرارات الأوروبية مع احتفاظها بمؤسساتها الوطنية."
+          ],
+          "answer": 2,
+          "why": "المعنى الصحيح للعبارة هو: فرنسا دولة عضو في الاتحاد الأوروبي. وتشارك في القرارات الأوروبية مع احتفاظها بمؤسساتها الوطنية."
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « فرنسا والاتحاد الأوروبي والعالم »؟",
+          "options": [
+            "أن يشرح باختصار علاقة فرنسا بالاتحاد الأوروبي، ويميز بين مؤسسات الاتحاد والسلطات الوطنية.",
+            "أن يشرح كيفية استخدام بعض الخدمات العامة وأن يتحدث عن التعليم والصحة والمساعدة الاجتماعية بحذر ودقة.",
+            "أن يفهم مفردات العدالة والشرطة والمحكمة، ويشرح أهمية الإجراءات القانونية وقرينة البراءة بأسلوب عام."
+          ],
+          "answer": 0,
+          "why": "الهدف الصحيح: أن يشرح باختصار علاقة فرنسا بالاتحاد الأوروبي، ويميز بين مؤسسات الاتحاد والسلطات الوطنية."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « لا تستخدم جميع دول الاتحاد الأوروبي اليورو. » ?",
+          "options": [
+            "L’Union européenne et l’État français ont des institutions distinctes.",
+            "Tous les pays de l’Union européenne n’utilisent pas l’euro.",
+            "La France est membre de l’Union européenne."
+          ],
+          "answer": 1,
+          "why": "العبارة الأنسب هي: Tous les pays de l’Union européenne n’utilisent pas l’euro. — لا تستخدم جميع دول الاتحاد الأوروبي اليورو.."
         }
       ],
       "model": "La France est membre de l’Union européenne et participe à ses décisions. Cependant, les institutions françaises et européennes ont des compétences distinctes. L’euro est la monnaie commune de nombreux pays membres, mais pas de tous.",
@@ -16823,6 +17673,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 1,
           "why": "المعونات والخدمات تخضع لشروط محددة."
+        },
+        {
+          "q": "Que signifie « un formulaire » ?",
+          "options": [
+            "التأمين الصحي",
+            "رياض الأطفال",
+            "استمارة"
+          ],
+          "answer": 2,
+          "why": "راجع المفردات في سياق الوحدة: « un formulaire » تعني « استمارة »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « أين أجد الاستمارة الرسمية؟ ». اختر العبارة الصحيحة.",
+          "options": [
+            "Je voudrais connaître les conditions d’accès à ce service.",
+            "Où puis-je trouver le formulaire officiel ?",
+            "Ma situation doit être étudiée par le service compétent."
+          ],
+          "answer": 1,
+          "why": "العبارة المناسبة هي: Où puis-je trouver le formulaire officiel ? — أين أجد الاستمارة الرسمية؟."
+        },
+        {
+          "q": "Que signifie cette réplique : « Quelles sont les conditions pour bénéficier de cette prestation ? » ?",
+          "options": [
+            "ما شروط الاستفادة من هذه الإعانة؟",
+            "ماذا تعني المساواة؟",
+            "أود حجز موعد مع الطبيب. لدي ألم في الحلق منذ يومين."
+          ],
+          "answer": 0,
+          "why": "المعنى الصحيح للعبارة هو: ما شروط الاستفادة من هذه الإعانة؟"
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « المدرسة والصحة والحماية الاجتماعية »؟",
+          "options": [
+            "أن يفهم مفردات العدالة والشرطة والمحكمة، ويشرح أهمية الإجراءات القانونية وقرينة البراءة بأسلوب عام.",
+            "أن يقرأ معلومات عامة عن عقد العمل والأجر والعطلة، وأن يسأل الجهة المختصة عند عدم فهم شرط.",
+            "أن يشرح كيفية استخدام بعض الخدمات العامة وأن يتحدث عن التعليم والصحة والمساعدة الاجتماعية بحذر ودقة."
+          ],
+          "answer": 2,
+          "why": "الهدف الصحيح: أن يشرح كيفية استخدام بعض الخدمات العامة وأن يتحدث عن التعليم والصحة والمساعدة الاجتماعية بحذر ودقة."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « يجب أن تدرس الجهة المختصة وضعي. » ?",
+          "options": [
+            "Ma situation doit être étudiée par le service compétent.",
+            "Je voudrais connaître les conditions d’accès à ce service.",
+            "Où puis-je trouver le formulaire officiel ?"
+          ],
+          "answer": 0,
+          "why": "العبارة الأنسب هي: Ma situation doit être étudiée par le service compétent. — يجب أن تدرس الجهة المختصة وضعي.."
         }
       ],
       "model": "Les services publics facilitent la vie collective dans plusieurs domaines, notamment l’éducation et la santé. Les conditions des prestations sociales peuvent dépendre de la situation personnelle. Il faut donc consulter la source officielle avant de faire une demande.",
@@ -16926,6 +17826,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "المعلومات العامة لا تحل محل المشورة المؤهلة عند الحاجة."
+        },
+        {
+          "q": "Que signifie « la justice » ?",
+          "options": [
+            "قرينة البراءة",
+            "العدالة / القضاء",
+            "محكمة"
+          ],
+          "answer": 1,
+          "why": "راجع المفردات في سياق الوحدة: « la justice » تعني « العدالة / القضاء »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « في حالة محددة يجب طلب مشورة مؤهلة. ». اختر العبارة الصحيحة.",
+          "options": [
+            "La présomption d’innocence est un principe fondamental.",
+            "Il est important de respecter les procédures légales.",
+            "Pour une situation précise, il faut demander un conseil qualifié."
+          ],
+          "answer": 2,
+          "why": "العبارة المناسبة هي: Pour une situation précise, il faut demander un conseil qualifié. — في حالة محددة يجب طلب مشورة مؤهلة.."
+        },
+        {
+          "q": "Que signifie cette réplique : « Elles permettent d’examiner les faits selon des règles communes et de protéger les droits des personnes. » ?",
+          "options": [
+            "مرحباً، أتواصل معكم بخصوص ملفي.",
+            "تتيح فحص الوقائع وفق قواعد مشتركة وحماية حقوق الأشخاص.",
+            "لا. إنها تحمي حرية الضمير وتلزم الدولة بالحياد. وتختلف القواعد المحددة بحسب السياق، مثل وضع الموظف العام."
+          ],
+          "answer": 1,
+          "why": "المعنى الصحيح للعبارة هو: تتيح فحص الوقائع وفق قواعد مشتركة وحماية حقوق الأشخاص."
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « القانون والعدالة والأمن العام »؟",
+          "options": [
+            "أن يفهم مفردات العدالة والشرطة والمحكمة، ويشرح أهمية الإجراءات القانونية وقرينة البراءة بأسلوب عام.",
+            "أن يلخص خبراً ويعرض وجهة نظر مدعمة بحجج، ويفرق بين معلومة موثقة ورأي أو شائعة.",
+            "أن يقرأ معلومات عامة عن عقد العمل والأجر والعطلة، وأن يسأل الجهة المختصة عند عدم فهم شرط."
+          ],
+          "answer": 0,
+          "why": "الهدف الصحيح: أن يفهم مفردات العدالة والشرطة والمحكمة، ويشرح أهمية الإجراءات القانونية وقرينة البراءة بأسلوب عام."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « من المهم احترام الإجراءات القانونية. » ?",
+          "options": [
+            "La présomption d’innocence est un principe fondamental.",
+            "Pour une situation précise, il faut demander un conseil qualifié.",
+            "Il est important de respecter les procédures légales."
+          ],
+          "answer": 2,
+          "why": "العبارة الأنسب هي: Il est important de respecter les procédures légales. — من المهم احترام الإجراءات القانونية.."
         }
       ],
       "model": "Les règles de droit organisent la vie collective et protègent les droits. La justice examine les affaires dans le cadre de procédures définies. La présomption d’innocence est un principe fondamental.",
@@ -17029,6 +17979,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "قراءة الشروط وفهمها خطوة احترازية مهمة."
+        },
+        {
+          "q": "Que signifie « un salaire » ?",
+          "options": [
+            "راتب",
+            "قسيمة راتب",
+            "عقد عمل"
+          ],
+          "answer": 0,
+          "why": "راجع المفردات في سياق الوحدة: « un salaire » تعني « راتب »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « هل يمكن أن تشرحوا لي هذا البند؟ ». اختر العبارة الصحيحة.",
+          "options": [
+            "Je voudrais vérifier les horaires de travail.",
+            "Je peux demander des informations à un service compétent.",
+            "Pourriez-vous m’expliquer cette clause ?"
+          ],
+          "answer": 2,
+          "why": "العبارة المناسبة هي: Pourriez-vous m’expliquer cette clause ? — هل يمكن أن تشرحوا لي هذا البند؟."
+        },
+        {
+          "q": "Que signifie cette réplique : « Je ne comprends pas cette clause du contrat. Pourriez-vous me l’expliquer ? » ?",
+          "options": [
+            "لا أفهم هذا البند في العقد. هل يمكن توضيحه؟",
+            "العلم ثلاثي الألوان رمز وطني. وشعار الجمهورية هو الحرية والمساواة والإخاء.",
+            "ما وظيفة البرلمان؟"
+          ],
+          "answer": 0,
+          "why": "المعنى الصحيح للعبارة هو: لا أفهم هذا البند في العقد. هل يمكن توضيحه؟"
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « العمل وحقوق العامل والتعاون الاجتماعي »؟",
+          "options": [
+            "أن يناقش قضية عامة مثل النقل أو المناخ أو الماء، ويقدم رأياً متوازناً مع اقتراح عملي.",
+            "أن يقرأ معلومات عامة عن عقد العمل والأجر والعطلة، وأن يسأل الجهة المختصة عند عدم فهم شرط.",
+            "أن يلخص خبراً ويعرض وجهة نظر مدعمة بحجج، ويفرق بين معلومة موثقة ورأي أو شائعة."
+          ],
+          "answer": 1,
+          "why": "الهدف الصحيح: أن يقرأ معلومات عامة عن عقد العمل والأجر والعطلة، وأن يسأل الجهة المختصة عند عدم فهم شرط."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « أود التحقق من ساعات العمل. » ?",
+          "options": [
+            "Je peux demander des informations à un service compétent.",
+            "Pourriez-vous m’expliquer cette clause ?",
+            "Je voudrais vérifier les horaires de travail."
+          ],
+          "answer": 2,
+          "why": "العبارة الأنسب هي: Je voudrais vérifier les horaires de travail. — أود التحقق من ساعات العمل.."
         }
       ],
       "model": "Avant de signer un contrat de travail, je lis les clauses et je vérifie les horaires, la rémunération et les autres conditions. Si un point n’est pas clair, je demande une explication ou un conseil adapté.",
@@ -17132,6 +18132,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "في B2 ينبغي تنظيم الفكرة ودعمها بحجج وأمثلة."
+        },
+        {
+          "q": "Que signifie « un argument » ?",
+          "options": [
+            "مصدر موثوق",
+            "حجة",
+            "قضية مجتمعية"
+          ],
+          "answer": 1,
+          "why": "راجع المفردات في سياق الوحدة: « un argument » تعني « حجة »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « من جهة… ومن جهة أخرى… ». اختر العبارة الصحيحة.",
+          "options": [
+            "D’une part…, d’autre part…",
+            "Il faut distinguer les faits des opinions.",
+            "Selon les informations publiées par…"
+          ],
+          "answer": 0,
+          "why": "العبارة المناسبة هي: D’une part…, d’autre part… — من جهة… ومن جهة أخرى…."
+        },
+        {
+          "q": "Que signifie cette réplique : « Je consulte plusieurs médias et je vérifie les informations importantes. Je distingue les faits confirmés des commentaires et je compare les sources avant de me faire une opinion. » ?",
+          "options": [
+            "هل تعني العلمانية أن المواطنين لا يحق لهم اعتناق دين؟",
+            "يمكنك التواصل مع بلدية المنطقة المعنية.",
+            "أتابع عدة وسائل إعلام وأتحقق من المعلومات المهمة. أميز بين الوقائع المؤكدة والتعليقات وأقارن المصادر قبل تكوين رأيي."
+          ],
+          "answer": 2,
+          "why": "المعنى الصحيح للعبارة هو: أتابع عدة وسائل إعلام وأتحقق من المعلومات المهمة. أميز بين الوقائع المؤكدة والتعليقات وأقارن المصادر قبل تكوين رأيي."
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « فهم الأخبار والنقاش العام »؟",
+          "options": [
+            "أن يلخص خبراً ويعرض وجهة نظر مدعمة بحجج، ويفرق بين معلومة موثقة ورأي أو شائعة.",
+            "أن يناقش قضية عامة مثل النقل أو المناخ أو الماء، ويقدم رأياً متوازناً مع اقتراح عملي.",
+            "أن يجيب بأمانة وبأسلوب مترابط عن الأسئلة الشخصية والاجتماعية، مع أمثلة حقيقية وتجنب حفظ خطاب جامد."
+          ],
+          "answer": 0,
+          "why": "الهدف الصحيح: أن يلخص خبراً ويعرض وجهة نظر مدعمة بحجج، ويفرق بين معلومة موثقة ورأي أو شائعة."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « يجب التمييز بين الوقائع والآراء. » ?",
+          "options": [
+            "D’une part…, d’autre part…",
+            "Il faut distinguer les faits des opinions.",
+            "Selon les informations publiées par…"
+          ],
+          "answer": 1,
+          "why": "العبارة الأنسب هي: Il faut distinguer les faits des opinions. — يجب التمييز بين الوقائع والآراء.."
         }
       ],
       "model": "Pour comprendre un enjeu de société, il faut distinguer les faits des opinions et vérifier les sources. À mon avis, une mesure peut être utile si elle répond à un besoin réel. Cependant, il faut aussi examiner son coût et ses conséquences.",
@@ -17235,6 +18285,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "« il faudrait » مناسب لتقديم اقتراح أو توصية متزنة."
+        },
+        {
+          "q": "Que signifie « à long terme » ?",
+          "options": [
+            "النقل العام",
+            "التنمية المستدامة",
+            "على المدى الطويل"
+          ],
+          "answer": 2,
+          "why": "راجع المفردات في سياق الوحدة: « à long terme » تعني « على المدى الطويل »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « أقترح حلاً تدريجياً يخضع للتقييم. ». اختر العبارة الصحيحة.",
+          "options": [
+            "À mon avis, il faudrait améliorer les transports en commun.",
+            "Je propose une solution progressive et évaluée.",
+            "Même si la mesure coûte cher, elle peut produire des bénéfices à long terme."
+          ],
+          "answer": 1,
+          "why": "العبارة المناسبة هي: Je propose une solution progressive et évaluée. — أقترح حلاً تدريجياً يخضع للتقييم.."
+        },
+        {
+          "q": "Que signifie cette réplique : « Faut-il investir davantage dans les transports en commun ? » ?",
+          "options": [
+            "هل ينبغي الاستثمار أكثر في النقل العام؟",
+            "لماذا يجب احترام القوانين؟",
+            "يمكنني تسجيل الوقائع والاحتفاظ بالوثائق المفيدة وطلب المشورة من جهة مختصة."
+          ],
+          "answer": 0,
+          "why": "المعنى الصحيح للعبارة هو: هل ينبغي الاستثمار أكثر في النقل العام؟"
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « البيئة والمصلحة العامة والحوار »؟",
+          "options": [
+            "أن يجيب بأمانة وبأسلوب مترابط عن الأسئلة الشخصية والاجتماعية، مع أمثلة حقيقية وتجنب حفظ خطاب جامد.",
+            "أن يجمع بين المعرفة المدنية والفهم والكتابة والتحدث، وأن يراجع نقاط الضعف بخطة أسبوعية قابلة للقياس.",
+            "أن يناقش قضية عامة مثل النقل أو المناخ أو الماء، ويقدم رأياً متوازناً مع اقتراح عملي."
+          ],
+          "answer": 2,
+          "why": "الهدف الصحيح: أن يناقش قضية عامة مثل النقل أو المناخ أو الماء، ويقدم رأياً متوازناً مع اقتراح عملي."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « في رأيي ينبغي تحسين النقل العام. » ?",
+          "options": [
+            "À mon avis, il faudrait améliorer les transports en commun.",
+            "Même si la mesure coûte cher, elle peut produire des bénéfices à long terme.",
+            "Je propose une solution progressive et évaluée."
+          ],
+          "answer": 0,
+          "why": "العبارة الأنسب هي: À mon avis, il faudrait améliorer les transports en commun. — في رأيي ينبغي تحسين النقل العام.."
         }
       ],
       "model": "À mon avis, il faudrait investir dans des transports accessibles et fiables. Cela peut réduire la pollution et faciliter les déplacements. Toutefois, les besoins diffèrent selon les territoires. Il est donc nécessaire de comparer les solutions et d’évaluer leurs résultats.",
@@ -17338,6 +18438,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "الفكرة والسبب والمثال تجعل الإجابة أكثر وضوحاً."
+        },
+        {
+          "q": "Que signifie « un parcours » ?",
+          "options": [
+            "صلة بفرنسا",
+            "مسار شخصي أو مهني",
+            "التزام"
+          ],
+          "answer": 1,
+          "why": "راجع المفردات في سياق الوحدة: « un parcours » تعني « مسار شخصي أو مهني »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « هل يمكنك إعطاء مثال ملموس؟ ». اختر العبارة الصحيحة.",
+          "options": [
+            "Je ne connais pas la réponse exacte, mais je peux expliquer ce que je sais.",
+            "Je voudrais préciser un point.",
+            "Pouvez-vous donner un exemple concret ?"
+          ],
+          "answer": 2,
+          "why": "العبارة المناسبة هي: Pouvez-vous donner un exemple concret ? — هل يمكنك إعطاء مثال ملموس؟."
+        },
+        {
+          "q": "Que signifie cette réplique : « Je souhaite expliquer ma situation personnelle avec sincérité. Mon projet est lié à ma vie en France, à mes responsabilités et à ma volonté de participer durablement à la société, tout en respectant ses lois et ses principes. » ?",
+          "options": [
+            "مرحباً، أود الحصول على وثيقة من السجل المدني. إلى أين أتوجه؟",
+            "أرغب في شرح وضعي الشخصي بصدق. ترتبط خطتي بحياتي في فرنسا ومسؤولياتي ورغبتي في المشاركة المستدامة في المجتمع مع احترام قوانينه ومبادئه.",
+            "إنها تمثل بداية الثورة الفرنسية. كما يعود إعلان حقوق الإنسان والمواطن إلى تلك الفترة."
+          ],
+          "answer": 1,
+          "why": "المعنى الصحيح للعبارة هو: أرغب في شرح وضعي الشخصي بصدق. ترتبط خطتي بحياتي في فرنسا ومسؤولياتي ورغبتي في المشاركة المستدامة في المجتمع مع احترام قوانينه ومبادئه."
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « محاكاة مقابلة التجنّس: المسار والدوافع والاندماج »؟",
+          "options": [
+            "أن يجيب بأمانة وبأسلوب مترابط عن الأسئلة الشخصية والاجتماعية، مع أمثلة حقيقية وتجنب حفظ خطاب جامد.",
+            "أن تقدم نفسك بوضوح وتشرح دوافعك الحقيقية لتعلّم الفرنسية والاندماج في المجتمع.",
+            "أن يجمع بين المعرفة المدنية والفهم والكتابة والتحدث، وأن يراجع نقاط الضعف بخطة أسبوعية قابلة للقياس."
+          ],
+          "answer": 0,
+          "why": "الهدف الصحيح: أن يجيب بأمانة وبأسلوب مترابط عن الأسئلة الشخصية والاجتماعية، مع أمثلة حقيقية وتجنب حفظ خطاب جامد."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « أود توضيح نقطة. » ?",
+          "options": [
+            "Pouvez-vous donner un exemple concret ?",
+            "Je ne connais pas la réponse exacte, mais je peux expliquer ce que je sais.",
+            "Je voudrais préciser un point."
+          ],
+          "answer": 2,
+          "why": "العبارة الأنسب هي: Je voudrais préciser un point. — أود توضيح نقطة.."
         }
       ],
       "model": "Je souhaite acquérir la nationalité française pour des raisons liées à mon parcours et à mon projet de vie. Je comprends que cette démarche implique des droits et des devoirs. Je continue à améliorer mon français et à mieux connaître les institutions, l’histoire et la société françaises.",
@@ -17441,6 +18591,56 @@ window.FRENCH_CURRICULUM = {
           ],
           "answer": 0,
           "why": "قد تختلف الشروط بحسب طريق اكتساب الجنسية، ويجب الرجوع للمصادر الرسمية الحديثة."
+        },
+        {
+          "q": "Que signifie « une attestation de réussite » ?",
+          "options": [
+            "شهادة/إفادة النجاح",
+            "امتحان مدني",
+            "الفهم المسموع"
+          ],
+          "answer": 0,
+          "why": "راجع المفردات في سياق الوحدة: « une attestation de réussite » تعني « شهادة/إفادة النجاح »."
+        },
+        {
+          "q": "تريد أن تقول بالفرنسية: « يجب أن أتحقق من الإجراءات الرسمية قبل التسجيل. ». اختر العبارة الصحيحة.",
+          "options": [
+            "L’entraînement ne remplace pas les informations officielles.",
+            "Je dois vérifier les modalités officielles avant l’inscription.",
+            "Je vais réviser les thèmes dans lesquels je fais le plus d’erreurs."
+          ],
+          "answer": 1,
+          "why": "العبارة المناسبة هي: Je dois vérifier les modalités officielles avant l’inscription. — يجب أن أتحقق من الإجراءات الرسمية قبل التسجيل.."
+        },
+        {
+          "q": "Que signifie cette réplique : « Comment vous préparez-vous aux démarches de nationalité ? » ?",
+          "options": [
+            "ما العلاقة بين فرنسا والاتحاد الأوروبي؟",
+            "يمكن التصويت عند استيفاء الشروط، ومتابعة المعلومات، والمشاركة في جمعية والحوار باحترام.",
+            "كيف تستعد لإجراءات الجنسية؟"
+          ],
+          "answer": 2,
+          "why": "المعنى الصحيح للعبارة هو: كيف تستعد لإجراءات الجنسية؟"
+        },
+        {
+          "q": "ما الهدف الرئيس من الوحدة « المراجعة النهائية: امتحان مدني ومقابلة وDELF B2 »؟",
+          "options": [
+            "أن تقدم نفسك بوضوح وتشرح دوافعك الحقيقية لتعلّم الفرنسية والاندماج في المجتمع.",
+            "أن يجمع بين المعرفة المدنية والفهم والكتابة والتحدث، وأن يراجع نقاط الضعف بخطة أسبوعية قابلة للقياس.",
+            "أن يذكر بياناته الأساسية، ويقرأ تاريخاً وعنواناً، ويطلب موعداً أو يوضح أن وثيقة ناقصة."
+          ],
+          "answer": 1,
+          "why": "الهدف الصحيح: أن يجمع بين المعرفة المدنية والفهم والكتابة والتحدث، وأن يراجع نقاط الضعف بخطة أسبوعية قابلة للقياس."
+        },
+        {
+          "q": "Dans quelle situation cette formule convient-elle : « لا يحل التدريب محل المعلومات الرسمية. » ?",
+          "options": [
+            "L’entraînement ne remplace pas les informations officielles.",
+            "Je dois vérifier les modalités officielles avant l’inscription.",
+            "Je vais réviser les thèmes dans lesquels je fais le plus d’erreurs."
+          ],
+          "answer": 0,
+          "why": "العبارة الأنسب هي: L’entraînement ne remplace pas les informations officielles. — لا يحل التدريب محل المعلومات الرسمية.."
         }
       ],
       "model": "Pour réussir, je prépare deux objectifs distincts : le niveau de français exigé et les connaissances civiques demandées pour ma procédure. Je m’entraîne régulièrement aux quatre compétences du DELF B2, je révise les thèmes officiels et je vérifie les informations administratives actualisées.",
