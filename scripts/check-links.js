@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /**
  * Check external HTTP(S) links referenced by the platform files.
  * Usage: node scripts/check-links.js
