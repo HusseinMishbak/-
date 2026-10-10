@@ -82,3 +82,29 @@ The query should update exactly one row. Sign out and sign back in to refresh th
 - The recording control asks for microphone permission, records in the browser, and supports playback and downloading the clip as a local file. The recording itself is **not uploaded to Supabase** and is not visible to the teacher; learners should download it if they want to keep it.
 - Pronunciation playback uses the browser's Web Speech voice available on the device. The sound and voice quality therefore vary by browser and operating system; some devices may not have a French voice installed.
 - Microphone recording needs a secure context (HTTPS) and browser permission. If blocked, enable microphone access in the browser settings and reload the page.
+
+
+## Months 3–20: expanded A2 → DELF B2 learning path
+
+The `curriculum.js` file provides a structured 18-month roadmap (72 weekly modules) beyond the Entre Nous A1 course. Each roadmap week includes:
+
+- Four guided study sessions with instructions and a practical output.
+- Four topic-oriented French–Arabic vocabulary flashcards with example sentences.
+- A four-question multiple-choice quiz with immediate correction and explanations.
+- A writing prompt with a model sentence/answer, plus speaking prompts that can use the browser microphone recorder.
+- Four level-appropriate external resource links, selected for A2, B1, B2 or DELF B2 practice.
+
+The month and week sections are expandable. Open **خارطة الطريق إلى B2**, expand a month, then open **دروس الأسبوع والتمارين والألعاب** in any week. Weekly lesson checkboxes and week completion are stored through the same progress system used by the rest of the platform; quiz attempts are sent to Supabase for signed-in learners.
+
+### External learning resources referenced in weekly plans
+
+- TV5MONDE: A2 <https://apprendre.tv5monde.com/fr/exercices/a2-elementaire>, B1 <https://apprendre.tv5monde.com/fr/exercices/b1-intermediaire>, B2 <https://apprendre.tv5monde.com/fr/exercices/b2-avance>.
+- Wordwall activity collections: A2 <https://wordwall.net/fr-fr/community/fle/a2>, B1 <https://wordwall.net/fr-fr/community/fle/niveau-b1>, B2 <https://wordwall.net/fr-fr/community/fle/b2>.
+- RFI — Journal en français facile: <https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/>.
+- Official DELF level references from France Éducation international: A2 <https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2>, B1 <https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1>, B2 <https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2>.
+
+The external links are supplementary. Their results remain on the external websites and are not automatically imported into student records. The in-platform weekly quiz is the activity that can record its score in Supabase.
+
+### Progress counter
+
+The core counter currently tracks **336 learning sessions**: 48 sessions aligned with the eight Entre Nous 1 units plus 288 sessions across the 72 roadmap weeks. Week-completion checks are tracked separately. The 24 earlier month-two practice tasks remain available as optional material and are not included in this core-session denominator.
