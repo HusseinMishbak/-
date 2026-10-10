@@ -14992,7 +14992,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "الاندماج والمقابلة",
       "objective": "أن تقدم نفسك بوضوح وتشرح دوافعك الحقيقية لتعلّم الفرنسية والاندماج في المجتمع.",
       "grammar": "être · s’appeler · parler de · parce que",
-      "reference": "المنهج المرفق: الأسبوع 1، اليومان 1–5، ص 8–10؛ Entre Nous 1، الوحدة 1، ص 17–32",
+      "reference": "محاور مترابطة: التعريف بالنفس والدافع الحقيقي، الاندماج والمقابلة، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "Je m’appelle…",
@@ -15013,6 +15013,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "m’intégrer",
           "ar": "أندمج",
           "example": "Je veux mieux m’intégrer dans la société française."
+        },
+        {
+          "fr": "apprendre",
+          "ar": "يتعلّم",
+          "example": "J’apprends le français chaque jour."
+        },
+        {
+          "fr": "la vie quotidienne",
+          "ar": "الحياة اليومية",
+          "example": "Le français m’aide dans la vie quotidienne."
         }
       ],
       "phrases": [
@@ -15027,6 +15037,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Je souhaite participer à la vie de la société française.",
           "ar": "أرغب في المشاركة في حياة المجتمع الفرنسي."
+        },
+        {
+          "fr": "Je pratique un peu chaque jour.",
+          "ar": "أتدرّب قليلاً كل يوم."
+        },
+        {
+          "fr": "Je voudrais mieux communiquer avec mes voisins.",
+          "ar": "أود التواصل بصورة أفضل مع جيراني."
         }
       ],
       "dialogue": [
@@ -15145,7 +15163,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "الحياة اليومية والإدارة",
       "objective": "أن يذكر بياناته الأساسية، ويقرأ تاريخاً وعنواناً، ويطلب موعداً أو يوضح أن وثيقة ناقصة.",
       "grammar": "avoir · chiffres et dates · questions polies · présent",
-      "reference": "المنهج المرفق: الأسبوع 2، ص 11–13؛ Entre Nous 1، الوحدة 2، ص 33–48",
+      "reference": "محاور مترابطة: الهوية والعنوان والمواعيد الإدارية، الحياة اليومية والإدارة، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "une pièce d’identité",
@@ -15166,6 +15184,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "un dossier",
           "ar": "ملف معاملة",
           "example": "Mon dossier est presque complet."
+        },
+        {
+          "fr": "un formulaire",
+          "ar": "استمارة",
+          "example": "Je remplis le formulaire."
+        },
+        {
+          "fr": "une copie",
+          "ar": "نسخة",
+          "example": "Voici une copie du document."
         }
       ],
       "phrases": [
@@ -15180,6 +15208,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Pourriez-vous répéter la date, s’il vous plaît ?",
           "ar": "هل يمكن أن تعيد التاريخ من فضلك؟"
+        },
+        {
+          "fr": "Voici les documents demandés.",
+          "ar": "هذه هي الوثائق المطلوبة."
+        },
+        {
+          "fr": "Pouvez-vous me confirmer la liste des pièces ?",
+          "ar": "هل يمكنكم تأكيد قائمة الوثائق؟"
         }
       ],
       "dialogue": [
@@ -15298,7 +15334,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "الاندماج والحياة اليومية",
       "objective": "أن يصف محل سكنه والحي، ويشرح حاجة عملية مثل إصلاح عطل أو البحث عن خدمة.",
       "grammar": "il y a · prépositions de lieu · devoir · questions",
-      "reference": "Entre Nous 1، الوحدة 3، ص 49–64؛ خارطة الطريق A2، محور السكن والحي",
+      "reference": "محاور مترابطة: السكن والحي والخدمات القريبة، الاندماج والحياة اليومية، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "un quartier",
@@ -15319,6 +15355,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "un voisin / une voisine",
           "ar": "جار / جارة",
           "example": "Je parle avec mes voisins."
+        },
+        {
+          "fr": "une agence immobilière",
+          "ar": "وكالة عقارية",
+          "example": "Je contacte une agence immobilière."
+        },
+        {
+          "fr": "les charges",
+          "ar": "رسوم الخدمات",
+          "example": "Le loyer comprend-il les charges ?"
         }
       ],
       "phrases": [
@@ -15333,6 +15379,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Je voudrais signaler un problème dans le logement.",
           "ar": "أود الإبلاغ عن مشكلة في السكن."
+        },
+        {
+          "fr": "Le logement est-il proche des transports ?",
+          "ar": "هل السكن قريب من وسائل النقل؟"
+        },
+        {
+          "fr": "À qui dois-je signaler cette panne ?",
+          "ar": "لمن أبلغ عن هذا العطل؟"
         }
       ],
       "dialogue": [
@@ -15451,7 +15505,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "الحياة اليومية والخدمات العامة",
       "objective": "أن يحجز موعداً طبياً، ويصف أعراضاً عامة، ويفهم تعليمات إدارية أو صحية بسيطة.",
       "grammar": "avoir mal à · depuis · pouvoir · impératif poli",
-      "reference": "المنهج المرفق: مفردات الخدمات والعبارات العملية، ص 28–31؛ خارطة الطريق A2",
+      "reference": "محاور مترابطة: الصحة والمواعيد وفهم التعليمات، الحياة اليومية والخدمات العامة، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "un médecin généraliste",
@@ -15472,6 +15526,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "un rendez-vous médical",
           "ar": "موعد طبي",
           "example": "J’ai un rendez-vous médical jeudi."
+        },
+        {
+          "fr": "une mutuelle",
+          "ar": "تأمين صحي تكميلي",
+          "example": "Je contacte ma mutuelle."
+        },
+        {
+          "fr": "un centre de santé",
+          "ar": "مركز صحي",
+          "example": "Le centre de santé est près de chez moi."
         }
       ],
       "phrases": [
@@ -15486,6 +15550,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Pourriez-vous parler un peu plus lentement ?",
           "ar": "هل يمكنك التحدث ببطء أكثر؟"
+        },
+        {
+          "fr": "Je voudrais expliquer mes symptômes.",
+          "ar": "أود شرح الأعراض التي أشعر بها."
+        },
+        {
+          "fr": "Dois-je apporter ma carte Vitale ?",
+          "ar": "هل يجب أن أحضر بطاقة فيتالي؟"
         }
       ],
       "dialogue": [
@@ -15604,7 +15676,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "الاندماج المهني والاجتماعي",
       "objective": "أن يصف خبرته ومؤهلاته وخطته المهنية، وأن يجيب عن سؤال حول مساهمته في المجتمع.",
       "grammar": "passé composé · compétences · depuis/pendant · parce que",
-      "reference": "Entre Nous 1، الوحدتان 5–6، ص 91–122؛ المنهج المرفق: الدراسة والعمل، الأسبوع 3، ص 14–16",
+      "reference": "محاور مترابطة: العمل والدراسة والخبرة والاندماج، الاندماج المهني والاجتماعي، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "une expérience professionnelle",
@@ -15625,6 +15697,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "bénévole",
           "ar": "متطوع",
           "example": "Je participe parfois à une activité bénévole."
+        },
+        {
+          "fr": "un CV",
+          "ar": "سيرة ذاتية",
+          "example": "J’envoie mon CV à l’entreprise."
+        },
+        {
+          "fr": "un entretien d’embauche",
+          "ar": "مقابلة عمل",
+          "example": "Je prépare mon entretien d’embauche."
         }
       ],
       "phrases": [
@@ -15639,6 +15721,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Comment participez-vous à la vie locale ?",
           "ar": "كيف تشارك في الحياة المحلية؟"
+        },
+        {
+          "fr": "J’ai acquis cette compétence pendant ma formation.",
+          "ar": "اكتسبت هذه المهارة خلال تدريبي."
+        },
+        {
+          "fr": "Pourriez-vous préciser les missions du poste ?",
+          "ar": "هل يمكنكم توضيح مهام الوظيفة؟"
         }
       ],
       "dialogue": [
@@ -15757,7 +15847,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "الحياة اليومية والإدارة",
       "objective": "أن يكتب رسالة مهذبة لطلب معلومة أو إرفاق وثيقة أو متابعة ملف.",
       "grammar": "formules de politesse · conditionnel de politesse · pronoms objets",
-      "reference": "المنهج المرفق: عبارات النجاة والتواصل، ص 30–31؛ خارطة الطريق A2",
+      "reference": "محاور مترابطة: التواصل مع الإدارات وكتابة بريد رسمي، الحياة اليومية والإدارة، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "une demande",
@@ -15778,6 +15868,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "un accusé de réception",
           "ar": "إشعار استلام",
           "example": "J’ai reçu un accusé de réception."
+        },
+        {
+          "fr": "un courriel",
+          "ar": "رسالة بريد إلكتروني",
+          "example": "J’envoie un courriel au service."
+        },
+        {
+          "fr": "un accusé de réception",
+          "ar": "إشعار بالاستلام",
+          "example": "Je demande un accusé de réception."
         }
       ],
       "phrases": [
@@ -15792,6 +15892,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Je vous remercie par avance pour votre réponse.",
           "ar": "أشكركم مقدماً على ردكم."
+        },
+        {
+          "fr": "Je vous contacte afin d’obtenir des précisions.",
+          "ar": "أتواصل معكم للحصول على توضيحات."
+        },
+        {
+          "fr": "Je reste à votre disposition pour tout complément.",
+          "ar": "أنا مستعد لتقديم أي معلومات إضافية."
         }
       ],
       "dialogue": [
@@ -15910,7 +16018,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "مبادئ الجمهورية ورموزها",
       "objective": "أن يتعرف إلى العلم والنشيد وماريان وشعار الجمهورية والعيد الوطني، ويشرحها بجمل فرنسية بسيطة.",
       "grammar": "être · s’appeler · dates · passif fréquent",
-      "reference": "مسار المواطنة؛ راجع المرجع الرسمي للاختبار المدني وكتيب المواطن",
+      "reference": "محاور مترابطة: رموز الجمهورية الفرنسية، مبادئ الجمهورية ورموزها، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "le drapeau tricolore",
@@ -15931,6 +16039,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "la fête nationale",
           "ar": "العيد الوطني",
           "example": "La fête nationale a lieu le 14 juillet."
+        },
+        {
+          "fr": "un hymne national",
+          "ar": "نشيد وطني",
+          "example": "La Marseillaise est l’hymne national français."
+        },
+        {
+          "fr": "un symbole républicain",
+          "ar": "رمز جمهوري",
+          "example": "Le drapeau est un symbole républicain."
         }
       ],
       "phrases": [
@@ -15945,6 +16063,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Le 14 juillet est la fête nationale française.",
           "ar": "الرابع عشر من يوليو هو العيد الوطني الفرنسي."
+        },
+        {
+          "fr": "La devise républicaine est Liberté, Égalité, Fraternité.",
+          "ar": "شعار الجمهورية هو الحرية والمساواة والإخاء."
+        },
+        {
+          "fr": "Le 14 juillet est la fête nationale.",
+          "ar": "يوم 14 يوليو هو العيد الوطني."
         }
       ],
       "dialogue": [
@@ -16063,7 +16189,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "مبادئ الجمهورية وحقوق الإنسان",
       "objective": "أن يشرح القيم الثلاث بمثال حياتي، ويميّز بين حرية الفرد واحترام حقوق الآخرين والقانون.",
       "grammar": "définir · illustrer par un exemple · devoir/pouvoir",
-      "reference": "المرجع الرسمي للاختبار المدني؛ وثيقة حقوق وواجبات المواطن الفرنسي",
+      "reference": "محاور مترابطة: قيم الجمهورية: الحرية والمساواة والإخاء، مبادئ الجمهورية وحقوق الإنسان، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "la liberté",
@@ -16084,6 +16210,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "les droits fondamentaux",
           "ar": "الحقوق الأساسية",
           "example": "Les droits fondamentaux doivent être protégés."
+        },
+        {
+          "fr": "la solidarité",
+          "ar": "التضامن",
+          "example": "La solidarité aide les personnes en difficulté."
+        },
+        {
+          "fr": "la responsabilité",
+          "ar": "المسؤولية",
+          "example": "La liberté implique une responsabilité."
         }
       ],
       "phrases": [
@@ -16098,6 +16234,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "La fraternité se traduit notamment par la solidarité.",
           "ar": "يتجلى الإخاء خصوصاً في التضامن."
+        },
+        {
+          "fr": "Les droits de chacun doivent être respectés.",
+          "ar": "يجب احترام حقوق الجميع."
+        },
+        {
+          "fr": "La solidarité se manifeste par des actions concrètes.",
+          "ar": "يظهر التضامن من خلال أفعال ملموسة."
         }
       ],
       "dialogue": [
@@ -16216,7 +16360,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "مبادئ الجمهورية والحياة العامة",
       "objective": "أن يشرح مبدأ laïcité بوصفه حياد الدولة وحرية الضمير، ويميّز بين قواعد المؤسسات العامة وسلوك الأفراد في مختلف السياقات.",
       "grammar": "opposition · expliquer un principe · il faut/il est nécessaire de",
-      "reference": "المرجع الرسمي للاختبار المدني؛ محور مبادئ الجمهورية والعلمانية",
+      "reference": "محاور مترابطة: العلمانية وحرية الضمير، مبادئ الجمهورية والحياة العامة، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "la laïcité",
@@ -16237,6 +16381,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "un service public",
           "ar": "مرفق عام",
           "example": "Le service public accueille les usagers selon les règles communes."
+        },
+        {
+          "fr": "une croyance",
+          "ar": "معتقد",
+          "example": "Chacun peut avoir ses croyances."
+        },
+        {
+          "fr": "la neutralité du service public",
+          "ar": "حياد المرفق العام",
+          "example": "La neutralité du service public s’applique selon les règles prévues."
         }
       ],
       "phrases": [
@@ -16251,6 +16405,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Les règles peuvent varier selon le lieu et la fonction.",
           "ar": "قد تختلف القواعد بحسب المكان والوظيفة."
+        },
+        {
+          "fr": "Chacun est libre de croire ou de ne pas croire.",
+          "ar": "لكل شخص حرية الاعتقاد أو عدم الاعتقاد."
+        },
+        {
+          "fr": "La laïcité protège la liberté de conscience.",
+          "ar": "العلمانية تحمي حرية الضمير."
         }
       ],
       "dialogue": [
@@ -16369,7 +16531,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "الحقوق والحياة الاجتماعية",
       "objective": "أن يشرح مبدأ المساواة ويصف كيفية التصرف أو طلب المساعدة عند مواجهة تمييز.",
       "grammar": "comparaison · devoir · conditionnel de conseil · expressions de cause",
-      "reference": "المرجع الرسمي للاختبار المدني؛ حقوق الإنسان والمساواة أمام القانون",
+      "reference": "محاور مترابطة: المساواة بين النساء والرجال ومكافحة التمييز، الحقوق والحياة الاجتماعية، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "la discrimination",
@@ -16390,6 +16552,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "signaler un fait",
           "ar": "الإبلاغ عن واقعة",
           "example": "On peut signaler une situation discriminatoire."
+        },
+        {
+          "fr": "le harcèlement",
+          "ar": "التحرش",
+          "example": "Le harcèlement doit être signalé."
+        },
+        {
+          "fr": "l’égalité de traitement",
+          "ar": "المعاملة المتساوية",
+          "example": "L’égalité de traitement est un principe important."
         }
       ],
       "phrases": [
@@ -16400,6 +16572,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Les femmes et les hommes ont les mêmes droits.",
           "ar": "للنساء والرجال الحقوق نفسها."
+        },
+        {
+          "fr": "Je peux demander conseil à un service compétent.",
+          "ar": "يمكنني طلب المشورة من جهة مختصة."
+        },
+        {
+          "fr": "Les mêmes droits s’appliquent aux femmes et aux hommes.",
+          "ar": "تُطبّق الحقوق نفسها على النساء والرجال."
         },
         {
           "fr": "Je peux demander conseil à un service compétent.",
@@ -16522,7 +16702,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "المؤسسات والنظام السياسي",
       "objective": "أن يميّز بين دور رئيس الجمهورية والحكومة والجمعية الوطنية ومجلس الشيوخ.",
       "grammar": "rôle de · être chargé de · voix passive simple",
-      "reference": "المرجع الرسمي للاختبار المدني؛ مؤسسات الجمهورية والنظام السياسي",
+      "reference": "محاور مترابطة: المؤسسات الوطنية: رئيس الجمهورية والحكومة والبرلمان، المؤسسات والنظام السياسي، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "le président de la République",
@@ -16543,6 +16723,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "le Sénat",
           "ar": "مجلس الشيوخ",
           "example": "Le Sénat représente les collectivités territoriales."
+        },
+        {
+          "fr": "un député / une députée",
+          "ar": "عضو في الجمعية الوطنية",
+          "example": "La députée représente les citoyens."
+        },
+        {
+          "fr": "un mandat",
+          "ar": "ولاية أو مدة انتخابية",
+          "example": "Le mandat a une durée définie par la loi."
         }
       ],
       "phrases": [
@@ -16557,6 +16747,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Les institutions ont des rôles différents.",
           "ar": "للمؤسسات أدوار مختلفة."
+        },
+        {
+          "fr": "L’Assemblée nationale et le Sénat participent au vote de la loi.",
+          "ar": "تشارك الجمعية الوطنية ومجلس الشيوخ في سن القوانين."
+        },
+        {
+          "fr": "Le gouvernement est distinct du Parlement.",
+          "ar": "الحكومة منفصلة عن البرلمان."
         }
       ],
       "dialogue": [
@@ -16675,7 +16873,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "المؤسسات والخدمات العامة",
       "objective": "أن يعرف دور البلدية والماير والمحافظة والمنطقة، وأن يوجّه سؤالاً إلى الجهة المناسبة.",
       "grammar": "où s’adresser · demander une information · pronoms relatifs simples",
-      "reference": "Entre Nous 1، الوحدة 3، ص 49–64؛ المسار المدني: التنظيم الإداري المحلي",
+      "reference": "محاور مترابطة: المؤسسات المحلية: البلدية والمحافظة والمنطقة، المؤسسات والخدمات العامة، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "la commune",
@@ -16696,6 +16894,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "une région",
           "ar": "منطقة إدارية",
           "example": "La région intervient notamment dans les transports et les lycées."
+        },
+        {
+          "fr": "un service municipal",
+          "ar": "خدمة بلدية",
+          "example": "Le service municipal répond aux habitants."
+        },
+        {
+          "fr": "une démarche administrative",
+          "ar": "إجراء إداري",
+          "example": "Je prépare ma démarche administrative."
         }
       ],
       "phrases": [
@@ -16710,6 +16918,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "La préfecture représente l’État au niveau territorial.",
           "ar": "تمثل المحافظة الدولة على المستوى الإقليمي."
+        },
+        {
+          "fr": "La mairie peut m’orienter vers le bon service.",
+          "ar": "يمكن للبلدية توجيهي إلى الجهة المناسبة."
+        },
+        {
+          "fr": "Quels justificatifs sont nécessaires pour cette démarche ?",
+          "ar": "ما الإثباتات اللازمة لهذا الإجراء؟"
         }
       ],
       "dialogue": [
@@ -16828,7 +17044,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "ممارسة المواطنة",
       "objective": "أن يشرح أهمية الانتخابات والتصويت والمشاركة المجتمعية، ويميّز بين حق التصويت للمواطنين وقواعد الانتخابات المحلية والأوروبية للمقيمين المؤهلين.",
       "grammar": "exprimer une opinion · si + présent · devoir civique",
-      "reference": "المرجع الرسمي للاختبار المدني؛ ممارسة المواطنة والحقوق والواجبات",
+      "reference": "محاور مترابطة: الانتخابات والمشاركة الديمقراطية، ممارسة المواطنة، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "une élection",
@@ -16849,6 +17065,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "une association",
           "ar": "جمعية",
           "example": "Une association peut organiser une action solidaire."
+        },
+        {
+          "fr": "un bureau de vote",
+          "ar": "مركز اقتراع",
+          "example": "Le bureau de vote ouvre selon les horaires annoncés."
+        },
+        {
+          "fr": "une campagne électorale",
+          "ar": "حملة انتخابية",
+          "example": "Les candidats présentent leurs programmes pendant la campagne."
         }
       ],
       "phrases": [
@@ -16863,6 +17089,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Je peux participer à la vie locale par une association.",
           "ar": "يمكنني المشاركة في الحياة المحلية عبر جمعية."
+        },
+        {
+          "fr": "Les élections permettent de choisir des représentants.",
+          "ar": "تتيح الانتخابات اختيار ممثلين."
+        },
+        {
+          "fr": "Je vérifie les informations électorales auprès d’une source officielle.",
+          "ar": "أتحقق من معلومات الانتخابات عبر مصدر رسمي."
         }
       ],
       "dialogue": [
@@ -16981,7 +17215,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "ممارسة المواطنة",
       "objective": "أن يشرح حقوقاً وواجبات أساسية، ويفهم أن الحقوق والحريات تمارس في إطار القانون واحترام الآخرين.",
       "grammar": "devoir/être tenu de · en revanche · conditionnel",
-      "reference": "المرجع الرسمي: Charte des droits et devoirs du citoyen français؛ الاختبار المدني",
+      "reference": "محاور مترابطة: الحقوق والواجبات والقانون، ممارسة المواطنة، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "respecter la loi",
@@ -17002,6 +17236,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "un devoir",
           "ar": "واجب",
           "example": "Le respect des lois est un devoir."
+        },
+        {
+          "fr": "une infraction",
+          "ar": "مخالفة أو جريمة بحسب السياق",
+          "example": "La loi définit les infractions et les sanctions."
+        },
+        {
+          "fr": "une obligation légale",
+          "ar": "التزام قانوني",
+          "example": "Une obligation légale doit être respectée."
         }
       ],
       "phrases": [
@@ -17016,6 +17260,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Les impôts contribuent aux services publics.",
           "ar": "تسهم الضرائب في تمويل الخدمات العامة."
+        },
+        {
+          "fr": "Les droits s’exercent dans le respect de la loi.",
+          "ar": "تُمارس الحقوق مع احترام القانون."
+        },
+        {
+          "fr": "En cas de doute, je demande une information juridique fiable.",
+          "ar": "عند الشك أطلب معلومات قانونية موثوقة."
         }
       ],
       "dialogue": [
@@ -17134,7 +17386,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "التاريخ والثقافة",
       "objective": "أن يذكر محطات تاريخية معروفة ويربطها بجمل زمنية دون الحاجة إلى حفظ تفاصيل سطحية كثيرة.",
       "grammar": "chronologie · passé composé/imparfait · connecteurs temporels",
-      "reference": "المرجع الرسمي للاختبار المدني؛ كتيب المواطن والتاريخ الفرنسي",
+      "reference": "محاور مترابطة: محطات أساسية في التاريخ الفرنسي، التاريخ والثقافة، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "la Révolution française",
@@ -17155,6 +17407,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "le droit de vote des femmes",
           "ar": "حق النساء في التصويت",
           "example": "Les femmes votent pour la première fois aux élections nationales en 1945."
+        },
+        {
+          "fr": "l’abolition",
+          "ar": "الإلغاء",
+          "example": "L’abolition d’une pratique peut marquer un tournant historique."
+        },
+        {
+          "fr": "une constitution",
+          "ar": "دستور",
+          "example": "La Constitution organise les institutions."
         }
       ],
       "phrases": [
@@ -17169,6 +17431,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Les événements historiques ont transformé les institutions.",
           "ar": "غيّرت الأحداث التاريخية المؤسسات."
+        },
+        {
+          "fr": "La Révolution française de 1789 a profondément transformé la société.",
+          "ar": "غيّرت الثورة الفرنسية عام 1789 المجتمع بصورة عميقة."
+        },
+        {
+          "fr": "La Constitution de 1958 fonde les institutions de la Ve République.",
+          "ar": "يؤسس دستور 1958 مؤسسات الجمهورية الخامسة."
         }
       ],
       "dialogue": [
@@ -17287,7 +17557,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "فرنسا وأوروبا والعالم",
       "objective": "أن يحدد باريس والمدن والمناطق الأساسية، ويفهم التنوع الجغرافي والثقافي للأقاليم الفرنسية.",
       "grammar": "comparatifs · localisation · chiffres et données",
-      "reference": "المرجع الرسمي للاختبار المدني؛ الجغرافيا والأقاليم الفرنسية",
+      "reference": "محاور مترابطة: جغرافية فرنسا وتنوع أقاليمها، فرنسا وأوروبا والعالم، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "la capitale",
@@ -17308,6 +17578,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "la diversité",
           "ar": "التنوع",
           "example": "La France présente une diversité de paysages et de cultures."
+        },
+        {
+          "fr": "un littoral",
+          "ar": "ساحل",
+          "example": "La France possède plusieurs espaces littoraux."
+        },
+        {
+          "fr": "une frontière",
+          "ar": "حدود",
+          "example": "Une frontière sépare ou relie des territoires."
         }
       ],
       "phrases": [
@@ -17322,6 +17602,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Les territoires français ont des réalités différentes.",
           "ar": "للأقاليم الفرنسية ظروف وخصائص مختلفة."
+        },
+        {
+          "fr": "Paris est la capitale, mais chaque région a ses particularités.",
+          "ar": "باريس هي العاصمة، لكن لكل منطقة خصائصها."
+        },
+        {
+          "fr": "Les territoires français ne se situent pas tous en Europe.",
+          "ar": "لا تقع جميع الأراضي الفرنسية في أوروبا."
         }
       ],
       "dialogue": [
@@ -17440,7 +17728,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "فرنسا وأوروبا والعالم",
       "objective": "أن يشرح باختصار علاقة فرنسا بالاتحاد الأوروبي، ويميز بين مؤسسات الاتحاد والسلطات الوطنية.",
       "grammar": "connecteurs · expliquer une relation · comparer",
-      "reference": "المرجع الرسمي للاختبار المدني؛ مكانة فرنسا في أوروبا والعالم",
+      "reference": "محاور مترابطة: فرنسا والاتحاد الأوروبي والعالم، فرنسا وأوروبا والعالم، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "l’Union européenne",
@@ -17461,6 +17749,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "la monnaie unique",
           "ar": "العملة الموحدة",
           "example": "L’euro est utilisé dans de nombreux pays de l’Union européenne."
+        },
+        {
+          "fr": "un traité",
+          "ar": "معاهدة",
+          "example": "Les traités organisent une partie de la coopération européenne."
+        },
+        {
+          "fr": "la Commission européenne",
+          "ar": "المفوضية الأوروبية",
+          "example": "La Commission européenne exerce des fonctions propres."
         }
       ],
       "phrases": [
@@ -17475,6 +17773,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "L’Union européenne et l’État français ont des institutions distinctes.",
           "ar": "للاتحاد الأوروبي والدولة الفرنسية مؤسسات مختلفة."
+        },
+        {
+          "fr": "Les institutions européennes ont des rôles différents.",
+          "ar": "للمؤسسات الأوروبية أدوار مختلفة."
+        },
+        {
+          "fr": "Tous les États membres n’utilisent pas la même monnaie.",
+          "ar": "لا تستخدم جميع الدول الأعضاء العملة نفسها."
         }
       ],
       "dialogue": [
@@ -17593,7 +17899,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "المجتمع والخدمات العامة",
       "objective": "أن يشرح كيفية استخدام بعض الخدمات العامة وأن يتحدث عن التعليم والصحة والمساعدة الاجتماعية بحذر ودقة.",
       "grammar": "présent · futur proche · expressions du besoin · pronoms relatifs",
-      "reference": "خارطة الطريق A2/B1؛ مصدر حكومي للتحقق من إجراءات الخدمات",
+      "reference": "محاور مترابطة: المدرسة والصحة والحماية الاجتماعية، المجتمع والخدمات العامة، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "l’école maternelle",
@@ -17614,6 +17920,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "un formulaire",
           "ar": "استمارة",
           "example": "Je remplis le formulaire en ligne."
+        },
+        {
+          "fr": "la scolarité",
+          "ar": "الدراسة المدرسية",
+          "example": "La scolarité des enfants se prépare avec l’établissement."
+        },
+        {
+          "fr": "la couverture santé",
+          "ar": "التغطية الصحية",
+          "example": "Je vérifie mes droits à la couverture santé."
         }
       ],
       "phrases": [
@@ -17628,6 +17944,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Ma situation doit être étudiée par le service compétent.",
           "ar": "يجب أن تدرس الجهة المختصة وضعي."
+        },
+        {
+          "fr": "Je voudrais connaître les démarches pour inscrire mon enfant.",
+          "ar": "أود معرفة إجراءات تسجيل طفلي."
+        },
+        {
+          "fr": "Les conditions dépendent de ma situation et du service compétent.",
+          "ar": "تعتمد الشروط على وضعي والجهة المختصة."
         }
       ],
       "dialogue": [
@@ -17746,7 +18070,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "الحقوق والمؤسسات",
       "objective": "أن يفهم مفردات العدالة والشرطة والمحكمة، ويشرح أهمية الإجراءات القانونية وقرينة البراءة بأسلوب عام.",
       "grammar": "devoir · procédure · discours indirect simple",
-      "reference": "المرجع الرسمي للاختبار المدني؛ مؤسسات الجمهورية والحقوق والواجبات",
+      "reference": "محاور مترابطة: القانون والعدالة والأمن العام، الحقوق والمؤسسات، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "la justice",
@@ -17767,6 +18091,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "une règle de droit",
           "ar": "قاعدة قانونية",
           "example": "Une règle de droit organise la vie collective."
+        },
+        {
+          "fr": "un avocat / une avocate",
+          "ar": "محامٍ / محامية",
+          "example": "Un avocat peut expliquer les options juridiques."
+        },
+        {
+          "fr": "un recours",
+          "ar": "طعن أو تظلّم قانوني",
+          "example": "Il existe parfois une voie de recours."
         }
       ],
       "phrases": [
@@ -17781,6 +18115,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Pour une situation précise, il faut demander un conseil qualifié.",
           "ar": "في حالة محددة يجب طلب مشورة مؤهلة."
+        },
+        {
+          "fr": "La présomption d’innocence est un principe fondamental.",
+          "ar": "قرينة البراءة مبدأ أساسي."
+        },
+        {
+          "fr": "Je consulte une source officielle avant d’entreprendre une démarche juridique.",
+          "ar": "أراجع مصدراً رسمياً قبل اتخاذ إجراء قانوني."
         }
       ],
       "dialogue": [
@@ -17899,7 +18241,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "الحياة المهنية والاندماج",
       "objective": "أن يقرأ معلومات عامة عن عقد العمل والأجر والعطلة، وأن يسأل الجهة المختصة عند عدم فهم شرط.",
       "grammar": "contrat · comparaisons · conditionnel poli · cause/conséquence",
-      "reference": "Entre Nous 1، الوحدة 6، ص 107–122؛ خارطة الطريق B1: العمل والسيرة المهنية",
+      "reference": "محاور مترابطة: العمل وحقوق العامل والتعاون الاجتماعي، الحياة المهنية والاندماج، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "un contrat de travail",
@@ -17920,6 +18262,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "les congés payés",
           "ar": "الإجازة المدفوعة",
           "example": "Les congés payés sont indiqués selon les règles applicables."
+        },
+        {
+          "fr": "un employeur",
+          "ar": "صاحب العمل",
+          "example": "L’employeur précise les conditions du poste."
+        },
+        {
+          "fr": "une période d’essai",
+          "ar": "فترة تجربة",
+          "example": "La période d’essai est encadrée par le contrat et la loi."
         }
       ],
       "phrases": [
@@ -17934,6 +18286,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Je peux demander des informations à un service compétent.",
           "ar": "يمكنني طلب معلومات من جهة مختصة."
+        },
+        {
+          "fr": "Je lis mon contrat avant de le signer.",
+          "ar": "أقرأ عقدي قبل توقيعه."
+        },
+        {
+          "fr": "Pouvez-vous m’expliquer cette clause du contrat ?",
+          "ar": "هل يمكنكم شرح هذا البند من العقد؟"
         }
       ],
       "dialogue": [
@@ -18052,7 +18412,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "المجتمع المعاصر والتعبير الشفهي",
       "objective": "أن يلخص خبراً ويعرض وجهة نظر مدعمة بحجج، ويفرق بين معلومة موثقة ورأي أو شائعة.",
       "grammar": "connecteurs argumentatifs · concession · conditionnel · discours rapporté",
-      "reference": "خارطة الطريق B2؛ TV5MONDE B2 وRFI Journal en français facile",
+      "reference": "محاور مترابطة: فهم الأخبار والنقاش العام، المجتمع المعاصر والتعبير الشفهي، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "une source fiable",
@@ -18073,6 +18433,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "en revanche",
           "ar": "في المقابل",
           "example": "Cette mesure est coûteuse ; en revanche, elle peut être efficace."
+        },
+        {
+          "fr": "un média",
+          "ar": "وسيلة إعلام",
+          "example": "Je compare plusieurs médias."
+        },
+        {
+          "fr": "une information vérifiée",
+          "ar": "معلومة تم التحقق منها",
+          "example": "Je partage uniquement une information vérifiée."
         }
       ],
       "phrases": [
@@ -18083,6 +18453,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "D’une part…, d’autre part…",
           "ar": "من جهة… ومن جهة أخرى…"
+        },
+        {
+          "fr": "Il faut distinguer les faits des opinions.",
+          "ar": "يجب التمييز بين الوقائع والآراء."
+        },
+        {
+          "fr": "Je vérifie la date et la source de cette information.",
+          "ar": "أتحقق من تاريخ المعلومة ومصدرها."
         },
         {
           "fr": "Il faut distinguer les faits des opinions.",
@@ -18205,7 +18583,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "المجتمع المعاصر والتعبير الشفهي",
       "objective": "أن يناقش قضية عامة مثل النقل أو المناخ أو الماء، ويقدم رأياً متوازناً مع اقتراح عملي.",
       "grammar": "il faudrait · subjonctif de base · concession · hypothèse",
-      "reference": "خارطة الطريق B2: النقاش والحجج؛ مواد إخبارية موثوقة معاصرة",
+      "reference": "محاور مترابطة: البيئة والمصلحة العامة والحوار، المجتمع المعاصر والتعبير الشفهي، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "le développement durable",
@@ -18226,6 +18604,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "à long terme",
           "ar": "على المدى الطويل",
           "example": "Cette solution peut être plus efficace à long terme."
+        },
+        {
+          "fr": "le tri des déchets",
+          "ar": "فرز النفايات",
+          "example": "Le tri des déchets dépend des consignes locales."
+        },
+        {
+          "fr": "la biodiversité",
+          "ar": "التنوع البيولوجي",
+          "example": "La biodiversité contribue à l’équilibre des écosystèmes."
         }
       ],
       "phrases": [
@@ -18240,6 +18628,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Je propose une solution progressive et évaluée.",
           "ar": "أقترح حلاً تدريجياً يخضع للتقييم."
+        },
+        {
+          "fr": "À mon avis, il faudrait développer les transports en commun.",
+          "ar": "برأيي ينبغي تطوير النقل العام."
+        },
+        {
+          "fr": "Je propose une solution progressive dont on peut mesurer les effets.",
+          "ar": "أقترح حلاً تدريجياً يمكن قياس آثاره."
         }
       ],
       "dialogue": [
@@ -18358,7 +18754,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "المقابلة والاندماج",
       "objective": "أن يجيب بأمانة وبأسلوب مترابط عن الأسئلة الشخصية والاجتماعية، مع أمثلة حقيقية وتجنب حفظ خطاب جامد.",
       "grammar": "argumentation personnelle · passé/présent/futur · relances · clarification",
-      "reference": "مسار المواطنة؛ كتيب المواطن الرسمي؛ التدريب اللغوي B2",
+      "reference": "محاور مترابطة: محاكاة مقابلة التجنّس: المسار والدوافع والاندماج، المقابلة والاندماج، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "un parcours",
@@ -18379,6 +18775,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "un projet d’avenir",
           "ar": "خطة مستقبلية",
           "example": "Mon projet d’avenir est de continuer à travailler et à participer à la vie locale."
+        },
+        {
+          "fr": "un entretien",
+          "ar": "مقابلة",
+          "example": "Je me prépare à l’entretien."
+        },
+        {
+          "fr": "un engagement associatif",
+          "ar": "مشاركة أو التزام في جمعية",
+          "example": "Mon engagement associatif m’a permis d’aider des habitants."
         }
       ],
       "phrases": [
@@ -18393,6 +18799,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "Je ne connais pas la réponse exacte, mais je peux expliquer ce que je sais.",
           "ar": "لا أعرف الإجابة الدقيقة، لكن يمكنني توضيح ما أعرفه."
+        },
+        {
+          "fr": "Je peux illustrer mon engagement par un exemple concret.",
+          "ar": "يمكنني توضيح مشاركتي بمثال ملموس."
+        },
+        {
+          "fr": "Je préfère répondre honnêtement lorsque je ne connais pas un détail.",
+          "ar": "أفضل الإجابة بصدق عندما لا أعرف تفصيلاً."
         }
       ],
       "dialogue": [
@@ -18511,7 +18925,7 @@ window.FRENCH_CURRICULUM = {
       "theme": "الاستعداد النهائي",
       "objective": "أن يجمع بين المعرفة المدنية والفهم والكتابة والتحدث، وأن يراجع نقاط الضعف بخطة أسبوعية قابلة للقياس.",
       "grammar": "compréhension · argumentation · interaction · autoévaluation",
-      "reference": "المرجع الرسمي للاختبار المدني؛ France Éducation international — DELF B2؛ المنهج المرفق: نظام التقييم، ص 35–42",
+      "reference": "محاور مترابطة: المراجعة النهائية: امتحان مدني ومقابلة وDELF B2، الاستعداد النهائي، والتطبيق العملي في الحياة اليومية أو المدنية بفرنسا.",
       "vocab": [
         {
           "fr": "un examen civique",
@@ -18532,6 +18946,16 @@ window.FRENCH_CURRICULUM = {
           "fr": "l’expression écrite",
           "ar": "التعبير الكتابي",
           "example": "L’expression écrite doit être organisée et claire."
+        },
+        {
+          "fr": "une épreuve",
+          "ar": "اختبار أو امتحان",
+          "example": "Je m’entraîne à chaque épreuve."
+        },
+        {
+          "fr": "un résultat",
+          "ar": "نتيجة",
+          "example": "Je relis mes résultats pour repérer mes erreurs."
         }
       ],
       "phrases": [
@@ -18546,6 +18970,14 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "L’entraînement ne remplace pas les informations officielles.",
           "ar": "لا يحل التدريب محل المعلومات الرسمية."
+        },
+        {
+          "fr": "Je révise d’abord les thèmes dans lesquels je fais le plus d’erreurs.",
+          "ar": "أراجع أولاً الموضوعات التي أرتكب فيها أكثر الأخطاء."
+        },
+        {
+          "fr": "Je vérifie les consignes officielles avant l’examen.",
+          "ar": "أتحقق من التعليمات الرسمية قبل الامتحان."
         }
       ],
       "dialogue": [
