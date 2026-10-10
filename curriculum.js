@@ -476,24 +476,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Comparatifs · articles partitifs · expressions de quantité",
             "vocab": [
               {
-                "fr": "un logement",
-                "ar": "مسكن",
-                "example": "Je cherche un logement près du centre."
+                "fr": "un reçu",
+                "ar": "إيصال",
+                "example": "J’ai gardé le reçu de mon achat."
               },
               {
-                "fr": "un quartier",
-                "ar": "حيّ",
-                "example": "Mon quartier est calme et bien desservi."
+                "fr": "échanger",
+                "ar": "يستبدل",
+                "example": "Je voudrais échanger cet article."
               },
               {
-                "fr": "un loyer",
-                "ar": "إيجار",
-                "example": "Le loyer comprend-il les charges ?"
+                "fr": "rembourser",
+                "ar": "يعيد المبلغ",
+                "example": "Le magasin peut-il me rembourser ?"
               },
               {
-                "fr": "à proximité de",
-                "ar": "بالقرب من",
-                "example": "Il y a une pharmacie à proximité."
+                "fr": "un défaut",
+                "ar": "عيب",
+                "example": "Le produit présente un défaut."
               }
             ],
             "sessions": [
@@ -616,24 +616,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Vocabulaire de la santé · devoir / il faut · prendre rendez-vous",
             "vocab": [
               {
-                "fr": "un logement",
-                "ar": "مسكن",
-                "example": "Je cherche un logement près du centre."
+                "fr": "prendre rendez-vous",
+                "ar": "يحجز موعداً",
+                "example": "Je voudrais prendre rendez-vous avec le médecin."
               },
               {
-                "fr": "un quartier",
-                "ar": "حيّ",
-                "example": "Mon quartier est calme et bien desservi."
+                "fr": "un symptôme",
+                "ar": "عَرَض",
+                "example": "Depuis quand avez-vous ces symptômes ?"
               },
               {
-                "fr": "un loyer",
-                "ar": "إيجار",
-                "example": "Le loyer comprend-il les charges ?"
+                "fr": "une ordonnance",
+                "ar": "وصفة طبية",
+                "example": "Le médecin m’a donné une ordonnance."
               },
               {
-                "fr": "à proximité de",
-                "ar": "بالقرب من",
-                "example": "Il y a une pharmacie à proximité."
+                "fr": "avoir mal à",
+                "ar": "يشعر بألم في",
+                "example": "J’ai mal à la gorge."
               }
             ],
             "sessions": [
@@ -756,24 +756,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Futur proche · impératif · demander et expliquer un itinéraire",
             "vocab": [
               {
-                "fr": "un logement",
-                "ar": "مسكن",
-                "example": "Je cherche un logement près du centre."
+                "fr": "un trajet",
+                "ar": "مسار / رحلة",
+                "example": "Combien de temps dure le trajet ?"
               },
               {
-                "fr": "un quartier",
-                "ar": "حيّ",
-                "example": "Mon quartier est calme et bien desservi."
+                "fr": "un quai",
+                "ar": "رصيف محطة",
+                "example": "Le train part du quai numéro trois."
               },
               {
-                "fr": "un loyer",
-                "ar": "إيجار",
-                "example": "Le loyer comprend-il les charges ?"
+                "fr": "une correspondance",
+                "ar": "تبديل وسيلة النقل",
+                "example": "J’ai une correspondance à Paris."
               },
               {
-                "fr": "à proximité de",
-                "ar": "بالقرب من",
-                "example": "Il y a une pharmacie à proximité."
+                "fr": "être en retard",
+                "ar": "يتأخر",
+                "example": "Le bus est en retard."
               }
             ],
             "sessions": [
@@ -904,24 +904,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Réserver, demander une information, le conditionnel de politesse",
             "vocab": [
               {
-                "fr": "un logement",
-                "ar": "مسكن",
-                "example": "Je cherche un logement près du centre."
+                "fr": "réserver",
+                "ar": "يحجز",
+                "example": "Je voudrais réserver une chambre."
               },
               {
-                "fr": "un quartier",
-                "ar": "حيّ",
-                "example": "Mon quartier est calme et bien desservi."
+                "fr": "un séjour",
+                "ar": "إقامة",
+                "example": "Notre séjour dure cinq jours."
               },
               {
-                "fr": "un loyer",
-                "ar": "إيجار",
-                "example": "Le loyer comprend-il les charges ?"
+                "fr": "disponible",
+                "ar": "متاح",
+                "example": "Avez-vous une chambre disponible ?"
               },
               {
-                "fr": "à proximité de",
-                "ar": "بالقرب من",
-                "example": "Il y a une pharmacie à proximité."
+                "fr": "à l’avance",
+                "ar": "مسبقاً",
+                "example": "Il vaut mieux acheter les billets à l’avance."
               }
             ],
             "sessions": [
@@ -1184,24 +1184,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Imparfait pour le décor / passé composé pour l’événement",
             "vocab": [
               {
-                "fr": "un logement",
-                "ar": "مسكن",
-                "example": "Je cherche un logement près du centre."
+                "fr": "un proche",
+                "ar": "شخص مقرّب",
+                "example": "Je vais rendre visite à un proche."
               },
               {
-                "fr": "un quartier",
-                "ar": "حيّ",
-                "example": "Mon quartier est calme et bien desservi."
+                "fr": "s’entendre avec",
+                "ar": "ينسجم مع",
+                "example": "Je m’entends bien avec mes collègues."
               },
               {
-                "fr": "un loyer",
-                "ar": "إيجار",
-                "example": "Le loyer comprend-il les charges ?"
+                "fr": "un rendez-vous",
+                "ar": "موعد",
+                "example": "Nous avons rendez-vous à dix heures."
               },
               {
-                "fr": "à proximité de",
-                "ar": "بالقرب من",
-                "example": "Il y a une pharmacie à proximité."
+                "fr": "s’entraider",
+                "ar": "يساعد بعضنا بعضاً",
+                "example": "Dans notre équipe, nous nous entraidons."
               }
             ],
             "sessions": [
@@ -1324,24 +1324,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Pronoms y/en · futur proche · raconter et comparer une expérience",
             "vocab": [
               {
-                "fr": "un logement",
-                "ar": "مسكن",
-                "example": "Je cherche un logement près du centre."
+                "fr": "réserver",
+                "ar": "يحجز",
+                "example": "Je voudrais réserver une chambre."
               },
               {
-                "fr": "un quartier",
-                "ar": "حيّ",
-                "example": "Mon quartier est calme et bien desservi."
+                "fr": "un séjour",
+                "ar": "إقامة",
+                "example": "Notre séjour dure cinq jours."
               },
               {
-                "fr": "un loyer",
-                "ar": "إيجار",
-                "example": "Le loyer comprend-il les charges ?"
+                "fr": "disponible",
+                "ar": "متاح",
+                "example": "Avez-vous une chambre disponible ?"
               },
               {
-                "fr": "à proximité de",
-                "ar": "بالقرب من",
-                "example": "Il y a une pharmacie à proximité."
+                "fr": "à l’avance",
+                "ar": "مسبقاً",
+                "example": "Il vaut mieux acheter les billets à l’avance."
               }
             ],
             "sessions": [
@@ -1472,24 +1472,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Articles partitifs et quantités",
             "vocab": [
               {
-                "fr": "un logement",
-                "ar": "مسكن",
-                "example": "Je cherche un logement près du centre."
+                "fr": "un ingrédient",
+                "ar": "مكوّن",
+                "example": "Il manque un ingrédient dans la recette."
               },
               {
-                "fr": "un quartier",
-                "ar": "حيّ",
-                "example": "Mon quartier est calme et bien desservi."
+                "fr": "une portion",
+                "ar": "حصة طعام",
+                "example": "Je voudrais une petite portion."
               },
               {
-                "fr": "un loyer",
-                "ar": "إيجار",
-                "example": "Le loyer comprend-il les charges ?"
+                "fr": "un plat équilibré",
+                "ar": "وجبة متوازنة",
+                "example": "Un plat équilibré contient des légumes."
               },
               {
-                "fr": "à proximité de",
-                "ar": "بالقرب من",
-                "example": "Il y a une pharmacie à proximité."
+                "fr": "préparer",
+                "ar": "يحضّر",
+                "example": "Nous allons préparer le dîner ensemble."
               }
             ],
             "sessions": [
@@ -1612,24 +1612,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Pronoms COD/COI dans les situations courantes",
             "vocab": [
               {
-                "fr": "un logement",
-                "ar": "مسكن",
-                "example": "Je cherche un logement près du centre."
+                "fr": "une candidature",
+                "ar": "طلب ترشح",
+                "example": "J’ai envoyé ma candidature hier."
               },
               {
-                "fr": "un quartier",
-                "ar": "حيّ",
-                "example": "Mon quartier est calme et bien desservi."
+                "fr": "un entretien",
+                "ar": "مقابلة",
+                "example": "Je prépare mon entretien d’embauche."
               },
               {
-                "fr": "un loyer",
-                "ar": "إيجار",
-                "example": "Le loyer comprend-il les charges ?"
+                "fr": "une compétence",
+                "ar": "مهارة",
+                "example": "La communication est une compétence importante."
               },
               {
-                "fr": "à proximité de",
-                "ar": "بالقرب من",
-                "example": "Il y a une pharmacie à proximité."
+                "fr": "postuler",
+                "ar": "يتقدّم لوظيفة",
+                "example": "Je souhaite postuler à ce poste."
               }
             ],
             "sessions": [
@@ -1752,24 +1752,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Cause et conséquence : parce que, donc, alors",
             "vocab": [
               {
-                "fr": "un logement",
-                "ar": "مسكن",
-                "example": "Je cherche un logement près du centre."
+                "fr": "un proche",
+                "ar": "شخص مقرّب",
+                "example": "Je vais rendre visite à un proche."
               },
               {
-                "fr": "un quartier",
-                "ar": "حيّ",
-                "example": "Mon quartier est calme et bien desservi."
+                "fr": "s’entendre avec",
+                "ar": "ينسجم مع",
+                "example": "Je m’entends bien avec mes collègues."
               },
               {
-                "fr": "un loyer",
-                "ar": "إيجار",
-                "example": "Le loyer comprend-il les charges ?"
+                "fr": "un rendez-vous",
+                "ar": "موعد",
+                "example": "Nous avons rendez-vous à dix heures."
               },
               {
-                "fr": "à proximité de",
-                "ar": "بالقرب من",
-                "example": "Il y a une pharmacie à proximité."
+                "fr": "s’entraider",
+                "ar": "يساعد بعضنا بعضاً",
+                "example": "Dans notre équipe, nous nous entraidons."
               }
             ],
             "sessions": [
@@ -1892,24 +1892,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Révision A2 : questions, négation, temps, connecteurs",
             "vocab": [
               {
-                "fr": "un logement",
-                "ar": "مسكن",
-                "example": "Je cherche un logement près du centre."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un quartier",
-                "ar": "حيّ",
-                "example": "Mon quartier est calme et bien desservi."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "un loyer",
-                "ar": "إيجار",
-                "example": "Le loyer comprend-il les charges ?"
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "à proximité de",
-                "ar": "بالقرب من",
-                "example": "Il y a une pharmacie à proximité."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -2608,24 +2608,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Exprimer une opinion : à mon avis, selon moi, je trouve que",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "à mon avis",
+                "ar": "في رأيي",
+                "example": "À mon avis, cette solution est plus efficace."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "en revanche",
+                "ar": "في المقابل",
+                "example": "Le coût est élevé ; en revanche, le résultat est durable."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "un point de vue",
+                "ar": "وجهة نظر",
+                "example": "Je comprends votre point de vue."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "nuancer",
+                "ar": "يدقّق / يلطّف الرأي",
+                "example": "Je voudrais nuancer cette affirmation."
               }
             ],
             "sessions": [
@@ -2748,24 +2748,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Opposition et concession : pourtant, cependant, en revanche",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "à mon avis",
+                "ar": "في رأيي",
+                "example": "À mon avis, cette solution est plus efficace."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "en revanche",
+                "ar": "في المقابل",
+                "example": "Le coût est élevé ; en revanche, le résultat est durable."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "un point de vue",
+                "ar": "وجهة نظر",
+                "example": "Je comprends votre point de vue."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "nuancer",
+                "ar": "يدقّق / يلطّف الرأي",
+                "example": "Je voudrais nuancer cette affirmation."
               }
             ],
             "sessions": [
@@ -2888,24 +2888,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Cause et conséquence : puisque, donc, par conséquent",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "à mon avis",
+                "ar": "في رأيي",
+                "example": "À mon avis, cette solution est plus efficace."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "en revanche",
+                "ar": "في المقابل",
+                "example": "Le coût est élevé ; en revanche, le résultat est durable."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "un point de vue",
+                "ar": "وجهة نظر",
+                "example": "Je comprends votre point de vue."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "nuancer",
+                "ar": "يدقّق / يلطّف الرأي",
+                "example": "Je voudrais nuancer cette affirmation."
               }
             ],
             "sessions": [
@@ -3028,24 +3028,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Structurer une présentation : introduction, arguments, conclusion",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "à mon avis",
+                "ar": "في رأيي",
+                "example": "À mon avis, cette solution est plus efficace."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "en revanche",
+                "ar": "في المقابل",
+                "example": "Le coût est élevé ; en revanche, le résultat est durable."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "un point de vue",
+                "ar": "وجهة نظر",
+                "example": "Je comprends votre point de vue."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "nuancer",
+                "ar": "يدقّق / يلطّف الرأي",
+                "example": "Je voudrais nuancer cette affirmation."
               }
             ],
             "sessions": [
@@ -3176,24 +3176,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Registre professionnel : salutations, demandes et formules de politesse",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "une candidature",
+                "ar": "طلب ترشح",
+                "example": "J’ai envoyé ma candidature hier."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "un entretien",
+                "ar": "مقابلة",
+                "example": "Je prépare mon entretien d’embauche."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "une compétence",
+                "ar": "مهارة",
+                "example": "La communication est une compétence importante."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "postuler",
+                "ar": "يتقدّم لوظيفة",
+                "example": "Je souhaite postuler à ce poste."
               }
             ],
             "sessions": [
@@ -3316,24 +3316,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Conditionnel de politesse : je souhaiterais, pourriez-vous",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "une candidature",
+                "ar": "طلب ترشح",
+                "example": "J’ai envoyé ma candidature hier."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "un entretien",
+                "ar": "مقابلة",
+                "example": "Je prépare mon entretien d’embauche."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "une compétence",
+                "ar": "مهارة",
+                "example": "La communication est une compétence importante."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "postuler",
+                "ar": "يتقدّم لوظيفة",
+                "example": "Je souhaite postuler à ce poste."
               }
             ],
             "sessions": [
@@ -3456,24 +3456,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Discours rapporté : il a expliqué que…",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "une candidature",
+                "ar": "طلب ترشح",
+                "example": "J’ai envoyé ma candidature hier."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "un entretien",
+                "ar": "مقابلة",
+                "example": "Je prépare mon entretien d’embauche."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "une compétence",
+                "ar": "مهارة",
+                "example": "La communication est une compétence importante."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "postuler",
+                "ar": "يتقدّم لوظيفة",
+                "example": "Je souhaite postuler à ce poste."
               }
             ],
             "sessions": [
@@ -3596,24 +3596,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "CV, courriel formel et entretien : clarté et registre",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "une candidature",
+                "ar": "طلب ترشح",
+                "example": "J’ai envoyé ma candidature hier."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "un entretien",
+                "ar": "مقابلة",
+                "example": "Je prépare mon entretien d’embauche."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "une compétence",
+                "ar": "مهارة",
+                "example": "La communication est une compétence importante."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "postuler",
+                "ar": "يتقدّم لوظيفة",
+                "example": "Je souhaite postuler à ce poste."
               }
             ],
             "sessions": [
@@ -3744,24 +3744,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Hypothèse : si + présent / futur; si + imparfait / conditionnel",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "un enjeu",
+                "ar": "قضية مهمّة",
+                "example": "L’accès à l’éducation est un enjeu majeur."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "mettre en œuvre",
+                "ar": "ينفّذ",
+                "example": "La ville veut mettre en œuvre un nouveau plan."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "une conséquence",
+                "ar": "نتيجة",
+                "example": "Cette décision aura une conséquence à long terme."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "une approche",
+                "ar": "نهج / مقاربة",
+                "example": "Une approche globale peut être plus efficace."
               }
             ],
             "sessions": [
@@ -3884,24 +3884,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Exprimer la certitude, la probabilité et le doute",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "les émissions",
+                "ar": "الانبعاثات",
+                "example": "Il faut réduire les émissions de carbone."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "la résilience",
+                "ar": "القدرة على الصمود",
+                "example": "La résilience des villes demande une planification."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "un levier",
+                "ar": "وسيلة فعّالة",
+                "example": "Les transports publics sont un levier important."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "l’adaptation",
+                "ar": "التكيّف",
+                "example": "L’adaptation au changement climatique est nécessaire."
               }
             ],
             "sessions": [
@@ -4024,24 +4024,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Cause, conséquence et but",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "un enjeu",
+                "ar": "قضية مهمّة",
+                "example": "L’accès à l’éducation est un enjeu majeur."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "mettre en œuvre",
+                "ar": "ينفّذ",
+                "example": "La ville veut mettre en œuvre un nouveau plan."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "une conséquence",
+                "ar": "نتيجة",
+                "example": "Cette décision aura une conséquence à long terme."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "une approche",
+                "ar": "نهج / مقاربة",
+                "example": "Une approche globale peut être plus efficace."
               }
             ],
             "sessions": [
@@ -4164,24 +4164,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Répondre à une objection et justifier une recommandation",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "un enjeu",
+                "ar": "قضية مهمّة",
+                "example": "L’accès à l’éducation est un enjeu majeur."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "mettre en œuvre",
+                "ar": "ينفّذ",
+                "example": "La ville veut mettre en œuvre un nouveau plan."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "une conséquence",
+                "ar": "نتيجة",
+                "example": "Cette décision aura une conséquence à long terme."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "une approche",
+                "ar": "نهج / مقاربة",
+                "example": "Une approche globale peut être plus efficace."
               }
             ],
             "sessions": [
@@ -4312,24 +4312,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Résumé et reformulation sans copier la source",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "une synthèse",
+                "ar": "تركيب / خلاصة",
+                "example": "La synthèse met en relation plusieurs documents."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "un constat",
+                "ar": "استنتاج من المعطيات",
+                "example": "Le rapport présente trois constats principaux."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "en revanche",
+                "ar": "في المقابل",
+                "example": "Les deux sources concordent ; en revanche, elles diffèrent sur les causes."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "en définitive",
+                "ar": "في نهاية المطاف",
+                "example": "En définitive, la solution reste à discuter."
               }
             ],
             "sessions": [
@@ -4452,24 +4452,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Pronoms relatifs et cohésion du texte",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "à mon avis",
+                "ar": "في رأيي",
+                "example": "À mon avis, cette solution est plus efficace."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "en revanche",
+                "ar": "في المقابل",
+                "example": "Le coût est élevé ; en revanche, le résultat est durable."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "un point de vue",
+                "ar": "وجهة نظر",
+                "example": "Je comprends votre point de vue."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "nuancer",
+                "ar": "يدقّق / يلطّف الرأي",
+                "example": "Je voudrais nuancer cette affirmation."
               }
             ],
             "sessions": [
@@ -4592,24 +4592,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Comparer deux sources et signaler les points communs",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "une synthèse",
+                "ar": "تركيب / خلاصة",
+                "example": "La synthèse met en relation plusieurs documents."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "un constat",
+                "ar": "استنتاج من المعطيات",
+                "example": "Le rapport présente trois constats principaux."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "en revanche",
+                "ar": "في المقابل",
+                "example": "Les deux sources concordent ; en revanche, elles diffèrent sur les causes."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "en définitive",
+                "ar": "في نهاية المطاف",
+                "example": "En définitive, la solution reste à discuter."
               }
             ],
             "sessions": [
@@ -4732,24 +4732,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Organiser un compte rendu : contexte, constats, conclusion",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
+                "fr": "à mon avis",
+                "ar": "في رأيي",
+                "example": "À mon avis, cette solution est plus efficace."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "en revanche",
+                "ar": "في المقابل",
+                "example": "Le coût est élevé ; en revanche, le résultat est durable."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "un point de vue",
+                "ar": "وجهة نظر",
+                "example": "Je comprends votre point de vue."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "nuancer",
+                "ar": "يدقّق / يلطّف الرأي",
+                "example": "Je voudrais nuancer cette affirmation."
               }
             ],
             "sessions": [
@@ -4880,24 +4880,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Thèse, arguments, exemples et conclusion",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une thèse",
+                "ar": "أطروحة / موقف رئيسي",
+                "example": "La thèse doit être exprimée clairement."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un argument",
+                "ar": "حجّة",
+                "example": "Chaque argument doit être appuyé par un exemple."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "une objection",
+                "ar": "اعتراض",
+                "example": "Il faut répondre à l’objection principale."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "étayer",
+                "ar": "يدعم بالحجج",
+                "example": "Les données étayent cette conclusion."
               }
             ],
             "sessions": [
@@ -5020,24 +5020,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Connecteurs d’opposition et de concession",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une thèse",
+                "ar": "أطروحة / موقف رئيسي",
+                "example": "La thèse doit être exprimée clairement."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un argument",
+                "ar": "حجّة",
+                "example": "Chaque argument doit être appuyé par un exemple."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "une objection",
+                "ar": "اعتراض",
+                "example": "Il faut répondre à l’objection principale."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "étayer",
+                "ar": "يدعم بالحجج",
+                "example": "Les données étayent cette conclusion."
               }
             ],
             "sessions": [
@@ -5160,24 +5160,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Voix passive et nominalisation",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une thèse",
+                "ar": "أطروحة / موقف رئيسي",
+                "example": "La thèse doit être exprimée clairement."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un argument",
+                "ar": "حجّة",
+                "example": "Chaque argument doit être appuyé par un exemple."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "une objection",
+                "ar": "اعتراض",
+                "example": "Il faut répondre à l’objection principale."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "étayer",
+                "ar": "يدعم بالحجج",
+                "example": "Les données étayent cette conclusion."
               }
             ],
             "sessions": [
@@ -5300,24 +5300,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Hiérarchiser les arguments et éviter les répétitions",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une thèse",
+                "ar": "أطروحة / موقف رئيسي",
+                "example": "La thèse doit être exprimée clairement."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un argument",
+                "ar": "حجّة",
+                "example": "Chaque argument doit être appuyé par un exemple."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "une objection",
+                "ar": "اعتراض",
+                "example": "Il faut répondre à l’objection principale."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "étayer",
+                "ar": "يدعم بالحجج",
+                "example": "Les données étayent cette conclusion."
               }
             ],
             "sessions": [
@@ -5448,24 +5448,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Subjonctif après bien que / il faut que",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une thèse",
+                "ar": "أطروحة / موقف رئيسي",
+                "example": "La thèse doit être exprimée clairement."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un argument",
+                "ar": "حجّة",
+                "example": "Chaque argument doit être appuyé par un exemple."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "une objection",
+                "ar": "اعتراض",
+                "example": "Il faut répondre à l’objection principale."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "étayer",
+                "ar": "يدعم بالحجج",
+                "example": "Les données étayent cette conclusion."
               }
             ],
             "sessions": [
@@ -5588,24 +5588,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Concession : certes, toutefois, néanmoins",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une thèse",
+                "ar": "أطروحة / موقف رئيسي",
+                "example": "La thèse doit être exprimée clairement."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un argument",
+                "ar": "حجّة",
+                "example": "Chaque argument doit être appuyé par un exemple."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "une objection",
+                "ar": "اعتراض",
+                "example": "Il faut répondre à l’objection principale."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "étayer",
+                "ar": "يدعم بالحجج",
+                "example": "Les données étayent cette conclusion."
               }
             ],
             "sessions": [
@@ -5728,24 +5728,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Conditionnel pour nuancer une affirmation",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une thèse",
+                "ar": "أطروحة / موقف رئيسي",
+                "example": "La thèse doit être exprimée clairement."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un argument",
+                "ar": "حجّة",
+                "example": "Chaque argument doit être appuyé par un exemple."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "une objection",
+                "ar": "اعتراض",
+                "example": "Il faut répondre à l’objection principale."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "étayer",
+                "ar": "يدعم بالحجج",
+                "example": "Les données étayent cette conclusion."
               }
             ],
             "sessions": [
@@ -5868,24 +5868,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Débat : reformuler, contester avec tact, conclure",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une thèse",
+                "ar": "أطروحة / موقف رئيسي",
+                "example": "La thèse doit être exprimée clairement."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un argument",
+                "ar": "حجّة",
+                "example": "Chaque argument doit être appuyé par un exemple."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "une objection",
+                "ar": "اعتراض",
+                "example": "Il faut répondre à l’objection principale."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "étayer",
+                "ar": "يدعم بالحجج",
+                "example": "Les données étayent cette conclusion."
               }
             ],
             "sessions": [
@@ -6016,24 +6016,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Registre formel et demandes argumentées",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une candidature",
+                "ar": "طلب ترشح",
+                "example": "J’ai envoyé ma candidature hier."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un entretien",
+                "ar": "مقابلة",
+                "example": "Je prépare mon entretien d’embauche."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "une compétence",
+                "ar": "مهارة",
+                "example": "La communication est une compétence importante."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "postuler",
+                "ar": "يتقدّم لوظيفة",
+                "example": "Je souhaite postuler à ce poste."
               }
             ],
             "sessions": [
@@ -6156,24 +6156,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Formules de réclamation et propositions de solution",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une candidature",
+                "ar": "طلب ترشح",
+                "example": "J’ai envoyé ma candidature hier."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un entretien",
+                "ar": "مقابلة",
+                "example": "Je prépare mon entretien d’embauche."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "une compétence",
+                "ar": "مهارة",
+                "example": "La communication est une compétence importante."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "postuler",
+                "ar": "يتقدّم لوظيفة",
+                "example": "Je souhaite postuler à ce poste."
               }
             ],
             "sessions": [
@@ -6296,24 +6296,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Discours rapporté et reformulation",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une candidature",
+                "ar": "طلب ترشح",
+                "example": "J’ai envoyé ma candidature hier."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un entretien",
+                "ar": "مقابلة",
+                "example": "Je prépare mon entretien d’embauche."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "une compétence",
+                "ar": "مهارة",
+                "example": "La communication est une compétence importante."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "postuler",
+                "ar": "يتقدّم لوظيفة",
+                "example": "Je souhaite postuler à ce poste."
               }
             ],
             "sessions": [
@@ -6436,24 +6436,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Structurer une lettre ou un rapport administratif",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une candidature",
+                "ar": "طلب ترشح",
+                "example": "J’ai envoyé ma candidature hier."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un entretien",
+                "ar": "مقابلة",
+                "example": "Je prépare mon entretien d’embauche."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "une compétence",
+                "ar": "مهارة",
+                "example": "La communication est une compétence importante."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "postuler",
+                "ar": "يتقدّم لوظيفة",
+                "example": "Je souhaite postuler à ce poste."
               }
             ],
             "sessions": [
@@ -6584,24 +6584,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Distinguer fait, opinion, hypothèse et interprétation",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une source fiable",
+                "ar": "مصدر موثوق",
+                "example": "Il faut vérifier si la source est fiable."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un point de vue",
+                "ar": "وجهة نظر",
+                "example": "L’article présente plusieurs points de vue."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "corroborer",
+                "ar": "يعزّز بدليل",
+                "example": "Une deuxième source peut corroborer cette information."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "un biais",
+                "ar": "تحيّز",
+                "example": "Il faut repérer un éventuel biais dans le récit."
               }
             ],
             "sessions": [
@@ -6724,24 +6724,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Rapporter les propos d’un journaliste ou d’un témoin",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une source fiable",
+                "ar": "مصدر موثوق",
+                "example": "Il faut vérifier si la source est fiable."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un point de vue",
+                "ar": "وجهة نظر",
+                "example": "L’article présente plusieurs points de vue."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "corroborer",
+                "ar": "يعزّز بدليل",
+                "example": "Une deuxième source peut corroborer cette information."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "un biais",
+                "ar": "تحيّز",
+                "example": "Il faut repérer un éventuel biais dans le récit."
               }
             ],
             "sessions": [
@@ -6864,24 +6864,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Nominalisation et vocabulaire abstrait",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une source fiable",
+                "ar": "مصدر موثوق",
+                "example": "Il faut vérifier si la source est fiable."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un point de vue",
+                "ar": "وجهة نظر",
+                "example": "L’article présente plusieurs points de vue."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "corroborer",
+                "ar": "يعزّز بدليل",
+                "example": "Une deuxième source peut corroborer cette information."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "un biais",
+                "ar": "تحيّز",
+                "example": "Il faut repérer un éventuel biais dans le récit."
               }
             ],
             "sessions": [
@@ -7004,24 +7004,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Comparer des sources et construire une synthèse",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une source fiable",
+                "ar": "مصدر موثوق",
+                "example": "Il faut vérifier si la source est fiable."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un point de vue",
+                "ar": "وجهة نظر",
+                "example": "L’article présente plusieurs points de vue."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "corroborer",
+                "ar": "يعزّز بدليل",
+                "example": "Une deuxième source peut corroborer cette information."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "un biais",
+                "ar": "تحيّز",
+                "example": "Il faut repérer un éventuel biais dans le récit."
               }
             ],
             "sessions": [
@@ -7167,9 +7167,9 @@ window.FRENCH_CURRICULUM = {
                 "example": "Les transports publics sont un levier important."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "l’adaptation",
+                "ar": "التكيّف",
+                "example": "L’adaptation au changement climatique est nécessaire."
               }
             ],
             "sessions": [
@@ -7307,9 +7307,9 @@ window.FRENCH_CURRICULUM = {
                 "example": "Les transports publics sont un levier important."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "l’adaptation",
+                "ar": "التكيّف",
+                "example": "L’adaptation au changement climatique est nécessaire."
               }
             ],
             "sessions": [
@@ -7447,9 +7447,9 @@ window.FRENCH_CURRICULUM = {
                 "example": "Les transports publics sont un levier important."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "l’adaptation",
+                "ar": "التكيّف",
+                "example": "L’adaptation au changement climatique est nécessaire."
               }
             ],
             "sessions": [
@@ -7587,9 +7587,9 @@ window.FRENCH_CURRICULUM = {
                 "example": "Les transports publics sont un levier important."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "l’adaptation",
+                "ar": "التكيّف",
+                "example": "L’adaptation au changement climatique est nécessaire."
               }
             ],
             "sessions": [
@@ -7720,24 +7720,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Cohésion : reprise pronominale et connecteurs",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une synthèse",
+                "ar": "تركيب / خلاصة",
+                "example": "La synthèse met en relation plusieurs documents."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un constat",
+                "ar": "استنتاج من المعطيات",
+                "example": "Le rapport présente trois constats principaux."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "en revanche",
+                "ar": "في المقابل",
+                "example": "Les deux sources concordent ; en revanche, elles diffèrent sur les causes."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "en définitive",
+                "ar": "في نهاية المطاف",
+                "example": "En définitive, la solution reste à discuter."
               }
             ],
             "sessions": [
@@ -7860,24 +7860,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Paraphrase et synthèse de plusieurs sources",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une synthèse",
+                "ar": "تركيب / خلاصة",
+                "example": "La synthèse met en relation plusieurs documents."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un constat",
+                "ar": "استنتاج من المعطيات",
+                "example": "Le rapport présente trois constats principaux."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "en revanche",
+                "ar": "في المقابل",
+                "example": "Les deux sources concordent ; en revanche, elles diffèrent sur les causes."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "en définitive",
+                "ar": "في نهاية المطاف",
+                "example": "En définitive, la solution reste à discuter."
               }
             ],
             "sessions": [
@@ -8000,24 +8000,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Registre académique/professionnel et précision lexicale",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
+                "fr": "une synthèse",
+                "ar": "تركيب / خلاصة",
+                "example": "La synthèse met en relation plusieurs documents."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un constat",
+                "ar": "استنتاج من المعطيات",
+                "example": "Le rapport présente trois constats principaux."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "en revanche",
+                "ar": "في المقابل",
+                "example": "Les deux sources concordent ; en revanche, elles diffèrent sur les causes."
               },
               {
-                "fr": "une politique publique",
-                "ar": "سياسة عامة",
-                "example": "Cette politique publique encourage la rénovation."
+                "fr": "en définitive",
+                "ar": "في نهاية المطاف",
+                "example": "En définitive, la solution reste à discuter."
               }
             ],
             "sessions": [
@@ -8140,24 +8140,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Réviser un texte : logique, répétitions, grammaire, registre",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une synthèse",
+                "ar": "تركيب / خلاصة",
+                "example": "La synthèse met en relation plusieurs documents."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un constat",
+                "ar": "استنتاج من المعطيات",
+                "example": "Le rapport présente trois constats principaux."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "en revanche",
+                "ar": "في المقابل",
+                "example": "Les deux sources concordent ; en revanche, elles diffèrent sur les causes."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "en définitive",
+                "ar": "في نهاية المطاف",
+                "example": "En définitive, la solution reste à discuter."
               }
             ],
             "sessions": [
@@ -8288,24 +8288,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Identifier le thème, la thèse et l’intention du locuteur",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -8428,24 +8428,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Prise de notes : chiffres, noms, arguments, exemples",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -8568,24 +8568,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Inférences, synonymes contextuels et connecteurs",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -8708,24 +8708,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Gestion du temps et vérification des réponses",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -8856,24 +8856,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Plan dialectique : position, arguments, objection, réponse",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -8996,24 +8996,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Développement d’un paragraphe : idée, preuve, explication",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -9136,24 +9136,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Nuancer avec certes, pourtant, en revanche, bien que",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -9276,24 +9276,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Révision de cohérence, lexique, accords et ponctuation",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -9424,24 +9424,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Présenter la problématique et définir les termes",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -9564,24 +9564,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Transitions orales et hiérarchie des idées",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -9704,24 +9704,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Répondre aux questions et nuancer son point de vue",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -9844,24 +9844,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Interaction : clarifier, reformuler, concéder, défendre",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -9992,24 +9992,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Analyse de consigne et gestion du temps",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -10132,24 +10132,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Compréhension orale/écrite : preuves textuelles",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -10272,24 +10272,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Production écrite : plan, rédaction et relecture",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
@@ -10412,24 +10412,24 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Production orale : exposé structuré et débat simulé",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
               }
             ],
             "sessions": [
