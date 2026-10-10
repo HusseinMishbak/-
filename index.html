@@ -1234,34 +1234,60 @@
  function setupChecks(){$$('.task-check').forEach(cb=>{cb.addEventListener('change',()=>{state.checks[cb.dataset.key]=cb.checked;save();})});$$('.week-check').forEach(cb=>{cb.addEventListener('change',()=>{state.weeks[cb.dataset.week]=cb.checked;save();toast(cb.checked?'تم تحديد الأسبوع مكتملاً':'تم إلغاء اكتمال الأسبوع')})})}
  function setupVocab(){const search=$('#vocabSearch');const rows=$$('tr[data-vocab]');$('#vocabCount').textContent=rows.length+' مدخلاً';if(search)search.addEventListener('input',()=>{const q=search.value.trim().toLocaleLowerCase();let visible=0;rows.forEach(row=>{const txt=(row.innerText+' '+(row.dataset.vocab||'')).toLocaleLowerCase();const ok=!q||txt.includes(q);row.style.display=ok?'':'none';if(ok)visible++});$('#vocabCount').textContent=visible+' / '+rows.length+' مدخل';$$('.vocab-section').forEach(sec=>{const has= $$('tr[data-vocab]',sec).some(r=>r.style.display!=='none');sec.style.display=has?'':'none';})});
  rows.forEach(row=>{const wordCell=$('.word',row);const exampleCell=$('.example',row);if(wordCell&&!$('.audio-btn',wordCell)){const b=document.createElement('button');b.type='button';b.className='audio-btn';b.innerHTML='🔊 استمع';b.title='استمع إلى نطق الكلمة الفرنسية';b.addEventListener('click',()=>speak($('.fr',wordCell)?.textContent||wordCell.textContent));wordCell.appendChild(b);}if(exampleCell&&!$('.audio-btn',exampleCell)){const b=document.createElement('button');b.type='button';b.className='audio-btn';b.innerHTML='▶ استمع للمثال';b.title='استمع إلى المثال الفرنسي';b.addEventListener('click',()=>speak($('.fr',exampleCell)?.textContent||exampleCell.textContent));exampleCell.appendChild(b);}})}
+ let cachedSpeechVoices=[];
+ function availableSpeechVoices(){
+  if(!('speechSynthesis' in window))return [];
+  const current=window.speechSynthesis.getVoices()||[];
+  if(current.length)cachedSpeechVoices=current;
+  return current.length?current:cachedSpeechVoices;
+ }
+ function preferredFrenchVoice(){
+  const voices=availableSpeechVoices();
+  const french=voices.filter(v=>/^fr(?:[-_]|$)/i.test(v.lang||''));
+  const normalName=v=>String(v.name||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase();
+  const amelie=french.find(v=>normalName(v).includes('amelie')&&normalName(v).includes('premium'))
+   ||french.find(v=>normalName(v).includes('amelie'));
+  if(amelie)return amelie;
+  const frFR=french.filter(v=>/^fr[-_]FR(?:$|[-_])/i.test(v.lang||''));
+  const higherQuality=frFR.find(v=>/premium|enhanced|natural|neural/i.test(normalName(v)));
+  return higherQuality||frFR.find(v=>v.localService)||frFR[0]||french.find(v=>v.localService)||french[0]||null;
+ }
+ if('speechSynthesis' in window){
+  try{cachedSpeechVoices=window.speechSynthesis.getVoices()||[];}catch(_){}
+  if(typeof window.speechSynthesis.addEventListener==='function'){
+   window.speechSynthesis.addEventListener('voiceschanged',()=>{cachedSpeechVoices=window.speechSynthesis.getVoices()||[];});
+  }else{
+   window.speechSynthesis.onvoiceschanged=()=>{cachedSpeechVoices=window.speechSynthesis.getVoices()||[];};
+  }
+ }
  function makeFrenchUtterance(text,rate,onFinished){
   const utterance=new SpeechSynthesisUtterance(text);utterance.lang='fr-FR';utterance.rate=rate;
-  const voices=window.speechSynthesis.getVoices();const voice=voices.find(v=>/^fr-FR/i.test(v.lang||''))||voices.find(v=>/^fr(?:-|$)/i.test(v.lang||''));if(voice)utterance.voice=voice;
+  const voice=preferredFrenchVoice();if(voice)utterance.voice=voice;
   if(onFinished){utterance.onend=onFinished;utterance.onerror=onFinished;}
   else utterance.onerror=()=>toast('تعذر تشغيل النطق. تحقق من إعدادات الصوت في جهازك.');
   return utterance;
  }
  function speakSingleTerm(text){
-  const clean=String(text||'').replace(/\s+/g,' ').trim();if(!clean)return;
+  const clean=String(text||'').replace(/\\s+/g,' ').trim();if(!clean)return;
   if(!('speechSynthesis' in window)){toast('ميزة النطق غير متاحة في هذا المتصفح. استخدم رابط Forvo في قسم المصادر.');return;}
   window.speechSynthesis.cancel();
-  window.speechSynthesis.speak(makeFrenchUtterance(clean,.64));
+  window.speechSynthesis.speak(makeFrenchUtterance(clean,.78));
  }
  function speak(text){
-  const clean=String(text||'').replace(/\s+/g,' ').trim();if(!clean)return;
+  const clean=String(text||'').replace(/\\s+/g,' ').trim();if(!clean)return;
   if(!('speechSynthesis' in window)){toast('ميزة النطق غير متاحة في هذا المتصفح. استخدم رابط Forvo في قسم المصادر.');return;}
-  const segments=clean.split(/\s*[·•|]\s*/).map(part=>part.trim()).filter(Boolean);
+  const segments=clean.split(/\\s*[·•|]\\s*/).map(part=>part.trim()).filter(Boolean);
   window.speechSynthesis.cancel();
   if(segments.length>1){
    let index=0;
    const speakNext=()=>{
     if(index>=segments.length)return;
     const current=segments[index++];const next=()=>{if(index<segments.length)window.setTimeout(speakNext,330);};
-    window.speechSynthesis.speak(makeFrenchUtterance(current,.68,next));
+    window.speechSynthesis.speak(makeFrenchUtterance(current,.84,next));
    };
    speakNext();return;
   }
-  window.speechSynthesis.speak(makeFrenchUtterance(clean,.78));
+  window.speechSynthesis.speak(makeFrenchUtterance(clean,.98));
  }
 
  const QUIZ=[
@@ -1347,7 +1373,7 @@ function buildUnitIntroductionHtml(unit){
  const outcomes=(intro.outcomes||[]).map(x=>'<li>'+E(x)+'</li>').join('');
  const points=(intro.keyPoints||[]).map(x=>'<li>'+E(x)+'</li>').join('');
  const examples=(intro.examples||[]).map(x=>'<div class="unit-intro-example"><span class="latin" lang="fr" dir="ltr">'+E(x.fr)+'</span><button type="button" class="audio-btn book-example-audio" data-example-audio="'+E(x.fr)+'" title="استمع ببطء إلى المثال" aria-label="استمع ببطء إلى: '+E(x.fr)+'">🔊 استمع ببطء</button><span>'+E(x.ar)+'</span></div>').join('');
- const nums=(intro.numbers||[]).map(n=>'<div class="unit-number-card"><span class="unit-number-value">'+E(n[0])+'</span><span class="latin" lang="fr" dir="ltr">'+E(n[1])+'</span><button type="button" class="audio-btn book-example-audio" data-example-audio="'+E(n[1])+'" title="استمع ببطء إلى العدد" aria-label="استمع ببطء إلى: '+E(n[1])+'">🔊 استمع ببطء</button><span class="unit-number-pronunciation">النطق التقريبي: <b dir="rtl">'+E(n[2])+'</b></span><span class="unit-number-meaning">'+E(n[3])+'</span></div>').join('');
+ const nums=(intro.numbers||[]).map(n=>'<div class="unit-number-card"><span class="unit-number-value">'+E(n[0])+'</span><span class="latin" lang="fr" dir="ltr">'+E(n[1])+'</span><button type="button" class="audio-btn book-example-audio" data-example-audio="'+E(n[1])+'" data-example-rate="slow" title="استمع ببطء إلى العدد" aria-label="استمع ببطء إلى: '+E(n[1])+'">🔊 استمع ببطء</button><span class="unit-number-pronunciation">النطق التقريبي: <b dir="rtl">'+E(n[2])+'</b></span><span class="unit-number-meaning">'+E(n[3])+'</span></div>').join('');
  return '<section class="unit-introduction"><div class="unit-intro-header"><div><div class="kicker">OBJECTIFS · VOCABULAIRE · PRONONCIATION</div><h3>ابدأ من هنا: شرح الوحدة وأهدافها</h3></div><span class="book-chip">شرح مبسّط</span></div><p class="unit-intro-overview">'+E(intro.overview||unit.focus)+'</p><div class="unit-intro-columns"><div class="unit-intro-subpanel"><h4>ماذا ستتعلم؟</h4><ul>'+outcomes+'</ul></div><div class="unit-intro-subpanel"><h4>القواعد الأساسية</h4><ul>'+points+'</ul></div></div><div class="unit-intro-subpanel"><h4>أمثلة أساسية</h4><div class="unit-intro-examples">'+examples+'</div></div>'+(nums?'<details class="unit-number-panel" open><summary>'+E(intro.numbersTitle||'الأعداد وطريقة نطقها')+' <span>استمع إلى كل عدد منفرداً</span></summary><p class="unit-number-note">'+E(intro.note||'النطق العربي تقريبي، فاستمع إلى الصوت الفرنسي أيضاً.')+'</p><div class="unit-number-grid">'+nums+'</div></details>':'')+'</section>';
 }
 function buildUnitGuide(unit){
@@ -1612,7 +1638,8 @@ function setupBookPractice(){
   const exampleAudio=event.target.closest('[data-example-audio]');
   if(exampleAudio){
    event.preventDefault();event.stopPropagation();
-   speakSingleTerm(exampleAudio.dataset.exampleAudio||'');
+   if(exampleAudio.dataset.exampleRate==='slow')speakSingleTerm(exampleAudio.dataset.exampleAudio||'');
+   else speak(exampleAudio.dataset.exampleAudio||'');
    return;
   }
   const sessionCheck=event.target.closest('[data-check-session]');
