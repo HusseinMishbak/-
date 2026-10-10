@@ -1181,26 +1181,32 @@
  rows.forEach(row=>{const wordCell=$('.word',row);const exampleCell=$('.example',row);if(wordCell&&!$('.audio-btn',wordCell)){const b=document.createElement('button');b.type='button';b.className='audio-btn';b.innerHTML='🔊 استمع';b.title='استمع إلى نطق الكلمة الفرنسية';b.addEventListener('click',()=>speak($('.fr',wordCell)?.textContent||wordCell.textContent));wordCell.appendChild(b);}if(exampleCell&&!$('.audio-btn',exampleCell)){const b=document.createElement('button');b.type='button';b.className='audio-btn';b.innerHTML='▶ استمع للمثال';b.title='استمع إلى المثال الفرنسي';b.addEventListener('click',()=>speak($('.fr',exampleCell)?.textContent||exampleCell.textContent));exampleCell.appendChild(b);}})}
  function makeFrenchUtterance(text,rate,onFinished){
   const utterance=new SpeechSynthesisUtterance(text);utterance.lang='fr-FR';utterance.rate=rate;
-  const voices=window.speechSynthesis.getVoices();const voice=voices.find(v=>v.lang&&v.lang.toLowerCase().startsWith('fr'));if(voice)utterance.voice=voice;
+  const voices=window.speechSynthesis.getVoices();const voice=voices.find(v=>/^fr-FR/i.test(v.lang||''))||voices.find(v=>/^fr(?:-|$)/i.test(v.lang||''));if(voice)utterance.voice=voice;
   if(onFinished){utterance.onend=onFinished;utterance.onerror=onFinished;}
   else utterance.onerror=()=>toast('تعذر تشغيل النطق. تحقق من إعدادات الصوت في جهازك.');
   return utterance;
  }
- function speak(text){
-  const clean=String(text||'').replace(/\s+/g,' ').trim();if(!clean)return;
+ function speakSingleTerm(text){
+  const clean=String(text||'').replace(/\\s+/g,' ').trim();if(!clean)return;
   if(!('speechSynthesis' in window)){toast('ميزة النطق غير متاحة في هذا المتصفح. استخدم رابط Forvo في قسم المصادر.');return;}
-  const segments=clean.split(/\s*[·•|]\s*/).map(part=>part.trim()).filter(Boolean);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(makeFrenchUtterance(clean,.64));
+ }
+ function speak(text){
+  const clean=String(text||'').replace(/\\s+/g,' ').trim();if(!clean)return;
+  if(!('speechSynthesis' in window)){toast('ميزة النطق غير متاحة في هذا المتصفح. استخدم رابط Forvo في قسم المصادر.');return;}
+  const segments=clean.split(/\\s*[·•|]\\s*/).map(part=>part.trim()).filter(Boolean);
   window.speechSynthesis.cancel();
   if(segments.length>1){
    let index=0;
    const speakNext=()=>{
     if(index>=segments.length)return;
-    const current=segments[index++];const next=()=>{if(index<segments.length)window.setTimeout(speakNext,170);};
-    window.speechSynthesis.speak(makeFrenchUtterance(current,.72,next));
+    const current=segments[index++];const next=()=>{if(index<segments.length)window.setTimeout(speakNext,330);};
+    window.speechSynthesis.speak(makeFrenchUtterance(current,.68,next));
    };
    speakNext();return;
   }
-  window.speechSynthesis.speak(makeFrenchUtterance(clean,.82));
+  window.speechSynthesis.speak(makeFrenchUtterance(clean,.78));
  }
 
  const QUIZ=[
@@ -1490,7 +1496,7 @@ function enhanceSentenceAudio(root=document){
    el.textContent='';
    segments.forEach((part,index)=>{
     const term=document.createElement('span');term.className='audio-term';term.lang='fr';term.dir='ltr';term.textContent=part;el.appendChild(term);
-    const button=document.createElement('button');button.type='button';button.className='audio-btn auto-speak-btn term-speak-btn';button.textContent='🔊';button.title='استمع إلى: '+part;button.setAttribute('aria-label','استمع منفرداً إلى '+part);button.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();speak(part);});el.appendChild(button);
+    const button=document.createElement('button');button.type='button';button.className='audio-btn auto-speak-btn term-speak-btn';button.textContent='🔊';button.title='استمع ببطء إلى المصطلح منفرداً: '+part;button.setAttribute('aria-label','استمع ببطء إلى المصطلح منفرداً '+part);button.dataset.speakTerm=part;button.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();speakSingleTerm(part);});el.appendChild(button);
     if(index<segments.length-1)el.appendChild(document.createTextNode(' · '));
    });
    return;
