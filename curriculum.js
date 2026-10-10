@@ -2460,6 +2460,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Nous nous habillons.",
               "ar": "نرتدي ملابسنا"
+            },
+            {
+              "fr": "Je prends le petit-déjeuner à sept heures.",
+              "ar": "أتناول الفطور الساعة السابعة."
+            },
+            {
+              "fr": "Je rentre à la maison à dix-huit heures.",
+              "ar": "أعود إلى المنزل الساعة السادسة مساءً."
+            },
+            {
+              "fr": "Je me lève tôt.",
+              "ar": "أستيقظ مبكراً."
             }
           ],
           "exercise": {
@@ -2487,6 +2499,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Je travaille à huit heures.",
               "ar": "أعمل الساعة الثامنة"
+            },
+            {
+              "fr": "Il est midi et demi.",
+              "ar": "الساعة الثانية عشرة والنصف."
+            },
+            {
+              "fr": "Le cours commence à neuf heures.",
+              "ar": "يبدأ الدرس الساعة التاسعة."
+            },
+            {
+              "fr": "Il est huit heures.",
+              "ar": "الساعة الثامنة."
             }
           ],
           "exercise": {
@@ -2514,6 +2538,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Ils sortent le samedi.",
               "ar": "يخرجون يوم السبت"
+            },
+            {
+              "fr": "Tu te couches tard.",
+              "ar": "أنت تذهب إلى النوم متأخراً."
+            },
+            {
+              "fr": "Nous nous préparons le matin.",
+              "ar": "نحن نستعد صباحاً."
+            },
+            {
+              "fr": "Elle se prépare vite.",
+              "ar": "هي تستعد بسرعة."
             }
           ],
           "exercise": {
@@ -2541,6 +2577,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Nous avons pris le bus.",
               "ar": "استقللنا الحافلة"
+            },
+            {
+              "fr": "Elle fait les courses le samedi.",
+              "ar": "هي تتسوق يوم السبت."
+            },
+            {
+              "fr": "Nous sortons avec nos amis.",
+              "ar": "نخرج مع أصدقائنا."
+            },
+            {
+              "fr": "Je fais du café.",
+              "ar": "أعد القهوة."
             }
           ],
           "exercise": {
@@ -2568,6 +2616,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Je ne sors plus le soir.",
               "ar": "لم أعد أخرج مساءً"
+            },
+            {
+              "fr": "Hier, j’ai préparé le dîner.",
+              "ar": "أمس أعددت العشاء."
+            },
+            {
+              "fr": "Il n’a jamais visité Paris.",
+              "ar": "هو لم يزر باريس قط."
+            },
+            {
+              "fr": "Nous avons mangé hier.",
+              "ar": "أكلنا أمس."
             }
           ],
           "exercise": {
@@ -2595,6 +2655,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Hier soir, j’ai lu un livre.",
               "ar": "مساء أمس قرأت كتاباً"
+            },
+            {
+              "fr": "Ensuite, je vais au travail.",
+              "ar": "بعد ذلك أذهب إلى العمل."
+            },
+            {
+              "fr": "Le week-end, je me repose.",
+              "ar": "في عطلة نهاية الأسبوع أستريح."
+            },
+            {
+              "fr": "Puis, je rentre chez moi.",
+              "ar": "ثم أعود إلى المنزل."
             }
           ],
           "exercise": {
@@ -2861,6 +2933,14 @@ window.FRENCH_CURRICULUM = {
           {
             "fr": "Je ne sors jamais le lundi.",
             "ar": "لا أخرج أبداً يوم الاثنين."
+          },
+          {
+            "fr": "Je me couche à vingt-deux heures.",
+            "ar": "أذهب إلى النوم الساعة العاشرة."
+          },
+          {
+            "fr": "Hier, j’ai lu un livre.",
+            "ar": "أمس قرأت كتاباً."
           }
         ],
         "numbersTitle": "الساعة والتوقيت",
@@ -2945,6 +3025,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Nous avons terminé le rapport.",
               "ar": "أنهينا التقرير"
+            },
+            {
+              "fr": "Je sais parler trois langues.",
+              "ar": "أعرف التحدث بثلاث لغات."
+            },
+            {
+              "fr": "J’ai travaillé dans une équipe.",
+              "ar": "عملت ضمن فريق."
+            },
+            {
+              "fr": "Je travaille dans une université.",
+              "ar": "أعمل في جامعة."
             }
           ],
           "exercise": {
@@ -2972,6 +3064,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Ils ont fait un exercice.",
               "ar": "أنجزوا تمريناً"
+            },
+            {
+              "fr": "Nous avons aidé les étudiants.",
+              "ar": "ساعدنا الطلاب."
+            },
+            {
+              "fr": "Elle a organisé une réunion.",
+              "ar": "نظمت اجتماعاً."
+            },
+            {
+              "fr": "Il a aidé son équipe.",
+              "ar": "ساعد فريقه."
             }
           ],
           "exercise": {
@@ -2999,6 +3103,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "J’aime les films qui font rire.",
               "ar": "أحب الأفلام المضحكة"
+            },
+            {
+              "fr": "C’est une personne qui aide les autres.",
+              "ar": "هذا شخص يساعد الآخرين."
+            },
+            {
+              "fr": "Voici le projet que nous avons réalisé.",
+              "ar": "هذا المشروع الذي أنجزناه."
+            },
+            {
+              "fr": "La personne qui parle est ma collègue.",
+              "ar": "الشخص الذي يتحدث هو زميلتي."
             }
           ],
           "exercise": {
@@ -3026,6 +3142,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "En 2026, elle a commencé un cours.",
               "ar": "في 2026 بدأت دورة"
+            },
+            {
+              "fr": "En 2025, j’ai suivi une formation.",
+              "ar": "في عام 2025 التحقت بدورة تدريبية."
+            },
+            {
+              "fr": "La semaine dernière, nous avons voyagé.",
+              "ar": "سافرنا الأسبوع الماضي."
+            },
+            {
+              "fr": "J’ai suivi un cours en 2024.",
+              "ar": "التحقت بدورة في 2024."
             }
           ],
           "exercise": {
@@ -3053,6 +3181,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Elle connaît le professeur.",
               "ar": "هي تعرف الأستاذ"
+            },
+            {
+              "fr": "Je connais bien cette université.",
+              "ar": "أعرف هذه الجامعة جيداً."
+            },
+            {
+              "fr": "Tu sais résoudre ce problème.",
+              "ar": "أنت تعرف كيف تحل هذه المشكلة."
+            },
+            {
+              "fr": "Je connais ce professeur.",
+              "ar": "أعرف هذا الأستاذ."
             }
           ],
           "exercise": {
@@ -3080,6 +3220,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Je sais organiser un projet.",
               "ar": "أعرف تنظيم مشروع"
+            },
+            {
+              "fr": "J’ai acquis de nouvelles compétences.",
+              "ar": "اكتسبت مهارات جديدة."
+            },
+            {
+              "fr": "Mon équipe a terminé le projet en juin.",
+              "ar": "أنهى فريقي المشروع في يونيو."
+            },
+            {
+              "fr": "Je peux travailler en équipe.",
+              "ar": "أستطيع العمل ضمن فريق."
             }
           ],
           "exercise": {
@@ -3338,6 +3490,14 @@ window.FRENCH_CURRICULUM = {
           {
             "fr": "Je sais utiliser un ordinateur.",
             "ar": "أعرف كيف أستخدم الحاسوب."
+          },
+          {
+            "fr": "J’ai participé à un projet important.",
+            "ar": "شاركت في مشروع مهم."
+          },
+          {
+            "fr": "Je connais une personne qui parle chinois.",
+            "ar": "أعرف شخصاً يتحدث الصينية."
           }
         ],
         "numbersTitle": "التواريخ والسنوات",
@@ -3410,6 +3570,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "des chaussures",
               "ar": "أحذية"
+            },
+            {
+              "fr": "Il fait froid aujourd’hui.",
+              "ar": "الجو بارد اليوم."
+            },
+            {
+              "fr": "En été, il fait chaud.",
+              "ar": "في الصيف يكون الجو حاراً."
+            },
+            {
+              "fr": "Il fait beau aujourd’hui.",
+              "ar": "الجو جميل اليوم."
             }
           ],
           "exercise": {
@@ -3437,6 +3609,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Vous pouvez répéter ?",
               "ar": "هل يمكنكم التكرار؟"
+            },
+            {
+              "fr": "Je cherche une chemise blanche.",
+              "ar": "أبحث عن قميص أبيض."
+            },
+            {
+              "fr": "Cette robe est bleue.",
+              "ar": "هذا الفستان أزرق."
+            },
+            {
+              "fr": "Je voudrais une jupe noire.",
+              "ar": "أود تنورة سوداء."
             }
           ],
           "exercise": {
@@ -3464,6 +3648,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Quelle taille faites-vous ?",
               "ar": "ما مقاسك؟"
+            },
+            {
+              "fr": "Avez-vous cette taille ?",
+              "ar": "هل لديكم هذا المقاس؟"
+            },
+            {
+              "fr": "Je peux payer par carte ?",
+              "ar": "هل يمكنني الدفع بالبطاقة؟"
+            },
+            {
+              "fr": "Quel est le prix ?",
+              "ar": "ما السعر؟"
             }
           ],
           "exercise": {
@@ -3491,6 +3687,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Tournez à gauche.",
               "ar": "انعطفوا يساراً"
+            },
+            {
+              "fr": "Je voudrais un manteau.",
+              "ar": "أود معطفاً."
+            },
+            {
+              "fr": "Nous pouvons essayer ces chaussures.",
+              "ar": "يمكننا تجربة هذه الأحذية."
+            },
+            {
+              "fr": "Vous pouvez répéter ?",
+              "ar": "هل يمكنكم التكرار؟"
             }
           ],
           "exercise": {
@@ -3518,6 +3726,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "des chaussures blanches",
               "ar": "أحذية بيضاء"
+            },
+            {
+              "fr": "Attendez un instant, s’il vous plaît.",
+              "ar": "انتظروا لحظة من فضلكم."
+            },
+            {
+              "fr": "Ne touchez pas, s’il vous plaît.",
+              "ar": "لا تلمسوا من فضلكم."
+            },
+            {
+              "fr": "Essayez cette taille.",
+              "ar": "جرّبوا هذا المقاس."
             }
           ],
           "exercise": {
@@ -3545,6 +3765,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Merci, bonne journée !",
               "ar": "شكراً، نهارك سعيد"
+            },
+            {
+              "fr": "Je voudrais deux chemises, s’il vous plaît.",
+              "ar": "أود قميصين من فضلك."
+            },
+            {
+              "fr": "Il pleut, je prends un parapluie.",
+              "ar": "إنها تمطر؛ سأخذ مظلة."
+            },
+            {
+              "fr": "Il fait chaud en juillet.",
+              "ar": "الجو حار في يوليو."
             }
           ],
           "exercise": {
@@ -3801,6 +4033,14 @@ window.FRENCH_CURRICULUM = {
           {
             "fr": "Vous pouvez m’aider ?",
             "ar": "هل يمكنكم مساعدتي؟"
+          },
+          {
+            "fr": "Combien coûtent ces chaussures ?",
+            "ar": "كم سعر هذه الأحذية؟"
+          },
+          {
+            "fr": "Je voudrais payer, s’il vous plaît.",
+            "ar": "أود الدفع من فضلك."
           }
         ],
         "numbersTitle": "الأعداد والأسعار",
@@ -3883,6 +4123,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "de l’eau",
               "ar": "ماء"
+            },
+            {
+              "fr": "Je prends du pain et du fromage.",
+              "ar": "آخذ خبزاً وجبناً."
+            },
+            {
+              "fr": "Nous mangeons des fruits.",
+              "ar": "نأكل فواكه."
+            },
+            {
+              "fr": "Je mange une pomme.",
+              "ar": "آكل تفاحة."
             }
           ],
           "exercise": {
@@ -3911,6 +4163,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Nous buvons de l’eau.",
               "ar": "نشرب ماءً"
+            },
+            {
+              "fr": "Ajoutez un peu de sel.",
+              "ar": "أضيفوا قليلاً من الملح."
+            },
+            {
+              "fr": "Coupez les tomates en petits morceaux.",
+              "ar": "قطّعوا الطماطم إلى قطع صغيرة."
+            },
+            {
+              "fr": "Ajoutez du sucre.",
+              "ar": "أضيفوا السكر."
             }
           ],
           "exercise": {
@@ -3938,6 +4202,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "une bouteille d’eau",
               "ar": "زجاجة ماء"
+            },
+            {
+              "fr": "Il faut deux œufs.",
+              "ar": "نحتاج إلى بيضتين."
+            },
+            {
+              "fr": "Un kilo de pommes, s’il vous plaît.",
+              "ar": "كيلوغرام تفاح من فضلك."
+            },
+            {
+              "fr": "Je bois de l’eau.",
+              "ar": "أشرب ماءً."
             }
           ],
           "exercise": {
@@ -3965,6 +4241,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Beaucoup d’eau.",
               "ar": "كمية كبيرة من الماء"
+            },
+            {
+              "fr": "Je voudrais le menu, s’il vous plaît.",
+              "ar": "أود قائمة الطعام من فضلك."
+            },
+            {
+              "fr": "L’eau est fraîche.",
+              "ar": "الماء بارد."
+            },
+            {
+              "fr": "Un verre de lait, s’il vous plaît.",
+              "ar": "كوب حليب من فضلك."
             }
           ],
           "exercise": {
@@ -3992,6 +4280,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Je vais faire une soupe.",
               "ar": "سأعد حساءً"
+            },
+            {
+              "fr": "Tu dois laver les légumes.",
+              "ar": "عليك غسل الخضروات."
+            },
+            {
+              "fr": "Nous devons préparer le repas.",
+              "ar": "يجب علينا إعداد الوجبة."
+            },
+            {
+              "fr": "Il faut couper le pain.",
+              "ar": "يجب تقطيع الخبز."
             }
           ],
           "exercise": {
@@ -4019,6 +4319,14 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Nous allons partager le dessert.",
               "ar": "سنتشارك الحلوى"
+            },
+            {
+              "fr": "Je voudrais une salade et un jus d’orange.",
+              "ar": "أود سلطة وعصير برتقال."
+            },
+            {
+              "fr": "Nous allons préparer le déjeuner.",
+              "ar": "سنحضّر الغداء."
             }
           ],
           "exercise": {
@@ -4281,6 +4589,14 @@ window.FRENCH_CURRICULUM = {
           {
             "fr": "Il faut laver les légumes.",
             "ar": "يجب غسل الخضروات."
+          },
+          {
+            "fr": "Je voudrais une bouteille d’eau.",
+            "ar": "أود زجاجة ماء."
+          },
+          {
+            "fr": "Nous allons cuisiner ensemble.",
+            "ar": "سنطبخ معاً."
           }
         ],
         "numbersTitle": "الكميات والوحدات",
