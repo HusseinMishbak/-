@@ -2183,7 +2183,38 @@ function setupAudioFeatures(){
  addRecorderWhereRequested(document);
 }
 
- function init(){addBookIntegration();renderBookPlanIndex();renderRoadmap();renderCitizenshipTrack();renderPlacementTestPanel();renderFiveMinuteListeningPanel();renderAdditionalVocabulary();setupPlacementTest();makeNav();load();setupCheckboxValues();setupChecks();setupBookPractice();setupRoadmapActivities();setupCitizenshipActivities();setupMonth2Quiz();setupVocab();setupAudioFeatures();setupFiveMinuteListening();setupVoiceDiagnostics();setupQuiz();setupSettings();setupAuthForms();$('#personalNotes').value=state.notes||'';updateProgress();const hasPlacement=(()=>{try{return !!JSON.parse(localStorage.getItem(PLACEMENT_KEY)||'null')?.completedAt;}catch(e){return false;}})();navigate((window.location.hash.includes('type=recovery')||window.location.hash.includes('access_token'))?'account':'home');initCloud();}
+ function init(){
+  // Keep navigation usable even if one content module fails to render.
+  const safeInit=(name,fn)=>{try{fn();}catch(error){console.error('[Our French platform] '+name+' failed:',error);}};
+  safeInit('navigation',makeNav);
+  safeInit('book integration',addBookIntegration);
+  safeInit('book plan',renderBookPlanIndex);
+  safeInit('roadmap',renderRoadmap);
+  safeInit('citizenship track',renderCitizenshipTrack);
+  safeInit('placement panel',renderPlacementTestPanel);
+  safeInit('listening panel',renderFiveMinuteListeningPanel);
+  safeInit('additional vocabulary',renderAdditionalVocabulary);
+  safeInit('placement setup',setupPlacementTest);
+  safeInit('local progress',load);
+  safeInit('checkbox values',setupCheckboxValues);
+  safeInit('checks',setupChecks);
+  safeInit('book practice',setupBookPractice);
+  safeInit('roadmap activities',setupRoadmapActivities);
+  safeInit('citizenship activities',setupCitizenshipActivities);
+  safeInit('month 2 quiz',setupMonth2Quiz);
+  safeInit('vocabulary setup',setupVocab);
+  safeInit('audio features',setupAudioFeatures);
+  safeInit('five minute listening',setupFiveMinuteListening);
+  safeInit('voice diagnostics',setupVoiceDiagnostics);
+  safeInit('quiz setup',setupQuiz);
+  safeInit('settings',setupSettings);
+  safeInit('account forms',setupAuthForms);
+  safeInit('notes',()=>{const notes=$('#personalNotes');if(notes)notes.value=state.notes||'';});
+  safeInit('progress display',updateProgress);
+  const recovery=window.location.hash.includes('type=recovery')||window.location.hash.includes('access_token');
+  safeInit('initial navigation',()=>navigate(recovery?'account':'home'));
+  safeInit('cloud sync',initCloud);
+}
  init();
 })();
 </script>
