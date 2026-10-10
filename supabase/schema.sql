@@ -156,3 +156,37 @@ with check (user_id = (select auth.uid()));
 -- Trigger functions should not be callable directly by API roles.
 revoke all on function public.handle_new_user_profile() from public, anon, authenticated;
 revoke all on function public.sync_user_email_to_profile() from public, anon, authenticated;
+
+-- Secure student speaking assessments. Recordings are private by default.
+create table if not exists public.speaking_submissions (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users(id) on delete cascade,
+  assessment_key text not null,
+  prompt text not null,
+  storage_path text not null unique,
+  mime_type text not null default 'audio/webm',
+  duration_seconds numeric(7,2) not null default 0 check (duration_seconds >= 0 and duration_seconds <= 300),
+  submitted_at timestamptz not null default now(),
+  teacher_feedback text not null default '',
+  reviewed_at timestamptz,
+  reviewed_by uuid references public.profiles(id) on delete set null
+);
+create index if not exists speaking_submissions_user_submitted_idx on public.speaking_submissions (user_id, submitted_at desc);
+create index if not exists speaking_submissions_assessment_idx on public.speaking_submissions (assessment_key, submitted_at desc);
+alter table public.speaking_submissions enable row level security;
+revoke all on table public.speaking_submissions from anon, authenticated;
+grant select, insert on table public.speaking_submissions to authenticated;
+grant update (teacher_feedback, reviewed_at, reviewed_by) on table public.speaking_submissions to authenticated;
+drop policy if exists "students and teachers can read speaking submissions" on public.speaking_submissions;
+drop policy if exists "students can submit own speaking recordings" on public.speaking_submissions;
+drop policy if exists "teachers can review speaking submissions" on public.speaking_submissions;
+create policy "students and teachers can read speaking submissions" on public.speaking_submissions for select to authenticated using (user_id = (select auth.uid()) or (select private.is_teacher()));
+create policy "students can submit own speaking recordings" on public.speaking_submissions for insert to authenticated with check (user_id = (select auth.uid()) and storage_path like ((select auth.uid())::text || '/%'));
+create policy "teachers can review speaking submissions" on public.speaking_submissions for update to authenticated using ((select private.is_teacher())) with check ((select private.is_teacher()));
+insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types) values ('student-audio','student-audio',false,12582912,array['audio/webm','audio/mp4','audio/ogg','audio/wav','audio/mpeg']) on conflict (id) do update set public=false,file_size_limit=excluded.file_size_limit,allowed_mime_types=excluded.allowed_mime_types;
+drop policy if exists "students upload own speaking audio" on storage.objects;
+drop policy if exists "students and teachers read speaking audio" on storage.objects;
+drop policy if exists "students delete own speaking audio" on storage.objects;
+create policy "students upload own speaking audio" on storage.objects for insert to authenticated with check (bucket_id='student-audio' and (storage.foldername(name))[1]=(select auth.uid())::text);
+create policy "students and teachers read speaking audio" on storage.objects for select to authenticated using (bucket_id='student-audio' and ((storage.foldername(name))[1]=(select auth.uid())::text or (select private.is_teacher())));
+create policy "students delete own speaking audio" on storage.objects for delete to authenticated using (bucket_id='student-audio' and (storage.foldername(name))[1]=(select auth.uid())::text);
