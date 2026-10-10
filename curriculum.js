@@ -455,6 +455,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "Wordwall — ألعاب القواعد",
                 "url": "https://wordwall.net/fr-fr/community/coll%C3%A8ge/fran%C3%A7ais/grammaire-fle",
                 "description": "ألعاب في الأفعال والأدوات والنفي والأسئلة."
+              },
+              {
+                "title": "France Éducation international — DELF A2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2",
+                "description": "معايير المستوى ومعلومات الامتحان الرسمي."
               }
             ],
             "speakingPrompt": "اكتب وصفاً لشقتك أو حيّك من 120 كلمة مع خريطة مبسطة.",
@@ -590,6 +595,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "Wordwall — ألعاب القواعد",
                 "url": "https://wordwall.net/fr-fr/community/coll%C3%A8ge/fran%C3%A7ais/grammaire-fle",
                 "description": "ألعاب في الأفعال والأدوات والنفي والأسئلة."
+              },
+              {
+                "title": "France Éducation international — DELF A2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2",
+                "description": "معايير المستوى ومعلومات الامتحان الرسمي."
               }
             ],
             "speakingPrompt": "مثّل شراء سلعة والسؤال عن السعر وطلب الاستبدال.",
@@ -725,6 +735,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "Wordwall — ألعاب القواعد",
                 "url": "https://wordwall.net/fr-fr/community/coll%C3%A8ge/fran%C3%A7ais/grammaire-fle",
                 "description": "ألعاب في الأفعال والأدوات والنفي والأسئلة."
+              },
+              {
+                "title": "France Éducation international — DELF A2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2",
+                "description": "معايير المستوى ومعلومات الامتحان الرسمي."
               }
             ],
             "speakingPrompt": "سجّل حوار مريض وموظف استقبال ثم لخّص الموعد.",
@@ -860,6 +875,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "Wordwall — ألعاب القواعد",
                 "url": "https://wordwall.net/fr-fr/community/coll%C3%A8ge/fran%C3%A7ais/grammaire-fle",
                 "description": "ألعاب في الأفعال والأدوات والنفي والأسئلة."
+              },
+              {
+                "title": "France Éducation international — DELF A2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2",
+                "description": "معايير المستوى ومعلومات الامتحان الرسمي."
               }
             ],
             "speakingPrompt": "أنجز مهمة استماع وقراءة عن رحلة واشرح المسار شفهياً.",
@@ -1003,6 +1023,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "Wordwall — ألعاب القواعد",
                 "url": "https://wordwall.net/fr-fr/community/coll%C3%A8ge/fran%C3%A7ais/grammaire-fle",
                 "description": "ألعاب في الأفعال والأدوات والنفي والأسئلة."
+              },
+              {
+                "title": "France Éducation international — DELF A2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2",
+                "description": "معايير المستوى ومعلومات الامتحان الرسمي."
               }
             ],
             "speakingPrompt": "اكتب رسالة حجز واطلب توضيحاً عن السعر والخدمات.",
@@ -1138,6 +1163,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "Wordwall — ألعاب القواعد",
                 "url": "https://wordwall.net/fr-fr/community/coll%C3%A8ge/fran%C3%A7ais/grammaire-fle",
                 "description": "ألعاب في الأفعال والأدوات والنفي والأسئلة."
+              },
+              {
+                "title": "France Éducation international — DELF A2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2",
+                "description": "معايير المستوى ومعلومات الامتحان الرسمي."
               }
             ],
             "speakingPrompt": "اكتب سرداً من 120–150 كلمة عن رحلة أو مناسبة.",
@@ -1273,6 +1303,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "Wordwall — ألعاب القواعد",
                 "url": "https://wordwall.net/fr-fr/community/coll%C3%A8ge/fran%C3%A7ais/grammaire-fle",
                 "description": "ألعاب في الأفعال والأدوات والنفي والأسئلة."
+              },
+              {
+                "title": "France Éducation international — DELF A2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2",
+                "description": "معايير المستوى ومعلومات الامتحان الرسمي."
               }
             ],
             "speakingPrompt": "مثّل مكالمة لترتيب لقاء وتغيير الموعد.",
@@ -1408,6 +1443,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "Wordwall — ألعاب القواعد",
                 "url": "https://wordwall.net/fr-fr/community/coll%C3%A8ge/fran%C3%A7ais/grammaire-fle",
                 "description": "ألعاب في الأفعال والأدوات والنفي والأسئلة."
+              },
+              {
+                "title": "France Éducation international — DELF A2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2",
+                "description": "معايير المستوى ومعلومات الامتحان الرسمي."
               }
             ],
             "speakingPrompt": "قدّم عرضاً من دقيقتين عن مدينة أو رحلة.",
@@ -1551,6 +1591,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "Wordwall — ألعاب القواعد",
                 "url": "https://wordwall.net/fr-fr/community/coll%C3%A8ge/fran%C3%A7ais/grammaire-fle",
                 "description": "ألعاب في الأفعال والأدوات والنفي والأسئلة."
+              },
+              {
+                "title": "France Éducation international — DELF A2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2",
+                "description": "معايير المستوى ومعلومات الامتحان الرسمي."
               }
             ],
             "speakingPrompt": "أنشئ قائمة طعام أسبوعية وناقش عادة غذائية.",
@@ -1686,6 +1731,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "Wordwall — ألعاب القواعد",
                 "url": "https://wordwall.net/fr-fr/community/coll%C3%A8ge/fran%C3%A7ais/grammaire-fle",
                 "description": "ألعاب في الأفعال والأدوات والنفي والأسئلة."
+              },
+              {
+                "title": "France Éducation international — DELF A2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2",
+                "description": "معايير المستوى ومعلومات الامتحان الرسمي."
               }
             ],
             "speakingPrompt": "اكتب بريداً لطلب معلومة عن دورة أو تدريب.",
@@ -1821,6 +1871,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "Wordwall — ألعاب القواعد",
                 "url": "https://wordwall.net/fr-fr/community/coll%C3%A8ge/fran%C3%A7ais/grammaire-fle",
                 "description": "ألعاب في الأفعال والأدوات والنفي والأسئلة."
+              },
+              {
+                "title": "France Éducation international — DELF A2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2",
+                "description": "معايير المستوى ومعلومات الامتحان الرسمي."
               }
             ],
             "speakingPrompt": "اكتب دعوة واضحة تتضمن الموعد والمكان والتفاصيل.",
@@ -1956,6 +2011,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "Wordwall — ألعاب القواعد",
                 "url": "https://wordwall.net/fr-fr/community/coll%C3%A8ge/fran%C3%A7ais/grammaire-fle",
                 "description": "ألعاب في الأفعال والأدوات والنفي والأسئلة."
+              },
+              {
+                "title": "France Éducation international — DELF A2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2",
+                "description": "معايير المستوى ومعلومات الامتحان الرسمي."
               }
             ],
             "speakingPrompt": "سجّل النتائج وحدد ثلاث نقاط للمراجعة قبل B1.",
@@ -2099,6 +2159,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "احكِ قصة من ثلاث دقائق واكتب ملخصاً.",
@@ -2234,6 +2299,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب قصة تجمع الوصف والأحداث.",
@@ -2369,6 +2439,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب سيرة لشخصية من 180 كلمة.",
@@ -2504,6 +2579,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "سجّل قصة ثم أجب عن خمسة أسئلة متابعة.",
@@ -2647,6 +2727,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "لخّص مقالاً قصيراً في 100–130 كلمة.",
@@ -2782,6 +2867,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "سجّل نقاشاً لثلاث دقائق عن إيجابيات وسلبيات.",
@@ -2917,6 +3007,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب فقرة تعرض مشكلة وأسبابها وحلولها.",
@@ -3052,6 +3147,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "قدّم عرضاً لأربع دقائق وأجب عن أسئلة المستمع.",
@@ -3195,6 +3295,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب رسالة ترشح مختصرة لوظيفة مناسبة.",
@@ -3330,6 +3435,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "سجّل مقابلة تجريبية لأربع دقائق.",
@@ -3465,6 +3575,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب بريداً رسمياً وراجعه من حيث النبرة والوضوح.",
@@ -3600,6 +3715,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "قدّم مشروعاً أو تجربة عمل في 4–5 دقائق.",
@@ -3743,6 +3863,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اشرح خطة لتحسين عادة صحية أو تنظيم الوقت.",
@@ -3878,6 +4003,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب مقترحاً لحل مشكلة في الحي.",
@@ -4013,6 +4143,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "ناقش التكنولوجيا بحجتين لكل جانب.",
@@ -4148,6 +4283,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب رسالة B1 تقترح حلاً عملياً.",
@@ -4291,6 +4431,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب مراجعة قصيرة وقدّمها شفهياً.",
@@ -4426,6 +4571,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "أنشئ برنامج زيارة ليوم واحد.",
@@ -4561,6 +4711,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب ملخصاً يقارن مصدرين.",
@@ -4696,6 +4851,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "نشرة صوتية مع نص مكتوب لممارسة الاستماع وتدوين الكلمات."
+              },
+              {
+                "title": "France Éducation international — DELF B1",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+                "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
               }
             ],
             "speakingPrompt": "حلّل الأخطاء؛ أعد أسبوع مراجعة عند الحاجة.",
@@ -4839,6 +4999,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "لخّص مقالاً وحدد موقف الكاتب وأدلته.",
@@ -4974,6 +5139,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "خطط واكتب مسودة مقال منظم.",
@@ -5109,6 +5279,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "راجع علاقة كل دليل بالفكرة الرئيسية.",
@@ -5244,6 +5419,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "أنجز عينة من المهارات الأربع وحدد أضعف اثنتين.",
@@ -5387,6 +5567,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب مناظرة بحجتين لكل جانب.",
@@ -5522,6 +5707,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "أعد صياغة رأي مباشر بثلاث درجات تحفظ.",
@@ -5657,6 +5847,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "شارك في نقاش لست دقائق وسجّل العبارات المتكررة.",
@@ -5792,6 +5987,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "قدّم عرضاً من 6–8 دقائق ثم أجب عن أسئلة.",
@@ -5935,6 +6135,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "ناقش قضية تعليمية بحجة وحجة مضادة.",
@@ -6070,6 +6275,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "قارن حلين لمشكلة حضرية في تقرير.",
@@ -6205,6 +6415,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب رسالة رسمية مسنودة بأسباب واضحة.",
@@ -6340,6 +6555,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب تركيباً يحدد الاتفاق والاختلاف.",
@@ -6483,6 +6703,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "قارن تغطيتين لخبر واحد.",
@@ -6618,6 +6843,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "قدّم تحليلاً يقيّم موثوقية نص.",
@@ -6753,6 +6983,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "استمع إلى تقرير وأعد عرضه في دقيقتين.",
@@ -6888,6 +7123,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب ملخصاً مقارناً مع استنتاجك.",
@@ -7031,6 +7271,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب مقالاً عن حل بيئي بحجتين واعتراض ورد.",
@@ -7166,6 +7411,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اشرح فكرة علمية مألوفة لجمهور غير متخصص.",
@@ -7301,6 +7551,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "أنشئ عرضاً يوصي بحل ويبرر اختياره.",
@@ -7436,6 +7691,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "شارك في مناظرة واكتب خلاصة الحجج.",
@@ -7579,6 +7839,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اكتب تقريراً بعناوين ومحاور وخلاصة.",
@@ -7714,6 +7979,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "اجمع خمس أفكار من مصدرين واكتب تركيباً.",
@@ -7849,6 +8119,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "قدّم عرضاً من ثماني دقائق ثم أجب عن أسئلة.",
@@ -7984,6 +8259,11 @@ window.FRENCH_CURRICULUM = {
                 "title": "RFI — Journal en français facile",
                 "url": "https://francaisfacile.rfi.fr/fr/podcasts/journal-en-français-facile/",
                 "description": "استمع إلى تقرير، دوّن الأطروحة والحجج، ثم لخّصه دون قراءة النص."
+              },
+              {
+                "title": "France Éducation international — DELF B2",
+                "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+                "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
               }
             ],
             "speakingPrompt": "راجع النواقص قبل التدريب المكثف.",
@@ -10335,6 +10615,28 @@ window.FRENCH_CURRICULUM = {
         "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
         "description": "المرجع الرسمي لوصف الامتحان وأمثلة الموضوعات والإرشادات."
       }
-    ]
+    ],
+    "officialExam": {
+      "A2": {
+        "title": "France Éducation international — DELF A2",
+        "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-a2",
+        "description": "معايير المستوى ومعلومات الامتحان الرسمي."
+      },
+      "B1": {
+        "title": "France Éducation international — DELF B1",
+        "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1",
+        "description": "المهارات المستهدفة وأمثلة التحضير الرسمية."
+      },
+      "B2": {
+        "title": "France Éducation international — DELF B2",
+        "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+        "description": "مستوى الأداء المطلوب ومواد التحضير الرسمية."
+      },
+      "DELF B2": {
+        "title": "France Éducation international — أمثلة DELF B2",
+        "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b2",
+        "description": "المرجع الرسمي لطريقة الامتحان وأمثلة الموضوعات."
+      }
+    }
   }
 };
