@@ -20571,141 +20571,141 @@ window.FRENCH_CURRICULUM = {
         "conversations": [
           {
             "id": 1,
-            "title": "الأعداد والوقت",
+            "title": "التعارف والتحية",
             "lines": [
               {
-                "fr": "Quelle heure est-il ?",
-                "ar": "كم الساعة؟"
+                "fr": "Bonjour ! Je m’appelle Lina. Et vous ?",
+                "ar": "مرحباً! اسمي لينا. وأنت؟"
               },
               {
-                "fr": "Il est neuf heures.",
-                "ar": "الساعة التاسعة."
+                "fr": "Bonjour Lina, je m’appelle Sami. Enchanté !",
+                "ar": "مرحباً لينا، اسمي سامي. تشرفت بلقائك!"
               }
             ]
           },
           {
             "id": 2,
-            "title": "أيام الأسبوع",
+            "title": "السؤال عن الحال",
             "lines": [
               {
-                "fr": "On se voit lundi ?",
-                "ar": "هل نلتقي يوم الاثنين؟"
+                "fr": "Comment ça va aujourd’hui ?",
+                "ar": "كيف حالك اليوم؟"
               },
               {
-                "fr": "Oui, à lundi !",
-                "ar": "نعم، إلى يوم الاثنين!"
+                "fr": "Très bien, merci. Et toi ?",
+                "ar": "بخير جداً، شكراً. وأنت؟"
               }
             ]
           },
           {
             "id": 3,
-            "title": "العائلة",
+            "title": "البلد والمدينة",
             "lines": [
               {
-                "fr": "Tu as des frères et sœurs ?",
-                "ar": "هل لديك إخوة وأخوات؟"
+                "fr": "Tu habites où ?",
+                "ar": "أين تسكن؟"
               },
               {
-                "fr": "Oui, j’ai un frère et une sœur.",
-                "ar": "نعم، لدي أخ وأخت."
+                "fr": "J’habite à Bucarest, et toi ?",
+                "ar": "أسكن في بوخارست، وأنت؟"
               }
             ]
           },
           {
             "id": 4,
-            "title": "الملكية",
+            "title": "اللغة",
             "lines": [
               {
-                "fr": "C’est ton livre ?",
-                "ar": "هل هذا كتابك؟"
+                "fr": "Tu parles français ?",
+                "ar": "هل تتحدث الفرنسية؟"
               },
               {
-                "fr": "Non, c’est le livre de Sara.",
-                "ar": "لا، إنه كتاب سارة."
+                "fr": "Un peu. J’apprends chaque jour.",
+                "ar": "قليلاً. أتعلم كل يوم."
               }
             ]
           },
           {
             "id": 5,
-            "title": "الأشياء اليومية",
+            "title": "العمر",
             "lines": [
               {
-                "fr": "Où sont mes clés ?",
-                "ar": "أين مفاتيحي؟"
+                "fr": "Quel âge as-tu ?",
+                "ar": "كم عمرك؟"
               },
               {
-                "fr": "Elles sont sur la table.",
-                "ar": "إنها على الطاولة."
+                "fr": "J’ai vingt ans.",
+                "ar": "عمري عشرون سنة."
               }
             ]
           },
           {
             "id": 6,
-            "title": "الطقس",
+            "title": "العمل والدراسة",
             "lines": [
               {
-                "fr": "Quel temps fait-il ?",
-                "ar": "كيف الطقس؟"
+                "fr": "Tu travailles ou tu étudies ?",
+                "ar": "هل تعمل أم تدرس؟"
               },
               {
-                "fr": "Il fait beau et il y a du soleil.",
-                "ar": "الجو جميل والشمس مشرقة."
+                "fr": "J’étudie le français à l’université.",
+                "ar": "أدرس الفرنسية في الجامعة."
               }
             ]
           },
           {
             "id": 7,
-            "title": "المواعيد",
+            "title": "رقم الهاتف",
             "lines": [
               {
-                "fr": "Tu es libre demain ?",
-                "ar": "هل أنت متفرغ غداً؟"
+                "fr": "Quel est ton numéro ?",
+                "ar": "ما رقم هاتفك؟"
               },
               {
-                "fr": "Oui, après trois heures.",
-                "ar": "نعم، بعد الساعة الثالثة."
+                "fr": "C’est le 07 12 34 56 78.",
+                "ar": "إنه 07 12 34 56 78."
               }
             ]
           },
           {
             "id": 8,
-            "title": "السكن",
+            "title": "تقديم صديق",
             "lines": [
               {
-                "fr": "Ton appartement est grand ?",
-                "ar": "هل شقتك كبيرة؟"
+                "fr": "Voici mon ami Karim.",
+                "ar": "هذا صديقي كريم."
               },
               {
-                "fr": "Non, mais il est confortable.",
-                "ar": "لا، لكنها مريحة."
+                "fr": "Bonjour Karim, ravi de te rencontrer !",
+                "ar": "مرحباً كريم، سعيد بلقائك!"
               }
             ]
           },
           {
             "id": 9,
-            "title": "وصف شخص",
+            "title": "التهجئة",
             "lines": [
               {
-                "fr": "Comment est ton frère ?",
-                "ar": "كيف يبدو أخوك؟"
+                "fr": "Comment tu épelles ton prénom ?",
+                "ar": "كيف تتهجّى اسمك؟"
               },
               {
-                "fr": "Il est gentil et très calme.",
-                "ar": "إنه لطيف وهادئ جداً."
+                "fr": "L-I-N-A, Lina.",
+                "ar": "L-I-N-A، لينا."
               }
             ]
           },
           {
             "id": 10,
-            "title": "المراجعة",
+            "title": "الوداع",
             "lines": [
               {
-                "fr": "Tu as compris la leçon ?",
-                "ar": "هل فهمت الدرس؟"
+                "fr": "À bientôt ! Bonne journée !",
+                "ar": "إلى اللقاء قريباً! يوماً سعيداً!"
               },
               {
-                "fr": "Oui, mais je veux pratiquer encore.",
-                "ar": "نعم، لكنني أريد أن أتدرب أكثر."
+                "fr": "Merci, à toi aussi. Au revoir !",
+                "ar": "شكراً، ولك أيضاً. وداعاً!"
               }
             ]
           }
