@@ -14,7 +14,7 @@ This repository contains an Arabic RTL French-learning platform with two sequent
 - Project: `Learning French` (`yycilzamasypqpvevrup`).
 - Tables: `profiles`, `student_progress`, and `quiz_attempts`.
 - RLS is enabled on all three tables. The teacher-check helper is in the non-exposed `private` schema; trigger functions are not executable as public/authenticated RPCs.
-- The Supabase security advisor showed no findings after the RLS hardening migration.
+- After the RLS hardening migration, the current security advisor reports one warning: leaked-password protection is disabled in Supabase Auth. Enable it in the Auth password-security settings before broad public rollout. The performance advisor's remaining notices are unused-index informational findings on a low-traffic database; the auth.uid() policy-evaluation warnings were corrected, and a lookup index was added for speaking-review records.
 - `index.html` is configured with the project's URL and the public publishable key. **Never put a `service_role` or secret key in browser code.**
 
 ## 1. Publish the website
