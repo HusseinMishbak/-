@@ -15,7 +15,7 @@ function styles(){
  s.textContent='.sa-card{border:1px solid #d4e4ea;border-radius:18px;background:linear-gradient(180deg,#fff,#f7fbfd);padding:18px;margin:18px 0;box-shadow:0 8px 22px rgba(16,45,66,.06)}\n'+
  '.sa-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:10px}.sa-kicker{font:800 10px Inter,sans-serif;letter-spacing:.1em;color:#0d7a70;direction:ltr;text-align:left}.sa-title{margin:4px 0;color:#102d42;font-size:21px;font-weight:800}.sa-desc{margin:5px 0 12px;color:#526a7b;font-size:14px}.sa-pill{border-radius:999px;padding:5px 10px;background:#e4f6f1;color:#0b665d;font-weight:800;font-size:12px;white-space:nowrap}\n'+
  '.sa-examples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}.sa-example{border:1px solid #dce8ed;border-radius:13px;padding:12px;background:#fff;min-width:0}.sa-fr{font-size:18px;font-weight:800;color:#102d42;direction:ltr;text-align:left;display:block;line-height:1.5}.sa-ar{color:#526a7b;font-size:13px;margin-top:4px}.sa-speak{margin-top:8px;border:1px solid #c2dcd8;background:#eff9f6;color:#075e57;border-radius:9px;padding:6px 10px;font-size:12px;font-weight:800}\n'+
- '.sa-record-area{background:#edf4f8;border-radius:13px;padding:14px;margin-top:14px}.sa-prompt{font-size:14px;background:#fff;border-right:4px solid #e5b45d;border-radius:8px;padding:12px;margin:8px 0;color:#17364b}.sa-actions{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.sa-btn{border:1px solid #cadce4;background:#fff;color:#183a50;border-radius:10px;padding:9px 12px;font-weight:800;font-size:13px}.sa-btn.primary{background:#0d7a70;color:#fff;border-color:#0d7a70}.sa-btn.stop{background:#fff3df;color:#855810;border-color:#f0d7a6}.sa-btn:disabled{opacity:.45;cursor:not-allowed}.sa-status{display:block;margin-top:7px;font-size:12px;color:#526a7b;min-height:22px}.sa-consent{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.7;margin-top:10px}.sa-consent input{margin-top:5px;flex:0 0 auto}.sa-audio{display:block;width:100%;margin:10px 0}.sa-privacy{font-size:12px;color:#526a7b;background:#fff;border:1px solid #dbe7ec;border-radius:10px;padding:10px;margin-top:10px}.sa-result-list{display:grid;gap:12px;margin-top:12px}.sa-review-item{border:1px solid #dce5ec;border-radius:13px;padding:14px;background:#fff}.sa-review-meta{font-size:12px;color:#526a7b;margin:4px 0 10px}.sa-review-feedback{display:block;width:100%;min-height:78px;border:1px solid #cbdbe3;border-radius:10px;padding:10px;margin:8px 0;resize:vertical}.sa-empty{color:#617687;background:#f5f8fa;border-radius:11px;padding:14px;font-size:13px}@media(max-width:680px){.sa-examples{grid-template-columns:1fr}.sa-card{padding:13px}.sa-title{font-size:18px}}';
+ '.sa-record-area{background:#edf4f8;border-radius:13px;padding:14px;margin-top:14px}.sa-prompt{font-size:14px;background:#fff;border-right:4px solid #e5b45d;border-radius:8px;padding:12px;margin:8px 0;color:#17364b}.sa-actions{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.sa-btn{border:1px solid #cadce4;background:#fff;color:#183a50;border-radius:10px;padding:9px 12px;font-weight:800;font-size:13px}.sa-btn.primary{background:#0d7a70;color:#fff;border-color:#0d7a70}.sa-btn.stop{background:#fff3df;color:#855810;border-color:#f0d7a6}.sa-btn:disabled{opacity:.45;cursor:not-allowed}.sa-status{display:block;margin-top:7px;font-size:12px;color:#526a7b;min-height:22px}.sa-consent{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.7;margin-top:10px}.sa-consent input{margin-top:5px;flex:0 0 auto}.sa-audio{display:block;width:100%;margin:10px 0}.sa-privacy{font-size:12px;color:#526a7b;background:#fff;border:1px solid #dbe7ec;border-radius:10px;padding:10px;margin-top:10px}.sa-result-list{display:grid;gap:12px;margin-top:12px}.sa-review-item{border:1px solid #dce5ec;border-radius:13px;padding:14px;background:#fff}.sa-review-meta{font-size:12px;color:#526a7b;margin:4px 0 10px}.sa-review-feedback{display:block;width:100%;min-height:78px;border:1px solid #cbdbe3;border-radius:10px;padding:10px;margin:8px 0;resize:vertical}.sa-empty{color:#617687;background:#f5f8fa;border-radius:11px;padding:14px;font-size:13px}.sa-rubric{display:grid;gap:8px;margin:10px 0}.sa-rubric-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(150px,220px);gap:10px;align-items:center;border-bottom:1px solid #e2ebef;padding:7px 0;font-size:13px}.sa-rubric-select{border:1px solid #cbdbe3;border-radius:9px;padding:7px;background:white;color:#17364b;width:100%}.sa-total{font-weight:800;color:#075e57;background:#e4f6f1;border-radius:9px;padding:8px 10px;margin:8px 0}@media(max-width:680px){.sa-examples{grid-template-columns:1fr}.sa-card{padding:13px}.sa-title{font-size:18px}}';
  document.head.appendChild(s);
 }
 function speak(text){
@@ -103,7 +103,7 @@ function renderUnits(){
  });
 }
 function renderBookPlanUnits(){
- const host=$('#panel-bookplan');const details=$('.book-index-unit',host);
+ const host=$('#panel-bookplan');const details=$$('.book-index-unit',host);
  (COURSE.bookUnits||[]).forEach((unit,index)=>{
   const detail=details[index];if(!detail)return;
   const ex=samples(unit),short=ex.slice(0,2).map(x=>x.fr).join(' — ')||unit.name;
@@ -117,36 +117,123 @@ function renderPlacement(){
  insertOnce(panel,c,false);
  const card=panel.querySelector('[data-sa-section="placement-speaking"]'),actions=panel.querySelector('.placement-actions');if(card&&actions)actions.insertAdjacentElement('beforebegin',card);
 }
+function renderCitizenshipModules(){
+ $$('.civ-module').forEach((module,index)=>{
+  const idMatch=String(module.id||'').match(/civic-module-(\d+)/);
+  const number=idMatch?Number(idMatch[1]):index+1;
+  const key='citizenship-speaking-'+number;
+  if(module.querySelector('[data-sa-section="'+key+'"]'))return;
+  const examples=[],seen=new Set();
+  $$('.civ-phrase .fr,.civ-dialogue-line .fr',module).forEach(el=>{
+   const fr=(el.textContent||'').trim();
+   if(!fr||seen.has(fr.toLowerCase())||examples.length>=3)return;
+   seen.add(fr.toLowerCase());
+   const translation=el.nextElementSibling;
+   examples.push({fr,ar:translation?(translation.textContent||'').trim():'عبارة من درس الجنسية والاندماج.'});
+  });
+  const contentTitle=module.querySelector('summary strong')?.textContent||('الوحدة '+number);
+  insertOnce(module,{
+   key,title:'مختبر النطق والتحدث — الجنسية والاندماج · '+contentTitle,
+   description:'استمع إلى العبارات المدنية ببطء، كررها 3–5 مرات، ثم لخّص ما فهمته بصوتك وسجّل إجابتك.',
+   badge:'الوحدة '+number+' · صوت',
+   examples,
+   prompt:'سجّل 30–60 ثانية: اقرأ عبارة أو عبارتين من هذه الوحدة، ثم اشرح بالفرنسية ما فهمته بجمل بسيطة.',
+   limit:60,
+   buttonLabel:'إرسال تسجيل الوحدة إلى المدرّس',
+   recordTitle:'تقييم النطق — الجنسية والاندماج · الوحدة '+number
+  },false);
+ });
+}
 function renderMonthly(){
  const p=$('#panel-evaluations');if(!p)return;
  insertOnce(p,{key:'monthly-speaking',title:'اختبار التحدث الشهري — تسجيل صوتي',description:'يتضمن منهج الشهر الأول عينة تحدث لمدة 60–90 ثانية، ويُقيّم فيها الوضوح والطلاقة والمفردات والقواعد.',badge:'تقييم شفهي',examples:[{fr:'Comment vous appelez-vous ?',ar:'ما اسمك؟'},{fr:'Quelle langue parlez-vous ?',ar:'ما اللغة التي تتحدثها؟'},{fr:'Où habitez-vous ?',ar:'أين تسكن؟'}],prompt:'سجّل 60–90 ثانية عن نفسك وعملك أو دراستك وروتينك. بعد ذلك أجب دون قراءة: Comment vous appelez-vous ? Quelle langue parlez-vous ? Où habitez-vous ?',limit:120,buttonLabel:'إرسال اختبار نهاية الشهر',recordTitle:'الإجابة الشفهية الشهرية'},true);
 }
 async function renderTeacherSubmissions(userId,container){
  const host=container||$('#teacherStudentDetail');if(!host)return;
- let sec=$('#speakingSubmissionsReview',host);
- if(!sec){sec=document.createElement('section');sec.id='speakingSubmissionsReview';sec.className='sa-card';sec.innerHTML='<div class="sa-kicker">TEACHER REVIEW</div><h3 class="sa-title">التسجيلات الصوتية للطالب</h3><p class="sa-desc">استمع إلى إجابات الطالب، ثم أضف ملاحظات النطق والتحدث.</p><div class="sa-result-list" data-sa-review-list><div class="sa-empty">جارٍ تحميل التسجيلات…</div></div>';host.appendChild(sec);}
- const list=$('[data-sa-review-list]',sec);list.replaceChildren();const db=client(),profile=app()?.getProfile?.();
- if(!db||profile?.role!=='teacher'){list.textContent='هذه المراجعة متاحة للمدرّس المخوّل فقط.';return;}
- const res=await db.from('speaking_submissions').select('id,user_id,assessment_key,prompt,storage_path,mime_type,duration_seconds,submitted_at,teacher_feedback').eq('user_id',userId).order('submitted_at',{ascending:false});
- if(res.error){list.textContent='تعذر تحميل التسجيلات: '+res.error.message;return;}
- if(!res.data?.length){list.innerHTML='<div class="sa-empty">لم يرسل هذا الطالب أي تسجيل صوتي بعد.</div>';return;}
- for(const item of res.data){
-  const card=document.createElement('article');card.className='sa-review-item';const title=document.createElement('strong');title.textContent=item.assessment_key||'اختبار شفهي';card.appendChild(title);
-  const meta=document.createElement('div');meta.className='sa-review-meta';meta.textContent=new Date(item.submitted_at).toLocaleString('ar',{dateStyle:'medium',timeStyle:'short'})+' · '+Number(item.duration_seconds||0)+' ثانية';card.appendChild(meta);
-  const pr=document.createElement('p');pr.className='sa-desc';pr.textContent=item.prompt||'لا يوجد نص إرشادي';card.appendChild(pr);
+ let section=$('#speakingSubmissionsReview',host);
+ if(!section){
+  section=document.createElement('section');section.id='speakingSubmissionsReview';section.className='sa-card';
+  section.innerHTML='<div class="sa-kicker">TEACHER REVIEW</div><h3 class="sa-title">التسجيلات الصوتية وتقييم النطق</h3><p class="sa-desc">استمع إلى تسجيل الطالب، ثم قيّمه وفق سلم التقييم الشفهي: خمسة معايير، درجتان لكل معيار.</p><div class="sa-result-list" data-sa-review-list><div class="sa-empty">جارٍ تحميل التسجيلات…</div></div>';
+  host.appendChild(section);
+ }
+ const list=$('[data-sa-review-list]',section);list.replaceChildren();
+ const db=client(),profile=app()?.getProfile?.();
+ if(!db||profile?.role!=='teacher'){list.textContent='هذه المراجعة متاحة للمدرّس أو مالك المنصة المخوّل فقط.';return;}
+ const response=await db.from('speaking_submissions')
+  .select('id,user_id,assessment_key,prompt,storage_path,mime_type,duration_seconds,submitted_at,teacher_feedback,rubric_scores,score_total')
+  .eq('user_id',userId).order('submitted_at',{ascending:false});
+ if(response.error){list.textContent='تعذر تحميل التسجيلات: '+response.error.message;return;}
+ if(!response.data||!response.data.length){list.innerHTML='<div class="sa-empty">لم يرسل هذا الطالب أي تسجيل صوتي بعد.</div>';return;}
+ const rubric=[
+  {key:'clarity',label:'وضوح الرسالة'},
+  {key:'sentences',label:'تكوين الجمل'},
+  {key:'vocabulary',label:'المفردات'},
+  {key:'response',label:'الفهم والرد'},
+  {key:'pronunciation',label:'النطق والإيقاع'}
+ ];
+ for(const item of response.data){
+  const card=document.createElement('article');card.className='sa-review-item';
+  const title=document.createElement('strong');title.textContent=item.assessment_key||'اختبار شفهي';card.appendChild(title);
+  const meta=document.createElement('div');meta.className='sa-review-meta';
+  meta.textContent=new Date(item.submitted_at).toLocaleString('ar',{dateStyle:'medium',timeStyle:'short'})+' · '+Number(item.duration_seconds||0)+' ثانية';
+  card.appendChild(meta);
+  if(item.score_total!==null&&item.score_total!==undefined){
+   const previous=document.createElement('div');previous.className='sa-pill';previous.textContent='الدرجة السابقة: '+item.score_total+' / 10';card.appendChild(previous);
+  }
+  const prompt=document.createElement('p');prompt.className='sa-desc';prompt.textContent=item.prompt||'لا يوجد نص إرشادي';card.appendChild(prompt);
   const signed=await db.storage.from('student-audio').createSignedUrl(item.storage_path,3600);
-  if(signed.error){const msg=document.createElement('div');msg.className='sa-empty';msg.textContent='تعذر فتح التسجيل الخاص: '+signed.error.message;card.appendChild(msg);}else{const audio=document.createElement('audio');audio.controls=true;audio.className='sa-audio';audio.preload='none';audio.src=signed.data.signedUrl;card.appendChild(audio);}
-  const label=document.createElement('label');label.textContent='ملاحظات المدرّس';label.style.fontWeight='800';card.appendChild(label);
-  const ta=document.createElement('textarea');ta.className='sa-review-feedback';ta.maxLength=4000;ta.value=item.teacher_feedback||'';ta.placeholder='مثال: النطق واضح، انتبه إلى التمييز بين u و ou…';card.appendChild(ta);
-  const save=document.createElement('button');save.type='button';save.className='sa-btn primary';save.textContent='حفظ الملاحظات';card.appendChild(save);
-  const status=document.createElement('span');status.className='sa-status';card.appendChild(status);
-  save.addEventListener('click',async()=>{save.disabled=true;status.textContent='جارٍ الحفظ…';const ss=session();const upd=await db.from('speaking_submissions').update({teacher_feedback:ta.value.trim(),reviewed_at:new Date().toISOString(),reviewed_by:ss?.user?.id||null}).eq('id',item.id);save.disabled=false;status.textContent=upd.error?'تعذر الحفظ: '+upd.error.message:'تم حفظ ملاحظات المدرّس.';});
+  if(signed.error){
+   const warning=document.createElement('div');warning.className='sa-empty';warning.textContent='تعذر فتح التسجيل الخاص: '+signed.error.message;card.appendChild(warning);
+  }else{
+   const player=document.createElement('audio');player.controls=true;player.className='sa-audio';player.preload='none';player.src=signed.data.signedUrl;player.setAttribute('aria-label','تسجيل الطالب '+item.assessment_key);card.appendChild(player);
+  }
+  const rubricTitle=document.createElement('h4');rubricTitle.textContent='سلم التقييم الشفهي — 10 نقاط';rubricTitle.style.margin='14px 0 8px';card.appendChild(rubricTitle);
+  const rubricBox=document.createElement('div');rubricBox.className='sa-rubric';
+  const selects={};const existing=item.rubric_scores||{};
+  rubric.forEach(entry=>{
+   const row=document.createElement('label');row.className='sa-rubric-row';
+   const caption=document.createElement('span');caption.textContent=entry.label+' (0–2)';row.appendChild(caption);
+   const select=document.createElement('select');select.className='sa-rubric-select';select.setAttribute('aria-label',entry.label);
+   [['','اختر الدرجة'],['0','0 — يحتاج إلى تدريب'],['1','1 — متحقق جزئياً'],['2','2 — متحقق بوضوح']].forEach(([value,labelText])=>{
+    const option=document.createElement('option');option.value=value;option.textContent=labelText;select.appendChild(option);
+   });
+   if(existing[entry.key]!==null&&existing[entry.key]!==undefined)select.value=String(existing[entry.key]);
+   selects[entry.key]=select;row.appendChild(select);rubricBox.appendChild(row);
+  });
+  card.appendChild(rubricBox);
+  const total=document.createElement('div');total.className='sa-total';card.appendChild(total);
+  function calculate(){
+   const values=rubric.map(entry=>selects[entry.key].value);
+   const complete=values.every(v=>v!==''&&Number(v)>=0&&Number(v)<=2);
+   const sum=values.reduce((acc,v)=>acc+(v===''?0:Number(v)),0);
+   total.textContent=complete?'المجموع الحالي: '+sum+' / 10':'اختر درجة من 0 إلى 2 لكل معيار لإكمال المجموع.';
+   return {complete,sum};
+  }
+  Object.values(selects).forEach(select=>select.addEventListener('change',calculate));calculate();
+  const feedbackLabel=document.createElement('label');feedbackLabel.textContent='ملاحظات المدرّس';feedbackLabel.style.fontWeight='800';feedbackLabel.style.display='block';feedbackLabel.style.marginTop='12px';card.appendChild(feedbackLabel);
+  const feedback=document.createElement('textarea');feedback.className='sa-review-feedback';feedback.maxLength=4000;feedback.value=item.teacher_feedback||'';
+  feedback.placeholder='مثال: النطق واضح، وينبغي التمييز بين u و ou، مع تحسين ربط الكلمات…';card.appendChild(feedback);
+  const save=document.createElement('button');save.type='button';save.className='sa-btn primary';save.textContent='حفظ الدرجة وملاحظات المدرّس';card.appendChild(save);
+  const status=document.createElement('span');status.className='sa-status';status.setAttribute('aria-live','polite');card.appendChild(status);
+  save.addEventListener('click',async()=>{
+   const score=calculate();const rubricScores={};rubric.forEach(entry=>rubricScores[entry.key]=selects[entry.key].value===''?null:Number(selects[entry.key].value));
+   if(!score.complete){status.textContent='أكمل المعايير الخمسة قبل حفظ الدرجة.';return;}
+   save.disabled=true;status.textContent='جارٍ حفظ الدرجة والملاحظات…';
+   const currentSession=session();
+   const updated=await db.from('speaking_submissions').update({
+    teacher_feedback:feedback.value.trim(),rubric_scores:rubricScores,score_total:score.sum,
+    reviewed_at:new Date().toISOString(),reviewed_by:currentSession?.user?.id||null
+   }).eq('id',item.id);
+   save.disabled=false;
+   if(updated.error){status.textContent='تعذر الحفظ: '+updated.error.message;}
+   else{status.textContent='تم حفظ الدرجة '+score.sum+'/10 وملاحظات المدرّس.';item.score_total=score.sum;}
+  });
   list.appendChild(card);
  }
 }
 function init(){
  styles();document.addEventListener('click',e=>{const b=e.target.closest('[data-sa-speak]');if(b){e.preventDefault();speak(b.dataset.saSpeak)}});
- renderUnits();renderBookPlanUnits();renderPlacement();renderMonthly();
+ renderUnits();renderBookPlanUnits();renderCitizenshipModules();renderPlacement();renderMonthly();
  window.OUR_SPEAKING_ASSESSMENT={renderTeacherSubmissions,speak};
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
