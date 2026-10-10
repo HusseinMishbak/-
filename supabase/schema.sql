@@ -95,6 +95,9 @@ as $$
   );
 $$;
 
+revoke all on function public.is_teacher(uuid) from PUBLIC, anon;
+grant execute on function public.is_teacher(uuid) to authenticated;
+
 alter table public.profiles enable row level security;
 alter table public.student_progress enable row level security;
 alter table public.quiz_attempts enable row level security;
