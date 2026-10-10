@@ -1411,7 +1411,7 @@
  function queueCloudSave(){clearTimeout(cloudSaveTimer);cloudSaveTimer=setTimeout(saveProgressToCloud,650);}
  async function saveProgressToCloud(){if(cloudHydrating||!supabaseClient||!authSession?.user?.id)return;const payload={user_id:authSession.user.id,checks:state.checks||{},weeks:state.weeks||{},notes:state.notes||'',last_section:state.last||'home',latest_quiz:state.quiz||{},updated_at:new Date().toISOString()};try{const {error}=await supabaseClient.from('student_progress').upsert(payload,{onConflict:'user_id'});if(error)throw error;setSyncStatus('الحفظ السحابي متصل',true);}catch(error){setSyncStatus('تعذرت المزامنة — تحقق من إعداد قاعدة البيانات',false);console.error('Cloud progress sync:',error);}}
  function toast(message){const el=$('#toast');el.textContent=message;el.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.classList.remove('show'),2400)}
- function makeNav(){const desktop=$('#desktopNav'),mobile=$('#mobileNav');NAV.forEach(([id,icon,label,desc])=>{const make=(mobileMode)=>{const b=document.createElement('button');b.type='button';b.className='nav-item'+(id==='home'?' active':'');b.dataset.target=id;if(id==='teacher')b.classList.add('hidden');b.innerHTML=`<span class="nav-icon">${icon}</span><span class="nav-text"><span class="nav-label">${label}</span><span class="nav-desc">${desc}</span></span>${id.startsWith('week')?`<span class="nav-complete" data-navcount="${id}">0/6</span>`:''}`;b.addEventListener('click',()=>navigate(id));return b;};desktop.appendChild(make(false));mobile.appendChild(make(true));})}
+ function makeNav(){const desktop=$('#desktopNav'),mobile=$('#mobileNav');if(!desktop||!mobile)throw new Error('Navigation containers missing');desktop.replaceChildren();mobile.replaceChildren();NAV.forEach(([id,icon,label,desc])=>{const make=(mobileMode)=>{const b=document.createElement('button');b.type='button';b.className='nav-item'+(id==='home'?' active':'');b.dataset.target=id;if(id==='teacher')b.classList.add('hidden');b.innerHTML=`<span class="nav-icon">${icon}</span><span class="nav-text"><span class="nav-label">${label}</span><span class="nav-desc">${desc}</span></span>${id.startsWith('week')?`<span class="nav-complete" data-navcount="${id}">0/6</span>`:''}`;b.addEventListener('click',()=>navigate(id));return b;};desktop.appendChild(make(false));mobile.appendChild(make(true));})}
  function navigate(id){if(!NAV.some(x=>x[0]===id))id='home';if(id==='teacher'&&authProfile?.role!=='teacher'){toast('لوحة المدرّس متاحة للحسابات المخوّلة فقط.');id='account';}$$('.panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+id));$$('.nav-item').forEach(b=>b.classList.toggle('active',b.dataset.target===id));state.last=id;save();if(id==='vocab'){const s=$('#vocabSearch');if(s)s.focus({preventScroll:true})}if(id==='teacher'&&authProfile?.role==='teacher')loadTeacherDashboard();window.scrollTo({top:0,behavior:'smooth'});}
  function updateProgress(){const daily=$$('.task-check:not(.legacy-task-check)'),weekBoxes=$$('.week-check');let done=0;daily.forEach(cb=>{cb.checked=!!state.checks[cb.dataset.key];if(cb.checked)done++});let completedWeeks=0;weekBoxes.forEach(cb=>{const key=cb.dataset.week;cb.checked=!!state.weeks[key];if(cb.checked)completedWeeks++;const stat=$('#weekState'+key)||$('#roadmapWeekState'+key);if(stat)stat.textContent=cb.checked?'اكتمل الأسبوع ✓':'لم يكتمل بعد';const weekPanel=$('#panel-week'+key);const checks=weekPanel?$$('.task-check:not(.legacy-task-check)',weekPanel):[];const n=checks.filter(x=>!!state.checks[x.dataset.key]).length;$$('.nav-complete[data-navcount="week'+key+'"]').forEach(nav=>nav.textContent=n+'/6');});const allTotal=daily.length+weekBoxes.length;const pct=allTotal?Math.round((done+completedWeeks)/allTotal*100):0;$('#completedSessions').textContent=done+' / '+daily.length;$('#completedWeeks').textContent=completedWeeks+' / '+weekBoxes.length;$('#progressPercent').textContent=pct+'%';$('#globalProgressBar').style.width=pct+'%';$('.progress-track').setAttribute('aria-valuenow',String(pct));$('#sideProgressBar').style.width=pct+'%';$('#sideProgressText').textContent=pct+'% مكتمل · '+done+'/'+daily.length+' جلسة';$('#progressStatus').textContent=pct===100?'أحسنت! أكملت جميع الجلسات والأسابيع.':`أنجزت ${done} من ${daily.length} جلسة و${completedWeeks} من ${weekBoxes.length} أسابيع.`;if($('#accountSessions'))$('#accountSessions').textContent=done+' / '+daily.length;if($('#accountPercent'))$('#accountPercent').textContent=pct+'%';if($('#accountQuizScore'))$('#accountQuizScore').textContent=state.quiz?.pct!=null?state.quiz.pct+'%':'—';buildOverview();}
  function buildOverview(){const host=$('#weekOverview');if(!host||host.dataset.ready)return;host.dataset.ready='1';const summaries=[['1','Entre Nous 1','الوحدة 1: Enchanté.'],['2','Entre Nous 1','الوحدة 2: Voyage autour du monde.'],['3','Entre Nous 1','الوحدة 3: Une ville, des quartiers.'],['4','Entre Nous 1','الوحدة 4: Un peu, beaucoup, à la folie.'],['month2','Entre Nous 1','الوحدات 5–8 وكراسة الأنشطة.'],['roadmap','المستويات A2–B2','خارطة الطريق والتدريب على DELF B2.'],['citizenship','اللغة والمواطنة','تدريب عملي على المجتمع والمقابلة والاختبار المدني.']];summaries.forEach(([id,title,desc])=>{const div=document.createElement('div');div.className='overview-week';const label=id==='month2'?'الشهر الثاني':('الأسبوع '+id);const icon=id==='month2'?'M2':('W'+id);div.innerHTML=`<div class="overview-icon">${icon}</div><div><h3>${label} · ${title}</h3><p>${desc}</p><button type="button" class="btn btn-soft">افتح المسار ←</button></div>`;div.querySelector('button').addEventListener('click',()=>navigate(id==='month2'?'month2':id==='roadmap'?'roadmap':'week'+id));host.appendChild(div);})}
@@ -2227,6 +2227,43 @@ function setupAudioFeatures(){
   safeInit('cloud sync',initCloud);
 }
  init();
+})();
+</script>
+<script>
+/* Independent navigation fallback: keeps training reachable if a module fails during startup. */
+(function(){
+ const items=[
+  ['home','الرئيسية'],['placement','تحديد المستوى'],['bookplan','محتوى الكتاب'],
+  ['week1','دروس الفرنسية A1'],['week2','الأسبوع الثاني'],['week3','الأسبوع الثالث'],['week4','الأسبوع الرابع'],
+  ['month2','الشهر الثاني'],['roadmap','المسار A1–C2'],['citizenship','الجنسية والاندماج'],
+  ['vocab','المفردات والاختبارات'],['listening','الاستماع'],['grammar','القواعد'],
+  ['evaluations','الاختبارات'],['resources','المصادر'],['account','حساب الطالب']
+ ];
+ function fallbackNav(){
+  ['desktopNav','mobileNav'].forEach(id=>{
+   const nav=document.getElementById(id);if(!nav||nav.children.length)return;
+   items.forEach(([target,label])=>{
+    const b=document.createElement('button');b.type='button';b.className='nav-item';b.dataset.target=target;
+    b.textContent=label;b.style.cssText='display:block;width:100%;padding:10px;border-radius:10px;border:1px solid #dce5ec;background:#fff;color:#102d42;text-align:right;font-weight:700;cursor:pointer;margin:3px 0';
+    nav.appendChild(b);
+   });
+  });
+ }
+ function showPanel(target){
+  const panels=[...document.querySelectorAll('.panel')];
+  const found=document.getElementById('panel-'+target);
+  if(!found){const notice=document.getElementById('navFallbackNotice');if(notice){notice.hidden=false;notice.textContent='هذا القسم لم يُحمّل بعد. حدّث الصفحة، وإذا استمرت المشكلة أرسل هذه الرسالة للدعم.';}return;}
+  panels.forEach(p=>p.classList.toggle('active',p===found));
+  document.querySelectorAll('.nav-item').forEach(b=>b.classList.toggle('active',b.dataset.target===target));
+  window.scrollTo({top:0,behavior:'auto'});
+ }
+ document.addEventListener('click',function(e){
+  const shortcut=e.target.closest('[data-home-target]');
+  if(shortcut){e.preventDefault();showPanel(shortcut.dataset.homeTarget);return;}
+  const nav=e.target.closest('.nav-item[data-target]');
+  if(nav){e.preventDefault();showPanel(nav.dataset.target);}
+ });
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fallbackNav);else fallbackNav();
 })();
 </script>
 </body></html>
