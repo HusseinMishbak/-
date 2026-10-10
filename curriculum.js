@@ -20528,7 +20528,7 @@ window.FRENCH_CURRICULUM = {
     "subtitle": "A small daily habit that changes everything",
     "level": "A2–B1",
     "duration": "environ 5 minutes",
-    "description": "Épisode original de compréhension orale, créé pour cette plateforme. Écoutez d’abord sans lire, puis relisez les textes français et anglais et réécoutez les passages difficiles.",
+    "description": "تدريب استماع ثنائي اللغة: 10 محادثات قصيرة في كل وحدة، من التحية والتعارف للمبتدئين إلى النقاش المتقدم. استمع أولاً، ثم اقرأ الفرنسية وترجمتها العربية، وكرر الحوار بصوت مرتفع.",
     "paragraphs": [
       {
         "fr": "Imaginez que vous apprenez le français. Vous ouvrez une application, vous regardez une longue liste de mots, puis vous pensez : « Je dois tout mémoriser aujourd’hui. » Après dix minutes, votre tête est pleine et vous avez envie d’arrêter. Pourtant, apprendre une langue ne demande pas toujours de longues séances. Il faut surtout une petite routine, un objectif clair et beaucoup de répétitions. Aujourd’hui, découvrons une méthode simple pour apprendre quelques mots et les utiliser dans la vraie vie.",
@@ -20561,6 +20561,1184 @@ window.FRENCH_CURRICULUM = {
       {
         "fr": "Alors, quel est votre premier pas ? Choisissez cinq mots utiles, écoutez-les, écrivez une phrase pour chacun et révisez-les demain. Vous n’avez pas besoin d’attendre le moment parfait. Commencez avec le temps dont vous disposez aujourd’hui. Une langue se construit mot après mot, phrase après phrase, conversation après conversation. Dix minutes peuvent ouvrir la porte à un nouveau monde. Merci d’avoir écouté, et à très bientôt pour une nouvelle séance de français.",
         "en": "So, what is your first step? Choose five useful words, listen to them, write one sentence for each, and review them tomorrow. You do not need to wait for the perfect moment. Start with the time you have today. A language is built word by word, sentence by sentence, conversation by conversation. Ten minutes can open the door to a new world. Thank you for listening, and see you very soon for another French session."
+      }
+    ],
+    "conversationsByUnit": [
+      {
+        "unit": 1,
+        "title": "التعارف والنطق",
+        "level": "A1",
+        "conversations": [
+          {
+            "id": 1,
+            "title": "الأعداد والوقت",
+            "lines": [
+              {
+                "fr": "Quelle heure est-il ?",
+                "ar": "كم الساعة؟"
+              },
+              {
+                "fr": "Il est neuf heures.",
+                "ar": "الساعة التاسعة."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "أيام الأسبوع",
+            "lines": [
+              {
+                "fr": "On se voit lundi ?",
+                "ar": "هل نلتقي يوم الاثنين؟"
+              },
+              {
+                "fr": "Oui, à lundi !",
+                "ar": "نعم، إلى يوم الاثنين!"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "العائلة",
+            "lines": [
+              {
+                "fr": "Tu as des frères et sœurs ?",
+                "ar": "هل لديك إخوة وأخوات؟"
+              },
+              {
+                "fr": "Oui, j’ai un frère et une sœur.",
+                "ar": "نعم، لدي أخ وأخت."
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "title": "الملكية",
+            "lines": [
+              {
+                "fr": "C’est ton livre ?",
+                "ar": "هل هذا كتابك؟"
+              },
+              {
+                "fr": "Non, c’est le livre de Sara.",
+                "ar": "لا، إنه كتاب سارة."
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "title": "الأشياء اليومية",
+            "lines": [
+              {
+                "fr": "Où sont mes clés ?",
+                "ar": "أين مفاتيحي؟"
+              },
+              {
+                "fr": "Elles sont sur la table.",
+                "ar": "إنها على الطاولة."
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "title": "الطقس",
+            "lines": [
+              {
+                "fr": "Quel temps fait-il ?",
+                "ar": "كيف الطقس؟"
+              },
+              {
+                "fr": "Il fait beau et il y a du soleil.",
+                "ar": "الجو جميل والشمس مشرقة."
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "title": "المواعيد",
+            "lines": [
+              {
+                "fr": "Tu es libre demain ?",
+                "ar": "هل أنت متفرغ غداً؟"
+              },
+              {
+                "fr": "Oui, après trois heures.",
+                "ar": "نعم، بعد الساعة الثالثة."
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "title": "السكن",
+            "lines": [
+              {
+                "fr": "Ton appartement est grand ?",
+                "ar": "هل شقتك كبيرة؟"
+              },
+              {
+                "fr": "Non, mais il est confortable.",
+                "ar": "لا، لكنها مريحة."
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "title": "وصف شخص",
+            "lines": [
+              {
+                "fr": "Comment est ton frère ?",
+                "ar": "كيف يبدو أخوك؟"
+              },
+              {
+                "fr": "Il est gentil et très calme.",
+                "ar": "إنه لطيف وهادئ جداً."
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "title": "المراجعة",
+            "lines": [
+              {
+                "fr": "Tu as compris la leçon ?",
+                "ar": "هل فهمت الدرس؟"
+              },
+              {
+                "fr": "Oui, mais je veux pratiquer encore.",
+                "ar": "نعم، لكنني أريد أن أتدرب أكثر."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "الأرقام والأسرة",
+        "level": "A1",
+        "conversations": [
+          {
+            "id": 1,
+            "title": "في المقهى",
+            "lines": [
+              {
+                "fr": "Bonjour, je voudrais un café, s’il vous plaît.",
+                "ar": "مرحباً، أريد قهوة من فضلك."
+              },
+              {
+                "fr": "Bien sûr. Sur place ou à emporter ?",
+                "ar": "بالتأكيد. هنا أم سفري؟"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "في المخبز",
+            "lines": [
+              {
+                "fr": "Vous avez du pain complet ?",
+                "ar": "هل لديكم خبز كامل الحبوب؟"
+              },
+              {
+                "fr": "Oui, une baguette ou un petit pain ?",
+                "ar": "نعم، باغيت أم رغيف صغير؟"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "شراء الطعام",
+            "lines": [
+              {
+                "fr": "Combien coûtent les pommes ?",
+                "ar": "كم سعر التفاح؟"
+              },
+              {
+                "fr": "Elles coûtent deux euros le kilo.",
+                "ar": "سعرها يوروَان للكيلوغرام."
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "title": "في المطعم",
+            "lines": [
+              {
+                "fr": "Vous avez une table pour deux ?",
+                "ar": "هل لديكم طاولة لشخصين؟"
+              },
+              {
+                "fr": "Oui, suivez-moi, s’il vous plaît.",
+                "ar": "نعم، تفضلا معي من فضلكما."
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "title": "طلب الفاتورة",
+            "lines": [
+              {
+                "fr": "L’addition, s’il vous plaît.",
+                "ar": "الفاتورة من فضلك."
+              },
+              {
+                "fr": "Voilà. Vous payez par carte ?",
+                "ar": "تفضل. هل تدفع بالبطاقة؟"
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "title": "في السوبرماركت",
+            "lines": [
+              {
+                "fr": "Où est le lait ?",
+                "ar": "أين الحليب؟"
+              },
+              {
+                "fr": "Au fond, à côté du fromage.",
+                "ar": "في الخلف، بجانب الجبن."
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "title": "التفضيلات",
+            "lines": [
+              {
+                "fr": "Tu préfères le thé ou le café ?",
+                "ar": "أتفضل الشاي أم القهوة؟"
+              },
+              {
+                "fr": "Je préfère le thé sans sucre.",
+                "ar": "أفضل الشاي من دون سكر."
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "title": "الكمية",
+            "lines": [
+              {
+                "fr": "Je voudrais un kilo de tomates.",
+                "ar": "أريد كيلوغراماً من الطماطم."
+              },
+              {
+                "fr": "D’accord, autre chose ?",
+                "ar": "حسناً، هل تريد شيئاً آخر؟"
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "title": "الحساسية",
+            "lines": [
+              {
+                "fr": "Ce plat contient des noix ?",
+                "ar": "هل يحتوي هذا الطبق على مكسرات؟"
+              },
+              {
+                "fr": "Non, mais il contient du lait.",
+                "ar": "لا، لكنه يحتوي على الحليب."
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "title": "دعوة إلى الغداء",
+            "lines": [
+              {
+                "fr": "Tu déjeunes avec nous ?",
+                "ar": "هل تتناول الغداء معنا؟"
+              },
+              {
+                "fr": "Avec plaisir. À midi ?",
+                "ar": "بكل سرور. عند الظهر؟"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "الدراسة والعمل والروتين",
+        "level": "A1–A2",
+        "conversations": [
+          {
+            "id": 1,
+            "title": "الروتين اليومي",
+            "lines": [
+              {
+                "fr": "À quelle heure tu te lèves ?",
+                "ar": "في أي ساعة تستيقظ؟"
+              },
+              {
+                "fr": "Je me lève à sept heures.",
+                "ar": "أستيقظ الساعة السابعة."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "الدراسة",
+            "lines": [
+              {
+                "fr": "Tu as cours aujourd’hui ?",
+                "ar": "هل لديك درس اليوم؟"
+              },
+              {
+                "fr": "Oui, le cours commence à dix heures.",
+                "ar": "نعم، يبدأ الدرس الساعة العاشرة."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "العمل",
+            "lines": [
+              {
+                "fr": "Où travailles-tu ?",
+                "ar": "أين تعمل؟"
+              },
+              {
+                "fr": "Je travaille dans un bureau.",
+                "ar": "أعمل في مكتب."
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "title": "المواصلات",
+            "lines": [
+              {
+                "fr": "Comment vas-tu au travail ?",
+                "ar": "كيف تذهب إلى العمل؟"
+              },
+              {
+                "fr": "J’y vais en bus.",
+                "ar": "أذهب بالحافلة."
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "title": "الهوايات",
+            "lines": [
+              {
+                "fr": "Qu’est-ce que tu fais le week-end ?",
+                "ar": "ماذا تفعل في عطلة نهاية الأسبوع؟"
+              },
+              {
+                "fr": "Je lis et je fais du sport.",
+                "ar": "أقرأ وأمارس الرياضة."
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "title": "موعد الطبيب",
+            "lines": [
+              {
+                "fr": "J’ai mal à la tête.",
+                "ar": "أشعر بصداع."
+              },
+              {
+                "fr": "Vous devez vous reposer et boire de l’eau.",
+                "ar": "عليك أن ترتاح وتشرب الماء."
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "title": "طلب المساعدة",
+            "lines": [
+              {
+                "fr": "Pouvez-vous m’aider, s’il vous plaît ?",
+                "ar": "هل يمكنك مساعدتي من فضلك؟"
+              },
+              {
+                "fr": "Bien sûr. Quel est le problème ?",
+                "ar": "بالتأكيد. ما المشكلة؟"
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "title": "رسالة هاتفية",
+            "lines": [
+              {
+                "fr": "Tu peux m’appeler ce soir ?",
+                "ar": "هل يمكنك الاتصال بي هذا المساء؟"
+              },
+              {
+                "fr": "Oui, vers dix-neuf heures.",
+                "ar": "نعم، قرابة الساعة السابعة مساءً."
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "title": "الخطط",
+            "lines": [
+              {
+                "fr": "Qu’est-ce que tu vas faire demain ?",
+                "ar": "ماذا ستفعل غداً؟"
+              },
+              {
+                "fr": "Je vais visiter un musée.",
+                "ar": "سأزور متحفاً."
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "title": "تجربة الماضي",
+            "lines": [
+              {
+                "fr": "Qu’est-ce que tu as fait hier ?",
+                "ar": "ماذا فعلت أمس؟"
+              },
+              {
+                "fr": "J’ai étudié et j’ai vu un ami.",
+                "ar": "درست والتقيت صديقاً."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "الطعام والمدينة",
+        "level": "A2",
+        "conversations": [
+          {
+            "id": 1,
+            "title": "شراء تذكرة",
+            "lines": [
+              {
+                "fr": "Un billet pour Bucarest, s’il vous plaît.",
+                "ar": "تذكرة إلى بوخارست من فضلك."
+              },
+              {
+                "fr": "Aller simple ou aller-retour ?",
+                "ar": "ذهاب فقط أم ذهاب وعودة؟"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "السؤال عن الطريق",
+            "lines": [
+              {
+                "fr": "Excusez-moi, où est la gare ?",
+                "ar": "عذراً، أين محطة القطار؟"
+              },
+              {
+                "fr": "Allez tout droit, puis tournez à gauche.",
+                "ar": "سر مباشرة ثم انعطف يساراً."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "في الفندق",
+            "lines": [
+              {
+                "fr": "J’ai une réservation au nom de Haddad.",
+                "ar": "لدي حجز باسم حداد."
+              },
+              {
+                "fr": "Très bien. Voici votre clé.",
+                "ar": "حسناً. هذا مفتاحك."
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "title": "تسجيل الوصول",
+            "lines": [
+              {
+                "fr": "À quelle heure est le départ ?",
+                "ar": "في أي ساعة تسجيل المغادرة؟"
+              },
+              {
+                "fr": "Le départ est à onze heures.",
+                "ar": "المغادرة الساعة الحادية عشرة."
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "title": "في محطة القطار",
+            "lines": [
+              {
+                "fr": "Le train pour Bucarest est à l’heure ?",
+                "ar": "هل القطار إلى بوخارست في موعده؟"
+              },
+              {
+                "fr": "Non, il a dix minutes de retard.",
+                "ar": "لا، يتأخر عشر دقائق."
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "title": "طلب الاتجاهات",
+            "lines": [
+              {
+                "fr": "Comment aller au centre-ville ?",
+                "ar": "كيف أصل إلى وسط المدينة؟"
+              },
+              {
+                "fr": "Prenez le métro jusqu’à la station centrale.",
+                "ar": "استقل المترو حتى المحطة المركزية."
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "title": "مشكلة في الحجز",
+            "lines": [
+              {
+                "fr": "Je ne trouve pas ma réservation.",
+                "ar": "لا أجد حجزي."
+              },
+              {
+                "fr": "Pouvez-vous montrer votre confirmation ?",
+                "ar": "هل يمكنك إظهار تأكيد الحجز؟"
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "title": "زيارة متحف",
+            "lines": [
+              {
+                "fr": "À quelle heure le musée ferme-t-il ?",
+                "ar": "متى يغلق المتحف؟"
+              },
+              {
+                "fr": "Il ferme à dix-huit heures.",
+                "ar": "يغلق الساعة السادسة مساءً."
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "title": "دعوة إلى نزهة",
+            "lines": [
+              {
+                "fr": "On visite la vieille ville demain ?",
+                "ar": "هل نزور المدينة القديمة غداً؟"
+              },
+              {
+                "fr": "Bonne idée ! Rendez-vous à neuf heures.",
+                "ar": "فكرة جيدة! نلتقي الساعة التاسعة."
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "title": "طلب معلومات",
+            "lines": [
+              {
+                "fr": "Le musée est loin d’ici ?",
+                "ar": "هل المتحف بعيد من هنا؟"
+              },
+              {
+                "fr": "Non, c’est à cinq minutes à pied.",
+                "ar": "لا، يبعد خمس دقائق مشياً."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "الصحة والخدمات اليومية",
+        "level": "A2",
+        "conversations": [
+          {
+            "id": 1,
+            "title": "الحديث عن الصحة",
+            "lines": [
+              {
+                "fr": "Depuis quand avez-vous mal ?",
+                "ar": "منذ متى وأنت تتألم؟"
+              },
+              {
+                "fr": "Depuis hier soir.",
+                "ar": "منذ مساء أمس."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "الصيدلية",
+            "lines": [
+              {
+                "fr": "Je cherche quelque chose contre le rhume.",
+                "ar": "أبحث عن شيء للزكام."
+              },
+              {
+                "fr": "Avez-vous de la fièvre ?",
+                "ar": "هل لديك حمى؟"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "تحديد موعد",
+            "lines": [
+              {
+                "fr": "Je voudrais prendre rendez-vous.",
+                "ar": "أود حجز موعد."
+              },
+              {
+                "fr": "Vous êtes disponible mardi matin ?",
+                "ar": "هل أنت متاح صباح الثلاثاء؟"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "title": "في البريد",
+            "lines": [
+              {
+                "fr": "Je voudrais envoyer ce colis.",
+                "ar": "أريد إرسال هذه الطرد."
+              },
+              {
+                "fr": "En livraison normale ou express ?",
+                "ar": "بالتوصيل العادي أم السريع؟"
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "title": "في البنك",
+            "lines": [
+              {
+                "fr": "Je voudrais retirer de l’argent.",
+                "ar": "أريد سحب المال."
+              },
+              {
+                "fr": "Insérez votre carte, s’il vous plaît.",
+                "ar": "أدخل بطاقتك من فضلك."
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "title": "شكوى مهذبة",
+            "lines": [
+              {
+                "fr": "Excusez-moi, il y a une erreur sur la facture.",
+                "ar": "عذراً، هناك خطأ في الفاتورة."
+              },
+              {
+                "fr": "Je vérifie cela tout de suite.",
+                "ar": "سأتحقق من ذلك فوراً."
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "title": "طلب توضيح",
+            "lines": [
+              {
+                "fr": "Pardon, pouvez-vous répéter plus lentement ?",
+                "ar": "عذراً، هل يمكنك التكرار ببطء أكثر؟"
+              },
+              {
+                "fr": "Bien sûr, je répète.",
+                "ar": "بالتأكيد، سأكرر."
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "title": "تعبير عن الرأي",
+            "lines": [
+              {
+                "fr": "Qu’est-ce que tu penses de ce film ?",
+                "ar": "ما رأيك في هذا الفيلم؟"
+              },
+              {
+                "fr": "Je le trouve intéressant, mais un peu long.",
+                "ar": "أجده ممتعاً لكنه طويل قليلاً."
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "title": "المقارنة",
+            "lines": [
+              {
+                "fr": "Quel trajet est le plus rapide ?",
+                "ar": "أي طريق أسرع؟"
+              },
+              {
+                "fr": "Le métro est plus rapide que le bus.",
+                "ar": "المترو أسرع من الحافلة."
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "title": "مشكلة في السكن",
+            "lines": [
+              {
+                "fr": "Le chauffage ne fonctionne pas.",
+                "ar": "التدفئة لا تعمل."
+              },
+              {
+                "fr": "Je vais appeler le propriétaire.",
+                "ar": "سأتصل بمالك العقار."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "السكن والمواصلات",
+        "level": "A2–B1",
+        "conversations": [
+          {
+            "id": 1,
+            "title": "التعبير عن خطة",
+            "lines": [
+              {
+                "fr": "Qu’est-ce que tu vas faire cet été ?",
+                "ar": "ماذا ستفعل هذا الصيف؟"
+              },
+              {
+                "fr": "Je vais voyager en France.",
+                "ar": "سأسافر إلى فرنسا."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "الصفات الملكية",
+            "lines": [
+              {
+                "fr": "C’est votre dossier ?",
+                "ar": "هل هذا ملفكم؟"
+              },
+              {
+                "fr": "Non, c’est son dossier.",
+                "ar": "لا، هذا ملفه."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "تقديم اقتراح",
+            "lines": [
+              {
+                "fr": "On pourrait prendre le train.",
+                "ar": "يمكننا أن نستقل القطار."
+              },
+              {
+                "fr": "Bonne idée, ce sera plus simple.",
+                "ar": "فكرة جيدة، سيكون ذلك أسهل."
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "title": "إبداء الموافقة",
+            "lines": [
+              {
+                "fr": "Tu es d’accord avec cette proposition ?",
+                "ar": "هل توافق على هذا المقترح؟"
+              },
+              {
+                "fr": "Oui, elle me semble raisonnable.",
+                "ar": "نعم، يبدو معقولاً."
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "title": "التخطيط للعمل",
+            "lines": [
+              {
+                "fr": "Quand pouvons-nous commencer ?",
+                "ar": "متى يمكننا البدء؟"
+              },
+              {
+                "fr": "Dès que nous recevons les documents.",
+                "ar": "حالما نتلقى الوثائق."
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "title": "مقابلة عمل",
+            "lines": [
+              {
+                "fr": "Pouvez-vous parler de votre expérience ?",
+                "ar": "هل يمكنك الحديث عن خبرتك؟"
+              },
+              {
+                "fr": "J’ai travaillé trois ans dans ce domaine.",
+                "ar": "عملت ثلاث سنوات في هذا المجال."
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "title": "الاعتذار",
+            "lines": [
+              {
+                "fr": "Je suis désolé d’être en retard.",
+                "ar": "أعتذر عن التأخر."
+              },
+              {
+                "fr": "Ce n’est pas grave, nous pouvons commencer.",
+                "ar": "لا بأس، يمكننا البدء."
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "title": "حل مشكلة",
+            "lines": [
+              {
+                "fr": "Nous avons un problème de planning.",
+                "ar": "لدينا مشكلة في الجدول."
+              },
+              {
+                "fr": "Proposons une nouvelle date.",
+                "ar": "لنقترح موعداً جديداً."
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "title": "تلخيص اجتماع",
+            "lines": [
+              {
+                "fr": "Quelle est la décision finale ?",
+                "ar": "ما القرار النهائي؟"
+              },
+              {
+                "fr": "Nous allons envoyer le rapport vendredi.",
+                "ar": "سنرسل التقرير يوم الجمعة."
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "title": "مناقشة خبر",
+            "lines": [
+              {
+                "fr": "Qu’as-tu pensé de cette nouvelle ?",
+                "ar": "ما رأيك في هذا الخبر؟"
+              },
+              {
+                "fr": "Je voudrais vérifier les faits avant de conclure.",
+                "ar": "أريد التحقق من الحقائق قبل الاستنتاج."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unit": 7,
+        "title": "الخطط والتواصل",
+        "level": "B1",
+        "conversations": [
+          {
+            "id": 1,
+            "title": "نقاش تعليمي",
+            "lines": [
+              {
+                "fr": "Quel est l’objectif principal du projet ?",
+                "ar": "ما الهدف الرئيسي للمشروع؟"
+              },
+              {
+                "fr": "Améliorer l’accès à la formation.",
+                "ar": "تحسين الوصول إلى التدريب."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "طلب توضيح رسمي",
+            "lines": [
+              {
+                "fr": "Pourriez-vous préciser votre remarque ?",
+                "ar": "هل يمكنكم توضيح ملاحظتكم؟"
+              },
+              {
+                "fr": "Bien sûr, je vais donner un exemple.",
+                "ar": "بالتأكيد، سأعطي مثالاً."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "عرض حجة",
+            "lines": [
+              {
+                "fr": "Cette mesure présente deux avantages.",
+                "ar": "لهذا الإجراء ميزتان."
+              },
+              {
+                "fr": "Lesquels, selon vous ?",
+                "ar": "ما هما برأيكم؟"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "title": "اختلاف الرأي",
+            "lines": [
+              {
+                "fr": "Je comprends votre point de vue, toutefois…",
+                "ar": "أتفهم وجهة نظرك، ومع ذلك…"
+              },
+              {
+                "fr": "Je vous écoute.",
+                "ar": "أنا أستمع إليك."
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "title": "مقارنة حلول",
+            "lines": [
+              {
+                "fr": "Quelle solution serait la plus durable ?",
+                "ar": "أي حل سيكون أكثر استدامة؟"
+              },
+              {
+                "fr": "Celle qui tient compte des besoins locaux.",
+                "ar": "الحل الذي يراعي الاحتياجات المحلية."
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "title": "مناقشة بيانات",
+            "lines": [
+              {
+                "fr": "Les résultats sont-ils définitifs ?",
+                "ar": "هل النتائج نهائية؟"
+              },
+              {
+                "fr": "Non, il faut davantage de données.",
+                "ar": "لا، نحتاج إلى مزيد من البيانات."
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "title": "صياغة توصية",
+            "lines": [
+              {
+                "fr": "Que recommandez-vous ?",
+                "ar": "بماذا توصي؟"
+              },
+              {
+                "fr": "Je recommande une évaluation indépendante.",
+                "ar": "أوصي بتقييم مستقل."
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "title": "التفاوض",
+            "lines": [
+              {
+                "fr": "Seriez-vous prêt à revoir le calendrier ?",
+                "ar": "هل أنتم مستعدون لمراجعة الجدول؟"
+              },
+              {
+                "fr": "Oui, si les priorités sont clairement définies.",
+                "ar": "نعم، إذا حُددت الأولويات بوضوح."
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "title": "التواصل الرسمي",
+            "lines": [
+              {
+                "fr": "Nous vous remercions pour votre collaboration.",
+                "ar": "نشكركم على تعاونكم."
+              },
+              {
+                "fr": "Nous restons à votre disposition.",
+                "ar": "نبقى في خدمتكم."
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "title": "خلاصة عرض",
+            "lines": [
+              {
+                "fr": "Pour conclure, trois points sont essentiels.",
+                "ar": "ختاماً، هناك ثلاث نقاط أساسية."
+              },
+              {
+                "fr": "Je vous remercie pour cette synthèse.",
+                "ar": "شكراً لكم على هذا الملخص."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unit": 8,
+        "title": "النقاش والاستقلال اللغوي",
+        "level": "B1–B2",
+        "conversations": [
+          {
+            "id": 1,
+            "title": "تحليل موقف",
+            "lines": [
+              {
+                "fr": "Quelles sont les limites de cette hypothèse ?",
+                "ar": "ما حدود هذه الفرضية؟"
+              },
+              {
+                "fr": "Elle n’explique qu’une partie des résultats.",
+                "ar": "إنها لا تفسر إلا جزءاً من النتائج."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "التمييز بين الأدلة",
+            "lines": [
+              {
+                "fr": "Ces données suffisent-elles à conclure ?",
+                "ar": "هل تكفي هذه البيانات للاستنتاج؟"
+              },
+              {
+                "fr": "Pas encore, d’autres explications restent possibles.",
+                "ar": "ليس بعد، فما زالت تفسيرات أخرى ممكنة."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "مناقشة سياسة",
+            "lines": [
+              {
+                "fr": "Quels effets à long terme faut-il anticiper ?",
+                "ar": "ما الآثار طويلة الأجل التي ينبغي توقعها؟"
+              },
+              {
+                "fr": "Il faut examiner les coûts et les conséquences sociales.",
+                "ar": "ينبغي دراسة التكاليف والنتائج الاجتماعية."
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "title": "تقييم حجة",
+            "lines": [
+              {
+                "fr": "L’argument est-il suffisamment étayé ?",
+                "ar": "هل الحجة مدعومة بما يكفي؟"
+              },
+              {
+                "fr": "Il est plausible, mais les preuves restent limitées.",
+                "ar": "إنها معقولة، لكن الأدلة ما زالت محدودة."
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "title": "تفسير تناقض",
+            "lines": [
+              {
+                "fr": "Comment expliquer ces résultats contradictoires ?",
+                "ar": "كيف نفسر هذه النتائج المتناقضة؟"
+              },
+              {
+                "fr": "Les méthodes et les échantillons diffèrent.",
+                "ar": "تختلف المنهجيات والعينات."
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "title": "صياغة تحفظ",
+            "lines": [
+              {
+                "fr": "Peut-on affirmer un lien de causalité ?",
+                "ar": "هل يمكن تأكيد وجود علاقة سببية؟"
+              },
+              {
+                "fr": "Non, la corrélation ne prouve pas la causalité.",
+                "ar": "لا، فالارتباط لا يثبت السببية."
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "title": "تقييم اقتراح",
+            "lines": [
+              {
+                "fr": "Cette proposition est-elle applicable partout ?",
+                "ar": "هل يمكن تطبيق هذا المقترح في كل مكان؟"
+              },
+              {
+                "fr": "Sa pertinence dépend du contexte local.",
+                "ar": "تعتمد ملاءمته على السياق المحلي."
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "title": "عرض استنتاج",
+            "lines": [
+              {
+                "fr": "Quelle conclusion peut-on raisonnablement tirer ?",
+                "ar": "ما الاستنتاج المعقول الذي يمكن استخلاصه؟"
+              },
+              {
+                "fr": "Les résultats sont prometteurs, mais provisoires.",
+                "ar": "النتائج واعدة لكنها مؤقتة."
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "title": "مناقشة أخلاقية",
+            "lines": [
+              {
+                "fr": "Comment garantir une évaluation équitable ?",
+                "ar": "كيف نضمن تقييماً عادلاً؟"
+              },
+              {
+                "fr": "Il faut des critères transparents et vérifiables.",
+                "ar": "نحتاج إلى معايير شفافة وقابلة للتحقق."
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "title": "إغلاق نقاش",
+            "lines": [
+              {
+                "fr": "Quelle serait la prochaine étape ?",
+                "ar": "ما الخطوة التالية؟"
+              },
+              {
+                "fr": "Vérifier les données et publier une synthèse nuancée.",
+                "ar": "التحقق من البيانات ونشر خلاصة متوازنة."
+              }
+            ]
+          }
+        ]
       }
     ]
   }
