@@ -1510,7 +1510,7 @@ function showBookResult(id,text,good){
  const el=$('#'+id);if(!el)return;el.hidden=false;el.textContent=text;el.classList.toggle('is-good',!!good);el.classList.toggle('is-review',!good);
 }
 function setupBookPractice(){
- const root=$('#panel-bookplan');if(!root||root.dataset.practiceBound==='1')return;root.dataset.practiceBound='1';
+ const root=document;if(document.documentElement.dataset.bookPracticeBound==='1')return;document.documentElement.dataset.bookPracticeBound='1';
  $('[data-book-writing]',root).forEach(area=>{area.value=(state.bookWriting&&state.bookWriting[area.dataset.bookWriting])||'';});
  root.addEventListener('input',event=>{
   const area=event.target.closest('[data-book-writing]');if(!area)return;
