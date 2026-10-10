@@ -173,10 +173,30 @@
 .book-index-unit-overview p{margin:5px 0}.book-index-unit-overview ul{margin:5px 0;padding-right:20px}
 @media(max-width:760px){.unit-intro-columns,.unit-intro-examples{grid-template-columns:1fr}.unit-number-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.unit-intro-header h3{font-size:18px}}
 @media(max-width:760px){.book-practice-quiz,.book-fill-grid,.book-match-grid,.book-order-grid{grid-template-columns:1fr}.book-match-row{grid-template-columns:minmax(80px,.7fr) minmax(130px,1fr)}.book-self-checklist{grid-template-columns:1fr}.book-practice-heading h3{font-size:18px}.book-exercise-actions .btn{flex:1}}
+
+.voice-diagnostic-backdrop{position:fixed;inset:0;z-index:10000;background:rgba(10,28,42,.58);display:flex;align-items:center;justify-content:center;padding:18px}
+.voice-diagnostic-backdrop[hidden]{display:none!important}
+.voice-diagnostic-dialog{width:min(760px,100%);max-height:min(82vh,850px);overflow:auto;background:#fff;border-radius:16px;box-shadow:0 24px 80px rgba(0,0,0,.28);padding:20px;color:var(--ink)}
+.voice-diagnostic-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.voice-diagnostic-header h2{font-size:20px;margin:2px 0 8px}
+.voice-diagnostic-lead{font-size:13px;line-height:1.8;color:var(--muted)}
+.voice-diagnostic-status{padding:10px 12px;border-radius:9px;background:#f1f7fa;margin:12px 0;font-size:13px;line-height:1.8}
+.voice-diagnostic-status.good{background:#eaf8f1;color:#11634c}.voice-diagnostic-status.warn{background:#fff5e4;color:#8b5200}
+.voice-diagnostic-list{display:grid;gap:8px;margin:14px 0}
+.voice-diagnostic-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.voice-diagnostic-row.is-recommended{border-color:#7bc3ab;background:#f2faf6}
+.voice-diagnostic-row-main{min-width:180px;flex:1}.voice-diagnostic-name{font-weight:800;overflow-wrap:anywhere}
+.voice-diagnostic-meta{font-size:12px;color:var(--muted);direction:ltr;text-align:left;margin-top:4px}
+.voice-diagnostic-tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px}
+.voice-diagnostic-tag{font-size:10px;font-weight:800;border-radius:99px;background:#e9f1f5;color:#315365;padding:3px 7px}
+.voice-diagnostic-tag.recommended{background:#dff4e9;color:#11634c}
+.voice-diagnostic-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:14px}
+.voice-diagnostic-report{display:block;width:100%;min-height:100px;direction:ltr;text-align:left;font:12px/1.6 ui-monospace,monospace;white-space:pre-wrap;border:1px solid var(--line);border-radius:9px;padding:10px;resize:vertical}
+@media(max-width:700px){.voice-diagnostic-dialog{padding:14px}.voice-diagnostic-row{align-items:flex-start}.voice-diagnostic-actions .btn{flex:1}.voice-diagnostic-header h2{font-size:17px}}
 </style>
 </head>
 <body>
-<header class="app-header"><div class="header-inner"><div class="brand"><div class="brand-mark">FR</div><div><div class="brand-title">منصة تعلّم الفرنسية <span class="latin" lang="fr" dir="ltr">A1–B2</span></div><div class="brand-sub">Entre Nous 1 · مسارك نحو DELF B2</div></div></div><div class="header-actions"><span class="offline-pill" id="syncStatus">● حفظ محلي مفعّل</span><button class="btn btn-soft" type="button" id="authHeaderBtn">حساب الطالب</button><button class="btn btn-soft" type="button" id="continueBtn">متابعة آخر قسم</button></div></div></header>
+<header class="app-header"><div class="header-inner"><div class="brand"><div class="brand-mark">FR</div><div><div class="brand-title">منصة تعلّم الفرنسية <span class="latin" lang="fr" dir="ltr">A1–B2</span></div><div class="brand-sub">Entre Nous 1 · مسارك نحو DELF B2</div></div></div><div class="header-actions"><span class="offline-pill" id="syncStatus">● حفظ محلي مفعّل</span><button class="btn btn-soft" type="button" id="authHeaderBtn">حساب الطالب</button><button class="btn btn-soft" type="button" id="voiceDiagnosticBtn">فحص أصوات Chrome</button><button class="btn btn-soft" type="button" id="continueBtn">متابعة آخر قسم</button></div></div></header>
 <div class="app-layout">
 <aside class="sidebar"><div class="side-kicker">YOUR LEARNING PATH</div><nav class="nav-list" id="desktopNav" aria-label="التنقل الرئيسي"></nav><div class="sidebar-bottom"><p>التقدم العام</p><div class="side-progress"><span id="sideProgressBar"></span></div><p id="sideProgressText" style="margin-top:7px">0% مكتمل</p></div></aside>
 <main class="main-column"><nav class="mobile-nav" id="mobileNav" aria-label="التنقل على الهاتف"></nav><div id="panels">
@@ -1203,6 +1223,19 @@
 <section class="panel" id="panel-teacher"><div class="panel-head"><div><h1>لوحة المدرّس <span class="latin" dir="ltr">Teacher Dashboard</span></h1><p>متابعة حسابات الطلاب، وإكمال الدروس، ونتائج الاختبارات المحفوظة سحابياً.</p></div><span class="chip">صلاحية المدرّس فقط</span></div><div id="teacherMessage" class="auth-message info">هذه اللوحة مخصصة للحسابات التي تُمنح دور teacher من لوحة قاعدة البيانات.</div><div class="mini-stat-grid"><div class="mini-stat"><strong id="teacherStudentCount">—</strong><span>عدد الطلاب</span></div><div class="mini-stat"><strong id="teacherActiveCount">—</strong><span>طلاب لديهم تقدم مسجل</span></div><div class="mini-stat"><strong id="teacherAverageProgress">—</strong><span>متوسط إكمال الجلسات</span></div></div><div class="teacher-tools"><input type="search" id="teacherSearch" placeholder="ابحث باسم الطالب أو البريد الإلكتروني" aria-label="البحث عن طالب"><button class="btn btn-primary" id="refreshTeacherBtn" type="button">تحديث البيانات</button><button class="btn btn-soft" id="exportTeacherCsvBtn" type="button">تصدير CSV</button></div><div class="table-scroll"><table class="teacher-table"><thead><tr><th>الطالب</th><th>البريد الإلكتروني</th><th>الجلسات</th><th>الأسابيع</th><th>آخر اختبار</th><th>آخر نشاط</th><th>السجل</th></tr></thead><tbody id="teacherStudentsBody"><tr><td colspan="7">سجّل الدخول بحساب المدرّس لتحميل البيانات.</td></tr></tbody></table></div><div id="teacherStudentDetail" class="card hidden"><div class="row" style="align-items:center"><div><h3 id="teacherStudentDetailTitle">تفاصيل الطالب</h3><p id="teacherStudentDetailSummary" class="small"></p></div><div style="text-align:left;flex:0 0 auto"><button class="btn btn-quiet" id="closeTeacherDetailBtn" type="button">إغلاق التفاصيل</button></div></div><div class="table-scroll"><table class="teacher-table"><thead><tr><th>الاختبار</th><th>النتيجة</th><th>النسبة</th><th>التاريخ</th></tr></thead><tbody id="teacherStudentQuizHistory"><tr><td colspan="4">لا توجد محاولات مسجلة.</td></tr></tbody></table></div></div><div class="card gold"><h3>منح حساب المدرّس الأول</h3><p>لأسباب أمنية، لا يستطيع الطالب منح نفسه صلاحية المدرّس من داخل الموقع. بعد إنشاء حسابك وتأكيد البريد، استخدم أمر SQL المخصص في ملف <span class="latin" dir="ltr">README-SUPABASE.md</span> مرة واحدة من لوحة Supabase، ثم سجّل الخروج والدخول مجدداً.</p></div></section>
 </div></main></div>
 <footer class="footer"><span>دفتر الفرنسية التفاعلي · A1.1 · منصة تعلم ذاتي</span><span id="footerSyncStatus">الحفظ المحلي مفعّل؛ يلزم إعداد Supabase للمزامنة السحابية.</span></footer><span>دفتر الفرنسية التفاعلي · A1.1 · إعداد تدريبي مخصص للدكتور حسين مشبك</span><span>التقدم محفوظ محلياً في هذا المتصفح — أكتوبر 2026</span></footer><div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div class="voice-diagnostic-backdrop" id="voiceDiagnosticModal" hidden>
+ <section class="voice-diagnostic-dialog" role="dialog" aria-modal="true" aria-labelledby="voiceDiagnosticTitle">
+  <div class="voice-diagnostic-header">
+   <div><div class="kicker">AUDIO DIAGNOSTICS · CHROME</div><h2 id="voiceDiagnosticTitle">أصوات الفرنسية المتاحة في هذا المتصفح</h2><p class="voice-diagnostic-lead">تُقرأ هذه القائمة مباشرة من Chrome على جهازك. اضغط «جرّب الصوت» لسماع عينة بالصوت المحدد، ثم انسخ التقرير وأرسله لي لتحديد أفضل خيار.</p></div>
+   <button class="btn btn-soft" type="button" id="voiceDiagnosticClose">✕ إغلاق</button>
+  </div>
+  <div class="voice-diagnostic-status" id="voiceDiagnosticStatus" aria-live="polite">اضغط «تحديث القائمة» لجلب الأصوات المتاحة.</div>
+  <div class="voice-diagnostic-list" id="voiceDiagnosticList"></div>
+  <div class="voice-diagnostic-actions"><button class="btn btn-primary" type="button" id="voiceDiagnosticRefresh">تحديث القائمة</button><button class="btn btn-soft" type="button" id="voiceDiagnosticCopy">نسخ تقرير الأصوات</button></div>
+  <label for="voiceDiagnosticReport" style="display:block;font-size:12px;font-weight:800;margin:12px 0 6px">التقرير الذي يمكنك نسخه وإرساله</label>
+  <textarea class="voice-diagnostic-report" id="voiceDiagnosticReport" readonly spellcheck="false" placeholder="ستظهر هنا أسماء الأصوات الفرنسية التي يعرضها Chrome."></textarea>
+ </section>
+</div>
 <script src="./curriculum.js"></script>
 <script>
 (()=>{
@@ -1681,12 +1714,78 @@ function setupBookPractice(){
  });
 }
 
+
+function setupVoiceDiagnostics(){
+ const modal=$('#voiceDiagnosticModal'),list=$('#voiceDiagnosticList'),status=$('#voiceDiagnosticStatus'),report=$('#voiceDiagnosticReport');
+ const open=$('#voiceDiagnosticBtn'),close=$('#voiceDiagnosticClose'),refresh=$('#voiceDiagnosticRefresh'),copy=$('#voiceDiagnosticCopy');
+ if(!modal||!open||!list||!status||!report||modal.dataset.bound==='1')return;
+ modal.dataset.bound='1';
+ const isFrench=v=>String(v.lang||'').toLowerCase().startsWith('fr');
+ function currentVoices(){try{return window.speechSynthesis?window.speechSynthesis.getVoices()||[]:[];}catch(_){return [];}}
+ function render(){
+  const all=currentVoices(),french=all.map((voice,index)=>({voice,index})).filter(x=>isFrench(x.voice));
+  const amelie=french.filter(x=>String(x.voice.name||'').toLowerCase().includes('amelie')||String(x.voice.name||'').toLowerCase().includes('amélie'));
+  const preferred=preferredFrenchVoice();
+  list.innerHTML='';
+  if(!('speechSynthesis' in window)){
+   status.className='voice-diagnostic-status warn';status.textContent='هذا المتصفح لا يتيح واجهة SpeechSynthesis.';report.value='SpeechSynthesis unavailable';return;
+  }
+  if(!all.length){
+   status.className='voice-diagnostic-status warn';status.textContent='لم يُرجع Chrome قائمة أصوات بعد. انتظر لحظة ثم اضغط «تحديث القائمة». تأكد أيضاً من تثبيت الصوت الفرنسي في إعدادات macOS.';report.value='Chrome returned no speech voices yet.';return;
+  }
+  if(!french.length){
+   status.className='voice-diagnostic-status warn';status.textContent='Chrome يعرض '+all.length+' صوتاً، لكن لا يوجد بينها صوت فرنسي. ستحتاج إلى تفعيل صوت فرنسي في macOS أو استخدام محرك نطق مختلف.';
+  }else if(amelie.length){
+   status.className='voice-diagnostic-status good';status.textContent='عُثر على '+amelie.length+' صوت باسم Amélie/Amelie. ستعرض القائمة الأصوات الفرنسية ويمكنك تجربة كل صوت مباشرة.';
+  }else{
+   status.className='voice-diagnostic-status warn';status.textContent='لم يظهر صوت باسم Amélie في قائمة Chrome. عُثر على '+french.length+' صوت فرنسي؛ جرّب البدائل أدناه أو شاركني التقرير.';
+  }
+  const lines=['Chrome speech voices report','Total voices: '+all.length,'French voices: '+french.length,'Amelie matches: '+(amelie.length?'yes':'no'),'Preferred by platform: '+(preferred?(preferred.name+' ('+preferred.lang+')'):'none'),''];
+  french.forEach(({voice,index})=>{
+   const recommended=!!preferred&&voice.name===preferred.name&&voice.lang===preferred.lang;
+   const row=document.createElement('div');row.className='voice-diagnostic-row'+(recommended?' is-recommended':'');
+   const main=document.createElement('div');main.className='voice-diagnostic-row-main';
+   const name=document.createElement('div');name.className='voice-diagnostic-name';name.textContent=voice.name||'(اسم غير متاح)';
+   const meta=document.createElement('div');meta.className='voice-diagnostic-meta';meta.textContent=(voice.lang||'لغة غير محددة')+' · '+(voice.localService?'localService=true':'localService=false')+(voice.default?' · default=true':'');
+   const tags=document.createElement('div');tags.className='voice-diagnostic-tags';
+   if(String(voice.name||'').toLowerCase().includes('amelie')||String(voice.name||'').toLowerCase().includes('amélie')){const t=document.createElement('span');t.className='voice-diagnostic-tag recommended';t.textContent='Amélie';tags.appendChild(t);}
+   if(recommended){const t=document.createElement('span');t.className='voice-diagnostic-tag recommended';t.textContent='المختار حالياً';tags.appendChild(t);}
+   main.append(name,meta);if(tags.childNodes.length)main.appendChild(tags);
+   const button=document.createElement('button');button.type='button';button.className='btn btn-soft';button.textContent='🔊 جرّب الصوت';
+   button.addEventListener('click',()=>{
+    if(!window.speechSynthesis)return;
+    window.speechSynthesis.cancel();
+    const u=new SpeechSynthesisUtterance('Bonjour. Je m’appelle Amélie. Comment allez-vous ?');
+    u.voice=voice;u.lang=voice.lang||'fr-FR';u.rate=.92;
+    window.speechSynthesis.speak(u);
+    status.className='voice-diagnostic-status good';status.textContent='يتم اختبار: '+voice.name+' ('+voice.lang+'). قارن طبيعية النطق مع بقية الأصوات.';
+   });
+   row.append(main,button);list.appendChild(row);
+   lines.push((recommended?'[preferred] ':'')+voice.name+' | '+voice.lang+' | localService='+voice.localService+' | default='+voice.default);
+  });
+  if(!french.length)lines.push('No French voices found.');
+  report.value=lines.join('\\n');
+ }
+ function show(){modal.hidden=false;render();if(window.speechSynthesis&&!currentVoices().length)setTimeout(render,500);}
+ function hide(){modal.hidden=true;if(window.speechSynthesis)window.speechSynthesis.cancel();}
+ open.addEventListener('click',show);close.addEventListener('click',hide);refresh.addEventListener('click',render);
+ modal.addEventListener('click',e=>{if(e.target===modal)hide();});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)hide();});
+ copy.addEventListener('click',async()=>{
+  report.focus();report.select();
+  try{
+   if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(report.value);status.className='voice-diagnostic-status good';status.textContent='نُسخ التقرير. أرسله في المحادثة حتى أفحص أسماء الأصوات.';}
+   else{status.className='voice-diagnostic-status';status.textContent='تم تحديد التقرير. اضغط ⌘C لنسخه، ثم الصقه في المحادثة.';}
+  }catch(_){status.className='voice-diagnostic-status';status.textContent='تم تحديد التقرير. اضغط ⌘C لنسخه، ثم الصقه في المحادثة.';}
+ });
+ if(window.speechSynthesis&&typeof window.speechSynthesis.addEventListener==='function')window.speechSynthesis.addEventListener('voiceschanged',()=>{if(!modal.hidden)render();});
+}
 function setupAudioFeatures(){
  enhanceSentenceAudio(document);
  addRecorderWhereRequested(document);
 }
 
- function init(){addBookIntegration();renderBookPlanIndex();renderRoadmap();renderCitizenshipTrack();makeNav();load();setupCheckboxValues();setupChecks();setupBookPractice();setupRoadmapActivities();setupCitizenshipActivities();setupMonth2Quiz();setupVocab();setupAudioFeatures();setupQuiz();setupSettings();setupAuthForms();$('#personalNotes').value=state.notes||'';updateProgress();navigate((window.location.hash.includes('type=recovery')||window.location.hash.includes('access_token'))?'account':(state.last||'home'));initCloud();}
+ function init(){addBookIntegration();renderBookPlanIndex();renderRoadmap();renderCitizenshipTrack();makeNav();load();setupCheckboxValues();setupChecks();setupBookPractice();setupRoadmapActivities();setupCitizenshipActivities();setupMonth2Quiz();setupVocab();setupAudioFeatures();setupVoiceDiagnostics();setupQuiz();setupSettings();setupAuthForms();$('#personalNotes').value=state.notes||'';updateProgress();navigate((window.location.hash.includes('type=recovery')||window.location.hash.includes('access_token'))?'account':(state.last||'home'));initCloud();}
  init();
 })();
 </script>
