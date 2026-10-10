@@ -1,0 +1,145 @@
+/* Our French Platform: pronunciation-first lessons and secure speaking assessments. */
+(function(){
+'use strict';
+const COURSE=window.FRENCH_CURRICULUM||{};
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const esc=v=>String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+const app=()=>window.OUR_FRENCH_APP||null;
+const client=()=>{try{return app()&&app().getClient?app().getClient():null}catch(_){return null}};
+const session=()=>{try{return app()&&app().getSession?app().getSession():null}catch(_){return null}};
+
+function styles(){
+ if($('#sa-styles'))return;
+ const s=document.createElement('style');s.id='sa-styles';
+ s.textContent='.sa-card{border:1px solid #d4e4ea;border-radius:18px;background:linear-gradient(180deg,#fff,#f7fbfd);padding:18px;margin:18px 0;box-shadow:0 8px 22px rgba(16,45,66,.06)}\n'+
+ '.sa-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:10px}.sa-kicker{font:800 10px Inter,sans-serif;letter-spacing:.1em;color:#0d7a70;direction:ltr;text-align:left}.sa-title{margin:4px 0;color:#102d42;font-size:21px;font-weight:800}.sa-desc{margin:5px 0 12px;color:#526a7b;font-size:14px}.sa-pill{border-radius:999px;padding:5px 10px;background:#e4f6f1;color:#0b665d;font-weight:800;font-size:12px;white-space:nowrap}\n'+
+ '.sa-examples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}.sa-example{border:1px solid #dce8ed;border-radius:13px;padding:12px;background:#fff;min-width:0}.sa-fr{font-size:18px;font-weight:800;color:#102d42;direction:ltr;text-align:left;display:block;line-height:1.5}.sa-ar{color:#526a7b;font-size:13px;margin-top:4px}.sa-speak{margin-top:8px;border:1px solid #c2dcd8;background:#eff9f6;color:#075e57;border-radius:9px;padding:6px 10px;font-size:12px;font-weight:800}\n'+
+ '.sa-record-area{background:#edf4f8;border-radius:13px;padding:14px;margin-top:14px}.sa-prompt{font-size:14px;background:#fff;border-right:4px solid #e5b45d;border-radius:8px;padding:12px;margin:8px 0;color:#17364b}.sa-actions{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.sa-btn{border:1px solid #cadce4;background:#fff;color:#183a50;border-radius:10px;padding:9px 12px;font-weight:800;font-size:13px}.sa-btn.primary{background:#0d7a70;color:#fff;border-color:#0d7a70}.sa-btn.stop{background:#fff3df;color:#855810;border-color:#f0d7a6}.sa-btn:disabled{opacity:.45;cursor:not-allowed}.sa-status{display:block;margin-top:7px;font-size:12px;color:#526a7b;min-height:22px}.sa-consent{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.7;margin-top:10px}.sa-consent input{margin-top:5px;flex:0 0 auto}.sa-audio{display:block;width:100%;margin:10px 0}.sa-privacy{font-size:12px;color:#526a7b;background:#fff;border:1px solid #dbe7ec;border-radius:10px;padding:10px;margin-top:10px}.sa-result-list{display:grid;gap:12px;margin-top:12px}.sa-review-item{border:1px solid #dce5ec;border-radius:13px;padding:14px;background:#fff}.sa-review-meta{font-size:12px;color:#526a7b;margin:4px 0 10px}.sa-review-feedback{display:block;width:100%;min-height:78px;border:1px solid #cbdbe3;border-radius:10px;padding:10px;margin:8px 0;resize:vertical}.sa-empty{color:#617687;background:#f5f8fa;border-radius:11px;padding:14px;font-size:13px}@media(max-width:680px){.sa-examples{grid-template-columns:1fr}.sa-card{padding:13px}.sa-title{font-size:18px}}';
+ document.head.appendChild(s);
+}
+function speak(text){
+ const t=String(text||'').replace(/\s+/g,' ').trim();if(!t)return;
+ if(!window.speechSynthesis||!window.SpeechSynthesisUtterance){if(app()?.toast)app().toast('النطق الآلي غير مدعوم في هذا المتصفح.');return;}
+ try{window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);const vs=window.speechSynthesis.getVoices()||[];const fr=vs.filter(v=>/^fr([-_]|$)/i.test(v.lang||''));const v=fr.find(x=>/fr[-_]FR/i.test(x.lang||''))||fr[0];u.lang=v?.lang||'fr-FR';if(v)u.voice=v;u.rate=.76;window.speechSynthesis.speak(u);}catch(e){console.warn(e);}
+}
+function samples(unit){
+ const list=[],seen=new Set();
+ (unit.days||[]).forEach(d=>(d.examples||[]).forEach(e=>{const fr=String(e.fr||'').trim();if(fr&&!seen.has(fr.toLowerCase())){seen.add(fr.toLowerCase());list.push({fr,ar:e.ar||''});}}));
+ if(!list.length)String(unit.grammar||unit.focus||unit.name||'').split(/[·،,]/).map(x=>x.trim()).filter(Boolean).slice(0,4).forEach(fr=>list.push({fr,ar:'تدريب نطق من موضوع الوحدة'}));
+ return list.slice(0,4);
+}
+function recorderHtml(key,title,prompt,limit,submitLabel){
+ return '<div class="sa-record-area" data-sa-recorder data-assessment-key="'+esc(key)+'" data-limit="'+Number(limit||90)+'">'+
+ '<div class="sa-kicker">SPEAKING & PRONUNCIATION</div><strong>'+esc(title)+'</strong><p class="sa-prompt">'+esc(prompt)+'</p>'+
+ '<div class="sa-actions"><button type="button" class="sa-btn primary" data-sa-start>🎙️ بدء التسجيل</button><button type="button" class="sa-btn stop" data-sa-stop disabled>⏹ إيقاف</button><button type="button" class="sa-btn" data-sa-play disabled>▶ الاستماع للتسجيل</button><a class="sa-btn" data-sa-download hidden download="french-speaking-practice.webm">⬇ تنزيل التسجيل</a><button type="button" class="sa-btn primary" data-sa-submit disabled>'+esc(submitLabel||'إرسال التسجيل إلى المدرّس')+'</button></div>'+
+ '<audio class="sa-audio" data-sa-audio controls hidden></audio><label class="sa-consent"><input type="checkbox" data-sa-consent><span>أوافق على إرسال هذا التسجيل الصوتي إلى مدرّس المنصة لتقييم النطق والتحدث وحفظه في حسابي. لن يُرسل دون موافقتي.</span></label><span class="sa-status" data-sa-status aria-live="polite">يمكنك التسجيل والاستماع والتنزيل محلياً. يتطلب الإرسال إلى المدرّس تسجيل الدخول.</span><div class="sa-privacy">الحد الأقصى '+Number(limit||90)+' ثانية. التسجيلات المرسلة خاصة بالطالب والمدرّس المخوّل.</div></div>';
+}
+function bindRecorder(box){
+ if(box.dataset.saBound==='1')return;box.dataset.saBound='1';
+ const start=$('[data-sa-start]',box),stop=$('[data-sa-stop]',box),play=$('[data-sa-play]',box),dl=$('[data-sa-download]',box),send=$('[data-sa-submit]',box),consent=$('[data-sa-consent]',box),status=$('[data-sa-status]',box),audio=$('[data-sa-audio]',box);
+ let rec=null,stream=null,chunks=[],blob=null,url=null,startAt=0,seconds=0,timer=null,busy=false;
+ const say=t=>{status.textContent=t};
+ function cleanup(){if(timer){clearTimeout(timer);timer=null;}if(stream){stream.getTracks().forEach(t=>t.stop());stream=null;}}
+ function dropUrl(){if(url){URL.revokeObjectURL(url);url=null;}}
+ function stopNow(){if(rec&&rec.state!=='inactive'){try{rec.stop()}catch(_){}}cleanup();}
+ start.addEventListener('click',async()=>{
+  if(!navigator.mediaDevices?.getUserMedia||!window.MediaRecorder){say('التسجيل غير مدعوم في هذا المتصفح. جرّب Chrome أو Safari حديثاً.');return;}
+  if(!window.isSecureContext){say('يلزم فتح المنصة عبر HTTPS والسماح باستخدام الميكروفون.');return;}
+  try{
+   start.disabled=true;say('نطلب إذن الميكروفون…');stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}});
+   const types=['audio/webm;codecs=opus','audio/webm','audio/mp4','audio/ogg'];const mime=types.find(t=>MediaRecorder.isTypeSupported(t));rec=mime?new MediaRecorder(stream,{mimeType:mime}):new MediaRecorder(stream);
+   chunks=[];blob=null;seconds=0;startAt=Date.now();
+   rec.ondataavailable=e=>{if(e.data&&e.data.size)chunks.push(e.data)};
+   rec.onerror=e=>{console.error('MediaRecorder error',e);say('حدث خطأ أثناء التسجيل. أعد المحاولة.');start.disabled=false;stop.disabled=true;cleanup()};
+   rec.onstop=()=>{
+    seconds=Math.max(1,Math.round((Date.now()-startAt)/1000));blob=new Blob(chunks,{type:rec?.mimeType||'audio/webm'});dropUrl();url=URL.createObjectURL(blob);
+    audio.src=url;audio.hidden=false;play.disabled=!blob.size;dl.hidden=!blob.size;send.disabled=!blob.size||!consent.checked;dl.href=url;dl.download=box.dataset.assessmentKey+'-'+new Date().toISOString().slice(0,10)+(blob.type.includes('mp4')?'.m4a':blob.type.includes('ogg')?'.ogg':'.webm');
+    start.disabled=false;stop.disabled=true;cleanup();say('تم التسجيل ('+seconds+' ثانية). استمع إليه ثم أرسله أو نزّله.');
+   };
+   rec.start();stop.disabled=false;play.disabled=true;send.disabled=true;dl.hidden=true;say('التسجيل جارٍ. تحدث بوضوح؛ سيتوقف تلقائياً بعد '+box.dataset.limit+' ثانية.');timer=setTimeout(stopNow,Math.max(15,Number(box.dataset.limit)||90)*1000);
+  }catch(e){console.error('Microphone error',e);start.disabled=false;stop.disabled=true;cleanup();say(e?.name==='NotAllowedError'?'لم تسمح للمتصفح باستخدام الميكروفون. فعّل الإذن ثم أعد المحاولة.':'تعذر تشغيل الميكروفون. تحقق من الإذن والجهاز.');}
+ });
+ stop.addEventListener('click',()=>{if(rec&&rec.state==='recording'){say('جارٍ تجهيز التسجيل…');stopNow()}});
+ play.addEventListener('click',()=>audio.src&&audio.play().catch(()=>say('استخدم مشغل الصوت للاستماع للتسجيل.')));
+ consent.addEventListener('change',()=>{send.disabled=!blob||busy||!consent.checked});
+ send.addEventListener('click',async()=>{
+  if(!blob){say('سجّل إجابتك أولاً.');return;}
+  if(!consent.checked){say('ضع علامة الموافقة قبل إرسال التسجيل.');return;}
+  const db=client(),ss=session();
+  if(!db||!ss?.user?.id){say('التسجيل محلي حتى الآن. سجّل الدخول من «حساب الطالب»، ثم أرسل التسجيل مرة أخرى.');app()?.navigate?.('account');return;}
+  busy=true;send.disabled=true;start.disabled=true;say('جارٍ رفع التسجيل وحفظه في سجل الاختبارات…');let path=null;
+  try{
+   const uid=ss.user.id,key=String(box.dataset.assessmentKey||'speaking-practice').replace(/[^a-z0-9_-]/gi,'-');
+   const ext=blob.type.includes('mp4')?'m4a':blob.type.includes('ogg')?'ogg':blob.type.includes('wav')?'wav':'webm';
+   path=uid+'/'+key+'/'+Date.now()+'-'+Math.random().toString(36).slice(2,9)+'.'+ext;
+   const mime=blob.type.includes('mp4')?'audio/mp4':blob.type.includes('ogg')?'audio/ogg':blob.type.includes('wav')?'audio/wav':'audio/webm';
+   const up=await db.storage.from('student-audio').upload(path,blob,{contentType:mime,upsert:false,cacheControl:'3600'});if(up.error)throw up.error;
+   const promptText=box.querySelector('.sa-prompt')?.textContent||'تسجيل نطق وتحدث باللغة الفرنسية';
+   const ins=await db.from('speaking_submissions').insert({user_id:uid,assessment_key:key,prompt:promptText,storage_path:path,mime_type:mime,duration_seconds:seconds}).select('id').single();
+   if(ins.error)throw ins.error;
+   say('تم إرسال التسجيل بنجاح إلى المدرّس. يمكنك الاحتفاظ بنسخة محلية.');send.textContent='✓ تم الإرسال';send.disabled=true;app()?.toast?.('تم إرسال التسجيل الصوتي إلى المدرّس.');
+  }catch(e){console.error('Speaking upload failed',e);if(path){try{await db.storage.from('student-audio').remove([path])}catch(_){}}say('تعذر إرسال التسجيل. تحقق من الاتصال وتسجيل الدخول ثم حاول مجدداً. '+(e?.message||''));send.disabled=!blob||!consent.checked;}
+  finally{busy=false;start.disabled=false;}
+ });
+ box.addEventListener('DOMNodeRemoved',cleanup);
+}
+function buildCard(c){
+ const el=document.createElement('section');el.className='sa-card';
+ const examples=(c.examples||[]).map(x=>'<article class="sa-example"><span class="sa-fr" lang="fr" dir="ltr">'+esc(x.fr)+'</span><div class="sa-ar">'+esc(x.ar||'اقرأ العبارة بصوت مرتفع.')+'</div><button type="button" class="sa-speak" data-sa-speak="'+esc(x.fr)+'">🔊 استمع ببطء</button></article>').join('');
+ el.innerHTML='<div class="sa-head"><div><div class="sa-kicker">'+esc(c.kicker||'PRONONCIATION · PARLER')+'</div><h2 class="sa-title">'+esc(c.title)+'</h2><p class="sa-desc">'+esc(c.description||'استمع إلى النموذج، وكرره 3–5 مرات، ثم سجّل صوتك وقارنه.')+'</p></div><span class="sa-pill">'+esc(c.badge||'النطق أساسي')+'</span></div>'+(examples?'<div class="sa-examples">'+examples+'</div>':'')+recorderHtml(c.key,c.recordTitle||'تسجيل الإجابة الصوتية',c.prompt,c.limit,c.buttonLabel);
+ el.querySelectorAll('[data-sa-recorder]').forEach(bindRecorder);return el;
+}
+function insertOnce(target,c,afterHead){
+ if(!target||target.querySelector('[data-sa-section="'+c.key+'"]'))return;
+ const card=buildCard(c);card.dataset.saSection=c.key;
+ if(afterHead&&target.querySelector('.panel-head'))target.querySelector('.panel-head').insertAdjacentElement('afterend',card);else target.appendChild(card);
+}
+function renderUnits(){
+ (COURSE.bookUnits||[]).forEach(unit=>{
+  const panel=$('#panel-week'+unit.u);if(!panel)return;
+  const ex=samples(unit),short=ex.slice(0,2).map(x=>x.fr).join(' — ')||unit.name;
+  insertOnce(panel,{key:'pronunciation-unit-'+unit.u,title:'مختبر النطق والتحدث — '+unit.name,description:'خطوة أساسية في كل وحدة: استمع ببطء، كرر العبارة 3–5 مرات، ثم سجّل صوتك واستمع إليه قبل الإرسال.',badge:'الوحدة '+unit.u+' · صوت',examples:ex,prompt:'سجّل 20–45 ثانية: اقرأ عبارتين من الوحدة ثم كوّن جملة جديدة. أمثلة: '+short,limit:45,buttonLabel:'إرسال تسجيل الوحدة إلى المدرّس',recordTitle:'تقييم النطق — الوحدة '+unit.u},true);
+ });
+}
+function renderPlacement(){
+ const panel=$('#panel-placement');if(!panel)return;
+ const prompt='تحدث لمدة 60–90 ثانية بالفرنسية. قدّم نفسك واذكر اسمك ومهنتك ومدينة سكنك واللغات التي تتحدثها ولماذا تتعلم الفرنسية. استخدم: Bonjour, je m’appelle… / Je suis… / J’habite à… / Je parle… / J’apprends le français parce que…';
+ const c={key:'placement-speaking',title:'الجزء الشفهي من اختبار تحديد المستوى',description:'جزء عملي من التقييم. يراجع المدرّس وضوح النطق والطلاقة والمفردات وبناء الجمل؛ لا يُقيّم اللكنة وحدها.',badge:'60–90 ثانية',examples:[{fr:'Bonjour, je m’appelle…',ar:'مرحباً، اسمي…'},{fr:'Je suis…',ar:'أنا… (المهنة أو الصفة)'},{fr:'J’habite à…',ar:'أسكن في…'},{fr:'J’apprends le français parce que…',ar:'أتعلم الفرنسية لأن…'}],prompt,limit:120,buttonLabel:'إرسال الإجابة الشفهية إلى المدرّس',recordTitle:'تسجيل اختبار تحديد المستوى'};
+ insertOnce(panel,c,false);
+ const card=panel.querySelector('[data-sa-section="placement-speaking"]'),actions=panel.querySelector('.placement-actions');if(card&&actions)actions.insertAdjacentElement('beforebegin',card);
+}
+function renderMonthly(){
+ const p=$('#panel-evaluations');if(!p)return;
+ insertOnce(p,{key:'monthly-speaking',title:'اختبار التحدث الشهري — تسجيل صوتي',description:'يتضمن منهج الشهر الأول عينة تحدث لمدة 60–90 ثانية، ويُقيّم فيها الوضوح والطلاقة والمفردات والقواعد.',badge:'تقييم شفهي',examples:[{fr:'Comment vous appelez-vous ?',ar:'ما اسمك؟'},{fr:'Quelle langue parlez-vous ?',ar:'ما اللغة التي تتحدثها؟'},{fr:'Où habitez-vous ?',ar:'أين تسكن؟'}],prompt:'سجّل 60–90 ثانية عن نفسك وعملك أو دراستك وروتينك. بعد ذلك أجب دون قراءة: Comment vous appelez-vous ? Quelle langue parlez-vous ? Où habitez-vous ?',limit:120,buttonLabel:'إرسال اختبار نهاية الشهر',recordTitle:'الإجابة الشفهية الشهرية'},true);
+}
+async function renderTeacherSubmissions(userId,container){
+ const host=container||$('#teacherStudentDetail');if(!host)return;
+ let sec=$('#speakingSubmissionsReview',host);
+ if(!sec){sec=document.createElement('section');sec.id='speakingSubmissionsReview';sec.className='sa-card';sec.innerHTML='<div class="sa-kicker">TEACHER REVIEW</div><h3 class="sa-title">التسجيلات الصوتية للطالب</h3><p class="sa-desc">استمع إلى إجابات الطالب، ثم أضف ملاحظات النطق والتحدث.</p><div class="sa-result-list" data-sa-review-list><div class="sa-empty">جارٍ تحميل التسجيلات…</div></div>';host.appendChild(sec);}
+ const list=$('[data-sa-review-list]',sec);list.replaceChildren();const db=client(),profile=app()?.getProfile?.();
+ if(!db||profile?.role!=='teacher'){list.textContent='هذه المراجعة متاحة للمدرّس المخوّل فقط.';return;}
+ const res=await db.from('speaking_submissions').select('id,user_id,assessment_key,prompt,storage_path,mime_type,duration_seconds,submitted_at,teacher_feedback').eq('user_id',userId).order('submitted_at',{ascending:false});
+ if(res.error){list.textContent='تعذر تحميل التسجيلات: '+res.error.message;return;}
+ if(!res.data?.length){list.innerHTML='<div class="sa-empty">لم يرسل هذا الطالب أي تسجيل صوتي بعد.</div>';return;}
+ for(const item of res.data){
+  const card=document.createElement('article');card.className='sa-review-item';const title=document.createElement('strong');title.textContent=item.assessment_key||'اختبار شفهي';card.appendChild(title);
+  const meta=document.createElement('div');meta.className='sa-review-meta';meta.textContent=new Date(item.submitted_at).toLocaleString('ar',{dateStyle:'medium',timeStyle:'short'})+' · '+Number(item.duration_seconds||0)+' ثانية';card.appendChild(meta);
+  const pr=document.createElement('p');pr.className='sa-desc';pr.textContent=item.prompt||'لا يوجد نص إرشادي';card.appendChild(pr);
+  const signed=await db.storage.from('student-audio').createSignedUrl(item.storage_path,3600);
+  if(signed.error){const msg=document.createElement('div');msg.className='sa-empty';msg.textContent='تعذر فتح التسجيل الخاص: '+signed.error.message;card.appendChild(msg);}else{const audio=document.createElement('audio');audio.controls=true;audio.className='sa-audio';audio.preload='none';audio.src=signed.data.signedUrl;card.appendChild(audio);}
+  const label=document.createElement('label');label.textContent='ملاحظات المدرّس';label.style.fontWeight='800';card.appendChild(label);
+  const ta=document.createElement('textarea');ta.className='sa-review-feedback';ta.maxLength=4000;ta.value=item.teacher_feedback||'';ta.placeholder='مثال: النطق واضح، انتبه إلى التمييز بين u و ou…';card.appendChild(ta);
+  const save=document.createElement('button');save.type='button';save.className='sa-btn primary';save.textContent='حفظ الملاحظات';card.appendChild(save);
+  const status=document.createElement('span');status.className='sa-status';card.appendChild(status);
+  save.addEventListener('click',async()=>{save.disabled=true;status.textContent='جارٍ الحفظ…';const ss=session();const upd=await db.from('speaking_submissions').update({teacher_feedback:ta.value.trim(),reviewed_at:new Date().toISOString(),reviewed_by:ss?.user?.id||null}).eq('id',item.id);save.disabled=false;status.textContent=upd.error?'تعذر الحفظ: '+upd.error.message:'تم حفظ ملاحظات المدرّس.';});
+  list.appendChild(card);
+ }
+}
+function init(){
+ styles();document.addEventListener('click',e=>{const b=e.target.closest('[data-sa-speak]');if(b){e.preventDefault();speak(b.dataset.saSpeak)}});
+ renderUnits();renderPlacement();renderMonthly();
+ window.OUR_SPEAKING_ASSESSMENT={renderTeacherSubmissions,speak};
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+})();
