@@ -151,6 +151,13 @@
 .book-day-example{display:flex;flex-wrap:wrap;gap:7px 10px;align-items:center;padding:7px 0;border-bottom:1px dashed #e3ebf0}
 .book-day-example:last-child{border-bottom:0}
 .book-day-example .latin{font-weight:700}
+.book-example-audio{font-size:11px!important;padding:3px 7px!important;min-height:25px;margin:2px 4px!important}
+.book-day-example{align-items:center}
+.unit-intro-example .book-example-audio{display:inline-flex;margin:4px 0 7px!important}
+.unit-number-card .book-example-audio{display:flex;margin:5px auto!important}
+.book-index-example{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.book-index-example-translation{font-size:12px;color:var(--muted)}
+
 .book-day-translation{font-size:12px;color:var(--muted)}
 .book-session-label{display:block;color:var(--muted);font-size:11px;margin-top:3px}
 .book-session-practice{background:#fff8e7;border:1px solid #f1e1b9;border-radius:10px;padding:10px;margin:10px 0}
@@ -1302,7 +1309,7 @@ const CITIZENSHIP_OFFICIAL=(window.FRENCH_CURRICULUM&&window.FRENCH_CURRICULUM.c
 function buildBookDayHtml(unit,day,idx){
  const key='book-u'+unit.u+'-d'+(idx+1);
  const E=v=>String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
- const examples=(day.examples||[]).map(ex=>'<div class="book-day-example"><span class="latin" lang="fr" dir="ltr">'+E(ex.fr)+'</span><span class="book-day-translation">'+E(ex.ar)+'</span></div>').join('');
+ const examples=(day.examples||[]).map(ex=>'<div class="book-day-example"><span class="latin" lang="fr" dir="ltr">'+E(ex.fr)+'</span><button type="button" class="audio-btn book-example-audio" data-example-audio="'+E(ex.fr)+'" title="استمع ببطء إلى المثال" aria-label="استمع ببطء إلى: '+E(ex.fr)+'">🔊 استمع ببطء</button><span class="book-day-translation">'+E(ex.ar)+'</span></div>').join('');
  const ex=day.exercise||{};
  const quick=ex.prompt?'<div class="book-session-practice"><strong>تطبيق سريع</strong><p>'+E(ex.prompt)+'</p><div class="book-session-answer-row"><input type="text" class="book-session-input" lang="fr" dir="ltr" autocomplete="off" spellcheck="false" placeholder="اكتب إجابتك هنا" data-session-answer="'+E(ex.answer||'')+'" data-session-why="'+E(ex.why||'راجع الأمثلة أعلاه.')+'"><button type="button" class="btn btn-soft" data-check-session="'+key+'">تحقق</button></div><p class="book-session-feedback" hidden aria-live="polite"></p></div>':'';
  return '<li class="book-day"><div class="book-day-title"><span class="book-day-num">'+(idx+1)+'</span><div><strong>'+E(day.title)+'</strong><small class="book-session-label">الشرح والأمثلة والتطبيق</small></div></div><p class="book-day-output">'+E(day.task)+'</p><div class="book-day-lesson"><strong>شرح الجلسة</strong><p>'+E(day.explanation||'اقرأ الأمثلة، استمع إلى النطق ثم كوّن جملة خاصة بك.')+'</p></div>'+(examples?'<div class="book-day-examples"><strong>أمثلة مع المعنى — اضغط زر الصوت بجانب الفرنسية</strong>'+examples+'</div>':'')+quick+'<label class="book-task-label"><input class="task-check book-task-check" type="checkbox" data-key="'+key+'"><span>أنجزت الجلسة ومهمة الاستعمال</span></label></li>';
@@ -1339,8 +1346,8 @@ function buildUnitIntroductionHtml(unit){
  const E=v=>String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
  const outcomes=(intro.outcomes||[]).map(x=>'<li>'+E(x)+'</li>').join('');
  const points=(intro.keyPoints||[]).map(x=>'<li>'+E(x)+'</li>').join('');
- const examples=(intro.examples||[]).map(x=>'<div class="unit-intro-example"><span class="latin" lang="fr" dir="ltr">'+E(x.fr)+'</span><span>'+E(x.ar)+'</span></div>').join('');
- const nums=(intro.numbers||[]).map(n=>'<div class="unit-number-card"><span class="unit-number-value">'+E(n[0])+'</span><span class="latin" lang="fr" dir="ltr">'+E(n[1])+'</span><span class="unit-number-pronunciation">النطق التقريبي: <b dir="rtl">'+E(n[2])+'</b></span><span class="unit-number-meaning">'+E(n[3])+'</span></div>').join('');
+ const examples=(intro.examples||[]).map(x=>'<div class="unit-intro-example"><span class="latin" lang="fr" dir="ltr">'+E(x.fr)+'</span><button type="button" class="audio-btn book-example-audio" data-example-audio="'+E(x.fr)+'" title="استمع ببطء إلى المثال" aria-label="استمع ببطء إلى: '+E(x.fr)+'">🔊 استمع ببطء</button><span>'+E(x.ar)+'</span></div>').join('');
+ const nums=(intro.numbers||[]).map(n=>'<div class="unit-number-card"><span class="unit-number-value">'+E(n[0])+'</span><span class="latin" lang="fr" dir="ltr">'+E(n[1])+'</span><button type="button" class="audio-btn book-example-audio" data-example-audio="'+E(n[1])+'" title="استمع ببطء إلى العدد" aria-label="استمع ببطء إلى: '+E(n[1])+'">🔊 استمع ببطء</button><span class="unit-number-pronunciation">النطق التقريبي: <b dir="rtl">'+E(n[2])+'</b></span><span class="unit-number-meaning">'+E(n[3])+'</span></div>').join('');
  return '<section class="unit-introduction"><div class="unit-intro-header"><div><div class="kicker">OBJECTIFS · VOCABULAIRE · PRONONCIATION</div><h3>ابدأ من هنا: شرح الوحدة وأهدافها</h3></div><span class="book-chip">شرح مبسّط</span></div><p class="unit-intro-overview">'+E(intro.overview||unit.focus)+'</p><div class="unit-intro-columns"><div class="unit-intro-subpanel"><h4>ماذا ستتعلم؟</h4><ul>'+outcomes+'</ul></div><div class="unit-intro-subpanel"><h4>القواعد الأساسية</h4><ul>'+points+'</ul></div></div><div class="unit-intro-subpanel"><h4>أمثلة أساسية</h4><div class="unit-intro-examples">'+examples+'</div></div>'+(nums?'<details class="unit-number-panel" open><summary>'+E(intro.numbersTitle||'الأعداد وطريقة نطقها')+' <span>استمع إلى كل عدد منفرداً</span></summary><p class="unit-number-note">'+E(intro.note||'النطق العربي تقريبي، فاستمع إلى الصوت الفرنسي أيضاً.')+'</p><div class="unit-number-grid">'+nums+'</div></details>':'')+'</section>';
 }
 function buildUnitGuide(unit){
@@ -1383,7 +1390,7 @@ function renderBookPlanIndex(){
  const E=v=>String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
  let cards='';
  BOOK_PLAN.forEach(unit=>{
-  const days=unit.days.map((day,index)=>'<li><strong>الجلسة '+(index+1)+' — '+E(day.title)+'</strong><p>'+E(day.task)+'</p>'+(day.explanation?'<p class="book-index-explanation"><strong>الشرح:</strong> '+E(day.explanation)+'</p>':'')+(day.examples||[]).map(ex=>'<p class="book-index-example"><span class="latin" lang="fr" dir="ltr">'+E(ex.fr)+'</span> — '+E(ex.ar)+'</p>').join('')+(day.exercise?'<details class="book-index-mini-exercise"><summary>تطبيق الجلسة</summary><p>'+E(day.exercise.prompt)+'</p><p><strong>الإجابة النموذجية:</strong> <span class="latin" lang="fr" dir="ltr">'+E(day.exercise.answer)+'</span></p></details>':'')+'</li>').join('');
+  const days=unit.days.map((day,index)=>'<li><strong>الجلسة '+(index+1)+' — '+E(day.title)+'</strong><p>'+E(day.task)+'</p>'+(day.explanation?'<p class="book-index-explanation"><strong>الشرح:</strong> '+E(day.explanation)+'</p>':'')+(day.examples||[]).map(ex=>'<p class="book-index-example"><span class="latin" lang="fr" dir="ltr">'+E(ex.fr)+'</span> <button type="button" class="audio-btn book-example-audio" data-example-audio="'+E(ex.fr)+'" title="استمع ببطء إلى المثال" aria-label="استمع ببطء إلى: '+E(ex.fr)+'">🔊 استمع ببطء</button><span class="book-index-example-translation"> — '+E(ex.ar)+'</span></p>').join('')+(day.exercise?'<details class="book-index-mini-exercise"><summary>تطبيق الجلسة</summary><p>'+E(day.exercise.prompt)+'</p><p><strong>الإجابة النموذجية:</strong> <span class="latin" lang="fr" dir="ltr">'+E(day.exercise.answer)+'</span></p></details>':'')+'</li>').join('');
   cards+='<details class="book-index-unit"'+(unit.u===1?' open':'')+'><summary><span class="book-index-number">الوحدة '+unit.u+'</span><span class="book-index-title">'+E(unit.name)+'</span><span class="book-index-pages">تمارين تفاعلية</span></summary><div class="book-index-body"><p>'+E(unit.focus)+'</p>'+(unit.introduction?'<div class="book-index-unit-overview"><strong>مدخل الوحدة:</strong><p>'+E(unit.introduction.overview)+'</p><strong>الأهداف:</strong><ul>'+unit.introduction.outcomes.map(x=>'<li>'+E(x)+'</li>').join('')+'</ul></div>':'')+'<p class="book-grammar"><strong>القواعد والتراكيب:</strong> <span class="latin" lang="fr" dir="ltr">'+E(unit.grammar)+'</span></p><ol class="book-index-days">'+days+'</ol><button type="button" class="btn btn-primary" data-open-unit="'+unit.u+'">افتح الوحدة ودروسها ←</button></div></details>';
  });
  panel.innerHTML='<div class="panel-head"><div><h1>محتوى الوحدات والتمارين التفاعلية</h1><p>مسار متكامل من ثماني وحدات: دروس عملية وتمارين يمكن حلها وتصحيحها داخل المنصة.</p></div><span class="chip">8 وحدات · 48 جلسة</span></div>'+
@@ -1602,6 +1609,12 @@ function setupBookPractice(){
   if(!state.bookWriting)state.bookWriting={};state.bookWriting[area.dataset.bookWriting]=area.value;save();
  });
  root.addEventListener('click',async event=>{
+  const exampleAudio=event.target.closest('[data-example-audio]');
+  if(exampleAudio){
+   event.preventDefault();event.stopPropagation();
+   speakSingleTerm(exampleAudio.dataset.exampleAudio||'');
+   return;
+  }
   const sessionCheck=event.target.closest('[data-check-session]');
   if(sessionCheck){
    const card=sessionCheck.closest('.book-day'),input=card&&card.querySelector('.book-session-input'),feedback=card&&card.querySelector('.book-session-feedback');
