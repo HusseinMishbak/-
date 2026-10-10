@@ -1216,13 +1216,18 @@ function renderRoadmap(){
  if(document.getElementById('panel-roadmap')||!ROADMAP_MONTHS.length)return;
  const panel=document.createElement('section');panel.className='panel';panel.id='panel-roadmap';
  let monthCards='';
- ROADMAP_MONTHS.forEach(month=>{
+ ROADMAP_MONTHS.forEach(rawMonth=>{
+  // curriculum.js stores months as [monthNumber, level, title, goal, weeks].
+  // Also accept object records to keep future curriculum updates backwards-compatible.
+  const month=Array.isArray(rawMonth)?{m:rawMonth[0],level:rawMonth[1],title:rawMonth[2],goal:rawMonth[3],weeks:rawMonth[4]}:rawMonth;
+  const weeks=Array.isArray(month.weeks)?month.weeks:[];
   let weekCards='';
-  month.weeks.forEach((w,i)=>{
-   const num=(month.m-1)*4+i+1;
-   weekCards+='<article class="roadmap-week" id="panel-week'+num+'"><div class="roadmap-week-head"><div class="roadmap-week-num">W'+num+'</div><div class="roadmap-week-copy"><h3>الأسبوع '+num+' — '+w[0]+'</h3><p>'+w[1]+'</p></div></div><p class="roadmap-assignment"><strong>التطبيق:</strong> '+w[2]+'</p><label class="roadmap-completion"><input class="week-check" type="checkbox" data-week="'+num+'"><span>أكملت هذا الأسبوع ونفذت المهمة</span><span class="week-state" id="weekState'+num+'">لم يكتمل بعد</span></label></article>';
+  weeks.forEach((rawWeek,i)=>{
+   const w=Array.isArray(rawWeek)?rawWeek:[rawWeek.title,rawWeek.objective,rawWeek.task];
+   const num=(Number(month.m)-1)*4+i+1;
+   weekCards+='<article class="roadmap-week" id="roadmap-week-'+num+'"><div class="roadmap-week-head"><div class="roadmap-week-num">W'+num+'</div><div class="roadmap-week-copy"><h3>الأسبوع '+num+' — '+(w[0]||'مراجعة وتطبيق')+'</h3><p>'+(w[1]||'')+'</p></div></div><p class="roadmap-assignment"><strong>التطبيق:</strong> '+(w[2]||'أنجز تطبيقاً كتابياً وشفهياً.')+'</p><label class="roadmap-completion"><input class="week-check" type="checkbox" data-week="'+num+'"><span>أكملت هذا الأسبوع ونفذت المهمة</span><span class="week-state" id="roadmapWeekState'+num+'">لم يكتمل بعد</span></label></article>';
   });
-  monthCards+='<details class="roadmap-month"'+(month.m===3?' open':'')+'><summary><span class="roadmap-month-number">الشهر '+month.m+'</span><span class="roadmap-level">'+month.level+'</span><span class="roadmap-month-title">'+month.title+'</span></summary><div class="roadmap-month-content"><p>'+month.goal+'</p><div class="roadmap-weeks">'+weekCards+'</div></div></details>';
+  monthCards+='<details class="roadmap-month"'+(Number(month.m)===3?' open':'')+'><summary><span class="roadmap-month-number">الشهر '+month.m+'</span><span class="roadmap-level">'+month.level+'</span><span class="roadmap-month-title">'+month.title+'</span></summary><div class="roadmap-month-content"><p>'+month.goal+'</p><div class="roadmap-weeks">'+weekCards+'</div></div></details>';
  });
  panel.innerHTML='<div class="panel-head"><div><h1>خارطة الطريق إلى B2</h1><p>من A1 عبر A2 وB1 إلى B2، ثم تدريب موجّه على DELF B2.</p></div><span class="chip">80 أسبوعاً</span></div>'+
  '<div class="banner"><div class="kicker">OBJECTIF FINAL</div><h2>المستوى المستهدف: B2</h2><p>الأسابيع 1–8 تعتمد وحدات Entre Nous 1 وتمارين كراسة الأنشطة. الأسابيع 9–20 تستهدف A2، والأسابيع 21–40 تستهدف B1، والأسابيع 41–64 تبني B2، والأسابيع 65–80 مخصصة للتثبيت ومحاكاة الامتحان.</p></div>'+
@@ -1232,9 +1237,9 @@ function renderRoadmap(){
  '<p>افتح أي شهر لرؤية الأسابيع الأربعة ومهمة تطبيقية لكل أسبوع. لم يُرفق كتاب A2 أو B1 أو B2؛ لذلك فإن هذه المرحلة مبنية على أهداف CEFR عامة وليست تمارين من كتاب غير مرفق.</p>'+
  monthCards+
  '<section class="card soft optional-c1"><h3>بعد إتمام B2: مسار اختياري إلى C1</h3><p>للحاجة الأكاديمية أو المهنية الأعلى، أضف 4–6 أشهر للمقالات الأكاديمية والتركيب بين المصادر، وفهم المعاني الضمنية، والعروض المطولة والنقاش المتخصص، ثم الاستعداد لـ DALF C1. هذا مسار إضافي ولا يدخل في مؤشر إكمال B2.</p></section>';
- const before=document.getElementById('panel-vocab');if(before)before.before(panel);else document.getElementById('panels').appendChild(panel);
+ const before=document.getElementById('panel-vocab');
+ if(before)before.before(panel);else document.getElementById('panels').appendChild(panel);
 }
-
 
 function makeAudioRecorder(){
  const box=document.createElement('div');box.className='audio-recorder';box.setAttribute('role','group');box.setAttribute('aria-label','تسجيل الإجابة الصوتية');
