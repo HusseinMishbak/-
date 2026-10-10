@@ -17488,5 +17488,1407 @@ window.FRENCH_CURRICULUM = {
         "description": "بوابة رسمية للروابط والكتيبات الخاصة بالجنسية الفرنسية."
       }
     ]
-  }
+  },
+  "additionalVocabulary": [
+    {
+      "id": "new-u1-01",
+      "unit": 1,
+      "fr": "épeler",
+      "ar": "يتهجّى",
+      "en": "to spell"
+    },
+    {
+      "id": "new-u1-02",
+      "unit": 1,
+      "fr": "l’orthographe",
+      "ar": "التهجئة / الإملاء",
+      "en": "spelling"
+    },
+    {
+      "id": "new-u1-03",
+      "unit": 1,
+      "fr": "une voyelle",
+      "ar": "حرف علّة / حركة",
+      "en": "a vowel"
+    },
+    {
+      "id": "new-u1-04",
+      "unit": 1,
+      "fr": "une consonne",
+      "ar": "حرف ساكن",
+      "en": "a consonant"
+    },
+    {
+      "id": "new-u1-05",
+      "unit": 1,
+      "fr": "une syllabe",
+      "ar": "مقطع صوتي",
+      "en": "a syllable"
+    },
+    {
+      "id": "new-u1-06",
+      "unit": 1,
+      "fr": "un accent aigu",
+      "ar": "علامة النبرة الحادة",
+      "en": "an acute accent"
+    },
+    {
+      "id": "new-u1-07",
+      "unit": 1,
+      "fr": "un accent grave",
+      "ar": "علامة النبرة المفتوحة",
+      "en": "a grave accent"
+    },
+    {
+      "id": "new-u1-08",
+      "unit": 1,
+      "fr": "un accent circonflexe",
+      "ar": "علامة القبعة",
+      "en": "a circumflex accent"
+    },
+    {
+      "id": "new-u1-09",
+      "unit": 1,
+      "fr": "une cédille",
+      "ar": "علامة السِّديّة (ç)",
+      "en": "a cedilla"
+    },
+    {
+      "id": "new-u1-10",
+      "unit": 1,
+      "fr": "une majuscule",
+      "ar": "حرف كبير",
+      "en": "a capital letter"
+    },
+    {
+      "id": "new-u1-11",
+      "unit": 1,
+      "fr": "une minuscule",
+      "ar": "حرف صغير",
+      "en": "a lowercase letter"
+    },
+    {
+      "id": "new-u1-12",
+      "unit": 1,
+      "fr": "un trait d’union",
+      "ar": "شرطة وصل",
+      "en": "a hyphen"
+    },
+    {
+      "id": "new-u1-13",
+      "unit": 1,
+      "fr": "un formulaire",
+      "ar": "استمارة",
+      "en": "a form"
+    },
+    {
+      "id": "new-u1-14",
+      "unit": 1,
+      "fr": "un champ obligatoire",
+      "ar": "حقل إلزامي",
+      "en": "a required field"
+    },
+    {
+      "id": "new-u1-15",
+      "unit": 1,
+      "fr": "signer",
+      "ar": "يوقّع",
+      "en": "to sign"
+    },
+    {
+      "id": "new-u1-16",
+      "unit": 1,
+      "fr": "une signature",
+      "ar": "توقيع",
+      "en": "a signature"
+    },
+    {
+      "id": "new-u1-17",
+      "unit": 1,
+      "fr": "un code postal",
+      "ar": "رمز بريدي",
+      "en": "a postal code"
+    },
+    {
+      "id": "new-u1-18",
+      "unit": 1,
+      "fr": "une date de naissance",
+      "ar": "تاريخ الميلاد",
+      "en": "a date of birth"
+    },
+    {
+      "id": "new-u1-19",
+      "unit": 1,
+      "fr": "un lieu de naissance",
+      "ar": "مكان الميلاد",
+      "en": "a place of birth"
+    },
+    {
+      "id": "new-u1-20",
+      "unit": 1,
+      "fr": "un pseudonyme",
+      "ar": "اسم مستعار",
+      "en": "a pseudonym"
+    },
+    {
+      "id": "new-u1-21",
+      "unit": 1,
+      "fr": "un surnom",
+      "ar": "لقب",
+      "en": "a nickname"
+    },
+    {
+      "id": "new-u1-22",
+      "unit": 1,
+      "fr": "une invitation",
+      "ar": "دعوة",
+      "en": "an invitation"
+    },
+    {
+      "id": "new-u1-23",
+      "unit": 1,
+      "fr": "un invité / une invitée",
+      "ar": "ضيف / ضيفة",
+      "en": "a guest"
+    },
+    {
+      "id": "new-u1-24",
+      "unit": 1,
+      "fr": "un rendez-vous",
+      "ar": "موعد",
+      "en": "an appointment"
+    },
+    {
+      "id": "new-u1-25",
+      "unit": 1,
+      "fr": "confirmer",
+      "ar": "يؤكد",
+      "en": "to confirm"
+    },
+    {
+      "id": "new-u2-01",
+      "unit": 2,
+      "fr": "un itinéraire",
+      "ar": "مسار / طريق",
+      "en": "a route"
+    },
+    {
+      "id": "new-u2-02",
+      "unit": 2,
+      "fr": "une destination",
+      "ar": "وجهة",
+      "en": "a destination"
+    },
+    {
+      "id": "new-u2-03",
+      "unit": 2,
+      "fr": "un départ",
+      "ar": "مغادرة",
+      "en": "a departure"
+    },
+    {
+      "id": "new-u2-04",
+      "unit": 2,
+      "fr": "une arrivée",
+      "ar": "وصول",
+      "en": "an arrival"
+    },
+    {
+      "id": "new-u2-05",
+      "unit": 2,
+      "fr": "un aller simple",
+      "ar": "تذكرة ذهاب فقط",
+      "en": "a one-way ticket"
+    },
+    {
+      "id": "new-u2-06",
+      "unit": 2,
+      "fr": "un aller-retour",
+      "ar": "تذكرة ذهاب وإياب",
+      "en": "a return ticket"
+    },
+    {
+      "id": "new-u2-07",
+      "unit": 2,
+      "fr": "une escale",
+      "ar": "محطة توقف أثناء السفر",
+      "en": "a stopover"
+    },
+    {
+      "id": "new-u2-08",
+      "unit": 2,
+      "fr": "une réservation",
+      "ar": "حجز",
+      "en": "a booking"
+    },
+    {
+      "id": "new-u2-09",
+      "unit": 2,
+      "fr": "un hébergement",
+      "ar": "مكان إقامة",
+      "en": "accommodation"
+    },
+    {
+      "id": "new-u2-10",
+      "unit": 2,
+      "fr": "une carte d’embarquement",
+      "ar": "بطاقة صعود الطائرة",
+      "en": "a boarding pass"
+    },
+    {
+      "id": "new-u2-11",
+      "unit": 2,
+      "fr": "un bagage à main",
+      "ar": "حقيبة يد للسفر",
+      "en": "hand luggage"
+    },
+    {
+      "id": "new-u2-12",
+      "unit": 2,
+      "fr": "un contrôle de sécurité",
+      "ar": "تفتيش أمني",
+      "en": "a security check"
+    },
+    {
+      "id": "new-u2-13",
+      "unit": 2,
+      "fr": "la douane",
+      "ar": "الجمارك",
+      "en": "customs"
+    },
+    {
+      "id": "new-u2-14",
+      "unit": 2,
+      "fr": "un fuseau horaire",
+      "ar": "منطقة زمنية",
+      "en": "a time zone"
+    },
+    {
+      "id": "new-u2-15",
+      "unit": 2,
+      "fr": "un décalage horaire",
+      "ar": "فرق التوقيت / اضطراب الرحلات",
+      "en": "jet lag / time difference"
+    },
+    {
+      "id": "new-u2-16",
+      "unit": 2,
+      "fr": "un séjour",
+      "ar": "إقامة",
+      "en": "a stay"
+    },
+    {
+      "id": "new-u2-17",
+      "unit": 2,
+      "fr": "un circuit touristique",
+      "ar": "جولة سياحية",
+      "en": "a sightseeing tour"
+    },
+    {
+      "id": "new-u2-18",
+      "unit": 2,
+      "fr": "une visite guidée",
+      "ar": "جولة برفقة دليل",
+      "en": "a guided tour"
+    },
+    {
+      "id": "new-u2-19",
+      "unit": 2,
+      "fr": "un billet électronique",
+      "ar": "تذكرة إلكترونية",
+      "en": "an e-ticket"
+    },
+    {
+      "id": "new-u2-20",
+      "unit": 2,
+      "fr": "annuler",
+      "ar": "يلغي",
+      "en": "to cancel"
+    },
+    {
+      "id": "new-u2-21",
+      "unit": 2,
+      "fr": "modifier",
+      "ar": "يعدّل",
+      "en": "to change / modify"
+    },
+    {
+      "id": "new-u2-22",
+      "unit": 2,
+      "fr": "prolonger",
+      "ar": "يمدّد",
+      "en": "to extend"
+    },
+    {
+      "id": "new-u2-23",
+      "unit": 2,
+      "fr": "se renseigner",
+      "ar": "يستفسر / يستعلم",
+      "en": "to enquire"
+    },
+    {
+      "id": "new-u2-24",
+      "unit": 2,
+      "fr": "à l’étranger",
+      "ar": "في الخارج",
+      "en": "abroad"
+    },
+    {
+      "id": "new-u2-25",
+      "unit": 2,
+      "fr": "en avance",
+      "ar": "قبل الموعد / مبكراً",
+      "en": "early / ahead of time"
+    },
+    {
+      "id": "new-u3-01",
+      "unit": 3,
+      "fr": "un trottoir",
+      "ar": "رصيف مشاة",
+      "en": "a pavement / sidewalk"
+    },
+    {
+      "id": "new-u3-02",
+      "unit": 3,
+      "fr": "un carrefour",
+      "ar": "تقاطع طرق",
+      "en": "a crossroads"
+    },
+    {
+      "id": "new-u3-03",
+      "unit": 3,
+      "fr": "un rond-point",
+      "ar": "دوّار مروري",
+      "en": "a roundabout"
+    },
+    {
+      "id": "new-u3-04",
+      "unit": 3,
+      "fr": "un feu tricolore",
+      "ar": "إشارة مرور ضوئية",
+      "en": "traffic lights"
+    },
+    {
+      "id": "new-u3-05",
+      "unit": 3,
+      "fr": "un passage piéton",
+      "ar": "ممر مشاة",
+      "en": "a pedestrian crossing"
+    },
+    {
+      "id": "new-u3-06",
+      "unit": 3,
+      "fr": "une piste cyclable",
+      "ar": "مسار دراجات",
+      "en": "a cycle lane"
+    },
+    {
+      "id": "new-u3-07",
+      "unit": 3,
+      "fr": "une impasse",
+      "ar": "طريق مسدود",
+      "en": "a dead end"
+    },
+    {
+      "id": "new-u3-08",
+      "unit": 3,
+      "fr": "une avenue",
+      "ar": "جادة / شارع عريض",
+      "en": "an avenue"
+    },
+    {
+      "id": "new-u3-09",
+      "unit": 3,
+      "fr": "une ruelle",
+      "ar": "زقاق",
+      "en": "a narrow lane"
+    },
+    {
+      "id": "new-u3-10",
+      "unit": 3,
+      "fr": "une place publique",
+      "ar": "ساحة عامة",
+      "en": "a public square"
+    },
+    {
+      "id": "new-u3-11",
+      "unit": 3,
+      "fr": "un arrêt de tram",
+      "ar": "موقف ترام",
+      "en": "a tram stop"
+    },
+    {
+      "id": "new-u3-12",
+      "unit": 3,
+      "fr": "une station de métro",
+      "ar": "محطة مترو",
+      "en": "a metro station"
+    },
+    {
+      "id": "new-u3-13",
+      "unit": 3,
+      "fr": "une borne",
+      "ar": "جهاز / كشك آلي",
+      "en": "a terminal / kiosk"
+    },
+    {
+      "id": "new-u3-14",
+      "unit": 3,
+      "fr": "un distributeur automatique",
+      "ar": "صراف آلي",
+      "en": "an ATM"
+    },
+    {
+      "id": "new-u3-15",
+      "unit": 3,
+      "fr": "une bibliothèque municipale",
+      "ar": "مكتبة عامة تابعة للبلدية",
+      "en": "a public library"
+    },
+    {
+      "id": "new-u3-16",
+      "unit": 3,
+      "fr": "une crèche",
+      "ar": "حضانة للأطفال",
+      "en": "a nursery"
+    },
+    {
+      "id": "new-u3-17",
+      "unit": 3,
+      "fr": "un commissariat",
+      "ar": "مركز شرطة",
+      "en": "a police station"
+    },
+    {
+      "id": "new-u3-18",
+      "unit": 3,
+      "fr": "une caserne de pompiers",
+      "ar": "مركز إطفاء",
+      "en": "a fire station"
+    },
+    {
+      "id": "new-u3-19",
+      "unit": 3,
+      "fr": "une déchèterie",
+      "ar": "مركز تجميع النفايات لإعادة التدوير",
+      "en": "a recycling centre"
+    },
+    {
+      "id": "new-u3-20",
+      "unit": 3,
+      "fr": "un centre commercial",
+      "ar": "مركز تسوق",
+      "en": "a shopping centre"
+    },
+    {
+      "id": "new-u3-21",
+      "unit": 3,
+      "fr": "une zone piétonne",
+      "ar": "منطقة للمشاة",
+      "en": "a pedestrian zone"
+    },
+    {
+      "id": "new-u3-22",
+      "unit": 3,
+      "fr": "traverser",
+      "ar": "يعبر",
+      "en": "to cross"
+    },
+    {
+      "id": "new-u3-23",
+      "unit": 3,
+      "fr": "longer",
+      "ar": "يسير بمحاذاة",
+      "en": "to go along"
+    },
+    {
+      "id": "new-u3-24",
+      "unit": 3,
+      "fr": "se diriger vers",
+      "ar": "يتجه نحو",
+      "en": "to head towards"
+    },
+    {
+      "id": "new-u3-25",
+      "unit": 3,
+      "fr": "à proximité de",
+      "ar": "بالقرب من",
+      "en": "near / in the vicinity of"
+    },
+    {
+      "id": "new-u4-01",
+      "unit": 4,
+      "fr": "un neveu",
+      "ar": "ابن الأخ أو الأخت",
+      "en": "a nephew"
+    },
+    {
+      "id": "new-u4-02",
+      "unit": 4,
+      "fr": "une nièce",
+      "ar": "ابنة الأخ أو الأخت",
+      "en": "a niece"
+    },
+    {
+      "id": "new-u4-03",
+      "unit": 4,
+      "fr": "un beau-frère",
+      "ar": "صهر / أخ الزوج أو الزوجة",
+      "en": "a brother-in-law"
+    },
+    {
+      "id": "new-u4-04",
+      "unit": 4,
+      "fr": "une belle-sœur",
+      "ar": "أخت الزوج أو الزوجة",
+      "en": "a sister-in-law"
+    },
+    {
+      "id": "new-u4-05",
+      "unit": 4,
+      "fr": "un beau-père",
+      "ar": "زوج الأم أو والد الزوج / الزوجة",
+      "en": "a stepfather / father-in-law"
+    },
+    {
+      "id": "new-u4-06",
+      "unit": 4,
+      "fr": "une belle-mère",
+      "ar": "زوجة الأب أو والدة الزوج / الزوجة",
+      "en": "a stepmother / mother-in-law"
+    },
+    {
+      "id": "new-u4-07",
+      "unit": 4,
+      "fr": "un petit-fils",
+      "ar": "حفيد",
+      "en": "a grandson"
+    },
+    {
+      "id": "new-u4-08",
+      "unit": 4,
+      "fr": "une petite-fille",
+      "ar": "حفيدة",
+      "en": "a granddaughter"
+    },
+    {
+      "id": "new-u4-09",
+      "unit": 4,
+      "fr": "un parrain",
+      "ar": "عرّاب",
+      "en": "a godfather"
+    },
+    {
+      "id": "new-u4-10",
+      "unit": 4,
+      "fr": "une marraine",
+      "ar": "عرّابة",
+      "en": "a godmother"
+    },
+    {
+      "id": "new-u4-11",
+      "unit": 4,
+      "fr": "le voisinage",
+      "ar": "الجوار / الجيران المحيطون",
+      "en": "the neighbourhood"
+    },
+    {
+      "id": "new-u4-12",
+      "unit": 4,
+      "fr": "la complicité",
+      "ar": "الألفة والتفاهم",
+      "en": "a close bond"
+    },
+    {
+      "id": "new-u4-13",
+      "unit": 4,
+      "fr": "la générosité",
+      "ar": "الكرم",
+      "en": "generosity"
+    },
+    {
+      "id": "new-u4-14",
+      "unit": 4,
+      "fr": "la patience",
+      "ar": "الصبر",
+      "en": "patience"
+    },
+    {
+      "id": "new-u4-15",
+      "unit": 4,
+      "fr": "la confiance",
+      "ar": "الثقة",
+      "en": "trust / confidence"
+    },
+    {
+      "id": "new-u4-16",
+      "unit": 4,
+      "fr": "la timidité",
+      "ar": "الخجل",
+      "en": "shyness"
+    },
+    {
+      "id": "new-u4-17",
+      "unit": 4,
+      "fr": "la fierté",
+      "ar": "الفخر",
+      "en": "pride"
+    },
+    {
+      "id": "new-u4-18",
+      "unit": 4,
+      "fr": "la solidarité",
+      "ar": "التضامن",
+      "en": "solidarity"
+    },
+    {
+      "id": "new-u4-19",
+      "unit": 4,
+      "fr": "la randonnée",
+      "ar": "المشي لمسافات طويلة",
+      "en": "hiking"
+    },
+    {
+      "id": "new-u4-20",
+      "unit": 4,
+      "fr": "le dessin",
+      "ar": "الرسم",
+      "en": "drawing"
+    },
+    {
+      "id": "new-u4-21",
+      "unit": 4,
+      "fr": "la photographie",
+      "ar": "التصوير الفوتوغرافي",
+      "en": "photography"
+    },
+    {
+      "id": "new-u4-22",
+      "unit": 4,
+      "fr": "le jardinage",
+      "ar": "البستنة",
+      "en": "gardening"
+    },
+    {
+      "id": "new-u4-23",
+      "unit": 4,
+      "fr": "la couture",
+      "ar": "الخياطة",
+      "en": "sewing"
+    },
+    {
+      "id": "new-u4-24",
+      "unit": 4,
+      "fr": "le bricolage",
+      "ar": "الأعمال اليدوية المنزلية",
+      "en": "DIY / home repairs"
+    },
+    {
+      "id": "new-u4-25",
+      "unit": 4,
+      "fr": "se passionner pour",
+      "ar": "يُغرم بـ / يتحمس لـ",
+      "en": "to become passionate about"
+    },
+    {
+      "id": "new-u5-01",
+      "unit": 5,
+      "fr": "se réveiller",
+      "ar": "يستيقظ",
+      "en": "to wake up"
+    },
+    {
+      "id": "new-u5-02",
+      "unit": 5,
+      "fr": "se dépêcher",
+      "ar": "يستعجل",
+      "en": "to hurry"
+    },
+    {
+      "id": "new-u5-03",
+      "unit": 5,
+      "fr": "faire son lit",
+      "ar": "يرتب سريره",
+      "en": "to make one’s bed"
+    },
+    {
+      "id": "new-u5-04",
+      "unit": 5,
+      "fr": "faire la vaisselle",
+      "ar": "يغسل الصحون",
+      "en": "to do the dishes"
+    },
+    {
+      "id": "new-u5-05",
+      "unit": 5,
+      "fr": "passer l’aspirateur",
+      "ar": "يكنس بالمكنسة الكهربائية",
+      "en": "to vacuum"
+    },
+    {
+      "id": "new-u5-06",
+      "unit": 5,
+      "fr": "ranger",
+      "ar": "يرتّب",
+      "en": "to tidy up"
+    },
+    {
+      "id": "new-u5-07",
+      "unit": 5,
+      "fr": "prendre une douche",
+      "ar": "يستحم بالدش",
+      "en": "to take a shower"
+    },
+    {
+      "id": "new-u5-08",
+      "unit": 5,
+      "fr": "se raser",
+      "ar": "يحلق ذقنه",
+      "en": "to shave"
+    },
+    {
+      "id": "new-u5-09",
+      "unit": 5,
+      "fr": "se brosser les dents",
+      "ar": "ينظف أسنانه بالفرشاة",
+      "en": "to brush one’s teeth"
+    },
+    {
+      "id": "new-u5-10",
+      "unit": 5,
+      "fr": "se maquiller",
+      "ar": "يضع المكياج",
+      "en": "to put on make-up"
+    },
+    {
+      "id": "new-u5-11",
+      "unit": 5,
+      "fr": "faire une pause",
+      "ar": "يأخذ استراحة",
+      "en": "to take a break"
+    },
+    {
+      "id": "new-u5-12",
+      "unit": 5,
+      "fr": "être en retard",
+      "ar": "يتأخر عن الموعد",
+      "en": "to be late"
+    },
+    {
+      "id": "new-u5-13",
+      "unit": 5,
+      "fr": "être à l’heure",
+      "ar": "يكون في الموعد",
+      "en": "to be on time"
+    },
+    {
+      "id": "new-u5-14",
+      "unit": 5,
+      "fr": "une habitude",
+      "ar": "عادة",
+      "en": "a habit"
+    },
+    {
+      "id": "new-u5-15",
+      "unit": 5,
+      "fr": "d’habitude",
+      "ar": "عادةً",
+      "en": "usually"
+    },
+    {
+      "id": "new-u5-16",
+      "unit": 5,
+      "fr": "rarement",
+      "ar": "نادراً",
+      "en": "rarely"
+    },
+    {
+      "id": "new-u5-17",
+      "unit": 5,
+      "fr": "souvent",
+      "ar": "غالباً",
+      "en": "often"
+    },
+    {
+      "id": "new-u5-18",
+      "unit": 5,
+      "fr": "presque jamais",
+      "ar": "نادراً جداً / تقريباً أبداً",
+      "en": "almost never"
+    },
+    {
+      "id": "new-u5-19",
+      "unit": 5,
+      "fr": "tous les jours",
+      "ar": "كل يوم",
+      "en": "every day"
+    },
+    {
+      "id": "new-u5-20",
+      "unit": 5,
+      "fr": "une sieste",
+      "ar": "قيلولة",
+      "en": "a nap"
+    },
+    {
+      "id": "new-u5-21",
+      "unit": 5,
+      "fr": "s’endormir",
+      "ar": "يغفو / ينام",
+      "en": "to fall asleep"
+    },
+    {
+      "id": "new-u5-22",
+      "unit": 5,
+      "fr": "se reposer",
+      "ar": "يستريح",
+      "en": "to rest"
+    },
+    {
+      "id": "new-u5-23",
+      "unit": 5,
+      "fr": "mettre la table",
+      "ar": "يجهز مائدة الطعام",
+      "en": "to set the table"
+    },
+    {
+      "id": "new-u5-24",
+      "unit": 5,
+      "fr": "préparer ses affaires",
+      "ar": "يجهز أغراضه",
+      "en": "to get one’s things ready"
+    },
+    {
+      "id": "new-u5-25",
+      "unit": 5,
+      "fr": "rentrer tard",
+      "ar": "يعود متأخراً",
+      "en": "to come home late"
+    },
+    {
+      "id": "new-u6-01",
+      "unit": 6,
+      "fr": "un entretien d’embauche",
+      "ar": "مقابلة عمل",
+      "en": "a job interview"
+    },
+    {
+      "id": "new-u6-02",
+      "unit": 6,
+      "fr": "une candidature",
+      "ar": "طلب ترشّح",
+      "en": "an application"
+    },
+    {
+      "id": "new-u6-03",
+      "unit": 6,
+      "fr": "un CV",
+      "ar": "سيرة ذاتية",
+      "en": "a CV / résumé"
+    },
+    {
+      "id": "new-u6-04",
+      "unit": 6,
+      "fr": "une lettre de motivation",
+      "ar": "رسالة تحفيزية للتقديم",
+      "en": "a cover letter"
+    },
+    {
+      "id": "new-u6-05",
+      "unit": 6,
+      "fr": "une compétence",
+      "ar": "مهارة / كفاءة",
+      "en": "a skill"
+    },
+    {
+      "id": "new-u6-06",
+      "unit": 6,
+      "fr": "une expérience professionnelle",
+      "ar": "خبرة مهنية",
+      "en": "professional experience"
+    },
+    {
+      "id": "new-u6-07",
+      "unit": 6,
+      "fr": "un stage",
+      "ar": "تدريب عملي",
+      "en": "an internship"
+    },
+    {
+      "id": "new-u6-08",
+      "unit": 6,
+      "fr": "un diplôme",
+      "ar": "شهادة",
+      "en": "a qualification / degree"
+    },
+    {
+      "id": "new-u6-09",
+      "unit": 6,
+      "fr": "postuler",
+      "ar": "يتقدم لوظيفة",
+      "en": "to apply for a job"
+    },
+    {
+      "id": "new-u6-10",
+      "unit": 6,
+      "fr": "embaucher",
+      "ar": "يوظّف",
+      "en": "to hire"
+    },
+    {
+      "id": "new-u6-11",
+      "unit": 6,
+      "fr": "démissionner",
+      "ar": "يستقيل",
+      "en": "to resign"
+    },
+    {
+      "id": "new-u6-12",
+      "unit": 6,
+      "fr": "une réunion",
+      "ar": "اجتماع",
+      "en": "a meeting"
+    },
+    {
+      "id": "new-u6-13",
+      "unit": 6,
+      "fr": "un objectif",
+      "ar": "هدف",
+      "en": "a goal / objective"
+    },
+    {
+      "id": "new-u6-14",
+      "unit": 6,
+      "fr": "gérer",
+      "ar": "يدير",
+      "en": "to manage"
+    },
+    {
+      "id": "new-u6-15",
+      "unit": 6,
+      "fr": "organiser",
+      "ar": "ينظم",
+      "en": "to organise"
+    },
+    {
+      "id": "new-u6-16",
+      "unit": 6,
+      "fr": "collaborer",
+      "ar": "يتعاون",
+      "en": "to collaborate"
+    },
+    {
+      "id": "new-u6-17",
+      "unit": 6,
+      "fr": "résoudre",
+      "ar": "يحلّ مشكلة",
+      "en": "to solve"
+    },
+    {
+      "id": "new-u6-18",
+      "unit": 6,
+      "fr": "améliorer",
+      "ar": "يحسّن",
+      "en": "to improve"
+    },
+    {
+      "id": "new-u6-19",
+      "unit": 6,
+      "fr": "réussir",
+      "ar": "ينجح",
+      "en": "to succeed / pass"
+    },
+    {
+      "id": "new-u6-20",
+      "unit": 6,
+      "fr": "échouer",
+      "ar": "يفشل / يرسب",
+      "en": "to fail"
+    },
+    {
+      "id": "new-u6-21",
+      "unit": 6,
+      "fr": "un délai",
+      "ar": "مهلة زمنية",
+      "en": "a deadline / time limit"
+    },
+    {
+      "id": "new-u6-22",
+      "unit": 6,
+      "fr": "une tâche",
+      "ar": "مهمة",
+      "en": "a task"
+    },
+    {
+      "id": "new-u6-23",
+      "unit": 6,
+      "fr": "un responsable",
+      "ar": "مسؤول",
+      "en": "a manager / person in charge"
+    },
+    {
+      "id": "new-u6-24",
+      "unit": 6,
+      "fr": "un salaire",
+      "ar": "راتب",
+      "en": "a salary"
+    },
+    {
+      "id": "new-u6-25",
+      "unit": 6,
+      "fr": "à temps partiel",
+      "ar": "بدوام جزئي",
+      "en": "part-time"
+    },
+    {
+      "id": "new-u7-01",
+      "unit": 7,
+      "fr": "une cabine d’essayage",
+      "ar": "غرفة قياس الملابس",
+      "en": "a fitting room"
+    },
+    {
+      "id": "new-u7-02",
+      "unit": 7,
+      "fr": "une pointure",
+      "ar": "مقاس الحذاء",
+      "en": "a shoe size"
+    },
+    {
+      "id": "new-u7-03",
+      "unit": 7,
+      "fr": "un tissu",
+      "ar": "قماش",
+      "en": "a fabric"
+    },
+    {
+      "id": "new-u7-04",
+      "unit": 7,
+      "fr": "une matière",
+      "ar": "مادة / خامة",
+      "en": "a material"
+    },
+    {
+      "id": "new-u7-05",
+      "unit": 7,
+      "fr": "une promotion",
+      "ar": "عرض ترويجي",
+      "en": "a special offer"
+    },
+    {
+      "id": "new-u7-06",
+      "unit": 7,
+      "fr": "une réduction",
+      "ar": "تخفيض",
+      "en": "a discount"
+    },
+    {
+      "id": "new-u7-07",
+      "unit": 7,
+      "fr": "rembourser",
+      "ar": "يردّ المال",
+      "en": "to refund"
+    },
+    {
+      "id": "new-u7-08",
+      "unit": 7,
+      "fr": "échanger",
+      "ar": "يستبدل",
+      "en": "to exchange"
+    },
+    {
+      "id": "new-u7-09",
+      "unit": 7,
+      "fr": "être en rupture de stock",
+      "ar": "نفد من المخزون",
+      "en": "to be out of stock"
+    },
+    {
+      "id": "new-u7-10",
+      "unit": 7,
+      "fr": "une averse",
+      "ar": "زخة مطر",
+      "en": "a shower of rain"
+    },
+    {
+      "id": "new-u7-11",
+      "unit": 7,
+      "fr": "un orage",
+      "ar": "عاصفة رعدية",
+      "en": "a thunderstorm"
+    },
+    {
+      "id": "new-u7-12",
+      "unit": 7,
+      "fr": "un éclair",
+      "ar": "برق",
+      "en": "a flash of lightning"
+    },
+    {
+      "id": "new-u7-13",
+      "unit": 7,
+      "fr": "le tonnerre",
+      "ar": "الرعد",
+      "en": "thunder"
+    },
+    {
+      "id": "new-u7-14",
+      "unit": 7,
+      "fr": "humide",
+      "ar": "رطب",
+      "en": "humid / damp"
+    },
+    {
+      "id": "new-u7-15",
+      "unit": 7,
+      "fr": "nuageux / nuageuse",
+      "ar": "غائم",
+      "en": "cloudy"
+    },
+    {
+      "id": "new-u7-16",
+      "unit": 7,
+      "fr": "ensoleillé / ensoleillée",
+      "ar": "مشمس",
+      "en": "sunny"
+    },
+    {
+      "id": "new-u7-17",
+      "unit": 7,
+      "fr": "venteux / venteuse",
+      "ar": "عاصف / كثير الرياح",
+      "en": "windy"
+    },
+    {
+      "id": "new-u7-18",
+      "unit": 7,
+      "fr": "une prévision météo",
+      "ar": "توقعات الطقس",
+      "en": "a weather forecast"
+    },
+    {
+      "id": "new-u7-19",
+      "unit": 7,
+      "fr": "la température",
+      "ar": "درجة الحرارة",
+      "en": "the temperature"
+    },
+    {
+      "id": "new-u7-20",
+      "unit": 7,
+      "fr": "une écharpe",
+      "ar": "وشاح",
+      "en": "a scarf"
+    },
+    {
+      "id": "new-u7-21",
+      "unit": 7,
+      "fr": "des gants",
+      "ar": "قفازات",
+      "en": "gloves"
+    },
+    {
+      "id": "new-u7-22",
+      "unit": 7,
+      "fr": "des bottes",
+      "ar": "أحذية طويلة",
+      "en": "boots"
+    },
+    {
+      "id": "new-u7-23",
+      "unit": 7,
+      "fr": "un imperméable",
+      "ar": "معطف مقاوم للماء",
+      "en": "a raincoat"
+    },
+    {
+      "id": "new-u7-24",
+      "unit": 7,
+      "fr": "une fermeture éclair",
+      "ar": "سحّاب الملابس",
+      "en": "a zip / zipper"
+    },
+    {
+      "id": "new-u7-25",
+      "unit": 7,
+      "fr": "un reçu",
+      "ar": "إيصال",
+      "en": "a receipt"
+    },
+    {
+      "id": "new-u8-01",
+      "unit": 8,
+      "fr": "un ingrédient",
+      "ar": "مكوّن",
+      "en": "an ingredient"
+    },
+    {
+      "id": "new-u8-02",
+      "unit": 8,
+      "fr": "une recette",
+      "ar": "وصفة",
+      "en": "a recipe"
+    },
+    {
+      "id": "new-u8-03",
+      "unit": 8,
+      "fr": "éplucher",
+      "ar": "يقشّر",
+      "en": "to peel"
+    },
+    {
+      "id": "new-u8-04",
+      "unit": 8,
+      "fr": "mélanger",
+      "ar": "يخلط",
+      "en": "to mix"
+    },
+    {
+      "id": "new-u8-05",
+      "unit": 8,
+      "fr": "verser",
+      "ar": "يسكب",
+      "en": "to pour"
+    },
+    {
+      "id": "new-u8-06",
+      "unit": 8,
+      "fr": "remuer",
+      "ar": "يحرّك",
+      "en": "to stir"
+    },
+    {
+      "id": "new-u8-07",
+      "unit": 8,
+      "fr": "faire bouillir",
+      "ar": "يغلي",
+      "en": "to boil"
+    },
+    {
+      "id": "new-u8-08",
+      "unit": 8,
+      "fr": "faire cuire",
+      "ar": "يطبخ / ينضج",
+      "en": "to cook"
+    },
+    {
+      "id": "new-u8-09",
+      "unit": 8,
+      "fr": "griller",
+      "ar": "يشوي",
+      "en": "to grill / toast"
+    },
+    {
+      "id": "new-u8-10",
+      "unit": 8,
+      "fr": "au four",
+      "ar": "في الفرن",
+      "en": "in the oven"
+    },
+    {
+      "id": "new-u8-11",
+      "unit": 8,
+      "fr": "une poêle",
+      "ar": "مقلاة",
+      "en": "a frying pan"
+    },
+    {
+      "id": "new-u8-12",
+      "unit": 8,
+      "fr": "une casserole",
+      "ar": "قدر طبخ",
+      "en": "a saucepan"
+    },
+    {
+      "id": "new-u8-13",
+      "unit": 8,
+      "fr": "une cuillère à soupe",
+      "ar": "ملعقة طعام كبيرة",
+      "en": "a tablespoon"
+    },
+    {
+      "id": "new-u8-14",
+      "unit": 8,
+      "fr": "une pincée",
+      "ar": "رشة",
+      "en": "a pinch"
+    },
+    {
+      "id": "new-u8-15",
+      "unit": 8,
+      "fr": "une tranche",
+      "ar": "شريحة",
+      "en": "a slice"
+    },
+    {
+      "id": "new-u8-16",
+      "unit": 8,
+      "fr": "un morceau",
+      "ar": "قطعة",
+      "en": "a piece"
+    },
+    {
+      "id": "new-u8-17",
+      "unit": 8,
+      "fr": "goûter",
+      "ar": "يتذوّق",
+      "en": "to taste"
+    },
+    {
+      "id": "new-u8-18",
+      "unit": 8,
+      "fr": "assaisonner",
+      "ar": "يتبّل",
+      "en": "to season"
+    },
+    {
+      "id": "new-u8-19",
+      "unit": 8,
+      "fr": "salé / salée",
+      "ar": "مالح",
+      "en": "salty"
+    },
+    {
+      "id": "new-u8-20",
+      "unit": 8,
+      "fr": "sucré / sucrée",
+      "ar": "حلو المذاق",
+      "en": "sweet"
+    },
+    {
+      "id": "new-u8-21",
+      "unit": 8,
+      "fr": "amer / amère",
+      "ar": "مُرّ",
+      "en": "bitter"
+    },
+    {
+      "id": "new-u8-22",
+      "unit": 8,
+      "fr": "acide",
+      "ar": "حامض",
+      "en": "sour / acidic"
+    },
+    {
+      "id": "new-u8-23",
+      "unit": 8,
+      "fr": "délicieux / délicieuse",
+      "ar": "لذيذ",
+      "en": "delicious"
+    },
+    {
+      "id": "new-u8-24",
+      "unit": 8,
+      "fr": "frais / fraîche",
+      "ar": "طازج",
+      "en": "fresh"
+    },
+    {
+      "id": "new-u8-25",
+      "unit": 8,
+      "fr": "périmé / périmée",
+      "ar": "منتهي الصلاحية",
+      "en": "expired"
+    }
+  ]
 };
