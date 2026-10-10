@@ -61,6 +61,19 @@
 .roadmap-completion{border-top:1px solid var(--line);padding-top:9px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12px;cursor:pointer}.roadmap-completion input{accent-color:var(--teal)}.roadmap-completion .week-state{margin-inline-start:auto}.optional-c1{margin-top:20px}
 @media(max-width:760px){.book-day-list,.roadmap-weeks,.book-reference-grid{grid-template-columns:1fr}.roadmap-month-title{min-width:100%}}
 
+
+.speakable-fr{cursor:pointer;text-decoration:underline;text-decoration-style:dotted;text-decoration-color:#91b8c6;text-underline-offset:4px;border-radius:3px}
+.speakable-fr:hover{background:#edf8fa;color:#075e68}
+.speakable-fr:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.auto-speak-btn{min-width:28px;min-height:27px;justify-content:center;vertical-align:middle;font-size:13px!important;margin-inline-start:4px!important}
+.audio-recorder{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin:10px 0 14px;padding:10px 12px;border:1px solid #d9e7ec;border-radius:11px;background:#f6fafb}
+.audio-rec-btn{border:1px solid #d3e1e7;border-radius:8px;padding:5px 9px;background:#fff;color:#20485a;font-size:12px;line-height:1.6}
+.audio-rec-btn:hover:not(:disabled){background:#e8f5f4;border-color:#9bcfc6}
+.audio-rec-btn:disabled{opacity:.45;cursor:not-allowed}
+.audio-rec-start{background:#e9f7f2;border-color:#b8e2d5;color:#075e57;font-weight:800}
+.audio-rec-status{flex-basis:100%;font-size:12px;line-height:1.5;color:#637784}
+.book-day .audio-recorder{grid-column:1/-1}
+
 </style>
 </head>
 <body>
@@ -1222,7 +1235,91 @@ function renderRoadmap(){
  const before=document.getElementById('panel-vocab');if(before)before.before(panel);else document.getElementById('panels').appendChild(panel);
 }
 
- function init(){addBookIntegration();renderRoadmap();makeNav();load();setupCheckboxValues();setupChecks();setupMonth2Quiz();setupVocab();setupQuiz();setupSettings();setupAuthForms();$('#personalNotes').value=state.notes||'';updateProgress();navigate((window.location.hash.includes('type=recovery')||window.location.hash.includes('access_token'))?'account':(state.last||'home'));initCloud();}
+
+function makeAudioRecorder(){
+ const box=document.createElement('div');box.className='audio-recorder';box.setAttribute('role','group');box.setAttribute('aria-label','تسجيل الإجابة الصوتية');
+ const start=document.createElement('button');start.type='button';start.className='audio-rec-btn audio-rec-start';start.textContent='🎙️ سجّل إجابتك';
+ const stop=document.createElement('button');stop.type='button';stop.className='audio-rec-btn';stop.textContent='⏹️ إيقاف';stop.disabled=true;
+ const play=document.createElement('button');play.type='button';play.className='audio-rec-btn';play.textContent='▶️ استمع لتسجيلك';play.disabled=true;
+ const download=document.createElement('button');download.type='button';download.className='audio-rec-btn';download.textContent='⬇️ حفظ التسجيل';download.disabled=true;
+ const status=document.createElement('span');status.className='audio-rec-status';status.setAttribute('aria-live','polite');status.textContent='التسجيل على جهازك فقط؛ لن يُرفع إلى المنصة.';
+ box.append(start,stop,play,download,status);
+ let recorder=null,stream=null,chunks=[],objectUrl=null,lastBlob=null;
+ const cleanUpStream=()=>{if(stream){stream.getTracks().forEach(t=>t.stop());stream=null;}};
+ start.addEventListener('click',async()=>{
+  if(!navigator.mediaDevices?.getUserMedia||!window.MediaRecorder){status.textContent='التسجيل غير مدعوم في هذا المتصفح. استخدم جهازاً أو متصفحاً حديثاً.';return;}
+  if(!window.isSecureContext){status.textContent='يحتاج الميكروفون إلى صفحة آمنة HTTPS. افتح نسخة GitHub Pages.';return;}
+  try{
+   start.disabled=true;status.textContent='طلب إذن الميكروفون…';
+   stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}});
+   const types=['audio/webm;codecs=opus','audio/webm','audio/mp4'];
+   const mimeType=types.find(t=>MediaRecorder.isTypeSupported(t));
+   recorder=mimeType?new MediaRecorder(stream,{mimeType}):new MediaRecorder(stream);
+   chunks=[];
+   recorder.ondataavailable=e=>{if(e.data&&e.data.size)chunks.push(e.data);};
+   recorder.onerror=()=>{status.textContent='حدث خطأ أثناء التسجيل. حاول مرة أخرى.';start.disabled=false;stop.disabled=true;cleanUpStream();};
+   recorder.onstop=()=>{
+    lastBlob=new Blob(chunks,{type:recorder?.mimeType||'audio/webm'});
+    if(objectUrl)URL.revokeObjectURL(objectUrl);
+    objectUrl=URL.createObjectURL(lastBlob);
+    play.disabled=!lastBlob.size;download.disabled=!lastBlob.size;
+    start.disabled=false;stop.disabled=true;cleanUpStream();
+    status.textContent='تم التسجيل. يمكنك الاستماع إليه أو تنزيله، ثم إعادة التسجيل.';
+   };
+   recorder.start();stop.disabled=false;play.disabled=true;download.disabled=true;
+   status.textContent='التسجيل جارٍ… تحدث بالفرنسية بوضوح واضغط «إيقاف» عند الانتهاء.';
+  }catch(error){
+   start.disabled=false;stop.disabled=true;cleanUpStream();
+   if(error?.name==='NotAllowedError'||error?.name==='PermissionDeniedError')status.textContent='لم يُسمح بالميكروفون. اسمح باستخدامه من إعدادات المتصفح ثم حاول مجدداً.';
+   else if(error?.name==='NotFoundError')status.textContent='لم يُعثر على ميكروفون متصل بهذا الجهاز.';
+   else status.textContent='تعذر بدء التسجيل: '+(error?.message||'تحقق من الميكروفون وصلاحيات المتصفح.');
+  }
+ });
+ stop.addEventListener('click',()=>{if(recorder&&recorder.state!=='inactive'){stop.disabled=true;recorder.stop();}});
+ play.addEventListener('click',()=>{if(!objectUrl)return;const audio=new Audio(objectUrl);audio.play().catch(()=>{status.textContent='تعذر تشغيل التسجيل. جرّب زر الاستماع مرة أخرى.';});});
+ download.addEventListener('click',()=>{
+  if(!objectUrl||!lastBlob)return;
+  const a=document.createElement('a');a.href=objectUrl;a.download='french-practice-'+new Date().toISOString().replace(/[:.]/g,'-')+(lastBlob.type.includes('mp4')?'.mp4':'.webm');
+  document.body.appendChild(a);a.click();a.remove();status.textContent='بدأ تنزيل ملف التسجيل على جهازك.';
+ });
+ return box;
+}
+function addRecorderWhereRequested(root=document){
+ const prompts=root.querySelectorAll('p,.book-day-output,.roadmap-assignment,.task-instruction');
+ const needsRecorder=/(سجّل|سجل|تحدّث|تحدث|تكلّم|تكلم|قل بصوت|اقرأ بصوت|احكِ|احك عن|شفهي|شفوية|صوتك|ترديد|مثّل|مثل حوار|محادثة|عرضاً|قدّم|قدم|تسجيل|انطق|التلفظ)/i;
+ prompts.forEach(el=>{
+  if(el.closest('.audio-recorder')||el.dataset.recorderAdded==='1')return;
+  const txt=(el.innerText||el.textContent||'').trim();
+  if(!txt||txt.length>520||!needsRecorder.test(txt))return;
+  if(el.closest('.m2-question'))return;
+  el.dataset.recorderAdded='1';
+  el.insertAdjacentElement('afterend',makeAudioRecorder());
+ });
+}
+function enhanceSentenceAudio(root=document){
+ const candidates=root.querySelectorAll('span[lang="fr"],span.fr,span.latin[dir="ltr"]');
+ candidates.forEach(el=>{
+  if(el.dataset.speakReady==='1'||el.closest('a,button,textarea,input,select,.audio-recorder'))return;
+  const text=(el.innerText||el.textContent||'').replace(/\s+/g,' ').trim();
+  if(text.length<2||text.length>180||!/[a-zàâçéèêëîïôûùüÿñæœ]/i.test(text))return;
+  if(/^[A-Z0-9\s._:/-]+$/.test(text))return;
+  el.dataset.speakReady='1';el.classList.add('speakable-fr');el.setAttribute('role','button');el.setAttribute('tabindex','0');
+  el.setAttribute('aria-label','استمع إلى النطق الفرنسي: '+text);el.title='اضغط للاستماع إلى النطق الفرنسي';
+  el.addEventListener('click',()=>speak((el.innerText||el.textContent||'').trim()));
+  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();speak((el.innerText||el.textContent||'').trim());}});
+  const next=el.nextElementSibling;
+  if(next&&next.classList.contains('audio-btn'))return;
+  const button=document.createElement('button');button.type='button';button.className='audio-btn auto-speak-btn';button.textContent='🔊';button.title='استمع إلى الجملة';button.setAttribute('aria-label','استمع إلى: '+text);
+  button.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();speak((el.innerText||el.textContent||'').trim());});
+  el.insertAdjacentElement('afterend',button);
+ });
+}
+function setupAudioFeatures(){
+ enhanceSentenceAudio(document);
+ addRecorderWhereRequested(document);
+}
+
+ function init(){addBookIntegration();renderRoadmap();makeNav();load();setupCheckboxValues();setupChecks();setupMonth2Quiz();setupVocab();setupAudioFeatures();setupQuiz();setupSettings();setupAuthForms();$('#personalNotes').value=state.notes||'';updateProgress();navigate((window.location.hash.includes('type=recovery')||window.location.hash.includes('access_token'))?'account':(state.last||'home'));initCloud();}
  init();
 })();
 </script>
