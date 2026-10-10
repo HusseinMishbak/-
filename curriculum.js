@@ -94,8 +94,8 @@ window.FRENCH_CURRICULUM = {
               "ar": "تحبون الموسيقى"
             },
             {
-              "fr": "Elles habitent à Nancy.",
-              "ar": "هن يسكنّ في نانسي"
+              "fr": "Elles habitent à Bucarest.",
+              "ar": "هن يسكنّ في بوخارست"
             },
             {
               "fr": "Tu parles arabe.",
@@ -106,8 +106,8 @@ window.FRENCH_CURRICULUM = {
               "ar": "هم يحبون السينما."
             },
             {
-              "fr": "Nous habitons à Nancy.",
-              "ar": "نسكن في نانسي."
+              "fr": "Nous habitons à Bucarest.",
+              "ar": "نسكن في بوخارست."
             }
           ],
           "exercise": {
@@ -215,8 +215,8 @@ window.FRENCH_CURRICULUM = {
               "ar": "أنا من العراق."
             },
             {
-              "fr": "J’habite à Nancy et j’étudie le français.",
-              "ar": "أسكن في نانسي وأدرس الفرنسية."
+              "fr": "J’habite à Bucarest et j’étudie le français.",
+              "ar": "أسكن في بوخارست وأدرس الفرنسية."
             },
             {
               "fr": "À bientôt !",
@@ -531,7 +531,7 @@ window.FRENCH_CURRICULUM = {
         ],
         "production": {
           "prompt": "قدّم نفسك في 5–6 جمل. استخدم ضمائر الفاعل، فعلاً من أفعال -er، والفعل s’appeler، وأداة تعريف مناسبة، وجملة جمع، وضميراً مشدداً مثل moi أو toi.",
-          "model": "Bonjour, je m’appelle Lina. Je viens d’Irak et j’habite à Nancy. Je parle arabe et j’apprends le français. Moi, j’aime apprendre les langues. Je souhaite communiquer plus facilement.",
+          "model": "Bonjour, je m’appelle Lina. Je viens d’Irak et j’habite à Bucarest. Je parle arabe et j’apprends le français. Moi, j’aime apprendre les langues. Je souhaite communiquer plus facilement.",
           "criteria": [
             "بدأت بتحية أو تعريف واضح.",
             "استخدمت ضمير فاعل مناسباً وصرفت فعلاً من -er بصورة صحيحة.",
@@ -785,7 +785,7 @@ window.FRENCH_CURRICULUM = {
             }
           ],
           "exercise": {
-            "prompt": "___ adresse est à Nancy. (mon/ma/mes)",
+            "prompt": "___ adresse est à Bucarest. (mon/ma/mes)",
             "answer": "mon",
             "accepted": [
               "mon"
@@ -835,7 +835,7 @@ window.FRENCH_CURRICULUM = {
         {
           "title": "البلدان والمدن",
           "task": "اكتب أين يسكن أربعة أشخاص مستخدماً en/au/aux/à.",
-          "explanation": "احفظ حرف الجر مع اسم الدولة. نستخدم en France، au Canada، aux États-Unis، ومع المدن à Nancy أو à Bagdad.",
+          "explanation": "احفظ حرف الجر مع اسم الدولة. نستخدم en France، au Canada، aux États-Unis، ومع المدن à Bucarest أو à Bagdad.",
           "examples": [
             {
               "fr": "J’habite en France.",
@@ -920,8 +920,8 @@ window.FRENCH_CURRICULUM = {
               "ar": "كم عمركم؟"
             },
             {
-              "fr": "Je suis irakien et j’habite à Nancy.",
-              "ar": "أنا عراقي وأسكن في نانسي"
+              "fr": "Je suis irakien et j’habite à Bucarest.",
+              "ar": "أنا عراقي وأسكن في بوخارست"
             },
             {
               "fr": "Parlez-vous français ?",
@@ -1196,8 +1196,8 @@ window.FRENCH_CURRICULUM = {
             "ar": "أنا عراقية."
           },
           {
-            "fr": "J’habite en France, à Nancy.",
-            "ar": "أسكن في فرنسا، في نانسي."
+            "fr": "J’habite en France, à Bucarest.",
+            "ar": "أسكن في فرنسا، في بوخارست."
           },
           {
             "fr": "J’ai vingt-deux ans.",
@@ -6619,7 +6619,7 @@ window.FRENCH_CURRICULUM = {
                 "why": "Dans le discours rapporté au passé, le futur devient souvent conditionnel présent."
               },
               {
-                "q": "J’habite à Nancy ___ 2024.",
+                "q": "J’habite à Bucarest ___ 2024.",
                 "options": [
                   "depuis",
                   "pendant que",
@@ -6729,7 +6729,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "J’habite à Nancy ___ 2024.",
+                "q": "J’habite à Bucarest ___ 2024.",
                 "options": [
                   "depuis",
                   "pendant que",
@@ -7167,7 +7167,7 @@ window.FRENCH_CURRICULUM = {
                 "why": "Dans le discours rapporté au passé, le futur devient souvent conditionnel présent."
               },
               {
-                "q": "J’habite à Nancy ___ 2024.",
+                "q": "J’habite à Bucarest ___ 2024.",
                 "options": [
                   "depuis",
                   "pendant que",
@@ -7605,7 +7605,7 @@ window.FRENCH_CURRICULUM = {
                 "why": "Dans le discours rapporté au passé, le futur devient souvent conditionnel présent."
               },
               {
-                "q": "J’habite à Nancy ___ 2024.",
+                "q": "J’habite à Bucarest ___ 2024.",
                 "options": [
                   "depuis",
                   "pendant que",
@@ -8153,7 +8153,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "J’habite à Nancy ___ 2024.",
+                "q": "J’habite à Bucarest ___ 2024.",
                 "options": [
                   "depuis",
                   "pendant que",
@@ -8603,7 +8603,7 @@ window.FRENCH_CURRICULUM = {
                 "why": "Dans le discours rapporté au passé, le futur devient souvent conditionnel présent."
               },
               {
-                "q": "J’habite à Nancy ___ 2024.",
+                "q": "J’habite à Bucarest ___ 2024.",
                 "options": [
                   "depuis",
                   "pendant que",
@@ -9151,7 +9151,7 @@ window.FRENCH_CURRICULUM = {
                 "why": "Dans le discours rapporté au passé, le futur devient souvent conditionnel présent."
               },
               {
-                "q": "J’habite à Nancy ___ 2024.",
+                "q": "J’habite à Bucarest ___ 2024.",
                 "options": [
                   "depuis",
                   "pendant que",
@@ -15007,7 +15007,7 @@ window.FRENCH_CURRICULUM = {
         {
           "fr": "J’habite à…",
           "ar": "أسكن في…",
-          "example": "J’habite à Nancy."
+          "example": "J’habite à Bucarest."
         },
         {
           "fr": "m’intégrer",
@@ -15055,8 +15055,8 @@ window.FRENCH_CURRICULUM = {
         },
         {
           "speaker": "Candidat",
-          "fr": "Je m’appelle Samir. Je viens d’Irak et j’habite à Nancy. J’apprends le français pour communiquer plus facilement et participer à la vie quotidienne.",
-          "ar": "اسمي سمير. أنا من العراق وأسكن في نانسي. أتعلم الفرنسية لأتواصل بسهولة أكبر وأشارك في الحياة اليومية."
+          "fr": "Je m’appelle Samir. Je viens d’Irak et j’habite à Bucarest. J’apprends le français pour communiquer plus facilement et participer à la vie quotidienne.",
+          "ar": "اسمي سمير. أنا من العراق وأسكن في بوخارست. أتعلم الفرنسية لأتواصل بسهولة أكبر وأشارك في الحياة اليومية."
         }
       ],
       "task": "سجّل تعريفاً من 60 ثانية دون قراءة. اكتب دوافعك الحقيقية في 6–8 جمل، ثم حسّن النطق والروابط.",
@@ -15112,14 +15112,14 @@ window.FRENCH_CURRICULUM = {
           "why": "العبارة المناسبة هي: Je souhaite participer à la vie de la société française. — أرغب في المشاركة في حياة المجتمع الفرنسي.."
         },
         {
-          "q": "Que signifie cette réplique : « Je m’appelle Samir. Je viens d’Irak et j’habite à Nancy. J’apprends le français pour communiquer plus facilement et participer à la vie quotidienne. » ?",
+          "q": "Que signifie cette réplique : « Je m’appelle Samir. Je viens d’Irak et j’habite à Bucarest. J’apprends le français pour communiquer plus facilement et participer à la vie quotidienne. » ?",
           "options": [
             "مرحباً، التدفئة لا تعمل منذ الأمس.",
-            "اسمي سمير. أنا من العراق وأسكن في نانسي. أتعلم الفرنسية لأتواصل بسهولة أكبر وأشارك في الحياة اليومية.",
+            "اسمي سمير. أنا من العراق وأسكن في بوخارست. أتعلم الفرنسية لأتواصل بسهولة أكبر وأشارك في الحياة اليومية.",
             "شكراً. هل يمكنك توضيح طلبك وتاريخ الإيداع؟"
           ],
           "answer": 1,
-          "why": "المعنى الصحيح للعبارة هو: اسمي سمير. أنا من العراق وأسكن في نانسي. أتعلم الفرنسية لأتواصل بسهولة أكبر وأشارك في الحياة اليومية."
+          "why": "المعنى الصحيح للعبارة هو: اسمي سمير. أنا من العراق وأسكن في بوخارست. أتعلم الفرنسية لأتواصل بسهولة أكبر وأشارك في الحياة اليومية."
         },
         {
           "q": "ما الهدف الرئيس من الوحدة « التعريف بالنفس والدافع الحقيقي »؟",
@@ -17680,7 +17680,7 @@ window.FRENCH_CURRICULUM = {
           "q": "Que signifie cette réplique : « La France se limite-t-elle au territoire européen ? » ?",
           "options": [
             "هل تقتصر فرنسا على أراضيها الأوروبية؟",
-            "اسمي سمير. أنا من العراق وأسكن في نانسي. أتعلم الفرنسية لأتواصل بسهولة أكبر وأشارك في الحياة اليومية.",
+            "اسمي سمير. أنا من العراق وأسكن في بوخارست. أتعلم الفرنسية لأتواصل بسهولة أكبر وأشارك في الحياة اليومية.",
             "هل يمكنك عرض مسارك؟"
           ],
           "answer": 0,
