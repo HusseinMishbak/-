@@ -175,6 +175,7 @@ create table if not exists public.speaking_submissions (
 );
 create index if not exists speaking_submissions_user_submitted_idx on public.speaking_submissions (user_id, submitted_at desc);
 create index if not exists speaking_submissions_assessment_idx on public.speaking_submissions (assessment_key, submitted_at desc);
+create index if not exists speaking_submissions_reviewed_by_idx on public.speaking_submissions (reviewed_by);
 alter table public.speaking_submissions enable row level security;
 revoke all on table public.speaking_submissions from anon, authenticated;
 grant select, insert on table public.speaking_submissions to authenticated;
