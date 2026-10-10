@@ -22,6 +22,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Enchanté(e).",
               "ar": "سعيد/سعيدة بلقائك"
+            },
+            {
+              "fr": "Bonsoir !",
+              "ar": "مساء الخير."
+            },
+            {
+              "fr": "Comment ça va ?",
+              "ar": "كيف الحال؟"
+            },
+            {
+              "fr": "Salut, je suis Adam.",
+              "ar": "أهلاً، أنا آدم."
             }
           ],
           "exercise": {
@@ -45,6 +57,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Mon numéro commence par zéro six.",
               "ar": "رقمي يبدأ بصفر ستة"
+            },
+            {
+              "fr": "J’ai dix-huit ans.",
+              "ar": "عمري ثمانية عشر عاماً."
+            },
+            {
+              "fr": "Un, deux, trois…",
+              "ar": "واحد، اثنان، ثلاثة…"
+            },
+            {
+              "fr": "Quel est ton numéro ?",
+              "ar": "ما رقمك؟"
             }
           ],
           "exercise": {
@@ -72,6 +96,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Elles habitent à Nancy.",
               "ar": "هن يسكنّ في نانسي"
+            },
+            {
+              "fr": "Tu parles arabe.",
+              "ar": "أنت تتحدث العربية."
+            },
+            {
+              "fr": "Ils aiment le cinéma.",
+              "ar": "هم يحبون السينما."
+            },
+            {
+              "fr": "Nous habitons à Nancy.",
+              "ar": "نسكن في نانسي."
             }
           ],
           "exercise": {
@@ -99,6 +135,14 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Comment tu t’appelles ?",
               "ar": "ما اسمك؟"
+            },
+            {
+              "fr": "Nous nous appelons Lina et Adam.",
+              "ar": "اسمانا لينا وآدم."
+            },
+            {
+              "fr": "Elle s’appelle Sara.",
+              "ar": "اسمها سارة."
             }
           ],
           "exercise": {
@@ -126,6 +170,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Les étudiantes arrivent.",
               "ar": "الطالبات يصلن"
+            },
+            {
+              "fr": "L’école est grande.",
+              "ar": "المدرسة كبيرة."
+            },
+            {
+              "fr": "Les livres sont sur la table.",
+              "ar": "الكتب على الطاولة."
+            },
+            {
+              "fr": "C’est un ami.",
+              "ar": "هذا صديق."
             }
           ],
           "exercise": {
@@ -153,6 +209,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Au revoir et à bientôt !",
               "ar": "إلى اللقاء وإلى قريب"
+            },
+            {
+              "fr": "Je viens d’Irak.",
+              "ar": "أنا من العراق."
+            },
+            {
+              "fr": "J’habite à Nancy et j’étudie le français.",
+              "ar": "أسكن في نانسي وأدرس الفرنسية."
+            },
+            {
+              "fr": "À bientôt !",
+              "ar": "إلى اللقاء قريباً."
             }
           ],
           "exercise": {
@@ -499,6 +567,14 @@ window.FRENCH_CURRICULUM = {
           {
             "fr": "C’est avec moi.",
             "ar": "هذا/ذلك معي."
+          },
+          {
+            "fr": "Bonsoir, je m’appelle Hugo.",
+            "ar": "مساء الخير، اسمي هوغو."
+          },
+          {
+            "fr": "Tu parles français ?",
+            "ar": "هل تتحدث الفرنسية؟"
           }
         ],
         "numbersTitle": "الأعداد من صفر إلى عشرين",
@@ -655,6 +731,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Quelle est votre adresse ?",
               "ar": "ما عنوان حضرتك؟"
+            },
+            {
+              "fr": "Vous habitez où ?",
+              "ar": "أين تسكن؟"
+            },
+            {
+              "fr": "Je suis étudiant.",
+              "ar": "أنا طالب."
+            },
+            {
+              "fr": "Quel âge as-tu ?",
+              "ar": "كم عمرك؟"
             }
           ],
           "exercise": {
@@ -682,6 +770,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Mon amie est française.",
               "ar": "صديقتي فرنسية"
+            },
+            {
+              "fr": "Voici ma famille.",
+              "ar": "هذه أسرتي."
+            },
+            {
+              "fr": "Mes parents habitent en Irak.",
+              "ar": "والداي يسكنان في العراق."
+            },
+            {
+              "fr": "C’est mon passeport.",
+              "ar": "هذا جواز سفري."
             }
           ],
           "exercise": {
@@ -709,6 +809,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Nous sommes étudiants.",
               "ar": "نحن طلاب"
+            },
+            {
+              "fr": "Elle est française.",
+              "ar": "هي فرنسية."
+            },
+            {
+              "fr": "Nous avons deux enfants.",
+              "ar": "لدينا طفلان."
+            },
+            {
+              "fr": "Vous êtes professeur ?",
+              "ar": "هل حضرتك أستاذ؟"
             }
           ],
           "exercise": {
@@ -736,6 +848,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Elle habite à Bagdad.",
               "ar": "هي تسكن في بغداد"
+            },
+            {
+              "fr": "Nous habitons au Canada.",
+              "ar": "نسكن في كندا."
+            },
+            {
+              "fr": "Ils vivent à Rome.",
+              "ar": "هم يعيشون في روما."
+            },
+            {
+              "fr": "Elle habite en France.",
+              "ar": "هي تسكن في فرنسا."
             }
           ],
           "exercise": {
@@ -763,6 +887,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "J’ai quarante ans.",
               "ar": "عمري أربعون سنة"
+            },
+            {
+              "fr": "Il ne travaille pas le dimanche.",
+              "ar": "هو لا يعمل يوم الأحد."
+            },
+            {
+              "fr": "Je n’ai pas de voiture.",
+              "ar": "ليس لدي سيارة."
+            },
+            {
+              "fr": "Je ne suis pas médecin.",
+              "ar": "أنا لست طبيباً."
             }
           ],
           "exercise": {
@@ -790,6 +926,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Parlez-vous français ?",
               "ar": "هل تتحدث الفرنسية؟"
+            },
+            {
+              "fr": "Je parle arabe et français.",
+              "ar": "أتحدث العربية والفرنسية."
+            },
+            {
+              "fr": "Elle travaille dans une école.",
+              "ar": "هي تعمل في مدرسة."
+            },
+            {
+              "fr": "Nous sommes de Bagdad.",
+              "ar": "نحن من بغداد."
             }
           ],
           "exercise": {
@@ -1050,6 +1198,14 @@ window.FRENCH_CURRICULUM = {
           {
             "fr": "J’habite en France, à Nancy.",
             "ar": "أسكن في فرنسا، في نانسي."
+          },
+          {
+            "fr": "J’ai vingt-deux ans.",
+            "ar": "عمري اثنان وعشرون عاماً."
+          },
+          {
+            "fr": "Mon amie est étudiante.",
+            "ar": "صديقتي طالبة."
           }
         ],
         "numbersTitle": "الأعداد من عشرين إلى مئة",
@@ -1176,6 +1332,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Il y a une banque.",
               "ar": "يوجد مصرف"
+            },
+            {
+              "fr": "Il y a une boulangerie.",
+              "ar": "يوجد مخبز."
+            },
+            {
+              "fr": "Les magasins sont ouverts.",
+              "ar": "المتاجر مفتوحة."
+            },
+            {
+              "fr": "Où est la boulangerie ?",
+              "ar": "أين المخبز؟"
             }
           ],
           "exercise": {
@@ -1203,6 +1371,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "La banque est à côté du marché.",
               "ar": "المصرف بجانب السوق"
+            },
+            {
+              "fr": "Le parc est derrière la mairie.",
+              "ar": "الحديقة خلف البلدية."
+            },
+            {
+              "fr": "La pharmacie est en face de la banque.",
+              "ar": "الصيدلية مقابل المصرف."
+            },
+            {
+              "fr": "Le café est à gauche.",
+              "ar": "المقهى على اليسار."
             }
           ],
           "exercise": {
@@ -1230,6 +1410,14 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Est-ce qu’il y a une poste ?",
               "ar": "هل يوجد مكتب بريد؟"
+            },
+            {
+              "fr": "Il y a trois cafés ici.",
+              "ar": "توجد ثلاثة مقاهٍ هنا."
+            },
+            {
+              "fr": "Il n’y a pas de bus le soir.",
+              "ar": "لا توجد حافلة مساءً."
             }
           ],
           "exercise": {
@@ -1257,6 +1445,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Vous allez où ?",
               "ar": "إلى أين تذهبون؟"
+            },
+            {
+              "fr": "Est-ce que la gare est loin ?",
+              "ar": "هل المحطة بعيدة؟"
+            },
+            {
+              "fr": "Comment aller au musée ?",
+              "ar": "كيف أصل إلى المتحف؟"
+            },
+            {
+              "fr": "Où est l’arrêt de bus ?",
+              "ar": "أين موقف الحافلة؟"
             }
           ],
           "exercise": {
@@ -1284,6 +1484,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Prenez la ligne deux.",
               "ar": "خذوا الخط الثاني"
+            },
+            {
+              "fr": "Prenez la ligne trois.",
+              "ar": "خذوا الخط الثالث."
+            },
+            {
+              "fr": "Continuez jusqu’au feu.",
+              "ar": "واصلوا السير حتى إشارة المرور."
+            },
+            {
+              "fr": "Prenez la première rue.",
+              "ar": "خذوا الشارع الأول."
             }
           ],
           "exercise": {
@@ -1311,6 +1523,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Puis, tournez à gauche.",
               "ar": "ثم انعطفوا يساراً"
+            },
+            {
+              "fr": "Tournez à droite après la banque.",
+              "ar": "انعطفوا يميناً بعد المصرف."
+            },
+            {
+              "fr": "La poste est près du marché.",
+              "ar": "مكتب البريد قرب السوق."
+            },
+            {
+              "fr": "La pharmacie est à droite.",
+              "ar": "الصيدلية على اليمين."
             }
           ],
           "exercise": {
@@ -1568,6 +1792,14 @@ window.FRENCH_CURRICULUM = {
           {
             "fr": "Allez tout droit, puis tournez à gauche.",
             "ar": "اذهب مباشرة ثم انعطف يساراً."
+          },
+          {
+            "fr": "Où est la gare ?",
+            "ar": "أين المحطة؟"
+          },
+          {
+            "fr": "La mairie est près d’ici.",
+            "ar": "البلدية قريبة من هنا."
           }
         ],
         "numbersTitle": "أعداد مفيدة للعناوين والاتجاهات",
@@ -1658,6 +1890,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Mon père est calme.",
               "ar": "أبي هادئ"
+            },
+            {
+              "fr": "Ma mère s’appelle Salma.",
+              "ar": "اسم أمي سلمى."
+            },
+            {
+              "fr": "J’ai un frère et deux sœurs.",
+              "ar": "لدي أخ وأختان."
+            },
+            {
+              "fr": "J’aime ma famille.",
+              "ar": "أحب أسرتي."
             }
           ],
           "exercise": {
@@ -1685,6 +1929,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Je n’aime pas le bruit.",
               "ar": "لا أحب الضوضاء"
+            },
+            {
+              "fr": "J’aime écouter de la musique.",
+              "ar": "أحب الاستماع إلى الموسيقى."
+            },
+            {
+              "fr": "Il préfère jouer au football.",
+              "ar": "هو يفضل لعب كرة القدم."
+            },
+            {
+              "fr": "Je préfère le thé.",
+              "ar": "أفضل الشاي."
             }
           ],
           "exercise": {
@@ -1712,6 +1968,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Parce que c’est amusant.",
               "ar": "لأنه ممتع"
+            },
+            {
+              "fr": "Pourquoi tu apprends le français ?",
+              "ar": "لماذا تتعلم الفرنسية؟"
+            },
+            {
+              "fr": "Parce que j’aime les langues.",
+              "ar": "لأنني أحب اللغات."
+            },
+            {
+              "fr": "Parce que c’est intéressant.",
+              "ar": "لأنه ممتع."
             }
           ],
           "exercise": {
@@ -1739,6 +2007,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Vous prenez le train ?",
               "ar": "هل تستقلون القطار؟"
+            },
+            {
+              "fr": "Ils prennent le train.",
+              "ar": "هم يستقلون القطار."
+            },
+            {
+              "fr": "Je prends un thé, s’il vous plaît.",
+              "ar": "سأتناول شاياً من فضلك."
+            },
+            {
+              "fr": "Tu prends le métro ?",
+              "ar": "هل تستقل المترو؟"
             }
           ],
           "exercise": {
@@ -1766,6 +2046,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Ces photos sont belles.",
               "ar": "هذه الصور جميلة"
+            },
+            {
+              "fr": "Cette maison est jolie.",
+              "ar": "هذا المنزل جميل."
+            },
+            {
+              "fr": "Ces livres sont intéressants.",
+              "ar": "هذه الكتب ممتعة."
+            },
+            {
+              "fr": "Cet ami est gentil.",
+              "ar": "هذا الصديق لطيف."
             }
           ],
           "exercise": {
@@ -1793,6 +2085,18 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "Je prends un café avec ma sœur.",
               "ar": "أتناول قهوة مع أختي"
+            },
+            {
+              "fr": "Moi aussi, j’adore voyager.",
+              "ar": "أنا أيضاً أعشق السفر."
+            },
+            {
+              "fr": "Je n’aime pas le café, moi non plus.",
+              "ar": "أنا أيضاً لا أحب القهوة."
+            },
+            {
+              "fr": "Moi aussi, j’aime le sport.",
+              "ar": "أنا أيضاً أحب الرياضة."
             }
           ],
           "exercise": {
@@ -2058,6 +2362,14 @@ window.FRENCH_CURRICULUM = {
           {
             "fr": "Moi aussi, j’aime lire.",
             "ar": "أنا أيضاً أحب القراءة."
+          },
+          {
+            "fr": "J’aime lire et voyager.",
+            "ar": "أحب القراءة والسفر."
+          },
+          {
+            "fr": "Ces activités sont amusantes.",
+            "ar": "هذه الأنشطة ممتعة."
           }
         ],
         "numbersTitle": "الأعداد من واحد إلى عشرة",
