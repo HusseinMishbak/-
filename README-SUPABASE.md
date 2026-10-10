@@ -100,7 +100,7 @@ Confirm exactly one row is updated, then sign out and sign back in. The teacher 
 
 - French text marked as French (including the lesson examples and grammar phrases) is clickable; press it to hear the browser's French voice. A nearby **🔊** button is also added when there is not already a speaker button.
 - On tasks whose instructions ask the learner to speak, pronounce, present, role-play, or record an answer, a microphone control is displayed.
-- The recording control asks for microphone permission, records in the browser, and supports playback and downloading the clip as a local file. The recording itself is **not uploaded to Supabase** and is not visible to the teacher; learners should download it if they want to keep it.
+- The older inline microphone controls still record locally for quick practice. The dedicated pronunciation labs inside the book units and the placement/monthly speaking tests additionally support playback and download, then optional upload to the private `student-audio` bucket after the signed-in learner explicitly consents. A submitted test recording becomes visible to the student and teacher-authorized accounts only.
 - Pronunciation playback uses the browser's Web Speech voice available on the device. The sound and voice quality therefore vary by browser and operating system; some devices may not have a French voice installed.
 - Microphone recording needs a secure context (HTTPS) and browser permission. If blocked, enable microphone access in the browser settings and reload the page.
 
