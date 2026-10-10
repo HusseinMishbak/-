@@ -32,7 +32,7 @@ window.FRENCH_CURRICULUM = {
         }
       ],
       "practice": {
-        "intro": "تدريب تفاعلي على التعارف والنطق والأبجدية والضمائر وأدوات التعريف وتصريف أفعال المجموعة الأولى.",
+        "intro": "تدريب تفاعلي أصلي على التعارف والأبجدية والنطق والضمائر الشخصية وأفعال -er والفعل s’appeler وأدوات التعريف وجنس الأسماء وعددها والضمائر المشددة. استمع إلى كل تركيب من زرّه المستقل، ثم طبّق القاعدة في الاختبار والكتابة.",
         "quiz": [
           {
             "q": "Je ___ étudiant.",
@@ -73,6 +73,76 @@ window.FRENCH_CURRICULUM = {
             ],
             "answer": 0,
             "why": "عندما نتحدث عن «أنا وبول» نستخدم nous."
+          },
+          {
+            "q": "Nadia et moi, ___ parlons français.",
+            "options": [
+              "nous",
+              "vous",
+              "elles"
+            ],
+            "answer": 0,
+            "why": "عندما تشمل الجملة المتكلم وشخصاً آخر نستخدم nous: Nadia et moi, nous parlons français."
+          },
+          {
+            "q": "Vous ___ la musique. (aimer)",
+            "options": [
+              "aime",
+              "aimez",
+              "aiment"
+            ],
+            "answer": 1,
+            "why": "مع vous تنتهي أفعال -er غالباً بـ -ez: vous aimez."
+          },
+          {
+            "q": "___ maison est grande.",
+            "options": [
+              "Le",
+              "La",
+              "Les"
+            ],
+            "answer": 1,
+            "why": "maison اسم مؤنث مفرد؛ أداة التعريف المناسبة هي la."
+          },
+          {
+            "q": "Quel groupe est au féminin pluriel ?",
+            "options": [
+              "des étudiantes",
+              "un étudiant",
+              "une étudiante"
+            ],
+            "answer": 0,
+            "why": "des étudiantes يدل على المؤنث الجمع."
+          },
+          {
+            "q": "Tu viens avec ___ ?",
+            "options": [
+              "je",
+              "moi",
+              "me"
+            ],
+            "answer": 1,
+            "why": "بعد avec نستخدم الضمير المشدد: avec moi."
+          },
+          {
+            "q": "Pierre et Sami, ___ habitent à Lyon.",
+            "options": [
+              "elles",
+              "ils",
+              "nous"
+            ],
+            "answer": 1,
+            "why": "نستخدم ils لمجموعة من الذكور أو لمجموعة مختلطة."
+          },
+          {
+            "q": "___ amis arrivent ce matin.",
+            "options": [
+              "Le",
+              "La",
+              "Les"
+            ],
+            "answer": 2,
+            "why": "les هي أداة التعريف للجمع، سواء كان الاسم مذكراً أو مؤنثاً."
           }
         ],
         "fill": [
@@ -101,6 +171,43 @@ window.FRENCH_CURRICULUM = {
               "mon"
             ],
             "hint": "اسم مؤنث يبدأ بحركة: mon amie."
+          },
+          {
+            "prompt": "Pierre et Sami ___ (parler) français.",
+            "answer": "parlent",
+            "accepted": [
+              "parlent"
+            ],
+            "hint": "مع ils نستخدم نهاية -ent في أفعال -er، وهي لا تُنطق عادةً.",
+            "why": "Pierre et Sami parlent français."
+          },
+          {
+            "prompt": "Elle ___ (s’appeler) Emma.",
+            "answer": "s’appelle",
+            "accepted": [
+              "s’appelle",
+              "s'appelle"
+            ],
+            "hint": "مع elle يتصرف الفعل s’appeler إلى s’appelle.",
+            "why": "Elle s’appelle Emma."
+          },
+          {
+            "prompt": "Mettez au pluriel : la table → ___.",
+            "answer": "les tables",
+            "accepted": [
+              "les tables"
+            ],
+            "hint": "في الجمع نستخدم les، ونضيف غالباً s إلى الاسم المكتوب.",
+            "why": "la table → les tables."
+          },
+          {
+            "prompt": "C’est avec ___ (tu).",
+            "answer": "toi",
+            "accepted": [
+              "toi"
+            ],
+            "hint": "بعد avec نستخدم الضمير المشدد toi.",
+            "why": "C’est avec toi."
           }
         ],
         "match": [
@@ -119,6 +226,34 @@ window.FRENCH_CURRICULUM = {
           {
             "fr": "S’il vous plaît",
             "ar": "من فضلك"
+          },
+          {
+            "fr": "je",
+            "ar": "أنا — ضمير فاعل"
+          },
+          {
+            "fr": "moi",
+            "ar": "أنا — ضمير مشدد"
+          },
+          {
+            "fr": "tu",
+            "ar": "أنت — ضمير فاعل"
+          },
+          {
+            "fr": "toi",
+            "ar": "أنت — ضمير مشدد"
+          },
+          {
+            "fr": "le",
+            "ar": "أداة تعريف للمذكر المفرد"
+          },
+          {
+            "fr": "la",
+            "ar": "أداة تعريف للمؤنث المفرد"
+          },
+          {
+            "fr": "les",
+            "ar": "أداة تعريف للجمع"
           }
         ],
         "order": [
@@ -147,15 +282,60 @@ window.FRENCH_CURRICULUM = {
               "français."
             ],
             "translation": "نحن نتحدث الفرنسية."
+          },
+          {
+            "tokens": [
+              "Emma.",
+              "s’appelle",
+              "Elle"
+            ],
+            "answer": [
+              "Elle",
+              "s’appelle",
+              "Emma."
+            ],
+            "translation": "اسمها إيما."
+          },
+          {
+            "tokens": [
+              "français.",
+              "parlent",
+              "Les",
+              "étudiants"
+            ],
+            "answer": [
+              "Les",
+              "étudiants",
+              "parlent",
+              "français."
+            ],
+            "translation": "الطلاب يتحدثون الفرنسية."
+          },
+          {
+            "tokens": [
+              "moi.",
+              "avec",
+              "vient",
+              "Elle"
+            ],
+            "answer": [
+              "Elle",
+              "vient",
+              "avec",
+              "moi."
+            ],
+            "translation": "هي تأتي معي."
           }
         ],
         "production": {
-          "prompt": "قدّم نفسك في 5–6 جمل: الاسم، الأصل، مكان السكن، اللغة التي تتحدثها، وسبب تعلم الفرنسية.",
-          "model": "Bonjour, je m’appelle Lina. Je viens d’Irak et j’habite à Nancy. Je parle arabe et j’apprends le français. Je souhaite communiquer plus facilement.",
+          "prompt": "قدّم نفسك في 5–6 جمل. استخدم ضمائر الفاعل، فعلاً من أفعال -er، والفعل s’appeler، وأداة تعريف مناسبة، وجملة جمع، وضميراً مشدداً مثل moi أو toi.",
+          "model": "Bonjour, je m’appelle Lina. Je viens d’Irak et j’habite à Nancy. Je parle arabe et j’apprends le français. Moi, j’aime apprendre les langues. Je souhaite communiquer plus facilement.",
           "criteria": [
             "بدأت بتحية أو تعريف واضح.",
-            "استخدمت je m’appelle وj’habite وje parle أو j’apprends.",
-            "راجعت الأسماء وأدوات التعريف والنطق."
+            "استخدمت ضمير فاعل مناسباً وصرفت فعلاً من -er بصورة صحيحة.",
+            "استعملت s’appeler وأداة تعريف مناسبة.",
+            "ميّزت بين المفرد والجمع في الاسم وأداة التعريف.",
+            "استخدمت ضميراً مشدداً مثل moi أو toi في موضع صحيح."
           ]
         }
       }
