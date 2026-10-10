@@ -12,8 +12,8 @@ This repository contains an Arabic RTL French-learning platform with two sequent
 ## Current backend setup
 
 - Project: `Learning French` (`yycilzamasypqpvevrup`).
-- Tables: `profiles`, `student_progress`, and `quiz_attempts`.
-- RLS is enabled on all three tables. The teacher-check helper is in the non-exposed `private` schema; trigger functions are not executable as public/authenticated RPCs.
+- Tables: `profiles`, `student_progress`, `quiz_attempts`, and `speaking_submissions` (metadata, feedback, and rubric scores for spoken assessments).
+- RLS is enabled on all four application tables. The teacher-check helper is in the non-exposed `private` schema; trigger functions are not executable as public/authenticated RPCs. Student audio is stored in a private Storage bucket with policies limiting access to its owner and authorized teachers.
 - After the RLS hardening migration, the current security advisor reports one warning: leaked-password protection is disabled in Supabase Auth. Enable it in the Auth password-security settings before broad public rollout. The performance advisor's remaining notices are unused-index informational findings on a low-traffic database; the auth.uid() policy-evaluation warnings were corrected, and a lookup index was added for speaking-review records.
 - `index.html` is configured with the project's URL and the public publishable key. **Never put a `service_role` or secret key in browser code.**
 
@@ -64,13 +64,15 @@ The query should update exactly one row. Sign out and sign back in to refresh th
 - `profiles`: display name, email, and role.
 - `student_progress`: completed sessions/weeks, notes, last section, and latest quiz data.
 - `quiz_attempts`: submitted quiz score, percentage, answer selections, and timestamp.
-- Students can read/update their own progress and submit their own attempts. Teachers can read student profiles, progress, and quiz attempts through RLS.
+- `speaking_submissions`: assessment prompt, private storage path, recording duration, teacher feedback, rubric scores, and review status.
+- Students can read/update their own progress and submit their own attempts. Teachers can read student profiles, progress, quiz attempts, and speaking submissions through RLS.
 - Before inviting the public, publish a privacy notice explaining collected data, purpose, retention, contact information, and deletion requests. Inform learners that a teacher can view their name, email, progress, and recorded quiz history.
 
 ## Important limitations
 
-- I verified the repository content and JavaScript syntax, the three database tables, their RLS flags, migration records, and the absence of current Supabase security-advisor findings.
-- A browser-based end-to-end check of the current public Pages deployment is still needed.
+- Static audit verified that the repository's JavaScript scripts parse, the placement and curriculum multiple-choice answer indexes are valid, the application has no duplicate HTML IDs, and external links opened in new tabs include `noopener`.
+- The Supabase project has four application tables with RLS. The latest security advisor reports one warning: leaked-password protection is disabled. Performance notices are informational unused-index reports on a low-traffic database.
+- The GitHub Pages build and deployment workflow completed successfully for the latest audited website commit. Browser-based end-to-end checks of sign-up, microphone permissions, upload, and teacher playback still need a real-browser test.
 - Quiz scoring takes place in the browser, so these results are appropriate for practice and progress tracking, not high-stakes certification or official grading.
 - Removing a user should be done through Supabase Auth administration; linked profile/progress/history rows are configured to cascade on account deletion.
 
@@ -87,9 +89,7 @@ The query should update exactly one row. Sign out and sign back in to refresh th
 
 ### Enable the owner/teacher view
 
-The existing owner profile in the current Supabase project has been granted the `teacher` role. Sign out and sign back in on the live site to refresh the role in the browser. New accounts still receive `student` by default; use the SQL below only when granting teacher access to another explicitly authorized account.
-
-Register the owner's account as a student first, confirm the email if required, then run this one-time query in Supabase SQL Editor (replace the email with the exact owner account email):
+The existing owner profile in the current Supabase project has been granted the `teacher` role. Sign out and sign back in on the live site to refresh the role in the browser. New accounts still receive `student` by default. To authorize an additional teacher, create and confirm that account first, then run the SQL below in Supabase SQL Editor with the exact email of that explicitly authorized account:
 
 ```sql
 update public.profiles
