@@ -86,6 +86,8 @@ The query should update exactly one row. Sign out and sign back in to refresh th
 
 ### Enable the owner/teacher view
 
+The existing owner profile in the current Supabase project has been granted the `teacher` role. Sign out and sign back in on the live site to refresh the role in the browser. New accounts still receive `student` by default; use the SQL below only when granting teacher access to another explicitly authorized account.
+
 Register the owner's account as a student first, confirm the email if required, then run this one-time query in Supabase SQL Editor (replace the email with the exact owner account email):
 
 ```sql
