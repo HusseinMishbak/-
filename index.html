@@ -2249,15 +2249,38 @@ function setupAudioFeatures(){
    });
   });
  }
+ function ensurePlacementFallback(){
+  if(document.getElementById('panel-placement'))return;
+  const host=document.getElementById('panels');if(!host)return;
+  const panel=document.createElement('section');panel.className='panel';panel.id='panel-placement';
+  const questions=[
+   ['Complétez : Je ___ étudiant.',['suis','es','est'],0,'مع je نستخدم suis.'],
+   ['Choisissez : Elle a ___ sœur.',['un','une','des'],1,'sœur مؤنث، لذلك une.'],
+   ['Comment dit-on « Bonjour » en anglais ?',['Goodbye','Hello','Please'],1,'Bonjour تعني مرحباً.'],
+   ['Choisissez le pluriel : un livre, deux…',['livre','livres','livreses'],1,'جمع livre هو livres.'],
+   ['Complétez : Nous ___ à Paris.',['habite','habitez','habitons'],2,'مع nous نقول habitons.'],
+   ['Quel mot signifie « aujourd’hui » ?',['hier','demain','aujourd’hui'],2,'Aujourd’hui تعني اليوم.']
+  ];
+  panel.innerHTML='<div class="panel-head"><div><h1>اختبار تحديد المستوى — نسخة استعادة</h1><p>تم فتح اختبار بديل لأن الاختبار الكامل لم يُحمّل. أجب عن الأسئلة ثم راجع النتيجة.</p></div></div><div id="placementFallbackQuestions">'+questions.map((q,i)=>'<article class="card" style="margin:12px 0"><strong>'+(i+1)+'. '+q[0]+'</strong><div>'+q[1].map((a,j)=>'<label style="display:block;padding:7px"><input type="radio" name="placementFallback'+i+'" value="'+j+'"> '+a+'</label>').join('')+'</div><p class="small" id="placementFallbackFeedback'+i+'" hidden></p></article>').join('')+'</div><button type="button" class="btn btn-primary" id="placementFallbackGrade">تصحيح الاختبار</button><div class="card" id="placementFallbackResult" hidden aria-live="polite"></div>';
+  host.insertBefore(panel,host.firstChild);
+  panel.querySelector('#placementFallbackGrade').addEventListener('click',()=>{
+   let score=0;
+   questions.forEach((q,i)=>{const chosen=panel.querySelector('input[name="placementFallback'+i+'"]:checked');const ok=!!chosen&&Number(chosen.value)===q[2];if(ok)score++;const fb=panel.querySelector('#placementFallbackFeedback'+i);fb.hidden=false;fb.textContent=(ok?'صحيح ✓ ':'الإجابة الصحيحة: '+q[1][q[2]]+' — ')+q[3];});
+   const result=panel.querySelector('#placementFallbackResult');result.hidden=false;result.innerHTML='<h2>نتيجتك: '+score+' / '+questions.length+'</h2><p>'+(score>=5?'لديك أساس جيد في هذه الأسئلة القصيرة.':'ننصح بالبدء من مستوى A1 ومراجعة الأساسيات.')+'</p><p>هذا فحص استعادة قصير، وليس بديلاً عن اختبار تحديد المستوى الكامل.</p>';
+  });
+ }
  function showPanel(target){
+  if(target==='placement')ensurePlacementFallback();
   const panels=[...document.querySelectorAll('.panel')];
   const found=document.getElementById('panel-'+target);
-  if(!found){const notice=document.getElementById('navFallbackNotice');if(notice){notice.hidden=false;notice.textContent='هذا القسم لم يُحمّل بعد. حدّث الصفحة، وإذا استمرت المشكلة أرسل هذه الرسالة للدعم.';}return;}
+  if(!found)return;
   panels.forEach(p=>p.classList.toggle('active',p===found));
   document.querySelectorAll('.nav-item').forEach(b=>b.classList.toggle('active',b.dataset.target===target));
   window.scrollTo({top:0,behavior:'auto'});
  }
  document.addEventListener('click',function(e){
+  const start=e.target.closest('#startPlacementBtn');
+  if(start){e.preventDefault();ensurePlacementFallback();showPanel('placement');return;}
   const shortcut=e.target.closest('[data-home-target]');
   if(shortcut){e.preventDefault();showPanel(shortcut.dataset.homeTarget);return;}
   const nav=e.target.closest('.nav-item[data-target]');
