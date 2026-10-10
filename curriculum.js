@@ -10729,7 +10729,19 @@ window.FRENCH_CURRICULUM = {
           "why": "الإجابة الطبيعية تشرح سبباً حقيقياً ومحدداً."
         }
       ],
-      "model": "Je m’appelle Samir, je viens d’Irak et j’habite en France depuis quelque temps. J’apprends le français régulièrement. Je souhaite mieux comprendre la société française, communiquer de façon autonome et participer à la vie de mon quartier."
+      "model": "Je m’appelle Samir, je viens d’Irak et j’habite en France depuis quelque temps. J’apprends le français régulièrement. Je souhaite mieux comprendre la société française, communiquer de façon autonome et participer à la vie de mon quartier.",
+      "introduction": "هذه الوحدة هي نقطة الانطلاق في التدريب على الحديث عن نفسك بلغة فرنسية واضحة وطبيعية. سنربط المعلومات الشخصية بأسباب تعلّم اللغة والرغبة في التواصل والمشاركة في الحياة اليومية بفرنسا، مع التأكيد على أن تكون الإجابات صادقة ونابعة من تجربتك الفعلية.",
+      "expectedOutcomes": [
+        "تقديم النفس شفهياً في نحو دقيقة باستخدام جمل مترابطة ومفهومة.",
+        "شرح دوافع تعلم الفرنسية والاندماج بمثال شخصي حقيقي.",
+        "الإجابة عن أسئلة التعارف الأساسية وطلب إعادة السؤال عند الحاجة."
+      ],
+      "learningTopics": [
+        "الاسم والأصل ومكان السكن والعمل أو الدراسة.",
+        "تصريف être وصيغ التعريف بالنفس والفعل s’appeler.",
+        "التعبير عن السبب باستخدام parce que والرغبة باستخدام je souhaite.",
+        "التدرب على مقابلة قصيرة وتسجيل صوتي مع مراجعة النطق."
+      ]
     },
     {
       "n": 2,
@@ -10820,7 +10832,19 @@ window.FRENCH_CURRICULUM = {
           "why": "اطلب الإعادة بوضوح وتهذيب."
         }
       ],
-      "model": "Bonjour, je voudrais vérifier les pièces nécessaires pour mon dossier. J’ai une pièce d’identité et un justificatif de domicile. Pourriez-vous me confirmer la date du rendez-vous ?"
+      "model": "Bonjour, je voudrais vérifier les pièces nécessaires pour mon dossier. J’ai une pièce d’identité et un justificatif de domicile. Pourriez-vous me confirmer la date du rendez-vous ?",
+      "introduction": "تساعدك هذه الوحدة على التعامل بثقة أكبر مع المعلومات الشخصية والمواعيد الإدارية. فالنجاح في التواصل مع الجهات الرسمية يبدأ من فهم السؤال، وقراءة التاريخ والعنوان بدقة، وطلب توضيح المطلوب بأدب دون تخمين.",
+      "expectedOutcomes": [
+        "ذكر بيانات أساسية وقراءة التواريخ والأرقام بوضوح.",
+        "طلب موعد وفهم وقت الموعد ومكانه.",
+        "السؤال عن الوثائق المطلوبة والتأكد مما إذا كان الملف يحتاج إلى وثيقة إضافية."
+      ],
+      "learningTopics": [
+        "الهوية والعنوان وأسماء الوثائق الشائعة.",
+        "الأرقام والتواريخ وأيام الأسبوع وصيغ المواعيد.",
+        "الفعل avoir وصيغ السؤال الرسمية والمهذبة.",
+        "محادثة عملية في مكتب استقبال أو خدمة إدارية."
+      ]
     },
     {
       "n": 3,
@@ -10911,7 +10935,19 @@ window.FRENCH_CURRICULUM = {
           "why": "صياغة واضحة ومحايدة مناسبة للتعامل الإداري."
         }
       ],
-      "model": "Mon quartier est bien desservi par les transports. Il y a une pharmacie, une école et plusieurs commerces à proximité. Si j’ai un problème dans mon logement, je contacte le responsable et j’explique la situation poliment."
+      "model": "Mon quartier est bien desservi par les transports. Il y a une pharmacie, une école et plusieurs commerces à proximité. Si j’ai un problème dans mon logement, je contacte le responsable et j’explique la situation poliment.",
+      "introduction": "يرتبط الاندماج بالحياة اليومية في الحي وفهم الخدمات المحيطة بك والقدرة على وصف مكان السكن واحتياجاته. في هذه الوحدة ستتدرب على التحدث عن الحي، والاستفسار عن موقع خدمة، وشرح مشكلة منزلية بصورة واضحة ومحترمة.",
+      "expectedOutcomes": [
+        "وصف المنزل والحي والمرافق القريبة بجمل مترابطة.",
+        "السؤال عن مواقع البلدية والصيدلية ووسائل النقل والخدمات.",
+        "شرح مشكلة سكنية بسيطة وطلب المساعدة بأسلوب مهذب."
+      ],
+      "learningTopics": [
+        "مفردات السكن والحي والإيجار والخدمات القريبة.",
+        "تراكيب il y a وil n’y a pas وحروف الجر المكانية.",
+        "تكوين الأسئلة باستخدام est-ce que وأدوات السؤال.",
+        "وصف مكتوب للحي وحوار عن مشكلة في السكن."
+      ]
     },
     {
       "n": 4,
@@ -11002,7 +11038,19 @@ window.FRENCH_CURRICULUM = {
           "why": "اطلب الإبطاء بأدب بدلاً من التخمين."
         }
       ],
-      "model": "Bonjour, je voudrais prendre rendez-vous avec le médecin. J’ai mal à la gorge depuis deux jours. Pourriez-vous me proposer un créneau et confirmer l’adresse du cabinet, s’il vous plaît ?"
+      "model": "Bonjour, je voudrais prendre rendez-vous avec le médecin. J’ai mal à la gorge depuis deux jours. Pourriez-vous me proposer un créneau et confirmer l’adresse du cabinet, s’il vous plaît ?",
+      "introduction": "تعلّم اللغة يساعدك على شرح حاجاتك الصحية وفهم التعليمات الأساسية، لكنه لا يغني عن الطبيب أو الجهة الطبية المختصة. سنركز هنا على حجز الموعد، وتوضيح سبب الاتصال بصورة عامة، وطلب إعادة التعليمات أو إبطاء الحديث عند الحاجة.",
+      "expectedOutcomes": [
+        "طلب موعد طبي وتأكيد التاريخ أو عنوان العيادة.",
+        "وصف عرض صحي عام باستخدام عبارات بسيطة ومفهومة.",
+        "طلب تكرار التعليمات أو شرحها بطريقة أكثر وضوحاً."
+      ],
+      "learningTopics": [
+        "مفردات الطبيب والموعد والوصفة والتأمين الصحي.",
+        "التعبير عن الألم والحالة المستمرة باستخدام avoir mal à وdepuis.",
+        "صيغ الطلب المهذب باستخدام je voudrais وpourriez-vous.",
+        "كتابة رسالة قصيرة لتحديد موعد ومهمة محادثة في الاستقبال."
+      ]
     },
     {
       "n": 5,
@@ -11093,7 +11141,19 @@ window.FRENCH_CURRICULUM = {
           "why": "عبارة مباشرة تتضمن هدفاً قابلاً للفهم."
         }
       ],
-      "model": "Mon parcours m’a permis de développer des compétences techniques et de travailler en équipe. En France, je souhaite continuer à apprendre, respecter les règles communes et participer à la vie professionnelle et locale."
+      "model": "Mon parcours m’a permis de développer des compétences techniques et de travailler en équipe. En France, je souhaite continuer à apprendre, respecter les règles communes et participer à la vie professionnelle et locale.",
+      "introduction": "لا يقتصر الحديث عن العمل على ذكر المهنة؛ بل يشمل شرح مسارك وخبراتك ومهاراتك وأهدافك المستقبلية. تساعدك هذه الوحدة على تقديم صورة منظمة عن تجربتك، والتحدث عن التعاون والمشاركة المهنية والاجتماعية دون مبالغة أو اختلاق.",
+      "expectedOutcomes": [
+        "تلخيص الدراسة والخبرة والعمل في تسلسل زمني واضح.",
+        "ذكر مهارات مهنية مع مثال حقيقي يوضح استخدامها.",
+        "شرح خطة مهنية أو هدف مستقبلي والإجابة عن أسئلة المتابعة."
+      ],
+      "learningTopics": [
+        "مفردات العمل والدراسة والخبرة والكفاءة والتطوع.",
+        "الماضي المركب passé composé للحديث عن التجارب السابقة.",
+        "التمييز في الاستعمال بين depuis وpendant.",
+        "إعداد حديث مدته 90 ثانية وفق بنية: المسار، المهارات، الهدف."
+      ]
     },
     {
       "n": 6,
@@ -11184,7 +11244,19 @@ window.FRENCH_CURRICULUM = {
           "why": "استعمال الشرط يعطي طلباً مهذباً."
         }
       ],
-      "model": "Madame, Monsieur, je me permets de vous contacter au sujet de mon dossier. Pourriez-vous m’indiquer si une pièce complémentaire est nécessaire et quel est le délai estimé de traitement ? Je vous remercie par avance pour votre aide. Cordialement."
+      "model": "Madame, Monsieur, je me permets de vous contacter au sujet de mon dossier. Pourriez-vous m’indiquer si une pièce complémentaire est nécessaire et quel est le délai estimé de traitement ? Je vous remercie par avance pour votre aide. Cordialement.",
+      "introduction": "الرسائل الرسمية جزء من الحياة اليومية، سواء للاستفسار عن إجراء أو متابعة طلب أو إرسال وثيقة. ستتعلم كيف تكتب رسالة واضحة ومهذبة، تحدد سبب التواصل والسؤال المطلوب، وتختم الرسالة بطريقة مناسبة.",
+      "expectedOutcomes": [
+        "كتابة بريد رسمي منظم يتضمن موضوعاً ومقدمة وطلباً وخاتمة.",
+        "اختيار عبارات مهذبة لطلب المعلومات أو التوضيح.",
+        "الإشارة إلى المرفقات ومتابعة الطلب دون غموض أو لهجة حادة."
+      ],
+      "learningTopics": [
+        "افتتاح الرسالة الرسمية وخاتمتها وصيغ المخاطبة.",
+        "عبارات مثل je me permets de vous contacter وje vous remercie.",
+        "الشرط المهذب في الأسئلة مثل pourriez-vous وpourriez-vous m’indiquer.",
+        "كتابة ومراجعة رسالة بين 100 و120 كلمة."
+      ]
     },
     {
       "n": 7,
@@ -11275,7 +11347,19 @@ window.FRENCH_CURRICULUM = {
           "why": "العيد الوطني الفرنسي هو 14 يوليو."
         }
       ],
-      "model": "La République française possède des symboles communs. Le drapeau est bleu, blanc et rouge. La devise est « Liberté, Égalité, Fraternité ». La fête nationale a lieu le 14 juillet."
+      "model": "La République française possède des symboles communs. Le drapeau est bleu, blanc et rouge. La devise est « Liberté, Égalité, Fraternité ». La fête nationale a lieu le 14 juillet.",
+      "introduction": "التعرّف إلى رموز الجمهورية يقدّم مدخلاً لفهم الثقافة العامة الفرنسية وما يعبّر عن الدولة والمجتمع. ليست الغاية حفظ أسماء الرموز فقط، بل القدرة على تسميتها وشرح معناها الأساسي بجمل فرنسية سهلة.",
+      "expectedOutcomes": [
+        "ذكر ألوان العلم الفرنسي وشعار الجمهورية والعيد الوطني.",
+        "التعرّف إلى النشيد الوطني وماريان بوصفهما من الرموز الوطنية.",
+        "شرح رمز أو اثنين شفهياً باستخدام جمل بسيطة صحيحة."
+      ],
+      "learningTopics": [
+        "العلم ثلاثي الألوان وشعار Liberté, Égalité, Fraternité.",
+        "La Marseillaise وMarianne و14 juillet.",
+        "قراءة التواريخ والتعبير عن الرموز الوطنية.",
+        "إنشاء بطاقة مراجعة وتقديم عرض شفهي قصير."
+      ]
     },
     {
       "n": 8,
@@ -11366,7 +11450,19 @@ window.FRENCH_CURRICULUM = {
           "why": "الحرية ليست ترخيصاً بانتهاك حقوق الآخرين."
         }
       ],
-      "model": "Les valeurs de la République sont la liberté, l’égalité et la fraternité. La liberté permet à chacun d’exprimer ses idées dans le respect de la loi. L’égalité protège les personnes contre les discriminations et la fraternité encourage la solidarité."
+      "model": "Les valeurs de la République sont la liberté, l’égalité et la fraternité. La liberté permet à chacun d’exprimer ses idées dans le respect de la loi. L’égalité protège les personnes contre les discriminations et la fraternité encourage la solidarité.",
+      "introduction": "تشكّل الحرية والمساواة والإخاء ثلاثة مفاهيم أساسية في فهم قيم الجمهورية الفرنسية. ستدرس معناها بلغة واضحة، ثم تتعلم ربط كل قيمة بمثال من الحياة العامة، مع إدراك أن ممارسة الحرية تتعايش مع القانون وحقوق الآخرين.",
+      "expectedOutcomes": [
+        "شرح معنى كل واحدة من القيم الثلاث بكلماتك.",
+        "تقديم مثال يوضح المساواة أو التضامن أو الحرية في الحياة اليومية.",
+        "بناء إجابة شفوية تتضمن تعريفاً وسبباً ومثالاً."
+      ],
+      "learningTopics": [
+        "المعاني الفرنسية للكلمات liberté وégalité وfraternité.",
+        "التعبير عن الواجب والقدرة وما ينبغي فعله.",
+        "تكوين تعريف بسيط ثم تدعيمه بمثال واقعي.",
+        "التحدث لمدة 90 ثانية ومراجعة وضوح الحجة."
+      ]
     },
     {
       "n": 9,
@@ -11457,7 +11553,19 @@ window.FRENCH_CURRICULUM = {
           "why": "السياق القانوني والوظيفي مهم لتفسير القاعدة."
         }
       ],
-      "model": "La laïcité est un principe de la République française. Elle garantit la liberté de conscience et la neutralité de l’État. Elle ne signifie pas que tous les citoyens doivent avoir les mêmes convictions."
+      "model": "La laïcité est un principe de la République française. Elle garantit la liberté de conscience et la neutralité de l’État. Elle ne signifie pas que tous les citoyens doivent avoir les mêmes convictions.",
+      "introduction": "تحتاج العلمانية إلى فهم دقيق للسياق بدل اختزالها في عبارة واحدة. تشرح هذه الوحدة العلاقة بين حياد الدولة وحرية الضمير، وتدرّبك على التمييز بين دور المؤسسات العامة والقواعد التي قد تنطبق على الموظف العام أو المواطن في مواقف مختلفة.",
+      "expectedOutcomes": [
+        "شرح المبدأ العام للعلمانية بعبارات فرنسية بسيطة ودقيقة.",
+        "التفريق بين حياد الدولة وحرية الضمير لدى الأفراد.",
+        "تجنب التعميم وطلب توضيح أو الرجوع إلى مصدر رسمي عند وجود حالة محددة."
+      ],
+      "learningTopics": [
+        "مصطلحات laïcité وneutralité وliberté de conscience.",
+        "شرح مبدأ أو قاعدة باستخدام il faut وil est nécessaire de.",
+        "بناء جمل المقابلة والتعارض باستخدام mais وen revanche.",
+        "كتابة شرح موجز يراعي السياق والمصطلحات الدقيقة."
+      ]
     },
     {
       "n": 10,
@@ -11548,7 +11656,19 @@ window.FRENCH_CURRICULUM = {
           "why": "« en raison de » تعني بسبب."
         }
       ],
-      "model": "L’égalité est importante pour toute la société. Les femmes et les hommes doivent bénéficier des mêmes droits. Lorsqu’une personne rencontre une discrimination, elle peut conserver les éléments utiles et demander conseil à un service compétent."
+      "model": "L’égalité est importante pour toute la société. Les femmes et les hommes doivent bénéficier des mêmes droits. Lorsqu’une personne rencontre une discrimination, elle peut conserver les éléments utiles et demander conseil à un service compétent.",
+      "introduction": "تهدف هذه الوحدة إلى فهم المساواة أمام القانون ورفض التمييز، بما في ذلك المساواة بين النساء والرجال. وستتدرب على شرح هذه المبادئ واحترامها، وعلى استخدام لغة مناسبة لطلب المشورة إذا واجه شخص موقفاً يعتقد أنه تمييزي.",
+      "expectedOutcomes": [
+        "شرح معنى المساواة وعدم التمييز بمثال واضح.",
+        "استخدام مفردات الحقوق والمساعدة والجهة المختصة.",
+        "التحدث عن موقف حساس باحترام، دون نشر بيانات خاصة أو إصدار أحكام غير مدعومة."
+      ],
+      "learningTopics": [
+        "مصطلحات discrimination وégalité وdroits fondamentaux.",
+        "التعبير عن السبب والنتيجة والمقارنة.",
+        "صيغ طلب النصيحة والمساعدة بأسلوب مهذب.",
+        "كتابة فقرة تشرح أهمية المساواة للجميع."
+      ]
     },
     {
       "n": 11,
@@ -11639,7 +11759,19 @@ window.FRENCH_CURRICULUM = {
           "why": "الحكومة تقود السياسة العامة وتنفذها ضمن النظام الدستوري."
         }
       ],
-      "model": "Les institutions françaises ont des fonctions distinctes. Le Parlement vote les lois et contrôle l’action du gouvernement. Il comprend l’Assemblée nationale et le Sénat. Le gouvernement conduit la politique de la Nation."
+      "model": "Les institutions françaises ont des fonctions distinctes. Le Parlement vote les lois et contrôle l’action du gouvernement. Il comprend l’Assemblée nationale et le Sénat. Le gouvernement conduit la politique de la Nation.",
+      "introduction": "تساعد معرفة المؤسسات الوطنية على فهم كيفية إدارة الدولة واتخاذ القرارات العامة. ستتعرف إلى الأدوار الأساسية لرئيس الجمهورية والحكومة والبرلمان بغرفتيه، مع التركيز على اختصاص كل مؤسسة بدلاً من حفظ أسماء المسؤولين الذين قد تتغير مناصبهم.",
+      "expectedOutcomes": [
+        "التمييز بين دور رئيس الجمهورية ودور الحكومة.",
+        "شرح الوظائف الأساسية للجمعية الوطنية ومجلس الشيوخ.",
+        "تقديم وصف موجز للعلاقة بين التشريع والعمل الحكومي."
+      ],
+      "learningTopics": [
+        "المصطلحات président de la République وgouvernement وParlement.",
+        "الجمعية الوطنية ومجلس الشيوخ ودور كل منهما.",
+        "التراكيب الفرنسية لشرح الدور والمسؤولية.",
+        "إنشاء خريطة مؤسسات وتقديم شرح شفهي منظم."
+      ]
     },
     {
       "n": 12,
@@ -11730,7 +11862,19 @@ window.FRENCH_CURRICULUM = {
           "why": "راجع الجهة الرسمية لتفادي الأخطاء وحماية بياناتك."
         }
       ],
-      "model": "Pour une démarche administrative, je vérifie d’abord le site officiel. Selon le sujet, je peux contacter la mairie, la préfecture ou un autre service compétent. Je prépare les documents demandés avant le rendez-vous."
+      "model": "Pour une démarche administrative, je vérifie d’abord le site officiel. Selon le sujet, je peux contacter la mairie, la préfecture ou un autre service compétent. Je prépare les documents demandés avant le rendez-vous.",
+      "introduction": "في كثير من المواقف اليومية لا يكفي معرفة الإجراء؛ بل يجب معرفة الإدارة المناسبة للتواصل. تشرح هذه الوحدة الفرق العام بين البلدية والمحافظة والمنطقة، وتساعدك على صياغة سؤال واضح ومعرفة ضرورة التحقق من الجهة المختصة عبر موقعها الرسمي.",
+      "expectedOutcomes": [
+        "التعرّف إلى الأدوار العامة للبلدية والمحافظة والمنطقة.",
+        "اختيار جهة أولية للاستفسار عن معاملة شائعة بعد التحقق من طبيعتها.",
+        "طلب معلومات رسمية بطريقة واضحة ولبقة."
+      ],
+      "learningTopics": [
+        "مفردات commune وmairie وpréfecture وrégion.",
+        "السؤال عن الجهة المختصة باستخدام où dois-je m’adresser.",
+        "صيغ الاستفسار عن الشروط والوثائق المطلوبة.",
+        "تطبيقات افتراضية لمعاملات مختلفة والتحقق من المصادر الرسمية."
+      ]
     },
     {
       "n": 13,
@@ -11821,7 +11965,19 @@ window.FRENCH_CURRICULUM = {
           "why": "الجمعيات والتطوع وسائل للمشاركة المحلية."
         }
       ],
-      "model": "La démocratie repose notamment sur des élections et sur la participation des citoyens. On peut aussi contribuer à la vie locale en s’informant, en participant à une association et en respectant les opinions différentes."
+      "model": "La démocratie repose notamment sur des élections et sur la participation des citoyens. On peut aussi contribuer à la vie locale en s’informant, en participant à une association et en respectant les opinions différentes.",
+      "introduction": "تتناول هذه الوحدة المشاركة الديمقراطية والانتخابات بوصفها جزءاً من الحياة المدنية. وسنميّز بين أهمية التصويت والشروط القانونية للأهلية، ونتناول وسائل أخرى للمشاركة المحلية مثل التطوع والجمعيات والحوار والاطلاع على المعلومات الموثوقة.",
+      "expectedOutcomes": [
+        "شرح الغرض العام من الانتخابات واختيار الممثلين.",
+        "تمييز أهمية التحقق من شروط التصويت بحسب نوع الانتخابات والوضع القانوني.",
+        "ذكر وسائل أخرى للمشاركة في الحياة المحلية إلى جانب التصويت."
+      ],
+      "learningTopics": [
+        "مفردات élection وvoter وbulletin de vote وassociation.",
+        "التعبير عن الرأي مع تقديم سبب ومثال.",
+        "استخدام si + présent للتحدث عن شروط عامة.",
+        "عرض شفهي قصير عن المشاركة المدنية والمسؤولية."
+      ]
     },
     {
       "n": 14,
@@ -11912,7 +12068,19 @@ window.FRENCH_CURRICULUM = {
           "why": "المواطنة تجمع الحقوق والواجبات."
         }
       ],
-      "model": "Dans une société démocratique, les droits sont protégés par la loi. Les citoyens doivent aussi respecter les règles communes et les droits d’autrui. Les impôts permettent de financer de nombreux services publics."
+      "model": "Dans une société démocratique, les droits sont protégés par la loi. Les citoyens doivent aussi respecter les règles communes et les droits d’autrui. Les impôts permettent de financer de nombreux services publics.",
+      "introduction": "تركز المواطنة على فهم الحقوق والواجبات معاً، وليس حفظ أحدهما بمعزل عن الآخر. في هذه الوحدة ستتعلم كيف تشرح أهمية القواعد المشتركة، واحترام القانون وحقوق الآخرين، ودور الضرائب في تمويل الخدمات العامة، مع الفصل بين الرأي الشخصي والمعلومة القانونية.",
+      "expectedOutcomes": [
+        "ذكر أمثلة على حقوق وحريات وواجبات أساسية.",
+        "توضيح أن ممارسة الحقوق تتم ضمن إطار القانون واحترام الآخرين.",
+        "شرح العلاقة العامة بين الضرائب والخدمات العامة."
+      ],
+      "learningTopics": [
+        "مصطلحات droit وdevoir وrespecter la loi وliberté d’expression.",
+        "التعبير عن الالتزام والضرورة باستخدام devoir وêtre tenu de.",
+        "الربط بين الجمل باستخدام en revanche وparce que.",
+        "كتابة ثماني جمل تربط الحق بالواجب والمثال."
+      ]
     },
     {
       "n": 15,
@@ -12003,7 +12171,19 @@ window.FRENCH_CURRICULUM = {
           "why": "قانون 1905 من المحطات المرتبطة بفصل الكنائس عن الدولة."
         }
       ],
-      "model": "L’histoire française a transformé les droits et les institutions. La Révolution commence en 1789. La loi de 1905 organise la séparation des Églises et de l’État. La Ve République est fondée en 1958."
+      "model": "L’histoire française a transformé les droits et les institutions. La Révolution commence en 1789. La loi de 1905 organise la séparation des Églises et de l’État. La Ve République est fondée en 1958.",
+      "introduction": "توفر المحطات التاريخية سياقاً لفهم نشأة بعض مبادئ ومؤسسات فرنسا الحديثة. لن يكون الهدف حفظ قائمة طويلة من التواريخ، بل معرفة محطات أساسية مثل الثورة الفرنسية وقانون 1905 وتطور الحقوق وتأسيس الجمهورية الخامسة، والقدرة على شرح أهميتها بإيجاز.",
+      "expectedOutcomes": [
+        "ربط السنوات الرئيسية بالأحداث التاريخية الواردة في الوحدة.",
+        "سرد الأحداث بترتيب زمني باستخدام روابط مناسبة.",
+        "شرح أهمية محطة تاريخية بجملة أو جملتين بالفرنسية."
+      ],
+      "learningTopics": [
+        "الثورة الفرنسية عام 1789 وإعلان حقوق الإنسان والمواطن.",
+        "قانون فصل الكنائس عن الدولة لعام 1905.",
+        "المحطات المتعلقة بتطور الحقوق في 1944–1945 وتأسيس الجمهورية الخامسة عام 1958.",
+        "الأفعال الماضية وروابط التسلسل الزمني وإنشاء خط زمني."
+      ]
     },
     {
       "n": 16,
@@ -12094,7 +12274,19 @@ window.FRENCH_CURRICULUM = {
           "why": "التنوع يعني وجود خصائص جغرافية ومحلية مختلفة."
         }
       ],
-      "model": "Paris est la capitale de la France. Le pays possède des territoires en Europe et outre-mer. Les régions présentent des paysages, des activités économiques et des réalités culturelles variés."
+      "model": "Paris est la capitale de la France. Le pays possède des territoires en Europe et outre-mer. Les régions présentent des paysages, des activités économiques et des réalités culturelles variés.",
+      "introduction": "تساعد الجغرافيا على فهم فرنسا بوصفها بلداً متنوع الأقاليم، لا مجرد معرفة العاصمة وبعض المدن. ستتعرف إلى موقع باريس، وتنوّع المناطق والمدن، ووجود أقاليم ما وراء البحار، وتتعلم وصف الموقع والاختلافات الجغرافية بعبارات بسيطة.",
+      "expectedOutcomes": [
+        "تحديد العاصمة وذكر بعض المدن الفرنسية المعروفة.",
+        "فهم أن الجمهورية تضم أقاليم أوروبية وأقاليم ما وراء البحار.",
+        "وصف مكان أو إقليم ومقارنته بمكان آخر باستخدام جمل صحيحة."
+      ],
+      "learningTopics": [
+        "مفردات capitale وrégion وterritoires d’outre-mer وdiversité.",
+        "حروف الجر والتعبير عن الموقع والمسافة.",
+        "صياغة المقارنة باستخدام plus وmoins وaussi.",
+        "كتابة فقرة تعريفية بفرنسا وتنوع أقاليمها."
+      ]
     },
     {
       "n": 17,
@@ -12185,7 +12377,19 @@ window.FRENCH_CURRICULUM = {
           "why": "لكل مستوى مؤسسات واختصاصات مختلفة."
         }
       ],
-      "model": "La France est membre de l’Union européenne et participe à ses décisions. Cependant, les institutions françaises et européennes ont des compétences distinctes. L’euro est la monnaie commune de nombreux pays membres, mais pas de tous."
+      "model": "La France est membre de l’Union européenne et participe à ses décisions. Cependant, les institutions françaises et européennes ont des compétences distinctes. L’euro est la monnaie commune de nombreux pays membres, mais pas de tous.",
+      "introduction": "تشرح هذه الوحدة مكانة فرنسا داخل الاتحاد الأوروبي والفرق بين المستوى الوطني والمستوى الأوروبي. يساعد هذا الفهم على معرفة أن الدول الأعضاء تشارك في مؤسسات وقرارات مشتركة، مع بقاء مؤسسات وطنية واختصاصات لا ينبغي الخلط بينها.",
+      "expectedOutcomes": [
+        "شرح أن فرنسا دولة عضو في الاتحاد الأوروبي.",
+        "تمييز بعض المؤسسات الأوروبية عن المؤسسات الفرنسية الوطنية.",
+        "تقديم مقارنة منظمة بين اختصاص أو دور وطني وآخر أوروبي."
+      ],
+      "learningTopics": [
+        "مصطلحات Union européenne وÉtat membre وParlement européen وeuro.",
+        "التعبير عن التشابه والاختلاف باستخدام tandis que وen revanche.",
+        "عرض معلومات قصيرة مع تجنب التعميم حول كل الدول الأعضاء.",
+        "كتابة مقارنة من نحو 120 كلمة."
+      ]
     },
     {
       "n": 18,
@@ -12276,7 +12480,19 @@ window.FRENCH_CURRICULUM = {
           "why": "المعونات والخدمات تخضع لشروط محددة."
         }
       ],
-      "model": "Les services publics facilitent la vie collective dans plusieurs domaines, notamment l’éducation et la santé. Les conditions des prestations sociales peuvent dépendre de la situation personnelle. Il faut donc consulter la source officielle avant de faire une demande."
+      "model": "Les services publics facilitent la vie collective dans plusieurs domaines, notamment l’éducation et la santé. Les conditions des prestations sociales peuvent dépendre de la situation personnelle. Il faut donc consulter la source officielle avant de faire une demande.",
+      "introduction": "تؤثر خدمات التعليم والصحة والحماية الاجتماعية في حياة السكان يومياً. ستتعلم في هذه الوحدة المفردات اللازمة لفهم التعليمات العامة والاستفسار عن الشروط، مع الانتباه إلى أن الاستحقاق والإجراءات قد يعتمدان على الوضع الشخصي ويجب التحقق منهما من مصدر حكومي حديث.",
+      "expectedOutcomes": [
+        "شرح الغرض العام لبعض الخدمات العامة بكلمات واضحة.",
+        "طلب معلومات عن استمارة أو شروط الاستفادة من خدمة.",
+        "تلخيص معلومة من موقع رسمي مع ذكر المصدر وتاريخ الاطلاع."
+      ],
+      "learningTopics": [
+        "مصطلحات école maternelle وassurance maladie وprestations sociales وformulaire.",
+        "صيغ السؤال عن شروط الأهلية والإجراءات.",
+        "التحدث عن الحاجة والخطوة المقبلة باستخدام futur proche.",
+        "تمرين بحث موجّه وتلخيص باللغة الفرنسية."
+      ]
     },
     {
       "n": 19,
@@ -12367,7 +12583,19 @@ window.FRENCH_CURRICULUM = {
           "why": "المعلومات العامة لا تحل محل المشورة المؤهلة عند الحاجة."
         }
       ],
-      "model": "Les règles de droit organisent la vie collective et protègent les droits. La justice examine les affaires dans le cadre de procédures définies. La présomption d’innocence est un principe fondamental."
+      "model": "Les règles de droit organisent la vie collective et protègent les droits. La justice examine les affaires dans le cadre de procédures définies. La présomption d’innocence est un principe fondamental.",
+      "introduction": "تساعد المفردات القانونية الأساسية على فهم الأخبار والإشعارات المتعلقة بالعدالة والقانون، لكنها لا تحل محل المشورة القانونية المتخصصة. تركز الوحدة على دور المحاكم والإجراءات القانونية ومبدأ قرينة البراءة، وتدربك على شرح أهمية القواعد المشتركة بلغة دقيقة.",
+      "expectedOutcomes": [
+        "فهم كلمات أساسية مرتبطة بالقضاء والمحكمة والقانون.",
+        "شرح معنى قرينة البراءة وأهمية الإجراءات القانونية على نحو عام.",
+        "معرفة متى ينبغي الرجوع إلى مصدر رسمي أو مختص بدل الاعتماد على معلومات عامة."
+      ],
+      "learningTopics": [
+        "مفردات justice وtribunal وprésomption d’innocence وrègle de droit.",
+        "التعبير عن الواجب والإجراء والسبب.",
+        "تقديم تعريف عام مع مثال يوضح المعنى.",
+        "كتابة فقرة مترابطة عن دور القانون في حماية الحقوق."
+      ]
     },
     {
       "n": 20,
@@ -12458,7 +12686,19 @@ window.FRENCH_CURRICULUM = {
           "why": "قراءة الشروط وفهمها خطوة احترازية مهمة."
         }
       ],
-      "model": "Avant de signer un contrat de travail, je lis les clauses et je vérifie les horaires, la rémunération et les autres conditions. Si un point n’est pas clair, je demande une explication ou un conseil adapté."
+      "model": "Avant de signer un contrat de travail, je lis les clauses et je vérifie les horaires, la rémunération et les autres conditions. Si un point n’est pas clair, je demande une explication ou un conseil adapté.",
+      "introduction": "يساعد فهم لغة العمل على التواصل مع أصحاب العمل وفهم الوثائق المتعلقة بالعقد والأجر والإجازات. ستتعلم أن تسأل عن بند غير واضح وتطلب تفسيراً مهذباً، وأن تتحقق من المعلومة من جهة مختصة قبل اتخاذ قرار مهم.",
+      "expectedOutcomes": [
+        "فهم المفردات الأساسية في عقد العمل وقسيمة الراتب.",
+        "طلب توضيح ساعات العمل أو بند تعاقدي بصورة مهذبة.",
+        "وصف أهمية قراءة الشروط والتحقق من المعلومات قبل التوقيع."
+      ],
+      "learningTopics": [
+        "مصطلحات contrat de travail وsalaire وfiche de paie وcongés payés.",
+        "صيغ الاستفسار المهذب باستخدام pourriez-vous.",
+        "شرح السبب والنتيجة والمقارنة بين الشروط.",
+        "تمثيل حوار عملي حول بند غير واضح في عقد."
+      ]
     },
     {
       "n": 21,
@@ -12549,7 +12789,19 @@ window.FRENCH_CURRICULUM = {
           "why": "في B2 ينبغي تنظيم الفكرة ودعمها بحجج وأمثلة."
         }
       ],
-      "model": "Pour comprendre un enjeu de société, il faut distinguer les faits des opinions et vérifier les sources. À mon avis, une mesure peut être utile si elle répond à un besoin réel. Cependant, il faut aussi examiner son coût et ses conséquences."
+      "model": "Pour comprendre un enjeu de société, il faut distinguer les faits des opinions et vérifier les sources. À mon avis, une mesure peut être utile si elle répond à un besoin réel. Cependant, il faut aussi examiner son coût et ses conséquences.",
+      "introduction": "عند الحديث عن المجتمع والأحداث الجارية، من الضروري التمييز بين الوقائع والتحليل والآراء والشائعات. في هذه الوحدة ستتدرب على الاستماع إلى خبر أو قراءته، ثم تلخيص فكرته الأساسية وتقديم رأي معلل تدعمه أمثلة ومصادر يمكن التحقق منها.",
+      "expectedOutcomes": [
+        "استخلاص الفكرة الرئيسية والتفاصيل الداعمة من تقرير قصير.",
+        "التمييز بين المعلومة المدعومة بالمصدر والرأي الشخصي.",
+        "عرض موقف يتضمن حجتين على الأقل مع الاعتراف بوجهة نظر مخالفة."
+      ],
+      "learningTopics": [
+        "مفردات source fiable وenjeu de société وargument وen revanche.",
+        "روابط الحجاج والتنازل والمقابلة.",
+        "تلخيص الخبر باللغة الفرنسية مع توثيق المصدر والتاريخ.",
+        "إعداد إجابة شفوية منظمة بمستوى B2."
+      ]
     },
     {
       "n": 22,
@@ -12640,7 +12892,19 @@ window.FRENCH_CURRICULUM = {
           "why": "« il faudrait » مناسب لتقديم اقتراح أو توصية متزنة."
         }
       ],
-      "model": "À mon avis, il faudrait investir dans des transports accessibles et fiables. Cela peut réduire la pollution et faciliter les déplacements. Toutefois, les besoins diffèrent selon les territoires. Il est donc nécessaire de comparer les solutions et d’évaluer leurs résultats."
+      "model": "À mon avis, il faudrait investir dans des transports accessibles et fiables. Cela peut réduire la pollution et faciliter les déplacements. Toutefois, les besoins diffèrent selon les territoires. Il est donc nécessaire de comparer les solutions et d’évaluer leurs résultats.",
+      "introduction": "تستخدم هذه الوحدة قضايا عامة مثل النقل والمناخ والماء لتدريبك على النقاش باللغة الفرنسية. ستتعلم عرض مشكلة، وتقديم حجج وأمثلة، والنظر إلى الاعتراضات المحتملة، ثم اقتراح حل واقعي مع توضيح مزاياه وحدوده.",
+      "expectedOutcomes": [
+        "عرض مشكلة عامة وتفسير أسبابها أو آثارها بإيجاز.",
+        "تقديم رأي مدعوم بحجتين وأمثلة واضحة.",
+        "اقتراح حل متوازن ومناقشة كلفته أو حدوده بطريقة محترمة."
+      ],
+      "learningTopics": [
+        "مفردات التنمية المستدامة والخدمات والمصلحة العامة.",
+        "صيغ الاقتراح مثل il faudrait والتعبير عن الاحتمال.",
+        "روابط concession والتعارض والفرضية.",
+        "عرض شفهي من دقيقتين ببنية واضحة وخاتمة."
+      ]
     },
     {
       "n": 23,
@@ -12731,7 +12995,19 @@ window.FRENCH_CURRICULUM = {
           "why": "الفكرة والسبب والمثال تجعل الإجابة أكثر وضوحاً."
         }
       ],
-      "model": "Je souhaite acquérir la nationalité française pour des raisons liées à mon parcours et à mon projet de vie. Je comprends que cette démarche implique des droits et des devoirs. Je continue à améliorer mon français et à mieux connaître les institutions, l’histoire et la société françaises."
+      "model": "Je souhaite acquérir la nationalité française pour des raisons liées à mon parcours et à mon projet de vie. Je comprends que cette démarche implique des droits et des devoirs. Je continue à améliorer mon français et à mieux connaître les institutions, l’histoire et la société françaises.",
+      "introduction": "تجمع هذه الوحدة المهارات السابقة في تدريب عملي يحاكي أسئلة المقابلة المتعلقة بالمسار الشخصي والدوافع والاندماج والخطط المستقبلية. الهدف هو أن تفهم السؤال وتجيب بصدق وبطريقة مترابطة، لا أن تحفظ خطاباً جاهزاً لا يعكس تجربتك.",
+      "expectedOutcomes": [
+        "الإجابة عن أسئلة شخصية واجتماعية بإجابات صادقة ومترابطة.",
+        "دعم الإجابة بمثال ملموس من الحياة أو العمل أو المشاركة المجتمعية.",
+        "طلب إعادة صياغة السؤال عند الحاجة والحفاظ على هدوء التواصل."
+      ],
+      "learningTopics": [
+        "تنظيم الحديث بين الماضي والحاضر والمستقبل.",
+        "شرح الدوافع والروابط الشخصية مع فرنسا وفق التجربة الحقيقية.",
+        "التعامل مع أسئلة المتابعة وتوضيح الفكرة.",
+        "محاكاة مقابلة وتقييم الإجابات من حيث الوضوح والترابط والمصداقية."
+      ]
     },
     {
       "n": 24,
@@ -12822,7 +13098,19 @@ window.FRENCH_CURRICULUM = {
           "why": "قد تختلف الشروط بحسب طريق اكتساب الجنسية، ويجب الرجوع للمصادر الرسمية الحديثة."
         }
       ],
-      "model": "Pour réussir, je prépare deux objectifs distincts : le niveau de français exigé et les connaissances civiques demandées pour ma procédure. Je m’entraîne régulièrement aux quatre compétences du DELF B2, je révise les thèmes officiels et je vérifie les informations administratives actualisées."
+      "model": "Pour réussir, je prépare deux objectifs distincts : le niveau de français exigé et les connaissances civiques demandées pour ma procédure. Je m’entraîne régulièrement aux quatre compétences du DELF B2, je révise les thèmes officiels et je vérifie les informations administratives actualisées.",
+      "introduction": "هذه الوحدة هي نقطة تجميع لاختبار ما تعلمته في اللغة والمعرفة المدنية، وتحديد ما يحتاج إلى مراجعة قبل الخطوات الرسمية. سنفصل بين تدريب DELF B2، والمراجعة المدنية، والاستعداد للمقابلة، مع الرجوع إلى المصادر الرسمية للتأكد من الشروط السارية على مسار الطلب.",
+      "expectedOutcomes": [
+        "تقييم نقاط القوة والضعف في الفهم المسموع والمقروء والتحدث والكتابة.",
+        "مراجعة موضوعات المعرفة المدنية باستخدام مصادر رسمية حديثة.",
+        "إعداد خطة مراجعة شخصية قابلة للقياس قبل حجز اختبار أو تقديم طلب."
+      ],
+      "learningTopics": [
+        "محاكاة مهارات DELF B2 الأربع بصورة منفصلة.",
+        "أسئلة مدنية تدريبية ومراجعة أسباب الأخطاء.",
+        "تمرين مقابلة يركز على الوضوح والصدق والاستدلال بالأمثلة.",
+        "خطة زمنية للمراجعة والتحقق من متطلبات الإجراء الرسمي."
+      ]
     }
   ],
   "citizenshipOfficial": {
