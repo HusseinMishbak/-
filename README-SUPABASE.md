@@ -75,6 +75,27 @@ The query should update exactly one row. Sign out and sign back in to refresh th
 - Removing a user should be done through Supabase Auth administration; linked profile/progress/history rows are configured to cascade on account deletion.
 
 
+## Speaking assessments and teacher review
+
+- Every unit in the eight-unit Entre Nous 1 starter path now has a pronunciation lab: French examples, a slow-playback button, a short recording task, playback, and local download.
+- The placement test and end-of-month evaluation include speaking samples. Placement and monthly recordings are intended to be about 60–90 seconds; unit recordings are shorter.
+- If the learner is signed in and explicitly checks the consent box, the recording uploads to the private Supabase Storage bucket `student-audio`; metadata is saved to `speaking_submissions`. Without sign-in, playback and download remain local and no recording is uploaded.
+- A teacher-authorized account can open a student's progress detail, listen to submitted recordings, and save pronunciation feedback. The audio bucket is private; storage and row-level security policies permit access only to the recording owner and a teacher role.
+- The placement multiple-choice result is also added to `quiz_attempts` for signed-in learners. Speaking submissions are assessed by the teacher, not automatically scored by speech recognition.
+- The uploaded Month 1 guide emphasizes listening without reading, listening with text, repeating aloud 3–5 times, and recording/comparing. The final monthly speaking task is 60–90 seconds; the website implements these as repeatable in-app practice and teacher-reviewed recordings.
+
+### Enable the owner/teacher view
+
+Register the owner's account as a student first, confirm the email if required, then run this one-time query in Supabase SQL Editor (replace the email with the exact owner account email):
+
+```sql
+update public.profiles
+set role = 'teacher'
+where lower(email) = lower('OWNER_EMAIL@example.com');
+```
+
+Confirm exactly one row is updated, then sign out and sign back in. The teacher menu, student tracking, quiz results, and audio review are shown only for role `teacher`. Do not grant this role to a public student account.
+
 ## Audio practice controls
 
 - French text marked as French (including the lesson examples and grammar phrases) is clickable; press it to hear the browser's French voice. A nearby **🔊** button is also added when there is not already a speaker button.
