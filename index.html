@@ -1399,7 +1399,7 @@
  const AUTH_REDIRECT_URL='https://husseinmishbak.github.io/-/';
  const CLOUD_CONFIGURED=/^https:\/\/[a-z0-9-]+\.supabase\.co$/i.test(SUPABASE_URL)&&!SUPABASE_URL.includes('YOUR-PROJECT')&&SUPABASE_ANON_KEY.length>24&&!SUPABASE_ANON_KEY.includes('YOUR-');
  const $=(sel,root=document)=>root.querySelector(sel);
- const $=(sel,root=document)=>Array.from(root.querySelectorAll(sel));
+ const $$=(sel,root=document)=>Array.from(root.querySelectorAll(sel));
  const emptyState=()=>({checks:{},weeks:{},notes:'',last:'home',quiz:{}});
  let state=emptyState();
  let supabaseClient=null, authSession=null, authProfile=null, activeStoreKey=STORE, cloudHydrating=false, authChangeSeq=0, cloudSaveTimer=null, teacherRows=[], recoveryMode=window.location.hash.includes('type=recovery');
@@ -2209,7 +2209,7 @@ function setupAudioFeatures(){
   // Keep navigation usable even if one content module fails to render.
   const safeInit=(name,fn)=>{try{fn();}catch(error){console.error('[Our French platform] '+name+' failed:',error);}};
   safeInit('navigation',makeNav);
-  safeInit('home quick links',()=>{$('.home-shortcut').forEach(button=>button.addEventListener('click',()=>navigate(button.dataset.homeTarget)));});
+  safeInit('home quick links',()=>{$$('.home-shortcut').forEach(button=>button.addEventListener('click',()=>navigate(button.dataset.homeTarget)));});
   safeInit('book integration',addBookIntegration);
   safeInit('book plan',renderBookPlanIndex);
   safeInit('roadmap',renderRoadmap);
