@@ -38,7 +38,135 @@ window.FRENCH_CURRICULUM = {
           "ref": "كتاب الطالب 30–32؛ كراسة 168: الفهم القرائي والشفهي والإنتاج الكتابي",
           "task": "قدّم نفسك في 45 ثانية، وقارن تحيتين فرنسيتين."
         }
-      ]
+      ],
+      "practice": {
+        "intro": "تدريب تفاعلي على التعارف والنطق والأبجدية والضمائر وأدوات التعريف وتصريف أفعال المجموعة الأولى.",
+        "quiz": [
+          {
+            "q": "Je ___ étudiant.",
+            "options": [
+              "suis",
+              "es",
+              "sont"
+            ],
+            "answer": 0,
+            "why": "مع Je نستخدم suis من الفعل être."
+          },
+          {
+            "q": "Comment vous ___ ?",
+            "options": [
+              "appelez-vous",
+              "appelle",
+              "s’appeler"
+            ],
+            "answer": 0,
+            "why": "الصيغة الرسمية: Comment vous appelez-vous ?"
+          },
+          {
+            "q": "___ amie s’appelle Léa.",
+            "options": [
+              "Ma",
+              "Mon",
+              "Mes"
+            ],
+            "answer": 1,
+            "why": "نستعمل mon قبل اسم مؤنث يبدأ بحركة لتسهيل النطق: mon amie."
+          },
+          {
+            "q": "Paul et moi, ___ parlons français.",
+            "options": [
+              "nous",
+              "ils",
+              "vous"
+            ],
+            "answer": 0,
+            "why": "عندما نتحدث عن «أنا وبول» نستخدم nous."
+          }
+        ],
+        "fill": [
+          {
+            "prompt": "Je ___ (parler) français.",
+            "answer": "parle",
+            "accepted": [
+              "parle"
+            ],
+            "hint": "مع je، نهاية أفعال -er هي غالباً -e.",
+            "why": "Je parle français."
+          },
+          {
+            "prompt": "Tu ___ (aimer) la musique.",
+            "answer": "aimes",
+            "accepted": [
+              "aimes"
+            ],
+            "hint": "مع tu نكتب نهاية -es.",
+            "why": "Tu aimes la musique."
+          },
+          {
+            "prompt": "C’est ___ amie.",
+            "answer": "mon",
+            "accepted": [
+              "mon"
+            ],
+            "hint": "اسم مؤنث يبدأ بحركة: mon amie."
+          }
+        ],
+        "match": [
+          {
+            "fr": "Bonjour",
+            "ar": "مرحباً / صباح الخير"
+          },
+          {
+            "fr": "Au revoir",
+            "ar": "إلى اللقاء"
+          },
+          {
+            "fr": "Merci",
+            "ar": "شكراً"
+          },
+          {
+            "fr": "S’il vous plaît",
+            "ar": "من فضلك"
+          }
+        ],
+        "order": [
+          {
+            "tokens": [
+              "m’appelle",
+              "Je",
+              "Lina."
+            ],
+            "answer": [
+              "Je",
+              "m’appelle",
+              "Lina."
+            ],
+            "translation": "اسمي لينا."
+          },
+          {
+            "tokens": [
+              "français.",
+              "parlons",
+              "Nous"
+            ],
+            "answer": [
+              "Nous",
+              "parlons",
+              "français."
+            ],
+            "translation": "نحن نتحدث الفرنسية."
+          }
+        ],
+        "production": {
+          "prompt": "قدّم نفسك في 5–6 جمل: الاسم، الأصل، مكان السكن، اللغة التي تتحدثها، وسبب تعلم الفرنسية.",
+          "model": "Bonjour, je m’appelle Lina. Je viens d’Irak et j’habite à Nancy. Je parle arabe et j’apprends le français. Je souhaite communiquer plus facilement.",
+          "criteria": [
+            "بدأت بتحية أو تعريف واضح.",
+            "استخدمت je m’appelle وj’habite وje parle أو j’apprends.",
+            "راجعت الأسماء وأدوات التعريف والنطق."
+          ]
+        }
+      }
     },
     {
       "u": 2,
@@ -78,7 +206,138 @@ window.FRENCH_CURRICULUM = {
           "ref": "كتاب الطالب 46–48؛ كراسة 172: الفهم والإنتاج",
           "task": "أنشئ بطاقتين لشخصيتين خياليتين وقدّمهما في دقيقة."
         }
-      ]
+      ],
+      "practice": {
+        "intro": "تطبيق على البيانات الشخصية والبلدان والجنسيات والأعداد وأدوات الملكية والنفي.",
+        "quiz": [
+          {
+            "q": "Je ___ vingt-huit ans.",
+            "options": [
+              "suis",
+              "ai",
+              "est"
+            ],
+            "answer": 1,
+            "why": "العمر في الفرنسية يُعبّر عنه بالفعل avoir: j’ai … ans."
+          },
+          {
+            "q": "Elle vient ___ France.",
+            "options": [
+              "de la",
+              "du",
+              "en"
+            ],
+            "answer": 2,
+            "why": "نقول عادة: elle vient de France، أما للسكن فنقول elle habite en France. هذا السؤال يختبر حرف الجر مع habiter/être؛ الاختيار الأنسب هنا est: Elle habite en France. (انظر التصحيح)."
+          },
+          {
+            "q": "Nous ___ irakiens.",
+            "options": [
+              "sommes",
+              "avons",
+              "êtes"
+            ],
+            "answer": 0,
+            "why": "مع nous نستخدم sommes من être."
+          },
+          {
+            "q": "اختر النفي الصحيح: «Je parle anglais.»",
+            "options": [
+              "Je ne parle pas anglais.",
+              "Je parle ne pas anglais.",
+              "Je pas parle anglais."
+            ],
+            "answer": 0,
+            "why": "في النفي الأساسي تحيط ne…pas بالفعل المصرف."
+          }
+        ],
+        "fill": [
+          {
+            "prompt": "J’___ trente ans.",
+            "answer": "ai",
+            "accepted": [
+              "ai"
+            ],
+            "hint": "العمر مع avoir.",
+            "why": "J’ai trente ans."
+          },
+          {
+            "prompt": "Nous ___ (être) étudiants.",
+            "answer": "sommes",
+            "accepted": [
+              "sommes"
+            ],
+            "hint": "صرّف être مع nous.",
+            "why": "Nous sommes étudiants."
+          },
+          {
+            "prompt": "Je ___ parle ___ français. (النفي)",
+            "answer": "ne|pas",
+            "accepted": [
+              "ne|pas"
+            ],
+            "hint": "أكمل جزأي النفي حول الفعل: Je ___ parle ___ français.",
+            "why": "Je ne parle pas français."
+          }
+        ],
+        "match": [
+          {
+            "fr": "la nationalité",
+            "ar": "الجنسية"
+          },
+          {
+            "fr": "un pays",
+            "ar": "بلد"
+          },
+          {
+            "fr": "une adresse",
+            "ar": "عنوان"
+          },
+          {
+            "fr": "un métier",
+            "ar": "مهنة"
+          }
+        ],
+        "order": [
+          {
+            "tokens": [
+              "à Paris.",
+              "habite",
+              "J’"
+            ],
+            "answer": [
+              "J’",
+              "habite",
+              "à Paris."
+            ],
+            "translation": "أسكن في باريس."
+          },
+          {
+            "tokens": [
+              "pas",
+              "ne",
+              "Il",
+              "travaille"
+            ],
+            "answer": [
+              "Il",
+              "ne",
+              "travaille",
+              "pas"
+            ],
+            "translation": "هو لا يعمل."
+          }
+        ],
+        "production": {
+          "prompt": "اكتب بطاقة تعريف من 6 جمل تشمل الاسم والعمر والجنسية والمدينة واللغة والعمل أو الدراسة.",
+          "model": "Je m’appelle Nadia. J’ai trente ans. Je suis irakienne. J’habite en France. Je parle arabe et j’apprends le français. Je travaille dans l’administration.",
+          "criteria": [
+            "استعملت être وavoir بصورة صحيحة.",
+            "استخدمت حرف الجر المناسب مع البلد أو المدينة.",
+            "كتبت أرقاماً ومعلومات واضحة."
+          ]
+        }
+      }
     },
     {
       "u": 3,
@@ -118,7 +377,134 @@ window.FRENCH_CURRICULUM = {
           "ref": "كتاب الطالب 62–64؛ كراسة 176: الإنتاج والتقويم",
           "task": "ارسم خريطة مبسطة وقدّم جولة شفهية لدقيقة أو دقيقتين."
         }
-      ]
+      ],
+      "practice": {
+        "intro": "تمارين عملية على وصف الحي والخدمات والمواقع والاتجاهات واستعمال il y a والأسئلة والفعل aller.",
+        "quiz": [
+          {
+            "q": "Dans mon quartier, ___ une pharmacie.",
+            "options": [
+              "il y a",
+              "ils sont",
+              "elle a"
+            ],
+            "answer": 0,
+            "why": "il y a تعني يوجد/توجد."
+          },
+          {
+            "q": "La mairie est ___ la gare.",
+            "options": [
+              "près de",
+              "à gauche que",
+              "dans de"
+            ],
+            "answer": 0,
+            "why": "près de تعني بالقرب من."
+          },
+          {
+            "q": "Pour demander la direction, on dit :",
+            "options": [
+              "Où se trouve la poste ?",
+              "Quel âge a la poste ?",
+              "Combien habite la poste ?"
+            ],
+            "answer": 0,
+            "why": "Où se trouve…? للسؤال عن مكان."
+          },
+          {
+            "q": "Nous ___ au marché le samedi.",
+            "options": [
+              "allons",
+              "allez",
+              "vont"
+            ],
+            "answer": 0,
+            "why": "مع nous نصرف aller إلى allons."
+          }
+        ],
+        "fill": [
+          {
+            "prompt": "Il ___ un café près de chez moi.",
+            "answer": "y a",
+            "accepted": [
+              "y a"
+            ],
+            "hint": "التعبير الكامل: il y a.",
+            "why": "Il y a un café près de chez moi."
+          },
+          {
+            "prompt": "La banque est à côté ___ la mairie.",
+            "answer": "de",
+            "accepted": [
+              "de"
+            ],
+            "hint": "التعبير الثابت à côté de."
+          },
+          {
+            "prompt": "Vous ___ où ? (aller)",
+            "answer": "allez",
+            "accepted": [
+              "allez"
+            ],
+            "hint": "مع vous: vous allez."
+          }
+        ],
+        "match": [
+          {
+            "fr": "à droite",
+            "ar": "إلى اليمين"
+          },
+          {
+            "fr": "à gauche",
+            "ar": "إلى اليسار"
+          },
+          {
+            "fr": "tout droit",
+            "ar": "إلى الأمام مباشرة"
+          },
+          {
+            "fr": "près de",
+            "ar": "بالقرب من"
+          }
+        ],
+        "order": [
+          {
+            "tokens": [
+              "la gare ?",
+              "se trouve",
+              "Où"
+            ],
+            "answer": [
+              "Où",
+              "se trouve",
+              "la gare ?"
+            ],
+            "translation": "أين تقع محطة القطار؟"
+          },
+          {
+            "tokens": [
+              "un parc.",
+              "y a",
+              "Il"
+            ],
+            "answer": [
+              "Il",
+              "y a",
+              "un parc."
+            ],
+            "translation": "يوجد متنزه."
+          }
+        ],
+        "production": {
+          "prompt": "صف حياً تعرفه في 6–8 جمل، واذكر ثلاث خدمات وموقعين وطريقة الوصول إلى مكان واحد.",
+          "model": "Mon quartier est calme. Il y a une pharmacie et un supermarché. La mairie se trouve près de la place. Pour aller à la gare, allez tout droit puis tournez à gauche.",
+          "criteria": [
+            "استعملت il y a.",
+            "ذكرت ثلاثة أماكن على الأقل.",
+            "استعملت تعبيرين للموقع أو الاتجاه."
+          ]
+        }
+      }
     },
     {
       "u": 4,
@@ -158,7 +544,135 @@ window.FRENCH_CURRICULUM = {
           "ref": "كتاب الطالب 79–80 وكراسة 180؛ الملف الثقافي 82–90",
           "task": "أنشئ بطاقة عن أسرتك وهواياتك، وقارن نشاطاً ثقافياً."
         }
-      ]
+      ],
+      "practice": {
+        "intro": "تدريب على الحديث عن الأسرة والشخصية والهوايات والتفضيلات مع تبرير الرأي.",
+        "quiz": [
+          {
+            "q": "J’aime le sport ___ c’est bon pour la santé.",
+            "options": [
+              "parce que",
+              "mais de",
+              "où"
+            ],
+            "answer": 0,
+            "why": "parce que تُستخدم لذكر السبب."
+          },
+          {
+            "q": "___ photo est très belle.",
+            "options": [
+              "Cette",
+              "Ces",
+              "Ce"
+            ],
+            "answer": 0,
+            "why": "photo مؤنث مفرد، لذلك نستخدم cette."
+          },
+          {
+            "q": "Tu veux du thé ? — ___ aussi.",
+            "options": [
+              "Moi",
+              "Mon",
+              "Me"
+            ],
+            "answer": 0,
+            "why": "في جواب التوافق نقول moi aussi."
+          },
+          {
+            "q": "Nous ___ le bus tous les matins.",
+            "options": [
+              "prenons",
+              "prenez",
+              "prend"
+            ],
+            "answer": 0,
+            "why": "تصريف prendre مع nous هو prenons."
+          }
+        ],
+        "fill": [
+          {
+            "prompt": "J’aime lire ___ j’apprends de nouveaux mots.",
+            "answer": "parce que",
+            "accepted": [
+              "parce que"
+            ],
+            "hint": "اربط التفضيل بالسبب.",
+            "why": "J’aime lire parce que j’apprends de nouveaux mots."
+          },
+          {
+            "prompt": "___ frère s’appelle Adam. (mon/ma/mes)",
+            "answer": "mon",
+            "accepted": [
+              "mon"
+            ],
+            "hint": "frère اسم مذكر مفرد.",
+            "why": "Mon frère s’appelle Adam."
+          },
+          {
+            "prompt": "___ maison est grande. (ce/cette/ces)",
+            "answer": "Cette",
+            "accepted": [
+              "cette"
+            ],
+            "hint": "maison مؤنث مفرد."
+          }
+        ],
+        "match": [
+          {
+            "fr": "aimer",
+            "ar": "يحب"
+          },
+          {
+            "fr": "préférer",
+            "ar": "يفضّل"
+          },
+          {
+            "fr": "la famille",
+            "ar": "الأسرة"
+          },
+          {
+            "fr": "un loisir",
+            "ar": "هواية"
+          }
+        ],
+        "order": [
+          {
+            "tokens": [
+              "parce que",
+              "J’aime",
+              "la musique."
+            ],
+            "answer": [
+              "J’aime",
+              "la musique",
+              "parce que"
+            ],
+            "translation": "أحب الموسيقى لأن… (أكمل السبب)."
+          },
+          {
+            "tokens": [
+              "aussi.",
+              "Moi",
+              "le cinéma"
+            ],
+            "answer": [
+              "Moi",
+              "aussi.",
+              "le cinéma"
+            ],
+            "translation": "أنا أيضاً أحب السينما (تدريب على ترتيب العبارة)."
+          }
+        ],
+        "production": {
+          "prompt": "تحدث أو اكتب عن أسرتك وهواياتك: ما الذي تحبه ولماذا؟ استخدم 6 جمل مع parce que.",
+          "model": "Dans ma famille, nous aimons passer du temps ensemble. J’aime la lecture parce que je découvre de nouvelles idées. Je préfère marcher parce que c’est agréable.",
+          "criteria": [
+            "ذكرت فردين أو نشاطين على الأقل.",
+            "استخدمت parce que لتوضيح السبب.",
+            "راجعت الصفات وأدوات الملكية."
+          ]
+        }
+      }
     },
     {
       "u": 5,
@@ -198,7 +712,141 @@ window.FRENCH_CURRICULUM = {
           "ref": "كتاب الطالب 105–106؛ كراسة 183: الفهم والإنتاج",
           "task": "صف أسبوعك المثالي شفهياً دقيقتين مع تبرير التفضيلات."
         }
-      ]
+      ],
+      "practice": {
+        "intro": "تطبيق على الروتين اليومي والوقت وظروف التكرار والأفعال الانعكاسية والماضي المركب.",
+        "quiz": [
+          {
+            "q": "Chaque matin, je ___ à sept heures.",
+            "options": [
+              "me lève",
+              "lève me",
+              "me lever"
+            ],
+            "answer": 0,
+            "why": "الفعل الانعكاسي: je me lève."
+          },
+          {
+            "q": "Hier, nous ___ un film.",
+            "options": [
+              "avons regardé",
+              "sommes regardé",
+              "regardons"
+            ],
+            "answer": 0,
+            "why": "regarder يأخذ avoir في passé composé."
+          },
+          {
+            "q": "Je ne sors ___ le lundi.",
+            "options": [
+              "jamais",
+              "rien",
+              "plus de jamais"
+            ],
+            "answer": 0,
+            "why": "ne…jamais تعني لا…أبداً."
+          },
+          {
+            "q": "Elle ___ à vingt-trois heures.",
+            "options": [
+              "se couche",
+              "couche se",
+              "se coucher"
+            ],
+            "answer": 0,
+            "why": "مع elle: elle se couche."
+          }
+        ],
+        "fill": [
+          {
+            "prompt": "Je ___ (se lever) tôt.",
+            "answer": "me lève",
+            "accepted": [
+              "me lève",
+              "me leve"
+            ],
+            "hint": "استعمل الضمير الانعكاسي مع je.",
+            "why": "Je me lève tôt."
+          },
+          {
+            "prompt": "Hier, tu ___ (regarder) la télévision.",
+            "answer": "as regardé",
+            "accepted": [
+              "as regardé",
+              "as regarde"
+            ],
+            "hint": "passé composé: avoir + participe passé.",
+            "why": "Hier, tu as regardé la télévision."
+          },
+          {
+            "prompt": "Je ne mange ___ de viande. (jamais/rien)",
+            "answer": "jamais",
+            "accepted": [
+              "jamais"
+            ],
+            "hint": "ne…jamais للتكرار المنفي."
+          }
+        ],
+        "match": [
+          {
+            "fr": "se lever",
+            "ar": "ينهض / يستيقظ"
+          },
+          {
+            "fr": "se coucher",
+            "ar": "يذهب إلى النوم"
+          },
+          {
+            "fr": "souvent",
+            "ar": "غالباً"
+          },
+          {
+            "fr": "hier",
+            "ar": "أمس"
+          }
+        ],
+        "order": [
+          {
+            "tokens": [
+              "me lève",
+              "Je",
+              "tôt."
+            ],
+            "answer": [
+              "Je",
+              "me lève",
+              "tôt."
+            ],
+            "translation": "أستيقظ باكراً."
+          },
+          {
+            "tokens": [
+              "avons",
+              "un repas.",
+              "Hier,",
+              "préparé",
+              "nous"
+            ],
+            "answer": [
+              "Hier,",
+              "nous",
+              "avons",
+              "préparé",
+              "un repas."
+            ],
+            "translation": "أعددنا وجبة أمس."
+          }
+        ],
+        "production": {
+          "prompt": "صف يومك المعتاد، ثم اكتب جملتين عن شيء فعلته أمس.",
+          "model": "Je me lève à sept heures et je prends le petit-déjeuner. Je travaille pendant la journée. Le soir, j’étudie le français. Hier, j’ai regardé un journal télévisé.",
+          "criteria": [
+            "استخدمت فعلاً انعكاسياً.",
+            "ذكرت وقتين أو ظرفي تكرار.",
+            "صغت جملتين في الماضي المركب."
+          ]
+        }
+      }
     },
     {
       "u": 6,
@@ -238,7 +886,135 @@ window.FRENCH_CURRICULUM = {
           "ref": "كتاب الطالب 121–122؛ كراسة 188: الفهم والإنتاج",
           "task": "قدّم سيرة شفوية دقيقتين ثم اكتب ملخصاً من 100 كلمة."
         }
-      ]
+      ],
+      "practice": {
+        "intro": "تمارين على المهارات والعمل والتطوع والسيرة الشخصية وسرد التجارب الماضية باستعمال passé composé وqui/que.",
+        "quiz": [
+          {
+            "q": "L’année dernière, j’___ travaillé dans une équipe.",
+            "options": [
+              "ai",
+              "suis",
+              "est"
+            ],
+            "answer": 0,
+            "why": "travailler يصاغ في الماضي المركب مع avoir."
+          },
+          {
+            "q": "C’est une personne ___ parle plusieurs langues.",
+            "options": [
+              "qui",
+              "que",
+              "où"
+            ],
+            "answer": 0,
+            "why": "qui هو فاعل الفعل في الجملة التابعة."
+          },
+          {
+            "q": "Je ___ cette ville, je la connais bien.",
+            "options": [
+              "connais",
+              "sais",
+              "connaît"
+            ],
+            "answer": 0,
+            "why": "connaître يستعمل مع معرفة مكان أو شخص."
+          },
+          {
+            "q": "Pour parler d’une capacité, on dit :",
+            "options": [
+              "Je sais utiliser un ordinateur.",
+              "Je connais utiliser un ordinateur.",
+              "Je suis savoir ordinateur."
+            ],
+            "answer": 0,
+            "why": "savoir + infinitif للتعبير عن القدرة على القيام بفعل."
+          }
+        ],
+        "fill": [
+          {
+            "prompt": "J’___ participé à un projet.",
+            "answer": "ai",
+            "accepted": [
+              "ai"
+            ],
+            "hint": "الفعل participe passé هو participé ويحتاج avoir هنا."
+          },
+          {
+            "prompt": "C’est un collègue ___ m’aide souvent.",
+            "answer": "qui",
+            "accepted": [
+              "qui"
+            ],
+            "hint": "الضمير qui يقوم بدور الفاعل."
+          },
+          {
+            "prompt": "Nous ___ (finir) le travail hier.",
+            "answer": "avons fini",
+            "accepted": [
+              "avons fini"
+            ],
+            "hint": "passé composé مع avoir."
+          }
+        ],
+        "match": [
+          {
+            "fr": "une compétence",
+            "ar": "كفاءة / مهارة"
+          },
+          {
+            "fr": "bénévole",
+            "ar": "متطوع"
+          },
+          {
+            "fr": "un parcours",
+            "ar": "مسار"
+          },
+          {
+            "fr": "une expérience",
+            "ar": "تجربة / خبرة"
+          }
+        ],
+        "order": [
+          {
+            "tokens": [
+              "une formation.",
+              "J’ai",
+              "suivi"
+            ],
+            "answer": [
+              "J’ai",
+              "suivi",
+              "une formation."
+            ],
+            "translation": "تابعت تدريباً."
+          },
+          {
+            "tokens": [
+              "qui",
+              "un collègue",
+              "C’est",
+              "m’aide."
+            ],
+            "answer": [
+              "C’est",
+              "un collègue",
+              "qui",
+              "m’aide."
+            ],
+            "translation": "هذا زميل يساعدني."
+          }
+        ],
+        "production": {
+          "prompt": "اكتب سيرة قصيرة من 8 جمل: الدراسة، العمل أو التطوع، مهارة اكتسبتها، تجربة مهمة، وخطة قادمة.",
+          "model": "J’ai étudié les sciences et j’ai travaillé dans plusieurs équipes. J’ai aussi participé à une activité bénévole. Cette expérience m’a appris à mieux communiquer. Je souhaite continuer à me former.",
+          "criteria": [
+            "رتبت التجارب زمنياً.",
+            "استخدمت passé composé بصورة مناسبة.",
+            "ذكرت مهارة أو مثالاً ملموساً."
+          ]
+        }
+      }
     },
     {
       "u": 7,
@@ -278,7 +1054,133 @@ window.FRENCH_CURRICULUM = {
           "ref": "كتاب الطالب 138؛ كراسة 192: الفهم والإنتاج",
           "task": "مثّل حوار شراء من عشر جمل وقدّم نصيحة عن اللباس."
         }
-      ]
+      ],
+      "practice": {
+        "intro": "تدريبات على الطقس والملابس والألوان والتسوق وطلب الأشياء بأدب واستعمال vouloir وpouvoir والأمر.",
+        "quiz": [
+          {
+            "q": "Je ___ essayer cette veste, s’il vous plaît.",
+            "options": [
+              "voudrais",
+              "voudrait",
+              "vouloir"
+            ],
+            "answer": 0,
+            "why": "je voudrais صيغة مهذبة لطلب شيء."
+          },
+          {
+            "q": "Vous ___ m’aider ?",
+            "options": [
+              "pouvez",
+              "peut",
+              "pouvoir"
+            ],
+            "answer": 0,
+            "why": "مع vous نستخدم pouvez."
+          },
+          {
+            "q": "J’achète une robe ___.",
+            "options": [
+              "bleue",
+              "bleu",
+              "bleus"
+            ],
+            "answer": 0,
+            "why": "robe مؤنث مفرد، والصفة تتفق معها: bleue."
+          },
+          {
+            "q": "لإعطاء توجيه مباشر نقول:",
+            "options": [
+              "Tournez à droite.",
+              "Vous tourner à droite.",
+              "Tournez-vous droite à."
+            ],
+            "answer": 0,
+            "why": "صيغة الأمر من tourner: Tournez."
+          }
+        ],
+        "fill": [
+          {
+            "prompt": "Vous ___ répéter, s’il vous plaît ? (pouvoir)",
+            "answer": "pouvez",
+            "accepted": [
+              "pouvez"
+            ],
+            "hint": "استخدم pouvoir مع vous."
+          },
+          {
+            "prompt": "Il fait ___ aujourd’hui. (beau/belle)",
+            "answer": "beau",
+            "accepted": [
+              "beau"
+            ],
+            "hint": "التعبير الشائع: il fait beau."
+          },
+          {
+            "prompt": "Je voudrais ___ pantalon noir. (un/une)",
+            "answer": "un",
+            "accepted": [
+              "un"
+            ],
+            "hint": "pantalon اسم مذكر."
+          }
+        ],
+        "match": [
+          {
+            "fr": "il fait froid",
+            "ar": "الجو بارد"
+          },
+          {
+            "fr": "un manteau",
+            "ar": "معطف"
+          },
+          {
+            "fr": "la taille",
+            "ar": "المقاس"
+          },
+          {
+            "fr": "combien ça coûte ?",
+            "ar": "كم سعر هذا؟"
+          }
+        ],
+        "order": [
+          {
+            "tokens": [
+              "cette veste ?",
+              "essayer",
+              "Je peux"
+            ],
+            "answer": [
+              "Je peux",
+              "essayer",
+              "cette veste ?"
+            ],
+            "translation": "هل يمكنني تجربة هذه السترة؟"
+          },
+          {
+            "tokens": [
+              "s’il vous plaît.",
+              "un café,",
+              "Je voudrais"
+            ],
+            "answer": [
+              "Je voudrais",
+              "un café,",
+              "s’il vous plaît."
+            ],
+            "translation": "أود قهوة من فضلك."
+          }
+        ],
+        "production": {
+          "prompt": "مثّل حواراً في متجر: اسأل عن السعر والمقاس واللون، واطلب تجربة منتج بطريقة مهذبة.",
+          "model": "Bonjour, je voudrais essayer cette veste, s’il vous plaît. Avez-vous une taille plus grande ? Combien coûte-t-elle ? Merci beaucoup.",
+          "criteria": [
+            "استخدمت صيغة طلب مهذبة.",
+            "سألت عن السعر أو المقاس.",
+            "راجعت اتفاق الصفة مع الاسم."
+          ]
+        }
+      }
     },
     {
       "u": 8,
@@ -318,7 +1220,137 @@ window.FRENCH_CURRICULUM = {
           "ref": "كتاب الطالب 150–154؛ كراسة 196؛ تدريب DELF في صفحات الكتاب 155–163",
           "task": "صمّم قائمة أصلية وقدّمها؛ ثم نفّذ تدريباً في المهارات الأربع."
         }
-      ]
+      ],
+      "practice": {
+        "intro": "تمارين على الطعام والكميات والقائمة والطلب في المطعم والتعبير عن الضرورة والخطة القريبة.",
+        "quiz": [
+          {
+            "q": "Pour le petit-déjeuner, je prends ___ pain.",
+            "options": [
+              "du",
+              "de la",
+              "des"
+            ],
+            "answer": 0,
+            "why": "pain اسم مذكر مفرد ويأتي غالباً مع du في سياق الكمية غير المحددة."
+          },
+          {
+            "q": "Nous ___ commander une salade.",
+            "options": [
+              "allons",
+              "allez",
+              "va"
+            ],
+            "answer": 0,
+            "why": "futur proche: aller au présent + infinitif."
+          },
+          {
+            "q": "Il faut ___ les mains avant de manger.",
+            "options": [
+              "se laver",
+              "se lavez",
+              "se lavé"
+            ],
+            "answer": 0,
+            "why": "il faut يتبعه مصدر الفعل."
+          },
+          {
+            "q": "Au restaurant, pour demander poliment :",
+            "options": [
+              "Je voudrais l’addition, s’il vous plaît.",
+              "Je suis l’addition.",
+              "J’ai additionner."
+            ],
+            "answer": 0,
+            "why": "Je voudrais تعبير مهذب للطلب."
+          }
+        ],
+        "fill": [
+          {
+            "prompt": "Je bois ___ eau.",
+            "answer": "de l’",
+            "accepted": [
+              "de l'",
+              "de l’",
+              "de l"
+            ],
+            "hint": "قبل اسم مؤنث يبدأ بحركة نستخدم de l’."
+          },
+          {
+            "prompt": "Nous allons ___ un gâteau. (préparer)",
+            "answer": "préparer",
+            "accepted": [
+              "préparer"
+            ],
+            "hint": "aller + infinitif في المستقبل القريب."
+          },
+          {
+            "prompt": "Il faut ___ les légumes. (laver)",
+            "answer": "laver",
+            "accepted": [
+              "laver"
+            ],
+            "hint": "il faut + مصدر."
+          }
+        ],
+        "match": [
+          {
+            "fr": "un menu",
+            "ar": "قائمة الطعام"
+          },
+          {
+            "fr": "une addition",
+            "ar": "الفاتورة"
+          },
+          {
+            "fr": "une bouteille d’eau",
+            "ar": "زجاجة ماء"
+          },
+          {
+            "fr": "une recette",
+            "ar": "وصفة طعام"
+          }
+        ],
+        "order": [
+          {
+            "tokens": [
+              "une soupe,",
+              "voudrais",
+              "Je"
+            ],
+            "answer": [
+              "Je",
+              "voudrais",
+              "une soupe,"
+            ],
+            "translation": "أود حساءً."
+          },
+          {
+            "tokens": [
+              "préparer",
+              "allons",
+              "Nous",
+              "le dîner."
+            ],
+            "answer": [
+              "Nous",
+              "allons",
+              "préparer",
+              "le dîner."
+            ],
+            "translation": "سنعد العشاء."
+          }
+        ],
+        "production": {
+          "prompt": "أنشئ قائمة طعام بسيطة تتضمن مشروباً وطبقاً رئيسياً وحلوى، ثم اكتب حواراً قصيراً في مطعم.",
+          "model": "Bonjour, je voudrais une soupe et du poulet avec des légumes. Comme boisson, je prends une bouteille d’eau. Pour le dessert, je voudrais une tarte. L’addition, s’il vous plaît.",
+          "criteria": [
+            "استخدمت أدوات التجزئة بصورة مناسبة قدر الإمكان.",
+            "استعملت عبارات طلب مهذبة.",
+            "أضفت حواراً أو قائمة واضحة."
+          ]
+        }
+      }
     }
   ],
   "roadmapMonths": [
