@@ -1381,7 +1381,7 @@
   <textarea class="voice-diagnostic-report" id="voiceDiagnosticReport" readonly spellcheck="false" placeholder="ستظهر هنا أسماء الأصوات الفرنسية التي يعرضها Chrome."></textarea>
  </section>
 </div>
-<script src="./curriculum.js?v=20261011-audit-fix1"></script>
+<script src="./curriculum.js?v=20261011-listen80"></script>
 <script>
 (()=>{
  const NAV=[["home", "⌂", "الرئيسية", "نظرة عامة ومسار التعلّم"], ["placement", "◎", "تحديد المستوى", "اختبار تشخيصي من A1 إلى C2"], ["bookplan", "📘", "محتوى الكتاب", "الوحدات الثماني وتمارين كل أسبوع"], ["week1", "01", "الأسبوع الأول", "التعارف والنطق"], ["week2", "02", "الأسبوع الثاني", "الأرقام والأسرة"], ["week3", "03", "الأسبوع الثالث", "الدراسة والعمل والروتين"], ["week4", "04", "الأسبوع الرابع", "الطعام والمدينة والتقييم"], ["month2", "M2", "الشهر الثاني", "توسعة A1.2 وألعاب تفاعلية"], ["roadmap", "C2", "المسار من A1 إلى C2", "مراحل التعلّم من المبتدئ إلى المتقدم"], ["citizenship", "FR", "الجنسية والاندماج", "الفرنسية المدنية والمقابلة والاختبار"], ["vocab", "Aa", "بنك المفردات", "437 مدخلاً إجمالاً (237 أساسياً + 200 إضافياً)"], ["listening", "♫", "استماع 5 دقائق", "حلقة فرنسية مع نص إنجليزي"], ["grammar", "ƒx", "مرجع القواعد", "القواعد الأساسية"], ["evaluations", "✓", "الاختبارات", "اختبارات ومفتاح الإجابات"], ["resources", "↗", "المصادر والروابط", "فيديوهات واستماع وتمارين"], ["account", "ID", "حساب الطالب", "دخول وحفظ سحابي"], ["teacher", "T", "لوحة المدرّس", "متابعة الطلاب والنتائج"]];
@@ -2170,57 +2170,47 @@ function setupPlacementTest(){
 
 function renderFiveMinuteListeningPanel(){
  if($('#panel-listening'))return;
- const episode=window.FRENCH_CURRICULUM&&window.FRENCH_CURRICULUM.fiveMinuteListening;
- const host=$('#panels');if(!episode||!host)return;
- const E=v=>String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
- const frenchWords=episode.paragraphs.reduce((sum,p)=>sum+p.fr.trim().split(/\\s+/).length,0);
- const paragraphHtml=episode.paragraphs.map((p,i)=>'<article class="listening-paragraph-pair"><div class="listening-paragraph-heading"><span>المقطع '+(i+1)+'</span><span class="listening-mini-time">استماع وتكرار</span></div><div class="listening-bilingual-grid"><section class="listening-language-card french"><div class="listening-lang-label">FRANÇAIS · النص الفرنسي</div><p lang="fr" dir="ltr" class="listening-transcript">'+E(p.fr)+'</p><button type="button" class="btn btn-soft" data-episode-play="fr-'+i+'">🔊 استمع بالفرنسية</button></section><section class="listening-language-card english"><div class="listening-lang-label">ENGLISH · English transcript</div><p lang="en" dir="ltr" class="listening-transcript">'+E(p.en)+'</p><button type="button" class="btn btn-soft" data-episode-play="en-'+i+'">🔊 Listen in English</button></section></div></article>').join('');
+ const ep=window.FRENCH_CURRICULUM?.fiveMinuteListening,units=ep?.conversationsByUnit,host=$('#panels');if(!ep||!units||!host)return;
+ const E=v=>String(v??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+ const u=units[0],c=u.conversations[0];
  const panel=document.createElement('section');panel.className='panel';panel.id='panel-listening';
- panel.innerHTML='<div class="panel-head"><div><h1>استماع بخمس دقائق <span lang="fr" dir="ltr" class="latin">Écoute en 5 minutes</span></h1><p>حلقة أصلية قصيرة لتدريب الفهم السمعي، على طريقة البرامج التعليمية الصوتية، بنص فرنسي وترجمة إنجليزية متقابلة.</p></div><span class="chip">A2–B1 · ~5 min</span></div><section class="listening-hero"><div class="kicker">ÉPISODE 01 · LEARN THROUGH LISTENING</div><h2 lang="fr" dir="ltr">'+E(episode.title)+'</h2><p class="listening-subtitle" lang="en" dir="ltr">'+E(episode.subtitle)+'</p><p>'+E(episode.description)+'</p><div class="listening-meta"><span>المستوى: '+E(episode.level)+'</span><span>المدة التقديرية: خمس دقائق</span><span>'+frenchWords+' كلمة فرنسية تقريباً</span></div><div class="listening-player-controls"><button type="button" class="btn btn-primary" data-episode-play-all="fr">▶ تشغيل الحلقة بالفرنسية</button><button type="button" class="btn btn-soft" data-episode-play-all="en">▶ Play English audio</button><button type="button" class="btn btn-soft" data-episode-pause>⏸ إيقاف مؤقت / متابعة</button><button type="button" class="btn btn-soft" data-episode-stop>■ إيقاف</button></div><div class="listening-progress-track"><span id="listeningProgressBar"></span></div><p id="listeningPlaybackStatus" class="listening-playback-status" aria-live="polite">جاهز للاستماع. يمكنك البدء دون قراءة النص ثم فتحه للمراجعة.</p></section><div class="listening-study-tip"><strong>طريقة مقترحة للدراسة:</strong> استمع إلى الفرنسية أولاً دون قراءة، ثم اقرأ النصين، وبعدها أعد الاستماع ودوّن خمس كلمات أو تعبيرات جديدة.</div><div class="listening-transcripts-heading"><h2>النصان المتوازيان</h2><p>شغّل الحلقة كاملة من أعلى الصفحة أو استمع إلى فقرة واحدة بالفرنسية أو الإنجليزية.</p></div>'+paragraphHtml+'<section class="listening-comprehension"><h3>تحقق من فهمك</h3><p>ما الفكرة الأساسية في الحلقة؟</p><label><input type="radio" name="listening-comprehension" value="a"> يجب حفظ عشرات الكلمات في جلسة واحدة.</label><label><input type="radio" name="listening-comprehension" value="b"> روتين قصير ومتكرر، مع جمل واسترجاع نشط، يساعد على التعلّم.</label><label><input type="radio" name="listening-comprehension" value="c"> لا فائدة من تكرار الاستماع إلى الجملة.</label><button type="button" class="btn btn-soft" data-check-listening>تحقق من الإجابة</button><p id="listeningComprehensionFeedback" hidden aria-live="polite"></p></section>';
+ panel.innerHTML='<div class="panel-head"><div><h1>استماع خمسة دقائق <span lang="fr" dir="ltr">Écoute en 5 minutes</span></h1><p>ثماني وحدات، في كل وحدة عشر محادثات قصيرة بالفرنسية والعربية.</p></div><span class="chip">80 محادثة · A1–B2</span></div><section class="listening-hero"><div class="kicker">ÉCOUTER · COMPRENDRE · RÉPÉTER</div><h2 id="listeningConversationTitle">'+E(c.title)+'</h2><p>استمع أولاً دون قراءة الترجمة، ثم اقرأ النصين وكرر الحوار بصوت مرتفع.</p><div class="listening-player-controls"><label>الوحدة <select id="listeningUnitSelect" class="form-control">'+units.map(x=>'<option value="'+x.unit+'">الوحدة '+x.unit+' — '+E(x.title)+'</option>').join('')+'</select></label><label>المحادثة <select id="listeningConversationSelect" class="form-control">'+u.conversations.map(x=>'<option value="'+x.id+'">'+x.id+'. '+E(x.title)+'</option>').join('')+'</select></label></div><div class="listening-player-controls"><button type="button" class="btn btn-primary" data-episode-play-all="fr">▶ استمع إلى الحوار كاملاً</button><button type="button" class="btn btn-soft" data-episode-pause>⏸ إيقاف مؤقت / متابعة</button><button type="button" class="btn btn-soft" data-episode-stop>■ إيقاف</button></div><div class="listening-progress-track"><span id="listeningProgressBar"></span></div><p id="listeningPlaybackStatus" class="listening-playback-status" aria-live="polite">اختر الوحدة والمحادثة للبدء.</p></section><div class="listening-study-tip"><strong>طريقة التدريب:</strong> استمع دون قراءة، ثم اقرأ الترجمة العربية، وكرر كل جملة ثلاث مرات، وبعدها مثّل الحوار بتبادل الأدوار.</div><h2>النص الفرنسي والترجمة العربية</h2><div id="listeningConversationLines"></div><section class="listening-comprehension"><h3>تحقق من فهمك</h3><p>ما أفضل طريقة للتدرب على الحوار؟</p><label><input type="radio" name="listening-comprehension" value="a"> قراءة الترجمة فقط.</label><label><input type="radio" name="listening-comprehension" value="b"> الاستماع، ثم قراءة المعنى، ثم التكرار بصوت مرتفع.</label><label><input type="radio" name="listening-comprehension" value="c"> حفظ الكلمات دون جمل.</label><button type="button" class="btn btn-soft" data-check-listening>تحقق من الإجابة</button><p id="listeningComprehensionFeedback" hidden aria-live="polite"></p></section>';
  host.appendChild(panel);
 }
 function setupFiveMinuteListening(){
  const panel=$('#panel-listening');if(!panel||panel.dataset.bound==='1')return;panel.dataset.bound='1';
- const episode=window.FRENCH_CURRICULUM&&window.FRENCH_CURRICULUM.fiveMinuteListening;if(!episode)return;
- const status=$('#listeningPlaybackStatus'),bar=$('#listeningProgressBar');
- let token=0,mode='fr',index=0,limit=0;
- function updateStatus(message,progress){if(status)status.textContent=message;if(bar)bar.style.width=Math.max(0,Math.min(100,progress||0))+'%';}
- function makeEnglishUtterance(text,rate,onFinished){
-  const voices=availableSpeechVoices(),english=voices.filter(v=>/^en(?:[-_]|$)/i.test(v.lang||''));
-  const voice=english.find(v=>/premium|enhanced|natural|neural/i.test(v.name||''))||english.find(v=>/^en[-_]GB/i.test(v.lang||'')&&v.localService)||english.find(v=>/^en[-_]GB/i.test(v.lang||''))||english.find(v=>v.localService)||english[0]||null;
-  const utterance=new SpeechSynthesisUtterance(text);utterance.lang=voice&&voice.lang?voice.lang:'en-GB';utterance.rate=rate;if(voice)utterance.voice=voice;
-  if(onFinished){utterance.onend=onFinished;utterance.onerror=onFinished;}
-  return utterance;
+ const units=window.FRENCH_CURRICULUM?.fiveMinuteListening?.conversationsByUnit||[],us=$('#listeningUnitSelect'),cs=$('#listeningConversationSelect'),status=$('#listeningPlaybackStatus'),bar=$('#listeningProgressBar');
+ if(!units.length)return;let token=0,index=0,limit=0;
+ const esc=v=>String(v??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+ const unit=()=>units.find(u=>String(u.unit)===us.value)||units[0];
+ const conv=()=>unit().conversations.find(c=>String(c.id)===cs.value)||unit().conversations[0];
+ const lines=()=>conv().lines;
+ const say=(msg,p=0)=>{status.textContent=msg;bar.style.width=Math.max(0,Math.min(100,p))+'%';};
+ function render(){
+  token++;window.speechSynthesis?.cancel();const c=conv();$('#listeningConversationTitle').textContent=c.title;
+  $('#listeningConversationLines').innerHTML=c.lines.map((p,i)=>'<article class="listening-paragraph-pair"><div class="listening-bilingual-grid"><section class="listening-language-card french"><div class="listening-lang-label">FRANÇAIS · النص الفرنسي</div><p lang="fr" dir="ltr" class="listening-transcript">'+esc(p.fr)+'</p><button type="button" class="btn btn-soft" data-episode-play="fr-'+i+'">🔊 استمع بالفرنسية</button></section><section class="listening-language-card arabic"><div class="listening-lang-label">العربية · الترجمة</div><p lang="ar" dir="rtl" class="listening-transcript">'+esc(p.ar)+'</p></section></div></article>').join('');
+  say('تم اختيار: '+c.title+'. اضغط زر الاستماع.',0);
  }
- function queueNext(myToken){
-  if(myToken!==token)return;
-  if(index>=limit){updateStatus((mode==='fr'?'اكتمل الاستماع بالفرنسية.':'English listening completed.')+' يمكنك إعادة الحلقة أو اختيار أي فقرة.',100);return;}
-  const current=index,part=episode.paragraphs[current],lang=mode==='fr'?'الفرنسية':'الإنجليزية';
-  updateStatus('جارٍ التشغيل باللغة '+lang+' — الفقرة '+(current+1)+' من '+limit,Math.round(current/episode.paragraphs.length*100));
-  let done=false;
-  const next=()=>{if(done)return;done=true;if(myToken!==token)return;index=current+1;setTimeout(()=>queueNext(myToken),260);};
-  const utterance=mode==='fr'?makeFrenchUtterance(part.fr,.96,next):makeEnglishUtterance(part.en,.98,next);
-  window.speechSynthesis.speak(utterance);
+ function play(from=0,all=true){
+  if(!('speechSynthesis'in window)){say('ميزة النطق غير متاحة في هذا المتصفح.');return;}
+  token++;const my=token;window.speechSynthesis.cancel();index=from;limit=all?lines().length:from+1;
+  function next(){
+   if(my!==token)return;if(index>=limit){say('اكتمل الحوار. أعد الاستماع وكرر الجمل بصوتك.',100);return;}
+   const n=index,p=lines()[n];say('الجملة '+(n+1)+' من '+limit,Math.round(n/limit*100));
+   const utterance=typeof makeFrenchUtterance==='function'?makeFrenchUtterance(p.fr,.88):new SpeechSynthesisUtterance(p.fr);
+   utterance.lang='fr-FR';utterance.rate=.88;
+   let done=false;const advance=()=>{if(done)return;done=true;if(my!==token)return;index=n+1;next();};
+   utterance.onend=advance;utterance.onerror=advance;window.speechSynthesis.speak(utterance);
+  }next();
  }
- function playAll(language,startIndex){
-  if(!('speechSynthesis' in window)){updateStatus('ميزة النطق غير متاحة في هذا المتصفح.',0);return;}
-  token++;const t=token;window.speechSynthesis.cancel();mode=language;index=startIndex||0;limit=episode.paragraphs.length;queueNext(t);
- }
- function playParagraph(language,paragraphIndex){
-  if(!('speechSynthesis' in window))return;
-  token++;const t=token;window.speechSynthesis.cancel();mode=language;index=paragraphIndex;limit=paragraphIndex+1;queueNext(t);
- }
- panel.addEventListener('click',event=>{
-  const all=event.target.closest('[data-episode-play-all]');
-  if(all){playAll(all.dataset.episodePlayAll,0);return;}
-  const one=event.target.closest('[data-episode-play]');
-  if(one){const bits=one.dataset.episodePlay.split('-');playParagraph(bits[0],Number(bits[1]));return;}
-  const pause=event.target.closest('[data-episode-pause]');
-  if(pause){if(!window.speechSynthesis)return;if(window.speechSynthesis.paused){window.speechSynthesis.resume();updateStatus('تمت متابعة الاستماع.',Math.round(index/episode.paragraphs.length*100));}else if(window.speechSynthesis.speaking){window.speechSynthesis.pause();updateStatus('الاستماع متوقف مؤقتاً. اضغط الزر مرة أخرى للمتابعة.',Math.round(index/episode.paragraphs.length*100));}else updateStatus('ابدأ تشغيل الحلقة أولاً.',0);return;}
-  const stop=event.target.closest('[data-episode-stop]');
-  if(stop){token++;if(window.speechSynthesis)window.speechSynthesis.cancel();updateStatus('تم إيقاف الاستماع.',0);return;}
-  const check=event.target.closest('[data-check-listening]');
-  if(check){const picked=panel.querySelector('input[name="listening-comprehension"]:checked'),fb=$('#listeningComprehensionFeedback');if(!fb)return;fb.hidden=false;const ok=!!picked&&picked.value==='b';fb.className=ok?'correct':'incorrect';fb.textContent=ok?'إجابة صحيحة ✓ الفكرة هي الاستمرار بروتين صغير وتكرار الكلمات في جمل واقعية.':'حاول مرة أخرى: استمع إلى الفقرتين الأولى والأخيرة، وابحث عن نصيحة المتحدث حول الروتين والمراجعة.';return;}
+ us.addEventListener('change',()=>{cs.innerHTML=unit().conversations.map(c=>'<option value="'+c.id+'">'+c.id+'. '+esc(c.title)+'</option>').join('');render();});
+ cs.addEventListener('change',render);render();
+ panel.addEventListener('click',e=>{
+  if(e.target.closest('[data-episode-play-all]')){play();return;}
+  const one=e.target.closest('[data-episode-play]');if(one){play(Number(one.dataset.episodePlay.split('-')[1]),false);return;}
+  if(e.target.closest('[data-episode-pause]')){if(window.speechSynthesis.paused){window.speechSynthesis.resume();say('تمت متابعة الاستماع.');}else if(window.speechSynthesis.speaking){window.speechSynthesis.pause();say('توقف مؤقتاً؛ اضغط لمتابعة الاستماع.');}return;}
+  if(e.target.closest('[data-episode-stop]')){token++;window.speechSynthesis?.cancel();say('تم إيقاف الاستماع.');return;}
+  if(e.target.closest('[data-check-listening]')){const picked=panel.querySelector('input[name="listening-comprehension"]:checked'),fb=$('#listeningComprehensionFeedback');fb.hidden=false;const ok=picked?.value==='b';fb.className=ok?'correct':'incorrect';fb.textContent=ok?'إجابة صحيحة! الاستماع وقراءة المعنى والتكرار يساعد على التعلم.':'حاول مرة أخرى: استمع ثم اقرأ المعنى وكرر الجمل الفرنسية.';}
  });
 }
 function markReadyPhraseExamples(root=document){
