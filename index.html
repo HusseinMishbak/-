@@ -1318,8 +1318,10 @@ function renderBookPlanIndex(){
    navigate(unitNumber<=4?'week'+unitNumber:'month2');
    window.setTimeout(()=>{
     const targetPanel=document.getElementById('panel-week'+unitNumber);
-    if(targetPanel)targetPanel.scrollIntoView({behavior:'smooth',block:'start'});
-   },120);
+    const practice=targetPanel&&targetPanel.querySelector('.book-practice');
+    if(practice){practice.scrollIntoView({behavior:'smooth',block:'start'});const firstGroup=practice.querySelector('.book-exercise-group');if(firstGroup)firstGroup.open=true;}
+    else if(targetPanel)targetPanel.scrollIntoView({behavior:'smooth',block:'start'});
+   },180);
   });
  });
 }
