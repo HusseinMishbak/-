@@ -1187,15 +1187,15 @@
   return utterance;
  }
  function speakSingleTerm(text){
-  const clean=String(text||'').replace(/\\s+/g,' ').trim();if(!clean)return;
+  const clean=String(text||'').replace(/\s+/g,' ').trim();if(!clean)return;
   if(!('speechSynthesis' in window)){toast('ميزة النطق غير متاحة في هذا المتصفح. استخدم رابط Forvo في قسم المصادر.');return;}
   window.speechSynthesis.cancel();
   window.speechSynthesis.speak(makeFrenchUtterance(clean,.64));
  }
  function speak(text){
-  const clean=String(text||'').replace(/\\s+/g,' ').trim();if(!clean)return;
+  const clean=String(text||'').replace(/\s+/g,' ').trim();if(!clean)return;
   if(!('speechSynthesis' in window)){toast('ميزة النطق غير متاحة في هذا المتصفح. استخدم رابط Forvo في قسم المصادر.');return;}
-  const segments=clean.split(/\\s*[·•|]\\s*/).map(part=>part.trim()).filter(Boolean);
+  const segments=clean.split(/\s*[·•|]\s*/).map(part=>part.trim()).filter(Boolean);
   window.speechSynthesis.cancel();
   if(segments.length>1){
    let index=0;
