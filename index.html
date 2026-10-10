@@ -197,6 +197,57 @@
 .voice-diagnostic-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:14px}
 .voice-diagnostic-report{display:block;width:100%;min-height:100px;direction:ltr;text-align:left;font:12px/1.6 ui-monospace,monospace;white-space:pre-wrap;border:1px solid var(--line);border-radius:9px;padding:10px;resize:vertical}
 @media(max-width:700px){.voice-diagnostic-dialog{padding:14px}.voice-diagnostic-row{align-items:flex-start}.voice-diagnostic-actions .btn{flex:1}.voice-diagnostic-header h2{font-size:17px}}
+
+.vocab-english{display:inline-block;direction:ltr;text-align:left;font-size:13px}
+.new-vocab-table td{vertical-align:middle}.new-vocab-table .word{min-width:180px}.new-vocab-table .num{opacity:.65}
+.unit-vocab-check{margin:24px 0 12px;padding:17px;border:1px solid #cbdfe7;border-radius:15px;background:linear-gradient(180deg,#f7fbfc,#fff)}
+.unit-vocab-header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.unit-vocab-header h3{margin:5px 0 8px;color:var(--navy);font-size:20px}
+.unit-vocab-header p{line-height:1.9;font-size:13px;color:var(--muted);max-width:700px}
+.unit-vocab-saved{border-radius:8px;background:#edf4f7;padding:9px 11px;font-size:12px;color:#38566a;margin:10px 0 14px}
+.unit-vocab-questions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.unit-vocab-question{border:1px solid var(--line);border-radius:10px;background:white;padding:11px;min-width:0}
+.unit-vocab-question.is-correct{border-color:#71bea5;background:#f2faf6}
+.unit-vocab-question.is-incorrect{border-color:#e3b7a6;background:#fff8f4}
+.unit-vocab-prompt{display:flex;gap:8px;align-items:flex-start;margin:0 0 9px;line-height:1.8;font-size:13px}
+.unit-vocab-prompt small{display:inline-block;color:var(--muted);font-size:12px;margin-inline-start:4px}
+.unit-vocab-qnum{font-weight:900;color:var(--teal);direction:ltr;unicode-bidi:isolate}
+.unit-vocab-options{display:grid;gap:6px}
+.unit-vocab-option{display:flex;align-items:flex-start;gap:7px;padding:7px 9px;background:#f7fafb;border-radius:8px;cursor:pointer;font-size:13px}
+.unit-vocab-option span{direction:ltr;text-align:left;unicode-bidi:isolate;overflow-wrap:anywhere}
+.unit-vocab-feedback{font-size:12px;line-height:1.7;margin:8px 0 0;padding:7px;border-radius:7px;background:#edf4f7}
+.unit-vocab-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.unit-vocab-result{background:#e9f8f1;border:1px solid #b9e1d0;border-radius:10px;padding:12px;margin-top:12px;line-height:1.85;font-size:13px;color:#155941}
+.unit-vocab-result p{margin:5px 0}
+.listening-hero{border-radius:16px;padding:20px;margin:12px 0;background:linear-gradient(140deg,#102d42,#1f5964);color:white}
+.listening-hero h2{font-size:25px;margin:8px 0;direction:ltr;text-align:left}
+.listening-hero>p{line-height:1.85}.listening-subtitle{font-size:17px;color:#d4eee7}
+.listening-meta{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.listening-meta span{border:1px solid #668995;border-radius:999px;padding:5px 9px;font-size:11px;color:#e5f4f2}
+.listening-player-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:16px}
+.listening-player-controls .btn{white-space:normal}
+.listening-hero .btn-primary{background:#d3f2e6;color:#143d3a;border-color:#d3f2e6}
+.listening-progress-track{height:5px;border-radius:99px;background:#547b83;overflow:hidden;margin-top:16px}
+.listening-progress-track span{display:block;height:100%;width:0;background:#a9f0d4;transition:width .2s}
+.listening-playback-status{font-size:12px;color:#e4f4f2;margin-bottom:0}
+.listening-study-tip{border-right:4px solid var(--gold);background:#fff8e8;border-radius:9px;padding:12px 14px;line-height:1.9;font-size:13px;margin:12px 0 20px}
+.listening-transcripts-heading{margin:18px 0 10px}.listening-transcripts-heading h2{margin-bottom:3px}.listening-transcripts-heading p{font-size:13px;color:var(--muted)}
+.listening-paragraph-pair{border:1px solid var(--line);border-radius:13px;padding:14px;margin:11px 0;background:#fff}
+.listening-paragraph-heading{display:flex;justify-content:space-between;align-items:center;gap:8px;font-weight:900;color:var(--navy);margin-bottom:10px}
+.listening-mini-time{font-size:11px;font-weight:500;color:var(--muted)}
+.listening-bilingual-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.listening-language-card{padding:12px;border-radius:10px;min-width:0}
+.listening-language-card.french{background:#f0f8f8;border:1px solid #d5eae7}
+.listening-language-card.english{background:#f4f6fb;border:1px solid #e0e5f0}
+.listening-lang-label{font-size:10px;font-weight:900;letter-spacing:.04em;color:#42677a;margin-bottom:8px}
+.listening-transcript{font-size:14px;line-height:1.95;margin:0 0 10px;text-align:left}
+.listening-language-card .btn{font-size:11px}
+.listening-comprehension{border:1px solid var(--line);border-radius:12px;padding:15px;margin:20px 0}
+.listening-comprehension>label{display:flex;gap:8px;padding:8px;border-radius:8px;background:#f7fafb;margin:6px 0;font-size:13px}
+.listening-comprehension p{line-height:1.8}
+#listeningComprehensionFeedback.correct{color:#147353;background:#e7f8ef;padding:8px;border-radius:8px}
+#listeningComprehensionFeedback.incorrect{color:#9b4b2b;background:#fff0e7;padding:8px;border-radius:8px}
+@media(max-width:760px){.unit-vocab-questions,.listening-bilingual-grid{grid-template-columns:1fr}.listening-hero{padding:15px}.listening-hero h2{font-size:21px}.unit-vocab-header h3{font-size:18px}.new-vocab-table{min-width:650px}}
 </style>
 </head>
 <body>
@@ -243,7 +294,7 @@
 <div class="m2-question" data-key="m2q8" data-answer="gauche"><p>8. Pour tourner à gauche, dites : tournez à ___.</p><div class="m2-options"><label><input type="radio" name="m2q8" value="droite"/> droite</label><label><input type="radio" name="m2q8" value="gauche"/> gauche</label><label><input type="radio" name="m2q8" value="vite"/> vite</label></div><p class="m2-feedback" aria-live="polite"></p></div>
 </form><div class="quiz-actions"><button type="button" class="btn btn-primary" id="gradeMonth2Quiz">تصحيح الاختبار</button><button type="button" class="btn btn-soft" id="resetMonth2Quiz">إعادة المحاولة</button></div><div class="m2-quiz-result" id="month2QuizResult" aria-live="polite" hidden></div></div>
 <div class="resource game-resource"><h3>كيف تراجع بفاعلية؟</h3><p>بعد كل لعبة خارجية، قل ثلاث جمل من ذاكرتك دون قراءة الشاشة، وسجّلها. عُد إلى الدرس الذي أخطأت فيه، ثم أعد اللعبة في اليوم التالي.</p></div></section></section>
-<section class="panel" id="panel-vocab"><div class="panel-head"><div><h1>بنك المفردات <span class="latin" lang="fr" dir="ltr">Vocabulaire</span></h1><p>ابحث بالعربية أو الفرنسية، استمع، ثم جرّب النطق بنفسك.</p></div><span class="chip">238 مدخلاً</span></div><div class="vocab-toolbar card"><div class="search-row"><label for="vocabSearch">ابحث في الكلمات الفرنسية أو معناها بالعربية</label><input id="vocabSearch" type="search" class="search" placeholder="مثال: bonjour، الأسرة، travailler..." autocomplete="off"><span id="vocabCount" class="count-chip">238 مدخلاً</span></div><div class="search-tip">اضغط 🔊 للاستماع إلى الكلمة أو المثال، ثم كرّرها بصوتك. استخدم البحث بالعربية أو الفرنسية.</div></div><section class="page-break vocab-category"><div class="section-title"><span class="eyebrow">VOCABULAIRE</span><h2>بنك المفردات والتعبيرات</h2></div><div class="vocab-intro"><strong>كيفية استخدام القائمة:</strong> هذه قائمة موسعة من كلمات وتعبيرات عالية الفائدة. استهدف إتقان 8–12 مدخلاً نشطاً في يوم الدراسة، واستعمل البقية للتعرّف والمراجعة. اقرأ المثال الفرنسي، ثم غطِّ الترجمة وحاول شرح المعنى بالعربية، وبعدها اصنع جملة تخصك.</div><p class="small">ترميز (m.) للمذكر و(f.) للمؤنث. الصيغة <span class="fr">ingénieur / ingénieure</span> توضح الشكلين المذكر والمؤنث. الترجمات تشرح المعنى المقصود في المثال، وليست بالضرورة ترجمة حرفية لكل كلمة.</p></section><section class="vocab-section vocab-category"><div class="section-title"><span class="eyebrow">VOCABULAIRE</span><h2>التحية والتواصل الأساسي</h2></div><p class="desc">مجموعة 1 • 20 مدخلاً • اقرأ المثال الفرنسي بصوت مرتفع بعد فهم المعنى.</p><div class="table-scroll"><table class="vocab"><thead><tr><th>Français</th><th>المعنى</th><th>Exemple</th><th>ترجمة المثال</th></tr></thead><tbody><tr data-vocab="bonjour مرحباً / صباح الخير bonjour, monsieur. مرحباً سيدي.">
+<section class="panel" id="panel-vocab"><div class="panel-head"><div><h1>بنك المفردات <span class="latin" lang="fr" dir="ltr">Vocabulaire</span></h1><p>ابحث بالعربية أو الفرنسية، استمع، ثم جرّب النطق بنفسك.</p></div><span class="chip">438 مدخلاً · 200 جديدة</span></div><div class="vocab-toolbar card"><div class="search-row"><label for="vocabSearch">ابحث في الكلمات الفرنسية أو معناها بالعربية</label><input id="vocabSearch" type="search" class="search" placeholder="مثال: bonjour، الأسرة، travailler..." autocomplete="off"><span id="vocabCount" class="count-chip">238 مدخلاً</span></div><div class="search-tip">اضغط 🔊 للاستماع إلى الكلمة أو المثال، ثم كرّرها بصوتك. استخدم البحث بالعربية أو الفرنسية.</div></div><section class="page-break vocab-category"><div class="section-title"><span class="eyebrow">VOCABULAIRE</span><h2>بنك المفردات والتعبيرات</h2></div><div class="vocab-intro"><strong>كيفية استخدام القائمة:</strong> هذه قائمة موسعة من كلمات وتعبيرات عالية الفائدة. استهدف إتقان 8–12 مدخلاً نشطاً في يوم الدراسة، واستعمل البقية للتعرّف والمراجعة. اقرأ المثال الفرنسي، ثم غطِّ الترجمة وحاول شرح المعنى بالعربية، وبعدها اصنع جملة تخصك.</div><p class="small">ترميز (m.) للمذكر و(f.) للمؤنث. الصيغة <span class="fr">ingénieur / ingénieure</span> توضح الشكلين المذكر والمؤنث. الترجمات تشرح المعنى المقصود في المثال، وليست بالضرورة ترجمة حرفية لكل كلمة.</p></section><section class="vocab-section vocab-category"><div class="section-title"><span class="eyebrow">VOCABULAIRE</span><h2>التحية والتواصل الأساسي</h2></div><p class="desc">مجموعة 1 • 20 مدخلاً • اقرأ المثال الفرنسي بصوت مرتفع بعد فهم المعنى.</p><div class="table-scroll"><table class="vocab"><thead><tr><th>Français</th><th>المعنى</th><th>Exemple</th><th>ترجمة المثال</th></tr></thead><tbody><tr data-vocab="bonjour مرحباً / صباح الخير bonjour, monsieur. مرحباً سيدي.">
 <td class="word"><span class="num">001</span><div class="fr" dir="ltr" lang="fr">bonjour</div></td>
 <td class="arcell">مرحباً / صباح الخير</td>
 <td class="example"><div class="fr" dir="ltr" lang="fr">Bonjour, monsieur.</div></td>
@@ -1244,9 +1295,10 @@
 <script src="./curriculum.js"></script>
 <script>
 (()=>{
- const NAV=[["home", "⌂", "الرئيسية", "نظرة عامة وخطة الدراسة"], ["bookplan", "📘", "محتوى الكتاب", "الوحدات الثماني وتمارين كل أسبوع"], ["week1", "01", "الأسبوع الأول", "التعارف والنطق"], ["week2", "02", "الأسبوع الثاني", "الأرقام والأسرة"], ["week3", "03", "الأسبوع الثالث", "الدراسة والعمل والروتين"], ["week4", "04", "الأسبوع الرابع", "الطعام والمدينة والتقييم"], ["month2", "M2", "الشهر الثاني", "توسعة A1.2 وألعاب تفاعلية"], ["roadmap", "B2", "خارطة الطريق إلى B2", "المراحل الشهرية حتى DELF B2"], ["citizenship", "FR", "الجنسية والاندماج", "الفرنسية المدنية والمقابلة والاختبار"], ["vocab", "Aa", "بنك المفردات", "كلمات وأمثلة وترجمة"], ["grammar", "ƒx", "مرجع القواعد", "القواعد الأساسية"], ["evaluations", "✓", "الاختبارات", "اختبارات ومفتاح الإجابات"], ["resources", "↗", "المصادر والروابط", "فيديوهات واستماع وتمارين"], ["account", "ID", "حساب الطالب", "دخول وحفظ سحابي"], ["teacher", "T", "لوحة المدرّس", "متابعة الطلاب والنتائج"]];
+ const NAV=[["home", "⌂", "الرئيسية", "نظرة عامة وخطة الدراسة"], ["bookplan", "📘", "محتوى الكتاب", "الوحدات الثماني وتمارين كل أسبوع"], ["week1", "01", "الأسبوع الأول", "التعارف والنطق"], ["week2", "02", "الأسبوع الثاني", "الأرقام والأسرة"], ["week3", "03", "الأسبوع الثالث", "الدراسة والعمل والروتين"], ["week4", "04", "الأسبوع الرابع", "الطعام والمدينة والتقييم"], ["month2", "M2", "الشهر الثاني", "توسعة A1.2 وألعاب تفاعلية"], ["roadmap", "B2", "خارطة الطريق إلى B2", "المراحل الشهرية حتى DELF B2"], ["citizenship", "FR", "الجنسية والاندماج", "الفرنسية المدنية والمقابلة والاختبار"], ["vocab", "Aa", "بنك المفردات", "438 كلمة مع اختبارات الوحدات"], ["listening", "♫", "استماع 5 دقائق", "حلقة فرنسية مع نص إنجليزي"], ["grammar", "ƒx", "مرجع القواعد", "القواعد الأساسية"], ["evaluations", "✓", "الاختبارات", "اختبارات ومفتاح الإجابات"], ["resources", "↗", "المصادر والروابط", "فيديوهات واستماع وتمارين"], ["account", "ID", "حساب الطالب", "دخول وحفظ سحابي"], ["teacher", "T", "لوحة المدرّس", "متابعة الطلاب والنتائج"]];
  const STORE='husseinFrenchA1SPA:v1';
  const VOICE_PREF_KEY=STORE+':speechVoice';
+ const UNIT_VOCAB_PROGRESS_KEY=STORE+':unitVocabProgress';
  // Configure these with your Supabase project URL and PUBLIC anon/publishable key. Never use service_role in browser code.
  const SUPABASE_URL='https://yycilzamasypqpvevrup.supabase.co';
  const SUPABASE_ANON_KEY='sb_publishable_LhVBnws-UM44UZfpqSh_RA_Sm1qaBWx';
@@ -1271,7 +1323,21 @@
  function buildOverview(){const host=$('#weekOverview');if(!host||host.dataset.ready)return;host.dataset.ready='1';const summaries=[['1','Entre Nous 1','الوحدة 1: Enchanté.'],['2','Entre Nous 1','الوحدة 2: Voyage autour du monde.'],['3','Entre Nous 1','الوحدة 3: Une ville, des quartiers.'],['4','Entre Nous 1','الوحدة 4: Un peu, beaucoup, à la folie.'],['month2','Entre Nous 1','الوحدات 5–8 وكراسة الأنشطة.'],['roadmap','المستويات A2–B2','خارطة الطريق والتدريب على DELF B2.'],['citizenship','اللغة والمواطنة','تدريب عملي على المجتمع والمقابلة والاختبار المدني.']];summaries.forEach(([id,title,desc])=>{const div=document.createElement('div');div.className='overview-week';const label=id==='month2'?'الشهر الثاني':('الأسبوع '+id);const icon=id==='month2'?'M2':('W'+id);div.innerHTML=`<div class="overview-icon">${icon}</div><div><h3>${label} · ${title}</h3><p>${desc}</p><button type="button" class="btn btn-soft">افتح المسار ←</button></div>`;div.querySelector('button').addEventListener('click',()=>navigate(id==='month2'?'month2':id==='roadmap'?'roadmap':'week'+id));host.appendChild(div);})}
  function setupMonth2Quiz(){const form=$('#month2QuizForm');if(!form)return;$$('[data-speak]').forEach(btn=>btn.addEventListener('click',()=>speak(btn.dataset.speak)));$('#gradeMonth2Quiz').addEventListener('click',async()=>{const questions=$$('.m2-question',form);let score=0;const answers={};questions.forEach(q=>{const chosen=form.querySelector('input[name="'+q.dataset.key+'"]:checked');const correct=!!chosen&&chosen.value===q.dataset.answer;if(chosen)answers[q.dataset.key]=chosen.value;else answers[q.dataset.key]='';q.classList.toggle('correct',correct);q.classList.toggle('incorrect',!correct);const feedback=$('.m2-feedback',q);if(feedback)feedback.textContent=correct?'صحيح ✓':(chosen?'راجع القاعدة ثم أعد المحاولة.':'اختر إجابة ثم راجع هذا السؤال.');if(correct)score++;});const max=questions.length,percentage=Math.round(score/max*100),result=$('#month2QuizResult');result.hidden=false;result.textContent='نتيجتك: '+score+' / '+max+' ('+percentage+'%). '+(percentage>=80?'ممتاز! استخدم الجمل في محادثة قصيرة.':percentage>=60?'جيد؛ راجع الأسئلة الخاطئة ثم أعد الاختبار.':'أعد مراجعة الدروس والألعاب ثم جرّب مرة أخرى.');state.quiz={...(state.quiz||{}),month2:{score,max_score:max,pct:percentage,percentage,at:new Date().toISOString()}};save();await recordQuizAttempt({quiz_key:'a1-month2-review',score,max_score:max,percentage,answers});});$('#resetMonth2Quiz').addEventListener('click',()=>{form.reset();$$('.m2-question',form).forEach(q=>{q.classList.remove('correct','incorrect');const f=$('.m2-feedback',q);if(f)f.textContent='';});const result=$('#month2QuizResult');result.hidden=true;result.textContent='';});}
  function setupChecks(){$$('.task-check').forEach(cb=>{cb.addEventListener('change',()=>{state.checks[cb.dataset.key]=cb.checked;save();})});$$('.week-check').forEach(cb=>{cb.addEventListener('change',()=>{state.weeks[cb.dataset.week]=cb.checked;save();toast(cb.checked?'تم تحديد الأسبوع مكتملاً':'تم إلغاء اكتمال الأسبوع')})})}
- function setupVocab(){const search=$('#vocabSearch');const rows=$$('tr[data-vocab]');$('#vocabCount').textContent=rows.length+' مدخلاً';if(search)search.addEventListener('input',()=>{const q=search.value.trim().toLocaleLowerCase();let visible=0;rows.forEach(row=>{const txt=(row.innerText+' '+(row.dataset.vocab||'')).toLocaleLowerCase();const ok=!q||txt.includes(q);row.style.display=ok?'':'none';if(ok)visible++});$('#vocabCount').textContent=visible+' / '+rows.length+' مدخل';$$('.vocab-section').forEach(sec=>{const has= $$('tr[data-vocab]',sec).some(r=>r.style.display!=='none');sec.style.display=has?'':'none';})});
+ function renderAdditionalVocabulary(){
+ const host=$('#panel-vocab'),all=(window.FRENCH_CURRICULUM&&window.FRENCH_CURRICULUM.additionalVocabulary)||[];
+ if(!host||!all.length||host.dataset.additionalVocabularyRendered==='1')return;
+ const E=v=>String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+ const titles={1:'التهجئة والبيانات الشخصية',2:'السفر والحجوزات',3:'المدينة والخدمات والاتجاهات',4:'العائلة والصفات والهوايات',5:'الروتين والعادات اليومية',6:'العمل والمهارات المهنية',7:'التسوّق والطقس والملابس',8:'الطعام ومهارات المطبخ'};
+ let extra='';
+ for(let unit=1;unit<=8;unit++){
+  const words=all.filter(w=>w.unit===unit);
+  const rows=words.map((w,index)=>'<tr data-vocab="'+E(w.fr+' '+w.ar+' '+w.en)+'"><td class="word"><span class="num">'+String(238+(unit-1)*25+index+1).padStart(3,'0')+'</span><div class="fr" dir="ltr" lang="fr">'+E(w.fr)+'</div></td><td class="arcell">'+E(w.ar)+'</td><td class="arcell"><span lang="en" dir="ltr" class="vocab-english">'+E(w.en)+'</span></td><td class="arcell">الوحدة '+unit+'</td></tr>').join('');
+  extra+='<section class="vocab-section vocab-category new-vocab-section" data-new-vocab-unit="'+unit+'"><div class="section-title"><span class="eyebrow">NOUVEAU VOCABULAIRE · UNITÉ '+unit+'</span><h2>المفردات الجديدة: '+titles[unit]+'</h2></div><p class="desc">25 مفردة جديدة لهذه الوحدة. اضغط زر الاستماع بجانب الكلمة الفرنسية، ثم اختبر نفسك في نهاية الوحدة.</p><div class="table-scroll"><table class="vocab new-vocab-table"><thead><tr><th>Français</th><th>المعنى بالعربية</th><th>English meaning</th><th>الوحدة</th></tr></thead><tbody>'+rows+'</tbody></table></div></section>';
+ }
+ host.insertAdjacentHTML('beforeend',extra);
+ host.dataset.additionalVocabularyRendered='1';
+}
+function setupVocab(){const search=$('#vocabSearch');const rows=$$('tr[data-vocab]');$('#vocabCount').textContent=rows.length+' مدخلاً';if(search)search.addEventListener('input',()=>{const q=search.value.trim().toLocaleLowerCase();let visible=0;rows.forEach(row=>{const txt=(row.innerText+' '+(row.dataset.vocab||'')).toLocaleLowerCase();const ok=!q||txt.includes(q);row.style.display=ok?'':'none';if(ok)visible++});$('#vocabCount').textContent=visible+' / '+rows.length+' مدخل';$$('.vocab-section').forEach(sec=>{const has= $$('tr[data-vocab]',sec).some(r=>r.style.display!=='none');sec.style.display=has?'':'none';})});
  rows.forEach(row=>{const wordCell=$('.word',row);const exampleCell=$('.example',row);if(wordCell&&!$('.audio-btn',wordCell)){const b=document.createElement('button');b.type='button';b.className='audio-btn';b.innerHTML='🔊 استمع';b.title='استمع إلى نطق الكلمة الفرنسية';b.addEventListener('click',()=>speak($('.fr',wordCell)?.textContent||wordCell.textContent));wordCell.appendChild(b);}if(exampleCell&&!$('.audio-btn',exampleCell)){const b=document.createElement('button');b.type='button';b.className='audio-btn';b.innerHTML='▶ استمع للمثال';b.title='استمع إلى المثال الفرنسي';b.addEventListener('click',()=>speak($('.fr',exampleCell)?.textContent||exampleCell.textContent));exampleCell.appendChild(b);}})}
  let cachedSpeechVoices=[];
  function availableSpeechVoices(){
@@ -1431,6 +1497,24 @@ function buildUnitIntroductionHtml(unit){
  const nums=(intro.numbers||[]).map(n=>'<div class="unit-number-card"><span class="unit-number-value">'+E(n[0])+'</span><span class="latin" lang="fr" dir="ltr">'+E(n[1])+'</span><button type="button" class="audio-btn book-example-audio" data-example-audio="'+E(n[1])+'" data-example-rate="slow" title="استمع ببطء إلى العدد" aria-label="استمع ببطء إلى: '+E(n[1])+'">🔊 استمع ببطء</button><span class="unit-number-pronunciation">النطق التقريبي: <b dir="rtl">'+E(n[2])+'</b></span><span class="unit-number-meaning">'+E(n[3])+'</span></div>').join('');
  return '<section class="unit-introduction"><div class="unit-intro-header"><div><div class="kicker">OBJECTIFS · VOCABULAIRE · PRONONCIATION</div><h3>ابدأ من هنا: شرح الوحدة وأهدافها</h3></div><span class="book-chip">شرح مبسّط</span></div><p class="unit-intro-overview">'+E(intro.overview||unit.focus)+'</p><div class="unit-intro-columns"><div class="unit-intro-subpanel"><h4>ماذا ستتعلم؟</h4><ul>'+outcomes+'</ul></div><div class="unit-intro-subpanel"><h4>القواعد الأساسية</h4><ul>'+points+'</ul></div></div><div class="unit-intro-subpanel"><h4>أمثلة أساسية</h4><div class="unit-intro-examples">'+examples+'</div></div>'+(nums?'<details class="unit-number-panel" open><summary>'+E(intro.numbersTitle||'الأعداد وطريقة نطقها')+' <span>استمع إلى كل عدد منفرداً</span></summary><p class="unit-number-note">'+E(intro.note||'النطق العربي تقريبي، فاستمع إلى الصوت الفرنسي أيضاً.')+'</p><div class="unit-number-grid">'+nums+'</div></details>':'')+'</section>';
 }
+function readUnitVocabProgress(){
+ try{const p=JSON.parse(localStorage.getItem(UNIT_VOCAB_PROGRESS_KEY)||'{}');return {units:p.units||{},learned:Array.isArray(p.learned)?p.learned:[]};}
+ catch(_){return {units:{},learned:[]};}
+}
+function buildUnitVocabCheckHtml(unit){
+ const all=(window.FRENCH_CURRICULUM&&window.FRENCH_CURRICULUM.additionalVocabulary)||[];
+ const words=all.filter(w=>w.unit===unit.u);
+ if(!words.length)return '';
+ const E=v=>String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+ const saved=readUnitVocabProgress(),previous=saved.units[String(unit.u)];
+ const questions=words.map((word,index)=>{
+  const opts=[word,words[(index+3)%words.length],words[(index+8)%words.length],words[(index+15)%words.length]];
+  const shift=index%4,rotated=opts.slice(shift).concat(opts.slice(0,shift)),correct=rotated.findIndex(x=>x.id===word.id);
+  return '<article class="unit-vocab-question" data-unit-vocab-question data-correct-id="'+E(word.id)+'" data-word-fr="'+E(word.fr)+'" data-word-ar="'+E(word.ar)+'" data-word-en="'+E(word.en)+'"><p class="unit-vocab-prompt"><span class="unit-vocab-qnum">'+(index+1)+'.</span><span>ما الكلمة الفرنسية التي تعني <strong>'+E(word.ar)+'</strong>؟ <small lang="en" dir="ltr">('+E(word.en)+')</small></span></p><div class="unit-vocab-options">'+rotated.map((option,k)=>'<label class="unit-vocab-option"><input type="radio" name="unit-vocab-'+unit.u+'-'+index+'" value="'+E(option.id)+'"><span lang="fr" dir="ltr">'+E(option.fr)+'</span></label>').join('')+'</div><p class="unit-vocab-feedback" hidden aria-live="polite"></p></article>';
+ }).join('');
+ const previousText=previous?'آخر نتيجة: '+previous.score+'/'+previous.total+' · أفضل نتيجة: '+previous.best+'/'+previous.total+' · المحاولات: '+previous.attempts:'لم تؤدِّ اختبار هذه الوحدة بعد.';
+ return '<section class="unit-vocab-check" data-unit-vocab-test="'+unit.u+'"><div class="unit-vocab-header"><div><div class="kicker">VOCABULARY CHECK · UNITÉ '+unit.u+'</div><h3>اختبار المفردات الجديدة — الوحدة '+unit.u+'</h3><p>25 سؤالاً للكلمات الجديدة المخصصة لهذه الوحدة. اختر المفردة الفرنسية الموافقة للمعنى العربي والإنجليزي. كل إجابة صحيحة تمثل كلمة تعرّفت إلى معناها في هذا الاختبار.</p></div><span class="book-chip">25 كلمة جديدة</span></div><div class="unit-vocab-saved" id="unit-vocab-saved-'+unit.u+'">'+E(previousText)+'</div><div class="unit-vocab-questions">'+questions+'</div><div class="unit-vocab-actions"><button type="button" class="btn btn-primary" data-grade-unit-vocab="'+unit.u+'">صحّح الاختبار واحسب الكلمات</button><button type="button" class="btn btn-soft" data-reset-unit-vocab="'+unit.u+'">إعادة الاختبار</button></div><div class="unit-vocab-result" id="unit-vocab-result-'+unit.u+'" hidden aria-live="polite"></div><p class="small">يُحفظ أفضل مجموع وعدد الكلمات التي أجبت عنها بشكل صحيح مرة واحدة على الأقل في هذا المتصفح. لإتقان أعمق، أعد الاختبار بعد يوم أو يومين.</p></section>';
+}
 function buildUnitGuide(unit){
  const guide=document.createElement('section');guide.className='book-integration';
  guide.innerHTML='<div class="book-integration-top"><div><div class="kicker">FRENCH · UNITÉ '+unit.u+'</div><h3>المسار الأساسي: '+unit.name+'</h3></div><span class="book-chip">A1 · '+unit.u+'/8</span></div>'+
@@ -1438,7 +1522,7 @@ function buildUnitGuide(unit){
  '<p class="book-focus">'+unit.focus+'</p><p class="book-grammar"><strong>القواعد والتراكيب:</strong> <span class="latin" lang="fr" dir="ltr">'+unit.grammar+'</span></p>'+
  '<p class="book-instruction">لكل جلسة شرح مبسّط وأمثلة مترجمة وتطبيق سريع يمكن تصحيحه، ثم مختبر موسّع للاختيار من متعدد وملء الفراغات والمطابقة وترتيب الجمل والكتابة. لا تحتاج إلى الرجوع إلى الكتاب أو أرقام الصفحات.</p>'+
  '<ol class="book-day-list">'+unit.days.map((d,i)=>buildBookDayHtml(unit,d,i)).join('')+'</ol>'+
- buildBookPracticeHtml(unit);
+ buildBookPracticeHtml(unit)+buildUnitVocabCheckHtml(unit);
  return guide;
 }
 function addBookIntegration(){
@@ -1690,6 +1774,33 @@ function setupBookPractice(){
   if(!state.bookWriting)state.bookWriting={};state.bookWriting[area.dataset.bookWriting]=area.value;save();
  });
  root.addEventListener('click',async event=>{
+  const vocabGrade=event.target.closest('[data-grade-unit-vocab]');
+  if(vocabGrade){
+   const unit=vocabGrade.dataset.gradeUnitVocab,wrap=root.querySelector('[data-unit-vocab-test="'+unit+'"]');
+   if(!wrap)return;
+   const questions=Array.from(wrap.querySelectorAll('[data-unit-vocab-question]')),correctIds=[];let score=0;
+   questions.forEach(q=>{
+    const picked=q.querySelector('input[type="radio"]:checked'),ok=!!picked&&picked.value===q.dataset.correctId,fb=q.querySelector('.unit-vocab-feedback');
+    q.classList.toggle('is-correct',ok);q.classList.toggle('is-incorrect',!ok);
+    if(ok){score++;correctIds.push(q.dataset.correctId);}
+    if(fb){fb.hidden=false;fb.textContent=ok?'صحيح ✓ '+q.dataset.wordFr+' — '+q.dataset.wordEn:'الإجابة الصحيحة: '+q.dataset.wordFr+' — '+q.dataset.wordAr+' ('+q.dataset.wordEn+')';}
+   });
+   const progress=readUnitVocabProgress(),key=String(unit),previous=progress.units[key]||{best:0,attempts:0},total=questions.length;
+   progress.units[key]={score,total,best:Math.max(previous.best||0,score),attempts:(previous.attempts||0)+1,date:new Date().toISOString(),correctIds};
+   progress.learned=Array.from(new Set([...(progress.learned||[]),...correctIds]));
+   try{localStorage.setItem(UNIT_VOCAB_PROGRESS_KEY,JSON.stringify(progress));}catch(_){toast('تعذر حفظ نتيجة الاختبار في هذا المتصفح.');}
+   const pct=Math.round(score/total*100),result=$('#unit-vocab-result-'+unit);
+   if(result){result.hidden=false;result.innerHTML='<strong>نتيجتك في هذه المحاولة: '+score+' / '+total+' ('+pct+'%)</strong><p>أجبت بشكل صحيح عن '+score+' مفردة من مفردات الوحدة الـ25.</p><p>أفضل نتيجة لهذه الوحدة: '+progress.units[key].best+' / '+total+'.</p><p>إجمالي المفردات الجديدة التي أجبت عن معناها بشكل صحيح مرة واحدة على الأقل: <strong>'+progress.learned.length+' / 200</strong>.</p>'+(score===total?'<p>ممتاز! راجع الكلمات مرة أخرى بعد يومين لتثبيت الذاكرة.</p>':'<p>راجع الإجابات الخاطئة ثم أعد الاختبار غداً. ستُحتسب الكلمة ضمن الإجابات المتعرّف عليها عندما تختارها بشكل صحيح.</p>');}
+   const saved=$('#unit-vocab-saved-'+unit);if(saved)saved.textContent='آخر نتيجة: '+score+'/'+total+' · أفضل نتيجة: '+progress.units[key].best+'/'+total+' · المحاولات: '+progress.units[key].attempts;
+   return;
+  }
+  const vocabReset=event.target.closest('[data-reset-unit-vocab]');
+  if(vocabReset){
+   const wrap=root.querySelector('[data-unit-vocab-test="'+vocabReset.dataset.resetUnitVocab+'"]');if(!wrap)return;
+   wrap.querySelectorAll('input[type="radio"]').forEach(input=>input.checked=false);
+   wrap.querySelectorAll('[data-unit-vocab-question]').forEach(q=>{q.classList.remove('is-correct','is-incorrect');const fb=q.querySelector('.unit-vocab-feedback');if(fb){fb.hidden=true;fb.textContent='';}});
+   const result=$('#unit-vocab-result-'+vocabReset.dataset.resetUnitVocab);if(result)result.hidden=true;return;
+  }
   const exampleAudio=event.target.closest('[data-example-audio]');
   if(exampleAudio){
    event.preventDefault();event.stopPropagation();
@@ -1823,12 +1934,67 @@ function setupVoiceDiagnostics(){
  });
  if(window.speechSynthesis&&typeof window.speechSynthesis.addEventListener==='function')window.speechSynthesis.addEventListener('voiceschanged',()=>{if(!modal.hidden)render();});
 }
+function renderFiveMinuteListeningPanel(){
+ if($('#panel-listening'))return;
+ const episode=window.FRENCH_CURRICULUM&&window.FRENCH_CURRICULUM.fiveMinuteListening;
+ const host=$('#panels');if(!episode||!host)return;
+ const E=v=>String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+ const frenchWords=episode.paragraphs.reduce((sum,p)=>sum+p.fr.trim().split(/\\s+/).length,0);
+ const paragraphHtml=episode.paragraphs.map((p,i)=>'<article class="listening-paragraph-pair"><div class="listening-paragraph-heading"><span>المقطع '+(i+1)+'</span><span class="listening-mini-time">استماع وتكرار</span></div><div class="listening-bilingual-grid"><section class="listening-language-card french"><div class="listening-lang-label">FRANÇAIS · النص الفرنسي</div><p lang="fr" dir="ltr" class="listening-transcript">'+E(p.fr)+'</p><button type="button" class="btn btn-soft" data-episode-play="fr-'+i+'">🔊 استمع بالفرنسية</button></section><section class="listening-language-card english"><div class="listening-lang-label">ENGLISH · English transcript</div><p lang="en" dir="ltr" class="listening-transcript">'+E(p.en)+'</p><button type="button" class="btn btn-soft" data-episode-play="en-'+i+'">🔊 Listen in English</button></section></div></article>').join('');
+ const panel=document.createElement('section');panel.className='panel';panel.id='panel-listening';
+ panel.innerHTML='<div class="panel-head"><div><h1>استماع بخمس دقائق <span lang="fr" dir="ltr" class="latin">Écoute en 5 minutes</span></h1><p>حلقة أصلية قصيرة لتدريب الفهم السمعي، على طريقة البرامج التعليمية الصوتية، بنص فرنسي وترجمة إنجليزية متقابلة.</p></div><span class="chip">A2–B1 · ~5 min</span></div><section class="listening-hero"><div class="kicker">ÉPISODE 01 · LEARN THROUGH LISTENING</div><h2 lang="fr" dir="ltr">'+E(episode.title)+'</h2><p class="listening-subtitle" lang="en" dir="ltr">'+E(episode.subtitle)+'</p><p>'+E(episode.description)+'</p><div class="listening-meta"><span>المستوى: '+E(episode.level)+'</span><span>المدة التقديرية: خمس دقائق</span><span>'+frenchWords+' كلمة فرنسية تقريباً</span></div><div class="listening-player-controls"><button type="button" class="btn btn-primary" data-episode-play-all="fr">▶ تشغيل الحلقة بالفرنسية</button><button type="button" class="btn btn-soft" data-episode-play-all="en">▶ Play English audio</button><button type="button" class="btn btn-soft" data-episode-pause>⏸ إيقاف مؤقت / متابعة</button><button type="button" class="btn btn-soft" data-episode-stop>■ إيقاف</button></div><div class="listening-progress-track"><span id="listeningProgressBar"></span></div><p id="listeningPlaybackStatus" class="listening-playback-status" aria-live="polite">جاهز للاستماع. يمكنك البدء دون قراءة النص ثم فتحه للمراجعة.</p></section><div class="listening-study-tip"><strong>طريقة مقترحة للدراسة:</strong> استمع إلى الفرنسية أولاً دون قراءة، ثم اقرأ النصين، وبعدها أعد الاستماع ودوّن خمس كلمات أو تعبيرات جديدة.</div><div class="listening-transcripts-heading"><h2>النصان المتوازيان</h2><p>شغّل الحلقة كاملة من أعلى الصفحة أو استمع إلى فقرة واحدة بالفرنسية أو الإنجليزية.</p></div>'+paragraphHtml+'<section class="listening-comprehension"><h3>تحقق من فهمك</h3><p>ما الفكرة الأساسية في الحلقة؟</p><label><input type="radio" name="listening-comprehension" value="a"> يجب حفظ عشرات الكلمات في جلسة واحدة.</label><label><input type="radio" name="listening-comprehension" value="b"> روتين قصير ومتكرر، مع جمل واسترجاع نشط، يساعد على التعلّم.</label><label><input type="radio" name="listening-comprehension" value="c"> لا فائدة من تكرار الاستماع إلى الجملة.</label><button type="button" class="btn btn-soft" data-check-listening>تحقق من الإجابة</button><p id="listeningComprehensionFeedback" hidden aria-live="polite"></p></section>';
+ host.appendChild(panel);
+}
+function setupFiveMinuteListening(){
+ const panel=$('#panel-listening');if(!panel||panel.dataset.bound==='1')return;panel.dataset.bound='1';
+ const episode=window.FRENCH_CURRICULUM&&window.FRENCH_CURRICULUM.fiveMinuteListening;if(!episode)return;
+ const status=$('#listeningPlaybackStatus'),bar=$('#listeningProgressBar');
+ let token=0,mode='fr',index=0,limit=0;
+ function updateStatus(message,progress){if(status)status.textContent=message;if(bar)bar.style.width=Math.max(0,Math.min(100,progress||0))+'%';}
+ function makeEnglishUtterance(text,rate,onFinished){
+  const voices=availableSpeechVoices(),english=voices.filter(v=>/^en(?:[-_]|$)/i.test(v.lang||''));
+  const voice=english.find(v=>/premium|enhanced|natural|neural/i.test(v.name||''))||english.find(v=>/^en[-_]GB/i.test(v.lang||'')&&v.localService)||english.find(v=>/^en[-_]GB/i.test(v.lang||''))||english.find(v=>v.localService)||english[0]||null;
+  const utterance=new SpeechSynthesisUtterance(text);utterance.lang=voice&&voice.lang?voice.lang:'en-GB';utterance.rate=rate;if(voice)utterance.voice=voice;
+  if(onFinished){utterance.onend=onFinished;utterance.onerror=onFinished;}
+  return utterance;
+ }
+ function queueNext(myToken){
+  if(myToken!==token)return;
+  if(index>=limit){updateStatus((mode==='fr'?'اكتمل الاستماع بالفرنسية.':'English listening completed.')+' يمكنك إعادة الحلقة أو اختيار أي فقرة.',100);return;}
+  const current=index,part=episode.paragraphs[current],lang=mode==='fr'?'الفرنسية':'الإنجليزية';
+  updateStatus('جارٍ التشغيل باللغة '+lang+' — الفقرة '+(current+1)+' من '+limit,Math.round(current/episode.paragraphs.length*100));
+  let done=false;
+  const next=()=>{if(done)return;done=true;if(myToken!==token)return;index=current+1;setTimeout(()=>queueNext(myToken),260);};
+  const utterance=mode==='fr'?makeFrenchUtterance(part.fr,.96,next):makeEnglishUtterance(part.en,.98,next);
+  window.speechSynthesis.speak(utterance);
+ }
+ function playAll(language,startIndex){
+  if(!('speechSynthesis' in window)){updateStatus('ميزة النطق غير متاحة في هذا المتصفح.',0);return;}
+  token++;const t=token;window.speechSynthesis.cancel();mode=language;index=startIndex||0;limit=episode.paragraphs.length;queueNext(t);
+ }
+ function playParagraph(language,paragraphIndex){
+  if(!('speechSynthesis' in window))return;
+  token++;const t=token;window.speechSynthesis.cancel();mode=language;index=paragraphIndex;limit=paragraphIndex+1;queueNext(t);
+ }
+ panel.addEventListener('click',event=>{
+  const all=event.target.closest('[data-episode-play-all]');
+  if(all){playAll(all.dataset.episodePlayAll,0);return;}
+  const one=event.target.closest('[data-episode-play]');
+  if(one){const bits=one.dataset.episodePlay.split('-');playParagraph(bits[0],Number(bits[1]));return;}
+  const pause=event.target.closest('[data-episode-pause]');
+  if(pause){if(!window.speechSynthesis)return;if(window.speechSynthesis.paused){window.speechSynthesis.resume();updateStatus('تمت متابعة الاستماع.',Math.round(index/episode.paragraphs.length*100));}else if(window.speechSynthesis.speaking){window.speechSynthesis.pause();updateStatus('الاستماع متوقف مؤقتاً. اضغط الزر مرة أخرى للمتابعة.',Math.round(index/episode.paragraphs.length*100));}else updateStatus('ابدأ تشغيل الحلقة أولاً.',0);return;}
+  const stop=event.target.closest('[data-episode-stop]');
+  if(stop){token++;if(window.speechSynthesis)window.speechSynthesis.cancel();updateStatus('تم إيقاف الاستماع.',0);return;}
+  const check=event.target.closest('[data-check-listening]');
+  if(check){const picked=panel.querySelector('input[name="listening-comprehension"]:checked'),fb=$('#listeningComprehensionFeedback');if(!fb)return;fb.hidden=false;const ok=!!picked&&picked.value==='b';fb.className=ok?'correct':'incorrect';fb.textContent=ok?'إجابة صحيحة ✓ الفكرة هي الاستمرار بروتين صغير وتكرار الكلمات في جمل واقعية.':'حاول مرة أخرى: استمع إلى الفقرتين الأولى والأخيرة، وابحث عن نصيحة المتحدث حول الروتين والمراجعة.';return;}
+ });
+}
 function setupAudioFeatures(){
  enhanceSentenceAudio(document);
  addRecorderWhereRequested(document);
 }
 
- function init(){addBookIntegration();renderBookPlanIndex();renderRoadmap();renderCitizenshipTrack();makeNav();load();setupCheckboxValues();setupChecks();setupBookPractice();setupRoadmapActivities();setupCitizenshipActivities();setupMonth2Quiz();setupVocab();setupAudioFeatures();setupVoiceDiagnostics();setupQuiz();setupSettings();setupAuthForms();$('#personalNotes').value=state.notes||'';updateProgress();navigate((window.location.hash.includes('type=recovery')||window.location.hash.includes('access_token'))?'account':(state.last||'home'));initCloud();}
+ function init(){addBookIntegration();renderBookPlanIndex();renderRoadmap();renderCitizenshipTrack();renderFiveMinuteListeningPanel();renderAdditionalVocabulary();makeNav();load();setupCheckboxValues();setupChecks();setupBookPractice();setupRoadmapActivities();setupCitizenshipActivities();setupMonth2Quiz();setupVocab();setupAudioFeatures();setupFiveMinuteListening();setupVoiceDiagnostics();setupQuiz();setupSettings();setupAuthForms();$('#personalNotes').value=state.notes||'';updateProgress();navigate((window.location.hash.includes('type=recovery')||window.location.hash.includes('access_token'))?'account':(state.last||'home'));initCloud();}
  init();
 })();
 </script>
