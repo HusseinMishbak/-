@@ -168,6 +168,8 @@ create table if not exists public.speaking_submissions (
   duration_seconds numeric(7,2) not null default 0 check (duration_seconds >= 0 and duration_seconds <= 300),
   submitted_at timestamptz not null default now(),
   teacher_feedback text not null default '',
+  rubric_scores jsonb not null default '{}'::jsonb,
+  score_total integer check (score_total is null or (score_total >= 0 and score_total <= 10)),
   reviewed_at timestamptz,
   reviewed_by uuid references public.profiles(id) on delete set null
 );
@@ -176,7 +178,7 @@ create index if not exists speaking_submissions_assessment_idx on public.speakin
 alter table public.speaking_submissions enable row level security;
 revoke all on table public.speaking_submissions from anon, authenticated;
 grant select, insert on table public.speaking_submissions to authenticated;
-grant update (teacher_feedback, reviewed_at, reviewed_by) on table public.speaking_submissions to authenticated;
+grant update (teacher_feedback, rubric_scores, score_total, reviewed_at, reviewed_by) on table public.speaking_submissions to authenticated;
 drop policy if exists "students and teachers can read speaking submissions" on public.speaking_submissions;
 drop policy if exists "students can submit own speaking recordings" on public.speaking_submissions;
 drop policy if exists "teachers can review speaking submissions" on public.speaking_submissions;
