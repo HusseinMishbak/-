@@ -102,6 +102,14 @@ function renderUnits(){
   insertOnce(panel,{key:'pronunciation-unit-'+unit.u,title:'مختبر النطق والتحدث — '+unit.name,description:'خطوة أساسية في كل وحدة: استمع ببطء، كرر العبارة 3–5 مرات، ثم سجّل صوتك واستمع إليه قبل الإرسال.',badge:'الوحدة '+unit.u+' · صوت',examples:ex,prompt:'سجّل 20–45 ثانية: اقرأ عبارتين من الوحدة ثم كوّن جملة جديدة. أمثلة: '+short,limit:45,buttonLabel:'إرسال تسجيل الوحدة إلى المدرّس',recordTitle:'تقييم النطق — الوحدة '+unit.u},true);
  });
 }
+function renderBookPlanUnits(){
+ const host=$('#panel-bookplan');const details=$('.book-index-unit',host);
+ (COURSE.bookUnits||[]).forEach((unit,index)=>{
+  const detail=details[index];if(!detail)return;
+  const ex=samples(unit),short=ex.slice(0,2).map(x=>x.fr).join(' — ')||unit.name;
+  insertOnce(detail,{key:'pronunciation-unit-'+unit.u,title:'مختبر النطق والتحدث — '+unit.name,description:'النطق خطوة أساسية في هذه الوحدة: استمع ببطء، كرر 3–5 مرات، ثم سجّل صوتك وقارنه بالنموذج.',badge:'الوحدة '+unit.u+' · صوت',examples:ex,prompt:'سجّل 20–45 ثانية: اقرأ عبارتين من الوحدة ثم كوّن جملة جديدة. أمثلة: '+short,limit:45,buttonLabel:'إرسال تسجيل الوحدة إلى المدرّس',recordTitle:'تقييم النطق — الوحدة '+unit.u},false);
+ });
+}
 function renderPlacement(){
  const panel=$('#panel-placement');if(!panel)return;
  const prompt='تحدث لمدة 60–90 ثانية بالفرنسية. قدّم نفسك واذكر اسمك ومهنتك ومدينة سكنك واللغات التي تتحدثها ولماذا تتعلم الفرنسية. استخدم: Bonjour, je m’appelle… / Je suis… / J’habite à… / Je parle… / J’apprends le français parce que…';
@@ -138,7 +146,7 @@ async function renderTeacherSubmissions(userId,container){
 }
 function init(){
  styles();document.addEventListener('click',e=>{const b=e.target.closest('[data-sa-speak]');if(b){e.preventDefault();speak(b.dataset.saSpeak)}});
- renderUnits();renderPlacement();renderMonthly();
+ renderUnits();renderBookPlanUnits();renderPlacement();renderMonthly();
  window.OUR_SPEAKING_ASSESSMENT={renderTeacherSubmissions,speak};
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
