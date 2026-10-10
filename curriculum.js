@@ -18890,5 +18890,46 @@ window.FRENCH_CURRICULUM = {
       "ar": "منتهي الصلاحية",
       "en": "expired"
     }
-  ]
+  ],
+  "fiveMinuteListening": {
+    "title": "Le petit rituel qui change tout",
+    "subtitle": "A small daily habit that changes everything",
+    "level": "A2–B1",
+    "duration": "environ 5 minutes",
+    "description": "Épisode original de compréhension orale, créé pour cette plateforme. Écoutez d’abord sans lire, puis relisez les textes français et anglais et réécoutez les passages difficiles.",
+    "paragraphs": [
+      {
+        "fr": "Imaginez que vous apprenez le français. Vous ouvrez une application, vous regardez une longue liste de mots, puis vous pensez : « Je dois tout mémoriser aujourd’hui. » Après dix minutes, votre tête est pleine et vous avez envie d’arrêter. Pourtant, apprendre une langue ne demande pas toujours de longues séances. Il faut surtout une petite routine, un objectif clair et beaucoup de répétitions. Aujourd’hui, découvrons une méthode simple pour apprendre quelques mots et les utiliser dans la vraie vie.",
+        "en": "Imagine you are learning French. You open an app, look at a long list of words, and think, “I must memorise everything today.” After ten minutes, your head is full and you want to stop. Yet learning a language does not always require long study sessions. What matters most is a small routine, a clear goal, and plenty of repetition. Today, let us discover a simple method for learning a few words and using them in real life."
+      },
+      {
+        "fr": "La première étape est de choisir un moment régulier. Cela peut être après le petit-déjeuner, dans le bus ou juste avant de dormir. Dix minutes chaque jour peuvent être plus utiles qu’une heure de temps en temps. Pourquoi ? Parce que votre cerveau aime revoir une information plusieurs fois. Quand vous retrouvez un mot le lendemain, vous faites un effort pour vous en souvenir. Cet effort renforce votre mémoire, même si la réponse ne vient pas immédiatement.",
+        "en": "The first step is to choose a regular time. It could be after breakfast, on the bus, or just before bed. Ten minutes every day can be more useful than one hour once in a while. Why? Because your brain benefits from seeing information several times. When you meet a word again the next day, you make an effort to remember it. That effort strengthens your memory, even when the answer does not come immediately."
+      },
+      {
+        "fr": "La deuxième étape est d’apprendre les mots dans une phrase. Prenons le mot « réserver ». Seul, il peut sembler abstrait. Mais écoutez : « Je voudrais réserver une table pour deux personnes. » Maintenant, vous connaissez le mot, sa grammaire et une situation où vous pouvez l’utiliser. Pour chaque nouveau mot, écrivez une phrase courte. Choisissez une phrase qui parle de votre vie : votre travail, votre quartier, vos repas ou vos projets de voyage.",
+        "en": "The second step is to learn words inside a sentence. Take the verb “réserver”, meaning “to book”. On its own, it may feel abstract. But listen: “I would like to book a table for two people.” Now you know the word, its grammar, and a situation in which you can use it. For every new word, write a short sentence. Choose one that relates to your life: your work, your neighbourhood, your meals, or your travel plans."
+      },
+      {
+        "fr": "La troisième étape est d’écouter, puis de répéter. Écoutez une phrase une première fois sans regarder le texte. Essayez de reconnaître les mots importants. Ensuite, lisez la phrase et écoutez-la encore. Répétez-la à voix haute en imitant le rythme, les liaisons et l’intonation. Il n’est pas nécessaire d’avoir un accent parfait. Le but est de parler clairement et de comprendre les autres. Si un passage est difficile, ralentissez-le et travaillez une petite partie à la fois.",
+        "en": "The third step is to listen and then repeat. Listen to a sentence once without looking at the text. Try to recognise the important words. Then read the sentence and listen again. Repeat it aloud, copying the rhythm, linking sounds, and intonation. You do not need a perfect accent. The goal is to speak clearly and understand other people. If a passage is difficult, slow it down and practise one small part at a time."
+      },
+      {
+        "fr": "La quatrième étape est de tester votre mémoire. Fermez le dictionnaire et regardez seulement la traduction. Pouvez-vous retrouver le mot français ? Si vous le trouvez facilement, utilisez-le dans une nouvelle phrase. Si vous l’oubliez, ce n’est pas un échec. Notez-le et revenez-y demain. Un bon test ne sert pas à vous punir ; il vous montre ce que vous savez déjà et ce que vous devez revoir. Soyez curieux, pas sévère avec vous-même.",
+        "en": "The fourth step is to test your memory. Close the dictionary and look only at the translation. Can you remember the French word? If you can, use it in a new sentence. If you forget it, that is not a failure. Write it down and return to it tomorrow. A good test is not there to punish you; it shows what you already know and what you need to review. Be curious, not harsh with yourself."
+      },
+      {
+        "fr": "Vous pouvez aussi relier le français à vos activités quotidiennes. Dans un magasin, observez les produits et essayez de les nommer. Dans la rue, lisez les panneaux. Au restaurant, repérez trois mots sur le menu. Quand vous rencontrez une personne francophone, posez une question simple. Ces petits moments transforment la langue en outil de communication, au lieu de la laisser dans un cahier. Vous n’avez pas besoin de comprendre chaque mot pour participer à une conversation.",
+        "en": "You can also connect French with everyday activities. In a shop, look at products and try to name them. In the street, read the signs. At a restaurant, find three words on the menu. When you meet a French speaker, ask a simple question. These small moments turn the language into a tool for communication instead of leaving it in a notebook. You do not need to understand every word to take part in a conversation."
+      },
+      {
+        "fr": "Enfin, mesurez vos progrès avec des objectifs réalistes. Cette semaine, apprenez quinze mots et utilisez-en cinq dans vos propres phrases. La semaine suivante, réutilisez les anciens mots et ajoutez-en quelques-uns. Gardez une liste de vos réussites : comprendre une annonce, commander un café ou raconter votre journée. Ces réussites peuvent sembler petites, mais elles prouvent que vous avancez. Comparez votre niveau avec celui d’hier, pas avec celui d’une personne qui étudie depuis dix ans.",
+        "en": "Finally, measure your progress with realistic goals. This week, learn fifteen words and use five of them in your own sentences. Next week, reuse the old words and add a few more. Keep a list of your successes: understanding an announcement, ordering a coffee, or describing your day. These achievements may seem small, but they prove that you are moving forward. Compare your level with yesterday’s, not with someone who has studied for ten years."
+      },
+      {
+        "fr": "Alors, quel est votre premier pas ? Choisissez cinq mots utiles, écoutez-les, écrivez une phrase pour chacun et révisez-les demain. Vous n’avez pas besoin d’attendre le moment parfait. Commencez avec le temps dont vous disposez aujourd’hui. Une langue se construit mot après mot, phrase après phrase, conversation après conversation. Dix minutes peuvent ouvrir la porte à un nouveau monde. Merci d’avoir écouté, et à très bientôt pour une nouvelle séance de français.",
+        "en": "So, what is your first step? Choose five useful words, listen to them, write one sentence for each, and review them tomorrow. You do not need to wait for the perfect moment. Start with the time you have today. A language is built word by word, sentence by sentence, conversation by conversation. Ten minutes can open the door to a new world. Thank you for listening, and see you very soon for another French session."
+      }
+    ]
+  }
 };
