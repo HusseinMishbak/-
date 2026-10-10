@@ -1,43 +1,55 @@
-# French A1.1 — deployment and account setup
+# French Learning Platform — deployment and account setup
 
-This repository contains the Arabic RTL French-learning SPA. The frontend is wired to the Supabase project **Learning French** (`yycilzamasypqpvevrup`) using only the public publishable key. No service-role or secret key is included in browser code.
+This repository contains an Arabic RTL French-learning platform with two sequential learning months. Supabase provides student accounts, cloud progress, and quiz history. The frontend uses only the public publishable key; no service-role or secret key belongs in browser code.
 
-## Current setup status
+## Learning content
 
-- `index.html` is configured with the project URL and public publishable key.
-- The Supabase project is active.
-- Database tables created: `profiles`, `student_progress`, and `quiz_attempts`.
-- Row Level Security (RLS) is enabled on all three tables.
-- Security hardening migration is applied. The teacher-check helper lives in the non-exposed `private` schema, and trigger functions cannot be called directly as public/authenticated RPCs.
-- Automated Supabase security advisor check returned no findings after hardening.
-- The live URL, public sign-up, email confirmation, and teacher role still need the final settings below.
+- **Month 1 — A1.1:** the existing four-week beginner path, including introductions, pronunciation, numbers, family, school/work, food, and the city.
+- **Month 2 — A1.2:** four more weeks and 24 trackable sessions on `être` and `avoir`, articles, gender/plural and adjectives, family/home descriptions, questions, negation, daily routines, shopping, food, prices, directions, and transport.
+- **Interactive material:** Wordwall links, including the user-provided `être` audio matching activity, plus related games for `avoir`, articles, numbers, and negation.
+- **In-platform assessment:** the month-two multiple-choice review gives instant feedback. When the learner is signed in, its score is submitted to `quiz_attempts`; external Wordwall results do not automatically sync to Supabase.
 
-## 1. Enable the public website
+## Current backend setup
 
-Open [GitHub Pages settings](https://github.com/HusseinMishbak/-/settings/pages). Under **Build and deployment**, select **Deploy from a branch**, choose branch `main`, folder `/(root)`, and save.
+- Project: `Learning French` (`yycilzamasypqpvevrup`).
+- Tables: `profiles`, `student_progress`, and `quiz_attempts`.
+- RLS is enabled on all three tables. The teacher-check helper is in the non-exposed `private` schema; trigger functions are not executable as public/authenticated RPCs.
+- The Supabase security advisor showed no findings after the RLS hardening migration.
+- `index.html` is configured with the project's URL and the public publishable key. **Never put a `service_role` or secret key in browser code.**
 
-Expected project-site URL: <https://husseinmishbak.github.io/-/>
+## 1. Publish the website
+
+Open [GitHub Pages settings](https://github.com/HusseinMishbak/-/settings/pages). Choose **Deploy from a branch**, branch `main`, folder `/(root)`, and save.
+
+Expected project site: <https://husseinmishbak.github.io/-/>
+
+The actual deployed URL should be confirmed in GitHub Pages settings. If you rename the repository or use a custom domain, use that actual URL in the next step.
 
 ## 2. Configure Supabase Auth redirects
 
-Open [Supabase URL Configuration](https://supabase.com/dashboard/project/yycilzamasypqpvevrup/auth/url-configuration):
+Open [Supabase URL Configuration](https://supabase.com/dashboard/project/yycilzamasypqpvevrup/auth/url-configuration).
 
-- **Site URL:** `https://husseinmishbak.github.io/-/`
-- Add this exact URL to **Redirect URLs**: `https://husseinmishbak.github.io/-/`
+Set **Site URL** to the actual published site. If the address above is the live one, use:
 
-Use the actual live URL if you later rename the repository or use a custom domain. Supabase uses these settings for email confirmation and password-reset redirects.
+```text
+https://husseinmishbak.github.io/-/
+```
 
-## 3. First test as a student
+Add that exact address to **Redirect URLs** too. A mismatch can send learners to the wrong path after email confirmation or password reset.
 
-1. Open the live website and go to the account section.
-2. Register with an email address and a strong password.
-3. Confirm the message sent by Supabase, if email confirmation is enabled.
-4. Sign in and mark a lesson complete.
-5. Refresh the page, then sign in from another browser/device to confirm cloud synchronization.
+## 3. Student registration and sign-in
 
-## 4. Grant the teacher role to your own account
+1. Open the published site and go to **حساب الطالب**.
+2. For a new email, register with a display name and a strong password.
+3. If email confirmation is enabled, open the Supabase confirmation message and click its link, then return to the site and sign in.
+4. If the site says the email is already registered, do not keep signing up with the same address. Use **تسجيل الدخول** or **نسيت كلمة المرور؟**.
+5. If no email arrives, check spam/junk. Confirm the Site URL and allowed Redirect URLs in step 2.
 
-New accounts are always assigned the `student` role. After you register your own account, open [Supabase SQL Editor](https://supabase.com/dashboard/project/yycilzamasypqpvevrup/sql/new) and run this one-time statement, replacing the address with the exact email you used to sign up:
+The account form now distinguishes an already-registered email and handles network exceptions with a visible message instead of leaving the submit button busy.
+
+## 4. Grant the teacher role
+
+Every new account receives the `student` role. To authorize a teacher account, first register and confirm that account, then run this one-time statement in [Supabase SQL Editor](https://supabase.com/dashboard/project/yycilzamasypqpvevrup/sql/new), substituting the exact registration email:
 
 ```sql
 update public.profiles
@@ -45,19 +57,19 @@ set role = 'teacher'
 where lower(email) = lower('YOUR_SIGNUP_EMAIL@example.com');
 ```
 
-The query should update exactly one row. If it updates zero rows, finish registration first and verify the email. Sign out and sign in again after granting the role. There is no teacher-role switch in the public interface.
+The query should update exactly one row. Sign out and sign back in to refresh the role. There is no teacher-role switch in the public interface; only an administrator should grant this role.
 
-## Data and security
+## Data access and privacy
 
-- `profiles` stores display name, email, and role.
-- `student_progress` stores completed checkboxes, completed weeks, notes, last section, and latest quiz result.
-- `quiz_attempts` stores submitted quiz scores, percentages, answers, and timestamps.
-- A student can read/update their own progress and submit their own quiz attempts. A teacher can read student progress and quiz attempts through RLS.
-- Public access is limited to the course content and the public publishable API key. **Never place a Supabase `service_role` or secret key in `index.html`.**
+- `profiles`: display name, email, and role.
+- `student_progress`: completed sessions/weeks, notes, last section, and latest quiz data.
+- `quiz_attempts`: submitted quiz score, percentage, answer selections, and timestamp.
+- Students can read/update their own progress and submit their own attempts. Teachers can read student profiles, progress, and quiz attempts through RLS.
+- Before inviting the public, publish a privacy notice explaining collected data, purpose, retention, contact information, and deletion requests. Inform learners that a teacher can view their name, email, progress, and recorded quiz history.
 
 ## Important limitations
 
-- I have verified the repository files, database tables, RLS flags, migration records, and the Supabase security advisor after hardening. I have not yet been able to verify a live GitHub Pages URL or perform a browser-based end-to-end registration test.
-- Quiz scores are currently calculated in the browser. They are suitable for practice and learning progress, not high-stakes certification or official grades.
-- Before inviting the public, publish a privacy notice describing collected data, purpose, retention, contact information, and deletion requests. Tell learners that the teacher account can view their email, name, lesson progress, and quiz history.
-- Removing a user should be done through Supabase Auth administration; related profile/progress/history rows are configured to cascade on account deletion.
+- I verified the repository content and JavaScript syntax, the three database tables, their RLS flags, migration records, and the absence of current Supabase security-advisor findings.
+- A browser-based end-to-end check of the current public Pages deployment is still needed.
+- Quiz scoring takes place in the browser, so these results are appropriate for practice and progress tracking, not high-stakes certification or official grading.
+- Removing a user should be done through Supabase Auth administration; linked profile/progress/history rows are configured to cascade on account deletion.
