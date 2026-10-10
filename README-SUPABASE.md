@@ -73,3 +73,12 @@ The query should update exactly one row. Sign out and sign back in to refresh th
 - A browser-based end-to-end check of the current public Pages deployment is still needed.
 - Quiz scoring takes place in the browser, so these results are appropriate for practice and progress tracking, not high-stakes certification or official grading.
 - Removing a user should be done through Supabase Auth administration; linked profile/progress/history rows are configured to cascade on account deletion.
+
+
+## Audio practice controls
+
+- French text marked as French (including the lesson examples and grammar phrases) is clickable; press it to hear the browser's French voice. A nearby **🔊** button is also added when there is not already a speaker button.
+- On tasks whose instructions ask the learner to speak, pronounce, present, role-play, or record an answer, a microphone control is displayed.
+- The recording control asks for microphone permission, records in the browser, and supports playback and downloading the clip as a local file. The recording itself is **not uploaded to Supabase** and is not visible to the teacher; learners should download it if they want to keep it.
+- Pronunciation playback uses the browser's Web Speech voice available on the device. The sound and voice quality therefore vary by browser and operating system; some devices may not have a French voice installed.
+- Microphone recording needs a secure context (HTTPS) and browser permission. If blocked, enable microphone access in the browser settings and reload the page.
