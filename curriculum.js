@@ -856,14 +856,14 @@ window.FRENCH_CURRICULUM = {
             "why": "Pour donner son nom, on dit Je m’appelle…"
           },
           {
-            "q": "Quelle est votre nationalité ?",
+            "q": "Ali vient d’Irak. Il est ___.",
             "options": [
-              "Je suis irakien.",
-              "J’ai irakien.",
-              "Je m’appelle irakien."
+              "irakien",
+              "irakienne",
+              "irakiens"
             ],
             "answer": 0,
-            "why": "On emploie être avec la nationalité : je suis irakien / irakienne."
+            "why": "Ali رجل مفرد، فنستخدم صيغة الجنسية للمذكر المفرد: irakien."
           },
           {
             "q": "Tu as quel âge ?",
@@ -1869,14 +1869,14 @@ window.FRENCH_CURRICULUM = {
             "why": "ami مذكر مفرد يبدأ بحركة؛ نستخدم cet."
           },
           {
-            "q": "Nous ___ le bus tous les matins. (prendre)",
+            "q": "Ils ___ un taxi. (prendre)",
             "options": [
+              "prennent",
               "prenons",
-              "prenez",
-              "prend"
+              "prenez"
             ],
             "answer": 0,
-            "why": "تصريف prendre مع nous هو prenons."
+            "why": "مع ils يكون تصريف prendre هو prennent."
           },
           {
             "q": "Pour être d’accord avec une phrase positive, on dit :",
@@ -2291,7 +2291,7 @@ window.FRENCH_CURRICULUM = {
             "accepted": [
               "prends le petit-déjeuner"
             ],
-            "why": "إجابة منطقية: D’abord… puis… لترتيب الأحداث."
+            "why": "بعد D’abord, je me lève. يمكن متابعة الجملة: Puis, je prends le petit-déjeuner."
           }
         }
       ],
@@ -2824,14 +2824,14 @@ window.FRENCH_CURRICULUM = {
             "why": "savoir + infinitif للتعبير عن القدرة على القيام بفعل."
           },
           {
-            "q": "Hier, nous ___ au musée.",
+            "q": "Hier, Paul et Marc ___ au musée.",
             "options": [
-              "sommes allés",
-              "avons allé",
+              "sont allés",
+              "ont allé",
               "allons"
             ],
             "answer": 0,
-            "why": "aller يستخدم être في passé composé: nous sommes allés."
+            "why": "aller يستخدم être في passé composé: Paul et Marc sont allés au musée."
           },
           {
             "q": "C’est le livre ___ je lis.",
@@ -3347,12 +3347,14 @@ window.FRENCH_CURRICULUM = {
             "hint": "التعبير الشائع: il fait beau."
           },
           {
-            "prompt": "Je voudrais ___ pantalon noir. (un/une)",
-            "answer": "un",
+            "prompt": "Combien ___ cette jupe ?",
+            "answer": "coûte",
             "accepted": [
-              "un"
+              "coûte",
+              "coute"
             ],
-            "hint": "pantalon اسم مذكر."
+            "hint": "jupe اسم مفرد مؤنث؛ اختر الفعل المصرف المناسب للسؤال عن السعر.",
+            "why": "Combien coûte cette jupe ?"
           },
           {
             "prompt": "Je voudrais ___ pantalon noir. (un/une)",
@@ -3572,12 +3574,13 @@ window.FRENCH_CURRICULUM = {
             }
           ],
           "exercise": {
-            "prompt": "Je voudrais ___ eau, s’il vous plaît.",
-            "answer": "de l’",
+            "prompt": "Complétez : Je voudrais ___.",
+            "answer": "de l’eau",
             "accepted": [
-              "de l’"
+              "de l’eau",
+              "de l'eau"
             ],
-            "why": "eau تبدأ بحركة؛ نقول de l’eau دون فصل الكلمة."
+            "why": "eau تبدأ بحركة، لذلك نقول Je voudrais de l’eau."
           }
         },
         {
@@ -3760,14 +3763,14 @@ window.FRENCH_CURRICULUM = {
             "why": "Je voudrais تعبير مهذب للطلب."
           },
           {
-            "q": "Pour le petit-déjeuner, je prends ___ pain.",
+            "q": "Au marché, j’achète ___ pommes.",
             "options": [
+              "des",
               "du",
-              "de la",
-              "des"
+              "de la"
             ],
             "answer": 0,
-            "why": "pain مذكر مفرد؛ نستخدم du pain."
+            "why": "pommes جمع مؤنث، لذا نستخدم des pommes."
           },
           {
             "q": "Je voudrais ___ eau, s’il vous plaît.",
