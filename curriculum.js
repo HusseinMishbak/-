@@ -81,6 +81,104 @@ window.FRENCH_CURRICULUM = {
           }
         },
         {
+          "title": "أيام الأسبوع وأشهر السنة",
+          "task": "انطق أيام الأسبوع وأشهر السنة بالفرنسية، ثم قل تاريخ اليوم وموعداً من جدولك.",
+          "explanation": "أيام الأسبوع بالفرنسية: lundi (لَنْدي)، mardi (ماردي)، mercredi (ميركْرُدي)، jeudi (جُدي)، vendredi (فاندرُدي)، samedi (سامْدي)، dimanche (ديمانش). أشهر السنة: janvier (جانفييه)، février (فيفرييه)، mars (مارس)، avril (أفريل)، mai (مي)، juin (جوان)، juillet (جوييه)، août (أوت)، septembre (سبتمبر)، octobre (أكتوبر)، novembre (نوفمبر)، décembre (ديسمبر). تُكتب أسماء الأيام والأشهر بحرف صغير عادةً. نستخدم le مع يوم محدد أو عادة متكررة: le lundi؛ ونقول en janvier أو en été. للتاريخ نقول: Nous sommes le 11 octobre. استمع إلى كل كلمة وكررها بصوت مرتفع، ثم راجع النطق من زر الاستماع إن كان متاحاً.",
+          "examples": [
+            {
+              "fr": "lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche",
+              "ar": "الاثنين، الثلاثاء، الأربعاء، الخميس، الجمعة، السبت، الأحد. النطق التقريبي: لَنْدي، ماردي، ميركْرُدي، جُدي، فاندرُدي، سامْدي، ديمانش."
+            },
+            {
+              "fr": "janvier, février, mars, avril, mai, juin",
+              "ar": "يناير، فبراير، مارس، أبريل، مايو، يونيو. النطق التقريبي: جانفييه، فيفرييه، مارس، أفريل، مي، جوان."
+            },
+            {
+              "fr": "juillet, août, septembre, octobre, novembre, décembre",
+              "ar": "يوليو، أغسطس، سبتمبر، أكتوبر، نوفمبر، ديسمبر. النطق التقريبي: جوييه، أوت، سبتمبر، أكتوبر، نوفمبر، ديسمبر."
+            },
+            {
+              "fr": "Nous sommes le 11 octobre.",
+              "ar": "نحن في الحادي عشر من أكتوبر."
+            },
+            {
+              "fr": "Mon anniversaire est en mai.",
+              "ar": "عيد ميلادي في مايو."
+            },
+            {
+              "fr": "Je travaille du lundi au vendredi.",
+              "ar": "أعمل من الاثنين إلى الجمعة."
+            },
+            {
+              "fr": "Quel jour sommes-nous ?",
+              "ar": "ما اليوم؟"
+            }
+          ],
+          "exercise": {
+            "prompt": "Mon anniversaire est ___ juillet. (en / le)",
+            "answer": "en",
+            "accepted": [
+              "en"
+            ],
+            "why": "نستخدم en مع الشهر: en juillet = في يوليو."
+          },
+          "practice": {
+            "intro": "تدرّب على نطق أيام الأسبوع وأشهر السنة بالترتيب، ثم اختر الإجابة الصحيحة واكتب تاريخاً مهماً لك بالفرنسية.",
+            "quiz": [
+              {
+                "q": "Quel jour vient après mardi ?",
+                "options": [
+                  "lundi",
+                  "mercredi",
+                  "vendredi"
+                ],
+                "answer": 1,
+                "why": "بعد mardi (الثلاثاء) يأتي mercredi (الأربعاء)."
+              },
+              {
+                "q": "Quel mois vient après avril ?",
+                "options": [
+                  "mars",
+                  "mai",
+                  "juin"
+                ],
+                "answer": 1,
+                "why": "بعد avril (أبريل) يأتي mai (مايو)."
+              },
+              {
+                "q": "Complétez : Mon anniversaire est ___ août.",
+                "options": [
+                  "en",
+                  "à",
+                  "de"
+                ],
+                "answer": 0,
+                "why": "نستخدم en قبل اسم الشهر."
+              },
+              {
+                "q": "Quel jour vient avant dimanche ?",
+                "options": [
+                  "samedi",
+                  "jeudi",
+                  "lundi"
+                ],
+                "answer": 0,
+                "why": "قبل dimanche (الأحد) يأتي samedi (السبت)."
+              }
+            ],
+            "fill": [
+              {
+                "prompt": "اكتب بالفرنسية: «في شهر نوفمبر».",
+                "answer": "en novembre",
+                "accepted": [
+                  "en novembre"
+                ],
+                "why": "اسم الشهر يأتي بعد en."
+              }
+            ]
+          }
+        },
+        {
           "title": "الضمائر وأفعال -er",
           "task": "صرّف parler أو aimer مع الضمائر، ثم اكتب خمس جمل.",
           "explanation": "الضمير يسبق الفعل غالباً. في أفعال -er احذف النهاية -er وأضف: -e، -es، -e، -ons، -ez، -ent. النهايات -es و-ent غالباً لا تُنطق.",
