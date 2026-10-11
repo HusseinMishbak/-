@@ -46,38 +46,137 @@ window.FRENCH_CURRICULUM = {
           }
         },
         {
-          "title": "الأعداد 0–20 والنطق",
-          "task": "قل عمرك ورقم هاتف افتراضياً، واكتب الأعداد بالكلمات.",
-          "explanation": "احفظ الأعداد من 0 إلى 16 كبدايات، ثم تدرّب على 17–19 المبنية باستخدام dix. كرر كل عدد منفرداً ثم ضمن جملة.",
+          "title": "الأعداد 0–60 والنطق",
+          "task": "استمع إلى الأعداد من صفر إلى ستين، ورددها بالفرنسية، ثم قل عمرك ورقم هاتف افتراضياً واكتب أعداداً مختارة بالكلمات.",
+          "explanation": "تعلّم الأعداد الفرنسية من 0 إلى 60. من 0 إلى 16 لكل عدد صيغة خاصة؛ ثم تأتي dix-sept وdix-huit وdix-neuf. بعد ذلك: vingt (20)، trente (30)، quarante (40)، cinquante (50)، soixante (60). نستخدم et un في 21 و31 و41 و51، مثل vingt et un، ونصل بقية الأعداد بشرطة، مثل vingt-deux وcinquante-neuf. انطق كل مجموعة على حدة واستمع إليها ثم كررها بصوت مرتفع.",
           "examples": [
             {
-              "fr": "J’ai vingt ans.",
-              "ar": "عمري عشرون سنة"
+              "fr": "0 : zéro · 1 : un · 2 : deux · 3 : trois · 4 : quatre · 5 : cinq · 6 : six · 7 : sept · 8 : huit · 9 : neuf",
+              "ar": "0 : صفر · 1 : واحد · 2 : اثنان · 3 : ثلاثة · 4 : أربعة · 5 : خمسة · 6 : ستة · 7 : سبعة · 8 : ثمانية · 9 : تسعة"
             },
             {
-              "fr": "Mon numéro commence par zéro six.",
-              "ar": "رقمي يبدأ بصفر ستة"
+              "fr": "10 : dix · 11 : onze · 12 : douze · 13 : treize · 14 : quatorze · 15 : quinze · 16 : seize · 17 : dix-sept · 18 : dix-huit · 19 : dix-neuf",
+              "ar": "10 : عشرة · 11 : أحد عشر · 12 : اثنا عشر · 13 : ثلاثة عشر · 14 : أربعة عشر · 15 : خمسة عشر · 16 : ستة عشر · 17 : سبعة عشر · 18 : ثمانية عشر · 19 : تسعة عشر"
             },
             {
-              "fr": "J’ai dix-huit ans.",
-              "ar": "عمري ثمانية عشر عاماً."
+              "fr": "20 : vingt · 21 : vingt et un · 22 : vingt-deux · 23 : vingt-trois · 24 : vingt-quatre · 25 : vingt-cinq · 26 : vingt-six · 27 : vingt-sept · 28 : vingt-huit · 29 : vingt-neuf",
+              "ar": "20 : عشرون · 21 : واحد وعشرون · 22 : اثنان وعشرون · 23 : ثلاثة وعشرون · 24 : أربعة وعشرون · 25 : خمسة وعشرون · 26 : ستة وعشرون · 27 : سبعة وعشرون · 28 : ثمانية وعشرون · 29 : تسعة وعشرون"
             },
             {
-              "fr": "Un, deux, trois…",
-              "ar": "واحد، اثنان، ثلاثة…"
+              "fr": "30 : trente · 31 : trente et un · 32 : trente-deux · 33 : trente-trois · 34 : trente-quatre · 35 : trente-cinq · 36 : trente-six · 37 : trente-sept · 38 : trente-huit · 39 : trente-neuf",
+              "ar": "30 : ثلاثون · 31 : واحد وثلاثون · 32 : اثنان وثلاثون · 33 : ثلاثة وثلاثون · 34 : أربعة وثلاثون · 35 : خمسة وثلاثون · 36 : ستة وثلاثون · 37 : سبعة وثلاثون · 38 : ثمانية وثلاثون · 39 : تسعة وثلاثون"
             },
             {
-              "fr": "Quel est ton numéro ?",
-              "ar": "ما رقمك؟"
+              "fr": "40 : quarante · 41 : quarante et un · 42 : quarante-deux · 43 : quarante-trois · 44 : quarante-quatre · 45 : quarante-cinq · 46 : quarante-six · 47 : quarante-sept · 48 : quarante-huit · 49 : quarante-neuf",
+              "ar": "40 : أربعون · 41 : واحد وأربعون · 42 : اثنان وأربعون · 43 : ثلاثة وأربعون · 44 : أربعة وأربعون · 45 : خمسة وأربعون · 46 : ستة وأربعون · 47 : سبعة وأربعون · 48 : ثمانية وأربعون · 49 : تسعة وأربعون"
+            },
+            {
+              "fr": "50 : cinquante · 51 : cinquante et un · 52 : cinquante-deux · 53 : cinquante-trois · 54 : cinquante-quatre · 55 : cinquante-cinq · 56 : cinquante-six · 57 : cinquante-sept · 58 : cinquante-huit · 59 : cinquante-neuf",
+              "ar": "50 : خمسون · 51 : واحد وخمسون · 52 : اثنان وخمسون · 53 : ثلاثة وخمسون · 54 : أربعة وخمسون · 55 : خمسة وخمسون · 56 : ستة وخمسون · 57 : سبعة وخمسون · 58 : ثمانية وخمسون · 59 : تسعة وخمسون"
+            },
+            {
+              "fr": "J’ai vingt ans. · Mon numéro commence par zéro six. · Il y a cinquante-deux étudiants. · Soixante minutes font une heure.",
+              "ar": "عمري عشرون سنة. · يبدأ رقمي بصفر ستة. · يوجد اثنان وخمسون طالباً. · ستون دقيقة تساوي ساعة واحدة."
             }
           ],
           "exercise": {
-            "prompt": "Écris 17 en toutes lettres.",
-            "answer": "dix-sept",
+            "prompt": "Écris 57 en toutes lettres.",
+            "answer": "cinquante-sept",
             "accepted": [
-              "dix-sept"
+              "cinquante-sept"
             ],
-            "why": "17 = dix-sept؛ اكتب العدد بالكلمات الفرنسية."
+            "why": "57 = cinquante-sept؛ نكتب cinquante ثم شرطة ثم sept."
+          },
+          "practice": {
+            "intro": "استمع إلى الأعداد، ثم اختبر نفسك في الأعداد الصغيرة والعشرات والأعداد المركبة حتى 60. اضغط زر الاستماع عند كل مثال وكرر النطق بصوت واضح.",
+            "quiz": [
+              {
+                "q": "Comment écrit-on 18 ?",
+                "options": [
+                  "dix-huit",
+                  "dix-sept",
+                  "vingt-huit"
+                ],
+                "answer": 0,
+                "why": "18 = dix-huit."
+              },
+              {
+                "q": "Quel nombre correspond à trente et un ?",
+                "options": [
+                  "13",
+                  "31",
+                  "41"
+                ],
+                "answer": 1,
+                "why": "trente et un = 31."
+              },
+              {
+                "q": "Comment écrit-on 44 ?",
+                "options": [
+                  "quarante-quatre",
+                  "quarante et quatre",
+                  "quatre-quarante"
+                ],
+                "answer": 0,
+                "why": "44 = quarante-quatre."
+              },
+              {
+                "q": "Quel nombre correspond à cinquante-neuf ?",
+                "options": [
+                  "49",
+                  "50",
+                  "59"
+                ],
+                "answer": 2,
+                "why": "cinquante-neuf = 59."
+              },
+              {
+                "q": "Comment écrit-on 60 ?",
+                "options": [
+                  "soixante",
+                  "cinquante",
+                  "seize"
+                ],
+                "answer": 0,
+                "why": "60 = soixante."
+              },
+              {
+                "q": "Complétez : vingt ___ un.",
+                "options": [
+                  "et",
+                  "de",
+                  "à"
+                ],
+                "answer": 0,
+                "why": "21 s’écrit vingt et un."
+              }
+            ],
+            "fill": [
+              {
+                "prompt": "اكتب العدد 26 بالكلمات الفرنسية.",
+                "answer": "vingt-six",
+                "accepted": [
+                  "vingt-six"
+                ],
+                "why": "26 = vingt-six."
+              },
+              {
+                "prompt": "اكتب العدد 48 بالكلمات الفرنسية.",
+                "answer": "quarante-huit",
+                "accepted": [
+                  "quarante-huit"
+                ],
+                "why": "48 = quarante-huit."
+              },
+              {
+                "prompt": "اكتب العدد 53 بالكلمات الفرنسية.",
+                "answer": "cinquante-trois",
+                "accepted": [
+                  "cinquante-trois"
+                ],
+                "why": "53 = cinquante-trois."
+              }
+            ]
           }
         },
         {
