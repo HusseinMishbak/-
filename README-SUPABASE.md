@@ -108,6 +108,14 @@ Confirm exactly one row is updated, then sign out and sign back in. The teacher 
 - Microphone recording needs a secure context (HTTPS) and browser permission. If blocked, enable microphone access in the browser settings and reload the page.
 
 
+## Or French podcast series — bilingual transcripts
+
+- The website now includes a dedicated **«بودكاست أور: الفرنسية في ست دقائق»** section inspired by the short educational episode format of language-learning podcasts; it does not reproduce BBC scripts or branding.
+- The first episode, **Le petit rituel qui change tout**, displays the French spoken transcript alongside an Arabic translation, paragraph by paragraph, and includes browser-based French playback, vocabulary, and a comprehension check.
+- The library includes **40 additional episode topics** with level, summary, sample French text, and an Arabic translation. These are topic cards/short previews, not 40 fully scripted six-minute episodes; each can be developed into a complete episode in a later content pass.
+- Playback uses the French voice available in the learner's browser/device. It requires a modern browser with Web Speech support; voice availability and quality vary by device.
+- The teacher account screen now displays an explicit authorized-teacher status and a shortcut to the teacher dashboard when the signed-in profile has the `teacher` role. It does not allow users to grant themselves this role.
+
 ## Months 3–20: expanded A2 → DELF B2 learning path
 
 The `curriculum.js` file provides a structured 18-month roadmap (72 weekly modules) beyond the Entre Nous A1 course. Each roadmap week includes:
