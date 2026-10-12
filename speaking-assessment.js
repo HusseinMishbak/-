@@ -15,7 +15,7 @@ function styles(){
  s.textContent='.sa-card{border:1px solid #d4e4ea;border-radius:18px;background:linear-gradient(180deg,#fff,#f7fbfd);padding:18px;margin:18px 0;box-shadow:0 8px 22px rgba(16,45,66,.06)}\n'+
  '.sa-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:10px}.sa-kicker{font:800 10px Inter,sans-serif;letter-spacing:.1em;color:#0d7a70;direction:ltr;text-align:left}.sa-title{margin:4px 0;color:#102d42;font-size:21px;font-weight:800}.sa-desc{margin:5px 0 12px;color:#526a7b;font-size:14px}.sa-pill{border-radius:999px;padding:5px 10px;background:#e4f6f1;color:#0b665d;font-weight:800;font-size:12px;white-space:nowrap}\n'+
  '.sa-examples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}.sa-example{border:1px solid #dce8ed;border-radius:13px;padding:12px;background:#fff;min-width:0}.sa-fr{font-size:18px;font-weight:800;color:#102d42;direction:ltr;text-align:left;display:block;line-height:1.5}.sa-ar{color:#526a7b;font-size:13px;margin-top:4px}.sa-speak{margin-top:8px;border:1px solid #c2dcd8;background:#eff9f6;color:#075e57;border-radius:9px;padding:6px 10px;font-size:12px;font-weight:800}\n'+
- '.sa-record-area{background:#edf4f8;border-radius:13px;padding:14px;margin-top:14px}.sa-prompt{font-size:14px;background:#fff;border-right:4px solid #e5b45d;border-radius:8px;padding:12px;margin:8px 0;color:#17364b}.sa-actions{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.sa-btn{border:1px solid #cadce4;background:#fff;color:#183a50;border-radius:10px;padding:9px 12px;font-weight:800;font-size:13px}.sa-btn.primary{background:#0d7a70;color:#fff;border-color:#0d7a70}.sa-btn.stop{background:#fff3df;color:#855810;border-color:#f0d7a6}.sa-btn:disabled{opacity:.45;cursor:not-allowed}.sa-status{display:block;margin-top:7px;font-size:12px;color:#526a7b;min-height:22px}.sa-consent{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.7;margin-top:10px}.sa-consent input{margin-top:5px;flex:0 0 auto}.sa-audio{display:block;width:100%;margin:10px 0}.sa-privacy{font-size:12px;color:#526a7b;background:#fff;border:1px solid #dbe7ec;border-radius:10px;padding:10px;margin-top:10px}.sa-result-list{display:grid;gap:12px;margin-top:12px}.sa-review-item{border:1px solid #dce5ec;border-radius:13px;padding:14px;background:#fff}.sa-review-meta{font-size:12px;color:#526a7b;margin:4px 0 10px}.sa-review-feedback{display:block;width:100%;min-height:78px;border:1px solid #cbdbe3;border-radius:10px;padding:10px;margin:8px 0;resize:vertical}.sa-empty{color:#617687;background:#f5f8fa;border-radius:11px;padding:14px;font-size:13px}.sa-rubric{display:grid;gap:8px;margin:10px 0}.sa-rubric-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(150px,220px);gap:10px;align-items:center;border-bottom:1px solid #e2ebef;padding:7px 0;font-size:13px}.sa-rubric-select{border:1px solid #cbdbe3;border-radius:9px;padding:7px;background:white;color:#17364b;width:100%}.sa-total{font-weight:800;color:#075e57;background:#e4f6f1;border-radius:9px;padding:8px 10px;margin:8px 0}@media(max-width:680px){.sa-examples{grid-template-columns:1fr}.sa-card{padding:13px}.sa-title{font-size:18px}}';
+ '.sa-record-area{background:#edf4f8;border-radius:13px;padding:14px;margin-top:14px}.sa-prompt{font-size:14px;background:#fff;border-right:4px solid #e5b45d;border-radius:8px;padding:12px;margin:8px 0;color:#17364b}.sa-actions{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.sa-btn{border:1px solid #cadce4;background:#fff;color:#183a50;border-radius:10px;padding:9px 12px;font-weight:800;font-size:13px}.sa-btn.primary{background:#0d7a70;color:#fff;border-color:#0d7a70}.sa-btn.stop{background:#fff3df;color:#855810;border-color:#f0d7a6}.sa-btn:disabled{opacity:.45;cursor:not-allowed}.sa-status{display:block;margin-top:7px;font-size:12px;color:#526a7b;min-height:22px}.sa-consent{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.7;margin-top:10px}.sa-consent input{margin-top:5px;flex:0 0 auto}.sa-audio{display:block;width:100%;margin:10px 0}.sa-privacy{font-size:12px;color:#526a7b;background:#fff;border:1px solid #dbe7ec;border-radius:10px;padding:10px;margin-top:10px}.sa-result-list{display:grid;gap:12px;margin-top:12px}.sa-my-submissions{border-top:1px solid #dbe7ec;margin-top:14px;padding-top:12px}.sa-my-title{font-weight:800;color:#102d42;margin-bottom:8px}.sa-my-item{border:1px solid #dce5ec;border-radius:10px;padding:10px;background:#fff;margin:8px 0}.sa-my-meta{font-size:12px;color:#526a7b;margin-bottom:7px}.sa-delete-audio{border:1px solid #efcaca;background:#fff2f2;color:#a52a2a;border-radius:9px;padding:7px 10px;font-weight:800;font-size:12px}.sa-review-item{border:1px solid #dce5ec;border-radius:13px;padding:14px;background:#fff}.sa-review-meta{font-size:12px;color:#526a7b;margin:4px 0 10px}.sa-review-feedback{display:block;width:100%;min-height:78px;border:1px solid #cbdbe3;border-radius:10px;padding:10px;margin:8px 0;resize:vertical}.sa-empty{color:#617687;background:#f5f8fa;border-radius:11px;padding:14px;font-size:13px}.sa-rubric{display:grid;gap:8px;margin:10px 0}.sa-rubric-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(150px,220px);gap:10px;align-items:center;border-bottom:1px solid #e2ebef;padding:7px 0;font-size:13px}.sa-rubric-select{border:1px solid #cbdbe3;border-radius:9px;padding:7px;background:white;color:#17364b;width:100%}.sa-total{font-weight:800;color:#075e57;background:#e4f6f1;border-radius:9px;padding:8px 10px;margin:8px 0}@media(max-width:680px){.sa-examples{grid-template-columns:1fr}.sa-card{padding:13px}.sa-title{font-size:18px}}';
  document.head.appendChild(s);
 }
 function speak(text){
@@ -33,13 +33,51 @@ function recorderHtml(key,title,prompt,limit,submitLabel){
  return '<div class="sa-record-area" data-sa-recorder data-assessment-key="'+esc(key)+'" data-limit="'+Number(limit||90)+'">'+
  '<div class="sa-kicker">SPEAKING & PRONUNCIATION</div><strong>'+esc(title)+'</strong><p class="sa-prompt">'+esc(prompt)+'</p>'+
  '<div class="sa-actions"><button type="button" class="sa-btn primary" data-sa-start>🎙️ بدء التسجيل</button><button type="button" class="sa-btn stop" data-sa-stop disabled>⏹ إيقاف</button><button type="button" class="sa-btn" data-sa-play disabled>▶ الاستماع للتسجيل</button><a class="sa-btn" data-sa-download hidden download="french-speaking-practice.webm">⬇ تنزيل التسجيل</a><button type="button" class="sa-btn primary" data-sa-submit disabled>'+esc(submitLabel||'إرسال التسجيل إلى المدرّس')+'</button></div>'+
- '<audio class="sa-audio" data-sa-audio controls hidden></audio><label class="sa-consent"><input type="checkbox" data-sa-consent><span>أوافق على إرسال هذا التسجيل الصوتي إلى مدرّس المنصة لتقييم النطق والتحدث وحفظه في حسابي. لن يُرسل دون موافقتي.</span></label><span class="sa-status" data-sa-status aria-live="polite">يمكنك التسجيل والاستماع والتنزيل محلياً. يتطلب الإرسال إلى المدرّس تسجيل الدخول.</span><div class="sa-privacy">الحد الأقصى '+Number(limit||90)+' ثانية. التسجيلات المرسلة خاصة بالطالب والمدرّس المخوّل.</div></div>';
+ '<audio class="sa-audio" data-sa-audio controls hidden></audio><label class="sa-consent"><input type="checkbox" data-sa-consent><span>أوافق على إرسال هذا التسجيل الصوتي إلى مدرّس المنصة لتقييم النطق والتحدث وحفظه في حسابي. لن يُرسل دون موافقتي.</span></label><span class="sa-status" data-sa-status aria-live="polite">يمكنك التسجيل والاستماع والتنزيل محلياً. يتطلب الإرسال إلى المدرّس تسجيل الدخول.</span><div class="sa-my-submissions" data-sa-my-submissions><div class="sa-my-title">تسجيلاتي المرسلة</div><div class="sa-empty">سجّل الدخول لعرض التسجيلات السابقة.</div></div><div class="sa-privacy">الحد الأقصى '+Number(limit||90)+' ثانية. التسجيلات المرسلة خاصة بالطالب والمدرّس المخوّل.</div></div>';
 }
 function bindRecorder(box){
  if(box.dataset.saBound==='1')return;box.dataset.saBound='1';
  const start=$('[data-sa-start]',box),stop=$('[data-sa-stop]',box),play=$('[data-sa-play]',box),dl=$('[data-sa-download]',box),send=$('[data-sa-submit]',box),consent=$('[data-sa-consent]',box),status=$('[data-sa-status]',box),audio=$('[data-sa-audio]',box);
  let rec=null,stream=null,chunks=[],blob=null,url=null,startAt=0,seconds=0,timer=null,busy=false;
  const say=t=>{status.textContent=t};
+ const mySubmissions=$('[data-sa-my-submissions]',box);
+ async function refreshMySubmissions(){
+  if(!mySubmissions)return;
+  const db=client(),ss=session();
+  if(!db||!ss?.user?.id){mySubmissions.innerHTML='<div class="sa-my-title">تسجيلاتي المرسلة</div><div class="sa-empty">سجّل الدخول لعرض التسجيلات السابقة وإدارتها.</div>';return;}
+  mySubmissions.innerHTML='<div class="sa-my-title">تسجيلاتي المرسلة</div><div class="sa-empty">جارٍ تحميل تسجيلاتك…</div>';
+  const key=String(box.dataset.assessmentKey||'speaking-practice').replace(/[^a-z0-9_-]/gi,'-');
+  const result=await db.from('speaking_submissions').select('id,assessment_key,prompt,storage_path,mime_type,duration_seconds,submitted_at,teacher_feedback,score_total').eq('user_id',ss.user.id).eq('assessment_key',key).order('submitted_at',{ascending:false});
+  if(result.error){mySubmissions.innerHTML='<div class="sa-my-title">تسجيلاتي المرسلة</div><div class="sa-empty">تعذر تحميل تسجيلاتك. '+esc(result.error.message)+'</div>';return;}
+  mySubmissions.innerHTML='<div class="sa-my-title">تسجيلاتي المرسلة ('+result.data.length+')</div>';
+  if(!result.data.length){mySubmissions.insertAdjacentHTML('beforeend','<div class="sa-empty">لا توجد تسجيلات مرسلة لهذا التمرين. يمكنك تسجيل إجابة جديدة وإرسالها.</div>');return;}
+  for(const item of result.data){
+   const card=document.createElement('div');card.className='sa-my-item';
+   const meta=document.createElement('div');meta.className='sa-my-meta';meta.textContent=new Date(item.submitted_at).toLocaleString('ar',{dateStyle:'medium',timeStyle:'short'})+' · '+Number(item.duration_seconds||0)+' ثانية'+(item.score_total!=null?' · الدرجة: '+item.score_total+'/10':'');card.appendChild(meta);
+   const player=document.createElement('audio');player.controls=true;player.preload='none';player.className='sa-audio';
+   const signed=await db.storage.from('student-audio').createSignedUrl(item.storage_path,900);
+   if(!signed.error)player.src=signed.data.signedUrl;else {player.hidden=true;const warn=document.createElement('div');warn.className='sa-empty';warn.textContent='تعذر فتح التسجيل الصوتي.';card.appendChild(warn);}
+   card.appendChild(player);
+   if(item.teacher_feedback){const fb=document.createElement('p');fb.className='sa-desc';fb.textContent='ملاحظات المدرّس: '+item.teacher_feedback;card.appendChild(fb);}
+   const del=document.createElement('button');del.type='button';del.className='sa-delete-audio';del.textContent='حذف هذا التسجيل وإعادة الإرسال';
+   const statusLine=document.createElement('span');statusLine.className='sa-status';statusLine.setAttribute('aria-live','polite');
+   del.addEventListener('click',async()=>{
+    if(!window.confirm('حذف هذا التسجيل نهائياً؟ سيُحذف معه تقييم المدرّس وملاحظاته إن وُجدت. يمكنك بعدها تسجيل إجابة جديدة.'))return;
+    del.disabled=true;statusLine.textContent='جارٍ حذف التسجيل…';
+    try{
+     const current=session();if(!current?.user?.id||current.user.id!==ss.user.id)throw new Error('انتهت جلسة الدخول؛ سجّل الدخول مجدداً.');
+     const removed=await db.storage.from('student-audio').remove([item.storage_path]);
+     if(removed.error)throw removed.error;
+     const deleted=await db.from('speaking_submissions').delete().eq('id',item.id).eq('user_id',current.user.id).select('id');
+     if(deleted.error)throw deleted.error;
+     if(!deleted.data||!deleted.data.length)throw new Error('لم يُحذف سجل قاعدة البيانات. تواصل مع المدرّس إذا استمر الأمر.');
+     app()?.toast?.('تم حذف التسجيل. يمكنك تسجيل إجابة جديدة وإرسالها.');
+     await refreshMySubmissions();
+    }catch(error){console.error('Student audio deletion failed',error);statusLine.textContent='تعذر حذف التسجيل بالكامل: '+(error?.message||'خطأ غير معروف');del.disabled=false;}
+   });
+   card.appendChild(del);card.appendChild(statusLine);mySubmissions.appendChild(card);
+  }
+ }
  function cleanup(){if(timer){clearTimeout(timer);timer=null;}if(stream){stream.getTracks().forEach(t=>t.stop());stream=null;}}
  function dropUrl(){if(url){URL.revokeObjectURL(url);url=null;}}
  function stopNow(){if(rec&&rec.state!=='inactive'){try{rec.stop()}catch(_){}}cleanup();}
@@ -78,11 +116,12 @@ function bindRecorder(box){
    const promptText=box.querySelector('.sa-prompt')?.textContent||'تسجيل نطق وتحدث باللغة الفرنسية';
    const ins=await db.from('speaking_submissions').insert({user_id:uid,assessment_key:key,prompt:promptText,storage_path:path,mime_type:mime,duration_seconds:seconds}).select('id').single();
    if(ins.error)throw ins.error;
-   say('تم إرسال التسجيل بنجاح إلى المدرّس. يمكنك الاحتفاظ بنسخة محلية.');send.textContent='✓ تم الإرسال';send.disabled=true;app()?.toast?.('تم إرسال التسجيل الصوتي إلى المدرّس.');
+   say('تم إرسال التسجيل بنجاح إلى المدرّس. يمكنك عرض تسجيلاتك السابقة أدناه وحذف أي تسجيل وإعادة إرساله.');send.textContent='✓ تم الإرسال';send.disabled=true;app()?.toast?.('تم إرسال التسجيل الصوتي إلى المدرّس.');await refreshMySubmissions();
   }catch(e){console.error('Speaking upload failed',e);if(path){try{await db.storage.from('student-audio').remove([path])}catch(_){}}say('تعذر إرسال التسجيل. تحقق من الاتصال وتسجيل الدخول ثم حاول مجدداً. '+(e?.message||''));send.disabled=!blob||!consent.checked;}
   finally{busy=false;start.disabled=false;}
  });
  box.addEventListener('DOMNodeRemoved',cleanup);
+ refreshMySubmissions();
 }
 function buildCard(c){
  const el=document.createElement('section');el.className='sa-card';
