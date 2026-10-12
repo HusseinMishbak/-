@@ -335,6 +335,42 @@
 @media(max-width:900px){.placement-intro{grid-template-columns:1fr}.placement-questions{grid-template-columns:1fr}.placement-band-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.placement-skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.advanced-level-grid{grid-template-columns:1fr}}
 @media(max-width:560px){.placement-steps{grid-template-columns:1fr}.placement-result-metrics{grid-template-columns:1fr}.placement-band-grid{grid-template-columns:1fr}.cover-level-ladder{font-size:22px}.placement-actions{position:static}}
 
+
+/* Accessibility hotfix: restore contrast in the five-minute listening player */
+#panel-listening .listening-hero{
+ background:linear-gradient(140deg,#102d42,#1f5964)!important;
+ color:#ffffff!important;
+ border:1px solid #315d6c!important;
+}
+#panel-listening .listening-hero h2,
+#panel-listening .listening-hero h1,
+#panel-listening .listening-hero>p,
+#panel-listening .listening-hero .kicker,
+#panel-listening .listening-hero label,
+#panel-listening .listening-hero .listening-playback-status{
+ color:#ffffff!important;
+ opacity:1!important;
+ text-shadow:none!important;
+}
+#panel-listening .listening-hero select,
+#panel-listening .listening-hero .form-control{
+ color:#172f40!important;background:#ffffff!important;border:1px solid #b8cbd5!important;
+}
+#panel-listening .listening-study-tip{
+ color:#493b20!important;background:#fff7e6!important;border:1px solid #f0d9a4!important;border-right:4px solid #d9a441!important;
+}
+#panel-listening .listening-study-tip strong,
+#panel-listening .listening-study-tip *{color:#493b20!important;opacity:1!important;text-shadow:none!important}
+#panel-listening #listeningConversationLines .listening-paragraph-pair,
+#panel-listening #listeningConversationLines .listening-language-card{
+ color:#172f40!important;opacity:1!important;text-shadow:none!important;
+}
+#panel-listening #listeningConversationLines .listening-language-card.french{background:#edf7f5!important}
+#panel-listening #listeningConversationLines .listening-language-card.arabic{background:#f7fafc!important}
+#panel-listening #listeningConversationLines .listening-lang-label{color:#24556c!important}
+#panel-listening #listeningConversationLines .listening-transcript{color:#172f40!important;opacity:1!important;font-size:15px!important;line-height:2!important}
+#panel-listening #listeningConversationLines button{color:#143d3a!important}
+#panel-listening .listening-progress-track{background:#547b83!important}
 </style>
 </head>
 <body>
