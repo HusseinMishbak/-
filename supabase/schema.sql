@@ -178,13 +178,15 @@ create index if not exists speaking_submissions_assessment_idx on public.speakin
 create index if not exists speaking_submissions_reviewed_by_idx on public.speaking_submissions (reviewed_by);
 alter table public.speaking_submissions enable row level security;
 revoke all on table public.speaking_submissions from anon, authenticated;
-grant select, insert on table public.speaking_submissions to authenticated;
+grant select, insert, delete on table public.speaking_submissions to authenticated;
 grant update (teacher_feedback, rubric_scores, score_total, reviewed_at, reviewed_by) on table public.speaking_submissions to authenticated;
 drop policy if exists "students and teachers can read speaking submissions" on public.speaking_submissions;
 drop policy if exists "students can submit own speaking recordings" on public.speaking_submissions;
 drop policy if exists "teachers can review speaking submissions" on public.speaking_submissions;
+drop policy if exists "students can delete own speaking submissions" on public.speaking_submissions;
 create policy "students and teachers can read speaking submissions" on public.speaking_submissions for select to authenticated using (user_id = (select auth.uid()) or (select private.is_teacher()));
 create policy "students can submit own speaking recordings" on public.speaking_submissions for insert to authenticated with check (user_id = (select auth.uid()) and storage_path like ((select auth.uid())::text || '/%'));
+create policy "students can delete own speaking submissions" on public.speaking_submissions for delete to authenticated using (user_id = (select auth.uid()));
 create policy "teachers can review speaking submissions" on public.speaking_submissions for update to authenticated using ((select private.is_teacher())) with check ((select private.is_teacher()));
 insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types) values ('student-audio','student-audio',false,12582912,array['audio/webm','audio/mp4','audio/ogg','audio/wav','audio/mpeg']) on conflict (id) do update set public=false,file_size_limit=excluded.file_size_limit,allowed_mime_types=excluded.allowed_mime_types;
 drop policy if exists "students upload own speaking audio" on storage.objects;
