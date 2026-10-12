@@ -41,15 +41,18 @@ function bindRecorder(box){
  let rec=null,stream=null,chunks=[],blob=null,url=null,startAt=0,seconds=0,timer=null,busy=false;
  const say=t=>{status.textContent=t};
  const mySubmissions=$('[data-sa-my-submissions]',box);
+ const initialSendLabel=send.textContent;
+ mySubmissions?.addEventListener('click',e=>{if(e.target.closest('[data-sa-refresh]'))refreshMySubmissions();});
+ function submissionsHeading(label){return '<div class="sa-my-title" style="display:flex;align-items:center;justify-content:space-between;gap:8px"><span>'+esc(label)+'</span><button type="button" class="sa-btn" data-sa-refresh>تحديث</button></div>';}
  async function refreshMySubmissions(){
   if(!mySubmissions)return;
   const db=client(),ss=session();
-  if(!db||!ss?.user?.id){mySubmissions.innerHTML='<div class="sa-my-title">تسجيلاتي المرسلة</div><div class="sa-empty">سجّل الدخول لعرض التسجيلات السابقة وإدارتها.</div>';return;}
-  mySubmissions.innerHTML='<div class="sa-my-title">تسجيلاتي المرسلة</div><div class="sa-empty">جارٍ تحميل تسجيلاتك…</div>';
+  if(!db||!ss?.user?.id){mySubmissions.innerHTML=submissionsHeading('تسجيلاتي المرسلة')+'<div class="sa-empty">سجّل الدخول لعرض التسجيلات السابقة وإدارتها.</div>';return;}
+  mySubmissions.innerHTML=submissionsHeading('تسجيلاتي المرسلة')+'<div class="sa-empty">جارٍ تحميل تسجيلاتك…</div>';
   const key=String(box.dataset.assessmentKey||'speaking-practice').replace(/[^a-z0-9_-]/gi,'-');
   const result=await db.from('speaking_submissions').select('id,assessment_key,prompt,storage_path,mime_type,duration_seconds,submitted_at,teacher_feedback,score_total').eq('user_id',ss.user.id).eq('assessment_key',key).order('submitted_at',{ascending:false});
-  if(result.error){mySubmissions.innerHTML='<div class="sa-my-title">تسجيلاتي المرسلة</div><div class="sa-empty">تعذر تحميل تسجيلاتك. '+esc(result.error.message)+'</div>';return;}
-  mySubmissions.innerHTML='<div class="sa-my-title">تسجيلاتي المرسلة ('+result.data.length+')</div>';
+  if(result.error){mySubmissions.innerHTML=submissionsHeading('تسجيلاتي المرسلة')+'<div class="sa-empty">تعذر تحميل تسجيلاتك. '+esc(result.error.message)+'</div>';return;}
+  mySubmissions.innerHTML=submissionsHeading('تسجيلاتي المرسلة ('+result.data.length+')');
   if(!result.data.length){mySubmissions.insertAdjacentHTML('beforeend','<div class="sa-empty">لا توجد تسجيلات مرسلة لهذا التمرين. يمكنك تسجيل إجابة جديدة وإرسالها.</div>');return;}
   for(const item of result.data){
    const card=document.createElement('div');card.className='sa-my-item';
@@ -85,7 +88,7 @@ function bindRecorder(box){
   if(!navigator.mediaDevices?.getUserMedia||!window.MediaRecorder){say('التسجيل غير مدعوم في هذا المتصفح. جرّب Chrome أو Safari حديثاً.');return;}
   if(!window.isSecureContext){say('يلزم فتح المنصة عبر HTTPS والسماح باستخدام الميكروفون.');return;}
   try{
-   start.disabled=true;say('نطلب إذن الميكروفون…');stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}});
+   start.disabled=true;send.textContent=initialSendLabel;say('نطلب إذن الميكروفون…');stream=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true}});
    const types=['audio/webm;codecs=opus','audio/webm','audio/mp4','audio/ogg'];const mime=types.find(t=>MediaRecorder.isTypeSupported(t));rec=mime?new MediaRecorder(stream,{mimeType:mime}):new MediaRecorder(stream);
    chunks=[];blob=null;seconds=0;startAt=Date.now();
    rec.ondataavailable=e=>{if(e.data&&e.data.size)chunks.push(e.data)};
