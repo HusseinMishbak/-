@@ -34,10 +34,35 @@
     .replace(/>/g, '&gt;').replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
 
+  const CORRECTION_MODE_KEY = 'urAssessmentCorrectionMode:v1';
   const TEXT = {
-    ar: { correct: 'إجابة صحيحة ✓', answer: 'الإجابة الصحيحة: ', choose: 'اختر إجابة أولاً، ثم صحّح هذا السؤال.', write: 'اكتب إجابتك أولاً، ثم صحّح هذا السؤال.', meaning: 'اختر المعنى أولاً، ثم صحّح هذا السؤال.', order: 'رتّب الكلمات أولاً، ثم تحقّق من الإجابة.' },
-    en: { correct: 'Correct ✓', answer: 'Correct answer: ', choose: 'Choose an answer first, then check this question.', write: 'Enter your answer first, then check this question.', meaning: 'Choose a meaning first, then check this question.', order: 'Arrange the words first, then check your answer.' },
-    fr: { correct: 'Bonne réponse ✓', answer: 'Réponse correcte : ', choose: 'Choisissez une réponse avant de corriger cette question.', write: 'Saisissez votre réponse avant de corriger cette question.', meaning: 'Choisissez un sens avant de corriger cette question.', order: 'Mettez les mots dans l’ordre avant de vérifier la réponse.' }
+    ar: {
+      correct: 'إجابة صحيحة ✓', answer: 'الإجابة الصحيحة: ', choose: 'اختر إجابة أولاً، ثم صحّح هذا السؤال.',
+      write: 'اكتب إجابتك أولاً، ثم صحّح هذا السؤال.', meaning: 'اختر المعنى أولاً، ثم صحّح هذا السؤال.',
+      order: 'رتّب الكلمات أولاً، ثم تحقّق من الإجابة.', modeLabel: 'طريقة التصحيح',
+      singleMode: 'تصحيح كل فقرة بمفردها', allMode: 'تصحيح جميع الفقرات بعد الانتهاء',
+      singleHint: 'سيظهر زر تصحيح بجانب كل سؤال. صحّح السؤال بعد إجابتك عنه.',
+      allHint: 'أجب عن الأسئلة أولاً، ثم استخدم زر التصحيح الجماعي لحساب النتيجة وإظهار التغذية الراجعة.',
+      itemButton: 'صحّح هذا السؤال', batchResult: 'النتيجة: {score} من {total} جمل صحيحة.'
+    },
+    en: {
+      correct: 'Correct ✓', answer: 'Correct answer: ', choose: 'Choose an answer first, then check this question.',
+      write: 'Enter your answer first, then check this question.', meaning: 'Choose a meaning first, then check this question.',
+      order: 'Arrange the words first, then check your answer.', modeLabel: 'Correction mode',
+      singleMode: 'Correct each question individually', allMode: 'Correct all answers at the end',
+      singleHint: 'A correction button appears beside each question. Check your answer when you finish it.',
+      allHint: 'Answer all questions first, then use the whole-activity button to see your score and feedback.',
+      itemButton: 'Check this question', batchResult: 'Result: {score} of {total} sentences correct.'
+    },
+    fr: {
+      correct: 'Bonne réponse ✓', answer: 'Réponse correcte : ', choose: 'Choisissez une réponse avant de corriger cette question.',
+      write: 'Saisissez votre réponse avant de corriger cette question.', meaning: 'Choisissez un sens avant de corriger cette question.',
+      order: 'Mettez les mots dans l’ordre avant de vérifier la réponse.', modeLabel: 'Mode de correction',
+      singleMode: 'Corriger chaque question séparément', allMode: 'Corriger toutes les réponses à la fin',
+      singleHint: 'Un bouton de correction apparaît à côté de chaque question. Vérifiez votre réponse dès que vous avez terminé.',
+      allHint: 'Répondez à toutes les questions, puis utilisez le bouton de correction globale pour afficher le résultat et les explications.',
+      itemButton: 'Corriger cette question', batchResult: 'Résultat : {score} sur {total} phrases correctes.'
+    }
   };
   function text(key) {
     const language = document.documentElement.dataset.uiLang || 'ar';
@@ -90,20 +115,94 @@
     button.type = 'button';
     button.className = 'btn btn-soft ur-grade-single';
     button.dataset.urGradeSingle = '1';
-    button.textContent = 'صحّح هذا السؤال';
-    button.setAttribute('aria-label', 'تصحيح هذا السؤال فقط');
+    button.textContent = text('itemButton');
+    button.setAttribute('aria-label', text('itemButton'));
 
     actions.appendChild(button);
     feedback.parentNode.insertBefore(actions, feedback);
   }
 
+  function readCorrectionMode() {
+    try {
+      const saved = localStorage.getItem(CORRECTION_MODE_KEY);
+      return saved === 'all' ? 'all' : 'single';
+    } catch (_) { return 'single'; }
+  }
+
+  function getControlScope(container) {
+    if (container.matches('[data-unit-vocab-test]')) return container;
+    return container.parentElement || container;
+  }
+
+  const BATCH_BUTTON_SELECTOR = [
+    '#gradeQuiz', '#gradeMonth2Quiz', '#gradePlacement',
+    '[data-grade-book-quiz]', '[data-grade-book-fill]', '[data-grade-book-match]',
+    '[data-grade-book-order]', '[data-grade-week]', '[data-grade-unit-vocab]',
+    '[data-grade-civic]', '[data-grade-placement]'
+  ].join(',');
+
+  function setButtonVisibility(button, visible) {
+    button.hidden = !visible;
+    button.classList.toggle('ur-mode-hidden', !visible);
+  }
+
+  function applyMode(container, mode) {
+    if (!container || !container.isConnected) return;
+    const scope = getControlScope(container);
+    const single = mode !== 'all';
+    scope.querySelectorAll('.ur-grade-single').forEach(button => setButtonVisibility(button, single));
+    scope.querySelectorAll('[data-check-order]').forEach(button => setButtonVisibility(button, single));
+    scope.querySelectorAll(BATCH_BUTTON_SELECTOR).forEach(button => setButtonVisibility(button, !single));
+    const guide = Array.from(scope.querySelectorAll('.ur-assessment-controls'))
+      .find(node => node.dataset.forContainer === getContainerKey(container));
+    if (guide) {
+      const hint = guide.querySelector('.ur-assessment-guide');
+      if (hint) hint.textContent = text(single ? 'singleHint' : 'allHint');
+    }
+  }
+
+  let guideCounter = 0;
+  function getContainerKey(container) {
+    if (!container.dataset.urCorrectionKey) container.dataset.urCorrectionKey = 'ur-correction-' + (++guideCounter);
+    return container.dataset.urCorrectionKey;
+  }
+
+  function syncCorrectionMode(mode) {
+    const chosen = mode === 'all' ? 'all' : 'single';
+    try { localStorage.setItem(CORRECTION_MODE_KEY, chosen); } catch (_) {}
+    document.querySelectorAll('.ur-correction-mode').forEach(select => { select.value = chosen; });
+    document.querySelectorAll(GUIDE_SELECTOR).forEach(container => applyMode(container, chosen));
+  }
+
   function addGuide(container) {
-    if (container.dataset.urGuideBound === '1') return;
+    if (container.dataset.urGuideBound === '1') {
+      applyMode(container, readCorrectionMode());
+      return;
+    }
     container.dataset.urGuideBound = '1';
-    const guide = document.createElement('p');
-    guide.className = 'ur-assessment-guide';
-    guide.textContent = 'اختر طريقة التصحيح: صحّح كل سؤال فور الانتهاء منه، أو أجب عن جميع الأسئلة ثم استخدم زر تصحيح الاختبار لحساب النتيجة الإجمالية.';
+    const key = getContainerKey(container);
+    const guide = document.createElement('div');
+    guide.className = 'ur-assessment-controls';
+    guide.dataset.forContainer = key;
+
+    const label = document.createElement('label');
+    label.textContent = text('modeLabel');
+    const select = document.createElement('select');
+    select.className = 'ur-correction-mode';
+    select.setAttribute('aria-label', text('modeLabel'));
+    select.innerHTML = '<option value="single">' + text('singleMode') + '</option><option value="all">' + text('allMode') + '</option>';
+    select.value = readCorrectionMode();
+    label.appendChild(select);
+
+    const hint = document.createElement('p');
+    hint.className = 'ur-assessment-guide';
+    hint.setAttribute('aria-live', 'polite');
+    hint.textContent = text(select.value === 'all' ? 'allHint' : 'singleHint');
+    guide.appendChild(label);
+    guide.appendChild(hint);
     container.parentNode.insertBefore(guide, container);
+    select.addEventListener('change', () => syncCorrectionMode(select.value));
+    applyMode(container, readCorrectionMode());
   }
 
   function scan(root) {
@@ -211,6 +310,33 @@
   }
 
   document.addEventListener('click', function (event) {
+    const gradeOrder = event.target.closest('[data-grade-book-order]');
+    if (gradeOrder) {
+      const unit = gradeOrder.dataset.gradeBookOrder;
+      const wrap = document.querySelector('[data-book-practice-unit="' + unit + '"]');
+      const items = wrap ? Array.from(wrap.querySelectorAll('.book-order-grid .book-order-item')) : [];
+      if (!items.length) return;
+      items.forEach(correctSingle);
+      const score = items.filter(item => item.classList.contains('ur-checked-correct')).length;
+      const result = wrap.querySelector('#book-order-result-' + unit);
+      if (result) {
+        result.hidden = false;
+        result.textContent = text('batchResult').replace('{score}', String(score)).replace('{total}', String(items.length));
+      }
+      return;
+    }
+
+    const resetOrder = event.target.closest('[data-reset-book-order]');
+    if (resetOrder) {
+      const unit = resetOrder.dataset.resetBookOrder;
+      const wrap = document.querySelector('[data-book-practice-unit="' + unit + '"]');
+      if (!wrap) return;
+      wrap.querySelectorAll('.book-order-grid [data-reset-order]').forEach(button => button.click());
+      const result = wrap.querySelector('#book-order-result-' + unit);
+      if (result) { result.hidden = true; result.textContent = ''; }
+      return;
+    }
+
     const button = event.target.closest('[data-ur-grade-single]');
     if (!button) return;
     const card = button.closest(ITEM_SELECTOR);
@@ -229,6 +355,7 @@
     }
   }
   document.addEventListener('change', function (event) {
+    if (event.target.matches('.ur-correction-mode')) return;
     if (event.target.matches('input[type="radio"], select')) clearPreviousFeedback(event.target);
   });
   document.addEventListener('input', function (event) {
