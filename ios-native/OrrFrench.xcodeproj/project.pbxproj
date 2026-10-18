@@ -1,0 +1,255 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 56;
+    objects = {
+
+/* Begin PBXBuildFile section */
+        A10000000000000000000020 /* OrrFrenchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000010 /* OrrFrenchApp.swift */; };
+        A10000000000000000000021 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000011 /* AppLanguage.swift */; };
+        A10000000000000000000022 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000012 /* AppState.swift */; };
+        A10000000000000000000023 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000013 /* Theme.swift */; };
+        A10000000000000000000024 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000014 /* ContentView.swift */; };
+        A10000000000000000000025 /* LearningViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000015 /* LearningViews.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+        A10000000000000000000010 /* OrrFrenchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrrFrenchApp.swift; sourceTree = "<group>"; };
+        A10000000000000000000011 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+        A10000000000000000000012 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+        A10000000000000000000013 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+        A10000000000000000000014 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+        A10000000000000000000015 /* LearningViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningViews.swift; sourceTree = "<group>"; };
+        A10000000000000000000016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        A10000000000000000000006 /* OrrFrench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrrFrench.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+        A10000000000000000000031 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+        A10000000000000000000003 = {
+            isa = PBXGroup;
+            children = (
+                A10000000000000000000005 /* OrrFrench */,
+                A10000000000000000000004 /* Products */,
+            );
+            sourceTree = "<group>";
+        };
+        A10000000000000000000005 /* OrrFrench */ = {
+            isa = PBXGroup;
+            children = (
+                A10000000000000000000010 /* OrrFrenchApp.swift */,
+                A10000000000000000000011 /* AppLanguage.swift */,
+                A10000000000000000000012 /* AppState.swift */,
+                A10000000000000000000013 /* Theme.swift */,
+                A10000000000000000000014 /* ContentView.swift */,
+                A10000000000000000000015 /* LearningViews.swift */,
+                A10000000000000000000016 /* Info.plist */,
+            );
+            path = OrrFrench;
+            sourceTree = "<group>";
+        };
+        A10000000000000000000004 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                A10000000000000000000006 /* OrrFrench.app */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+        A10000000000000000000002 /* OrrFrench */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = A10000000000000000000041 /* Build configuration list for PBXNativeTarget "OrrFrench" */;
+            buildPhases = (
+                A10000000000000000000030 /* Sources */,
+                A10000000000000000000031 /* Frameworks */,
+                A10000000000000000000032 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = OrrFrench;
+            productName = OrrFrench;
+            productReference = A10000000000000000000006 /* OrrFrench.app */;
+            productType = "com.apple.product-type.application";
+        };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+        A10000000000000000000001 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                BuildIndependentTargetsInParallel = 1;
+                LastSwiftUpdateCheck = 2700;
+                LastUpgradeCheck = 2700;
+                TargetAttributes = {
+                    A10000000000000000000002 = {
+                        CreatedOnToolsVersion = 27.1;
+                    };
+                };
+            };
+            buildConfigurationList = A10000000000000000000040 /* Build configuration list for PBXProject "OrrFrench" */;
+            compatibilityVersion = "Xcode 14.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = A10000000000000000000003;
+            productRefGroup = A10000000000000000000004 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                A10000000000000000000002 /* OrrFrench */,
+            );
+        };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+        A10000000000000000000032 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+        A10000000000000000000030 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                A10000000000000000000020 /* OrrFrenchApp.swift in Sources */,
+                A10000000000000000000021 /* AppLanguage.swift in Sources */,
+                A10000000000000000000022 /* AppState.swift in Sources */,
+                A10000000000000000000023 /* Theme.swift in Sources */,
+                A10000000000000000000024 /* ContentView.swift in Sources */,
+                A10000000000000000000025 /* LearningViews.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+        A10000000000000000000042 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INTROSPECTION_IN_FRAMEWORKS = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu17;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+                SWIFT_VERSION = 5.0;
+                TARGETED_DEVICE_FAMILY = "1";
+            };
+            name = Debug;
+        };
+        A10000000000000000000043 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INTROSPECTION_IN_FRAMEWORKS = YES;
+                CLANG_WARN_OBJC_ARC = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                COPY_PHASE_STRIP = YES;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+                SDKROOT = iphoneos;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_VERSION = 5.0;
+                TARGETED_DEVICE_FAMILY = "1";
+            };
+            name = Release;
+        };
+        A10000000000000000000044 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                CODE_SIGN_STYLE = Automatic;
+                CURRENT_PROJECT_VERSION = 1;
+                GENERATE_INFOPLIST_FILE = NO;
+                INFOPLIST_FILE = OrrFrench/Info.plist;
+                MARKETING_VERSION = 0.1;
+                PRODUCT_BUNDLE_IDENTIFIER = com.husseinmishbak.orrfrench;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 5.0;
+                TARGETED_DEVICE_FAMILY = "1";
+            };
+            name = Debug;
+        };
+        A10000000000000000000045 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                CODE_SIGN_STYLE = Automatic;
+                CURRENT_PROJECT_VERSION = 1;
+                GENERATE_INFOPLIST_FILE = NO;
+                INFOPLIST_FILE = OrrFrench/Info.plist;
+                MARKETING_VERSION = 0.1;
+                PRODUCT_BUNDLE_IDENTIFIER = com.husseinmishbak.orrfrench;
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 5.0;
+                TARGETED_DEVICE_FAMILY = "1";
+            };
+            name = Release;
+        };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+        A10000000000000000000040 /* Build configuration list for PBXProject "OrrFrench" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                A10000000000000000000042 /* Debug */,
+                A10000000000000000000043 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        A10000000000000000000041 /* Build configuration list for PBXNativeTarget "OrrFrench" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                A10000000000000000000044 /* Debug */,
+                A10000000000000000000045 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+/* End XCConfigurationList section */
+    };
+    rootObject = A10000000000000000000001 /* Project object */;
+}
