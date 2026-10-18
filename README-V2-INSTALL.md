@@ -10,7 +10,7 @@
 ## Deploy and enable cross-device progress
 
 1. Merge the Version 2 branch/pull request into `main` and wait for GitHub Pages to publish the change.
-2. Open the Supabase project used by the site, select **SQL Editor**, create a new query, paste the contents of `supabase/upgrade-v2.sql`, and run it once.
+2. The connected production Supabase project has already had the additive V2 migration applied. For any separate/test Supabase project, open **SQL Editor**, paste `supabase/upgrade-v2.sql`, and run it once.
 3. Open the live site online and sign in. Existing lesson/quiz cloud sync continues to use the current `student_progress` schema; the migration adds the separate `learning_experience` JSON field for the new dashboard.
 4. On each phone, open the same site and sign in using the **same account**. Dashboard progress can then load from the cloud. A guest session or a device with no sign-in stores its dashboard data locally only.
 
