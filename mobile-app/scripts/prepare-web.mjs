@@ -41,6 +41,10 @@ let html = await readFile(resolve(out, 'index.html'), 'utf8');
 // The web source already owns the manifest/service-worker tags. Add only
 // native presentation metadata here, without duplicating service-worker
 // registration or replacing the existing hosted-site URLs.
+// Use the mobile shell worker in this bundled distribution. Native Capacitor
+// uses capacitor://localhost and does not register service workers.
+html = html.replace("register('./service-worker.js')", "register('./sw.js')");
+
 if (!html.includes('name="orr-native-app"')) {
   html = html.replace('</head>', `  <meta name="orr-native-app" content="ios-android">
   <style id="orr-native-mobile-ui">
