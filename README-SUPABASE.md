@@ -143,9 +143,7 @@ The core counter currently tracks **336 learning sessions**: 48 sessions aligned
 
 ## Student self-service account deletion
 
-The student account page now includes **حذف حسابي نهائياً**. The secure server-side function source is at `supabase/functions/delete-account/index.ts`. It requires an authenticated student session, rejects teacher accounts, removes that student's private `student-audio` files first, then deletes the Supabase Auth user. Database rows linked with `ON DELETE CASCADE` are removed with the account. The function must be deployed before the button can complete a deletion.
-
-Deploy from the repository root with the Supabase CLI:
+The student account page now includes **حذف حسابي نهائياً**. The secure server-side function source is at `supabase/functions/delete-account/index.ts`. It requires an authenticated student session, rejects teacher accounts, removes that student's private `student-audio` files first, then deletes the Supabase Auth user. Database rows linked with `ON DELETE CASCADE` are removed with the account. The function is deployed in the linked production project `yycilzamasypqpvevrup` with gateway JWT verification enabled. The function also validates the supplied user session and the student's role before deleting data. When this source changes, redeploy from the repository root with the Supabase CLI:
 
 ```sh
 supabase login
@@ -153,6 +151,6 @@ supabase link --project-ref yycilzamasypqpvevrup
 supabase functions deploy delete-account --project-ref yycilzamasypqpvevrup
 ```
 
-Keep JWT verification enabled (the default). The function uses the project's server-side Supabase environment variables; **never paste a service-role or secret key into `index.html`, GitHub Pages, or any other browser code**. If the project has customized Edge Function secrets, ensure the function runtime has `SUPABASE_URL`, `SUPABASE_ANON_KEY`, and `SUPABASE_SERVICE_ROLE_KEY` configured securely.
+The function uses the project's server-side Supabase environment variables; **never paste a service-role or secret key into `index.html`, GitHub Pages, or any other browser code**. If the project has customized Edge Function secrets, ensure the function runtime has `SUPABASE_URL`, `SUPABASE_ANON_KEY`, and `SUPABASE_SERVICE_ROLE_KEY` configured securely.
 
-After deployment, test using a disposable student account that has at least one audio recording. Confirm that the function returns success, the account can no longer sign in, and the student's audio folder and associated progress/quiz/submission rows are gone. Do not test with a teacher account or a real student's account. The feature is irreversible.
+Before public release, test using a disposable student account that has at least one audio recording. Confirm that the function returns success, the account can no longer sign in, and the student's audio folder and associated progress/quiz/submission rows are gone. Do not test with a teacher account or a real student's account. The feature is irreversible.

@@ -72,3 +72,12 @@ npx cap open ios
 - يجب اختبار التسجيل وتأكيد البريد واستعادة كلمة المرور والميكروفون والصوت والروابط الخارجية على iOS وAndroid قبل النشر.
 - لا تضع مفتاح Supabase السري أو `service_role` في أي ملف يصل إلى التطبيق. استخدم المفتاح العام فقط مع سياسات RLS صحيحة.
 - معرّف التطبيق الحالي `com.husseinmishbak.orrfrench`؛ تغييره لاحقاً يتطلب تحديث إعدادات المنصتين قبل الإصدار النهائي.
+
+
+## iPhone App Store / TestFlight release
+
+- Public privacy policy: https://husseinmishbak.github.io/-/privacy.html
+- Release runbook: see IOS_RELEASE.md.
+- GitHub Actions workflow: **Build and upload iOS to TestFlight**. It signs an iOS release IPA and uploads it to TestFlight once the publisher configures the required Apple distribution certificate, provisioning profile and App Store Connect API key as repository secrets.
+- The iOS Simulator workflow is for simulator QA only. It does not produce an IPA that can be installed on a physical iPhone.
+- Uploading to TestFlight does not publish publicly to the App Store. App Store Connect listing, privacy declarations, screenshots and Apple review are still required.

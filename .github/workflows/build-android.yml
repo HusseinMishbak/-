@@ -14,6 +14,10 @@ on:
       - 'conversation-podcast.js'
       - 'podcast-six-minutes.js'
       - 'learning-games.js'
+      - 'learning-experience.js'
+      - 'curriculum-audit.js'
+      - 'ui/**'
+      - 'privacy.html'
 jobs:
   build:
     runs-on: ubuntu-latest

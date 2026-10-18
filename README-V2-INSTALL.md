@@ -30,7 +30,7 @@
 
 ## Important scope notes
 
-- This first Version 2 milestone is an installable web app, not yet a separately signed Android APK/AAB or iOS App Store package. The repository currently has no native Android/iOS project or Capacitor build configuration.
+- The web app is installable as a PWA. The repository also has a separate Capacitor mobile project in mobile-app; it has iOS Simulator and Android test-build workflows. A signed iPhone IPA and App Store/TestFlight distribution still require Apple signing credentials and publisher account configuration.
 - Core pages and selected same-origin assets are cached. Audio, speech voices, Google Fonts, CDN libraries and cloud syncing may still require internet access.
 - Cloud sync of the new dashboard requires the SQL migration in step 2. Until it is applied, the dashboard continues to save locally and the existing lesson/quiz sync is kept separate.
 - Before calling this production-ready, verify on real Android and iOS devices: sign-in, app relaunch, switching between two phones, lesson completion, both quiz grading modes, Arabic result feedback, audio permissions, and recovery/login links.
