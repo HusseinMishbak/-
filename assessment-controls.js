@@ -125,22 +125,35 @@
 
   function getContainerKey(container) {
     if (container.dataset.urCorrectionKey) return container.dataset.urCorrectionKey;
-    if (container.matches('[data-unit-vocab-test]')) return 'unit-vocab-' + container.dataset.unitVocabTest;
-    if (container.matches('.roadmap-week-quiz')) return 'roadmap-week-' + (container.dataset.weekQuiz || 'unknown');
-    const bookUnit = container.closest('[data-book-practice-unit]');
-    if (bookUnit) {
-      const unit = bookUnit.dataset.bookPracticeUnit || 'unknown';
-      const type = container.matches('.book-practice-quiz') ? 'choice' :
-        container.matches('.book-fill-grid') ? 'fill' :
-        container.matches('.book-match-grid') ? 'match' :
-        container.matches('.book-order-grid') ? 'order' : 'exercise';
-      return 'book-unit-' + unit + '-' + type;
+    let key = '';
+    if (container.matches('[data-unit-vocab-test]')) {
+      key = 'unit-vocab-' + container.dataset.unitVocabTest;
+    } else if (container.matches('.roadmap-week-quiz')) {
+      key = 'roadmap-week-' + (container.dataset.weekQuiz || 'unknown');
+    } else {
+      const bookUnit = container.closest('[data-book-practice-unit]');
+      if (bookUnit) {
+        const unit = bookUnit.dataset.bookPracticeUnit || 'unknown';
+        const type = container.matches('.book-practice-quiz') ? 'choice' :
+          container.matches('.book-fill-grid') ? 'fill' :
+          container.matches('.book-match-grid') ? 'match' :
+          container.matches('.book-order-grid') ? 'order' : 'exercise';
+        key = 'book-unit-' + unit + '-' + type;
+      } else if (container.id) {
+        key = container.id;
+      } else {
+        const signature = Array.from(container.classList).sort().join('-') || 'quiz';
+        const peers = Array.from(document.querySelectorAll(GUIDE_SELECTOR))
+          .filter(node => node !== container && (Array.from(node.classList).sort().join('-') || 'quiz') === signature);
+        const position = peers.filter(node =>
+          document.documentElement.contains(node) &&
+          Boolean(node.compareDocumentPosition(container) & Node.DOCUMENT_POSITION_FOLLOWING)
+        ).length + 1;
+        key = 'group-' + signature + '-' + position;
+      }
     }
-    if (container.id) return container.id;
-    const signature = Array.from(container.classList).sort().join('-') || 'quiz';
-    const peers = Array.from(document.querySelectorAll(GUIDE_SELECTOR))
-      .filter(node => node !== container && (Array.from(node.classList).sort().join('-') || 'quiz') === signature);
-    return 'group-' + signature + '-' + (peers.filter(node => document.documentElement.contains(node) && node.compareDocumentPosition(container) & Node.DOCUMENT_POSITION_FOLLOWING).length + 1);
+    container.dataset.urCorrectionKey = key;
+    return key;
   }
 
   function readCorrectionMode(container) {
