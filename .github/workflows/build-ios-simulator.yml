@@ -16,10 +16,13 @@ jobs:
         run: npm install
       - name: Prepare bundled learning platform
         working-directory: mobile-app
-        run: npm run build:web
+        run: npm run build:assets
       - name: Generate iOS project
         working-directory: mobile-app
         run: npx cap add ios
+      - name: Generate iOS icon and splash assets
+        working-directory: mobile-app
+        run: npx capacitor-assets generate --ios
       - name: Sync Capacitor assets
         working-directory: mobile-app
         run: npx cap sync ios
