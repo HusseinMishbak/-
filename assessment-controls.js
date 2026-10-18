@@ -197,12 +197,6 @@
     }
   }
 
-  let guideCounter = 0;
-  function getContainerKey(container) {
-    if (!container.dataset.urCorrectionKey) container.dataset.urCorrectionKey = 'ur-correction-' + (++guideCounter);
-    return container.dataset.urCorrectionKey;
-  }
-
   function syncCorrectionMode(container, mode) {
     const chosen = mode === 'all' ? 'all' : 'single';
     const key = CORRECTION_MODE_KEY + ':' + getContainerKey(container);
