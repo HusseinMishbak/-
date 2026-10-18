@@ -1,0 +1,31 @@
+name: Curriculum structural audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'curriculum.js'
+      - 'scripts/audit-curriculum.js'
+      - '.github/workflows/curriculum-audit.yml'
+  pull_request:
+    paths:
+      - 'curriculum.js'
+      - 'scripts/audit-curriculum.js'
+      - '.github/workflows/curriculum-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run curriculum audit
+        run: node scripts/audit-curriculum.js
