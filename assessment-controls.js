@@ -224,7 +224,10 @@
     guide.dataset.forContainer = key;
 
     const label = document.createElement('label');
-    label.textContent = text('modeLabel');
+    const labelText = document.createElement('span');
+    labelText.className = 'ur-correction-mode-label';
+    labelText.textContent = text('modeLabel');
+    label.appendChild(labelText);
     const select = document.createElement('select');
     select.className = 'ur-correction-mode';
     select.setAttribute('aria-label', text('modeLabel'));
@@ -241,6 +244,25 @@
     container.parentNode.insertBefore(guide, container);
     select.addEventListener('change', () => syncCorrectionMode(container, select.value));
     applyMode(container, readCorrectionMode(container));
+  }
+
+  function refreshLocalizedControls() {
+    document.querySelectorAll('.ur-correction-mode').forEach(select => {
+      const guide = select.closest('.ur-assessment-controls');
+      if (!guide) return;
+      const label = guide.querySelector('.ur-correction-mode-label');
+      if (label) label.textContent = text('modeLabel');
+      if (select.options.length >= 2) {
+        select.options[0].textContent = text('singleMode');
+        select.options[1].textContent = text('allMode');
+      }
+      const hint = guide.querySelector('.ur-assessment-guide');
+      if (hint) hint.textContent = text(select.value === 'all' ? 'allHint' : 'singleHint');
+    });
+    document.querySelectorAll('.ur-grade-single').forEach(button => {
+      button.textContent = text('itemButton');
+      button.setAttribute('aria-label', text('itemButton'));
+    });
   }
 
   function scan(root) {
@@ -408,6 +430,8 @@
       }));
     });
     observer.observe(document.body, { childList: true, subtree: true });
+    const languageObserver = new MutationObserver(() => refreshLocalizedControls());
+    languageObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-ui-lang', 'lang'] });
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, { once: true });
