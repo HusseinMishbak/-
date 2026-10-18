@@ -34,6 +34,16 @@
     .replace(/>/g, '&gt;').replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
 
+  const TEXT = {
+    ar: { correct: 'إجابة صحيحة ✓', answer: 'الإجابة الصحيحة: ', choose: 'اختر إجابة أولاً، ثم صحّح هذا السؤال.', write: 'اكتب إجابتك أولاً، ثم صحّح هذا السؤال.', meaning: 'اختر المعنى أولاً، ثم صحّح هذا السؤال.', order: 'رتّب الكلمات أولاً، ثم تحقّق من الإجابة.' },
+    en: { correct: 'Correct ✓', answer: 'Correct answer: ', choose: 'Choose an answer first, then check this question.', write: 'Enter your answer first, then check this question.', meaning: 'Choose a meaning first, then check this question.', order: 'Arrange the words first, then check your answer.' },
+    fr: { correct: 'Bonne réponse ✓', answer: 'Réponse correcte : ', choose: 'Choisissez une réponse avant de corriger cette question.', write: 'Saisissez votre réponse avant de corriger cette question.', meaning: 'Choisissez un sens avant de corriger cette question.', order: 'Mettez les mots dans l’ordre avant de vérifier la réponse.' }
+  };
+  function text(key) {
+    const language = document.documentElement.dataset.uiLang || 'ar';
+    return (TEXT[language] || TEXT.ar)[key] || TEXT.ar[key];
+  }
+
   function normalize(value) {
     return String(value == null ? '' : value)
       .normalize('NFC').trim().toLocaleLowerCase()
@@ -123,7 +133,7 @@
     if (card.matches('.book-fill-item')) {
       const input = card.querySelector('.book-fill-input');
       if (!input || !input.value.trim()) {
-        showFeedback(card, false, 'اكتب إجابتك أولاً، ثم صحّح هذا السؤال.');
+        showFeedback(card, false, text('write'));
         return;
       }
       let accepted = [];
@@ -136,7 +146,7 @@
     } else if (card.matches('.book-match-row')) {
       const select = card.querySelector('select');
       if (!select || !select.value) {
-        showFeedback(card, false, 'اختر المعنى أولاً، ثم صحّح هذا السؤال.');
+        showFeedback(card, false, text('meaning'));
         return;
       }
       chosen = select.value;
@@ -145,7 +155,7 @@
     } else if (card.matches('.book-order-item')) {
       const built = card.querySelector('.book-order-built');
       if (!built || !built.textContent.trim()) {
-        showFeedback(card, false, 'رتّب الكلمات أولاً، ثم تحقّق من الإجابة.');
+        showFeedback(card, false, text('order'));
         return;
       }
       chosen = built.textContent;
@@ -155,7 +165,7 @@
     } else if (card.matches('.unit-vocab-question')) {
       const selected = getCheckedRadio(card);
       if (!selected) {
-        showFeedback(card, false, 'اختر إجابة أولاً، ثم صحّح هذا السؤال.');
+        showFeedback(card, false, text('choose'));
         return;
       }
       chosen = selected.value;
@@ -165,15 +175,15 @@
       const ar = card.dataset.wordAr || '';
       const en = card.dataset.wordEn || '';
       showFeedback(card, ok, ok
-        ? 'صحيح ✓ ' + term + ' — ' + ar
-        : 'الإجابة الصحيحة: ' + term + ' — ' + ar + (en ? ' (' + en + ')' : ''));
+        ? text('correct') + ' ' + term + ' — ' + ar
+        : text('answer') + term + ' — ' + ar + (en ? ' (' + en + ')' : ''));
       card.classList.toggle('is-correct', ok);
       card.classList.toggle('is-incorrect', !ok);
       return;
     } else {
       const selected = getCheckedRadio(card);
       if (!selected) {
-        showFeedback(card, false, 'اختر إجابة أولاً، ثم صحّح هذا السؤال.');
+        showFeedback(card, false, text('choose'));
         return;
       }
       chosen = selected.value;
@@ -193,8 +203,8 @@
 
     const label = card.dataset.correctLabel || card.dataset.urExpectedLabel || expected;
     const message = ok
-      ? 'إجابة صحيحة ✓' + (explanation ? ' ' + explanation : '')
-      : 'الإجابة الصحيحة: ' + (label || 'راجع الخيار الصحيح') + (explanation ? ' — ' + explanation : '');
+      ? text('correct') + (explanation ? ' ' + explanation : '')
+      : text('answer') + (label || 'راجع الخيار الصحيح') + (explanation ? ' — ' + explanation : '');
     showFeedback(card, ok, message);
     card.classList.toggle('is-correct', ok);
     card.classList.toggle('is-incorrect', !ok);
@@ -205,6 +215,24 @@
     if (!button) return;
     const card = button.closest(ITEM_SELECTOR);
     if (card) correctSingle(card);
+  });
+
+  function clearPreviousFeedback(target) {
+    const card = target && target.closest ? target.closest(ITEM_SELECTOR) : null;
+    if (!card) return;
+    card.classList.remove('ur-checked-correct', 'ur-checked-wrong', 'is-correct', 'is-incorrect', 'correct', 'incorrect');
+    const feedback = card.querySelector(FEEDBACK_SELECTOR);
+    if (feedback) {
+      feedback.hidden = true;
+      feedback.classList.remove('ur-item-correct', 'ur-item-wrong');
+      feedback.textContent = '';
+    }
+  }
+  document.addEventListener('change', function (event) {
+    if (event.target.matches('input[type="radio"], select')) clearPreviousFeedback(event.target);
+  });
+  document.addEventListener('input', function (event) {
+    if (event.target.matches('.book-fill-input')) clearPreviousFeedback(event.target);
   });
 
   function start() {
