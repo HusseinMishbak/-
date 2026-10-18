@@ -4901,7 +4901,7 @@ window.FRENCH_CURRICULUM = {
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -4920,10 +4920,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب وصفاً لشقتك أو حيّك من 120 كلمة مع خريطة مبسطة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب وصفاً لشقتك أو حيّك من 120 كلمة مع خريطة مبسطة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب وصفاً لشقتك أو حيّك من 120 كلمة مع خريطة مبسطة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Il y a / il n’y a pas · prépositions de lieu · questions avec est-ce que»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -4942,44 +4954,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pour demander poliment une chambre, on dit :",
+                "q": "Quel terme correspond à la définition : « بالقرب من » ?",
                 "options": [
-                  "Donne-moi une chambre !",
-                  "Je voudrais une chambre, s’il vous plaît.",
-                  "Je veux chambre."
+                  "un logement",
+                  "un quartier",
+                  "un loyer",
+                  "à proximité de"
                 ],
-                "answer": 1,
-                "why": "Je voudrais est une formule de demande polie."
+                "answer": 3,
+                "why": "Le terme « à proximité de » signifie « بالقرب من ». "
               },
               {
-                "q": "Nous ___ des billets hier.",
+                "q": "Dans la phrase « Je cherche un logement près du centre. », que signifie « un logement » ?",
                 "options": [
-                  "avons acheté",
-                  "sommes acheté",
-                  "achetons demain"
-                ],
-                "answer": 0,
-                "why": "Acheter se conjugue avec avoir au passé composé."
-              },
-              {
-                "q": "Il faut ___ rendez-vous.",
-                "options": [
-                  "prendre un",
-                  "prenant un",
-                  "pris un"
-                ],
-                "answer": 0,
-                "why": "Il faut est suivi d’un infinitif."
-              },
-              {
-                "q": "Si j’ai le temps, je ___ vous appeler.",
-                "options": [
-                  "pourrais hier",
-                  "vais peut",
-                  "pourrai"
+                  "إيجار",
+                  "بالقرب من",
+                  "مسكن",
+                  "حيّ"
                 ],
                 "answer": 2,
-                "why": "Après si + présent, on peut utiliser le futur dans la proposition principale."
+                "why": "Dans ce contexte, « un logement » signifie « مسكن ». "
+              },
+              {
+                "q": "Pour demander si un service se trouve à proximité, on dit :",
+                "options": [
+                  "Est-ce pharmacie ici ?",
+                  "Est-ce qu’il y a une pharmacie près d’ici ?",
+                  "Il y a une pharmacie hier ?"
+                ],
+                "answer": 1,
+                "why": "La question « Est-ce qu’il y a… ? » est correcte."
+              },
+              {
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "options": [
+                  "Combien je suis le loyer ?",
+                  "Je comprends le loyer demain.",
+                  "Les charges sont-elles comprises dans le loyer ?"
+                ],
+                "answer": 2,
+                "why": "La question porte directement sur les charges et le loyer."
               }
             ],
             "resources": [
@@ -5007,7 +5021,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب وصفاً لشقتك أو حيّك من 120 كلمة مع خريطة مبسطة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «المنزل والحي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "مراجعة تأسيس A1: être وavoir، أدوات التعريف، السؤال والنفي، وصف الأشخاص والأماكن، وطلبات الحياة اليومية.",
+            "nextStep": "يمهّد للأسبوع التالي: التسوق والاستهلاك؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "المرحلة السابقة: A1؛ راجع التراكيب الأساسية ووظائف التواصل اليومية.",
+            "nextLink": "الموضوع التالي: التسوق والاستهلاك — الأسعار والمقارنة والاستبدال والشكوى المهذبة."
           }
         ],
         [
@@ -5041,7 +5062,7 @@ window.FRENCH_CURRICULUM = {
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -5060,10 +5081,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "مثّل شراء سلعة والسؤال عن السعر وطلب الاستبدال.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («مثّل شراء سلعة والسؤال عن السعر وطلب الاستبدال.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: مثّل شراء سلعة والسؤال عن السعر وطلب الاستبدال.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Comparatifs · articles partitifs · expressions de quantité»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -5082,44 +5115,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Si j’ai le temps, je ___ vous appeler.",
+                "q": "Quel terme correspond à la définition : « إيصال » ?",
                 "options": [
-                  "pourrais hier",
-                  "vais peut",
-                  "pourrai"
+                  "échanger",
+                  "rembourser",
+                  "un défaut",
+                  "un reçu"
+                ],
+                "answer": 3,
+                "why": "Le terme « un reçu » signifie « إيصال ». "
+              },
+              {
+                "q": "Dans la phrase « Je voudrais échanger cet article. », que signifie « échanger » ?",
+                "options": [
+                  "عيب",
+                  "إيصال",
+                  "يستبدل",
+                  "يعيد المبلغ"
                 ],
                 "answer": 2,
-                "why": "Après si + présent, on peut utiliser le futur dans la proposition principale."
+                "why": "Dans ce contexte, « échanger » signifie « يستبدل ». "
               },
               {
-                "q": "Le train part à 8 h. Arrivez ___ à la gare.",
+                "q": "Cette rue est ___ calme que l’avenue principale.",
                 "options": [
-                  "en avance",
-                  "depuis",
-                  "jamais"
+                  "moins",
+                  "très",
+                  "beaucoup"
                 ],
                 "answer": 0,
-                "why": "En avance signifie avant l’heure prévue."
+                "why": "Le comparatif « moins… que » compare deux éléments."
               },
               {
-                "q": "Pour demander le chemin, on peut dire :",
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
                 "options": [
-                  "Où se trouve la gare ?",
-                  "Combien coûte la gare ?",
-                  "Quel âge a la gare ?"
-                ],
-                "answer": 0,
-                "why": "Où se trouve…? sert à demander la localisation."
-              },
-              {
-                "q": "Hier, nous ___ au musée.",
-                "options": [
-                  "avons allé",
-                  "sommes allés",
-                  "allons"
+                  "Je comprends le loyer demain.",
+                  "Les charges sont-elles comprises dans le loyer ?",
+                  "Combien je suis le loyer ?"
                 ],
                 "answer": 1,
-                "why": "Le verbe aller se conjugue avec être au passé composé."
+                "why": "La question porte directement sur les charges et le loyer."
               }
             ],
             "resources": [
@@ -5147,7 +5182,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "مثّل شراء سلعة والسؤال عن السعر وطلب الاستبدال.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التسوق والاستهلاك». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: المنزل والحي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: الصحة والمواعيد؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: المنزل والحي — وصف السكن والمرافق وقراءة إعلانات قصيرة.",
+            "nextLink": "الموضوع التالي: الصحة والمواعيد — الأعراض وحجز موعد وفهم تعليمات بسيطة."
           }
         ],
         [
@@ -5181,7 +5223,7 @@ window.FRENCH_CURRICULUM = {
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -5200,10 +5242,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "سجّل حوار مريض وموظف استقبال ثم لخّص الموعد.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («سجّل حوار مريض وموظف استقبال ثم لخّص الموعد.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: سجّل حوار مريض وموظف استقبال ثم لخّص الموعد.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Vocabulaire de la santé · devoir / il faut · prendre rendez-vous»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -5222,44 +5276,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Hier, nous ___ au musée.",
+                "q": "Quel terme correspond à la définition : « عَرَض » ?",
                 "options": [
-                  "avons allé",
-                  "sommes allés",
-                  "allons"
+                  "une ordonnance",
+                  "avoir mal à",
+                  "prendre rendez-vous",
+                  "un symptôme"
                 ],
-                "answer": 1,
-                "why": "Le verbe aller se conjugue avec être au passé composé."
+                "answer": 3,
+                "why": "Le terme « un symptôme » signifie « عَرَض ». "
               },
               {
-                "q": "Demain, je ___ prendre le train.",
+                "q": "Dans la phrase « Le médecin m’a donné une ordonnance. », que signifie « une ordonnance » ?",
                 "options": [
-                  "vais",
-                  "suis",
-                  "ai"
+                  "يحجز موعداً",
+                  "عَرَض",
+                  "وصفة طبية",
+                  "يشعر بألم في"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une ordonnance » signifie « وصفة طبية ». "
+              },
+              {
+                "q": "Le médecin m’a donné une ___ pour acheter le médicament.",
+                "options": [
+                  "quai",
+                  "correspondance",
+                  "ordonnance"
+                ],
+                "answer": 2,
+                "why": "Une ordonnance est un document médical."
+              },
+              {
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "options": [
+                  "Les charges sont-elles comprises dans le loyer ?",
+                  "Combien je suis le loyer ?",
+                  "Je comprends le loyer demain."
                 ],
                 "answer": 0,
-                "why": "Le futur proche se forme avec aller au présent + infinitif."
-              },
-              {
-                "q": "Tu vas à la pharmacie ? Oui, j’___ vais.",
-                "options": [
-                  "en",
-                  "y",
-                  "le"
-                ],
-                "answer": 1,
-                "why": "Y remplace ici un lieu introduit par à."
-              },
-              {
-                "q": "Tu veux du café ? Oui, j’___ veux.",
-                "options": [
-                  "y",
-                  "en",
-                  "lui"
-                ],
-                "answer": 1,
-                "why": "En remplace une quantité ou un complément introduit par du/de la/des."
+                "why": "La question porte directement sur les charges et le loyer."
               }
             ],
             "resources": [
@@ -5287,7 +5343,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "سجّل حوار مريض وموظف استقبال ثم لخّص الموعد.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الصحة والمواعيد». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: التسوق والاستهلاك، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: المواصلات والاتجاهات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: التسوق والاستهلاك — الأسعار والمقارنة والاستبدال والشكوى المهذبة.",
+            "nextLink": "الموضوع التالي: المواصلات والاتجاهات — فهم الجداول والإعلانات وتحديد مسار رحلة."
           }
         ],
         [
@@ -5321,7 +5384,7 @@ window.FRENCH_CURRICULUM = {
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -5340,10 +5403,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "أنجز مهمة استماع وقراءة عن رحلة واشرح المسار شفهياً.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («أنجز مهمة استماع وقراءة عن رحلة واشرح المسار شفهياً.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: أنجز مهمة استماع وقراءة عن رحلة واشرح المسار شفهياً.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Futur proche · impératif · demander et expliquer un itinéraire»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -5362,44 +5437,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Tu veux du café ? Oui, j’___ veux.",
+                "q": "Quel terme correspond à la définition : « تبديل وسيلة النقل » ?",
                 "options": [
-                  "y",
-                  "en",
-                  "lui"
+                  "être en retard",
+                  "un trajet",
+                  "un quai",
+                  "une correspondance"
+                ],
+                "answer": 3,
+                "why": "Le terme « une correspondance » signifie « تبديل وسيلة النقل ». "
+              },
+              {
+                "q": "Dans la phrase « Le bus est en retard. », que signifie « être en retard » ?",
+                "options": [
+                  "رصيف محطة",
+                  "تبديل وسيلة النقل",
+                  "يتأخر",
+                  "مسار / رحلة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « être en retard » signifie « يتأخر ». "
+              },
+              {
+                "q": "Pour aller à la gare, ___ tout droit, s’il vous plaît.",
+                "options": [
+                  "continué",
+                  "continuez",
+                  "continuer"
                 ],
                 "answer": 1,
-                "why": "En remplace une quantité ou un complément introduit par du/de la/des."
+                "why": "L’impératif de « vous » est « continuez »."
               },
               {
-                "q": "J’habite ici ___ trois ans.",
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
                 "options": [
-                  "depuis",
-                  "pendant de",
-                  "il y a de"
+                  "Combien je suis le loyer ?",
+                  "Je comprends le loyer demain.",
+                  "Les charges sont-elles comprises dans le loyer ?"
                 ],
-                "answer": 0,
-                "why": "Depuis indique une situation qui a commencé dans le passé et continue."
-              },
-              {
-                "q": "Ce logement est ___ cher que l’autre.",
-                "options": [
-                  "moins",
-                  "que",
-                  "très que"
-                ],
-                "answer": 0,
-                "why": "Le comparatif d’infériorité est moins + adjectif + que."
-              },
-              {
-                "q": "Pour demander poliment une chambre, on dit :",
-                "options": [
-                  "Donne-moi une chambre !",
-                  "Je voudrais une chambre, s’il vous plaît.",
-                  "Je veux chambre."
-                ],
-                "answer": 1,
-                "why": "Je voudrais est une formule de demande polie."
+                "answer": 2,
+                "why": "La question porte directement sur les charges et le loyer."
               }
             ],
             "resources": [
@@ -5427,7 +5504,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "أنجز مهمة استماع وقراءة عن رحلة واشرح المسار شفهياً.",
             "writingPrompt": "اكتب فقرة مترابطة عن «المواصلات والاتجاهات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الصحة والمواعيد، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: التخطيط للسفر؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الصحة والمواعيد — الأعراض وحجز موعد وفهم تعليمات بسيطة.",
+            "nextLink": "الموضوع التالي: التخطيط للسفر — الحجز والفندق والتذاكر وتواريخ الوصول والمغادرة."
           }
         ]
       ]
@@ -5469,7 +5553,7 @@ window.FRENCH_CURRICULUM = {
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -5488,10 +5572,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب رسالة حجز واطلب توضيحاً عن السعر والخدمات.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب رسالة حجز واطلب توضيحاً عن السعر والخدمات.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب رسالة حجز واطلب توضيحاً عن السعر والخدمات.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Réserver, demander une information, le conditionnel de politesse»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -5510,44 +5606,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Il faut ___ rendez-vous.",
+                "q": "Quel terme correspond à la définition : « يحجز » ?",
                 "options": [
-                  "prendre un",
-                  "prenant un",
-                  "pris un"
+                  "un séjour",
+                  "disponible",
+                  "à l’avance",
+                  "réserver"
                 ],
-                "answer": 0,
-                "why": "Il faut est suivi d’un infinitif."
+                "answer": 3,
+                "why": "Le terme « réserver » signifie « يحجز ». "
               },
               {
-                "q": "Si j’ai le temps, je ___ vous appeler.",
+                "q": "Dans la phrase « Notre séjour dure cinq jours. », que signifie « un séjour » ?",
                 "options": [
-                  "pourrais hier",
-                  "vais peut",
-                  "pourrai"
+                  "مسبقاً",
+                  "يحجز",
+                  "إقامة",
+                  "متاح"
                 ],
                 "answer": 2,
-                "why": "Après si + présent, on peut utiliser le futur dans la proposition principale."
+                "why": "Dans ce contexte, « un séjour » signifie « إقامة ». "
               },
               {
-                "q": "Le train part à 8 h. Arrivez ___ à la gare.",
+                "q": "Je ___ connaître les conditions de réservation.",
                 "options": [
-                  "en avance",
-                  "depuis",
-                  "jamais"
+                  "souhaiterais",
+                  "souhaite hier",
+                  "souhaitant"
                 ],
                 "answer": 0,
-                "why": "En avance signifie avant l’heure prévue."
+                "why": "Le conditionnel présent permet d’atténuer une demande."
               },
               {
-                "q": "Pour demander le chemin, on peut dire :",
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
                 "options": [
-                  "Où se trouve la gare ?",
-                  "Combien coûte la gare ?",
-                  "Quel âge a la gare ?"
+                  "Je comprends le loyer demain.",
+                  "Les charges sont-elles comprises dans le loyer ?",
+                  "Combien je suis le loyer ?"
                 ],
-                "answer": 0,
-                "why": "Où se trouve…? sert à demander la localisation."
+                "answer": 1,
+                "why": "La question porte directement sur les charges et le loyer."
               }
             ],
             "resources": [
@@ -5575,7 +5673,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب رسالة حجز واطلب توضيحاً عن السعر والخدمات.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التخطيط للسفر». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: المواصلات والاتجاهات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: رواية الماضي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: المواصلات والاتجاهات — فهم الجداول والإعلانات وتحديد مسار رحلة.",
+            "nextLink": "الموضوع التالي: رواية الماضي — passé composé والروابط الزمنية وتسلسل الأحداث."
           }
         ],
         [
@@ -5609,7 +5714,7 @@ window.FRENCH_CURRICULUM = {
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -5628,10 +5733,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب سرداً من 120–150 كلمة عن رحلة أو مناسبة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب سرداً من 120–150 كلمة عن رحلة أو مناسبة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب سرداً من 120–150 كلمة عن رحلة أو مناسبة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Passé composé : actions terminées et connecteurs chronologiques»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -5650,44 +5767,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pour demander le chemin, on peut dire :",
+                "q": "Quel terme correspond à la définition : « بينما » ?",
                 "options": [
-                  "Où se trouve la gare ?",
-                  "Combien coûte la gare ?",
-                  "Quel âge a la gare ?"
+                  "tout à coup",
+                  "par la suite",
+                  "auparavant",
+                  "tandis que"
+                ],
+                "answer": 3,
+                "why": "Le terme « tandis que » signifie « بينما ». "
+              },
+              {
+                "q": "Dans la phrase « Tout à coup, le téléphone a sonné. », que signifie « tout à coup » ?",
+                "options": [
+                  "سابقاً",
+                  "بينما",
+                  "فجأة",
+                  "لاحقاً"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « tout à coup » signifie « فجأة ». "
+              },
+              {
+                "q": "Elle ___ à Lyon la semaine dernière.",
+                "options": [
+                  "a allé",
+                  "va aller",
+                  "est allée"
+                ],
+                "answer": 2,
+                "why": "« Aller » utilise être au passé composé ; le participe s’accorde avec le sujet."
+              },
+              {
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "options": [
+                  "Les charges sont-elles comprises dans le loyer ?",
+                  "Combien je suis le loyer ?",
+                  "Je comprends le loyer demain."
                 ],
                 "answer": 0,
-                "why": "Où se trouve…? sert à demander la localisation."
-              },
-              {
-                "q": "Hier, nous ___ au musée.",
-                "options": [
-                  "avons allé",
-                  "sommes allés",
-                  "allons"
-                ],
-                "answer": 1,
-                "why": "Le verbe aller se conjugue avec être au passé composé."
-              },
-              {
-                "q": "Demain, je ___ prendre le train.",
-                "options": [
-                  "vais",
-                  "suis",
-                  "ai"
-                ],
-                "answer": 0,
-                "why": "Le futur proche se forme avec aller au présent + infinitif."
-              },
-              {
-                "q": "Tu vas à la pharmacie ? Oui, j’___ vais.",
-                "options": [
-                  "en",
-                  "y",
-                  "le"
-                ],
-                "answer": 1,
-                "why": "Y remplace ici un lieu introduit par à."
+                "why": "La question porte directement sur les charges et le loyer."
               }
             ],
             "resources": [
@@ -5715,7 +5834,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب سرداً من 120–150 كلمة عن رحلة أو مناسبة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «رواية الماضي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: التخطيط للسفر، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: الدعوات والخطط؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: التخطيط للسفر — الحجز والفندق والتذاكر وتواريخ الوصول والمغادرة.",
+            "nextLink": "الموضوع التالي: الدعوات والخطط — قبول الدعوة أو رفضها وfutur proche."
           }
         ],
         [
@@ -5749,7 +5875,7 @@ window.FRENCH_CURRICULUM = {
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -5768,10 +5894,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "مثّل مكالمة لترتيب لقاء وتغيير الموعد.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («مثّل مكالمة لترتيب لقاء وتغيير الموعد.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: مثّل مكالمة لترتيب لقاء وتغيير الموعد.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Imparfait pour le décor / passé composé pour l’événement»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -5790,44 +5928,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Tu vas à la pharmacie ? Oui, j’___ vais.",
+                "q": "Quel terme correspond à la définition : « موعد » ?",
                 "options": [
-                  "en",
-                  "y",
-                  "le"
+                  "s’entraider",
+                  "un proche",
+                  "s’entendre avec",
+                  "un rendez-vous"
+                ],
+                "answer": 3,
+                "why": "Le terme « un rendez-vous » signifie « موعد ». "
+              },
+              {
+                "q": "Dans la phrase « Dans notre équipe, nous nous entraidons. », que signifie « s’entraider » ?",
+                "options": [
+                  "ينسجم مع",
+                  "موعد",
+                  "يساعد بعضنا بعضاً",
+                  "شخص مقرّب"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « s’entraider » signifie « يساعد بعضنا بعضاً ». "
+              },
+              {
+                "q": "Hier, nous ___ un musée.",
+                "options": [
+                  "visitons",
+                  "avons visité",
+                  "sommes visité"
                 ],
                 "answer": 1,
-                "why": "Y remplace ici un lieu introduit par à."
+                "why": "« Visiter » se conjugue avec avoir au passé composé."
               },
               {
-                "q": "Tu veux du café ? Oui, j’___ veux.",
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
                 "options": [
-                  "y",
-                  "en",
-                  "lui"
+                  "Combien je suis le loyer ?",
+                  "Je comprends le loyer demain.",
+                  "Les charges sont-elles comprises dans le loyer ?"
                 ],
-                "answer": 1,
-                "why": "En remplace une quantité ou un complément introduit par du/de la/des."
-              },
-              {
-                "q": "J’habite ici ___ trois ans.",
-                "options": [
-                  "depuis",
-                  "pendant de",
-                  "il y a de"
-                ],
-                "answer": 0,
-                "why": "Depuis indique une situation qui a commencé dans le passé et continue."
-              },
-              {
-                "q": "Ce logement est ___ cher que l’autre.",
-                "options": [
-                  "moins",
-                  "que",
-                  "très que"
-                ],
-                "answer": 0,
-                "why": "Le comparatif d’infériorité est moins + adjectif + que."
+                "answer": 2,
+                "why": "La question porte directement sur les charges et le loyer."
               }
             ],
             "resources": [
@@ -5855,7 +5995,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "مثّل مكالمة لترتيب لقاء وتغيير الموعد.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الدعوات والخطط». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: رواية الماضي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: مقارنة التجارب؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: رواية الماضي — passé composé والروابط الزمنية وتسلسل الأحداث.",
+            "nextLink": "الموضوع التالي: مقارنة التجارب — التفضيل والمقارنة وفهم إعلان أو مراجعة."
           }
         ],
         [
@@ -5889,7 +6036,7 @@ window.FRENCH_CURRICULUM = {
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -5908,10 +6055,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "قدّم عرضاً من دقيقتين عن مدينة أو رحلة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («قدّم عرضاً من دقيقتين عن مدينة أو رحلة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: قدّم عرضاً من دقيقتين عن مدينة أو رحلة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Pronoms y/en · futur proche · raconter et comparer une expérience»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -5930,44 +6089,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Ce logement est ___ cher que l’autre.",
+                "q": "Quel terme correspond à la définition : « مسبقاً » ?",
                 "options": [
-                  "moins",
-                  "que",
-                  "très que"
+                  "réserver",
+                  "un séjour",
+                  "disponible",
+                  "à l’avance"
                 ],
-                "answer": 0,
-                "why": "Le comparatif d’infériorité est moins + adjectif + que."
+                "answer": 3,
+                "why": "Le terme « à l’avance » signifie « مسبقاً ». "
               },
               {
-                "q": "Pour demander poliment une chambre, on dit :",
+                "q": "Dans la phrase « Je voudrais réserver une chambre. », que signifie « réserver » ?",
                 "options": [
-                  "Donne-moi une chambre !",
-                  "Je voudrais une chambre, s’il vous plaît.",
-                  "Je veux chambre."
+                  "متاح",
+                  "مسبقاً",
+                  "يحجز",
+                  "إقامة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « réserver » signifie « يحجز ». "
+              },
+              {
+                "q": "Le train part dans cinq minutes ; nous ___ nous dépêcher.",
+                "options": [
+                  "allons",
+                  "avons",
+                  "étions"
+                ],
+                "answer": 0,
+                "why": "« Aller + infinitif » exprime une action imminente."
+              },
+              {
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "options": [
+                  "Je comprends le loyer demain.",
+                  "Les charges sont-elles comprises dans le loyer ?",
+                  "Combien je suis le loyer ?"
                 ],
                 "answer": 1,
-                "why": "Je voudrais est une formule de demande polie."
-              },
-              {
-                "q": "Nous ___ des billets hier.",
-                "options": [
-                  "avons acheté",
-                  "sommes acheté",
-                  "achetons demain"
-                ],
-                "answer": 0,
-                "why": "Acheter se conjugue avec avoir au passé composé."
-              },
-              {
-                "q": "Il faut ___ rendez-vous.",
-                "options": [
-                  "prendre un",
-                  "prenant un",
-                  "pris un"
-                ],
-                "answer": 0,
-                "why": "Il faut est suivi d’un infinitif."
+                "why": "La question porte directement sur les charges et le loyer."
               }
             ],
             "resources": [
@@ -5995,7 +6156,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "قدّم عرضاً من دقيقتين عن مدينة أو رحلة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «مقارنة التجارب». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الدعوات والخطط، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: الطعام والعادات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الدعوات والخطط — قبول الدعوة أو رفضها وfutur proche.",
+            "nextLink": "الموضوع التالي: الطعام والعادات — الطلب والكميات وعادات الطعام وأسباب التفضيل."
           }
         ]
       ]
@@ -6037,7 +6205,7 @@ window.FRENCH_CURRICULUM = {
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -6056,10 +6224,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "أنشئ قائمة طعام أسبوعية وناقش عادة غذائية.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («أنشئ قائمة طعام أسبوعية وناقش عادة غذائية.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: أنشئ قائمة طعام أسبوعية وناقش عادة غذائية.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Articles partitifs et quantités»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -6078,44 +6258,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Le train part à 8 h. Arrivez ___ à la gare.",
+                "q": "Quel terme correspond à la définition : « حصة طعام » ?",
                 "options": [
-                  "en avance",
-                  "depuis",
-                  "jamais"
+                  "un plat équilibré",
+                  "préparer",
+                  "un ingrédient",
+                  "une portion"
                 ],
-                "answer": 0,
-                "why": "En avance signifie avant l’heure prévue."
+                "answer": 3,
+                "why": "Le terme « une portion » signifie « حصة طعام ». "
               },
               {
-                "q": "Pour demander le chemin, on peut dire :",
+                "q": "Dans la phrase « Un plat équilibré contient des légumes. », que signifie « un plat équilibré » ?",
                 "options": [
-                  "Où se trouve la gare ?",
-                  "Combien coûte la gare ?",
-                  "Quel âge a la gare ?"
+                  "مكوّن",
+                  "حصة طعام",
+                  "وجبة متوازنة",
+                  "يحضّر"
                 ],
-                "answer": 0,
-                "why": "Où se trouve…? sert à demander la localisation."
+                "answer": 2,
+                "why": "Dans ce contexte, « un plat équilibré » signifie « وجبة متوازنة ». "
               },
               {
-                "q": "Hier, nous ___ au musée.",
+                "q": "Cette rue est ___ calme que l’avenue principale.",
                 "options": [
-                  "avons allé",
-                  "sommes allés",
-                  "allons"
+                  "très",
+                  "beaucoup",
+                  "moins"
                 ],
-                "answer": 1,
-                "why": "Le verbe aller se conjugue avec être au passé composé."
+                "answer": 2,
+                "why": "Le comparatif « moins… que » compare deux éléments."
               },
               {
-                "q": "Demain, je ___ prendre le train.",
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
                 "options": [
-                  "vais",
-                  "suis",
-                  "ai"
+                  "Les charges sont-elles comprises dans le loyer ?",
+                  "Combien je suis le loyer ?",
+                  "Je comprends le loyer demain."
                 ],
                 "answer": 0,
-                "why": "Le futur proche se forme avec aller au présent + infinitif."
+                "why": "La question porte directement sur les charges et le loyer."
               }
             ],
             "resources": [
@@ -6143,7 +6325,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "أنشئ قائمة طعام أسبوعية وناقش عادة غذائية.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الطعام والعادات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: مقارنة التجارب، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: الدراسة والعمل؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: مقارنة التجارب — التفضيل والمقارنة وفهم إعلان أو مراجعة.",
+            "nextLink": "الموضوع التالي: الدراسة والعمل — الخبرات والمهارات والجدول والرسائل المهنية."
           }
         ],
         [
@@ -6177,7 +6366,7 @@ window.FRENCH_CURRICULUM = {
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -6196,10 +6385,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب بريداً لطلب معلومة عن دورة أو تدريب.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب بريداً لطلب معلومة عن دورة أو تدريب.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب بريداً لطلب معلومة عن دورة أو تدريب.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Pronoms COD/COI dans les situations courantes»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -6218,44 +6419,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Demain, je ___ prendre le train.",
+                "q": "Quel terme correspond à la définition : « مهارة » ?",
                 "options": [
-                  "vais",
-                  "suis",
-                  "ai"
+                  "postuler",
+                  "une candidature",
+                  "un entretien",
+                  "une compétence"
                 ],
-                "answer": 0,
-                "why": "Le futur proche se forme avec aller au présent + infinitif."
+                "answer": 3,
+                "why": "Le terme « une compétence » signifie « مهارة ». "
               },
               {
-                "q": "Tu vas à la pharmacie ? Oui, j’___ vais.",
+                "q": "Dans la phrase « Je souhaite postuler à ce poste. », que signifie « postuler » ?",
                 "options": [
-                  "en",
-                  "y",
-                  "le"
+                  "مقابلة",
+                  "مهارة",
+                  "يتقدّم لوظيفة",
+                  "طلب ترشح"
                 ],
-                "answer": 1,
-                "why": "Y remplace ici un lieu introduit par à."
+                "answer": 2,
+                "why": "Dans ce contexte, « postuler » signifie « يتقدّم لوظيفة ». "
               },
               {
                 "q": "Tu veux du café ? Oui, j’___ veux.",
                 "options": [
-                  "y",
+                  "le",
                   "en",
-                  "lui"
+                  "y"
                 ],
                 "answer": 1,
-                "why": "En remplace une quantité ou un complément introduit par du/de la/des."
+                "why": "« En » peut remplacer une quantité ou un groupe introduit par « de »."
               },
               {
-                "q": "J’habite ici ___ trois ans.",
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
                 "options": [
-                  "depuis",
-                  "pendant de",
-                  "il y a de"
+                  "Combien je suis le loyer ?",
+                  "Je comprends le loyer demain.",
+                  "Les charges sont-elles comprises dans le loyer ?"
                 ],
-                "answer": 0,
-                "why": "Depuis indique une situation qui a commencé dans le passé et continue."
+                "answer": 2,
+                "why": "La question porte directement sur les charges et le loyer."
               }
             ],
             "resources": [
@@ -6283,7 +6486,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب بريداً لطلب معلومة عن دورة أو تدريب.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الدراسة والعمل». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الطعام والعادات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: الأسرة والعلاقات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الطعام والعادات — الطلب والكميات وعادات الطعام وأسباب التفضيل.",
+            "nextLink": "الموضوع التالي: الأسرة والعلاقات — وصف الأشخاص والطلبات والرسائل الرقمية."
           }
         ],
         [
@@ -6317,7 +6527,7 @@ window.FRENCH_CURRICULUM = {
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -6336,10 +6546,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب دعوة واضحة تتضمن الموعد والمكان والتفاصيل.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب دعوة واضحة تتضمن الموعد والمكان والتفاصيل.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب دعوة واضحة تتضمن الموعد والمكان والتفاصيل.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Cause et conséquence : parce que, donc, alors»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -6358,44 +6580,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "J’habite ici ___ trois ans.",
+                "q": "Quel terme correspond à la définition : « يساعد بعضنا بعضاً » ?",
                 "options": [
-                  "depuis",
-                  "pendant de",
-                  "il y a de"
+                  "un proche",
+                  "s’entendre avec",
+                  "un rendez-vous",
+                  "s’entraider"
                 ],
-                "answer": 0,
-                "why": "Depuis indique une situation qui a commencé dans le passé et continue."
+                "answer": 3,
+                "why": "Le terme « s’entraider » signifie « يساعد بعضنا بعضاً ». "
               },
               {
-                "q": "Ce logement est ___ cher que l’autre.",
+                "q": "Dans la phrase « Je vais rendre visite à un proche. », que signifie « un proche » ?",
                 "options": [
-                  "moins",
-                  "que",
-                  "très que"
+                  "موعد",
+                  "يساعد بعضنا بعضاً",
+                  "شخص مقرّب",
+                  "ينسجم مع"
                 ],
-                "answer": 0,
-                "why": "Le comparatif d’infériorité est moins + adjectif + que."
+                "answer": 2,
+                "why": "Dans ce contexte, « un proche » signifie « شخص مقرّب ». "
               },
               {
-                "q": "Pour demander poliment une chambre, on dit :",
+                "q": "Je prends le bus ___ il pleut.",
                 "options": [
-                  "Donne-moi une chambre !",
-                  "Je voudrais une chambre, s’il vous plaît.",
-                  "Je veux chambre."
+                  "parce qu’",
+                  "cependant",
+                  "malgré"
+                ],
+                "answer": 0,
+                "why": "« Parce que » introduit une cause."
+              },
+              {
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "options": [
+                  "Je comprends le loyer demain.",
+                  "Les charges sont-elles comprises dans le loyer ?",
+                  "Combien je suis le loyer ?"
                 ],
                 "answer": 1,
-                "why": "Je voudrais est une formule de demande polie."
-              },
-              {
-                "q": "Nous ___ des billets hier.",
-                "options": [
-                  "avons acheté",
-                  "sommes acheté",
-                  "achetons demain"
-                ],
-                "answer": 0,
-                "why": "Acheter se conjugue avec avoir au passé composé."
+                "why": "La question porte directement sur les charges et le loyer."
               }
             ],
             "resources": [
@@ -6423,7 +6647,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب دعوة واضحة تتضمن الموعد والمكان والتفاصيل.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الأسرة والعلاقات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الدراسة والعمل، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: اختبار A2 تشخيصي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الدراسة والعمل — الخبرات والمهارات والجدول والرسائل المهنية.",
+            "nextLink": "الموضوع التالي: اختبار A2 تشخيصي — استماع وقراءة وكتابة ومحادثة وتحليل الأخطاء."
           }
         ],
         [
@@ -6457,7 +6688,7 @@ window.FRENCH_CURRICULUM = {
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -6476,10 +6707,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "سجّل النتائج وحدد ثلاث نقاط للمراجعة قبل B1.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («سجّل النتائج وحدد ثلاث نقاط للمراجعة قبل B1.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: سجّل النتائج وحدد ثلاث نقاط للمراجعة قبل B1.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Révision A2 : questions, négation, temps, connecteurs»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -6498,44 +6741,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Nous ___ des billets hier.",
+                "q": "Quel terme correspond à la définition : « تعليمات السؤال » ?",
                 "options": [
-                  "avons acheté",
-                  "sommes acheté",
-                  "achetons demain"
+                  "un brouillon",
+                  "une concession",
+                  "justifier",
+                  "une consigne"
                 ],
-                "answer": 0,
-                "why": "Acheter se conjugue avec avoir au passé composé."
+                "answer": 3,
+                "why": "Le terme « une consigne » signifie « تعليمات السؤال ». "
               },
               {
-                "q": "Il faut ___ rendez-vous.",
+                "q": "Dans la phrase « Je note mes idées sur le brouillon. », que signifie « un brouillon » ?",
                 "options": [
-                  "prendre un",
-                  "prenant un",
-                  "pris un"
-                ],
-                "answer": 0,
-                "why": "Il faut est suivi d’un infinitif."
-              },
-              {
-                "q": "Si j’ai le temps, je ___ vous appeler.",
-                "options": [
-                  "pourrais hier",
-                  "vais peut",
-                  "pourrai"
+                  "يبرّر",
+                  "تعليمات السؤال",
+                  "مسودة",
+                  "إقرار بجزء من الرأي الآخر"
                 ],
                 "answer": 2,
-                "why": "Après si + présent, on peut utiliser le futur dans la proposition principale."
+                "why": "Dans ce contexte, « un brouillon » signifie « مسودة ». "
               },
               {
-                "q": "Le train part à 8 h. Arrivez ___ à la gare.",
+                "q": "Pendant l’écoute, les notes utiles reprennent surtout :",
                 "options": [
-                  "en avance",
-                  "depuis",
-                  "jamais"
+                  "chaque mot entendu sans tri",
+                  "les opinions personnelles du candidat",
+                  "les idées clés, les chiffres et les liens logiques"
+                ],
+                "answer": 2,
+                "why": "Les notes doivent aider à reconstruire l’idée et la structure."
+              },
+              {
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "options": [
+                  "Les charges sont-elles comprises dans le loyer ?",
+                  "Combien je suis le loyer ?",
+                  "Je comprends le loyer demain."
                 ],
                 "answer": 0,
-                "why": "En avance signifie avant l’heure prévue."
+                "why": "La question porte directement sur les charges et le loyer."
               }
             ],
             "resources": [
@@ -6563,7 +6808,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "سجّل النتائج وحدد ثلاث نقاط للمراجعة قبل B1.",
             "writingPrompt": "اكتب فقرة مترابطة عن «اختبار A2 تشخيصي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الأسرة والعلاقات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "تمهيد للانتقال إلى B1: استخدام أزمنة الماضي لربط التجارب، ثم بناء رأي معلّل.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الأسرة والعلاقات — وصف الأشخاص والطلبات والرسائل الرقمية.",
+            "nextLink": "الموضوع التالي: قصص وتجارب — ترتيب الأحداث ووصف المكان والظروف."
           }
         ]
       ]
@@ -6592,20 +6844,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Je préparais le dîner tandis qu’il téléphonait."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
+                "fr": "une anecdote",
+                "ar": "حكاية قصيرة",
+                "example": "J’ai raconté une anecdote amusante."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "un souvenir",
+                "ar": "ذكرى",
+                "example": "Ce souvenir me fait sourire."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -6624,10 +6876,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "احكِ قصة من ثلاث دقائق واكتب ملخصاً.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («احكِ قصة من ثلاث دقائق واكتب ملخصاً.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: احكِ قصة من ثلاث دقائق واكتب ملخصاً.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Imparfait et passé composé dans un récit»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -6646,44 +6910,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pendant que je ___, le téléphone a sonné.",
+                "q": "Quel terme correspond à la définition : « حكاية قصيرة » ?",
                 "options": [
-                  "travaillais",
-                  "ai travaillé",
-                  "travaillerai"
+                  "un souvenir",
+                  "auparavant",
+                  "tandis que",
+                  "une anecdote"
                 ],
-                "answer": 0,
-                "why": "L’imparfait décrit l’action en cours quand un événement survient."
+                "answer": 3,
+                "why": "Le terme « une anecdote » signifie « حكاية قصيرة ». "
               },
               {
-                "q": "C’est le livre ___ j’ai beaucoup aimé.",
+                "q": "Dans la phrase « Ce souvenir me fait sourire. », que signifie « un souvenir » ?",
                 "options": [
-                  "qui",
-                  "que",
-                  "où"
+                  "بينما",
+                  "حكاية قصيرة",
+                  "ذكرى",
+                  "سابقاً"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un souvenir » signifie « ذكرى ». "
+              },
+              {
+                "q": "Elle ___ à Lyon la semaine dernière.",
+                "options": [
+                  "va aller",
+                  "est allée",
+                  "a allé"
                 ],
                 "answer": 1,
-                "why": "Que remplace le complément d’objet direct du verbe aimer."
+                "why": "« Aller » utilise être au passé composé ; le participe s’accorde avec le sujet."
               },
               {
-                "q": "Il pleuvait ; ___, nous sommes sortis.",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "pourtant",
-                  "parce que",
-                  "donc que"
+                  "uniquement le futur",
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait"
                 ],
-                "answer": 0,
-                "why": "Pourtant introduit une opposition."
-              },
-              {
-                "q": "Si j’avais plus de temps, je ___ davantage.",
-                "options": [
-                  "voyagerai",
-                  "voyagerais",
-                  "voyage"
-                ],
-                "answer": 1,
-                "why": "Si + imparfait appelle généralement le conditionnel présent pour une hypothèse."
+                "answer": 2,
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -6711,7 +6977,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "احكِ قصة من ثلاث دقائق واكتب ملخصاً.",
             "writingPrompt": "اكتب فقرة مترابطة عن «قصص وتجارب». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "نقطة تحقق A2: التواصل في المواقف اليومية، سرد تجربة قصيرة، استخدام passé composé وfutur proche، وطلب المعلومات.",
+            "nextStep": "يمهّد للأسبوع التالي: imparfait أم passé composé؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: اختبار A2 تشخيصي — استماع وقراءة وكتابة ومحادثة وتحليل الأخطاء.",
+            "nextLink": "الموضوع التالي: imparfait أم passé composé — الوصف والخلفية مقابل الحدث المكتمل."
           }
         ],
         [
@@ -6721,11 +6994,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Connecteurs chronologiques : d’abord, puis, tandis que, finalement",
             "vocab": [
-              {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
-              },
               {
                 "fr": "tandis que",
                 "ar": "بينما",
@@ -6737,15 +7005,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Tout à coup, le téléphone a sonné."
               },
               {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "une habitude",
+                "ar": "عادة",
+                "example": "Cette habitude était fréquente autrefois."
+              },
+              {
+                "fr": "un événement",
+                "ar": "حدث",
+                "example": "Cet événement a changé ma journée."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -6764,10 +7037,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب قصة تجمع الوصف والأحداث.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب قصة تجمع الوصف والأحداث.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب قصة تجمع الوصف والأحداث.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Connecteurs chronologiques : d’abord, puis, tandis que, finalement»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -6786,44 +7071,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Si j’avais plus de temps, je ___ davantage.",
+                "q": "Quel terme correspond à la définition : « حدث » ?",
                 "options": [
-                  "voyagerai",
-                  "voyagerais",
-                  "voyage"
+                  "tandis que",
+                  "tout à coup",
+                  "une habitude",
+                  "un événement"
                 ],
-                "answer": 1,
-                "why": "Si + imparfait appelle généralement le conditionnel présent pour une hypothèse."
+                "answer": 3,
+                "why": "Le terme « un événement » signifie « حدث ». "
               },
               {
-                "q": "Je vous écris ___ demander des renseignements.",
+                "q": "Dans la phrase « Je préparais le dîner tandis qu’il téléphonait. », que signifie « tandis que » ?",
                 "options": [
-                  "pour",
-                  "malgré",
-                  "depuis"
+                  "عادة",
+                  "حدث",
+                  "بينما",
+                  "فجأة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « tandis que » signifie « بينما ». "
+              },
+              {
+                "q": "Hier, nous ___ un musée.",
+                "options": [
+                  "avons visité",
+                  "sommes visité",
+                  "visitons"
                 ],
                 "answer": 0,
-                "why": "Pour + infinitif exprime ici le but."
+                "why": "« Visiter » se conjugue avec avoir au passé composé."
               },
               {
-                "q": "Il a expliqué qu’il ___ le lendemain.",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "viendra",
-                  "viendrait",
-                  "vient hier"
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait",
+                  "uniquement le futur"
                 ],
                 "answer": 1,
-                "why": "Dans le discours rapporté au passé, le futur devient souvent conditionnel présent."
-              },
-              {
-                "q": "J’habite à Bucarest ___ 2024.",
-                "options": [
-                  "depuis",
-                  "pendant que",
-                  "auparavant de"
-                ],
-                "answer": 0,
-                "why": "Depuis indique une durée qui continue jusqu’à maintenant."
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -6851,7 +7138,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب قصة تجمع الوصف والأحداث.",
             "writingPrompt": "اكتب فقرة مترابطة عن «imparfait أم passé composé». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: قصص وتجارب، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: السيرة والذكريات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: قصص وتجارب — ترتيب الأحداث ووصف المكان والظروف.",
+            "nextLink": "الموضوع التالي: السيرة والذكريات — مراحل الحياة والأحداث المهمة والماضي والحاضر."
           }
         ],
         [
@@ -6862,16 +7156,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Pronoms relatifs qui/que/où",
             "vocab": [
               {
-                "fr": "auparavant",
-                "ar": "سابقاً",
-                "example": "Auparavant, j’habitais à Bagdad."
-              },
-              {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
-              },
-              {
                 "fr": "tout à coup",
                 "ar": "فجأة",
                 "example": "Tout à coup, le téléphone a sonné."
@@ -6880,12 +7164,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "par la suite",
                 "ar": "لاحقاً",
                 "example": "Par la suite, nous avons changé de ville."
+              },
+              {
+                "fr": "un parcours",
+                "ar": "مسار شخصي",
+                "example": "Mon parcours a commencé à Bagdad."
+              },
+              {
+                "fr": "une étape",
+                "ar": "مرحلة",
+                "example": "Cette étape a été importante pour moi."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -6904,10 +7198,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب سيرة لشخصية من 180 كلمة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب سيرة لشخصية من 180 كلمة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب سيرة لشخصية من 180 كلمة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Pronoms relatifs qui/que/où»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -6926,44 +7232,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "J’habite à Bucarest ___ 2024.",
+                "q": "Quel terme correspond à la définition : « فجأة » ?",
                 "options": [
-                  "depuis",
-                  "pendant que",
-                  "auparavant de"
+                  "par la suite",
+                  "un parcours",
+                  "une étape",
+                  "tout à coup"
                 ],
-                "answer": 0,
-                "why": "Depuis indique une durée qui continue jusqu’à maintenant."
+                "answer": 3,
+                "why": "Le terme « tout à coup » signifie « فجأة ». "
               },
               {
-                "q": "Le rapport a été ___ par l’équipe.",
+                "q": "Dans la phrase « Par la suite, nous avons changé de ville. », que signifie « par la suite » ?",
                 "options": [
-                  "rédigé",
-                  "rédiger",
-                  "rédigeant"
+                  "مرحلة",
+                  "فجأة",
+                  "لاحقاً",
+                  "مسار شخصي"
                 ],
-                "answer": 0,
-                "why": "La voix passive se forme avec être + participe passé."
+                "answer": 2,
+                "why": "Dans ce contexte, « par la suite » signifie « لاحقاً ». "
               },
               {
-                "q": "Bien qu’il ___ fatigué, il continue.",
+                "q": "Voici le document ___ j’ai reçu hier.",
                 "options": [
-                  "est",
-                  "soit",
-                  "sera"
+                  "qui",
+                  "où",
+                  "que"
                 ],
-                "answer": 1,
-                "why": "Bien que est normalement suivi du subjonctif."
+                "answer": 2,
+                "why": "« Que » reprend le complément direct du verbe."
               },
               {
-                "q": "Pour conclure un exposé, on peut utiliser :",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "En définitive,",
-                  "Tout à coup,",
-                  "La semaine prochaine à 8 h seulement,"
+                  "l’imparfait",
+                  "uniquement le futur",
+                  "l’impératif dans chaque phrase"
                 ],
                 "answer": 0,
-                "why": "En définitive convient à la conclusion d’un raisonnement."
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -6991,7 +7299,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب سيرة لشخصية من 180 كلمة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «السيرة والذكريات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: imparfait أم passé composé، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: رواية حدث مع رأي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: imparfait أم passé composé — الوصف والخلفية مقابل الحدث المكتمل.",
+            "nextLink": "الموضوع التالي: رواية حدث مع رأي — الانطباعات وتفسير ما تعلمته من التجربة."
           }
         ],
         [
@@ -7002,30 +7317,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Savoir/connaître · raconter une expérience avec précision",
             "vocab": [
               {
+                "fr": "par la suite",
+                "ar": "لاحقاً",
+                "example": "Par la suite, nous avons changé de ville."
+              },
+              {
                 "fr": "auparavant",
                 "ar": "سابقاً",
                 "example": "Auparavant, j’habitais à Bagdad."
               },
               {
-                "fr": "tandis que",
-                "ar": "بينما",
-                "example": "Je préparais le dîner tandis qu’il téléphonait."
+                "fr": "à la suite de",
+                "ar": "إثر / عقب",
+                "example": "À la suite de cette rencontre, j’ai changé d’avis."
               },
               {
-                "fr": "tout à coup",
-                "ar": "فجأة",
-                "example": "Tout à coup, le téléphone a sonné."
-              },
-              {
-                "fr": "par la suite",
-                "ar": "لاحقاً",
-                "example": "Par la suite, nous avons changé de ville."
+                "fr": "cependant",
+                "ar": "مع ذلك",
+                "example": "Le trajet était long ; cependant, il était agréable."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -7044,10 +7359,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "سجّل قصة ثم أجب عن خمسة أسئلة متابعة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («سجّل قصة ثم أجب عن خمسة أسئلة متابعة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: سجّل قصة ثم أجب عن خمسة أسئلة متابعة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Savoir/connaître · raconter une expérience avec précision»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -7066,44 +7393,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pour conclure un exposé, on peut utiliser :",
+                "q": "Quel terme correspond à la définition : « سابقاً » ?",
                 "options": [
-                  "En définitive,",
-                  "Tout à coup,",
-                  "La semaine prochaine à 8 h seulement,"
+                  "à la suite de",
+                  "cependant",
+                  "par la suite",
+                  "auparavant"
                 ],
-                "answer": 0,
-                "why": "En définitive convient à la conclusion d’un raisonnement."
+                "answer": 3,
+                "why": "Le terme « auparavant » signifie « سابقاً ». "
               },
               {
-                "q": "Choisissez la formule la plus adaptée dans un courriel professionnel :",
+                "q": "Dans la phrase « À la suite de cette rencontre, j’ai changé d’avis. », que signifie « à la suite de » ?",
                 "options": [
-                  "Salut, file-moi ça.",
-                  "Pourriez-vous m’indiquer les démarches à suivre ?",
-                  "Hé, réponds vite."
+                  "لاحقاً",
+                  "سابقاً",
+                  "إثر / عقب",
+                  "مع ذلك"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « à la suite de » signifie « إثر / عقب ». "
+              },
+              {
+                "q": "Quand j’étais enfant, nous ___ au parc chaque dimanche.",
+                "options": [
+                  "irons",
+                  "allions",
+                  "sommes allés"
                 ],
                 "answer": 1,
-                "why": "La demande est polie et adaptée au registre professionnel."
+                "why": "L’habitude passée se décrit avec l’imparfait."
               },
               {
-                "q": "Le but de « par conséquent » est de marquer :",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "la conséquence",
-                  "la possession",
-                  "le lieu"
+                  "uniquement le futur",
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait"
                 ],
-                "answer": 0,
-                "why": "Par conséquent introduit une conséquence logique."
-              },
-              {
-                "q": "Pendant que je ___, le téléphone a sonné.",
-                "options": [
-                  "travaillais",
-                  "ai travaillé",
-                  "travaillerai"
-                ],
-                "answer": 0,
-                "why": "L’imparfait décrit l’action en cours quand un événement survient."
+                "answer": 2,
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -7131,7 +7460,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "سجّل قصة ثم أجب عن خمسة أسئلة متابعة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «رواية حدث مع رأي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: السيرة والذكريات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: خبر ومقال؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: السيرة والذكريات — مراحل الحياة والأحداث المهمة والماضي والحاضر.",
+            "nextLink": "الموضوع التالي: خبر ومقال — الفكرة الرئيسية والتفاصيل والرأي الإعلامي."
           }
         ]
       ]
@@ -7160,20 +7496,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Le coût est élevé ; en revanche, le résultat est durable."
               },
               {
-                "fr": "un point de vue",
-                "ar": "وجهة نظر",
-                "example": "Je comprends votre point de vue."
+                "fr": "un éditorial",
+                "ar": "مقال رأي",
+                "example": "L’éditorial défend une position claire."
               },
               {
-                "fr": "nuancer",
-                "ar": "يدقّق / يلطّف الرأي",
-                "example": "Je voudrais nuancer cette affirmation."
+                "fr": "une source",
+                "ar": "مصدر",
+                "example": "La source confirme la date."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -7192,10 +7528,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "لخّص مقالاً قصيراً في 100–130 كلمة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («لخّص مقالاً قصيراً في 100–130 كلمة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: لخّص مقالاً قصيراً في 100–130 كلمة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Exprimer une opinion : à mon avis, selon moi, je trouve que»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -7214,44 +7562,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Il pleuvait ; ___, nous sommes sortis.",
+                "q": "Quel terme correspond à la définition : « مصدر » ?",
                 "options": [
-                  "pourtant",
-                  "parce que",
-                  "donc que"
+                  "à mon avis",
+                  "en revanche",
+                  "un éditorial",
+                  "une source"
+                ],
+                "answer": 3,
+                "why": "Le terme « une source » signifie « مصدر ». "
+              },
+              {
+                "q": "Dans la phrase « À mon avis, cette solution est plus efficace. », que signifie « à mon avis » ?",
+                "options": [
+                  "مقال رأي",
+                  "مصدر",
+                  "في رأيي",
+                  "في المقابل"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « à mon avis » signifie « في رأيي ». "
+              },
+              {
+                "q": "Pour conclure un exposé, on peut dire :",
+                "options": [
+                  "En définitive,…",
+                  "Au milieu de…",
+                  "Par exemple, au début…"
                 ],
                 "answer": 0,
-                "why": "Pourtant introduit une opposition."
+                "why": "« En définitive » introduit une conclusion."
               },
               {
-                "q": "Si j’avais plus de temps, je ___ davantage.",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "voyagerai",
-                  "voyagerais",
-                  "voyage"
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait",
+                  "uniquement le futur"
                 ],
                 "answer": 1,
-                "why": "Si + imparfait appelle généralement le conditionnel présent pour une hypothèse."
-              },
-              {
-                "q": "Je vous écris ___ demander des renseignements.",
-                "options": [
-                  "pour",
-                  "malgré",
-                  "depuis"
-                ],
-                "answer": 0,
-                "why": "Pour + infinitif exprime ici le but."
-              },
-              {
-                "q": "Il a expliqué qu’il ___ le lendemain.",
-                "options": [
-                  "viendra",
-                  "viendrait",
-                  "vient hier"
-                ],
-                "answer": 1,
-                "why": "Dans le discours rapporté au passé, le futur devient souvent conditionnel présent."
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -7279,7 +7629,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "لخّص مقالاً قصيراً في 100–130 كلمة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «خبر ومقال». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: رواية حدث مع رأي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: الموافقة والاعتراض؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: رواية حدث مع رأي — الانطباعات وتفسير ما تعلمته من التجربة.",
+            "nextLink": "الموضوع التالي: الموافقة والاعتراض — pourtant/cependant/en revanche والحجج والأمثلة."
           }
         ],
         [
@@ -7289,11 +7646,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Opposition et concession : pourtant, cependant, en revanche",
             "vocab": [
-              {
-                "fr": "à mon avis",
-                "ar": "في رأيي",
-                "example": "À mon avis, cette solution est plus efficace."
-              },
               {
                 "fr": "en revanche",
                 "ar": "في المقابل",
@@ -7305,15 +7657,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Je comprends votre point de vue."
               },
               {
-                "fr": "nuancer",
-                "ar": "يدقّق / يلطّف الرأي",
-                "example": "Je voudrais nuancer cette affirmation."
+                "fr": "admettre",
+                "ar": "يقرّ",
+                "example": "J’admets que ce choix est difficile."
+              },
+              {
+                "fr": "contester",
+                "ar": "يعترض على",
+                "example": "Elle conteste cette décision."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -7332,10 +7689,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "سجّل نقاشاً لثلاث دقائق عن إيجابيات وسلبيات.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («سجّل نقاشاً لثلاث دقائق عن إيجابيات وسلبيات.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: سجّل نقاشاً لثلاث دقائق عن إيجابيات وسلبيات.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Opposition et concession : pourtant, cependant, en revanche»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -7354,44 +7723,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Il a expliqué qu’il ___ le lendemain.",
+                "q": "Quel terme correspond à la définition : « في المقابل » ?",
                 "options": [
-                  "viendra",
-                  "viendrait",
-                  "vient hier"
+                  "un point de vue",
+                  "admettre",
+                  "contester",
+                  "en revanche"
                 ],
-                "answer": 1,
-                "why": "Dans le discours rapporté au passé, le futur devient souvent conditionnel présent."
+                "answer": 3,
+                "why": "Le terme « en revanche » signifie « في المقابل ». "
               },
               {
-                "q": "J’habite à Bucarest ___ 2024.",
+                "q": "Dans la phrase « Je comprends votre point de vue. », que signifie « un point de vue » ?",
                 "options": [
-                  "depuis",
-                  "pendant que",
-                  "auparavant de"
+                  "يعترض على",
+                  "في المقابل",
+                  "وجهة نظر",
+                  "يقرّ"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un point de vue » signifie « وجهة نظر ». "
+              },
+              {
+                "q": "___, cette solution présente des avantages ; toutefois, elle a des limites.",
+                "options": [
+                  "Puisque",
+                  "Dès que",
+                  "Certes"
+                ],
+                "answer": 2,
+                "why": "« Certes… toutefois… » exprime une concession nuancée."
+              },
+              {
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "options": [
+                  "l’imparfait",
+                  "uniquement le futur",
+                  "l’impératif dans chaque phrase"
                 ],
                 "answer": 0,
-                "why": "Depuis indique une durée qui continue jusqu’à maintenant."
-              },
-              {
-                "q": "Le rapport a été ___ par l’équipe.",
-                "options": [
-                  "rédigé",
-                  "rédiger",
-                  "rédigeant"
-                ],
-                "answer": 0,
-                "why": "La voix passive se forme avec être + participe passé."
-              },
-              {
-                "q": "Bien qu’il ___ fatigué, il continue.",
-                "options": [
-                  "est",
-                  "soit",
-                  "sera"
-                ],
-                "answer": 1,
-                "why": "Bien que est normalement suivi du subjonctif."
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -7419,7 +7790,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "سجّل نقاشاً لثلاث دقائق عن إيجابيات وسلبيات.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الموافقة والاعتراض». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: خبر ومقال، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: السبب والنتيجة والشرط؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: خبر ومقال — الفكرة الرئيسية والتفاصيل والرأي الإعلامي.",
+            "nextLink": "الموضوع التالي: السبب والنتيجة والشرط — parce que/puisque/donc/par conséquent/si."
           }
         ],
         [
@@ -7430,16 +7808,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Cause et conséquence : puisque, donc, par conséquent",
             "vocab": [
               {
-                "fr": "à mon avis",
-                "ar": "في رأيي",
-                "example": "À mon avis, cette solution est plus efficace."
-              },
-              {
-                "fr": "en revanche",
-                "ar": "في المقابل",
-                "example": "Le coût est élevé ; en revanche, le résultat est durable."
-              },
-              {
                 "fr": "un point de vue",
                 "ar": "وجهة نظر",
                 "example": "Je comprends votre point de vue."
@@ -7448,12 +7816,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "nuancer",
                 "ar": "يدقّق / يلطّف الرأي",
                 "example": "Je voudrais nuancer cette affirmation."
+              },
+              {
+                "fr": "un facteur",
+                "ar": "عامل مؤثر",
+                "example": "Le coût est un facteur important."
+              },
+              {
+                "fr": "entraîner",
+                "ar": "يؤدي إلى",
+                "example": "Cette mesure peut entraîner des changements."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -7472,10 +7850,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب فقرة تعرض مشكلة وأسبابها وحلولها.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب فقرة تعرض مشكلة وأسبابها وحلولها.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب فقرة تعرض مشكلة وأسبابها وحلولها.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Cause et conséquence : puisque, donc, par conséquent»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -7494,44 +7884,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Bien qu’il ___ fatigué, il continue.",
+                "q": "Quel terme correspond à la définition : « يدقّق / يلطّف الرأي » ?",
                 "options": [
-                  "est",
-                  "soit",
-                  "sera"
+                  "un facteur",
+                  "entraîner",
+                  "un point de vue",
+                  "nuancer"
+                ],
+                "answer": 3,
+                "why": "Le terme « nuancer » signifie « يدقّق / يلطّف الرأي ». "
+              },
+              {
+                "q": "Dans la phrase « Le coût est un facteur important. », que signifie « un facteur » ?",
+                "options": [
+                  "وجهة نظر",
+                  "يدقّق / يلطّف الرأي",
+                  "عامل مؤثر",
+                  "يؤدي إلى"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un facteur » signifie « عامل مؤثر ». "
+              },
+              {
+                "q": "Il a beaucoup plu ; ___, la route est fermée.",
+                "options": [
+                  "malgré",
+                  "par conséquent",
+                  "bien que"
                 ],
                 "answer": 1,
-                "why": "Bien que est normalement suivi du subjonctif."
+                "why": "« Par conséquent » introduit une conséquence."
               },
               {
-                "q": "Pour conclure un exposé, on peut utiliser :",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "En définitive,",
-                  "Tout à coup,",
-                  "La semaine prochaine à 8 h seulement,"
+                  "uniquement le futur",
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait"
                 ],
-                "answer": 0,
-                "why": "En définitive convient à la conclusion d’un raisonnement."
-              },
-              {
-                "q": "Choisissez la formule la plus adaptée dans un courriel professionnel :",
-                "options": [
-                  "Salut, file-moi ça.",
-                  "Pourriez-vous m’indiquer les démarches à suivre ?",
-                  "Hé, réponds vite."
-                ],
-                "answer": 1,
-                "why": "La demande est polie et adaptée au registre professionnel."
-              },
-              {
-                "q": "Le but de « par conséquent » est de marquer :",
-                "options": [
-                  "la conséquence",
-                  "la possession",
-                  "le lieu"
-                ],
-                "answer": 0,
-                "why": "Par conséquent introduit une conséquence logique."
+                "answer": 2,
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -7559,7 +7951,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب فقرة تعرض مشكلة وأسبابها وحلولها.",
             "writingPrompt": "اكتب فقرة مترابطة عن «السبب والنتيجة والشرط». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الموافقة والاعتراض، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: عرض رأي منظم؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الموافقة والاعتراض — pourtant/cependant/en revanche والحجج والأمثلة.",
+            "nextLink": "الموضوع التالي: عرض رأي منظم — مقدمة وحجتان ومثال وخاتمة."
           }
         ],
         [
@@ -7570,30 +7969,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Structurer une présentation : introduction, arguments, conclusion",
             "vocab": [
               {
+                "fr": "nuancer",
+                "ar": "يدقّق / يلطّف الرأي",
+                "example": "Je voudrais nuancer cette affirmation."
+              },
+              {
                 "fr": "à mon avis",
                 "ar": "في رأيي",
                 "example": "À mon avis, cette solution est plus efficace."
               },
               {
-                "fr": "en revanche",
-                "ar": "في المقابل",
-                "example": "Le coût est élevé ; en revanche, le résultat est durable."
+                "fr": "une introduction",
+                "ar": "مقدمة",
+                "example": "L’introduction présente la question."
               },
               {
-                "fr": "un point de vue",
-                "ar": "وجهة نظر",
-                "example": "Je comprends votre point de vue."
-              },
-              {
-                "fr": "nuancer",
-                "ar": "يدقّق / يلطّف الرأي",
-                "example": "Je voudrais nuancer cette affirmation."
+                "fr": "un argument contraire",
+                "ar": "حجة مضادة",
+                "example": "Je réponds à un argument contraire."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -7612,10 +8011,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "قدّم عرضاً لأربع دقائق وأجب عن أسئلة المستمع.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («قدّم عرضاً لأربع دقائق وأجب عن أسئلة المستمع.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: قدّم عرضاً لأربع دقائق وأجب عن أسئلة المستمع.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Structurer une présentation : introduction, arguments, conclusion»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -7634,44 +8045,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Le but de « par conséquent » est de marquer :",
+                "q": "Quel terme correspond à la définition : « مقدمة » ?",
                 "options": [
-                  "la conséquence",
-                  "la possession",
-                  "le lieu"
+                  "un argument contraire",
+                  "nuancer",
+                  "à mon avis",
+                  "une introduction"
                 ],
-                "answer": 0,
-                "why": "Par conséquent introduit une conséquence logique."
+                "answer": 3,
+                "why": "Le terme « une introduction » signifie « مقدمة ». "
               },
               {
-                "q": "Pendant que je ___, le téléphone a sonné.",
+                "q": "Dans la phrase « Je réponds à un argument contraire. », que signifie « un argument contraire » ?",
                 "options": [
-                  "travaillais",
-                  "ai travaillé",
-                  "travaillerai"
+                  "في رأيي",
+                  "مقدمة",
+                  "حجة مضادة",
+                  "يدقّق / يلطّف الرأي"
                 ],
-                "answer": 0,
-                "why": "L’imparfait décrit l’action en cours quand un événement survient."
+                "answer": 2,
+                "why": "Dans ce contexte, « un argument contraire » signifie « حجة مضادة ». "
               },
               {
-                "q": "C’est le livre ___ j’ai beaucoup aimé.",
+                "q": "Pour conclure un exposé, on peut dire :",
                 "options": [
-                  "qui",
-                  "que",
-                  "où"
+                  "En définitive,…",
+                  "Au milieu de…",
+                  "Par exemple, au début…"
+                ],
+                "answer": 0,
+                "why": "« En définitive » introduit une conclusion."
+              },
+              {
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "options": [
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait",
+                  "uniquement le futur"
                 ],
                 "answer": 1,
-                "why": "Que remplace le complément d’objet direct du verbe aimer."
-              },
-              {
-                "q": "Il pleuvait ; ___, nous sommes sortis.",
-                "options": [
-                  "pourtant",
-                  "parce que",
-                  "donc que"
-                ],
-                "answer": 0,
-                "why": "Pourtant introduit une opposition."
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -7699,7 +8112,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "قدّم عرضاً لأربع دقائق وأجب عن أسئلة المستمع.",
             "writingPrompt": "اكتب فقرة مترابطة عن «عرض رأي منظم». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: السبب والنتيجة والشرط، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: السيرة الذاتية وإعلان وظيفة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: السبب والنتيجة والشرط — parce que/puisque/donc/par conséquent/si.",
+            "nextLink": "الموضوع التالي: السيرة الذاتية وإعلان وظيفة — استخراج المتطلبات ووصف الخبرة والمهارات."
           }
         ]
       ]
@@ -7728,20 +8148,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Je prépare mon entretien d’embauche."
               },
               {
-                "fr": "une compétence",
-                "ar": "مهارة",
-                "example": "La communication est une compétence importante."
+                "fr": "une expérience professionnelle",
+                "ar": "خبرة مهنية",
+                "example": "Mon expérience professionnelle est variée."
               },
               {
-                "fr": "postuler",
-                "ar": "يتقدّم لوظيفة",
-                "example": "Je souhaite postuler à ce poste."
+                "fr": "une offre d’emploi",
+                "ar": "إعلان وظيفة",
+                "example": "J’ai répondu à une offre d’emploi."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -7760,10 +8180,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب رسالة ترشح مختصرة لوظيفة مناسبة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب رسالة ترشح مختصرة لوظيفة مناسبة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب رسالة ترشح مختصرة لوظيفة مناسبة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Registre professionnel : salutations, demandes et formules de politesse»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -7782,44 +8214,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
+                "q": "Quel terme correspond à la définition : « طلب ترشح » ?",
+                "options": [
+                  "un entretien",
+                  "une expérience professionnelle",
+                  "une offre d’emploi",
+                  "une candidature"
+                ],
+                "answer": 3,
+                "why": "Le terme « une candidature » signifie « طلب ترشح ». "
+              },
+              {
+                "q": "Dans la phrase « Je prépare mon entretien d’embauche. », que signifie « un entretien » ?",
+                "options": [
+                  "إعلان وظيفة",
+                  "طلب ترشح",
+                  "مقابلة",
+                  "خبرة مهنية"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un entretien » signifie « مقابلة ». "
+              },
+              {
                 "q": "Je vous écris ___ demander des renseignements.",
                 "options": [
-                  "pour",
-                  "malgré",
-                  "depuis"
-                ],
-                "answer": 0,
-                "why": "Pour + infinitif exprime ici le but."
-              },
-              {
-                "q": "Il a expliqué qu’il ___ le lendemain.",
-                "options": [
-                  "viendra",
-                  "viendrait",
-                  "vient hier"
-                ],
-                "answer": 1,
-                "why": "Dans le discours rapporté au passé, le futur devient souvent conditionnel présent."
-              },
-              {
-                "q": "J’habite à Bucarest ___ 2024.",
-                "options": [
                   "depuis",
-                  "pendant que",
-                  "auparavant de"
+                  "chez",
+                  "pour"
                 ],
-                "answer": 0,
-                "why": "Depuis indique une durée qui continue jusqu’à maintenant."
+                "answer": 2,
+                "why": "« Pour + infinitif » exprime le but."
               },
               {
-                "q": "Le rapport a été ___ par l’équipe.",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "rédigé",
-                  "rédiger",
-                  "rédigeant"
+                  "l’imparfait",
+                  "uniquement le futur",
+                  "l’impératif dans chaque phrase"
                 ],
                 "answer": 0,
-                "why": "La voix passive se forme avec être + participe passé."
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -7847,7 +8281,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب رسالة ترشح مختصرة لوظيفة مناسبة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «السيرة الذاتية وإعلان وظيفة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: عرض رأي منظم، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: المقابلة المهنية؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: عرض رأي منظم — مقدمة وحجتان ومثال وخاتمة.",
+            "nextLink": "الموضوع التالي: المقابلة المهنية — الخبرة والأهداف وأسئلة المتابعة."
           }
         ],
         [
@@ -7857,11 +8298,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Conditionnel de politesse : je souhaiterais, pourriez-vous",
             "vocab": [
-              {
-                "fr": "une candidature",
-                "ar": "طلب ترشح",
-                "example": "J’ai envoyé ma candidature hier."
-              },
               {
                 "fr": "un entretien",
                 "ar": "مقابلة",
@@ -7873,15 +8309,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "La communication est une compétence importante."
               },
               {
-                "fr": "postuler",
-                "ar": "يتقدّم لوظيفة",
-                "example": "Je souhaite postuler à ce poste."
+                "fr": "un recruteur",
+                "ar": "مسؤول توظيف",
+                "example": "Le recruteur pose trois questions."
+              },
+              {
+                "fr": "mettre en valeur",
+                "ar": "يبرز",
+                "example": "Je sais mettre en valeur mes compétences."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -7900,10 +8341,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "سجّل مقابلة تجريبية لأربع دقائق.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («سجّل مقابلة تجريبية لأربع دقائق.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: سجّل مقابلة تجريبية لأربع دقائق.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Conditionnel de politesse : je souhaiterais, pourriez-vous»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -7922,44 +8375,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Le rapport a été ___ par l’équipe.",
+                "q": "Quel terme correspond à la définition : « مهارة » ?",
                 "options": [
-                  "rédigé",
-                  "rédiger",
-                  "rédigeant"
+                  "un recruteur",
+                  "mettre en valeur",
+                  "un entretien",
+                  "une compétence"
                 ],
-                "answer": 0,
-                "why": "La voix passive se forme avec être + participe passé."
+                "answer": 3,
+                "why": "Le terme « une compétence » signifie « مهارة ». "
               },
               {
-                "q": "Bien qu’il ___ fatigué, il continue.",
+                "q": "Dans la phrase « Le recruteur pose trois questions. », que signifie « un recruteur » ?",
                 "options": [
-                  "est",
-                  "soit",
-                  "sera"
+                  "مقابلة",
+                  "مهارة",
+                  "مسؤول توظيف",
+                  "يبرز"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un recruteur » signifie « مسؤول توظيف ». "
+              },
+              {
+                "q": "Je ___ connaître les conditions de réservation.",
+                "options": [
+                  "souhaitant",
+                  "souhaiterais",
+                  "souhaite hier"
                 ],
                 "answer": 1,
-                "why": "Bien que est normalement suivi du subjonctif."
+                "why": "Le conditionnel présent permet d’atténuer une demande."
               },
               {
-                "q": "Pour conclure un exposé, on peut utiliser :",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "En définitive,",
-                  "Tout à coup,",
-                  "La semaine prochaine à 8 h seulement,"
+                  "uniquement le futur",
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait"
                 ],
-                "answer": 0,
-                "why": "En définitive convient à la conclusion d’un raisonnement."
-              },
-              {
-                "q": "Choisissez la formule la plus adaptée dans un courriel professionnel :",
-                "options": [
-                  "Salut, file-moi ça.",
-                  "Pourriez-vous m’indiquer les démarches à suivre ?",
-                  "Hé, réponds vite."
-                ],
-                "answer": 1,
-                "why": "La demande est polie et adaptée au registre professionnel."
+                "answer": 2,
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -7987,7 +8442,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "سجّل مقابلة تجريبية لأربع دقائق.",
             "writingPrompt": "اكتب فقرة مترابطة عن «المقابلة المهنية». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: السيرة الذاتية وإعلان وظيفة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: الرسائل الرسمية؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: السيرة الذاتية وإعلان وظيفة — استخراج المتطلبات ووصف الخبرة والمهارات.",
+            "nextLink": "الموضوع التالي: الرسائل الرسمية — طلب معلومة وشكوى مهذبة وبريد منظم."
           }
         ],
         [
@@ -7998,16 +8460,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Discours rapporté : il a expliqué que…",
             "vocab": [
               {
-                "fr": "une candidature",
-                "ar": "طلب ترشح",
-                "example": "J’ai envoyé ma candidature hier."
-              },
-              {
-                "fr": "un entretien",
-                "ar": "مقابلة",
-                "example": "Je prépare mon entretien d’embauche."
-              },
-              {
                 "fr": "une compétence",
                 "ar": "مهارة",
                 "example": "La communication est une compétence importante."
@@ -8016,12 +8468,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "postuler",
                 "ar": "يتقدّم لوظيفة",
                 "example": "Je souhaite postuler à ce poste."
+              },
+              {
+                "fr": "une réclamation",
+                "ar": "شكوى رسمية",
+                "example": "J’écris une réclamation au service client."
+              },
+              {
+                "fr": "un délai",
+                "ar": "مهلة",
+                "example": "Le délai de réponse est de dix jours."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -8040,10 +8502,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب بريداً رسمياً وراجعه من حيث النبرة والوضوح.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب بريداً رسمياً وراجعه من حيث النبرة والوضوح.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب بريداً رسمياً وراجعه من حيث النبرة والوضوح.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Discours rapporté : il a expliqué que…»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -8062,44 +8536,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Choisissez la formule la plus adaptée dans un courriel professionnel :",
+                "q": "Quel terme correspond à la définition : « شكوى رسمية » ?",
                 "options": [
-                  "Salut, file-moi ça.",
-                  "Pourriez-vous m’indiquer les démarches à suivre ?",
-                  "Hé, réponds vite."
+                  "un délai",
+                  "une compétence",
+                  "postuler",
+                  "une réclamation"
                 ],
-                "answer": 1,
-                "why": "La demande est polie et adaptée au registre professionnel."
+                "answer": 3,
+                "why": "Le terme « une réclamation » signifie « شكوى رسمية ». "
               },
               {
-                "q": "Le but de « par conséquent » est de marquer :",
+                "q": "Dans la phrase « Le délai de réponse est de dix jours. », que signifie « un délai » ?",
                 "options": [
-                  "la conséquence",
-                  "la possession",
-                  "le lieu"
+                  "يتقدّم لوظيفة",
+                  "شكوى رسمية",
+                  "مهلة",
+                  "مهارة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un délai » signifie « مهلة ». "
+              },
+              {
+                "q": "Les données ont été ___ avant la conclusion.",
+                "options": [
+                  "vérifiées",
+                  "vérifier",
+                  "vérifient"
                 ],
                 "answer": 0,
-                "why": "Par conséquent introduit une conséquence logique."
+                "why": "Le participe passé s’accorde avec « les données » dans cette phrase passive."
               },
               {
-                "q": "Pendant que je ___, le téléphone a sonné.",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "travaillais",
-                  "ai travaillé",
-                  "travaillerai"
-                ],
-                "answer": 0,
-                "why": "L’imparfait décrit l’action en cours quand un événement survient."
-              },
-              {
-                "q": "C’est le livre ___ j’ai beaucoup aimé.",
-                "options": [
-                  "qui",
-                  "que",
-                  "où"
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait",
+                  "uniquement le futur"
                 ],
                 "answer": 1,
-                "why": "Que remplace le complément d’objet direct du verbe aimer."
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -8127,7 +8603,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب بريداً رسمياً وراجعه من حيث النبرة والوضوح.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الرسائل الرسمية». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: المقابلة المهنية، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: عرض خبرة أو مشروع؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: المقابلة المهنية — الخبرة والأهداف وأسئلة المتابعة.",
+            "nextLink": "الموضوع التالي: عرض خبرة أو مشروع — تسلسل عملي ونتائج وتحديات وتعلم."
           }
         ],
         [
@@ -8138,30 +8621,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "CV, courriel formel et entretien : clarté et registre",
             "vocab": [
               {
+                "fr": "postuler",
+                "ar": "يتقدّم لوظيفة",
+                "example": "Je souhaite postuler à ce poste."
+              },
+              {
                 "fr": "une candidature",
                 "ar": "طلب ترشح",
                 "example": "J’ai envoyé ma candidature hier."
               },
               {
-                "fr": "un entretien",
-                "ar": "مقابلة",
-                "example": "Je prépare mon entretien d’embauche."
+                "fr": "un objectif",
+                "ar": "هدف",
+                "example": "Notre objectif est de réduire les coûts."
               },
               {
-                "fr": "une compétence",
-                "ar": "مهارة",
-                "example": "La communication est une compétence importante."
-              },
-              {
-                "fr": "postuler",
-                "ar": "يتقدّم لوظيفة",
-                "example": "Je souhaite postuler à ce poste."
+                "fr": "une échéance",
+                "ar": "موعد نهائي",
+                "example": "L’échéance est fixée au mois de juin."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -8180,10 +8663,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "قدّم مشروعاً أو تجربة عمل في 4–5 دقائق.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («قدّم مشروعاً أو تجربة عمل في 4–5 دقائق.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: قدّم مشروعاً أو تجربة عمل في 4–5 دقائق.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «CV, courriel formel et entretien : clarté et registre»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -8202,44 +8697,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "C’est le livre ___ j’ai beaucoup aimé.",
+                "q": "Quel terme correspond à la définition : « موعد نهائي » ?",
                 "options": [
-                  "qui",
-                  "que",
-                  "où"
+                  "postuler",
+                  "une candidature",
+                  "un objectif",
+                  "une échéance"
                 ],
-                "answer": 1,
-                "why": "Que remplace le complément d’objet direct du verbe aimer."
+                "answer": 3,
+                "why": "Le terme « une échéance » signifie « موعد نهائي ». "
               },
               {
-                "q": "Il pleuvait ; ___, nous sommes sortis.",
+                "q": "Dans la phrase « Je souhaite postuler à ce poste. », que signifie « postuler » ?",
                 "options": [
-                  "pourtant",
-                  "parce que",
-                  "donc que"
+                  "هدف",
+                  "موعد نهائي",
+                  "يتقدّم لوظيفة",
+                  "طلب ترشح"
                 ],
-                "answer": 0,
-                "why": "Pourtant introduit une opposition."
-              },
-              {
-                "q": "Si j’avais plus de temps, je ___ davantage.",
-                "options": [
-                  "voyagerai",
-                  "voyagerais",
-                  "voyage"
-                ],
-                "answer": 1,
-                "why": "Si + imparfait appelle généralement le conditionnel présent pour une hypothèse."
+                "answer": 2,
+                "why": "Dans ce contexte, « postuler » signifie « يتقدّم لوظيفة ». "
               },
               {
                 "q": "Je vous écris ___ demander des renseignements.",
                 "options": [
-                  "pour",
-                  "malgré",
-                  "depuis"
+                  "depuis",
+                  "chez",
+                  "pour"
+                ],
+                "answer": 2,
+                "why": "« Pour + infinitif » exprime le but."
+              },
+              {
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "options": [
+                  "l’imparfait",
+                  "uniquement le futur",
+                  "l’impératif dans chaque phrase"
                 ],
                 "answer": 0,
-                "why": "Pour + infinitif exprime ici le but."
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -8267,7 +8764,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "قدّم مشروعاً أو تجربة عمل في 4–5 دقائق.",
             "writingPrompt": "اكتب فقرة مترابطة عن «عرض خبرة أو مشروع». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الرسائل الرسمية، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: الصحة والرفاه؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الرسائل الرسمية — طلب معلومة وشكوى مهذبة وبريد منظم.",
+            "nextLink": "الموضوع التالي: الصحة والرفاه — العادات والنصيحة والمقارنة بين الخيارات."
           }
         ]
       ]
@@ -8296,20 +8800,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "La ville veut mettre en œuvre un nouveau plan."
               },
               {
-                "fr": "une conséquence",
-                "ar": "نتيجة",
-                "example": "Cette décision aura une conséquence à long terme."
+                "fr": "le bien-être",
+                "ar": "الرفاه",
+                "example": "Le sommeil améliore le bien-être."
               },
               {
-                "fr": "une approche",
-                "ar": "نهج / مقاربة",
-                "example": "Une approche globale peut être plus efficace."
+                "fr": "la prévention",
+                "ar": "الوقاية",
+                "example": "La prévention joue un rôle important."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -8328,10 +8832,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اشرح خطة لتحسين عادة صحية أو تنظيم الوقت.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اشرح خطة لتحسين عادة صحية أو تنظيم الوقت.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اشرح خطة لتحسين عادة صحية أو تنظيم الوقت.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Hypothèse : si + présent / futur; si + imparfait / conditionnel»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -8350,44 +8866,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "J’habite à Bucarest ___ 2024.",
+                "q": "Quel terme correspond à la définition : « ينفّذ » ?",
                 "options": [
-                  "depuis",
-                  "pendant que",
-                  "auparavant de"
+                  "le bien-être",
+                  "la prévention",
+                  "un enjeu",
+                  "mettre en œuvre"
                 ],
-                "answer": 0,
-                "why": "Depuis indique une durée qui continue jusqu’à maintenant."
+                "answer": 3,
+                "why": "Le terme « mettre en œuvre » signifie « ينفّذ ». "
               },
               {
-                "q": "Le rapport a été ___ par l’équipe.",
+                "q": "Dans la phrase « Le sommeil améliore le bien-être. », que signifie « le bien-être » ?",
                 "options": [
-                  "rédigé",
-                  "rédiger",
-                  "rédigeant"
+                  "قضية مهمّة",
+                  "ينفّذ",
+                  "الرفاه",
+                  "الوقاية"
                 ],
-                "answer": 0,
-                "why": "La voix passive se forme avec être + participe passé."
+                "answer": 2,
+                "why": "Dans ce contexte, « le bien-être » signifie « الرفاه ». "
               },
               {
-                "q": "Bien qu’il ___ fatigué, il continue.",
+                "q": "Quand j’étais enfant, nous ___ au parc chaque dimanche.",
                 "options": [
-                  "est",
-                  "soit",
-                  "sera"
+                  "irons",
+                  "allions",
+                  "sommes allés"
                 ],
                 "answer": 1,
-                "why": "Bien que est normalement suivi du subjonctif."
+                "why": "L’habitude passée se décrit avec l’imparfait."
               },
               {
-                "q": "Pour conclure un exposé, on peut utiliser :",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "En définitive,",
-                  "Tout à coup,",
-                  "La semaine prochaine à 8 h seulement,"
+                  "uniquement le futur",
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait"
                 ],
-                "answer": 0,
-                "why": "En définitive convient à la conclusion d’un raisonnement."
+                "answer": 2,
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -8415,7 +8933,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اشرح خطة لتحسين عادة صحية أو تنظيم الوقت.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الصحة والرفاه». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: عرض خبرة أو مشروع، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: المدينة والبيئة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: عرض خبرة أو مشروع — تسلسل عملي ونتائج وتحديات وتعلم.",
+            "nextLink": "الموضوع التالي: المدينة والبيئة — النقل والنفايات والطاقة والمساحات العامة."
           }
         ],
         [
@@ -8425,11 +8950,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Exprimer la certitude, la probabilité et le doute",
             "vocab": [
-              {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
-              },
               {
                 "fr": "la résilience",
                 "ar": "القدرة على الصمود",
@@ -8441,15 +8961,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Les transports publics sont un levier important."
               },
               {
-                "fr": "l’adaptation",
-                "ar": "التكيّف",
-                "example": "L’adaptation au changement climatique est nécessaire."
+                "fr": "la pollution sonore",
+                "ar": "التلوث الضوضائي",
+                "example": "La pollution sonore nuit au sommeil."
+              },
+              {
+                "fr": "un espace vert",
+                "ar": "مساحة خضراء",
+                "example": "Cet espace vert est ouvert au public."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -8468,10 +8993,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب مقترحاً لحل مشكلة في الحي.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب مقترحاً لحل مشكلة في الحي.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب مقترحاً لحل مشكلة في الحي.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Exprimer la certitude, la probabilité et le doute»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -8490,34 +9027,26 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pour conclure un exposé, on peut utiliser :",
+                "q": "Quel terme correspond à la définition : « التلوث الضوضائي » ?",
                 "options": [
-                  "En définitive,",
-                  "Tout à coup,",
-                  "La semaine prochaine à 8 h seulement,"
+                  "un espace vert",
+                  "la résilience",
+                  "un levier",
+                  "la pollution sonore"
                 ],
-                "answer": 0,
-                "why": "En définitive convient à la conclusion d’un raisonnement."
+                "answer": 3,
+                "why": "Le terme « la pollution sonore » signifie « التلوث الضوضائي ». "
               },
               {
-                "q": "Choisissez la formule la plus adaptée dans un courriel professionnel :",
+                "q": "Dans la phrase « Cet espace vert est ouvert au public. », que signifie « un espace vert » ?",
                 "options": [
-                  "Salut, file-moi ça.",
-                  "Pourriez-vous m’indiquer les démarches à suivre ?",
-                  "Hé, réponds vite."
+                  "وسيلة فعّالة",
+                  "التلوث الضوضائي",
+                  "مساحة خضراء",
+                  "القدرة على الصمود"
                 ],
-                "answer": 1,
-                "why": "La demande est polie et adaptée au registre professionnel."
-              },
-              {
-                "q": "Le but de « par conséquent » est de marquer :",
-                "options": [
-                  "la conséquence",
-                  "la possession",
-                  "le lieu"
-                ],
-                "answer": 0,
-                "why": "Par conséquent introduit une conséquence logique."
+                "answer": 2,
+                "why": "Dans ce contexte, « un espace vert » signifie « مساحة خضراء ». "
               },
               {
                 "q": "Pendant que je ___, le téléphone a sonné.",
@@ -8527,7 +9056,17 @@ window.FRENCH_CURRICULUM = {
                   "travaillerai"
                 ],
                 "answer": 0,
-                "why": "L’imparfait décrit l’action en cours quand un événement survient."
+                "why": "L’imparfait décrit l’action en cours interrompue par un événement."
+              },
+              {
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "options": [
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait",
+                  "uniquement le futur"
+                ],
+                "answer": 1,
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -8555,7 +9094,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب مقترحاً لحل مشكلة في الحي.",
             "writingPrompt": "اكتب فقرة مترابطة عن «المدينة والبيئة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الصحة والرفاه، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: التكنولوجيا والمجتمع؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الصحة والرفاه — العادات والنصيحة والمقارنة بين الخيارات.",
+            "nextLink": "الموضوع التالي: التكنولوجيا والمجتمع — فوائد وعيوب والتواصل والخصوصية."
           }
         ],
         [
@@ -8566,16 +9112,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Cause, conséquence et but",
             "vocab": [
               {
-                "fr": "un enjeu",
-                "ar": "قضية مهمّة",
-                "example": "L’accès à l’éducation est un enjeu majeur."
-              },
-              {
-                "fr": "mettre en œuvre",
-                "ar": "ينفّذ",
-                "example": "La ville veut mettre en œuvre un nouveau plan."
-              },
-              {
                 "fr": "une conséquence",
                 "ar": "نتيجة",
                 "example": "Cette décision aura une conséquence à long terme."
@@ -8584,12 +9120,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "une approche",
                 "ar": "نهج / مقاربة",
                 "example": "Une approche globale peut être plus efficace."
+              },
+              {
+                "fr": "la fracture numérique",
+                "ar": "الفجوة الرقمية",
+                "example": "La fracture numérique limite l’accès à certains services."
+              },
+              {
+                "fr": "un usage responsable",
+                "ar": "استخدام مسؤول",
+                "example": "Un usage responsable protège les données."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -8608,10 +9154,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "ناقش التكنولوجيا بحجتين لكل جانب.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («ناقش التكنولوجيا بحجتين لكل جانب.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: ناقش التكنولوجيا بحجتين لكل جانب.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Cause, conséquence et but»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -8630,44 +9188,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pendant que je ___, le téléphone a sonné.",
+                "q": "Quel terme correspond à la définition : « استخدام مسؤول » ?",
                 "options": [
-                  "travaillais",
-                  "ai travaillé",
-                  "travaillerai"
+                  "une conséquence",
+                  "une approche",
+                  "la fracture numérique",
+                  "un usage responsable"
+                ],
+                "answer": 3,
+                "why": "Le terme « un usage responsable » signifie « استخدام مسؤول ». "
+              },
+              {
+                "q": "Dans la phrase « Cette décision aura une conséquence à long terme. », que signifie « une conséquence » ?",
+                "options": [
+                  "الفجوة الرقمية",
+                  "استخدام مسؤول",
+                  "نتيجة",
+                  "نهج / مقاربة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une conséquence » signifie « نتيجة ». "
+              },
+              {
+                "q": "Le prix a augmenté ; ___, plusieurs clients ont changé de fournisseur.",
+                "options": [
+                  "bien que",
+                  "tandis que",
+                  "donc"
+                ],
+                "answer": 2,
+                "why": "« Donc » relie une cause à sa conséquence."
+              },
+              {
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "options": [
+                  "l’imparfait",
+                  "uniquement le futur",
+                  "l’impératif dans chaque phrase"
                 ],
                 "answer": 0,
-                "why": "L’imparfait décrit l’action en cours quand un événement survient."
-              },
-              {
-                "q": "C’est le livre ___ j’ai beaucoup aimé.",
-                "options": [
-                  "qui",
-                  "que",
-                  "où"
-                ],
-                "answer": 1,
-                "why": "Que remplace le complément d’objet direct du verbe aimer."
-              },
-              {
-                "q": "Il pleuvait ; ___, nous sommes sortis.",
-                "options": [
-                  "pourtant",
-                  "parce que",
-                  "donc que"
-                ],
-                "answer": 0,
-                "why": "Pourtant introduit une opposition."
-              },
-              {
-                "q": "Si j’avais plus de temps, je ___ davantage.",
-                "options": [
-                  "voyagerai",
-                  "voyagerais",
-                  "voyage"
-                ],
-                "answer": 1,
-                "why": "Si + imparfait appelle généralement le conditionnel présent pour une hypothèse."
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -8695,7 +9255,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "ناقش التكنولوجيا بحجتين لكل جانب.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التكنولوجيا والمجتمع». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: المدينة والبيئة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: شكوى أو مقترح؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: المدينة والبيئة — النقل والنفايات والطاقة والمساحات العامة.",
+            "nextLink": "الموضوع التالي: شكوى أو مقترح — رسالة إلى جهة مسؤولة مع أسباب وطلب واضح."
           }
         ],
         [
@@ -8706,30 +9273,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Répondre à une objection et justifier une recommandation",
             "vocab": [
               {
+                "fr": "une approche",
+                "ar": "نهج / مقاربة",
+                "example": "Une approche globale peut être plus efficace."
+              },
+              {
                 "fr": "un enjeu",
                 "ar": "قضية مهمّة",
                 "example": "L’accès à l’éducation est un enjeu majeur."
               },
               {
-                "fr": "mettre en œuvre",
-                "ar": "ينفّذ",
-                "example": "La ville veut mettre en œuvre un nouveau plan."
+                "fr": "proposer",
+                "ar": "يقترح",
+                "example": "Je propose une solution simple."
               },
               {
-                "fr": "une conséquence",
-                "ar": "نتيجة",
-                "example": "Cette décision aura une conséquence à long terme."
-              },
-              {
-                "fr": "une approche",
-                "ar": "نهج / مقاربة",
-                "example": "Une approche globale peut être plus efficace."
+                "fr": "une mesure concrète",
+                "ar": "إجراء ملموس",
+                "example": "Il faut une mesure concrète."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -8748,10 +9315,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب رسالة B1 تقترح حلاً عملياً.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب رسالة B1 تقترح حلاً عملياً.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب رسالة B1 تقترح حلاً عملياً.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Répondre à une objection et justifier une recommandation»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -8770,44 +9349,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Si j’avais plus de temps, je ___ davantage.",
+                "q": "Quel terme correspond à la définition : « نهج / مقاربة » ?",
                 "options": [
-                  "voyagerai",
-                  "voyagerais",
-                  "voyage"
+                  "un enjeu",
+                  "proposer",
+                  "une mesure concrète",
+                  "une approche"
+                ],
+                "answer": 3,
+                "why": "Le terme « une approche » signifie « نهج / مقاربة ». "
+              },
+              {
+                "q": "Dans la phrase « L’accès à l’éducation est un enjeu majeur. », que signifie « un enjeu » ?",
+                "options": [
+                  "إجراء ملموس",
+                  "نهج / مقاربة",
+                  "قضية مهمّة",
+                  "يقترح"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un enjeu » signifie « قضية مهمّة ». "
+              },
+              {
+                "q": "Pour introduire un contre-argument, on peut écrire :",
+                "options": [
+                  "À demain, parce que…",
+                  "Certes…, toutefois…",
+                  "Il y a… hier…"
                 ],
                 "answer": 1,
-                "why": "Si + imparfait appelle généralement le conditionnel présent pour une hypothèse."
+                "why": "Cette structure présente une concession et une opposition."
               },
               {
-                "q": "Je vous écris ___ demander des renseignements.",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "pour",
-                  "malgré",
-                  "depuis"
+                  "uniquement le futur",
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait"
                 ],
-                "answer": 0,
-                "why": "Pour + infinitif exprime ici le but."
-              },
-              {
-                "q": "Il a expliqué qu’il ___ le lendemain.",
-                "options": [
-                  "viendra",
-                  "viendrait",
-                  "vient hier"
-                ],
-                "answer": 1,
-                "why": "Dans le discours rapporté au passé, le futur devient souvent conditionnel présent."
-              },
-              {
-                "q": "J’habite à Bucarest ___ 2024.",
-                "options": [
-                  "depuis",
-                  "pendant que",
-                  "auparavant de"
-                ],
-                "answer": 0,
-                "why": "Depuis indique une durée qui continue jusqu’à maintenant."
+                "answer": 2,
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -8835,7 +9416,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب رسالة B1 تقترح حلاً عملياً.",
             "writingPrompt": "اكتب فقرة مترابطة عن «شكوى أو مقترح». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: التكنولوجيا والمجتمع، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: السينما والكتب؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: التكنولوجيا والمجتمع — فوائد وعيوب والتواصل والخصوصية.",
+            "nextLink": "الموضوع التالي: السينما والكتب — تلخيص قصة أو فيلم وشرح سبب التوصية به."
           }
         ]
       ]
@@ -8864,20 +9452,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Le rapport présente trois constats principaux."
               },
               {
-                "fr": "en revanche",
-                "ar": "في المقابل",
-                "example": "Les deux sources concordent ; en revanche, elles diffèrent sur les causes."
+                "fr": "une intrigue",
+                "ar": "حبكة",
+                "example": "L’intrigue est facile à suivre."
               },
               {
-                "fr": "en définitive",
-                "ar": "في نهاية المطاف",
-                "example": "En définitive, la solution reste à discuter."
+                "fr": "une critique",
+                "ar": "مراجعة نقدية",
+                "example": "La critique souligne les points faibles."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -8896,10 +9484,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب مراجعة قصيرة وقدّمها شفهياً.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب مراجعة قصيرة وقدّمها شفهياً.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب مراجعة قصيرة وقدّمها شفهياً.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Résumé et reformulation sans copier la source»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -8918,44 +9518,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Bien qu’il ___ fatigué, il continue.",
+                "q": "Quel terme correspond à la définition : « حبكة » ?",
                 "options": [
-                  "est",
-                  "soit",
-                  "sera"
+                  "une critique",
+                  "une synthèse",
+                  "un constat",
+                  "une intrigue"
                 ],
-                "answer": 1,
-                "why": "Bien que est normalement suivi du subjonctif."
+                "answer": 3,
+                "why": "Le terme « une intrigue » signifie « حبكة ». "
               },
               {
-                "q": "Pour conclure un exposé, on peut utiliser :",
+                "q": "Dans la phrase « La critique souligne les points faibles. », que signifie « une critique » ?",
                 "options": [
-                  "En définitive,",
-                  "Tout à coup,",
-                  "La semaine prochaine à 8 h seulement,"
+                  "استنتاج من المعطيات",
+                  "حبكة",
+                  "مراجعة نقدية",
+                  "تركيب / خلاصة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une critique » signifie « مراجعة نقدية ». "
+              },
+              {
+                "q": "Avant de rédiger une synthèse, il faut :",
+                "options": [
+                  "repérer les convergences et les divergences",
+                  "choisir un texte et ignorer les autres",
+                  "rédiger la conclusion sans lecture"
                 ],
                 "answer": 0,
-                "why": "En définitive convient à la conclusion d’un raisonnement."
+                "why": "La synthèse suppose de comparer les documents."
               },
               {
-                "q": "Choisissez la formule la plus adaptée dans un courriel professionnel :",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "Salut, file-moi ça.",
-                  "Pourriez-vous m’indiquer les démarches à suivre ?",
-                  "Hé, réponds vite."
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait",
+                  "uniquement le futur"
                 ],
                 "answer": 1,
-                "why": "La demande est polie et adaptée au registre professionnel."
-              },
-              {
-                "q": "Le but de « par conséquent » est de marquer :",
-                "options": [
-                  "la conséquence",
-                  "la possession",
-                  "le lieu"
-                ],
-                "answer": 0,
-                "why": "Par conséquent introduit une conséquence logique."
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -8983,7 +9585,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب مراجعة قصيرة وقدّمها شفهياً.",
             "writingPrompt": "اكتب فقرة مترابطة عن «السينما والكتب». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: شكوى أو مقترح، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: السفر والتجارب المحلية؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: شكوى أو مقترح — رسالة إلى جهة مسؤولة مع أسباب وطلب واضح.",
+            "nextLink": "الموضوع التالي: السفر والتجارب المحلية — التوصية بمكان وسرد زيارة وفهم الإعلانات."
           }
         ],
         [
@@ -8993,11 +9602,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Pronoms relatifs et cohésion du texte",
             "vocab": [
-              {
-                "fr": "à mon avis",
-                "ar": "في رأيي",
-                "example": "À mon avis, cette solution est plus efficace."
-              },
               {
                 "fr": "en revanche",
                 "ar": "في المقابل",
@@ -9009,15 +9613,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Je comprends votre point de vue."
               },
               {
-                "fr": "nuancer",
-                "ar": "يدقّق / يلطّف الرأي",
-                "example": "Je voudrais nuancer cette affirmation."
+                "fr": "un itinéraire",
+                "ar": "مسار رحلة",
+                "example": "Nous avons préparé un itinéraire."
+              },
+              {
+                "fr": "un patrimoine",
+                "ar": "تراث",
+                "example": "Cette ville possède un patrimoine riche."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -9036,10 +9645,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "أنشئ برنامج زيارة ليوم واحد.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («أنشئ برنامج زيارة ليوم واحد.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: أنشئ برنامج زيارة ليوم واحد.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Pronoms relatifs et cohésion du texte»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -9058,44 +9679,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Le but de « par conséquent » est de marquer :",
+                "q": "Quel terme correspond à la définition : « تراث » ?",
                 "options": [
-                  "la conséquence",
-                  "la possession",
-                  "le lieu"
+                  "en revanche",
+                  "un point de vue",
+                  "un itinéraire",
+                  "un patrimoine"
                 ],
-                "answer": 0,
-                "why": "Par conséquent introduit une conséquence logique."
+                "answer": 3,
+                "why": "Le terme « un patrimoine » signifie « تراث ». "
               },
               {
-                "q": "Pendant que je ___, le téléphone a sonné.",
+                "q": "Dans la phrase « Le coût est élevé ; en revanche, le résultat est durable. », que signifie « en revanche » ?",
                 "options": [
-                  "travaillais",
-                  "ai travaillé",
-                  "travaillerai"
+                  "مسار رحلة",
+                  "تراث",
+                  "في المقابل",
+                  "وجهة نظر"
                 ],
-                "answer": 0,
-                "why": "L’imparfait décrit l’action en cours quand un événement survient."
+                "answer": 2,
+                "why": "Dans ce contexte, « en revanche » signifie « في المقابل ». "
               },
               {
-                "q": "C’est le livre ___ j’ai beaucoup aimé.",
+                "q": "C’est la collègue ___ m’a aidé.",
                 "options": [
-                  "qui",
                   "que",
-                  "où"
+                  "où",
+                  "qui"
                 ],
-                "answer": 1,
-                "why": "Que remplace le complément d’objet direct du verbe aimer."
+                "answer": 2,
+                "why": "« Qui » est sujet du verbe « a aidé »."
               },
               {
-                "q": "Il pleuvait ; ___, nous sommes sortis.",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "pourtant",
-                  "parce que",
-                  "donc que"
+                  "l’imparfait",
+                  "uniquement le futur",
+                  "l’impératif dans chaque phrase"
                 ],
                 "answer": 0,
-                "why": "Pourtant introduit une opposition."
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -9123,7 +9746,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "أنشئ برنامج زيارة ليوم واحد.",
             "writingPrompt": "اكتب فقرة مترابطة عن «السفر والتجارب المحلية». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: السينما والكتب، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: تلخيص مصادر؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: السينما والكتب — تلخيص قصة أو فيلم وشرح سبب التوصية به.",
+            "nextLink": "الموضوع التالي: تلخيص مصادر — التقاط الأفكار المشتركة والاختلافات بين نصين."
           }
         ],
         [
@@ -9134,16 +9764,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Comparer deux sources et signaler les points communs",
             "vocab": [
               {
-                "fr": "une synthèse",
-                "ar": "تركيب / خلاصة",
-                "example": "La synthèse met en relation plusieurs documents."
-              },
-              {
-                "fr": "un constat",
-                "ar": "استنتاج من المعطيات",
-                "example": "Le rapport présente trois constats principaux."
-              },
-              {
                 "fr": "en revanche",
                 "ar": "في المقابل",
                 "example": "Les deux sources concordent ; en revanche, elles diffèrent sur les causes."
@@ -9152,12 +9772,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "en définitive",
                 "ar": "في نهاية المطاف",
                 "example": "En définitive, la solution reste à discuter."
+              },
+              {
+                "fr": "une reformulation",
+                "ar": "إعادة صياغة",
+                "example": "La reformulation rend l’idée plus claire."
+              },
+              {
+                "fr": "un extrait",
+                "ar": "مقتطف",
+                "example": "L’extrait présente l’idée principale."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -9176,10 +9806,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب ملخصاً يقارن مصدرين.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب ملخصاً يقارن مصدرين.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب ملخصاً يقارن مصدرين.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Comparer deux sources et signaler les points communs»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -9198,44 +9840,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Il pleuvait ; ___, nous sommes sortis.",
+                "q": "Quel terme correspond à la définition : « في المقابل » ?",
                 "options": [
-                  "pourtant",
-                  "parce que",
-                  "donc que"
+                  "en définitive",
+                  "une reformulation",
+                  "un extrait",
+                  "en revanche"
                 ],
-                "answer": 0,
-                "why": "Pourtant introduit une opposition."
+                "answer": 3,
+                "why": "Le terme « en revanche » signifie « في المقابل ». "
               },
               {
-                "q": "Si j’avais plus de temps, je ___ davantage.",
+                "q": "Dans la phrase « En définitive, la solution reste à discuter. », que signifie « en définitive » ?",
                 "options": [
-                  "voyagerai",
-                  "voyagerais",
-                  "voyage"
+                  "مقتطف",
+                  "في المقابل",
+                  "في نهاية المطاف",
+                  "إعادة صياغة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « en définitive » signifie « في نهاية المطاف ». "
+              },
+              {
+                "q": "Pendant que je ___, le téléphone a sonné.",
+                "options": [
+                  "travaillerai",
+                  "travaillais",
+                  "ai travaillé"
                 ],
                 "answer": 1,
-                "why": "Si + imparfait appelle généralement le conditionnel présent pour une hypothèse."
+                "why": "L’imparfait décrit l’action en cours interrompue par un événement."
               },
               {
-                "q": "Je vous écris ___ demander des renseignements.",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "pour",
-                  "malgré",
-                  "depuis"
+                  "uniquement le futur",
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait"
                 ],
-                "answer": 0,
-                "why": "Pour + infinitif exprime ici le but."
-              },
-              {
-                "q": "Il a expliqué qu’il ___ le lendemain.",
-                "options": [
-                  "viendra",
-                  "viendrait",
-                  "vient hier"
-                ],
-                "answer": 1,
-                "why": "Dans le discours rapporté au passé, le futur devient souvent conditionnel présent."
+                "answer": 2,
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -9263,7 +9907,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب ملخصاً يقارن مصدرين.",
             "writingPrompt": "اكتب فقرة مترابطة عن «تلخيص مصادر». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: السفر والتجارب المحلية، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: اختبار B1 تشخيصي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: السفر والتجارب المحلية — التوصية بمكان وسرد زيارة وفهم الإعلانات.",
+            "nextLink": "الموضوع التالي: اختبار B1 تشخيصي — المهارات الأربع مع مقياس للطلاقة والدقة."
           }
         ],
         [
@@ -9274,30 +9925,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Organiser un compte rendu : contexte, constats, conclusion",
             "vocab": [
               {
+                "fr": "nuancer",
+                "ar": "يدقّق / يلطّف الرأي",
+                "example": "Je voudrais nuancer cette affirmation."
+              },
+              {
                 "fr": "à mon avis",
                 "ar": "في رأيي",
                 "example": "À mon avis, cette solution est plus efficace."
               },
               {
-                "fr": "en revanche",
-                "ar": "في المقابل",
-                "example": "Le coût est élevé ; en revanche, le résultat est durable."
+                "fr": "un bilan",
+                "ar": "حصيلة / تقييم",
+                "example": "Je fais le bilan de mes progrès."
               },
               {
-                "fr": "un point de vue",
-                "ar": "وجهة نظر",
-                "example": "Je comprends votre point de vue."
-              },
-              {
-                "fr": "nuancer",
-                "ar": "يدقّق / يلطّف الرأي",
-                "example": "Je voudrais nuancer cette affirmation."
+                "fr": "une lacune",
+                "ar": "فجوة / نقص",
+                "example": "Je note une lacune en compréhension orale."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -9316,10 +9967,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "حلّل الأخطاء؛ أعد أسبوع مراجعة عند الحاجة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («حلّل الأخطاء؛ أعد أسبوع مراجعة عند الحاجة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: حلّل الأخطاء؛ أعد أسبوع مراجعة عند الحاجة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Organiser un compte rendu : contexte, constats, conclusion»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -9338,44 +10001,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Il a expliqué qu’il ___ le lendemain.",
+                "q": "Quel terme correspond à la définition : « في رأيي » ?",
                 "options": [
-                  "viendra",
-                  "viendrait",
-                  "vient hier"
+                  "un bilan",
+                  "une lacune",
+                  "nuancer",
+                  "à mon avis"
                 ],
-                "answer": 1,
-                "why": "Dans le discours rapporté au passé, le futur devient souvent conditionnel présent."
+                "answer": 3,
+                "why": "Le terme « à mon avis » signifie « في رأيي ». "
               },
               {
-                "q": "J’habite à Bucarest ___ 2024.",
+                "q": "Dans la phrase « Je fais le bilan de mes progrès. », que signifie « un bilan » ?",
                 "options": [
-                  "depuis",
-                  "pendant que",
-                  "auparavant de"
+                  "يدقّق / يلطّف الرأي",
+                  "في رأيي",
+                  "حصيلة / تقييم",
+                  "فجوة / نقص"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un bilan » signifie « حصيلة / تقييم ». "
+              },
+              {
+                "q": "Pour rendre un compte rendu plus formel, privilégiez :",
+                "options": [
+                  "un registre précis et neutre",
+                  "des abréviations familières",
+                  "des jugements sans justification"
                 ],
                 "answer": 0,
-                "why": "Depuis indique une durée qui continue jusqu’à maintenant."
+                "why": "Un compte rendu formel exige précision et neutralité."
               },
               {
-                "q": "Le rapport a été ___ par l’équipe.",
+                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
                 "options": [
-                  "rédigé",
-                  "rédiger",
-                  "rédigeant"
-                ],
-                "answer": 0,
-                "why": "La voix passive se forme avec être + participe passé."
-              },
-              {
-                "q": "Bien qu’il ___ fatigué, il continue.",
-                "options": [
-                  "est",
-                  "soit",
-                  "sera"
+                  "l’impératif dans chaque phrase",
+                  "l’imparfait",
+                  "uniquement le futur"
                 ],
                 "answer": 1,
-                "why": "Bien que est normalement suivi du subjonctif."
+                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
               }
             ],
             "resources": [
@@ -9403,7 +10068,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "حلّل الأخطاء؛ أعد أسبوع مراجعة عند الحاجة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «اختبار B1 تشخيصي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: تلخيص مصادر، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "تمهيد للانتقال إلى B2: تحويل الرأي المنظم إلى حجة مدعومة بأمثلة واعتراض ورد.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: تلخيص مصادر — التقاط الأفكار المشتركة والاختلافات بين نصين.",
+            "nextLink": "الموضوع التالي: مقال تحليلي — تمييز الفكرة والفرضية والحجة والدليل."
           }
         ]
       ]
@@ -9432,20 +10104,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Chaque argument doit être appuyé par un exemple."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "une problématique",
+                "ar": "إشكالية",
+                "example": "La problématique guide l’analyse."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "une hypothèse",
+                "ar": "فرضية",
+                "example": "Nous allons vérifier cette hypothèse."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -9464,10 +10136,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "لخّص مقالاً وحدد موقف الكاتب وأدلته.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («لخّص مقالاً وحدد موقف الكاتب وأدلته.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: لخّص مقالاً وحدد موقف الكاتب وأدلته.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Thèse, arguments, exemples et conclusion»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -9486,44 +10170,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "La meilleure réponse à une objection consiste à :",
+                "q": "Quel terme correspond à la définition : « فرضية » ?",
                 "options": [
-                  "ignorer le point opposé",
-                  "reformuler l’objection puis répondre avec une raison ou un exemple",
-                  "répéter la thèse sans explication"
+                  "une thèse",
+                  "un argument",
+                  "une problématique",
+                  "une hypothèse"
                 ],
-                "answer": 1,
-                "why": "Une argumentation solide reconnaît le point opposé et y répond."
+                "answer": 3,
+                "why": "Le terme « une hypothèse » signifie « فرضية ». "
               },
               {
-                "q": "Dans un compte rendu formel, le registre doit être :",
+                "q": "Dans la phrase « La thèse doit être exprimée clairement. », que signifie « une thèse » ?",
                 "options": [
-                  "cohérent avec le destinataire et le but",
-                  "toujours familier",
-                  "rempli d’abréviations orales"
+                  "إشكالية",
+                  "فرضية",
+                  "أطروحة / موقف رئيسي",
+                  "حجّة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une thèse » signifie « أطروحة / موقف رئيسي ». "
+              },
+              {
+                "q": "Pour étayer un argument, il faut :",
+                "options": [
+                  "répéter la conclusion sans preuve",
+                  "éviter toute illustration",
+                  "un exemple précis ou une donnée"
+                ],
+                "answer": 2,
+                "why": "Une preuve, une donnée ou un exemple renforce l’argument."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "Le registre dépend du destinataire et de la situation."
-              },
-              {
-                "q": "Bien que la mesure ___ coûteuse, elle peut être efficace.",
-                "options": [
-                  "est",
-                  "soit",
-                  "sera"
-                ],
-                "answer": 1,
-                "why": "Bien que est suivi du subjonctif."
-              },
-              {
-                "q": "Les résultats doivent être ___ avant la conclusion.",
-                "options": [
-                  "analyser",
-                  "analysés",
-                  "analysant"
-                ],
-                "answer": 1,
-                "why": "Dans la construction passive, le participe passé s’accorde avec le sujet."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -9551,7 +10237,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "لخّص مقالاً وحدد موقف الكاتب وأدلته.",
             "writingPrompt": "اكتب فقرة مترابطة عن «مقال تحليلي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "نقطة تحقق B1: سرد التجارب، فهم مقال مألوف، عرض رأي منظم، وكتابة رسالة عملية.",
+            "nextStep": "يمهّد للأسبوع التالي: بنية المقال الحجاجي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: اختبار B1 تشخيصي — المهارات الأربع مع مقياس للطلاقة والدقة.",
+            "nextLink": "الموضوع التالي: بنية المقال الحجاجي — مقدمة وأطروحة وحجج واعتراض وخاتمة."
           }
         ],
         [
@@ -9561,11 +10254,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Connecteurs d’opposition et de concession",
             "vocab": [
-              {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
-              },
               {
                 "fr": "un argument",
                 "ar": "حجّة",
@@ -9577,15 +10265,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Il faut répondre à l’objection principale."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "une transition",
+                "ar": "جملة انتقالية",
+                "example": "La transition relie les paragraphes."
+              },
+              {
+                "fr": "un paragraphe argumentatif",
+                "ar": "فقرة حجاجية",
+                "example": "Chaque paragraphe développe une idée."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -9604,10 +10297,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "خطط واكتب مسودة مقال منظم.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («خطط واكتب مسودة مقال منظم.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: خطط واكتب مسودة مقال منظم.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Connecteurs d’opposition et de concession»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -9626,44 +10331,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Les résultats doivent être ___ avant la conclusion.",
+                "q": "Quel terme correspond à la définition : « حجّة » ?",
                 "options": [
-                  "analyser",
-                  "analysés",
-                  "analysant"
+                  "une objection",
+                  "une transition",
+                  "un paragraphe argumentatif",
+                  "un argument"
+                ],
+                "answer": 3,
+                "why": "Le terme « un argument » signifie « حجّة ». "
+              },
+              {
+                "q": "Dans la phrase « Il faut répondre à l’objection principale. », que signifie « une objection » ?",
+                "options": [
+                  "فقرة حجاجية",
+                  "حجّة",
+                  "اعتراض",
+                  "جملة انتقالية"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une objection » signifie « اعتراض ». "
+              },
+              {
+                "q": "Le service est rapide ; ___, son coût est élevé.",
+                "options": [
+                  "parce que",
+                  "en revanche",
+                  "par conséquent"
                 ],
                 "answer": 1,
-                "why": "Dans la construction passive, le participe passé s’accorde avec le sujet."
+                "why": "« En revanche » introduit un contraste."
               },
               {
-                "q": "« Certes…, toutefois… » exprime :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "une concession nuancée",
-                  "un ordre chronologique",
-                  "une localisation"
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement"
                 ],
-                "answer": 0,
-                "why": "Certes reconnaît un point, toutefois introduit une limite ou opposition."
-              },
-              {
-                "q": "Il convient que les autorités ___ rapidement.",
-                "options": [
-                  "agissent",
-                  "agissent hier",
-                  "agiront que"
-                ],
-                "answer": 0,
-                "why": "Il convient que est suivi du subjonctif."
-              },
-              {
-                "q": "Laquelle est une thèse argumentative claire ?",
-                "options": [
-                  "Le sujet est intéressant.",
-                  "Il faudrait développer les transports publics pour réduire les émissions.",
-                  "J’ai vu un autobus ce matin."
-                ],
-                "answer": 1,
-                "why": "La thèse défend une position et annonce une relation argumentée."
+                "answer": 2,
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -9691,7 +10398,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "خطط واكتب مسودة مقال منظم.",
             "writingPrompt": "اكتب فقرة مترابطة عن «بنية المقال الحجاجي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: مقال تحليلي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: الأدلة والأمثلة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: مقال تحليلي — تمييز الفكرة والفرضية والحجة والدليل.",
+            "nextLink": "الموضوع التالي: الأدلة والأمثلة — الأرقام والمقارنة والأمثلة وتفسير النتائج."
           }
         ],
         [
@@ -9702,16 +10416,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Voix passive et nominalisation",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
-              },
-              {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
-              },
-              {
                 "fr": "une objection",
                 "ar": "اعتراض",
                 "example": "Il faut répondre à l’objection principale."
@@ -9720,12 +10424,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "étayer",
                 "ar": "يدعم بالحجج",
                 "example": "Les données étayent cette conclusion."
+              },
+              {
+                "fr": "un indicateur",
+                "ar": "مؤشر",
+                "example": "Cet indicateur confirme la tendance."
+              },
+              {
+                "fr": "un témoignage",
+                "ar": "شهادة / إفادة",
+                "example": "Le témoignage illustre le problème."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -9744,10 +10458,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "راجع علاقة كل دليل بالفكرة الرئيسية.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («راجع علاقة كل دليل بالفكرة الرئيسية.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: راجع علاقة كل دليل بالفكرة الرئيسية.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Voix passive et nominalisation»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -9766,44 +10492,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Laquelle est une thèse argumentative claire ?",
+                "q": "Quel terme correspond à la définition : « يدعم بالحجج » ?",
                 "options": [
-                  "Le sujet est intéressant.",
-                  "Il faudrait développer les transports publics pour réduire les émissions.",
-                  "J’ai vu un autobus ce matin."
+                  "un indicateur",
+                  "un témoignage",
+                  "une objection",
+                  "étayer"
                 ],
-                "answer": 1,
-                "why": "La thèse défend une position et annonce une relation argumentée."
+                "answer": 3,
+                "why": "Le terme « étayer » signifie « يدعم بالحجج ». "
               },
               {
-                "q": "Pour introduire un contre-argument, on peut écrire :",
+                "q": "Dans la phrase « Cet indicateur confirme la tendance. », que signifie « un indicateur » ?",
                 "options": [
-                  "En revanche,",
-                  "À huit heures,",
-                  "De la maison"
+                  "اعتراض",
+                  "يدعم بالحجج",
+                  "مؤشر",
+                  "شهادة / إفادة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un indicateur » signifie « مؤشر ». "
+              },
+              {
+                "q": "Les données ont été ___ avant la conclusion.",
+                "options": [
+                  "vérifiées",
+                  "vérifier",
+                  "vérifient"
                 ],
                 "answer": 0,
-                "why": "En revanche marque l’opposition ou la contrepartie."
+                "why": "Le participe passé s’accorde avec « les données » dans cette phrase passive."
               },
               {
-                "q": "Une bonne synthèse doit :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "copier des paragraphes entiers",
-                  "mettre en relation les idées des sources avec ses propres mots",
-                  "donner uniquement son opinion"
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement"
                 ],
                 "answer": 1,
-                "why": "La synthèse reformule et met en relation les informations sources."
-              },
-              {
-                "q": "Pour nuancer une affirmation trop catégorique, utilisez :",
-                "options": [
-                  "il est impossible que dans tous les cas",
-                  "il semble que / dans certains cas",
-                  "toujours, sans exception"
-                ],
-                "answer": 1,
-                "why": "Ces expressions rendent le propos plus nuancé."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -9831,7 +10559,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "راجع علاقة كل دليل بالفكرة الرئيسية.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الأدلة والأمثلة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: بنية المقال الحجاجي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: قياس B2 أولي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: بنية المقال الحجاجي — مقدمة وأطروحة وحجج واعتراض وخاتمة.",
+            "nextLink": "الموضوع التالي: قياس B2 أولي — استماع مطول وقراءة تحليلية وكتابة وعرض شفوي."
           }
         ],
         [
@@ -9842,30 +10577,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Hiérarchiser les arguments et éviter les répétitions",
             "vocab": [
               {
+                "fr": "étayer",
+                "ar": "يدعم بالحجج",
+                "example": "Les données étayent cette conclusion."
+              },
+              {
                 "fr": "une thèse",
                 "ar": "أطروحة / موقف رئيسي",
                 "example": "La thèse doit être exprimée clairement."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un critère",
+                "ar": "معيار",
+                "example": "Le critère principal est la cohérence."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
-              },
-              {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "une grille d’évaluation",
+                "ar": "شبكة تقييم",
+                "example": "La grille d’évaluation précise les attentes."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -9884,10 +10619,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "أنجز عينة من المهارات الأربع وحدد أضعف اثنتين.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («أنجز عينة من المهارات الأربع وحدد أضعف اثنتين.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: أنجز عينة من المهارات الأربع وحدد أضعف اثنتين.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Hiérarchiser les arguments et éviter les répétitions»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -9906,44 +10653,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pour nuancer une affirmation trop catégorique, utilisez :",
+                "q": "Quel terme correspond à la définition : « معيار » ?",
                 "options": [
-                  "il est impossible que dans tous les cas",
-                  "il semble que / dans certains cas",
-                  "toujours, sans exception"
+                  "une grille d’évaluation",
+                  "étayer",
+                  "une thèse",
+                  "un critère"
                 ],
-                "answer": 1,
-                "why": "Ces expressions rendent le propos plus nuancé."
+                "answer": 3,
+                "why": "Le terme « un critère » signifie « معيار ». "
               },
               {
-                "q": "La nominalisation de « le gouvernement décide » peut être :",
+                "q": "Dans la phrase « La grille d’évaluation précise les attentes. », que signifie « une grille d’évaluation » ?",
                 "options": [
-                  "la décision du gouvernement",
-                  "décider le gouvernement",
-                  "gouvernement décidé"
+                  "أطروحة / موقف رئيسي",
+                  "معيار",
+                  "شبكة تقييم",
+                  "يدعم بالحجج"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une grille d’évaluation » signifie « شبكة تقييم ». "
+              },
+              {
+                "q": "Pour étayer un argument, il faut :",
+                "options": [
+                  "répéter la conclusion sans preuve",
+                  "éviter toute illustration",
+                  "un exemple précis ou une donnée"
+                ],
+                "answer": 2,
+                "why": "Une preuve, une donnée ou un exemple renforce l’argument."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "La nominalisation transforme le verbe décider en nom : décision."
-              },
-              {
-                "q": "« Les données étayent cette hypothèse » signifie que les données :",
-                "options": [
-                  "contredisent forcément l’hypothèse",
-                  "apportent des éléments qui la soutiennent",
-                  "n’ont aucun lien avec elle"
-                ],
-                "answer": 1,
-                "why": "Étayer signifie soutenir par des éléments ou des arguments."
-              },
-              {
-                "q": "La meilleure réponse à une objection consiste à :",
-                "options": [
-                  "ignorer le point opposé",
-                  "reformuler l’objection puis répondre avec une raison ou un exemple",
-                  "répéter la thèse sans explication"
-                ],
-                "answer": 1,
-                "why": "Une argumentation solide reconnaît le point opposé et y répond."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -9971,7 +10720,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "أنجز عينة من المهارات الأربع وحدد أضعف اثنتين.",
             "writingPrompt": "اكتب فقرة مترابطة عن «قياس B2 أولي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الأدلة والأمثلة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: المزايا والعيوب؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الأدلة والأمثلة — الأرقام والمقارنة والأمثلة وتفسير النتائج.",
+            "nextLink": "الموضوع التالي: المزايا والعيوب — d’une part/d’autre part/certes/toutefois."
           }
         ]
       ]
@@ -10000,20 +10756,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Chaque argument doit être appuyé par un exemple."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
+                "fr": "un avantage",
+                "ar": "ميزة",
+                "example": "Le télétravail présente un avantage."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "un inconvénient",
+                "ar": "عيب",
+                "example": "Le principal inconvénient est le coût."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -10032,10 +10788,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب مناظرة بحجتين لكل جانب.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب مناظرة بحجتين لكل جانب.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب مناظرة بحجتين لكل جانب.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Subjonctif après bien que / il faut que»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -10054,44 +10822,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Bien que la mesure ___ coûteuse, elle peut être efficace.",
+                "q": "Quel terme correspond à la définition : « أطروحة / موقف رئيسي » ?",
                 "options": [
-                  "est",
-                  "soit",
-                  "sera"
+                  "un argument",
+                  "un avantage",
+                  "un inconvénient",
+                  "une thèse"
+                ],
+                "answer": 3,
+                "why": "Le terme « une thèse » signifie « أطروحة / موقف رئيسي ». "
+              },
+              {
+                "q": "Dans la phrase « Chaque argument doit être appuyé par un exemple. », que signifie « un argument » ?",
+                "options": [
+                  "عيب",
+                  "أطروحة / موقف رئيسي",
+                  "حجّة",
+                  "ميزة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un argument » signifie « حجّة ». "
+              },
+              {
+                "q": "J’ai mal ___ la tête depuis ce matin.",
+                "options": [
+                  "en",
+                  "à",
+                  "de"
                 ],
                 "answer": 1,
-                "why": "Bien que est suivi du subjonctif."
+                "why": "On dit « avoir mal à la tête »."
               },
               {
-                "q": "Les résultats doivent être ___ avant la conclusion.",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "analyser",
-                  "analysés",
-                  "analysant"
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement"
                 ],
-                "answer": 1,
-                "why": "Dans la construction passive, le participe passé s’accorde avec le sujet."
-              },
-              {
-                "q": "« Certes…, toutefois… » exprime :",
-                "options": [
-                  "une concession nuancée",
-                  "un ordre chronologique",
-                  "une localisation"
-                ],
-                "answer": 0,
-                "why": "Certes reconnaît un point, toutefois introduit une limite ou opposition."
-              },
-              {
-                "q": "Il convient que les autorités ___ rapidement.",
-                "options": [
-                  "agissent",
-                  "agissent hier",
-                  "agiront que"
-                ],
-                "answer": 0,
-                "why": "Il convient que est suivi du subjonctif."
+                "answer": 2,
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -10119,7 +10889,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب مناظرة بحجتين لكل جانب.",
             "writingPrompt": "اكتب فقرة مترابطة عن «المزايا والعيوب». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: قياس B2 أولي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: الرأي المتحفظ؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: قياس B2 أولي — استماع مطول وقراءة تحليلية وكتابة وعرض شفوي.",
+            "nextLink": "الموضوع التالي: الرأي المتحفظ — il semble que/à mon sens والاحتمال."
           }
         ],
         [
@@ -10129,11 +10906,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Concession : certes, toutefois, néanmoins",
             "vocab": [
-              {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
-              },
               {
                 "fr": "un argument",
                 "ar": "حجّة",
@@ -10145,15 +10917,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Il faut répondre à l’objection principale."
               },
               {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "une réserve",
+                "ar": "تحفّظ",
+                "example": "J’émets une réserve sur cette idée."
+              },
+              {
+                "fr": "dans une certaine mesure",
+                "ar": "إلى حدّ ما",
+                "example": "Dans une certaine mesure, cet argument est valable."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -10172,10 +10949,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "أعد صياغة رأي مباشر بثلاث درجات تحفظ.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («أعد صياغة رأي مباشر بثلاث درجات تحفظ.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: أعد صياغة رأي مباشر بثلاث درجات تحفظ.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Concession : certes, toutefois, néanmoins»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -10194,44 +10983,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Il convient que les autorités ___ rapidement.",
+                "q": "Quel terme correspond à la définition : « اعتراض » ?",
                 "options": [
-                  "agissent",
-                  "agissent hier",
-                  "agiront que"
+                  "une réserve",
+                  "dans une certaine mesure",
+                  "un argument",
+                  "une objection"
+                ],
+                "answer": 3,
+                "why": "Le terme « une objection » signifie « اعتراض ». "
+              },
+              {
+                "q": "Dans la phrase « J’émets une réserve sur cette idée. », que signifie « une réserve » ?",
+                "options": [
+                  "حجّة",
+                  "اعتراض",
+                  "تحفّظ",
+                  "إلى حدّ ما"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une réserve » signifie « تحفّظ ». "
+              },
+              {
+                "q": "Le projet est coûteux ; ___, il reste utile.",
+                "options": [
+                  "cependant",
+                  "parce que",
+                  "donc"
                 ],
                 "answer": 0,
-                "why": "Il convient que est suivi du subjonctif."
+                "why": "« Cependant » marque une opposition."
               },
               {
-                "q": "Laquelle est une thèse argumentative claire ?",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "Le sujet est intéressant.",
-                  "Il faudrait développer les transports publics pour réduire les émissions.",
-                  "J’ai vu un autobus ce matin."
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement"
                 ],
                 "answer": 1,
-                "why": "La thèse défend une position et annonce une relation argumentée."
-              },
-              {
-                "q": "Pour introduire un contre-argument, on peut écrire :",
-                "options": [
-                  "En revanche,",
-                  "À huit heures,",
-                  "De la maison"
-                ],
-                "answer": 0,
-                "why": "En revanche marque l’opposition ou la contrepartie."
-              },
-              {
-                "q": "Une bonne synthèse doit :",
-                "options": [
-                  "copier des paragraphes entiers",
-                  "mettre en relation les idées des sources avec ses propres mots",
-                  "donner uniquement son opinion"
-                ],
-                "answer": 1,
-                "why": "La synthèse reformule et met en relation les informations sources."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -10259,7 +11050,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "أعد صياغة رأي مباشر بثلاث درجات تحفظ.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الرأي المتحفظ». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: المزايا والعيوب، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: التفاعل في النقاش؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: المزايا والعيوب — d’une part/d’autre part/certes/toutefois.",
+            "nextLink": "الموضوع التالي: التفاعل في النقاش — سؤال متابعة واعتراض مهذب وطلب توضيح."
           }
         ],
         [
@@ -10270,16 +11068,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Conditionnel pour nuancer une affirmation",
             "vocab": [
               {
-                "fr": "une thèse",
-                "ar": "أطروحة / موقف رئيسي",
-                "example": "La thèse doit être exprimée clairement."
-              },
-              {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
-              },
-              {
                 "fr": "une objection",
                 "ar": "اعتراض",
                 "example": "Il faut répondre à l’objection principale."
@@ -10288,12 +11076,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "étayer",
                 "ar": "يدعم بالحجج",
                 "example": "Les données étayent cette conclusion."
+              },
+              {
+                "fr": "prendre la parole",
+                "ar": "يأخذ الكلمة",
+                "example": "Elle prend la parole après son collègue."
+              },
+              {
+                "fr": "reformuler",
+                "ar": "يعيد الصياغة",
+                "example": "Je vais reformuler votre question."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -10312,10 +11110,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "شارك في نقاش لست دقائق وسجّل العبارات المتكررة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («شارك في نقاش لست دقائق وسجّل العبارات المتكررة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: شارك في نقاش لست دقائق وسجّل العبارات المتكررة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Conditionnel pour nuancer une affirmation»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -10334,44 +11144,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Une bonne synthèse doit :",
+                "q": "Quel terme correspond à la définition : « يأخذ الكلمة » ?",
                 "options": [
-                  "copier des paragraphes entiers",
-                  "mettre en relation les idées des sources avec ses propres mots",
-                  "donner uniquement son opinion"
+                  "reformuler",
+                  "une objection",
+                  "étayer",
+                  "prendre la parole"
                 ],
-                "answer": 1,
-                "why": "La synthèse reformule et met en relation les informations sources."
+                "answer": 3,
+                "why": "Le terme « prendre la parole » signifie « يأخذ الكلمة ». "
               },
               {
-                "q": "Pour nuancer une affirmation trop catégorique, utilisez :",
+                "q": "Dans la phrase « Je vais reformuler votre question. », que signifie « reformuler » ?",
                 "options": [
-                  "il est impossible que dans tous les cas",
-                  "il semble que / dans certains cas",
-                  "toujours, sans exception"
+                  "يدعم بالحجج",
+                  "يأخذ الكلمة",
+                  "يعيد الصياغة",
+                  "اعتراض"
                 ],
-                "answer": 1,
-                "why": "Ces expressions rendent le propos plus nuancé."
+                "answer": 2,
+                "why": "Dans ce contexte, « reformuler » signifie « يعيد الصياغة ». "
               },
               {
-                "q": "La nominalisation de « le gouvernement décide » peut être :",
+                "q": "Le prix a augmenté ; ___, plusieurs clients ont changé de fournisseur.",
                 "options": [
-                  "la décision du gouvernement",
-                  "décider le gouvernement",
-                  "gouvernement décidé"
+                  "bien que",
+                  "tandis que",
+                  "donc"
+                ],
+                "answer": 2,
+                "why": "« Donc » relie une cause à sa conséquence."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "La nominalisation transforme le verbe décider en nom : décision."
-              },
-              {
-                "q": "« Les données étayent cette hypothèse » signifie que les données :",
-                "options": [
-                  "contredisent forcément l’hypothèse",
-                  "apportent des éléments qui la soutiennent",
-                  "n’ont aucun lien avec elle"
-                ],
-                "answer": 1,
-                "why": "Étayer signifie soutenir par des éléments ou des arguments."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -10399,7 +11211,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "شارك في نقاش لست دقائق وسجّل العبارات المتكررة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التفاعل في النقاش». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الرأي المتحفظ، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: عرض شفوي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الرأي المتحفظ — il semble que/à mon sens والاحتمال.",
+            "nextLink": "الموضوع التالي: عرض شفوي — مقدمة ومحاور وأمثلة وانتقالات وخاتمة."
           }
         ],
         [
@@ -10410,30 +11229,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Débat : reformuler, contester avec tact, conclure",
             "vocab": [
               {
+                "fr": "étayer",
+                "ar": "يدعم بالحجج",
+                "example": "Les données étayent cette conclusion."
+              },
+              {
                 "fr": "une thèse",
                 "ar": "أطروحة / موقف رئيسي",
                 "example": "La thèse doit être exprimée clairement."
               },
               {
-                "fr": "un argument",
-                "ar": "حجّة",
-                "example": "Chaque argument doit être appuyé par un exemple."
+                "fr": "un support visuel",
+                "ar": "وسيلة بصرية",
+                "example": "Le support visuel reste lisible."
               },
               {
-                "fr": "une objection",
-                "ar": "اعتراض",
-                "example": "Il faut répondre à l’objection principale."
-              },
-              {
-                "fr": "étayer",
-                "ar": "يدعم بالحجج",
-                "example": "Les données étayent cette conclusion."
+                "fr": "une conclusion",
+                "ar": "خاتمة",
+                "example": "La conclusion rappelle les arguments essentiels."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -10452,10 +11271,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "قدّم عرضاً من 6–8 دقائق ثم أجب عن أسئلة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («قدّم عرضاً من 6–8 دقائق ثم أجب عن أسئلة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: قدّم عرضاً من 6–8 دقائق ثم أجب عن أسئلة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Débat : reformuler, contester avec tact, conclure»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -10474,44 +11305,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "« Les données étayent cette hypothèse » signifie que les données :",
+                "q": "Quel terme correspond à la définition : « خاتمة » ?",
                 "options": [
-                  "contredisent forcément l’hypothèse",
-                  "apportent des éléments qui la soutiennent",
-                  "n’ont aucun lien avec elle"
+                  "étayer",
+                  "une thèse",
+                  "un support visuel",
+                  "une conclusion"
                 ],
-                "answer": 1,
-                "why": "Étayer signifie soutenir par des éléments ou des arguments."
+                "answer": 3,
+                "why": "Le terme « une conclusion » signifie « خاتمة ». "
               },
               {
-                "q": "La meilleure réponse à une objection consiste à :",
+                "q": "Dans la phrase « Les données étayent cette conclusion. », que signifie « étayer » ?",
                 "options": [
-                  "ignorer le point opposé",
-                  "reformuler l’objection puis répondre avec une raison ou un exemple",
-                  "répéter la thèse sans explication"
+                  "وسيلة بصرية",
+                  "خاتمة",
+                  "يدعم بالحجج",
+                  "أطروحة / موقف رئيسي"
                 ],
-                "answer": 1,
-                "why": "Une argumentation solide reconnaît le point opposé et y répond."
+                "answer": 2,
+                "why": "Dans ce contexte, « étayer » signifie « يدعم بالحجج ». "
               },
               {
-                "q": "Dans un compte rendu formel, le registre doit être :",
+                "q": "Les données ont été ___ avant la conclusion.",
                 "options": [
-                  "cohérent avec le destinataire et le but",
-                  "toujours familier",
-                  "rempli d’abréviations orales"
-                ],
-                "answer": 0,
-                "why": "Le registre dépend du destinataire et de la situation."
-              },
-              {
-                "q": "Bien que la mesure ___ coûteuse, elle peut être efficace.",
-                "options": [
-                  "est",
-                  "soit",
-                  "sera"
+                  "vérifient",
+                  "vérifiées",
+                  "vérifier"
                 ],
                 "answer": 1,
-                "why": "Bien que est suivi du subjonctif."
+                "why": "Le participe passé s’accorde avec « les données » dans cette phrase passive."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement"
+                ],
+                "answer": 2,
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -10539,7 +11372,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "قدّم عرضاً من 6–8 دقائق ثم أجب عن أسئلة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «عرض شفوي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: التفاعل في النقاش، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: التعليم والعمل؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: التفاعل في النقاش — سؤال متابعة واعتراض مهذب وطلب توضيح.",
+            "nextLink": "الموضوع التالي: التعليم والعمل — فرص متكافئة والتدريب وتغير المهن."
           }
         ]
       ]
@@ -10568,20 +11408,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Je prépare mon entretien d’embauche."
               },
               {
-                "fr": "une compétence",
-                "ar": "مهارة",
-                "example": "La communication est une compétence importante."
+                "fr": "l’égalité des chances",
+                "ar": "تكافؤ الفرص",
+                "example": "L’égalité des chances doit être garantie."
               },
               {
-                "fr": "postuler",
-                "ar": "يتقدّم لوظيفة",
-                "example": "Je souhaite postuler à ce poste."
+                "fr": "la formation continue",
+                "ar": "التدريب المستمر",
+                "example": "La formation continue favorise l’évolution professionnelle."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -10600,10 +11440,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "ناقش قضية تعليمية بحجة وحجة مضادة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («ناقش قضية تعليمية بحجة وحجة مضادة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: ناقش قضية تعليمية بحجة وحجة مضادة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Registre formel et demandes argumentées»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -10622,44 +11474,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "« Certes…, toutefois… » exprime :",
+                "q": "Quel terme correspond à la définition : « مقابلة » ?",
                 "options": [
-                  "une concession nuancée",
-                  "un ordre chronologique",
-                  "une localisation"
+                  "l’égalité des chances",
+                  "la formation continue",
+                  "une candidature",
+                  "un entretien"
                 ],
-                "answer": 0,
-                "why": "Certes reconnaît un point, toutefois introduit une limite ou opposition."
+                "answer": 3,
+                "why": "Le terme « un entretien » signifie « مقابلة ». "
               },
               {
-                "q": "Il convient que les autorités ___ rapidement.",
+                "q": "Dans la phrase « L’égalité des chances doit être garantie. », que signifie « l’égalité des chances » ?",
                 "options": [
-                  "agissent",
-                  "agissent hier",
-                  "agiront que"
+                  "طلب ترشح",
+                  "مقابلة",
+                  "تكافؤ الفرص",
+                  "التدريب المستمر"
                 ],
-                "answer": 0,
-                "why": "Il convient que est suivi du subjonctif."
+                "answer": 2,
+                "why": "Dans ce contexte, « l’égalité des chances » signifie « تكافؤ الفرص ». "
               },
               {
-                "q": "Laquelle est une thèse argumentative claire ?",
+                "q": "Pour formuler une demande professionnelle, choisissez :",
                 "options": [
-                  "Le sujet est intéressant.",
-                  "Il faudrait développer les transports publics pour réduire les émissions.",
-                  "J’ai vu un autobus ce matin."
+                  "Je vous serais reconnaissant de bien vouloir préciser…",
+                  "Tu me dis ça tout de suite.",
+                  "Hé, donne-moi l’info."
+                ],
+                "answer": 0,
+                "why": "La première formule est polie et adaptée au registre professionnel."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement"
                 ],
                 "answer": 1,
-                "why": "La thèse défend une position et annonce une relation argumentée."
-              },
-              {
-                "q": "Pour introduire un contre-argument, on peut écrire :",
-                "options": [
-                  "En revanche,",
-                  "À huit heures,",
-                  "De la maison"
-                ],
-                "answer": 0,
-                "why": "En revanche marque l’opposition ou la contrepartie."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -10687,7 +11541,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "ناقش قضية تعليمية بحجة وحجة مضادة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التعليم والعمل». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: عرض شفوي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: السكن والمدن والتنقل؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: عرض شفوي — مقدمة ومحاور وأمثلة وانتقالات وخاتمة.",
+            "nextLink": "الموضوع التالي: السكن والمدن والتنقل — الخدمات والحلول المحلية ومزاياها وعيوبها."
           }
         ],
         [
@@ -10697,11 +11558,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Formules de réclamation et propositions de solution",
             "vocab": [
-              {
-                "fr": "une candidature",
-                "ar": "طلب ترشح",
-                "example": "J’ai envoyé ma candidature hier."
-              },
               {
                 "fr": "un entretien",
                 "ar": "مقابلة",
@@ -10713,15 +11569,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "La communication est une compétence importante."
               },
               {
-                "fr": "postuler",
-                "ar": "يتقدّم لوظيفة",
-                "example": "Je souhaite postuler à ce poste."
+                "fr": "la mobilité urbaine",
+                "ar": "التنقل الحضري",
+                "example": "La mobilité urbaine doit être accessible."
+              },
+              {
+                "fr": "un aménagement",
+                "ar": "تهيئة / تنظيم",
+                "example": "L’aménagement améliore le quartier."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -10740,10 +11601,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "قارن حلين لمشكلة حضرية في تقرير.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («قارن حلين لمشكلة حضرية في تقرير.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: قارن حلين لمشكلة حضرية في تقرير.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Formules de réclamation et propositions de solution»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -10762,44 +11635,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pour introduire un contre-argument, on peut écrire :",
+                "q": "Quel terme correspond à la définition : « التنقل الحضري » ?",
                 "options": [
-                  "En revanche,",
-                  "À huit heures,",
-                  "De la maison"
+                  "un aménagement",
+                  "un entretien",
+                  "une compétence",
+                  "la mobilité urbaine"
+                ],
+                "answer": 3,
+                "why": "Le terme « la mobilité urbaine » signifie « التنقل الحضري ». "
+              },
+              {
+                "q": "Dans la phrase « L’aménagement améliore le quartier. », que signifie « un aménagement » ?",
+                "options": [
+                  "مهارة",
+                  "التنقل الحضري",
+                  "تهيئة / تنظيم",
+                  "مقابلة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un aménagement » signifie « تهيئة / تنظيم ». "
+              },
+              {
+                "q": "Les données ont été ___ avant la conclusion.",
+                "options": [
+                  "vérifier",
+                  "vérifient",
+                  "vérifiées"
+                ],
+                "answer": 2,
+                "why": "Le participe passé s’accorde avec « les données » dans cette phrase passive."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "En revanche marque l’opposition ou la contrepartie."
-              },
-              {
-                "q": "Une bonne synthèse doit :",
-                "options": [
-                  "copier des paragraphes entiers",
-                  "mettre en relation les idées des sources avec ses propres mots",
-                  "donner uniquement son opinion"
-                ],
-                "answer": 1,
-                "why": "La synthèse reformule et met en relation les informations sources."
-              },
-              {
-                "q": "Pour nuancer une affirmation trop catégorique, utilisez :",
-                "options": [
-                  "il est impossible que dans tous les cas",
-                  "il semble que / dans certains cas",
-                  "toujours, sans exception"
-                ],
-                "answer": 1,
-                "why": "Ces expressions rendent le propos plus nuancé."
-              },
-              {
-                "q": "La nominalisation de « le gouvernement décide » peut être :",
-                "options": [
-                  "la décision du gouvernement",
-                  "décider le gouvernement",
-                  "gouvernement décidé"
-                ],
-                "answer": 0,
-                "why": "La nominalisation transforme le verbe décider en nom : décision."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -10827,7 +11702,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "قارن حلين لمشكلة حضرية في تقرير.",
             "writingPrompt": "اكتب فقرة مترابطة عن «السكن والمدن والتنقل». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: التعليم والعمل، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: المواطنة والخدمات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: التعليم والعمل — فرص متكافئة والتدريب وتغير المهن.",
+            "nextLink": "الموضوع التالي: المواطنة والخدمات — الإجراءات والشكوى الرسمية وتفسير القواعد."
           }
         ],
         [
@@ -10838,16 +11720,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Discours rapporté et reformulation",
             "vocab": [
               {
-                "fr": "une candidature",
-                "ar": "طلب ترشح",
-                "example": "J’ai envoyé ma candidature hier."
-              },
-              {
-                "fr": "un entretien",
-                "ar": "مقابلة",
-                "example": "Je prépare mon entretien d’embauche."
-              },
-              {
                 "fr": "une compétence",
                 "ar": "مهارة",
                 "example": "La communication est une compétence importante."
@@ -10856,12 +11728,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "postuler",
                 "ar": "يتقدّم لوظيفة",
                 "example": "Je souhaite postuler à ce poste."
+              },
+              {
+                "fr": "un service public",
+                "ar": "خدمة عامة",
+                "example": "Le service public doit rester accessible."
+              },
+              {
+                "fr": "une démarche administrative",
+                "ar": "إجراء إداري",
+                "example": "Cette démarche administrative peut être faite en ligne."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -10880,10 +11762,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب رسالة رسمية مسنودة بأسباب واضحة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب رسالة رسمية مسنودة بأسباب واضحة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب رسالة رسمية مسنودة بأسباب واضحة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Discours rapporté et reformulation»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -10902,44 +11796,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "La nominalisation de « le gouvernement décide » peut être :",
+                "q": "Quel terme correspond à la définition : « إجراء إداري » ?",
                 "options": [
-                  "la décision du gouvernement",
-                  "décider le gouvernement",
-                  "gouvernement décidé"
+                  "une compétence",
+                  "postuler",
+                  "un service public",
+                  "une démarche administrative"
                 ],
-                "answer": 0,
-                "why": "La nominalisation transforme le verbe décider en nom : décision."
+                "answer": 3,
+                "why": "Le terme « une démarche administrative » signifie « إجراء إداري ». "
               },
               {
-                "q": "« Les données étayent cette hypothèse » signifie que les données :",
+                "q": "Dans la phrase « La communication est une compétence importante. », que signifie « une compétence » ?",
                 "options": [
-                  "contredisent forcément l’hypothèse",
-                  "apportent des éléments qui la soutiennent",
-                  "n’ont aucun lien avec elle"
+                  "خدمة عامة",
+                  "إجراء إداري",
+                  "مهارة",
+                  "يتقدّم لوظيفة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une compétence » signifie « مهارة ». "
+              },
+              {
+                "q": "Le rapport a été ___ par l’équipe.",
+                "options": [
+                  "rédiger",
+                  "rédigé",
+                  "rédige"
                 ],
                 "answer": 1,
-                "why": "Étayer signifie soutenir par des éléments ou des arguments."
+                "why": "Dans la voix passive, on emploie être + participe passé."
               },
               {
-                "q": "La meilleure réponse à une objection consiste à :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "ignorer le point opposé",
-                  "reformuler l’objection puis répondre avec une raison ou un exemple",
-                  "répéter la thèse sans explication"
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement"
                 ],
-                "answer": 1,
-                "why": "Une argumentation solide reconnaît le point opposé et y répond."
-              },
-              {
-                "q": "Dans un compte rendu formel, le registre doit être :",
-                "options": [
-                  "cohérent avec le destinataire et le but",
-                  "toujours familier",
-                  "rempli d’abréviations orales"
-                ],
-                "answer": 0,
-                "why": "Le registre dépend du destinataire et de la situation."
+                "answer": 2,
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -10967,7 +11863,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب رسالة رسمية مسنودة بأسباب واضحة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «المواطنة والخدمات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: السكن والمدن والتنقل، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: التلخيص والتركيب؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: السكن والمدن والتنقل — الخدمات والحلول المحلية ومزاياها وعيوبها.",
+            "nextLink": "الموضوع التالي: التلخيص والتركيب — جمع معلومات من مصدرين دون نسخهما."
           }
         ],
         [
@@ -10978,30 +11881,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Structurer une lettre ou un rapport administratif",
             "vocab": [
               {
+                "fr": "postuler",
+                "ar": "يتقدّم لوظيفة",
+                "example": "Je souhaite postuler à ce poste."
+              },
+              {
                 "fr": "une candidature",
                 "ar": "طلب ترشح",
                 "example": "J’ai envoyé ma candidature hier."
               },
               {
-                "fr": "un entretien",
-                "ar": "مقابلة",
-                "example": "Je prépare mon entretien d’embauche."
+                "fr": "un résumé",
+                "ar": "ملخص",
+                "example": "Le résumé reprend les idées essentielles."
               },
               {
-                "fr": "une compétence",
-                "ar": "مهارة",
-                "example": "La communication est une compétence importante."
-              },
-              {
-                "fr": "postuler",
-                "ar": "يتقدّم لوظيفة",
-                "example": "Je souhaite postuler à ce poste."
+                "fr": "mettre en relation",
+                "ar": "يربط بين",
+                "example": "Le candidat met en relation deux documents."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -11020,10 +11923,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب تركيباً يحدد الاتفاق والاختلاف.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب تركيباً يحدد الاتفاق والاختلاف.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب تركيباً يحدد الاتفاق والاختلاف.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Structurer une lettre ou un rapport administratif»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -11042,44 +11957,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Dans un compte rendu formel, le registre doit être :",
+                "q": "Quel terme correspond à la définition : « يتقدّم لوظيفة » ?",
                 "options": [
-                  "cohérent avec le destinataire et le but",
-                  "toujours familier",
-                  "rempli d’abréviations orales"
+                  "une candidature",
+                  "un résumé",
+                  "mettre en relation",
+                  "postuler"
+                ],
+                "answer": 3,
+                "why": "Le terme « postuler » signifie « يتقدّم لوظيفة ». "
+              },
+              {
+                "q": "Dans la phrase « J’ai envoyé ma candidature hier. », que signifie « une candidature » ?",
+                "options": [
+                  "يربط بين",
+                  "يتقدّم لوظيفة",
+                  "طلب ترشح",
+                  "ملخص"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une candidature » signifie « طلب ترشح ». "
+              },
+              {
+                "q": "Pour rendre un compte rendu plus formel, privilégiez :",
+                "options": [
+                  "un registre précis et neutre",
+                  "des abréviations familières",
+                  "des jugements sans justification"
                 ],
                 "answer": 0,
-                "why": "Le registre dépend du destinataire et de la situation."
+                "why": "Un compte rendu formel exige précision et neutralité."
               },
               {
-                "q": "Bien que la mesure ___ coûteuse, elle peut être efficace.",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "est",
-                  "soit",
-                  "sera"
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement"
                 ],
                 "answer": 1,
-                "why": "Bien que est suivi du subjonctif."
-              },
-              {
-                "q": "Les résultats doivent être ___ avant la conclusion.",
-                "options": [
-                  "analyser",
-                  "analysés",
-                  "analysant"
-                ],
-                "answer": 1,
-                "why": "Dans la construction passive, le participe passé s’accorde avec le sujet."
-              },
-              {
-                "q": "« Certes…, toutefois… » exprime :",
-                "options": [
-                  "une concession nuancée",
-                  "un ordre chronologique",
-                  "une localisation"
-                ],
-                "answer": 0,
-                "why": "Certes reconnaît un point, toutefois introduit une limite ou opposition."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -11107,7 +12024,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب تركيباً يحدد الاتفاق والاختلاف.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التلخيص والتركيب». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: المواطنة والخدمات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: قراءة صحفية؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: المواطنة والخدمات — الإجراءات والشكوى الرسمية وتفسير القواعد.",
+            "nextLink": "الموضوع التالي: قراءة صحفية — العنوان والمصدر والنبرة والحقائق والآراء."
           }
         ]
       ]
@@ -11136,20 +12060,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "L’article présente plusieurs points de vue."
               },
               {
-                "fr": "corroborer",
-                "ar": "يعزّز بدليل",
-                "example": "Une deuxième source peut corroborer cette information."
+                "fr": "un titre accrocheur",
+                "ar": "عنوان جذّاب",
+                "example": "Le titre accrocheur attire l’attention."
               },
               {
-                "fr": "un biais",
-                "ar": "تحيّز",
-                "example": "Il faut repérer un éventuel biais dans le récit."
+                "fr": "une ligne éditoriale",
+                "ar": "خط تحريري",
+                "example": "La ligne éditoriale du journal est clairement indiquée."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -11168,10 +12092,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "قارن تغطيتين لخبر واحد.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («قارن تغطيتين لخبر واحد.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: قارن تغطيتين لخبر واحد.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Distinguer fait, opinion, hypothèse et interprétation»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -11190,44 +12126,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Laquelle est une thèse argumentative claire ?",
+                "q": "Quel terme correspond à la définition : « عنوان جذّاب » ?",
                 "options": [
-                  "Le sujet est intéressant.",
-                  "Il faudrait développer les transports publics pour réduire les émissions.",
-                  "J’ai vu un autobus ce matin."
+                  "une ligne éditoriale",
+                  "une source fiable",
+                  "un point de vue",
+                  "un titre accrocheur"
                 ],
-                "answer": 1,
-                "why": "La thèse défend une position et annonce une relation argumentée."
+                "answer": 3,
+                "why": "Le terme « un titre accrocheur » signifie « عنوان جذّاب ». "
               },
               {
-                "q": "Pour introduire un contre-argument, on peut écrire :",
+                "q": "Dans la phrase « La ligne éditoriale du journal est clairement indiquée. », que signifie « une ligne éditoriale » ?",
                 "options": [
-                  "En revanche,",
-                  "À huit heures,",
-                  "De la maison"
+                  "وجهة نظر",
+                  "عنوان جذّاب",
+                  "خط تحريري",
+                  "مصدر موثوق"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une ligne éditoriale » signifie « خط تحريري ». "
+              },
+              {
+                "q": "Si j’avais plus de temps, je ___ davantage.",
+                "options": [
+                  "voyage",
+                  "voyagerai",
+                  "voyagerais"
+                ],
+                "answer": 2,
+                "why": "Après « si » + imparfait, on emploie souvent le conditionnel présent."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "En revanche marque l’opposition ou la contrepartie."
-              },
-              {
-                "q": "Une bonne synthèse doit :",
-                "options": [
-                  "copier des paragraphes entiers",
-                  "mettre en relation les idées des sources avec ses propres mots",
-                  "donner uniquement son opinion"
-                ],
-                "answer": 1,
-                "why": "La synthèse reformule et met en relation les informations sources."
-              },
-              {
-                "q": "Pour nuancer une affirmation trop catégorique, utilisez :",
-                "options": [
-                  "il est impossible que dans tous les cas",
-                  "il semble que / dans certains cas",
-                  "toujours, sans exception"
-                ],
-                "answer": 1,
-                "why": "Ces expressions rendent le propos plus nuancé."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -11255,7 +12193,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "قارن تغطيتين لخبر واحد.",
             "writingPrompt": "اكتب فقرة مترابطة عن «قراءة صحفية». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: التلخيص والتركيب، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: التحقق من المعلومات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: التلخيص والتركيب — جمع معلومات من مصدرين دون نسخهما.",
+            "nextLink": "الموضوع التالي: التحقق من المعلومات — الادعاء والدليل والتعميم والمبالغة."
           }
         ],
         [
@@ -11265,11 +12210,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Rapporter les propos d’un journaliste ou d’un témoin",
             "vocab": [
-              {
-                "fr": "une source fiable",
-                "ar": "مصدر موثوق",
-                "example": "Il faut vérifier si la source est fiable."
-              },
               {
                 "fr": "un point de vue",
                 "ar": "وجهة نظر",
@@ -11281,15 +12221,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Une deuxième source peut corroborer cette information."
               },
               {
-                "fr": "un biais",
-                "ar": "تحيّز",
-                "example": "Il faut repérer un éventuel biais dans le récit."
+                "fr": "vérifier une source",
+                "ar": "يتحقق من مصدر",
+                "example": "Il faut vérifier une source avant de partager l’information."
+              },
+              {
+                "fr": "une preuve",
+                "ar": "دليل",
+                "example": "Une preuve solide confirme l’information."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -11308,10 +12253,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "قدّم تحليلاً يقيّم موثوقية نص.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («قدّم تحليلاً يقيّم موثوقية نص.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: قدّم تحليلاً يقيّم موثوقية نص.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Rapporter les propos d’un journaliste ou d’un témoin»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -11330,44 +12287,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pour nuancer une affirmation trop catégorique, utilisez :",
+                "q": "Quel terme correspond à la définition : « دليل » ?",
                 "options": [
-                  "il est impossible que dans tous les cas",
-                  "il semble que / dans certains cas",
-                  "toujours, sans exception"
+                  "un point de vue",
+                  "corroborer",
+                  "vérifier une source",
+                  "une preuve"
                 ],
-                "answer": 1,
-                "why": "Ces expressions rendent le propos plus nuancé."
+                "answer": 3,
+                "why": "Le terme « une preuve » signifie « دليل ». "
               },
               {
-                "q": "La nominalisation de « le gouvernement décide » peut être :",
+                "q": "Dans la phrase « L’article présente plusieurs points de vue. », que signifie « un point de vue » ?",
                 "options": [
-                  "la décision du gouvernement",
-                  "décider le gouvernement",
-                  "gouvernement décidé"
+                  "يتحقق من مصدر",
+                  "دليل",
+                  "وجهة نظر",
+                  "يعزّز بدليل"
                 ],
-                "answer": 0,
-                "why": "La nominalisation transforme le verbe décider en nom : décision."
+                "answer": 2,
+                "why": "Dans ce contexte, « un point de vue » signifie « وجهة نظر ». "
               },
               {
-                "q": "« Les données étayent cette hypothèse » signifie que les données :",
+                "q": "Pour rendre un compte rendu plus formel, privilégiez :",
                 "options": [
-                  "contredisent forcément l’hypothèse",
-                  "apportent des éléments qui la soutiennent",
-                  "n’ont aucun lien avec elle"
+                  "des jugements sans justification",
+                  "un registre précis et neutre",
+                  "des abréviations familières"
                 ],
                 "answer": 1,
-                "why": "Étayer signifie soutenir par des éléments ou des arguments."
+                "why": "Un compte rendu formel exige précision et neutralité."
               },
               {
-                "q": "La meilleure réponse à une objection consiste à :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "ignorer le point opposé",
-                  "reformuler l’objection puis répondre avec une raison ou un exemple",
-                  "répéter la thèse sans explication"
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement"
                 ],
-                "answer": 1,
-                "why": "Une argumentation solide reconnaît le point opposé et y répond."
+                "answer": 2,
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -11395,7 +12354,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "قدّم تحليلاً يقيّم موثوقية نص.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التحقق من المعلومات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: قراءة صحفية، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: نقل الكلام والتلخيص؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: قراءة صحفية — العنوان والمصدر والنبرة والحقائق والآراء.",
+            "nextLink": "الموضوع التالي: نقل الكلام والتلخيص — إعادة الصياغة ونقل رأي دون نسخه."
           }
         ],
         [
@@ -11406,16 +12372,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Nominalisation et vocabulaire abstrait",
             "vocab": [
               {
-                "fr": "une source fiable",
-                "ar": "مصدر موثوق",
-                "example": "Il faut vérifier si la source est fiable."
-              },
-              {
-                "fr": "un point de vue",
-                "ar": "وجهة نظر",
-                "example": "L’article présente plusieurs points de vue."
-              },
-              {
                 "fr": "corroborer",
                 "ar": "يعزّز بدليل",
                 "example": "Une deuxième source peut corroborer cette information."
@@ -11424,12 +12380,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "un biais",
                 "ar": "تحيّز",
                 "example": "Il faut repérer un éventuel biais dans le récit."
+              },
+              {
+                "fr": "le discours indirect",
+                "ar": "الكلام غير المباشر",
+                "example": "Le discours indirect rapporte les propos d’une personne."
+              },
+              {
+                "fr": "rapporter des propos",
+                "ar": "ينقل أقوالاً",
+                "example": "Le journaliste rapporte des propos officiels."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -11448,10 +12414,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "استمع إلى تقرير وأعد عرضه في دقيقتين.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («استمع إلى تقرير وأعد عرضه في دقيقتين.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: استمع إلى تقرير وأعد عرضه في دقيقتين.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Nominalisation et vocabulaire abstrait»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -11470,44 +12448,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "La meilleure réponse à une objection consiste à :",
+                "q": "Quel terme correspond à la définition : « يعزّز بدليل » ?",
                 "options": [
-                  "ignorer le point opposé",
-                  "reformuler l’objection puis répondre avec une raison ou un exemple",
-                  "répéter la thèse sans explication"
+                  "un biais",
+                  "le discours indirect",
+                  "rapporter des propos",
+                  "corroborer"
                 ],
-                "answer": 1,
-                "why": "Une argumentation solide reconnaît le point opposé et y répond."
+                "answer": 3,
+                "why": "Le terme « corroborer » signifie « يعزّز بدليل ». "
               },
               {
-                "q": "Dans un compte rendu formel, le registre doit être :",
+                "q": "Dans la phrase « Il faut repérer un éventuel biais dans le récit. », que signifie « un biais » ?",
                 "options": [
-                  "cohérent avec le destinataire et le but",
-                  "toujours familier",
-                  "rempli d’abréviations orales"
+                  "ينقل أقوالاً",
+                  "يعزّز بدليل",
+                  "تحيّز",
+                  "الكلام غير المباشر"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un biais » signifie « تحيّز ». "
+              },
+              {
+                "q": "Les données ont été ___ avant la conclusion.",
+                "options": [
+                  "vérifiées",
+                  "vérifier",
+                  "vérifient"
                 ],
                 "answer": 0,
-                "why": "Le registre dépend du destinataire et de la situation."
+                "why": "Le participe passé s’accorde avec « les données » dans cette phrase passive."
               },
               {
-                "q": "Bien que la mesure ___ coûteuse, elle peut être efficace.",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "est",
-                  "soit",
-                  "sera"
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement"
                 ],
                 "answer": 1,
-                "why": "Bien que est suivi du subjonctif."
-              },
-              {
-                "q": "Les résultats doivent être ___ avant la conclusion.",
-                "options": [
-                  "analyser",
-                  "analysés",
-                  "analysant"
-                ],
-                "answer": 1,
-                "why": "Dans la construction passive, le participe passé s’accorde avec le sujet."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -11535,7 +12515,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "استمع إلى تقرير وأعد عرضه في دقيقتين.",
             "writingPrompt": "اكتب فقرة مترابطة عن «نقل الكلام والتلخيص». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: التحقق من المعلومات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: تركيب مصدرين؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: التحقق من المعلومات — الادعاء والدليل والتعميم والمبالغة.",
+            "nextLink": "الموضوع التالي: تركيب مصدرين — ربط أفكار متعارضة واستنتاج مشترك."
           }
         ],
         [
@@ -11546,30 +12533,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Comparer des sources et construire une synthèse",
             "vocab": [
               {
+                "fr": "un biais",
+                "ar": "تحيّز",
+                "example": "Il faut repérer un éventuel biais dans le récit."
+              },
+              {
                 "fr": "une source fiable",
                 "ar": "مصدر موثوق",
                 "example": "Il faut vérifier si la source est fiable."
               },
               {
-                "fr": "un point de vue",
-                "ar": "وجهة نظر",
-                "example": "L’article présente plusieurs points de vue."
+                "fr": "une convergence",
+                "ar": "تقاطع / اتفاق",
+                "example": "On observe une convergence entre les analyses."
               },
               {
-                "fr": "corroborer",
-                "ar": "يعزّز بدليل",
-                "example": "Une deuxième source peut corroborer cette information."
-              },
-              {
-                "fr": "un biais",
-                "ar": "تحيّز",
-                "example": "Il faut repérer un éventuel biais dans le récit."
+                "fr": "une divergence",
+                "ar": "اختلاف",
+                "example": "Les deux rapports présentent une divergence."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -11588,10 +12575,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب ملخصاً مقارناً مع استنتاجك.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب ملخصاً مقارناً مع استنتاجك.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب ملخصاً مقارناً مع استنتاجك.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Comparer des sources et construire une synthèse»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -11610,44 +12609,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Les résultats doivent être ___ avant la conclusion.",
+                "q": "Quel terme correspond à la définition : « مصدر موثوق » ?",
                 "options": [
-                  "analyser",
-                  "analysés",
-                  "analysant"
+                  "une convergence",
+                  "une divergence",
+                  "un biais",
+                  "une source fiable"
                 ],
-                "answer": 1,
-                "why": "Dans la construction passive, le participe passé s’accorde avec le sujet."
+                "answer": 3,
+                "why": "Le terme « une source fiable » signifie « مصدر موثوق ». "
               },
               {
-                "q": "« Certes…, toutefois… » exprime :",
+                "q": "Dans la phrase « On observe une convergence entre les analyses. », que signifie « une convergence » ?",
                 "options": [
-                  "une concession nuancée",
-                  "un ordre chronologique",
-                  "une localisation"
+                  "تحيّز",
+                  "مصدر موثوق",
+                  "تقاطع / اتفاق",
+                  "اختلاف"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une convergence » signifie « تقاطع / اتفاق ». "
+              },
+              {
+                "q": "Pour étayer un argument, il faut :",
+                "options": [
+                  "répéter la conclusion sans preuve",
+                  "éviter toute illustration",
+                  "un exemple précis ou une donnée"
+                ],
+                "answer": 2,
+                "why": "Une preuve, une donnée ou un exemple renforce l’argument."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "Certes reconnaît un point, toutefois introduit une limite ou opposition."
-              },
-              {
-                "q": "Il convient que les autorités ___ rapidement.",
-                "options": [
-                  "agissent",
-                  "agissent hier",
-                  "agiront que"
-                ],
-                "answer": 0,
-                "why": "Il convient que est suivi du subjonctif."
-              },
-              {
-                "q": "Laquelle est une thèse argumentative claire ?",
-                "options": [
-                  "Le sujet est intéressant.",
-                  "Il faudrait développer les transports publics pour réduire les émissions.",
-                  "J’ai vu un autobus ce matin."
-                ],
-                "answer": 1,
-                "why": "La thèse défend une position et annonce une relation argumentée."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -11675,7 +12676,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب ملخصاً مقارناً مع استنتاجك.",
             "writingPrompt": "اكتب فقرة مترابطة عن «تركيب مصدرين». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: نقل الكلام والتلخيص، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: البيئة والمناخ؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: نقل الكلام والتلخيص — إعادة الصياغة ونقل رأي دون نسخه.",
+            "nextLink": "الموضوع التالي: البيئة والمناخ — الأسباب والنتائج والسياسات والحلول."
           }
         ]
       ]
@@ -11704,20 +12712,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "La résilience des villes demande une planification."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
+                "fr": "les émissions de gaz à effet de serre",
+                "ar": "انبعاثات غازات الدفيئة",
+                "example": "Les émissions de gaz à effet de serre doivent diminuer."
               },
               {
-                "fr": "l’adaptation",
-                "ar": "التكيّف",
-                "example": "L’adaptation au changement climatique est nécessaire."
+                "fr": "l’adaptation climatique",
+                "ar": "التكيّف المناخي",
+                "example": "L’adaptation climatique protège les populations."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -11736,10 +12744,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب مقالاً عن حل بيئي بحجتين واعتراض ورد.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب مقالاً عن حل بيئي بحجتين واعتراض ورد.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب مقالاً عن حل بيئي بحجتين واعتراض ورد.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Cause, conséquence et opposition dans un débat environnemental»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -11758,44 +12778,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Une bonne synthèse doit :",
+                "q": "Quel terme correspond à la définition : « التكيّف المناخي » ?",
                 "options": [
-                  "copier des paragraphes entiers",
-                  "mettre en relation les idées des sources avec ses propres mots",
-                  "donner uniquement son opinion"
+                  "les émissions",
+                  "la résilience",
+                  "les émissions de gaz à effet de serre",
+                  "l’adaptation climatique"
                 ],
-                "answer": 1,
-                "why": "La synthèse reformule et met en relation les informations sources."
+                "answer": 3,
+                "why": "Le terme « l’adaptation climatique » signifie « التكيّف المناخي ». "
               },
               {
-                "q": "Pour nuancer une affirmation trop catégorique, utilisez :",
+                "q": "Dans la phrase « Il faut réduire les émissions de carbone. », que signifie « les émissions » ?",
                 "options": [
-                  "il est impossible que dans tous les cas",
-                  "il semble que / dans certains cas",
-                  "toujours, sans exception"
+                  "انبعاثات غازات الدفيئة",
+                  "التكيّف المناخي",
+                  "الانبعاثات",
+                  "القدرة على الصمود"
                 ],
-                "answer": 1,
-                "why": "Ces expressions rendent le propos plus nuancé."
+                "answer": 2,
+                "why": "Dans ce contexte, « les émissions » signifie « الانبعاثات ». "
               },
               {
-                "q": "La nominalisation de « le gouvernement décide » peut être :",
+                "q": "Je prends le bus ___ il pleut.",
                 "options": [
-                  "la décision du gouvernement",
-                  "décider le gouvernement",
-                  "gouvernement décidé"
-                ],
-                "answer": 0,
-                "why": "La nominalisation transforme le verbe décider en nom : décision."
-              },
-              {
-                "q": "« Les données étayent cette hypothèse » signifie que les données :",
-                "options": [
-                  "contredisent forcément l’hypothèse",
-                  "apportent des éléments qui la soutiennent",
-                  "n’ont aucun lien avec elle"
+                  "malgré",
+                  "parce qu’",
+                  "cependant"
                 ],
                 "answer": 1,
-                "why": "Étayer signifie soutenir par des éléments ou des arguments."
+                "why": "« Parce que » introduit une cause."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement"
+                ],
+                "answer": 2,
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -11823,7 +12845,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب مقالاً عن حل بيئي بحجتين واعتراض ورد.",
             "writingPrompt": "اكتب فقرة مترابطة عن «البيئة والمناخ». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: تركيب مصدرين، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: العلوم والتكنولوجيا؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: تركيب مصدرين — ربط أفكار متعارضة واستنتاج مشترك.",
+            "nextLink": "الموضوع التالي: العلوم والتكنولوجيا — الفوائد والمخاطر والأثر الاجتماعي."
           }
         ],
         [
@@ -11833,11 +12862,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Conditionnel pour envisager des scénarios",
             "vocab": [
-              {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
-              },
               {
                 "fr": "la résilience",
                 "ar": "القدرة على الصمود",
@@ -11849,15 +12873,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Les transports publics sont un levier important."
               },
               {
-                "fr": "l’adaptation",
-                "ar": "التكيّف",
-                "example": "L’adaptation au changement climatique est nécessaire."
+                "fr": "une avancée scientifique",
+                "ar": "تقدم علمي",
+                "example": "Cette avancée scientifique ouvre de nouvelles possibilités."
+              },
+              {
+                "fr": "une limite technologique",
+                "ar": "محدودية تقنية",
+                "example": "Toute limite technologique doit être reconnue."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -11876,10 +12905,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اشرح فكرة علمية مألوفة لجمهور غير متخصص.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اشرح فكرة علمية مألوفة لجمهور غير متخصص.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اشرح فكرة علمية مألوفة لجمهور غير متخصص.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Conditionnel pour envisager des scénarios»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -11898,44 +12939,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "« Les données étayent cette hypothèse » signifie que les données :",
+                "q": "Quel terme correspond à la définition : « القدرة على الصمود » ?",
                 "options": [
-                  "contredisent forcément l’hypothèse",
-                  "apportent des éléments qui la soutiennent",
-                  "n’ont aucun lien avec elle"
+                  "un levier",
+                  "une avancée scientifique",
+                  "une limite technologique",
+                  "la résilience"
                 ],
-                "answer": 1,
-                "why": "Étayer signifie soutenir par des éléments ou des arguments."
+                "answer": 3,
+                "why": "Le terme « la résilience » signifie « القدرة على الصمود ». "
               },
               {
-                "q": "La meilleure réponse à une objection consiste à :",
+                "q": "Dans la phrase « Les transports publics sont un levier important. », que signifie « un levier » ?",
                 "options": [
-                  "ignorer le point opposé",
-                  "reformuler l’objection puis répondre avec une raison ou un exemple",
-                  "répéter la thèse sans explication"
+                  "محدودية تقنية",
+                  "القدرة على الصمود",
+                  "وسيلة فعّالة",
+                  "تقدم علمي"
                 ],
-                "answer": 1,
-                "why": "Une argumentation solide reconnaît le point opposé et y répond."
+                "answer": 2,
+                "why": "Dans ce contexte, « un levier » signifie « وسيلة فعّالة ». "
               },
               {
-                "q": "Dans un compte rendu formel, le registre doit être :",
+                "q": "Il a beaucoup plu ; ___, la route est fermée.",
                 "options": [
-                  "cohérent avec le destinataire et le but",
-                  "toujours familier",
-                  "rempli d’abréviations orales"
+                  "par conséquent",
+                  "bien que",
+                  "malgré"
                 ],
                 "answer": 0,
-                "why": "Le registre dépend du destinataire et de la situation."
+                "why": "« Par conséquent » introduit une conséquence."
               },
               {
-                "q": "Bien que la mesure ___ coûteuse, elle peut être efficace.",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "est",
-                  "soit",
-                  "sera"
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement"
                 ],
                 "answer": 1,
-                "why": "Bien que est suivi du subjonctif."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -11963,7 +13006,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اشرح فكرة علمية مألوفة لجمهور غير متخصص.",
             "writingPrompt": "اكتب فقرة مترابطة عن «العلوم والتكنولوجيا». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: البيئة والمناخ، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: الحلول العامة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: البيئة والمناخ — الأسباب والنتائج والسياسات والحلول.",
+            "nextLink": "الموضوع التالي: الحلول العامة — المشكلة والجهات المعنية والتكلفة والفائدة."
           }
         ],
         [
@@ -11974,16 +13024,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Voix passive et nominalisations dans les rapports",
             "vocab": [
               {
-                "fr": "les émissions",
-                "ar": "الانبعاثات",
-                "example": "Il faut réduire les émissions de carbone."
-              },
-              {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
-              },
-              {
                 "fr": "un levier",
                 "ar": "وسيلة فعّالة",
                 "example": "Les transports publics sont un levier important."
@@ -11992,12 +13032,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "l’adaptation",
                 "ar": "التكيّف",
                 "example": "L’adaptation au changement climatique est nécessaire."
+              },
+              {
+                "fr": "une politique publique",
+                "ar": "سياسة عامة",
+                "example": "La politique publique vise une solution durable."
+              },
+              {
+                "fr": "un compromis",
+                "ar": "تسوية",
+                "example": "Un compromis permet aux partenaires d’avancer."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -12016,10 +13066,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "أنشئ عرضاً يوصي بحل ويبرر اختياره.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («أنشئ عرضاً يوصي بحل ويبرر اختياره.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: أنشئ عرضاً يوصي بحل ويبرر اختياره.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Voix passive et nominalisations dans les rapports»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -12038,44 +13100,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Bien que la mesure ___ coûteuse, elle peut être efficace.",
+                "q": "Quel terme correspond à la définition : « التكيّف » ?",
                 "options": [
-                  "est",
-                  "soit",
-                  "sera"
+                  "une politique publique",
+                  "un compromis",
+                  "un levier",
+                  "l’adaptation"
                 ],
-                "answer": 1,
-                "why": "Bien que est suivi du subjonctif."
+                "answer": 3,
+                "why": "Le terme « l’adaptation » signifie « التكيّف ». "
               },
               {
-                "q": "Les résultats doivent être ___ avant la conclusion.",
+                "q": "Dans la phrase « La politique publique vise une solution durable. », que signifie « une politique publique » ?",
                 "options": [
-                  "analyser",
-                  "analysés",
-                  "analysant"
+                  "وسيلة فعّالة",
+                  "التكيّف",
+                  "سياسة عامة",
+                  "تسوية"
                 ],
-                "answer": 1,
-                "why": "Dans la construction passive, le participe passé s’accorde avec le sujet."
+                "answer": 2,
+                "why": "Dans ce contexte, « une politique publique » signifie « سياسة عامة ». "
               },
               {
-                "q": "« Certes…, toutefois… » exprime :",
+                "q": "Pour rendre un compte rendu plus formel, privilégiez :",
                 "options": [
-                  "une concession nuancée",
-                  "un ordre chronologique",
-                  "une localisation"
+                  "des abréviations familières",
+                  "des jugements sans justification",
+                  "un registre précis et neutre"
+                ],
+                "answer": 2,
+                "why": "Un compte rendu formel exige précision et neutralité."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "Certes reconnaît un point, toutefois introduit une limite ou opposition."
-              },
-              {
-                "q": "Il convient que les autorités ___ rapidement.",
-                "options": [
-                  "agissent",
-                  "agissent hier",
-                  "agiront que"
-                ],
-                "answer": 0,
-                "why": "Il convient que est suivi du subjonctif."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -12103,7 +13167,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "أنشئ عرضاً يوصي بحل ويبرر اختياره.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الحلول العامة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: العلوم والتكنولوجيا، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: نقاش مركب؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: العلوم والتكنولوجيا — الفوائد والمخاطر والأثر الاجتماعي.",
+            "nextLink": "الموضوع التالي: نقاش مركب — موازنة الأدلة والقيم والقيود العملية."
           }
         ],
         [
@@ -12114,30 +13185,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Évaluer une solution : avantages, limites, conditions",
             "vocab": [
               {
+                "fr": "l’adaptation",
+                "ar": "التكيّف",
+                "example": "L’adaptation au changement climatique est nécessaire."
+              },
+              {
                 "fr": "les émissions",
                 "ar": "الانبعاثات",
                 "example": "Il faut réduire les émissions de carbone."
               },
               {
-                "fr": "la résilience",
-                "ar": "القدرة على الصمود",
-                "example": "La résilience des villes demande une planification."
+                "fr": "un débat contradictoire",
+                "ar": "نقاش بين آراء متعارضة",
+                "example": "Le débat contradictoire éclaire les enjeux."
               },
               {
-                "fr": "un levier",
-                "ar": "وسيلة فعّالة",
-                "example": "Les transports publics sont un levier important."
-              },
-              {
-                "fr": "l’adaptation",
-                "ar": "التكيّف",
-                "example": "L’adaptation au changement climatique est nécessaire."
+                "fr": "une objection pertinente",
+                "ar": "اعتراض وجيه",
+                "example": "Elle formule une objection pertinente."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -12156,10 +13227,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "شارك في مناظرة واكتب خلاصة الحجج.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («شارك في مناظرة واكتب خلاصة الحجج.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: شارك في مناظرة واكتب خلاصة الحجج.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Évaluer une solution : avantages, limites, conditions»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -12178,44 +13261,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Il convient que les autorités ___ rapidement.",
+                "q": "Quel terme correspond à la définition : « نقاش بين آراء متعارضة » ?",
                 "options": [
-                  "agissent",
-                  "agissent hier",
-                  "agiront que"
+                  "une objection pertinente",
+                  "l’adaptation",
+                  "les émissions",
+                  "un débat contradictoire"
                 ],
-                "answer": 0,
-                "why": "Il convient que est suivi du subjonctif."
+                "answer": 3,
+                "why": "Le terme « un débat contradictoire » signifie « نقاش بين آراء متعارضة ». "
               },
               {
-                "q": "Laquelle est une thèse argumentative claire ?",
+                "q": "Dans la phrase « Elle formule une objection pertinente. », que signifie « une objection pertinente » ?",
                 "options": [
-                  "Le sujet est intéressant.",
-                  "Il faudrait développer les transports publics pour réduire les émissions.",
-                  "J’ai vu un autobus ce matin."
+                  "الانبعاثات",
+                  "نقاش بين آراء متعارضة",
+                  "اعتراض وجيه",
+                  "التكيّف"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une objection pertinente » signifie « اعتراض وجيه ». "
+              },
+              {
+                "q": "Je prends le bus ___ il pleut.",
+                "options": [
+                  "malgré",
+                  "parce qu’",
+                  "cependant"
                 ],
                 "answer": 1,
-                "why": "La thèse défend une position et annonce une relation argumentée."
+                "why": "« Parce que » introduit une cause."
               },
               {
-                "q": "Pour introduire un contre-argument, on peut écrire :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "En revanche,",
-                  "À huit heures,",
-                  "De la maison"
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement"
                 ],
-                "answer": 0,
-                "why": "En revanche marque l’opposition ou la contrepartie."
-              },
-              {
-                "q": "Une bonne synthèse doit :",
-                "options": [
-                  "copier des paragraphes entiers",
-                  "mettre en relation les idées des sources avec ses propres mots",
-                  "donner uniquement son opinion"
-                ],
-                "answer": 1,
-                "why": "La synthèse reformule et met en relation les informations sources."
+                "answer": 2,
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -12243,7 +13328,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "شارك في مناظرة واكتب خلاصة الحجج.",
             "writingPrompt": "اكتب فقرة مترابطة عن «نقاش مركب». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الحلول العامة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: التقرير والتحليل؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الحلول العامة — المشكلة والجهات المعنية والتكلفة والفائدة.",
+            "nextLink": "الموضوع التالي: التقرير والتحليل — هيكلة تقرير وتحديد الجمهور والغرض."
           }
         ]
       ]
@@ -12272,20 +13364,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Le rapport présente trois constats principaux."
               },
               {
-                "fr": "en revanche",
-                "ar": "في المقابل",
-                "example": "Les deux sources concordent ; en revanche, elles diffèrent sur les causes."
+                "fr": "un rapport circonstancié",
+                "ar": "تقرير مفصل",
+                "example": "Le rapport circonstancié décrit les faits avec précision."
               },
               {
-                "fr": "en définitive",
-                "ar": "في نهاية المطاف",
-                "example": "En définitive, la solution reste à discuter."
+                "fr": "un constat",
+                "ar": "استنتاج / معاينة",
+                "example": "Le constat s’appuie sur les données."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -12304,10 +13396,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب تقريراً بعناوين ومحاور وخلاصة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب تقريراً بعناوين ومحاور وخلاصة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب تقريراً بعناوين ومحاور وخلاصة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Cohésion : reprise pronominale et connecteurs»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -12326,44 +13430,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "La nominalisation de « le gouvernement décide » peut être :",
+                "q": "Quel terme correspond à la définition : « تركيب / خلاصة » ?",
                 "options": [
-                  "la décision du gouvernement",
-                  "décider le gouvernement",
-                  "gouvernement décidé"
+                  "un constat",
+                  "un rapport circonstancié",
+                  "un constat",
+                  "une synthèse"
+                ],
+                "answer": 3,
+                "why": "Le terme « une synthèse » signifie « تركيب / خلاصة ». "
+              },
+              {
+                "q": "Dans la phrase « Le rapport présente trois constats principaux. », que signifie « un constat » ?",
+                "options": [
+                  "استنتاج / معاينة",
+                  "تركيب / خلاصة",
+                  "استنتاج من المعطيات",
+                  "تقرير مفصل"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un constat » signifie « استنتاج من المعطيات ». "
+              },
+              {
+                "q": "Pour rendre un compte rendu plus formel, privilégiez :",
+                "options": [
+                  "un registre précis et neutre",
+                  "des abréviations familières",
+                  "des jugements sans justification"
                 ],
                 "answer": 0,
-                "why": "La nominalisation transforme le verbe décider en nom : décision."
+                "why": "Un compte rendu formel exige précision et neutralité."
               },
               {
-                "q": "« Les données étayent cette hypothèse » signifie que les données :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "contredisent forcément l’hypothèse",
-                  "apportent des éléments qui la soutiennent",
-                  "n’ont aucun lien avec elle"
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement"
                 ],
                 "answer": 1,
-                "why": "Étayer signifie soutenir par des éléments ou des arguments."
-              },
-              {
-                "q": "La meilleure réponse à une objection consiste à :",
-                "options": [
-                  "ignorer le point opposé",
-                  "reformuler l’objection puis répondre avec une raison ou un exemple",
-                  "répéter la thèse sans explication"
-                ],
-                "answer": 1,
-                "why": "Une argumentation solide reconnaît le point opposé et y répond."
-              },
-              {
-                "q": "Dans un compte rendu formel, le registre doit être :",
-                "options": [
-                  "cohérent avec le destinataire et le but",
-                  "toujours familier",
-                  "rempli d’abréviations orales"
-                ],
-                "answer": 0,
-                "why": "Le registre dépend du destinataire et de la situation."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -12391,7 +13497,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب تقريراً بعناوين ومحاور وخلاصة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التقرير والتحليل». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: نقاش مركب، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: تركيب معلومات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: نقاش مركب — موازنة الأدلة والقيم والقيود العملية.",
+            "nextLink": "الموضوع التالي: تركيب معلومات — ملاحظات أثناء الاستماع ومقارنة مصادر."
           }
         ],
         [
@@ -12401,11 +13514,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Paraphrase et synthèse de plusieurs sources",
             "vocab": [
-              {
-                "fr": "une synthèse",
-                "ar": "تركيب / خلاصة",
-                "example": "La synthèse met en relation plusieurs documents."
-              },
               {
                 "fr": "un constat",
                 "ar": "استنتاج من المعطيات",
@@ -12417,15 +13525,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Les deux sources concordent ; en revanche, elles diffèrent sur les causes."
               },
               {
-                "fr": "en définitive",
-                "ar": "في نهاية المطاف",
-                "example": "En définitive, la solution reste à discuter."
+                "fr": "une source complémentaire",
+                "ar": "مصدر مكمّل",
+                "example": "La source complémentaire apporte un détail utile."
+              },
+              {
+                "fr": "hiérarchiser",
+                "ar": "يرتّب حسب الأهمية",
+                "example": "Il faut hiérarchiser les informations."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -12444,10 +13557,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اجمع خمس أفكار من مصدرين واكتب تركيباً.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اجمع خمس أفكار من مصدرين واكتب تركيباً.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اجمع خمس أفكار من مصدرين واكتب تركيباً.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Paraphrase et synthèse de plusieurs sources»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -12466,44 +13591,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Dans un compte rendu formel, le registre doit être :",
+                "q": "Quel terme correspond à la définition : « في المقابل » ?",
                 "options": [
-                  "cohérent avec le destinataire et le but",
-                  "toujours familier",
-                  "rempli d’abréviations orales"
+                  "une source complémentaire",
+                  "hiérarchiser",
+                  "un constat",
+                  "en revanche"
+                ],
+                "answer": 3,
+                "why": "Le terme « en revanche » signifie « في المقابل ». "
+              },
+              {
+                "q": "Dans la phrase « La source complémentaire apporte un détail utile. », que signifie « une source complémentaire » ?",
+                "options": [
+                  "استنتاج من المعطيات",
+                  "في المقابل",
+                  "مصدر مكمّل",
+                  "يرتّب حسب الأهمية"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une source complémentaire » signifie « مصدر مكمّل ». "
+              },
+              {
+                "q": "Pour introduire un contre-argument, on peut écrire :",
+                "options": [
+                  "Il y a… hier…",
+                  "À demain, parce que…",
+                  "Certes…, toutefois…"
+                ],
+                "answer": 2,
+                "why": "Cette structure présente une concession et une opposition."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "Le registre dépend du destinataire et de la situation."
-              },
-              {
-                "q": "Bien que la mesure ___ coûteuse, elle peut être efficace.",
-                "options": [
-                  "est",
-                  "soit",
-                  "sera"
-                ],
-                "answer": 1,
-                "why": "Bien que est suivi du subjonctif."
-              },
-              {
-                "q": "Les résultats doivent être ___ avant la conclusion.",
-                "options": [
-                  "analyser",
-                  "analysés",
-                  "analysant"
-                ],
-                "answer": 1,
-                "why": "Dans la construction passive, le participe passé s’accorde avec le sujet."
-              },
-              {
-                "q": "« Certes…, toutefois… » exprime :",
-                "options": [
-                  "une concession nuancée",
-                  "un ordre chronologique",
-                  "une localisation"
-                ],
-                "answer": 0,
-                "why": "Certes reconnaît un point, toutefois introduit une limite ou opposition."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -12531,7 +13658,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اجمع خمس أفكار من مصدرين واكتب تركيباً.",
             "writingPrompt": "اكتب فقرة مترابطة عن «تركيب معلومات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: التقرير والتحليل، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: العرض والدفاع؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: التقرير والتحليل — هيكلة تقرير وتحديد الجمهور والغرض.",
+            "nextLink": "الموضوع التالي: العرض والدفاع — عرض مطول والجواب عن الاعتراضات والأسئلة."
           }
         ],
         [
@@ -12542,16 +13676,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Registre académique/professionnel et précision lexicale",
             "vocab": [
               {
-                "fr": "une synthèse",
-                "ar": "تركيب / خلاصة",
-                "example": "La synthèse met en relation plusieurs documents."
-              },
-              {
-                "fr": "un constat",
-                "ar": "استنتاج من المعطيات",
-                "example": "Le rapport présente trois constats principaux."
-              },
-              {
                 "fr": "en revanche",
                 "ar": "في المقابل",
                 "example": "Les deux sources concordent ; en revanche, elles diffèrent sur les causes."
@@ -12560,12 +13684,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "en définitive",
                 "ar": "في نهاية المطاف",
                 "example": "En définitive, la solution reste à discuter."
+              },
+              {
+                "fr": "défendre une position",
+                "ar": "يدافع عن موقف",
+                "example": "Elle défend sa position à l’aide d’exemples."
+              },
+              {
+                "fr": "anticiper une objection",
+                "ar": "يتوقع اعتراضاً",
+                "example": "Anticiper une objection renforce l’argumentation."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -12584,10 +13718,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "قدّم عرضاً من ثماني دقائق ثم أجب عن أسئلة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («قدّم عرضاً من ثماني دقائق ثم أجب عن أسئلة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: قدّم عرضاً من ثماني دقائق ثم أجب عن أسئلة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Registre académique/professionnel et précision lexicale»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -12606,44 +13752,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "« Certes…, toutefois… » exprime :",
+                "q": "Quel terme correspond à la définition : « يدافع عن موقف » ?",
                 "options": [
-                  "une concession nuancée",
-                  "un ordre chronologique",
-                  "une localisation"
+                  "anticiper une objection",
+                  "en revanche",
+                  "en définitive",
+                  "défendre une position"
                 ],
-                "answer": 0,
-                "why": "Certes reconnaît un point, toutefois introduit une limite ou opposition."
+                "answer": 3,
+                "why": "Le terme « défendre une position » signifie « يدافع عن موقف ». "
               },
               {
-                "q": "Il convient que les autorités ___ rapidement.",
+                "q": "Dans la phrase « Anticiper une objection renforce l’argumentation. », que signifie « anticiper une objection » ?",
                 "options": [
-                  "agissent",
-                  "agissent hier",
-                  "agiront que"
+                  "في نهاية المطاف",
+                  "يدافع عن موقف",
+                  "يتوقع اعتراضاً",
+                  "في المقابل"
                 ],
-                "answer": 0,
-                "why": "Il convient que est suivi du subjonctif."
+                "answer": 2,
+                "why": "Dans ce contexte, « anticiper une objection » signifie « يتوقع اعتراضاً ». "
               },
               {
-                "q": "Laquelle est une thèse argumentative claire ?",
+                "q": "Le rapport a été ___ par l’équipe.",
                 "options": [
-                  "Le sujet est intéressant.",
-                  "Il faudrait développer les transports publics pour réduire les émissions.",
-                  "J’ai vu un autobus ce matin."
+                  "rédiger",
+                  "rédigé",
+                  "rédige"
                 ],
                 "answer": 1,
-                "why": "La thèse défend une position et annonce une relation argumentée."
+                "why": "Dans la voix passive, on emploie être + participe passé."
               },
               {
-                "q": "Pour introduire un contre-argument, on peut écrire :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "En revanche,",
-                  "À huit heures,",
-                  "De la maison"
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement"
                 ],
-                "answer": 0,
-                "why": "En revanche marque l’opposition ou la contrepartie."
+                "answer": 2,
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -12671,7 +13819,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "قدّم عرضاً من ثماني دقائق ثم أجب عن أسئلة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «العرض والدفاع». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: تركيب معلومات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: اختبار B2 تشخيصي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: تركيب معلومات — ملاحظات أثناء الاستماع ومقارنة مصادر.",
+            "nextLink": "الموضوع التالي: اختبار B2 تشخيصي — عينة زمنية من المهارات الأربع وفق DELF B2."
           }
         ],
         [
@@ -12682,30 +13837,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Réviser un texte : logique, répétitions, grammaire, registre",
             "vocab": [
               {
+                "fr": "en définitive",
+                "ar": "في نهاية المطاف",
+                "example": "En définitive, la solution reste à discuter."
+              },
+              {
                 "fr": "une synthèse",
                 "ar": "تركيب / خلاصة",
                 "example": "La synthèse met en relation plusieurs documents."
               },
               {
-                "fr": "un constat",
-                "ar": "استنتاج من المعطيات",
-                "example": "Le rapport présente trois constats principaux."
+                "fr": "une compétence transversale",
+                "ar": "مهارة مشتركة",
+                "example": "Une compétence transversale se développe avec la pratique."
               },
               {
-                "fr": "en revanche",
-                "ar": "في المقابل",
-                "example": "Les deux sources concordent ; en revanche, elles diffèrent sur les causes."
-              },
-              {
-                "fr": "en définitive",
-                "ar": "في نهاية المطاف",
-                "example": "En définitive, la solution reste à discuter."
+                "fr": "un seuil de réussite",
+                "ar": "حد النجاح",
+                "example": "Le seuil de réussite doit être clairement défini."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -12724,10 +13879,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "راجع النواقص قبل التدريب المكثف.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («راجع النواقص قبل التدريب المكثف.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: راجع النواقص قبل التدريب المكثف.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Réviser un texte : logique, répétitions, grammaire, registre»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -12746,44 +13913,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pour introduire un contre-argument, on peut écrire :",
+                "q": "Quel terme correspond à la définition : « حد النجاح » ?",
                 "options": [
-                  "En revanche,",
-                  "À huit heures,",
-                  "De la maison"
+                  "en définitive",
+                  "une synthèse",
+                  "une compétence transversale",
+                  "un seuil de réussite"
+                ],
+                "answer": 3,
+                "why": "Le terme « un seuil de réussite » signifie « حد النجاح ». "
+              },
+              {
+                "q": "Dans la phrase « En définitive, la solution reste à discuter. », que signifie « en définitive » ?",
+                "options": [
+                  "مهارة مشتركة",
+                  "حد النجاح",
+                  "في نهاية المطاف",
+                  "تركيب / خلاصة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « en définitive » signifie « في نهاية المطاف ». "
+              },
+              {
+                "q": "Pour rendre un compte rendu plus formel, privilégiez :",
+                "options": [
+                  "un registre précis et neutre",
+                  "des abréviations familières",
+                  "des jugements sans justification"
                 ],
                 "answer": 0,
-                "why": "En revanche marque l’opposition ou la contrepartie."
+                "why": "Un compte rendu formel exige précision et neutralité."
               },
               {
-                "q": "Une bonne synthèse doit :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "copier des paragraphes entiers",
-                  "mettre en relation les idées des sources avec ses propres mots",
-                  "donner uniquement son opinion"
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement"
                 ],
                 "answer": 1,
-                "why": "La synthèse reformule et met en relation les informations sources."
-              },
-              {
-                "q": "Pour nuancer une affirmation trop catégorique, utilisez :",
-                "options": [
-                  "il est impossible que dans tous les cas",
-                  "il semble que / dans certains cas",
-                  "toujours, sans exception"
-                ],
-                "answer": 1,
-                "why": "Ces expressions rendent le propos plus nuancé."
-              },
-              {
-                "q": "La nominalisation de « le gouvernement décide » peut être :",
-                "options": [
-                  "la décision du gouvernement",
-                  "décider le gouvernement",
-                  "gouvernement décidé"
-                ],
-                "answer": 0,
-                "why": "La nominalisation transforme le verbe décider en nom : décision."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -12811,7 +13980,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "راجع النواقص قبل التدريب المكثف.",
             "writingPrompt": "اكتب فقرة مترابطة عن «اختبار B2 تشخيصي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: العرض والدفاع، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "تمهيد لمرحلة DELF B2: نقل المهارات إلى مهام امتحانية مقيدة بالوقت ومعايير التقييم.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: العرض والدفاع — عرض مطول والجواب عن الاعتراضات والأسئلة.",
+            "nextLink": "الموضوع التالي: الاستماع: الفكرة والبنية — استماع للفكرة العامة ثم التفاصيل والدليل."
           }
         ]
       ]
@@ -12840,20 +14016,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une concession",
-                "ar": "إقرار بجزء من الرأي الآخر",
-                "example": "Une concession peut renforcer l’argumentation."
+                "fr": "une consigne",
+                "ar": "تعليمات السؤال",
+                "example": "Lisez la consigne avant de commencer l’écoute."
               },
               {
-                "fr": "justifier",
-                "ar": "يبرّر",
-                "example": "Je dois justifier mon choix par un exemple."
+                "fr": "un indice sonore",
+                "ar": "علامة صوتية",
+                "example": "Cet indice sonore indique un changement de sujet."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -12872,10 +14048,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "حل اختبار استماع وسجّل نوع كل خطأ.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («حل اختبار استماع وسجّل نوع كل خطأ.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: حل اختبار استماع وسجّل نوع كل خطأ.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Identifier le thème, la thèse et l’intention du locuteur»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -12894,44 +14082,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Une présentation orale efficace comprend :",
+                "q": "Quel terme correspond à la définition : « مسودة » ?",
                 "options": [
-                  "une introduction, des arguments organisés et une conclusion",
-                  "une liste sans liens",
-                  "uniquement une opinion personnelle"
+                  "une consigne",
+                  "un indice sonore",
+                  "une consigne",
+                  "un brouillon"
                 ],
-                "answer": 0,
-                "why": "L’organisation rend le raisonnement plus clair pour l’examinateur."
+                "answer": 3,
+                "why": "Le terme « un brouillon » signifie « مسودة ». "
               },
               {
-                "q": "Si une question n’est pas comprise à l’oral, il est utile de :",
+                "q": "Dans la phrase « Lisez la consigne avant de commencer l’écoute. », que signifie « une consigne » ?",
                 "options": [
-                  "demander poliment de reformuler",
-                  "ne plus répondre",
-                  "changer de sujet"
+                  "تعليمات السؤال",
+                  "مسودة",
+                  "تعليمات السؤال",
+                  "علامة صوتية"
                 ],
                 "answer": 0,
-                "why": "Demander une reformulation permet de maintenir l’interaction."
+                "why": "Dans ce contexte, « une consigne » signifie « تعليمات السؤال ». "
               },
               {
-                "q": "Dans une consigne de production écrite, la première étape est de :",
+                "q": "Pour étayer un argument, il faut :",
                 "options": [
-                  "commencer immédiatement sans lire le sujet",
-                  "identifier le destinataire, le but et les points demandés",
-                  "écrire la conclusion puis s’arrêter"
+                  "répéter la conclusion sans preuve",
+                  "éviter toute illustration",
+                  "un exemple précis ou une donnée"
                 ],
-                "answer": 1,
-                "why": "Comprendre la consigne évite de sortir du sujet ou d’oublier une partie."
+                "answer": 2,
+                "why": "Une preuve, une donnée ou un exemple renforce l’argument."
               },
               {
-                "q": "Pour soutenir une opinion, il est préférable de :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "présenter une raison puis un exemple concret",
-                  "répéter la même idée cinq fois",
-                  "utiliser des mots difficiles sans lien"
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "Une idée, une raison et un exemple créent un argument compréhensible."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -12959,7 +14149,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "حل اختبار استماع وسجّل نوع كل خطأ.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الاستماع: الفكرة والبنية». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "نقطة تحقق B2: فهم الحجج الأساسية، تنظيم مقال، الدفاع عن رأي، وربط الأفكار بأمثلة.",
+            "nextStep": "يمهّد للأسبوع التالي: الاستماع: رأي وحجة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: اختبار B2 تشخيصي — عينة زمنية من المهارات الأربع وفق DELF B2.",
+            "nextLink": "الموضوع التالي: الاستماع: رأي وحجة — النبرة وموقف المتحدث والاعتراض والنتيجة."
           }
         ],
         [
@@ -12969,11 +14166,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Prise de notes : chiffres, noms, arguments, exemples",
             "vocab": [
-              {
-                "fr": "une consigne",
-                "ar": "تعليمات السؤال",
-                "example": "Il faut lire la consigne avant de commencer."
-              },
               {
                 "fr": "un brouillon",
                 "ar": "مسودة",
@@ -12985,15 +14177,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "justifier",
-                "ar": "يبرّر",
-                "example": "Je dois justifier mon choix par un exemple."
+                "fr": "l’intention du locuteur",
+                "ar": "نية المتحدث",
+                "example": "Il faut identifier l’intention du locuteur."
+              },
+              {
+                "fr": "une prise de position",
+                "ar": "اتخاذ موقف",
+                "example": "La prise de position est explicite."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -13012,10 +14209,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب مخطط الحجج من مقابلة أو نقاش.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب مخطط الحجج من مقابلة أو نقاش.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب مخطط الحجج من مقابلة أو نقاش.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Prise de notes : chiffres, noms, arguments, exemples»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -13034,44 +14243,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pour soutenir une opinion, il est préférable de :",
+                "q": "Quel terme correspond à la définition : « نية المتحدث » ?",
                 "options": [
-                  "présenter une raison puis un exemple concret",
-                  "répéter la même idée cinq fois",
-                  "utiliser des mots difficiles sans lien"
+                  "une prise de position",
+                  "un brouillon",
+                  "une concession",
+                  "l’intention du locuteur"
                 ],
-                "answer": 0,
-                "why": "Une idée, une raison et un exemple créent un argument compréhensible."
+                "answer": 3,
+                "why": "Le terme « l’intention du locuteur » signifie « نية المتحدث ». "
               },
               {
-                "q": "Pendant la compréhension orale, de bonnes notes contiennent :",
+                "q": "Dans la phrase « La prise de position est explicite. », que signifie « une prise de position » ?",
                 "options": [
-                  "chaque mot dans l’ordre",
-                  "les idées principales, chiffres, noms et liens logiques",
-                  "uniquement la première phrase"
+                  "إقرار بجزء من الرأي الآخر",
+                  "نية المتحدث",
+                  "اتخاذ موقف",
+                  "مسودة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une prise de position » signifie « اتخاذ موقف ». "
+              },
+              {
+                "q": "Une problématique sert surtout à :",
+                "options": [
+                  "remplacer la conclusion",
+                  "formuler la question centrale de l’analyse",
+                  "énumérer des mots sans relation"
                 ],
                 "answer": 1,
-                "why": "Les notes doivent préserver les informations utiles et la structure."
+                "why": "La problématique organise le raisonnement."
               },
               {
-                "q": "Avant de rendre une production écrite, il faut :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "vérifier la consigne, la structure, les accords et la ponctuation",
-                  "supprimer l’introduction",
-                  "ajouter de nouvelles idées sans relire"
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement"
                 ],
-                "answer": 0,
-                "why": "La relecture vérifie le respect de la tâche et les erreurs récurrentes."
-              },
-              {
-                "q": "Une présentation orale efficace comprend :",
-                "options": [
-                  "une introduction, des arguments organisés et une conclusion",
-                  "une liste sans liens",
-                  "uniquement une opinion personnelle"
-                ],
-                "answer": 0,
-                "why": "L’organisation rend le raisonnement plus clair pour l’examinateur."
+                "answer": 2,
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -13099,7 +14310,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب مخطط الحجج من مقابلة أو نقاش.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الاستماع: رأي وحجة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الاستماع: الفكرة والبنية، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: القراءة: وثائق متعددة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الاستماع: الفكرة والبنية — استماع للفكرة العامة ثم التفاصيل والدليل.",
+            "nextLink": "الموضوع التالي: القراءة: وثائق متعددة — العناوين والروابط الحجاجية والاستنتاج الضمني."
           }
         ],
         [
@@ -13110,16 +14328,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Inférences, synonymes contextuels et connecteurs",
             "vocab": [
               {
-                "fr": "une consigne",
-                "ar": "تعليمات السؤال",
-                "example": "Il faut lire la consigne avant de commencer."
-              },
-              {
-                "fr": "un brouillon",
-                "ar": "مسودة",
-                "example": "Je note mes idées sur le brouillon."
-              },
-              {
                 "fr": "une concession",
                 "ar": "إقرار بجزء من الرأي الآخر",
                 "example": "Une concession peut renforcer l’argumentation."
@@ -13128,12 +14336,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "justifier",
                 "ar": "يبرّر",
                 "example": "Je dois justifier mon choix par un exemple."
+              },
+              {
+                "fr": "un document complémentaire",
+                "ar": "وثيقة إضافية",
+                "example": "Un document complémentaire précise le contexte."
+              },
+              {
+                "fr": "une information implicite",
+                "ar": "معلومة ضمنية",
+                "example": "L’information implicite demande une inférence."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -13152,10 +14370,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "أجب تحت الوقت ثم حدد الدليل النصي لكل إجابة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («أجب تحت الوقت ثم حدد الدليل النصي لكل إجابة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: أجب تحت الوقت ثم حدد الدليل النصي لكل إجابة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Inférences, synonymes contextuels et connecteurs»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -13174,44 +14404,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Une présentation orale efficace comprend :",
+                "q": "Quel terme correspond à la définition : « معلومة ضمنية » ?",
                 "options": [
-                  "une introduction, des arguments organisés et une conclusion",
-                  "une liste sans liens",
-                  "uniquement une opinion personnelle"
+                  "une concession",
+                  "justifier",
+                  "un document complémentaire",
+                  "une information implicite"
                 ],
-                "answer": 0,
-                "why": "L’organisation rend le raisonnement plus clair pour l’examinateur."
+                "answer": 3,
+                "why": "Le terme « une information implicite » signifie « معلومة ضمنية ». "
               },
               {
-                "q": "Si une question n’est pas comprise à l’oral, il est utile de :",
+                "q": "Dans la phrase « Une concession peut renforcer l’argumentation. », que signifie « une concession » ?",
                 "options": [
-                  "demander poliment de reformuler",
-                  "ne plus répondre",
-                  "changer de sujet"
+                  "وثيقة إضافية",
+                  "معلومة ضمنية",
+                  "إقرار بجزء من الرأي الآخر",
+                  "يبرّر"
                 ],
-                "answer": 0,
-                "why": "Demander une reformulation permet de maintenir l’interaction."
+                "answer": 2,
+                "why": "Dans ce contexte, « une concession » signifie « إقرار بجزء من الرأي الآخر ». "
               },
               {
-                "q": "Dans une consigne de production écrite, la première étape est de :",
+                "q": "Un fait se distingue d’une opinion parce qu’il peut être :",
                 "options": [
-                  "commencer immédiatement sans lire le sujet",
-                  "identifier le destinataire, le but et les points demandés",
-                  "écrire la conclusion puis s’arrêter"
+                  "vérifié à l’aide de preuves",
+                  "uniquement ressenti",
+                  "toujours personnel"
+                ],
+                "answer": 0,
+                "why": "Un fait peut être confronté à des éléments vérifiables."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement"
                 ],
                 "answer": 1,
-                "why": "Comprendre la consigne évite de sortir du sujet ou d’oublier une partie."
-              },
-              {
-                "q": "Pour soutenir une opinion, il est préférable de :",
-                "options": [
-                  "présenter une raison puis un exemple concret",
-                  "répéter la même idée cinq fois",
-                  "utiliser des mots difficiles sans lien"
-                ],
-                "answer": 0,
-                "why": "Une idée, une raison et un exemple créent un argument compréhensible."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -13239,7 +14471,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "أجب تحت الوقت ثم حدد الدليل النصي لكل إجابة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «القراءة: وثائق متعددة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الاستماع: رأي وحجة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: اختبار فهم شامل؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الاستماع: رأي وحجة — النبرة وموقف المتحدث والاعتراض والنتيجة.",
+            "nextLink": "الموضوع التالي: اختبار فهم شامل — مهام استماع وقراءة متتابعة مع ضبط الوقت."
           }
         ],
         [
@@ -13250,30 +14489,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Gestion du temps et vérification des réponses",
             "vocab": [
               {
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
+              },
+              {
                 "fr": "une consigne",
                 "ar": "تعليمات السؤال",
                 "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un brouillon",
-                "ar": "مسودة",
-                "example": "Je note mes idées sur le brouillon."
+                "fr": "un distracteur",
+                "ar": "خيار مشتّت",
+                "example": "Le distracteur reprend parfois un mot entendu mais change le sens."
               },
               {
-                "fr": "une concession",
-                "ar": "إقرار بجزء من الرأي الآخر",
-                "example": "Une concession peut renforcer l’argumentation."
-              },
-              {
-                "fr": "justifier",
-                "ar": "يبرّر",
-                "example": "Je dois justifier mon choix par un exemple."
+                "fr": "une justification",
+                "ar": "تبرير",
+                "example": "La justification s’appuie sur un passage précis."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -13292,10 +14531,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "أنشئ قائمة بأخطاء المفردات والاستنتاج وإدارة الوقت.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («أنشئ قائمة بأخطاء المفردات والاستنتاج وإدارة الوقت.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: أنشئ قائمة بأخطاء المفردات والاستنتاج وإدارة الوقت.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Gestion du temps et vérification des réponses»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -13314,44 +14565,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pour soutenir une opinion, il est préférable de :",
+                "q": "Quel terme correspond à la définition : « يبرّر » ?",
                 "options": [
-                  "présenter une raison puis un exemple concret",
-                  "répéter la même idée cinq fois",
-                  "utiliser des mots difficiles sans lien"
+                  "une consigne",
+                  "un distracteur",
+                  "une justification",
+                  "justifier"
                 ],
-                "answer": 0,
-                "why": "Une idée, une raison et un exemple créent un argument compréhensible."
+                "answer": 3,
+                "why": "Le terme « justifier » signifie « يبرّر ». "
               },
               {
-                "q": "Pendant la compréhension orale, de bonnes notes contiennent :",
+                "q": "Dans la phrase « Il faut lire la consigne avant de commencer. », que signifie « une consigne » ?",
                 "options": [
-                  "chaque mot dans l’ordre",
-                  "les idées principales, chiffres, noms et liens logiques",
-                  "uniquement la première phrase"
+                  "تبرير",
+                  "يبرّر",
+                  "تعليمات السؤال",
+                  "خيار مشتّت"
                 ],
-                "answer": 1,
-                "why": "Les notes doivent préserver les informations utiles et la structure."
+                "answer": 2,
+                "why": "Dans ce contexte, « une consigne » signifie « تعليمات السؤال ». "
               },
               {
-                "q": "Avant de rendre une production écrite, il faut :",
+                "q": "Pendant l’écoute, les notes utiles reprennent surtout :",
                 "options": [
-                  "vérifier la consigne, la structure, les accords et la ponctuation",
-                  "supprimer l’introduction",
-                  "ajouter de nouvelles idées sans relire"
+                  "chaque mot entendu sans tri",
+                  "les opinions personnelles du candidat",
+                  "les idées clés, les chiffres et les liens logiques"
                 ],
-                "answer": 0,
-                "why": "La relecture vérifie le respect de la tâche et les erreurs récurrentes."
+                "answer": 2,
+                "why": "Les notes doivent aider à reconstruire l’idée et la structure."
               },
               {
-                "q": "Une présentation orale efficace comprend :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "une introduction, des arguments organisés et une conclusion",
-                  "une liste sans liens",
-                  "uniquement une opinion personnelle"
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "L’organisation rend le raisonnement plus clair pour l’examinateur."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -13379,7 +14632,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "أنشئ قائمة بأخطاء المفردات والاستنتاج وإدارة الوقت.",
             "writingPrompt": "اكتب فقرة مترابطة عن «اختبار فهم شامل». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: القراءة: وثائق متعددة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: التخطيط قبل الكتابة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: القراءة: وثائق متعددة — العناوين والروابط الحجاجية والاستنتاج الضمني.",
+            "nextLink": "الموضوع التالي: التخطيط قبل الكتابة — تحليل المطلوب والجمهور والأطروحة والحجج."
           }
         ]
       ]
@@ -13408,20 +14668,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une concession",
-                "ar": "إقرار بجزء من الرأي الآخر",
-                "example": "Une concession peut renforcer l’argumentation."
+                "fr": "délimiter le sujet",
+                "ar": "يحدّد نطاق الموضوع",
+                "example": "Il faut délimiter le sujet avant d’écrire."
               },
               {
-                "fr": "justifier",
-                "ar": "يبرّر",
-                "example": "Je dois justifier mon choix par un exemple."
+                "fr": "un plan dialectique",
+                "ar": "خطة حجاجية جدلية",
+                "example": "Le plan dialectique présente plusieurs positions."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -13440,10 +14700,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "خطط خلال عشر دقائق ثم اكتب مسودة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («خطط خلال عشر دقائق ثم اكتب مسودة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: خطط خلال عشر دقائق ثم اكتب مسودة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Plan dialectique : position, arguments, objection, réponse»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -13462,44 +14734,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Dans une consigne de production écrite, la première étape est de :",
+                "q": "Quel terme correspond à la définition : « يحدّد نطاق الموضوع » ?",
                 "options": [
-                  "commencer immédiatement sans lire le sujet",
-                  "identifier le destinataire, le but et les points demandés",
-                  "écrire la conclusion puis s’arrêter"
+                  "un plan dialectique",
+                  "une consigne",
+                  "un brouillon",
+                  "délimiter le sujet"
+                ],
+                "answer": 3,
+                "why": "Le terme « délimiter le sujet » signifie « يحدّد نطاق الموضوع ». "
+              },
+              {
+                "q": "Dans la phrase « Le plan dialectique présente plusieurs positions. », que signifie « un plan dialectique » ?",
+                "options": [
+                  "مسودة",
+                  "يحدّد نطاق الموضوع",
+                  "خطة حجاجية جدلية",
+                  "تعليمات السؤال"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « un plan dialectique » signifie « خطة حجاجية جدلية ». "
+              },
+              {
+                "q": "Pour introduire un contre-argument, on peut écrire :",
+                "options": [
+                  "À demain, parce que…",
+                  "Certes…, toutefois…",
+                  "Il y a… hier…"
                 ],
                 "answer": 1,
-                "why": "Comprendre la consigne évite de sortir du sujet ou d’oublier une partie."
+                "why": "Cette structure présente une concession et une opposition."
               },
               {
-                "q": "Pour soutenir une opinion, il est préférable de :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "présenter une raison puis un exemple concret",
-                  "répéter la même idée cinq fois",
-                  "utiliser des mots difficiles sans lien"
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement"
                 ],
-                "answer": 0,
-                "why": "Une idée, une raison et un exemple créent un argument compréhensible."
-              },
-              {
-                "q": "Pendant la compréhension orale, de bonnes notes contiennent :",
-                "options": [
-                  "chaque mot dans l’ordre",
-                  "les idées principales, chiffres, noms et liens logiques",
-                  "uniquement la première phrase"
-                ],
-                "answer": 1,
-                "why": "Les notes doivent préserver les informations utiles et la structure."
-              },
-              {
-                "q": "Avant de rendre une production écrite, il faut :",
-                "options": [
-                  "vérifier la consigne, la structure, les accords et la ponctuation",
-                  "supprimer l’introduction",
-                  "ajouter de nouvelles idées sans relire"
-                ],
-                "answer": 0,
-                "why": "La relecture vérifie le respect de la tâche et les erreurs récurrentes."
+                "answer": 2,
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -13527,7 +14801,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "خطط خلال عشر دقائق ثم اكتب مسودة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التخطيط قبل الكتابة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: اختبار فهم شامل، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: خطاب رسمي أو مقال نقدي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: اختبار فهم شامل — مهام استماع وقراءة متتابعة مع ضبط الوقت.",
+            "nextLink": "الموضوع التالي: خطاب رسمي أو مقال نقدي — النبرة والإقناع وروابط الحجة والأمثلة."
           }
         ],
         [
@@ -13537,11 +14818,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Développement d’un paragraphe : idée, preuve, explication",
             "vocab": [
-              {
-                "fr": "une consigne",
-                "ar": "تعليمات السؤال",
-                "example": "Il faut lire la consigne avant de commencer."
-              },
               {
                 "fr": "un brouillon",
                 "ar": "مسودة",
@@ -13553,15 +14829,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "justifier",
-                "ar": "يبرّر",
-                "example": "Je dois justifier mon choix par un exemple."
+                "fr": "une formule d’appel",
+                "ar": "صيغة افتتاح الرسالة",
+                "example": "La formule d’appel dépend du destinataire."
+              },
+              {
+                "fr": "une formule de politesse",
+                "ar": "صيغة مجاملة",
+                "example": "La formule de politesse clôt le courriel."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -13580,10 +14861,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اكتب نصاً حجاجياً من 250 كلمة على الأقل.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اكتب نصاً حجاجياً من 250 كلمة على الأقل.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اكتب نصاً حجاجياً من 250 كلمة على الأقل.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Développement d’un paragraphe : idée, preuve, explication»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -13602,44 +14895,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Avant de rendre une production écrite, il faut :",
+                "q": "Quel terme correspond à la définition : « صيغة مجاملة » ?",
                 "options": [
-                  "vérifier la consigne, la structure, les accords et la ponctuation",
-                  "supprimer l’introduction",
-                  "ajouter de nouvelles idées sans relire"
+                  "un brouillon",
+                  "une concession",
+                  "une formule d’appel",
+                  "une formule de politesse"
                 ],
-                "answer": 0,
-                "why": "La relecture vérifie le respect de la tâche et les erreurs récurrentes."
+                "answer": 3,
+                "why": "Le terme « une formule de politesse » signifie « صيغة مجاملة ». "
               },
               {
-                "q": "Une présentation orale efficace comprend :",
+                "q": "Dans la phrase « Je note mes idées sur le brouillon. », que signifie « un brouillon » ?",
                 "options": [
-                  "une introduction, des arguments organisés et une conclusion",
-                  "une liste sans liens",
-                  "uniquement une opinion personnelle"
+                  "صيغة افتتاح الرسالة",
+                  "صيغة مجاملة",
+                  "مسودة",
+                  "إقرار بجزء من الرأي الآخر"
                 ],
-                "answer": 0,
-                "why": "L’organisation rend le raisonnement plus clair pour l’examinateur."
+                "answer": 2,
+                "why": "Dans ce contexte, « un brouillon » signifie « مسودة ». "
               },
               {
-                "q": "Si une question n’est pas comprise à l’oral, il est utile de :",
+                "q": "Pour étayer un argument, il faut :",
                 "options": [
-                  "demander poliment de reformuler",
-                  "ne plus répondre",
-                  "changer de sujet"
+                  "un exemple précis ou une donnée",
+                  "répéter la conclusion sans preuve",
+                  "éviter toute illustration"
                 ],
                 "answer": 0,
-                "why": "Demander une reformulation permet de maintenir l’interaction."
+                "why": "Une preuve, une donnée ou un exemple renforce l’argument."
               },
               {
-                "q": "Dans une consigne de production écrite, la première étape est de :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "commencer immédiatement sans lire le sujet",
-                  "identifier le destinataire, le but et les points demandés",
-                  "écrire la conclusion puis s’arrêter"
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement"
                 ],
                 "answer": 1,
-                "why": "Comprendre la consigne évite de sortir du sujet ou d’oublier une partie."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -13667,7 +14962,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اكتب نصاً حجاجياً من 250 كلمة على الأقل.",
             "writingPrompt": "اكتب فقرة مترابطة عن «خطاب رسمي أو مقال نقدي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: التخطيط قبل الكتابة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: الاعتراض والرد؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: التخطيط قبل الكتابة — تحليل المطلوب والجمهور والأطروحة والحجج.",
+            "nextLink": "الموضوع التالي: الاعتراض والرد — الموازنة والاعتراف بالحجة المضادة والرد عليها."
           }
         ],
         [
@@ -13678,16 +14980,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Nuancer avec certes, pourtant, en revanche, bien que",
             "vocab": [
               {
-                "fr": "une consigne",
-                "ar": "تعليمات السؤال",
-                "example": "Il faut lire la consigne avant de commencer."
-              },
-              {
-                "fr": "un brouillon",
-                "ar": "مسودة",
-                "example": "Je note mes idées sur le brouillon."
-              },
-              {
                 "fr": "une concession",
                 "ar": "إقرار بجزء من الرأي الآخر",
                 "example": "Une concession peut renforcer l’argumentation."
@@ -13696,12 +14988,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "justifier",
                 "ar": "يبرّر",
                 "example": "Je dois justifier mon choix par un exemple."
+              },
+              {
+                "fr": "une concession",
+                "ar": "إقرار بجزء من الرأي الآخر",
+                "example": "Une concession peut renforcer la démonstration."
+              },
+              {
+                "fr": "une réfutation",
+                "ar": "دحض",
+                "example": "La réfutation répond à un argument adverse."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -13720,10 +15022,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "راجع التماسك والمنطق وتجنب التكرار.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («راجع التماسك والمنطق وتجنب التكرار.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: راجع التماسك والمنطق وتجنب التكرار.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Nuancer avec certes, pourtant, en revanche, bien que»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -13742,44 +15056,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Dans une consigne de production écrite, la première étape est de :",
+                "q": "Quel terme correspond à la définition : « إقرار بجزء من الرأي الآخر » ?",
                 "options": [
-                  "commencer immédiatement sans lire le sujet",
-                  "identifier le destinataire, le but et les points demandés",
-                  "écrire la conclusion puis s’arrêter"
+                  "justifier",
+                  "une concession",
+                  "une réfutation",
+                  "une concession"
                 ],
-                "answer": 1,
-                "why": "Comprendre la consigne évite de sortir du sujet ou d’oublier une partie."
+                "answer": 3,
+                "why": "Le terme « une concession » signifie « إقرار بجزء من الرأي الآخر ». "
               },
               {
-                "q": "Pour soutenir une opinion, il est préférable de :",
+                "q": "Dans la phrase « Je dois justifier mon choix par un exemple. », que signifie « justifier » ?",
                 "options": [
-                  "présenter une raison puis un exemple concret",
-                  "répéter la même idée cinq fois",
-                  "utiliser des mots difficiles sans lien"
+                  "دحض",
+                  "إقرار بجزء من الرأي الآخر",
+                  "يبرّر",
+                  "إقرار بجزء من الرأي الآخر"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « justifier » signifie « يبرّر ». "
+              },
+              {
+                "q": "Le service est rapide ; ___, son coût est élevé.",
+                "options": [
+                  "par conséquent",
+                  "parce que",
+                  "en revanche"
+                ],
+                "answer": 2,
+                "why": "« En revanche » introduit un contraste."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "Une idée, une raison et un exemple créent un argument compréhensible."
-              },
-              {
-                "q": "Pendant la compréhension orale, de bonnes notes contiennent :",
-                "options": [
-                  "chaque mot dans l’ordre",
-                  "les idées principales, chiffres, noms et liens logiques",
-                  "uniquement la première phrase"
-                ],
-                "answer": 1,
-                "why": "Les notes doivent préserver les informations utiles et la structure."
-              },
-              {
-                "q": "Avant de rendre une production écrite, il faut :",
-                "options": [
-                  "vérifier la consigne, la structure, les accords et la ponctuation",
-                  "supprimer l’introduction",
-                  "ajouter de nouvelles idées sans relire"
-                ],
-                "answer": 0,
-                "why": "La relecture vérifie le respect de la tâche et les erreurs récurrentes."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -13807,7 +15123,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "راجع التماسك والمنطق وتجنب التكرار.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الاعتراض والرد». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: خطاب رسمي أو مقال نقدي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: كتابة موقّتة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: خطاب رسمي أو مقال نقدي — النبرة والإقناع وروابط الحجة والأمثلة.",
+            "nextLink": "الموضوع التالي: كتابة موقّتة — البنية وعدد الكلمات والإملاء ومراجعة أخيرة."
           }
         ],
         [
@@ -13818,30 +15141,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Révision de cohérence, lexique, accords et ponctuation",
             "vocab": [
               {
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
+              },
+              {
                 "fr": "une consigne",
                 "ar": "تعليمات السؤال",
                 "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un brouillon",
-                "ar": "مسودة",
-                "example": "Je note mes idées sur le brouillon."
+                "fr": "une relecture ciblée",
+                "ar": "مراجعة مركّزة",
+                "example": "La relecture ciblée détecte les erreurs fréquentes."
               },
               {
-                "fr": "une concession",
-                "ar": "إقرار بجزء من الرأي الآخر",
-                "example": "Une concession peut renforcer l’argumentation."
-              },
-              {
-                "fr": "justifier",
-                "ar": "يبرّر",
-                "example": "Je dois justifier mon choix par un exemple."
+                "fr": "un décompte des mots",
+                "ar": "عدّ الكلمات",
+                "example": "Le décompte des mots évite une pénalité."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -13860,10 +15183,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "أنجز اختبار كتابة موقّتاً واحتفظ بنسخة مصححة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («أنجز اختبار كتابة موقّتاً واحتفظ بنسخة مصححة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: أنجز اختبار كتابة موقّتاً واحتفظ بنسخة مصححة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Révision de cohérence, lexique, accords et ponctuation»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -13882,44 +15217,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Avant de rendre une production écrite, il faut :",
+                "q": "Quel terme correspond à la définition : « تعليمات السؤال » ?",
                 "options": [
-                  "vérifier la consigne, la structure, les accords et la ponctuation",
-                  "supprimer l’introduction",
-                  "ajouter de nouvelles idées sans relire"
+                  "une relecture ciblée",
+                  "un décompte des mots",
+                  "justifier",
+                  "une consigne"
                 ],
-                "answer": 0,
-                "why": "La relecture vérifie le respect de la tâche et les erreurs récurrentes."
+                "answer": 3,
+                "why": "Le terme « une consigne » signifie « تعليمات السؤال ». "
               },
               {
-                "q": "Une présentation orale efficace comprend :",
+                "q": "Dans la phrase « La relecture ciblée détecte les erreurs fréquentes. », que signifie « une relecture ciblée » ?",
                 "options": [
-                  "une introduction, des arguments organisés et une conclusion",
-                  "une liste sans liens",
-                  "uniquement une opinion personnelle"
+                  "يبرّر",
+                  "تعليمات السؤال",
+                  "مراجعة مركّزة",
+                  "عدّ الكلمات"
                 ],
-                "answer": 0,
-                "why": "L’organisation rend le raisonnement plus clair pour l’examinateur."
+                "answer": 2,
+                "why": "Dans ce contexte, « une relecture ciblée » signifie « مراجعة مركّزة ». "
               },
               {
-                "q": "Si une question n’est pas comprise à l’oral, il est utile de :",
+                "q": "Un fait se distingue d’une opinion parce qu’il peut être :",
                 "options": [
-                  "demander poliment de reformuler",
-                  "ne plus répondre",
-                  "changer de sujet"
-                ],
-                "answer": 0,
-                "why": "Demander une reformulation permet de maintenir l’interaction."
-              },
-              {
-                "q": "Dans une consigne de production écrite, la première étape est de :",
-                "options": [
-                  "commencer immédiatement sans lire le sujet",
-                  "identifier le destinataire, le but et les points demandés",
-                  "écrire la conclusion puis s’arrêter"
+                  "toujours personnel",
+                  "vérifié à l’aide de preuves",
+                  "uniquement ressenti"
                 ],
                 "answer": 1,
-                "why": "Comprendre la consigne évite de sortir du sujet ou d’oublier une partie."
+                "why": "Un fait peut être confronté à des éléments vérifiables."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement"
+                ],
+                "answer": 2,
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -13947,7 +15284,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "أنجز اختبار كتابة موقّتاً واحتفظ بنسخة مصححة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «كتابة موقّتة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الاعتراض والرد، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: تحليل الموضوع والخطة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الاعتراض والرد — الموازنة والاعتراف بالحجة المضادة والرد عليها.",
+            "nextLink": "الموضوع التالي: تحليل الموضوع والخطة — السؤال المركزي والحجتان والأمثلة والحجة المضادة."
           }
         ]
       ]
@@ -13976,20 +15320,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une concession",
-                "ar": "إقرار بجزء من الرأي الآخر",
-                "example": "Une concession peut renforcer l’argumentation."
+                "fr": "une problématique",
+                "ar": "إشكالية",
+                "example": "La problématique doit être formulée clairement."
               },
               {
-                "fr": "justifier",
-                "ar": "يبرّر",
-                "example": "Je dois justifier mon choix par un exemple."
+                "fr": "un axe d’analyse",
+                "ar": "محور تحليل",
+                "example": "Chaque axe d’analyse développe une idée."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -14008,10 +15352,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "استعد في وقت محدد واكتب خطة موجزة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («استعد في وقت محدد واكتب خطة موجزة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: استعد في وقت محدد واكتب خطة موجزة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Présenter la problématique et définir les termes»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -14030,44 +15386,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pendant la compréhension orale, de bonnes notes contiennent :",
+                "q": "Quel terme correspond à la définition : « محور تحليل » ?",
                 "options": [
-                  "chaque mot dans l’ordre",
-                  "les idées principales, chiffres, noms et liens logiques",
-                  "uniquement la première phrase"
+                  "une consigne",
+                  "un brouillon",
+                  "une problématique",
+                  "un axe d’analyse"
+                ],
+                "answer": 3,
+                "why": "Le terme « un axe d’analyse » signifie « محور تحليل ». "
+              },
+              {
+                "q": "Dans la phrase « Il faut lire la consigne avant de commencer. », que signifie « une consigne » ?",
+                "options": [
+                  "إشكالية",
+                  "محور تحليل",
+                  "تعليمات السؤال",
+                  "مسودة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une consigne » signifie « تعليمات السؤال ». "
+              },
+              {
+                "q": "Une problématique sert surtout à :",
+                "options": [
+                  "formuler la question centrale de l’analyse",
+                  "énumérer des mots sans relation",
+                  "remplacer la conclusion"
+                ],
+                "answer": 0,
+                "why": "La problématique organise le raisonnement."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement"
                 ],
                 "answer": 1,
-                "why": "Les notes doivent préserver les informations utiles et la structure."
-              },
-              {
-                "q": "Avant de rendre une production écrite, il faut :",
-                "options": [
-                  "vérifier la consigne, la structure, les accords et la ponctuation",
-                  "supprimer l’introduction",
-                  "ajouter de nouvelles idées sans relire"
-                ],
-                "answer": 0,
-                "why": "La relecture vérifie le respect de la tâche et les erreurs récurrentes."
-              },
-              {
-                "q": "Une présentation orale efficace comprend :",
-                "options": [
-                  "une introduction, des arguments organisés et une conclusion",
-                  "une liste sans liens",
-                  "uniquement une opinion personnelle"
-                ],
-                "answer": 0,
-                "why": "L’organisation rend le raisonnement plus clair pour l’examinateur."
-              },
-              {
-                "q": "Si une question n’est pas comprise à l’oral, il est utile de :",
-                "options": [
-                  "demander poliment de reformuler",
-                  "ne plus répondre",
-                  "changer de sujet"
-                ],
-                "answer": 0,
-                "why": "Demander une reformulation permet de maintenir l’interaction."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -14095,7 +15453,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "استعد في وقت محدد واكتب خطة موجزة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «تحليل الموضوع والخطة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: كتابة موقّتة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: العرض الشفوي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: كتابة موقّتة — البنية وعدد الكلمات والإملاء ومراجعة أخيرة.",
+            "nextLink": "الموضوع التالي: العرض الشفوي — مقدمة ومحاور واستنتاج واضح."
           }
         ],
         [
@@ -14105,11 +15470,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Transitions orales et hiérarchie des idées",
             "vocab": [
-              {
-                "fr": "une consigne",
-                "ar": "تعليمات السؤال",
-                "example": "Il faut lire la consigne avant de commencer."
-              },
               {
                 "fr": "un brouillon",
                 "ar": "مسودة",
@@ -14121,15 +15481,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "justifier",
-                "ar": "يبرّر",
-                "example": "Je dois justifier mon choix par un exemple."
+                "fr": "un débit maîtrisé",
+                "ar": "سرعة كلام منضبطة",
+                "example": "Un débit maîtrisé facilite la compréhension."
+              },
+              {
+                "fr": "un exemple illustratif",
+                "ar": "مثال توضيحي",
+                "example": "Un exemple illustratif clarifie l’argument."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -14148,10 +15513,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "سجّل عرضاً حجاجياً من 7–10 دقائق.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («سجّل عرضاً حجاجياً من 7–10 دقائق.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: سجّل عرضاً حجاجياً من 7–10 دقائق.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Transitions orales et hiérarchie des idées»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -14170,44 +15547,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Si une question n’est pas comprise à l’oral, il est utile de :",
+                "q": "Quel terme correspond à la définition : « مسودة » ?",
                 "options": [
-                  "demander poliment de reformuler",
-                  "ne plus répondre",
-                  "changer de sujet"
+                  "une concession",
+                  "un débit maîtrisé",
+                  "un exemple illustratif",
+                  "un brouillon"
+                ],
+                "answer": 3,
+                "why": "Le terme « un brouillon » signifie « مسودة ». "
+              },
+              {
+                "q": "Dans la phrase « Une concession peut renforcer l’argumentation. », que signifie « une concession » ?",
+                "options": [
+                  "مثال توضيحي",
+                  "مسودة",
+                  "إقرار بجزء من الرأي الآخر",
+                  "سرعة كلام منضبطة"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une concession » signifie « إقرار بجزء من الرأي الآخر ». "
+              },
+              {
+                "q": "Pour soutenir une opinion à l’oral, il est préférable de :",
+                "options": [
+                  "parler le plus vite possible",
+                  "éviter les transitions",
+                  "donner des raisons et des exemples précis"
+                ],
+                "answer": 2,
+                "why": "Les arguments et les exemples rendent le propos convaincant."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "Demander une reformulation permet de maintenir l’interaction."
-              },
-              {
-                "q": "Dans une consigne de production écrite, la première étape est de :",
-                "options": [
-                  "commencer immédiatement sans lire le sujet",
-                  "identifier le destinataire, le but et les points demandés",
-                  "écrire la conclusion puis s’arrêter"
-                ],
-                "answer": 1,
-                "why": "Comprendre la consigne évite de sortir du sujet ou d’oublier une partie."
-              },
-              {
-                "q": "Pour soutenir une opinion, il est préférable de :",
-                "options": [
-                  "présenter une raison puis un exemple concret",
-                  "répéter la même idée cinq fois",
-                  "utiliser des mots difficiles sans lien"
-                ],
-                "answer": 0,
-                "why": "Une idée, une raison et un exemple créent un argument compréhensible."
-              },
-              {
-                "q": "Pendant la compréhension orale, de bonnes notes contiennent :",
-                "options": [
-                  "chaque mot dans l’ordre",
-                  "les idées principales, chiffres, noms et liens logiques",
-                  "uniquement la première phrase"
-                ],
-                "answer": 1,
-                "why": "Les notes doivent préserver les informations utiles et la structure."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -14235,7 +15614,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "سجّل عرضاً حجاجياً من 7–10 دقائق.",
             "writingPrompt": "اكتب فقرة مترابطة عن «العرض الشفوي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: تحليل الموضوع والخطة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: الأسئلة والاعتراضات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: تحليل الموضوع والخطة — السؤال المركزي والحجتان والأمثلة والحجة المضادة.",
+            "nextLink": "الموضوع التالي: الأسئلة والاعتراضات — توضيح الإجابة وإعادة الصياغة والاعتراف بالحدود."
           }
         ],
         [
@@ -14246,16 +15632,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Répondre aux questions et nuancer son point de vue",
             "vocab": [
               {
-                "fr": "une consigne",
-                "ar": "تعليمات السؤال",
-                "example": "Il faut lire la consigne avant de commencer."
-              },
-              {
-                "fr": "un brouillon",
-                "ar": "مسودة",
-                "example": "Je note mes idées sur le brouillon."
-              },
-              {
                 "fr": "une concession",
                 "ar": "إقرار بجزء من الرأي الآخر",
                 "example": "Une concession peut renforcer l’argumentation."
@@ -14264,12 +15640,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "justifier",
                 "ar": "يبرّر",
                 "example": "Je dois justifier mon choix par un exemple."
+              },
+              {
+                "fr": "une relance",
+                "ar": "سؤال متابعة",
+                "example": "Une relance permet d’approfondir la réponse."
+              },
+              {
+                "fr": "une objection",
+                "ar": "اعتراض",
+                "example": "Une objection doit être entendue avant la réponse."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -14288,10 +15674,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تمرن على ثمانية أسئلة متابعة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («تمرن على ثمانية أسئلة متابعة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: تمرن على ثمانية أسئلة متابعة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Répondre aux questions et nuancer son point de vue»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -14310,44 +15708,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pendant la compréhension orale, de bonnes notes contiennent :",
+                "q": "Quel terme correspond à la définition : « يبرّر » ?",
                 "options": [
-                  "chaque mot dans l’ordre",
-                  "les idées principales, chiffres, noms et liens logiques",
-                  "uniquement la première phrase"
+                  "une relance",
+                  "une objection",
+                  "une concession",
+                  "justifier"
+                ],
+                "answer": 3,
+                "why": "Le terme « justifier » signifie « يبرّر ». "
+              },
+              {
+                "q": "Dans la phrase « Une relance permet d’approfondir la réponse. », que signifie « une relance » ?",
+                "options": [
+                  "إقرار بجزء من الرأي الآخر",
+                  "يبرّر",
+                  "سؤال متابعة",
+                  "اعتراض"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une relance » signifie « سؤال متابعة ». "
+              },
+              {
+                "q": "Le projet est coûteux ; ___, il reste utile.",
+                "options": [
+                  "donc",
+                  "cependant",
+                  "parce que"
                 ],
                 "answer": 1,
-                "why": "Les notes doivent préserver les informations utiles et la structure."
+                "why": "« Cependant » marque une opposition."
               },
               {
-                "q": "Avant de rendre une production écrite, il faut :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "vérifier la consigne, la structure, les accords et la ponctuation",
-                  "supprimer l’introduction",
-                  "ajouter de nouvelles idées sans relire"
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement"
                 ],
-                "answer": 0,
-                "why": "La relecture vérifie le respect de la tâche et les erreurs récurrentes."
-              },
-              {
-                "q": "Une présentation orale efficace comprend :",
-                "options": [
-                  "une introduction, des arguments organisés et une conclusion",
-                  "une liste sans liens",
-                  "uniquement une opinion personnelle"
-                ],
-                "answer": 0,
-                "why": "L’organisation rend le raisonnement plus clair pour l’examinateur."
-              },
-              {
-                "q": "Si une question n’est pas comprise à l’oral, il est utile de :",
-                "options": [
-                  "demander poliment de reformuler",
-                  "ne plus répondre",
-                  "changer de sujet"
-                ],
-                "answer": 0,
-                "why": "Demander une reformulation permet de maintenir l’interaction."
+                "answer": 2,
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -14375,7 +15775,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "تمرن على ثمانية أسئلة متابعة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الأسئلة والاعتراضات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: العرض الشفوي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: محاكاة الإنتاج الشفوي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: العرض الشفوي — مقدمة ومحاور واستنتاج واضح.",
+            "nextLink": "الموضوع التالي: محاكاة الإنتاج الشفوي — التحضير والعرض والنقاش وفق دليل الامتحان."
           }
         ],
         [
@@ -14386,30 +15793,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Interaction : clarifier, reformuler, concéder, défendre",
             "vocab": [
               {
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
+              },
+              {
                 "fr": "une consigne",
                 "ar": "تعليمات السؤال",
                 "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un brouillon",
-                "ar": "مسودة",
-                "example": "Je note mes idées sur le brouillon."
+                "fr": "un bilan oral",
+                "ar": "خلاصة شفهية",
+                "example": "Le bilan oral rappelle les deux arguments principaux."
               },
               {
-                "fr": "une concession",
-                "ar": "إقرار بجزء من الرأي الآخر",
-                "example": "Une concession peut renforcer l’argumentation."
-              },
-              {
-                "fr": "justifier",
-                "ar": "يبرّر",
-                "example": "Je dois justifier mon choix par un exemple."
+                "fr": "une interaction constructive",
+                "ar": "تفاعل بنّاء",
+                "example": "Une interaction constructive respecte les interlocuteurs."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -14428,10 +15835,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اطلب ملاحظات عن الطلاقة والدقة والإقناع.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اطلب ملاحظات عن الطلاقة والدقة والإقناع.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اطلب ملاحظات عن الطلاقة والدقة والإقناع.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Interaction : clarifier, reformuler, concéder, défendre»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -14450,44 +15869,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Si une question n’est pas comprise à l’oral, il est utile de :",
+                "q": "Quel terme correspond à la définition : « خلاصة شفهية » ?",
                 "options": [
-                  "demander poliment de reformuler",
-                  "ne plus répondre",
-                  "changer de sujet"
+                  "une interaction constructive",
+                  "justifier",
+                  "une consigne",
+                  "un bilan oral"
+                ],
+                "answer": 3,
+                "why": "Le terme « un bilan oral » signifie « خلاصة شفهية ». "
+              },
+              {
+                "q": "Dans la phrase « Une interaction constructive respecte les interlocuteurs. », que signifie « une interaction constructive » ?",
+                "options": [
+                  "تعليمات السؤال",
+                  "خلاصة شفهية",
+                  "تفاعل بنّاء",
+                  "يبرّر"
+                ],
+                "answer": 2,
+                "why": "Dans ce contexte, « une interaction constructive » signifie « تفاعل بنّاء ». "
+              },
+              {
+                "q": "Pour répondre à une objection, il faut d’abord :",
+                "options": [
+                  "montrer qu’on l’a comprise puis justifier sa réponse",
+                  "ignorer l’objection",
+                  "répéter la thèse sans explication"
                 ],
                 "answer": 0,
-                "why": "Demander une reformulation permet de maintenir l’interaction."
+                "why": "Une réponse constructive reconnaît la question et développe une justification."
               },
               {
-                "q": "Dans une consigne de production écrite, la première étape est de :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "commencer immédiatement sans lire le sujet",
-                  "identifier le destinataire, le but et les points demandés",
-                  "écrire la conclusion puis s’arrêter"
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement"
                 ],
                 "answer": 1,
-                "why": "Comprendre la consigne évite de sortir du sujet ou d’oublier une partie."
-              },
-              {
-                "q": "Pour soutenir une opinion, il est préférable de :",
-                "options": [
-                  "présenter une raison puis un exemple concret",
-                  "répéter la même idée cinq fois",
-                  "utiliser des mots difficiles sans lien"
-                ],
-                "answer": 0,
-                "why": "Une idée, une raison et un exemple créent un argument compréhensible."
-              },
-              {
-                "q": "Pendant la compréhension orale, de bonnes notes contiennent :",
-                "options": [
-                  "chaque mot dans l’ordre",
-                  "les idées principales, chiffres, noms et liens logiques",
-                  "uniquement la première phrase"
-                ],
-                "answer": 1,
-                "why": "Les notes doivent préserver les informations utiles et la structure."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -14515,7 +15936,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اطلب ملاحظات عن الطلاقة والدقة والإقناع.",
             "writingPrompt": "اكتب فقرة مترابطة عن «محاكاة الإنتاج الشفوي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: الأسئلة والاعتراضات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: محاكاة الفهم؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: الأسئلة والاعتراضات — توضيح الإجابة وإعادة الصياغة والاعتراف بالحدود.",
+            "nextLink": "الموضوع التالي: محاكاة الفهم — الاستماع والقراءة في توقيت قريب من الامتحان."
           }
         ]
       ]
@@ -14544,20 +15972,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Je note mes idées sur le brouillon."
               },
               {
-                "fr": "une concession",
-                "ar": "إقرار بجزء من الرأي الآخر",
-                "example": "Une concession peut renforcer l’argumentation."
+                "fr": "un barème",
+                "ar": "سُلّم درجات",
+                "example": "Le barème précise la valeur de chaque réponse."
               },
               {
-                "fr": "justifier",
-                "ar": "يبرّر",
-                "example": "Je dois justifier mon choix par un exemple."
+                "fr": "une stratégie de prise de notes",
+                "ar": "استراتيجية تدوين الملاحظات",
+                "example": "Une stratégie de prise de notes améliore la compréhension."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -14576,10 +16004,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "حلّل الأخطاء حسب المهارة لا الدرجة الإجمالية فقط.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («حلّل الأخطاء حسب المهارة لا الدرجة الإجمالية فقط.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: حلّل الأخطاء حسب المهارة لا الدرجة الإجمالية فقط.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Analyse de consigne et gestion du temps»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -14598,44 +16038,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Une présentation orale efficace comprend :",
+                "q": "Quel terme correspond à la définition : « تعليمات السؤال » ?",
                 "options": [
-                  "une introduction, des arguments organisés et une conclusion",
-                  "une liste sans liens",
-                  "uniquement une opinion personnelle"
+                  "un brouillon",
+                  "un barème",
+                  "une stratégie de prise de notes",
+                  "une consigne"
                 ],
-                "answer": 0,
-                "why": "L’organisation rend le raisonnement plus clair pour l’examinateur."
+                "answer": 3,
+                "why": "Le terme « une consigne » signifie « تعليمات السؤال ». "
               },
               {
-                "q": "Si une question n’est pas comprise à l’oral, il est utile de :",
+                "q": "Dans la phrase « Je note mes idées sur le brouillon. », que signifie « un brouillon » ?",
                 "options": [
-                  "demander poliment de reformuler",
-                  "ne plus répondre",
-                  "changer de sujet"
+                  "استراتيجية تدوين الملاحظات",
+                  "تعليمات السؤال",
+                  "مسودة",
+                  "سُلّم درجات"
                 ],
-                "answer": 0,
-                "why": "Demander une reformulation permet de maintenir l’interaction."
+                "answer": 2,
+                "why": "Dans ce contexte, « un brouillon » signifie « مسودة ». "
               },
               {
-                "q": "Dans une consigne de production écrite, la première étape est de :",
+                "q": "Pendant l’écoute, les notes utiles reprennent surtout :",
                 "options": [
-                  "commencer immédiatement sans lire le sujet",
-                  "identifier le destinataire, le but et les points demandés",
-                  "écrire la conclusion puis s’arrêter"
+                  "chaque mot entendu sans tri",
+                  "les opinions personnelles du candidat",
+                  "les idées clés, les chiffres et les liens logiques"
                 ],
-                "answer": 1,
-                "why": "Comprendre la consigne évite de sortir du sujet ou d’oublier une partie."
+                "answer": 2,
+                "why": "Les notes doivent aider à reconstruire l’idée et la structure."
               },
               {
-                "q": "Pour soutenir une opinion, il est préférable de :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "présenter une raison puis un exemple concret",
-                  "répéter la même idée cinq fois",
-                  "utiliser des mots difficiles sans lien"
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "Une idée, une raison et un exemple créent un argument compréhensible."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -14663,7 +16105,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "حلّل الأخطاء حسب المهارة لا الدرجة الإجمالية فقط.",
             "writingPrompt": "اكتب فقرة مترابطة عن «محاكاة الفهم». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: محاكاة الإنتاج الشفوي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: محاكاة الكتابة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: محاكاة الإنتاج الشفوي — التحضير والعرض والنقاش وفق دليل الامتحان.",
+            "nextLink": "الموضوع التالي: محاكاة الكتابة — نص حجاجي مع تخطيط ومراجعة."
           }
         ],
         [
@@ -14673,11 +16122,6 @@ window.FRENCH_CURRICULUM = {
           {
             "grammar": "Compréhension orale/écrite : preuves textuelles",
             "vocab": [
-              {
-                "fr": "une consigne",
-                "ar": "تعليمات السؤال",
-                "example": "Il faut lire la consigne avant de commencer."
-              },
               {
                 "fr": "un brouillon",
                 "ar": "مسودة",
@@ -14689,15 +16133,20 @@ window.FRENCH_CURRICULUM = {
                 "example": "Une concession peut renforcer l’argumentation."
               },
               {
-                "fr": "justifier",
-                "ar": "يبرّر",
-                "example": "Je dois justifier mon choix par un exemple."
+                "fr": "un brouillon",
+                "ar": "مسودة",
+                "example": "Le brouillon permet de clarifier le plan."
+              },
+              {
+                "fr": "une révision linguistique",
+                "ar": "مراجعة لغوية",
+                "example": "La révision linguistique vérifie les accords."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -14716,10 +16165,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "اطلب تصحيحاً وراجع الأخطاء المتكررة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («اطلب تصحيحاً وراجع الأخطاء المتكررة.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: اطلب تصحيحاً وراجع الأخطاء المتكررة.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Compréhension orale/écrite : preuves textuelles»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -14738,44 +16199,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pour soutenir une opinion, il est préférable de :",
+                "q": "Quel terme correspond à la définition : « إقرار بجزء من الرأي الآخر » ?",
                 "options": [
-                  "présenter une raison puis un exemple concret",
-                  "répéter la même idée cinq fois",
-                  "utiliser des mots difficiles sans lien"
+                  "un brouillon",
+                  "une révision linguistique",
+                  "un brouillon",
+                  "une concession"
                 ],
-                "answer": 0,
-                "why": "Une idée, une raison et un exemple créent un argument compréhensible."
+                "answer": 3,
+                "why": "Le terme « une concession » signifie « إقرار بجزء من الرأي الآخر ». "
               },
               {
-                "q": "Pendant la compréhension orale, de bonnes notes contiennent :",
+                "q": "Dans la phrase « Le brouillon permet de clarifier le plan. », que signifie « un brouillon » ?",
                 "options": [
-                  "chaque mot dans l’ordre",
-                  "les idées principales, chiffres, noms et liens logiques",
-                  "uniquement la première phrase"
+                  "مسودة",
+                  "إقرار بجزء من الرأي الآخر",
+                  "مسودة",
+                  "مراجعة لغوية"
+                ],
+                "answer": 0,
+                "why": "Dans ce contexte, « un brouillon » signifie « مسودة ». "
+              },
+              {
+                "q": "Une problématique sert surtout à :",
+                "options": [
+                  "remplacer la conclusion",
+                  "formuler la question centrale de l’analyse",
+                  "énumérer des mots sans relation"
                 ],
                 "answer": 1,
-                "why": "Les notes doivent préserver les informations utiles et la structure."
+                "why": "La problématique organise le raisonnement."
               },
               {
-                "q": "Avant de rendre une production écrite, il faut :",
+                "q": "Dans un débat, une objection pertinente doit être :",
                 "options": [
-                  "vérifier la consigne, la structure, les accords et la ponctuation",
-                  "supprimer l’introduction",
-                  "ajouter de nouvelles idées sans relire"
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement"
                 ],
-                "answer": 0,
-                "why": "La relecture vérifie le respect de la tâche et les erreurs récurrentes."
-              },
-              {
-                "q": "Une présentation orale efficace comprend :",
-                "options": [
-                  "une introduction, des arguments organisés et une conclusion",
-                  "une liste sans liens",
-                  "uniquement une opinion personnelle"
-                ],
-                "answer": 0,
-                "why": "L’organisation rend le raisonnement plus clair pour l’examinateur."
+                "answer": 2,
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -14803,7 +16266,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "اطلب تصحيحاً وراجع الأخطاء المتكررة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «محاكاة الكتابة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: محاكاة الفهم، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: محاكاة الشفوي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: محاكاة الفهم — الاستماع والقراءة في توقيت قريب من الامتحان.",
+            "nextLink": "الموضوع التالي: محاكاة الشفوي — التحضير والعرض والتفاعل والأسئلة."
           }
         ],
         [
@@ -14814,16 +16284,6 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Production écrite : plan, rédaction et relecture",
             "vocab": [
               {
-                "fr": "une consigne",
-                "ar": "تعليمات السؤال",
-                "example": "Il faut lire la consigne avant de commencer."
-              },
-              {
-                "fr": "un brouillon",
-                "ar": "مسودة",
-                "example": "Je note mes idées sur le brouillon."
-              },
-              {
                 "fr": "une concession",
                 "ar": "إقرار بجزء من الرأي الآخر",
                 "example": "Une concession peut renforcer l’argumentation."
@@ -14832,12 +16292,22 @@ window.FRENCH_CURRICULUM = {
                 "fr": "justifier",
                 "ar": "يبرّر",
                 "example": "Je dois justifier mon choix par un exemple."
+              },
+              {
+                "fr": "une réponse argumentée",
+                "ar": "إجابة معلّلة",
+                "example": "Une réponse argumentée s’appuie sur des exemples."
+              },
+              {
+                "fr": "un échange contradictoire",
+                "ar": "نقاش متقابل",
+                "example": "Un échange contradictoire permet de défendre une idée."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -14856,10 +16326,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "قارن تسجيلين لتحديد التحسن.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («قارن تسجيلين لتحديد التحسن.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: قارن تسجيلين لتحديد التحسن.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Production écrite : plan, rédaction et relecture»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -14878,44 +16360,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Une présentation orale efficace comprend :",
+                "q": "Quel terme correspond à la définition : « إجابة معلّلة » ?",
                 "options": [
-                  "une introduction, des arguments organisés et une conclusion",
-                  "une liste sans liens",
-                  "uniquement une opinion personnelle"
+                  "un échange contradictoire",
+                  "une concession",
+                  "justifier",
+                  "une réponse argumentée"
                 ],
-                "answer": 0,
-                "why": "L’organisation rend le raisonnement plus clair pour l’examinateur."
+                "answer": 3,
+                "why": "Le terme « une réponse argumentée » signifie « إجابة معلّلة ». "
               },
               {
-                "q": "Si une question n’est pas comprise à l’oral, il est utile de :",
+                "q": "Dans la phrase « Un échange contradictoire permet de défendre une idée. », que signifie « un échange contradictoire » ?",
                 "options": [
-                  "demander poliment de reformuler",
-                  "ne plus répondre",
-                  "changer de sujet"
+                  "يبرّر",
+                  "إجابة معلّلة",
+                  "نقاش متقابل",
+                  "إقرار بجزء من الرأي الآخر"
                 ],
-                "answer": 0,
-                "why": "Demander une reformulation permet de maintenir l’interaction."
+                "answer": 2,
+                "why": "Dans ce contexte, « un échange contradictoire » signifie « نقاش متقابل ». "
               },
               {
-                "q": "Dans une consigne de production écrite, la première étape est de :",
+                "q": "Pour préparer un texte argumentatif, commencez par :",
                 "options": [
-                  "commencer immédiatement sans lire le sujet",
-                  "identifier le destinataire, le but et les points demandés",
-                  "écrire la conclusion puis s’arrêter"
+                  "formuler la thèse et organiser les arguments",
+                  "rédiger au hasard sans plan",
+                  "écrire la conclusion d’un autre sujet"
+                ],
+                "answer": 0,
+                "why": "Un plan clarifie la thèse, les arguments et la progression."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "transformée en attaque personnelle",
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement"
                 ],
                 "answer": 1,
-                "why": "Comprendre la consigne évite de sortir du sujet ou d’oublier une partie."
-              },
-              {
-                "q": "Pour soutenir une opinion, il est préférable de :",
-                "options": [
-                  "présenter une raison puis un exemple concret",
-                  "répéter la même idée cinq fois",
-                  "utiliser des mots difficiles sans lien"
-                ],
-                "answer": 0,
-                "why": "Une idée, une raison et un exemple créent un argument compréhensible."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -14943,7 +16427,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "قارن تسجيلين لتحديد التحسن.",
             "writingPrompt": "اكتب فقرة مترابطة عن «محاكاة الشفوي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: محاكاة الكتابة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "يمهّد للأسبوع التالي: محاكاة نهائية؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: محاكاة الكتابة — نص حجاجي مع تخطيط ومراجعة.",
+            "nextLink": "الموضوع التالي: محاكاة نهائية — المهارات الأربع وخطة الوقت والوثائق."
           }
         ],
         [
@@ -14954,30 +16445,30 @@ window.FRENCH_CURRICULUM = {
             "grammar": "Production orale : exposé structuré et débat simulé",
             "vocab": [
               {
+                "fr": "justifier",
+                "ar": "يبرّر",
+                "example": "Je dois justifier mon choix par un exemple."
+              },
+              {
                 "fr": "une consigne",
                 "ar": "تعليمات السؤال",
                 "example": "Il faut lire la consigne avant de commencer."
               },
               {
-                "fr": "un brouillon",
-                "ar": "مسودة",
-                "example": "Je note mes idées sur le brouillon."
+                "fr": "une condition d’examen",
+                "ar": "شرط امتحان",
+                "example": "Une condition d’examen doit être vérifiée à l’avance."
               },
               {
-                "fr": "une concession",
-                "ar": "إقرار بجزء من الرأي الآخر",
-                "example": "Une concession peut renforcer l’argumentation."
-              },
-              {
-                "fr": "justifier",
-                "ar": "يبرّر",
-                "example": "Je dois justifier mon choix par un exemple."
+                "fr": "un retour d’expérience",
+                "ar": "مراجعة بعد التجربة",
+                "example": "Le retour d’expérience aide à préparer la session suivante."
               }
             ],
             "sessions": [
               {
                 "title": "المفردات في سياق",
-                "time": "45 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "تعلم البطاقات الأربع أدناه. اقرأ كل مثال، واستمع إليه بالضغط على الجملة الفرنسية، ثم أخفِ المعنى وحاول استرجاعه.",
                 "output": "اختر أربع كلمات واكتب لكل واحدة جملة تخص حياتك أو عملك."
               },
@@ -14996,10 +16487,22 @@ window.FRENCH_CURRICULUM = {
               },
               {
                 "title": "إنتاج شفهي وكتابي",
-                "time": "75 دقيقة",
+                "time": "60 دقيقة",
                 "instructions": "انتقل للاختبار الحقيقي بعد استقرار B2 في المهارات الأربع.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
                 "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+              },
+              {
+                "title": "التطبيق التكاملي وربط المهارات",
+                "time": "120 دقيقة",
+                "instructions": "أنجز المهمة الرئيسية للأسبوع («انتقل للاختبار الحقيقي بعد استقرار B2 في المهارات الأربع.»). أعد استخدام مفردتين على الأقل من الموضوع السابق، ثم وظف قواعد ومفردات الأسبوع الحالي في قراءة أو استماع قصير، وبعده أعد إنتاج الفكرة كتابةً أو شفهياً. ركّز على الترابط بين الجمل لا على حفظ جمل منفصلة.",
+                "output": "سلّم ناتج المهمة الرئيسية: انتقل للاختبار الحقيقي بعد استقرار B2 في المهارات الأربع.. استخدم خمسة تعبيرات من مفردات الأسبوع، وثلاثة تراكيب من «Production orale : exposé structuré et débat simulé»، ثم راجع وضوح الفكرة وترتيبها."
+              },
+              {
+                "title": "المراجعة المتباعدة والتصحيح",
+                "time": "120 دقيقة",
+                "instructions": "راجع كلمات الأسبوع السابق والحالي، وأعد الاستماع أو القراءة مع تدوين الفكرة والتفاصيل. حلّ الأسئلة الأربعة أدناه؛ صحّح كل سؤال منفرداً أثناء التعلّم أو صحّح الاختبار كاملاً بعد الإجابة عن الجميع. صنّف الأخطاء إلى مفردات أو قواعد أو فهم أو تنظيم.",
+                "output": "اكتب سجل أخطاء من ثلاثة بنود: الإجابة التي اخترتها، والتصحيح، وجملة جديدة من إنشائك. أعد السؤال الأصعب من دون النظر إلى الإجابة، ثم لخّص ما تغيّر في فهمك."
               }
             ],
             "exercises": [
@@ -15018,44 +16521,46 @@ window.FRENCH_CURRICULUM = {
             ],
             "quiz": [
               {
-                "q": "Pour soutenir une opinion, il est préférable de :",
+                "q": "Quel terme correspond à la définition : « مراجعة بعد التجربة » ?",
                 "options": [
-                  "présenter une raison puis un exemple concret",
-                  "répéter la même idée cinq fois",
-                  "utiliser des mots difficiles sans lien"
+                  "justifier",
+                  "une consigne",
+                  "une condition d’examen",
+                  "un retour d’expérience"
                 ],
-                "answer": 0,
-                "why": "Une idée, une raison et un exemple créent un argument compréhensible."
+                "answer": 3,
+                "why": "Le terme « un retour d’expérience » signifie « مراجعة بعد التجربة ». "
               },
               {
-                "q": "Pendant la compréhension orale, de bonnes notes contiennent :",
+                "q": "Dans la phrase « Je dois justifier mon choix par un exemple. », que signifie « justifier » ?",
                 "options": [
-                  "chaque mot dans l’ordre",
-                  "les idées principales, chiffres, noms et liens logiques",
-                  "uniquement la première phrase"
+                  "شرط امتحان",
+                  "مراجعة بعد التجربة",
+                  "يبرّر",
+                  "تعليمات السؤال"
                 ],
-                "answer": 1,
-                "why": "Les notes doivent préserver les informations utiles et la structure."
-              },
-              {
-                "q": "Avant de rendre une production écrite, il faut :",
-                "options": [
-                  "vérifier la consigne, la structure, les accords et la ponctuation",
-                  "supprimer l’introduction",
-                  "ajouter de nouvelles idées sans relire"
-                ],
-                "answer": 0,
-                "why": "La relecture vérifie le respect de la tâche et les erreurs récurrentes."
+                "answer": 2,
+                "why": "Dans ce contexte, « justifier » signifie « يبرّر ». "
               },
               {
                 "q": "Une présentation orale efficace comprend :",
                 "options": [
-                  "une introduction, des arguments organisés et une conclusion",
-                  "une liste sans liens",
-                  "uniquement une opinion personnelle"
+                  "une liste de mots sans lien",
+                  "une conclusion avant le sujet sans explication",
+                  "une introduction, des arguments et une conclusion"
+                ],
+                "answer": 2,
+                "why": "Une structure claire facilite le suivi du raisonnement."
+              },
+              {
+                "q": "Dans un débat, une objection pertinente doit être :",
+                "options": [
+                  "écoutée puis traitée avec un raisonnement",
+                  "ignorée systématiquement",
+                  "transformée en attaque personnelle"
                 ],
                 "answer": 0,
-                "why": "L’organisation rend le raisonnement plus clair pour l’examinateur."
+                "why": "Le débat argumenté répond aux idées, pas aux personnes."
               }
             ],
             "resources": [
@@ -15083,7 +16588,14 @@ window.FRENCH_CURRICULUM = {
             "speakingPrompt": "انتقل للاختبار الحقيقي بعد استقرار B2 في المهارات الأربع.",
             "writingPrompt": "اكتب فقرة مترابطة عن «محاكاة نهائية». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
             "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
-            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال."
+            "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
+            "prerequisite": "يبني على الأسبوع السابق: محاكاة الشفوي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
+            "nextStep": "خاتمة المسار: استخدام سجل الأخطاء لتحديد مراجعة شخصية قبل الامتحان.",
+            "weekHours": 8,
+            "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
+            "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
+            "previousLink": "الموضوع السابق: محاكاة الشفوي — التحضير والعرض والتفاعل والأسئلة.",
+            "nextLink": "نهاية المسار؛ استخدم سجل الأخطاء لتحديد مراجعة شخصية قبل الامتحان."
           }
         ]
       ]
@@ -21936,6 +23448,55 @@ window.FRENCH_CURRICULUM = {
             ]
           }
         ]
+      }
+    ]
+  },
+  "coursePlan": {
+    "title": "المسار المتدرج A1–B2 والتحضير لامتحان DELF B2",
+    "totalWeeks": 80,
+    "hoursPerWeek": 8,
+    "totalHours": 640,
+    "schedule": "الأسبوع يتضمن 8 ساعات تدريب؛ تُوزّع على جلسات تعلم وممارسة ومراجعة وتصحيح.",
+    "levels": [
+      {
+        "level": "A1",
+        "weeks": "1–8",
+        "weekCount": 8,
+        "hours": 64,
+        "months": "1–2",
+        "purpose": "التأسيس: النطق، الجمل الأساسية، التواصل اليومي، والقواعد الأولى."
+      },
+      {
+        "level": "A2",
+        "weeks": "9–20",
+        "weekCount": 12,
+        "hours": 96,
+        "months": "3–5",
+        "purpose": "الاستقلال في المواقف اليومية، وصف الخدمات والسفر، وسرد التجارب البسيطة."
+      },
+      {
+        "level": "B1",
+        "weeks": "21–40",
+        "weekCount": 20,
+        "hours": 160,
+        "months": "6–10",
+        "purpose": "السرد، وفهم المقالات، وشرح الرأي، والكتابة العملية."
+      },
+      {
+        "level": "B2",
+        "weeks": "41–64",
+        "weekCount": 24,
+        "hours": 192,
+        "months": "11–16",
+        "purpose": "الحجاج، المقارنة بين المصادر، تركيب المعلومات، والعرض الشفهي والكتابة المتقدمة."
+      },
+      {
+        "level": "DELF B2",
+        "weeks": "65–80",
+        "weekCount": 16,
+        "hours": 128,
+        "months": "17–20",
+        "purpose": "التدريب على مهام الامتحان الأربع، وإدارة الوقت، والمحاكاة والتصحيح."
       }
     ]
   }
