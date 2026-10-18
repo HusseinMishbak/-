@@ -25,6 +25,20 @@ ROWS.push(
  ["رتّب الكلمات أولاً، ثم تحقّق من الإجابة.","Arrange the words first, then check your answer.","Mettez d’abord les mots dans l’ordre, puis vérifiez votre réponse."]
 );
 ROWS.push(["كيف يبني هذا الأسبوع على السابق:","How this week builds on the previous one:","Lien entre cette semaine et la précédente :"]);
+ROWS.push(
+ ["المفردات في سياق","Vocabulary in context","Vocabulaire en contexte"],
+ ["القاعدة والتراكيب","Grammar and structures","Grammaire et structures"],
+ ["الفهم المسموع أو المقروء","Listening or reading comprehension","Compréhension orale ou écrite"],
+ ["إنتاج شفهي وكتابي","Speaking and writing production","Production orale et écrite"],
+ ["التطبيق التكاملي وربط المهارات","Integrated practice and skill integration","Pratique intégrée et mise en relation des compétences"],
+ ["المراجعة المتباعدة والتصحيح","Spaced review and correction","Révision espacée et correction"],
+ ["4 مفردات جديدة أو مراجعة واستخدامها في جمل شخصية","4 new or reviewed words used in personal sentences","4 mots nouveaux ou révisés utilisés dans des phrases personnelles"],
+ ["تطبيق القاعدة المستهدفة في خمس جمل","Apply the target rule in five sentences","Appliquer la règle ciblée dans cinq phrases"],
+ ["فهم الفكرة العامة وثلاثة تفاصيل","Understand the main idea and three details","Comprendre l’idée générale et trois détails"],
+ ["تسجيل إجابة قصيرة وكتابة فقرة","Record a short answer and write a paragraph","Enregistrer une courte réponse et rédiger un paragraphe"],
+ ["مهمة عملية توظف مفردات وقواعد الأسبوع والسابق","A practical task using current and previously learned vocabulary and grammar","Une tâche pratique mobilisant le vocabulaire et la grammaire de la semaine et des semaines précédentes"],
+ ["اختبار أسبوعي وسجل أخطاء ومراجعة موجّهة","Weekly quiz, error log, and targeted review","Quiz hebdomadaire, carnet d’erreurs et révision ciblée"]
+);
 const DICT={en:Object.create(null),fr:Object.create(null)};
 for(const [ar,en,fr] of ROWS){const key=normalise(ar);DICT.en[key]=en;DICT.fr[key]=fr;}
 const SELECTOR_ID='uiLanguageSelect';
