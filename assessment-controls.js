@@ -26,7 +26,7 @@
   const GUIDE_SELECTOR = [
     '#quizForm', '#month2QuizForm', '.book-practice-quiz', '.book-fill-grid',
     '.book-match-grid', '.book-order-grid', '.roadmap-week-quiz',
-    '.civ-quiz-grid', '.placement-questions', '[data-unit-vocab-test]'
+    '.civ-quiz-grid', '#panel-placement', '[data-unit-vocab-test]'
   ].join(',');
 
   const escapeHTML = (value) => String(value == null ? '' : value)
@@ -166,12 +166,13 @@
   }
 
   function getControlScope(container) {
-    if (container.matches('[data-unit-vocab-test]')) return container;
+    if (container.matches('[data-unit-vocab-test], #panel-placement')) return container;
     return container.parentElement || container;
   }
 
   const BATCH_BUTTON_SELECTOR = [
-    '#gradeQuiz', '#gradeMonth2Quiz', '#gradePlacement',
+    '#gradeQuiz', '#gradeMonth2Quiz', '#gradePlacementBtn',
+    '#gradePlacement', '[data-civic-grade]',
     '[data-grade-book-quiz]', '[data-grade-book-fill]', '[data-grade-book-match]',
     '[data-grade-book-order]', '[data-grade-week]', '[data-grade-unit-vocab]',
     '[data-grade-civic]', '[data-grade-placement]'
