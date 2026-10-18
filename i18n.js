@@ -18,6 +18,12 @@ ROWS.push(
  ["A2 إلى نهاية التحضير لـ DELF B2","A2 through the end of DELF B2 preparation","De A2 à la fin de la préparation au DELF B2"],
  ["اختبار A1–B2","A1–B2 assessment","Évaluation A1–B2"]
 );
+ROWS.push(
+ ["اختر إجابة أولاً، ثم صحّح هذا السؤال.","Choose an answer first, then check this question.","Choisissez d’abord une réponse, puis corrigez cette question."],
+ ["اكتب إجابتك أولاً، ثم صحّح هذا السؤال.","Write your answer first, then check this question.","Écrivez d’abord votre réponse, puis corrigez cette question."],
+ ["اختر المعنى أولاً، ثم صحّح هذا السؤال.","Choose a meaning first, then check this question.","Choisissez d’abord un sens, puis corrigez cette question."],
+ ["رتّب الكلمات أولاً، ثم تحقّق من الإجابة.","Arrange the words first, then check your answer.","Mettez d’abord les mots dans l’ordre, puis vérifiez votre réponse."]
+);
 const DICT={en:Object.create(null),fr:Object.create(null)};
 for(const [ar,en,fr] of ROWS){const key=normalise(ar);DICT.en[key]=en;DICT.fr[key]=fr;}
 const SELECTOR_ID='uiLanguageSelect';
@@ -98,9 +104,9 @@ function setLocale(next,save=true){
  document.body.dir=root.dir;
  const selector=document.getElementById(SELECTOR_ID);if(selector&&selector.value!==locale)selector.value=locale;
  try{if(save)localStorage.setItem(STORAGE_KEY,locale);}catch(_){}
- document.title=locale==='ar'?'منصة UR التعليمية لتعليم اللغة الفرنسية | B2':locale==='en'?'UR French Learning Platform | B2':'Plateforme éducative UR pour apprendre le français | B2';
+ document.title=locale==='ar'?'منصة UR لتعلّم الفرنسية A1–B2 | التحضير لـ DELF B2':locale==='en'?'UR French Learning A1–B2 | DELF B2 Preparation':'UR — Français A1 à B2 | Préparation au DELF B2';
  const description=document.querySelector('meta[name="description"]');
- if(description)description.content=locale==='ar'?'UR: منصة تفاعلية للاستعداد لمستوى B2 وامتحان DELF B2.':locale==='en'?'UR: an interactive French learning platform focused on B2 and DELF B2 preparation.':'UR : une plateforme interactive axée sur le niveau B2 et la préparation au DELF B2.';
+ if(description)description.content=locale==='ar'?'UR: مسار تدريجي لتعلّم الفرنسية من A1 إلى B2 مع التحضير لامتحان DELF B2.':locale==='en'?'UR: a progressive French learning pathway from A1 to B2, including DELF B2 preparation.':'UR : un parcours progressif de français de A1 à B2, avec préparation au DELF B2.';
  scan(document.body);
  window.dispatchEvent(new CustomEvent('orr:uilanguagechange',{detail:{language:locale,direction:root.dir}}));
 }
