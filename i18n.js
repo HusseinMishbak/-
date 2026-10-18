@@ -24,6 +24,7 @@ ROWS.push(
  ["اختر المعنى أولاً، ثم صحّح هذا السؤال.","Choose a meaning first, then check this question.","Choisissez d’abord un sens, puis corrigez cette question."],
  ["رتّب الكلمات أولاً، ثم تحقّق من الإجابة.","Arrange the words first, then check your answer.","Mettez d’abord les mots dans l’ordre, puis vérifiez votre réponse."]
 );
+ROWS.push(["كيف يبني هذا الأسبوع على السابق:","How this week builds on the previous one:","Lien entre cette semaine et la précédente :"]);
 const DICT={en:Object.create(null),fr:Object.create(null)};
 for(const [ar,en,fr] of ROWS){const key=normalise(ar);DICT.en[key]=en;DICT.fr[key]=fr;}
 const SELECTOR_ID='uiLanguageSelect';
