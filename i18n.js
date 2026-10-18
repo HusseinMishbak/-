@@ -39,6 +39,23 @@ ROWS.push(
  ["مهمة عملية توظف مفردات وقواعد الأسبوع والسابق","A practical task using current and previously learned vocabulary and grammar","Une tâche pratique mobilisant le vocabulaire et la grammaire de la semaine et des semaines précédentes"],
  ["اختبار أسبوعي وسجل أخطاء ومراجعة موجّهة","Weekly quiz, error log, and targeted review","Quiz hebdomadaire, carnet d’erreurs et révision ciblée"]
 );
+ROWS.push(
+ ["8 أسابيع","8 weeks","8 semaines"],
+ ["12 أسبوعاً","12 weeks","12 semaines"],
+ ["20 أسبوعاً","20 weeks","20 semaines"],
+ ["24 أسبوعاً","24 weeks","24 semaines"],
+ ["16 أسبوعاً","16 weeks","16 semaines"],
+ ["64 ساعة · تأسيس","64 hours · foundations","64 heures · bases"],
+ ["96 ساعة · تواصل يومي مستقل","96 hours · independent daily communication","96 heures · communication quotidienne autonome"],
+ ["160 ساعة · سرد وشرح الرأي","160 hours · narration and expressing opinions","160 heures · récit et expression d’opinions"],
+ ["192 ساعة · الحجاج والكتابة المتقدمة","192 hours · argumentation and advanced writing","192 heures · argumentation et expression écrite avancée"],
+ ["128 ساعة · محاكاة الامتحان","128 hours · exam simulations","128 heures · simulations d’examen"],
+ ["من التأسيس إلى الاستقلال اللغوي ثم الحجاج المتقدم","From foundations to independent communication and advanced argumentation","Des bases à l’autonomie linguistique, puis à l’argumentation avancée"],
+ ["تدرّج من أساسيات A1 إلى المواقف اليومية في A2، ثم السرد وفهم النصوص في B1، فالكتابة والحجاج في B2، وصولاً إلى تدريب مخصص على امتحان DELF B2. يمكن متابعة C1 وC2 اختيارياً بعد إتمام المسار.","Progress from A1 foundations to everyday situations in A2, then narration and text comprehension in B1, followed by advanced writing and argumentation in B2 and dedicated DELF B2 practice. C1 and C2 can be studied optionally afterwards.","Progressez des bases de A1 aux situations quotidiennes en A2, puis au récit et à la compréhension de textes en B1, avant l’expression écrite avancée et l’argumentation en B2 et la préparation ciblée au DELF B2. Les niveaux C1 et C2 peuvent être étudiés ensuite en option."],
+ ["72 أسبوعاً","72 weeks","72 semaines"],
+ ["A2 إلى نهاية تدريب DELF B2","A2 through DELF B2 preparation","D’A2 à la préparation au DELF B2"],
+ ["576 ساعة","576 hours","576 heures"]
+);
 const DICT={en:Object.create(null),fr:Object.create(null)};
 for(const [ar,en,fr] of ROWS){const key=normalise(ar);DICT.en[key]=en;DICT.fr[key]=fr;}
 const SELECTOR_ID='uiLanguageSelect';
