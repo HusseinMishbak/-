@@ -46,7 +46,7 @@ function localiseText(node){
  const translated=locale==='ar'?sourceCore:tr(sourceCore);
  const next=leading+translated+trailing;
  const parent=node.parentElement;
- if(locale!=='ar'&&translated===sourceCore&&/[\\u0600-\\u06FF]/.test(sourceCore)&&parent&&!parent.closest('.latin,[lang="fr"]')&&!parent.hasAttribute('dir')&&['P','LI','TD','TH','SUMMARY','SMALL','SPAN','BLOCKQUOTE'].includes(parent.tagName)){
+ if(locale!=='ar'&&translated===sourceCore&&/[\u0600-\u06FF]/.test(sourceCore)&&parent&&!parent.closest('.latin,[lang="fr"]')&&!parent.hasAttribute('dir')&&['P','LI','TD','TH','SUMMARY','SMALL','SPAN','BLOCKQUOTE'].includes(parent.tagName)){
   parent.setAttribute('dir','rtl');parent.setAttribute('data-orr-content-dir','rtl');
  }
  if(node.nodeValue!==next)node.nodeValue=next;
