@@ -1,0 +1,32 @@
+{
+  "id": "./",
+  "name": "UR — تعلم الفرنسية",
+  "short_name": "UR Français",
+  "description": "مسار تدريجي لتعلّم الفرنسية من A1 إلى B2 مع تدريب ومراجعة متباعدة.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f5f7fc",
+  "theme_color": "#25295b",
+  "categories": [
+    "education",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
