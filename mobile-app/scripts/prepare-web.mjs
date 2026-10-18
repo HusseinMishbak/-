@@ -94,10 +94,12 @@ for (const file of [...requiredFiles, ...requiredStyles.map(name => 'ui/' + name
   const { access } = await import('node:fs/promises');
   await access(path);
 }
-for (const file of requiredFiles.filter(name => name.endsWith('.js'))) {
-  if (!html.includes(file)) throw new Error(`Required script not referenced by bundled index.html: ${file}`);
-}
 const i18n = await readFile(resolve(out, 'i18n.js'), 'utf8');
+for (const file of requiredFiles.filter(name => name.endsWith('.js'))) {
+  const isRuntimeLoaded = file === 'learning-experience.js' || file === 'curriculum-audit.js';
+  const referenced = isRuntimeLoaded ? i18n.includes(file) : html.includes(file);
+  if (!referenced) throw new Error(`Required script is not referenced by the app loader: ${file}`);
+}
 for (const file of requiredStyles) {
   if (!i18n.includes(file)) throw new Error(`Required UI style not referenced by the localization loader: ui/${file}`);
 }
