@@ -18,12 +18,14 @@ const requiredFiles = [
   'curriculum-audit.js',
   'assessment-controls.js',
   'learning-experience.js',
+  'gamification-layer.js',
   'privacy.html'
 ];
 
 const requiredStyles = [
   'frello-inspired-refresh.css',
-  'learning-experience.css'
+  'learning-experience.css',
+  'gamification-layer.css'
 ];
 
 await mkdir(out, { recursive: true });
