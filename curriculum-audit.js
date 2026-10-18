@@ -120,7 +120,8 @@
     const noSessions = weekGroups.filter(w=>!w.querySelector('.roadmap-session')).length;
     const noAnswer = questions.filter(q=>{
       return !q.hasAttribute('data-correct') && !q.hasAttribute('data-answer') &&
-        !q.querySelector('[data-correct], input[data-correct], input[type="radio"][value]');
+        !q.hasAttribute('data-civic-correct') && !q.hasAttribute('data-book-q') &&
+        !q.querySelector('[data-correct], [data-answer], input[data-correct]');
     }).length;
     return {panel,monthGroups,weekGroups,sessionCards,questions,empty,duplicates,noQuestions,noSessions,noAnswer};
   }
@@ -177,7 +178,12 @@
 
   function start(){
     render();
-    const observer=new MutationObserver(()=>{
+    const observer=new MutationObserver(records=>{
+      const relevant=records.some(record=>{
+        const target=record.target.nodeType===1?record.target:record.target.parentElement;
+        return target && !target.closest('#ur-curriculum-audit');
+      });
+      if(!relevant) return;
       const panel=document.getElementById('panel-roadmap');
       if(panel && panel.classList.contains('active')) render();
     });
