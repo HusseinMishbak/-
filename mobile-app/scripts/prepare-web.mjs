@@ -86,7 +86,11 @@ for (const file of [...requiredFiles, ...requiredStyles.map(name => 'ui/' + name
   const { access } = await import('node:fs/promises');
   await access(path);
 }
-for (const file of ['curriculum-audit.js', 'learning-experience.js']) {
-  if (!html.includes(file)) throw new Error(`Required learning module not referenced by bundled index.html: ${file}`);
+for (const file of requiredFiles.filter(name => name.endsWith('.js'))) {
+  if (!html.includes(file)) throw new Error(`Required script not referenced by bundled index.html: ${file}`);
+}
+const i18n = await readFile(resolve(out, 'i18n.js'), 'utf8');
+for (const file of requiredStyles) {
+  if (!i18n.includes(file)) throw new Error(`Required UI style not referenced by the localization loader: ui/${file}`);
 }
 console.log(`Prepared ${requiredFiles.length} platform files and ${requiredStyles.length} UI styles in mobile-app/www`);
