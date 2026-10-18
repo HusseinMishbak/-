@@ -4986,14 +4986,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "La question « Est-ce qu’il y a… ? » est correcte."
               },
               {
-                "q": "Pour décrire son quartier, on peut dire :",
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
                 "options": [
-                  "Il y a une pharmacie près de chez moi.",
-                  "J’ai une pharmacie hier.",
-                  "Je suis pharmacie."
+                  "Les charges sont-elles comprises dans le loyer ?",
+                  "Le loyer comprend hier ?",
+                  "Je comprends le loyer demain."
                 ],
                 "answer": 0,
-                "why": "« Il y a » présente un service disponible dans un lieu."
+                "why": "La question porte sur l’inclusion des charges dans le loyer."
               }
             ],
             "resources": [
@@ -5147,14 +5147,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Le comparatif « moins… que » compare deux éléments."
               },
               {
-                "q": "Pour comparer deux produits, on peut dire :",
+                "q": "Un produit est défectueux. Que peut-on demander ?",
                 "options": [
-                  "Ce modèle est moins cher que l’autre.",
-                  "Ce modèle est moins cher de l’autre.",
-                  "Ce modèle moins cher hier."
+                  "Un itinéraire",
+                  "Un rendez-vous médical",
+                  "Un échange ou un remboursement"
                 ],
-                "answer": 0,
-                "why": "« Moins… que » sert à comparer deux éléments."
+                "answer": 2,
+                "why": "Un échange ou un remboursement répond à un problème de produit."
               }
             ],
             "resources": [
@@ -5308,14 +5308,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Une ordonnance est un document médical."
               },
               {
-                "q": "Pour prendre rendez-vous chez un médecin, on contacte :",
+                "q": "La fièvre et la douleur sont :",
                 "options": [
-                  "le cabinet médical",
-                  "le quai de la gare",
-                  "le service des bagages"
+                  "des candidatures",
+                  "des symptômes",
+                  "des billets"
                 ],
-                "answer": 0,
-                "why": "Le cabinet médical organise les consultations."
+                "answer": 1,
+                "why": "La fièvre et la douleur sont des symptômes."
               }
             ],
             "resources": [
@@ -5469,14 +5469,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "L’impératif de « vous » est « continuez »."
               },
               {
-                "q": "Pour organiser un trajet, il faut vérifier :",
+                "q": "Pour connaître la voie de départ d’un train, on cherche :",
                 "options": [
-                  "les horaires et les correspondances",
-                  "seulement la couleur du billet",
-                  "uniquement le nom du voyageur"
+                  "le quai",
+                  "le loyer",
+                  "l’ordonnance"
                 ],
                 "answer": 0,
-                "why": "Les horaires et les correspondances facilitent le trajet."
+                "why": "Le quai indique l’endroit où prendre le train."
               }
             ],
             "resources": [
@@ -5640,11 +5640,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour connaître la voie de départ d’un train, on cherche :",
                 "options": [
-                  "le quai",
                   "le loyer",
-                  "l’ordonnance"
+                  "l’ordonnance",
+                  "le quai"
                 ],
-                "answer": 0,
+                "answer": 2,
                 "why": "Le quai indique l’endroit où prendre le train."
               }
             ],
@@ -5801,11 +5801,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour décrire une habitude dans le passé, on utilise souvent :",
                 "options": [
+                  "l’impératif",
                   "l’imparfait",
-                  "le futur simple",
-                  "l’impératif"
+                  "le futur simple"
                 ],
-                "answer": 0,
+                "answer": 1,
                 "why": "L’imparfait peut décrire une habitude passée."
               }
             ],
@@ -6123,11 +6123,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour demander si le loyer comprend les charges, on dit :",
                 "options": [
-                  "Les charges sont-elles comprises dans le loyer ?",
                   "Le loyer comprend hier ?",
-                  "Je comprends le loyer demain."
+                  "Je comprends le loyer demain.",
+                  "Les charges sont-elles comprises dans le loyer ?"
                 ],
-                "answer": 0,
+                "answer": 2,
                 "why": "La question porte sur l’inclusion des charges dans le loyer."
               }
             ],
@@ -6290,14 +6290,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Le comparatif « moins… que » compare deux éléments."
               },
               {
-                "q": "Pour commander poliment au restaurant, on dit :",
+                "q": "Pour parler d’une quantité indéterminée de pain, on dit :",
                 "options": [
-                  "Je voudrais une soupe, s’il vous plaît.",
-                  "Je suis une soupe.",
-                  "Je voudrais soupe hier."
+                  "des pain",
+                  "du pain",
+                  "de la pain"
                 ],
-                "answer": 0,
-                "why": "« Je voudrais » est une formule polie pour commander."
+                "answer": 1,
+                "why": "« Pain » est masculin singulier : du pain."
               }
             ],
             "resources": [
@@ -6451,14 +6451,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« En » peut remplacer une quantité ou un groupe introduit par « de »."
               },
               {
-                "q": "Dans un courriel professionnel, le ton doit être :",
+                "q": "Dans un CV, on met surtout en valeur :",
                 "options": [
-                  "clair et courtois",
-                  "agressif et familier",
-                  "sans lien avec la demande"
+                  "les expériences et compétences utiles au poste",
+                  "les informations sans rapport avec le poste",
+                  "des opinions sans exemples"
                 ],
                 "answer": 0,
-                "why": "Un registre professionnel reste clair et courtois."
+                "why": "Le CV met en avant les éléments pertinents pour la candidature."
               }
             ],
             "resources": [
@@ -6612,14 +6612,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Parce que » introduit une cause."
               },
               {
-                "q": "Pour accepter poliment une invitation, on peut dire :",
+                "q": "Pour proposer un rendez-vous, on peut demander :",
                 "options": [
-                  "Avec plaisir, merci pour l’invitation !",
-                  "Je refuse demain hier.",
-                  "Tu invitation moi."
+                  "Où est-ce que tu as été hier demain ?",
+                  "Je propose toi rendez-vous.",
+                  "Est-ce que tu es libre samedi ?"
                 ],
-                "answer": 0,
-                "why": "Cette formule exprime une acceptation polie."
+                "answer": 2,
+                "why": "La question vérifie la disponibilité de l’interlocuteur."
               }
             ],
             "resources": [
@@ -6773,14 +6773,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Les notes doivent aider à reconstruire l’idée et la structure."
               },
               {
-                "q": "Pendant une compréhension orale, les notes utiles reprennent :",
+                "q": "Avant de répondre à une consigne d’examen, il faut :",
                 "options": [
-                  "les idées clés, les chiffres et les liens logiques",
-                  "chaque mot sans tri",
-                  "les opinions personnelles du candidat"
+                  "écrire sans analyser le sujet",
+                  "identifier la tâche, le format et le destinataire",
+                  "lire seulement les options"
                 ],
-                "answer": 0,
-                "why": "Les notes doivent soutenir la compréhension du message."
+                "answer": 1,
+                "why": "Analyser la consigne aide à répondre exactement à la demande."
               }
             ],
             "resources": [
@@ -7105,11 +7105,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour décrire une habitude dans le passé, on utilise souvent :",
                 "options": [
-                  "l’imparfait",
                   "le futur simple",
-                  "l’impératif"
+                  "l’impératif",
+                  "l’imparfait"
                 ],
-                "answer": 0,
+                "answer": 2,
                 "why": "L’imparfait peut décrire une habitude passée."
               }
             ],
@@ -7266,11 +7266,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour rendre un récit clair, il est utile de :",
                 "options": [
+                  "supprimer les liens chronologiques",
                   "ordonner les événements dans le temps",
-                  "mélanger les événements",
-                  "supprimer les liens chronologiques"
+                  "mélanger les événements"
                 ],
-                "answer": 0,
+                "answer": 1,
                 "why": "Les marqueurs temporels clarifient le déroulement."
               }
             ],
@@ -7594,14 +7594,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« En définitive » introduit une conclusion."
               },
               {
-                "q": "Pour vérifier une information, il faut consulter :",
+                "q": "Un fait se distingue d’une opinion parce qu’il peut être :",
                 "options": [
-                  "l’auteur, la date et plusieurs sources fiables",
-                  "seulement le titre",
-                  "uniquement le nombre de partages"
+                  "seulement ressenti",
+                  "toujours personnel",
+                  "vérifié à l’aide d’éléments précis"
                 ],
-                "answer": 0,
-                "why": "La source, la date et le recoupement aident à vérifier l’information."
+                "answer": 2,
+                "why": "Un fait est vérifiable à partir d’éléments ou de preuves."
               }
             ],
             "resources": [
@@ -7755,14 +7755,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Certes… toutefois… » exprime une concession nuancée."
               },
               {
-                "q": "Pour répondre à une objection, il faut :",
+                "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
-                  "montrer qu’on l’a comprise puis justifier sa réponse",
-                  "l’ignorer systématiquement",
-                  "attaquer la personne"
+                  "éviter tout lien logique",
+                  "donner des raisons et des exemples précis",
+                  "répéter sa position sans explication"
                 ],
-                "answer": 0,
-                "why": "Le débat argumenté répond à l’idée et la justifie."
+                "answer": 1,
+                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
             "resources": [
@@ -7916,14 +7916,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Par conséquent » introduit une conséquence."
               },
               {
-                "q": "Pour rendre un récit clair, il est utile de :",
+                "q": "Pour décrire une habitude dans le passé, on utilise souvent :",
                 "options": [
-                  "ordonner les événements dans le temps",
-                  "mélanger les événements",
-                  "supprimer les liens chronologiques"
+                  "l’imparfait",
+                  "le futur simple",
+                  "l’impératif"
                 ],
                 "answer": 0,
-                "why": "Les marqueurs temporels clarifient le déroulement."
+                "why": "L’imparfait peut décrire une habitude passée."
               }
             ],
             "resources": [
@@ -8077,14 +8077,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« En définitive » introduit une conclusion."
               },
               {
-                "q": "Pour décrire une habitude dans le passé, on utilise souvent :",
+                "q": "Pour rendre un récit clair, il est utile de :",
                 "options": [
-                  "l’imparfait",
-                  "le futur simple",
-                  "l’impératif"
+                  "mélanger les événements",
+                  "supprimer les liens chronologiques",
+                  "ordonner les événements dans le temps"
                 ],
-                "answer": 0,
-                "why": "L’imparfait peut décrire une habitude passée."
+                "answer": 2,
+                "why": "Les marqueurs temporels clarifient le déroulement."
               }
             ],
             "resources": [
@@ -8248,11 +8248,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Dans un CV, on met surtout en valeur :",
                 "options": [
+                  "des opinions sans exemples",
                   "les expériences et compétences utiles au poste",
-                  "les informations sans rapport avec le poste",
-                  "des opinions sans exemples"
+                  "les informations sans rapport avec le poste"
                 ],
-                "answer": 0,
+                "answer": 1,
                 "why": "Le CV met en avant les éléments pertinents pour la candidature."
               }
             ],
@@ -8570,11 +8570,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour rendre un récit clair, il est utile de :",
                 "options": [
-                  "ordonner les événements dans le temps",
                   "mélanger les événements",
-                  "supprimer les liens chronologiques"
+                  "supprimer les liens chronologiques",
+                  "ordonner les événements dans le temps"
                 ],
-                "answer": 0,
+                "answer": 2,
                 "why": "Les marqueurs temporels clarifient le déroulement."
               }
             ],
@@ -8731,11 +8731,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour décrire une habitude dans le passé, on utilise souvent :",
                 "options": [
+                  "l’impératif",
                   "l’imparfait",
-                  "le futur simple",
-                  "l’impératif"
+                  "le futur simple"
                 ],
-                "answer": 0,
+                "answer": 1,
                 "why": "L’imparfait peut décrire une habitude passée."
               }
             ],
@@ -8898,14 +8898,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "L’habitude passée se décrit avec l’imparfait."
               },
               {
-                "q": "Pour prendre rendez-vous chez un médecin, on contacte :",
+                "q": "La fièvre et la douleur sont :",
                 "options": [
-                  "le cabinet médical",
-                  "le quai de la gare",
-                  "le service des bagages"
+                  "des symptômes",
+                  "des billets",
+                  "des candidatures"
                 ],
                 "answer": 0,
-                "why": "Le cabinet médical organise les consultations."
+                "why": "La fièvre et la douleur sont des symptômes."
               }
             ],
             "resources": [
@@ -9059,14 +9059,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "L’imparfait décrit l’action en cours interrompue par un événement."
               },
               {
-                "q": "Pour analyser une politique publique, on compare :",
+                "q": "Pour présenter une solution environnementale, il faut préciser :",
                 "options": [
-                  "les objectifs, les coûts et les effets",
-                  "seulement le slogan",
-                  "uniquement le nom du programme"
+                  "un slogan sans explication",
+                  "uniquement le nom de la mesure",
+                  "le problème, la mesure et ses effets attendus"
                 ],
-                "answer": 0,
-                "why": "Ces critères permettent une évaluation plus structurée."
+                "answer": 2,
+                "why": "Une proposition relie un problème à une action et à ses effets."
               }
             ],
             "resources": [
@@ -9220,14 +9220,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Donc » relie une cause à sa conséquence."
               },
               {
-                "q": "Pour présenter une solution environnementale, il faut préciser :",
+                "q": "Pour analyser une politique publique, on compare :",
                 "options": [
-                  "le problème, la mesure et ses effets attendus",
-                  "un slogan sans explication",
-                  "uniquement le nom de la mesure"
+                  "uniquement le nom du programme",
+                  "les objectifs, les coûts et les effets",
+                  "seulement le slogan"
                 ],
-                "answer": 0,
-                "why": "Une proposition relie un problème à une action et à ses effets."
+                "answer": 1,
+                "why": "Ces critères permettent une évaluation plus structurée."
               }
             ],
             "resources": [
@@ -9381,14 +9381,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Cette structure présente une concession et une opposition."
               },
               {
-                "q": "Pour décrire une habitude dans le passé, on utilise souvent :",
+                "q": "Pour rendre un récit clair, il est utile de :",
                 "options": [
-                  "l’imparfait",
-                  "le futur simple",
-                  "l’impératif"
+                  "ordonner les événements dans le temps",
+                  "mélanger les événements",
+                  "supprimer les liens chronologiques"
                 ],
                 "answer": 0,
-                "why": "L’imparfait peut décrire une habitude passée."
+                "why": "Les marqueurs temporels clarifient le déroulement."
               }
             ],
             "resources": [
@@ -9552,11 +9552,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour recommander un film, il est utile de présenter :",
                 "options": [
-                  "le sujet et les raisons de son intérêt",
                   "seulement sa durée",
-                  "des détails sans lien"
+                  "des détails sans lien",
+                  "le sujet et les raisons de son intérêt"
                 ],
-                "answer": 0,
+                "answer": 2,
                 "why": "Une recommandation s’appuie sur le contenu et des raisons précises."
               }
             ],
@@ -9713,11 +9713,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour organiser un trajet, il faut vérifier :",
                 "options": [
+                  "uniquement le nom du voyageur",
                   "les horaires et les correspondances",
-                  "seulement la couleur du billet",
-                  "uniquement le nom du voyageur"
+                  "seulement la couleur du billet"
                 ],
-                "answer": 0,
+                "answer": 1,
                 "why": "Les horaires et les correspondances facilitent le trajet."
               }
             ],
@@ -10035,11 +10035,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pendant une compréhension orale, les notes utiles reprennent :",
                 "options": [
-                  "les idées clés, les chiffres et les liens logiques",
                   "chaque mot sans tri",
-                  "les opinions personnelles du candidat"
+                  "les opinions personnelles du candidat",
+                  "les idées clés, les chiffres et les liens logiques"
                 ],
-                "answer": 0,
+                "answer": 2,
                 "why": "Les notes doivent soutenir la compréhension du message."
               }
             ],
@@ -10202,14 +10202,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Une preuve, une donnée ou un exemple renforce l’argument."
               },
               {
-                "q": "Pour défendre une opinion, il est préférable de :",
+                "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "donner des raisons et des exemples précis",
-                  "répéter sa position sans explication",
-                  "éviter tout lien logique"
+                  "attaquer la personne",
+                  "montrer qu’on l’a comprise puis justifier sa réponse",
+                  "l’ignorer systématiquement"
                 ],
-                "answer": 0,
-                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
+                "answer": 1,
+                "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
             "resources": [
@@ -10363,14 +10363,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« En revanche » introduit un contraste."
               },
               {
-                "q": "Pour répondre à une objection, il faut :",
+                "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
-                  "montrer qu’on l’a comprise puis justifier sa réponse",
-                  "l’ignorer systématiquement",
-                  "attaquer la personne"
+                  "donner des raisons et des exemples précis",
+                  "répéter sa position sans explication",
+                  "éviter tout lien logique"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond à l’idée et la justifie."
+                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
             "resources": [
@@ -10524,14 +10524,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Le participe passé s’accorde avec « les données » dans cette phrase passive."
               },
               {
-                "q": "Une synthèse réussie doit :",
+                "q": "Pour construire un rapport solide, il faut :",
                 "options": [
-                  "mettre en relation les idées de plusieurs documents",
-                  "copier un seul document",
-                  "ajouter un avis sans lien avec les sources"
+                  "mélanger résultats et opinions",
+                  "omettre la source des chiffres",
+                  "distinguer les constats, les preuves et les recommandations"
                 ],
-                "answer": 0,
-                "why": "Une synthèse croise les idées principales des documents."
+                "answer": 2,
+                "why": "Cette structure distingue les faits de leur interprétation."
               }
             ],
             "resources": [
@@ -10685,14 +10685,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Une preuve, une donnée ou un exemple renforce l’argument."
               },
               {
-                "q": "Pour construire un rapport solide, il faut :",
+                "q": "Une synthèse réussie doit :",
                 "options": [
-                  "distinguer les constats, les preuves et les recommandations",
-                  "mélanger résultats et opinions",
-                  "omettre la source des chiffres"
+                  "ajouter un avis sans lien avec les sources",
+                  "mettre en relation les idées de plusieurs documents",
+                  "copier un seul document"
                 ],
-                "answer": 0,
-                "why": "Cette structure distingue les faits de leur interprétation."
+                "answer": 1,
+                "why": "Une synthèse croise les idées principales des documents."
               }
             ],
             "resources": [
@@ -11017,11 +11017,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "montrer qu’on l’a comprise puis justifier sa réponse",
                   "l’ignorer systématiquement",
-                  "attaquer la personne"
+                  "attaquer la personne",
+                  "montrer qu’on l’a comprise puis justifier sa réponse"
                 ],
-                "answer": 0,
+                "answer": 2,
                 "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
@@ -11178,11 +11178,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Une synthèse réussie doit :",
                 "options": [
+                  "ajouter un avis sans lien avec les sources",
                   "mettre en relation les idées de plusieurs documents",
-                  "copier un seul document",
-                  "ajouter un avis sans lien avec les sources"
+                  "copier un seul document"
                 ],
-                "answer": 0,
+                "answer": 1,
                 "why": "Une synthèse croise les idées principales des documents."
               }
             ],
@@ -11506,14 +11506,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "La première formule est polie et adaptée au registre professionnel."
               },
               {
-                "q": "Dans un CV, on met surtout en valeur :",
+                "q": "Dans un courriel professionnel, le ton doit être :",
                 "options": [
-                  "les expériences et compétences utiles au poste",
-                  "les informations sans rapport avec le poste",
-                  "des opinions sans exemples"
+                  "agressif et familier",
+                  "sans lien avec la demande",
+                  "clair et courtois"
                 ],
-                "answer": 0,
-                "why": "Le CV met en avant les éléments pertinents pour la candidature."
+                "answer": 2,
+                "why": "Un registre professionnel reste clair et courtois."
               }
             ],
             "resources": [
@@ -11667,14 +11667,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Le participe passé s’accorde avec « les données » dans cette phrase passive."
               },
               {
-                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "q": "Pour décrire son quartier, on peut dire :",
                 "options": [
-                  "Les charges sont-elles comprises dans le loyer ?",
-                  "Le loyer comprend hier ?",
-                  "Je comprends le loyer demain."
+                  "Je suis pharmacie.",
+                  "Il y a une pharmacie près de chez moi.",
+                  "J’ai une pharmacie hier."
                 ],
-                "answer": 0,
-                "why": "La question porte sur l’inclusion des charges dans le loyer."
+                "answer": 1,
+                "why": "« Il y a » présente un service disponible dans un lieu."
               }
             ],
             "resources": [
@@ -11828,14 +11828,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Dans la voix passive, on emploie être + participe passé."
               },
               {
-                "q": "Pour décrire son quartier, on peut dire :",
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
                 "options": [
-                  "Il y a une pharmacie près de chez moi.",
-                  "J’ai une pharmacie hier.",
-                  "Je suis pharmacie."
+                  "Les charges sont-elles comprises dans le loyer ?",
+                  "Le loyer comprend hier ?",
+                  "Je comprends le loyer demain."
                 ],
                 "answer": 0,
-                "why": "« Il y a » présente un service disponible dans un lieu."
+                "why": "La question porte sur l’inclusion des charges dans le loyer."
               }
             ],
             "resources": [
@@ -11989,14 +11989,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Un compte rendu formel exige précision et neutralité."
               },
               {
-                "q": "Pour construire un rapport solide, il faut :",
+                "q": "Une synthèse réussie doit :",
                 "options": [
-                  "distinguer les constats, les preuves et les recommandations",
-                  "mélanger résultats et opinions",
-                  "omettre la source des chiffres"
+                  "copier un seul document",
+                  "ajouter un avis sans lien avec les sources",
+                  "mettre en relation les idées de plusieurs documents"
                 ],
-                "answer": 0,
-                "why": "Cette structure distingue les faits de leur interprétation."
+                "answer": 2,
+                "why": "Une synthèse croise les idées principales des documents."
               }
             ],
             "resources": [
@@ -12160,11 +12160,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour vérifier une information, il faut consulter :",
                 "options": [
+                  "uniquement le nombre de partages",
                   "l’auteur, la date et plusieurs sources fiables",
-                  "seulement le titre",
-                  "uniquement le nombre de partages"
+                  "seulement le titre"
                 ],
-                "answer": 0,
+                "answer": 1,
                 "why": "La source, la date et le recoupement aident à vérifier l’information."
               }
             ],
@@ -12482,11 +12482,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Une synthèse réussie doit :",
                 "options": [
-                  "mettre en relation les idées de plusieurs documents",
                   "copier un seul document",
-                  "ajouter un avis sans lien avec les sources"
+                  "ajouter un avis sans lien avec les sources",
+                  "mettre en relation les idées de plusieurs documents"
                 ],
-                "answer": 0,
+                "answer": 2,
                 "why": "Une synthèse croise les idées principales des documents."
               }
             ],
@@ -12643,11 +12643,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Un fait se distingue d’une opinion parce qu’il peut être :",
                 "options": [
+                  "toujours personnel",
                   "vérifié à l’aide d’éléments précis",
-                  "seulement ressenti",
-                  "toujours personnel"
+                  "seulement ressenti"
                 ],
-                "answer": 0,
+                "answer": 1,
                 "why": "Un fait est vérifiable à partir d’éléments ou de preuves."
               }
             ],
@@ -12810,14 +12810,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Parce que » introduit une cause."
               },
               {
-                "q": "Pour présenter une solution environnementale, il faut préciser :",
+                "q": "Pour analyser une politique publique, on compare :",
                 "options": [
-                  "le problème, la mesure et ses effets attendus",
-                  "un slogan sans explication",
-                  "uniquement le nom de la mesure"
+                  "les objectifs, les coûts et les effets",
+                  "seulement le slogan",
+                  "uniquement le nom du programme"
                 ],
                 "answer": 0,
-                "why": "Une proposition relie un problème à une action et à ses effets."
+                "why": "Ces critères permettent une évaluation plus structurée."
               }
             ],
             "resources": [
@@ -12971,14 +12971,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Par conséquent » introduit une conséquence."
               },
               {
-                "q": "Pour analyser une politique publique, on compare :",
+                "q": "Pour présenter une solution environnementale, il faut préciser :",
                 "options": [
-                  "les objectifs, les coûts et les effets",
-                  "seulement le slogan",
-                  "uniquement le nom du programme"
+                  "un slogan sans explication",
+                  "uniquement le nom de la mesure",
+                  "le problème, la mesure et ses effets attendus"
                 ],
-                "answer": 0,
-                "why": "Ces critères permettent une évaluation plus structurée."
+                "answer": 2,
+                "why": "Une proposition relie un problème à une action et à ses effets."
               }
             ],
             "resources": [
@@ -13132,14 +13132,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Un compte rendu formel exige précision et neutralité."
               },
               {
-                "q": "Pour présenter une solution environnementale, il faut préciser :",
+                "q": "Pour analyser une politique publique, on compare :",
                 "options": [
-                  "le problème, la mesure et ses effets attendus",
-                  "un slogan sans explication",
-                  "uniquement le nom de la mesure"
+                  "uniquement le nom du programme",
+                  "les objectifs, les coûts et les effets",
+                  "seulement le slogan"
                 ],
-                "answer": 0,
-                "why": "Une proposition relie un problème à une action et à ses effets."
+                "answer": 1,
+                "why": "Ces critères permettent une évaluation plus structurée."
               }
             ],
             "resources": [
@@ -13293,14 +13293,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Parce que » introduit une cause."
               },
               {
-                "q": "Pour construire un rapport solide, il faut :",
+                "q": "Une synthèse réussie doit :",
                 "options": [
-                  "distinguer les constats, les preuves et les recommandations",
-                  "mélanger résultats et opinions",
-                  "omettre la source des chiffres"
+                  "mettre en relation les idées de plusieurs documents",
+                  "copier un seul document",
+                  "ajouter un avis sans lien avec les sources"
                 ],
                 "answer": 0,
-                "why": "Cette structure distingue les faits de leur interprétation."
+                "why": "Une synthèse croise les idées principales des documents."
               }
             ],
             "resources": [
@@ -13464,11 +13464,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Une synthèse réussie doit :",
                 "options": [
-                  "mettre en relation les idées de plusieurs documents",
                   "copier un seul document",
-                  "ajouter un avis sans lien avec les sources"
+                  "ajouter un avis sans lien avec les sources",
+                  "mettre en relation les idées de plusieurs documents"
                 ],
-                "answer": 0,
+                "answer": 2,
                 "why": "Une synthèse croise les idées principales des documents."
               }
             ],
@@ -13625,11 +13625,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour construire un rapport solide, il faut :",
                 "options": [
+                  "omettre la source des chiffres",
                   "distinguer les constats, les preuves et les recommandations",
-                  "mélanger résultats et opinions",
-                  "omettre la source des chiffres"
+                  "mélanger résultats et opinions"
                 ],
-                "answer": 0,
+                "answer": 1,
                 "why": "Cette structure distingue les faits de leur interprétation."
               }
             ],
@@ -13947,11 +13947,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pendant une compréhension orale, les notes utiles reprennent :",
                 "options": [
-                  "les idées clés, les chiffres et les liens logiques",
                   "chaque mot sans tri",
-                  "les opinions personnelles du candidat"
+                  "les opinions personnelles du candidat",
+                  "les idées clés, les chiffres et les liens logiques"
                 ],
-                "answer": 0,
+                "answer": 2,
                 "why": "Les notes doivent soutenir la compréhension du message."
               }
             ],
@@ -14114,14 +14114,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Une preuve, une donnée ou un exemple renforce l’argument."
               },
               {
-                "q": "Avant de répondre à une consigne d’examen, il faut :",
+                "q": "Pendant une compréhension orale, les notes utiles reprennent :",
                 "options": [
-                  "identifier la tâche, le format et le destinataire",
-                  "lire seulement les options",
-                  "écrire sans analyser le sujet"
+                  "les opinions personnelles du candidat",
+                  "les idées clés, les chiffres et les liens logiques",
+                  "chaque mot sans tri"
                 ],
-                "answer": 0,
-                "why": "Analyser la consigne aide à répondre exactement à la demande."
+                "answer": 1,
+                "why": "Les notes doivent soutenir la compréhension du message."
               }
             ],
             "resources": [
@@ -14275,14 +14275,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "La problématique organise le raisonnement."
               },
               {
-                "q": "Pendant une compréhension orale, les notes utiles reprennent :",
+                "q": "Avant de répondre à une consigne d’examen, il faut :",
                 "options": [
-                  "les idées clés, les chiffres et les liens logiques",
-                  "chaque mot sans tri",
-                  "les opinions personnelles du candidat"
+                  "identifier la tâche, le format et le destinataire",
+                  "lire seulement les options",
+                  "écrire sans analyser le sujet"
                 ],
                 "answer": 0,
-                "why": "Les notes doivent soutenir la compréhension du message."
+                "why": "Analyser la consigne aide à répondre exactement à la demande."
               }
             ],
             "resources": [
@@ -14436,14 +14436,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Un fait peut être confronté à des éléments vérifiables."
               },
               {
-                "q": "Avant de répondre à une consigne d’examen, il faut :",
+                "q": "Pendant une compréhension orale, les notes utiles reprennent :",
                 "options": [
-                  "identifier la tâche, le format et le destinataire",
-                  "lire seulement les options",
-                  "écrire sans analyser le sujet"
+                  "chaque mot sans tri",
+                  "les opinions personnelles du candidat",
+                  "les idées clés, les chiffres et les liens logiques"
                 ],
-                "answer": 0,
-                "why": "Analyser la consigne aide à répondre exactement à la demande."
+                "answer": 2,
+                "why": "Les notes doivent soutenir la compréhension du message."
               }
             ],
             "resources": [
@@ -14597,14 +14597,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Les notes doivent aider à reconstruire l’idée et la structure."
               },
               {
-                "q": "Pendant une compréhension orale, les notes utiles reprennent :",
+                "q": "Avant de répondre à une consigne d’examen, il faut :",
                 "options": [
-                  "les idées clés, les chiffres et les liens logiques",
-                  "chaque mot sans tri",
-                  "les opinions personnelles du candidat"
+                  "écrire sans analyser le sujet",
+                  "identifier la tâche, le format et le destinataire",
+                  "lire seulement les options"
                 ],
-                "answer": 0,
-                "why": "Les notes doivent soutenir la compréhension du message."
+                "answer": 1,
+                "why": "Analyser la consigne aide à répondre exactement à la demande."
               }
             ],
             "resources": [
@@ -14929,11 +14929,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "montrer qu’on l’a comprise puis justifier sa réponse",
                   "l’ignorer systématiquement",
-                  "attaquer la personne"
+                  "attaquer la personne",
+                  "montrer qu’on l’a comprise puis justifier sa réponse"
                 ],
-                "answer": 0,
+                "answer": 2,
                 "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
@@ -15090,11 +15090,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
+                  "éviter tout lien logique",
                   "donner des raisons et des exemples précis",
-                  "répéter sa position sans explication",
-                  "éviter tout lien logique"
+                  "répéter sa position sans explication"
                 ],
-                "answer": 0,
+                "answer": 1,
                 "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
@@ -15418,14 +15418,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "La problématique organise le raisonnement."
               },
               {
-                "q": "Pour défendre une opinion, il est préférable de :",
+                "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "donner des raisons et des exemples précis",
-                  "répéter sa position sans explication",
-                  "éviter tout lien logique"
+                  "l’ignorer systématiquement",
+                  "attaquer la personne",
+                  "montrer qu’on l’a comprise puis justifier sa réponse"
                 ],
-                "answer": 0,
-                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
+                "answer": 2,
+                "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
             "resources": [
@@ -15579,14 +15579,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Les arguments et les exemples rendent le propos convaincant."
               },
               {
-                "q": "Pour répondre à une objection, il faut :",
+                "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
-                  "montrer qu’on l’a comprise puis justifier sa réponse",
-                  "l’ignorer systématiquement",
-                  "attaquer la personne"
+                  "éviter tout lien logique",
+                  "donner des raisons et des exemples précis",
+                  "répéter sa position sans explication"
                 ],
-                "answer": 0,
-                "why": "Le débat argumenté répond à l’idée et la justifie."
+                "answer": 1,
+                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
             "resources": [
@@ -15740,14 +15740,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Cependant » marque une opposition."
               },
               {
-                "q": "Pour défendre une opinion, il est préférable de :",
+                "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "donner des raisons et des exemples précis",
-                  "répéter sa position sans explication",
-                  "éviter tout lien logique"
+                  "montrer qu’on l’a comprise puis justifier sa réponse",
+                  "l’ignorer systématiquement",
+                  "attaquer la personne"
                 ],
                 "answer": 0,
-                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
+                "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
             "resources": [
@@ -15901,14 +15901,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Une réponse constructive reconnaît la question et développe une justification."
               },
               {
-                "q": "Pour répondre à une objection, il faut :",
+                "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
-                  "montrer qu’on l’a comprise puis justifier sa réponse",
-                  "l’ignorer systématiquement",
-                  "attaquer la personne"
+                  "répéter sa position sans explication",
+                  "éviter tout lien logique",
+                  "donner des raisons et des exemples précis"
                 ],
-                "answer": 0,
-                "why": "Le débat argumenté répond à l’idée et la justifie."
+                "answer": 2,
+                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
             "resources": [
@@ -16072,11 +16072,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
+                  "éviter tout lien logique",
                   "donner des raisons et des exemples précis",
-                  "répéter sa position sans explication",
-                  "éviter tout lien logique"
+                  "répéter sa position sans explication"
                 ],
-                "answer": 0,
+                "answer": 1,
                 "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
@@ -16394,11 +16394,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
-                  "donner des raisons et des exemples précis",
                   "répéter sa position sans explication",
-                  "éviter tout lien logique"
+                  "éviter tout lien logique",
+                  "donner des raisons et des exemples précis"
                 ],
-                "answer": 0,
+                "answer": 2,
                 "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
@@ -16555,11 +16555,11 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour répondre à une objection, il faut :",
                 "options": [
+                  "attaquer la personne",
                   "montrer qu’on l’a comprise puis justifier sa réponse",
-                  "l’ignorer systématiquement",
-                  "attaquer la personne"
+                  "l’ignorer systématiquement"
                 ],
-                "answer": 0,
+                "answer": 1,
                 "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
