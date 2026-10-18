@@ -253,6 +253,7 @@
       if (!guide) return;
       const label = guide.querySelector('.ur-correction-mode-label');
       if (label) label.textContent = text('modeLabel');
+      select.setAttribute('aria-label', text('modeLabel'));
       if (select.options.length >= 2) {
         select.options[0].textContent = text('singleMode');
         select.options[1].textContent = text('allMode');
