@@ -1833,6 +1833,7 @@ function buildUnitVocabCheckHtml(unit){
 }
 function buildUnitGuide(unit){
  const guide=document.createElement('section');guide.className='book-integration';
+ const E=v=>String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\"/g,'&quot;').replace(/'/g,'&#39;');
  guide.innerHTML='<div class="book-integration-top"><div><div class="kicker">FRENCH · UNITÉ '+unit.u+'</div><h3>المسار الأساسي: '+unit.name+'</h3></div><span class="book-chip">A1 · '+unit.u+'/8</span></div>'+
  buildUnitIntroductionHtml(unit)+
  '<div class="unit-sequence-card"><div class="unit-sequence-top"><strong>مكان هذه الوحدة في المنهج</strong><span class="book-chip">الأسبوع '+Number(unit.weekNumber||unit.u)+' من 8</span><span class="book-chip">8 ساعات · 6 جلسات</span></div><p><strong>المتطلبات السابقة:</strong> '+E((unit.sequence||{}).prerequisite||'راجع الوحدة السابقة قبل المتابعة.')+'</p><p><strong>الترابط مع الوحدة التالية:</strong> '+E((unit.sequence||{}).nextLink||'استخدم ما تعلمته في المهمة التالية.')+'</p><p class="unit-hours-note">توزيع الوقت: 6 جلسات × 80 دقيقة = 480 دقيقة (8 ساعات). الاختبار والتمارين المرفقة جزء من هذا الوقت وليست ساعات إضافية.</p></div>'+ 
