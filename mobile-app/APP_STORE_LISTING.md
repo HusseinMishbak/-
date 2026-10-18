@@ -64,7 +64,7 @@ Accounts, cloud synchronization, and some audio or linked learning resources req
 
 **Name:** Orr Français
 
-**Subtitle:** Apprenez le français pas à pas
+**Subtitle:** Le français pas à pas
 
 **Texte promotionnel :**
 Progressez en français avec des leçons structurées, la révision du vocabulaire, des activités d’écoute et le suivi de votre apprentissage.
