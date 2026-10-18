@@ -1,0 +1,38 @@
+name: Build iOS simulator app
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: macos-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        working-directory: mobile-app
+        run: npm install
+      - name: Prepare bundled learning platform
+        working-directory: mobile-app
+        run: npm run build:web
+      - name: Generate iOS project
+        working-directory: mobile-app
+        run: npx cap add ios
+      - name: Sync Capacitor assets
+        working-directory: mobile-app
+        run: npx cap sync ios
+      - name: Build simulator app
+        working-directory: mobile-app
+        run: xcodebuild -project ios/App/App.xcodeproj -scheme App -sdk iphonesimulator -configuration Debug -derivedDataPath build CODE_SIGNING_ALLOWED=NO build
+      - name: Package simulator app
+        working-directory: mobile-app
+        run: cd build/Build/Products/Debug-iphonesimulator && zip -r ../../../../orr-french-ios-simulator.zip App.app
+      - name: Upload simulator build
+        uses: actions/upload-artifact@v4
+        with:
+          name: orr-french-ios-simulator
+          path: mobile-app/orr-french-ios-simulator.zip
+          if-no-files-found: error
+          retention-days: 14
