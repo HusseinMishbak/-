@@ -35,6 +35,7 @@
     .replace(/'/g, '&#39;');
 
   const CORRECTION_MODE_KEY = 'urAssessmentCorrectionMode:v1';
+  const DEFAULT_CORRECTION_MODE_KEY = CORRECTION_MODE_KEY + ':default';
   const TEXT = {
     ar: {
       correct: 'إجابة صحيحة ✓', answer: 'الإجابة الصحيحة: ', choose: 'اختر إجابة أولاً، ثم صحّح هذا السؤال.',
@@ -122,10 +123,32 @@
     feedback.parentNode.insertBefore(actions, feedback);
   }
 
-  function readCorrectionMode() {
+  function getContainerKey(container) {
+    if (container.dataset.urCorrectionKey) return container.dataset.urCorrectionKey;
+    if (container.matches('[data-unit-vocab-test]')) return 'unit-vocab-' + container.dataset.unitVocabTest;
+    if (container.matches('.roadmap-week-quiz')) return 'roadmap-week-' + (container.dataset.weekQuiz || 'unknown');
+    const bookUnit = container.closest('[data-book-practice-unit]');
+    if (bookUnit) {
+      const unit = bookUnit.dataset.bookPracticeUnit || 'unknown';
+      const type = container.matches('.book-practice-quiz') ? 'choice' :
+        container.matches('.book-fill-grid') ? 'fill' :
+        container.matches('.book-match-grid') ? 'match' :
+        container.matches('.book-order-grid') ? 'order' : 'exercise';
+      return 'book-unit-' + unit + '-' + type;
+    }
+    if (container.id) return container.id;
+    const signature = Array.from(container.classList).sort().join('-') || 'quiz';
+    const peers = Array.from(document.querySelectorAll(GUIDE_SELECTOR))
+      .filter(node => node !== container && (Array.from(node.classList).sort().join('-') || 'quiz') === signature);
+    return 'group-' + signature + '-' + (peers.filter(node => document.documentElement.contains(node) && node.compareDocumentPosition(container) & Node.DOCUMENT_POSITION_FOLLOWING).length + 1);
+  }
+
+  function readCorrectionMode(container) {
+    const key = CORRECTION_MODE_KEY + ':' + getContainerKey(container);
     try {
-      const saved = localStorage.getItem(CORRECTION_MODE_KEY);
-      return saved === 'all' ? 'all' : 'single';
+      const saved = localStorage.getItem(key);
+      if (saved === 'all' || saved === 'single') return saved;
+      return localStorage.getItem(DEFAULT_CORRECTION_MODE_KEY) === 'all' ? 'all' : 'single';
     } catch (_) { return 'single'; }
   }
 
@@ -153,7 +176,7 @@
     scope.querySelectorAll('.ur-grade-single').forEach(button => setButtonVisibility(button, single));
     scope.querySelectorAll('[data-check-order]').forEach(button => setButtonVisibility(button, single));
     scope.querySelectorAll(BATCH_BUTTON_SELECTOR).forEach(button => setButtonVisibility(button, !single));
-    const guide = Array.from(scope.querySelectorAll('.ur-assessment-controls'))
+    const guide = Array.from(document.querySelectorAll('.ur-assessment-controls'))
       .find(node => node.dataset.forContainer === getContainerKey(container));
     if (guide) {
       const hint = guide.querySelector('.ur-assessment-guide');
@@ -167,16 +190,23 @@
     return container.dataset.urCorrectionKey;
   }
 
-  function syncCorrectionMode(mode) {
+  function syncCorrectionMode(container, mode) {
     const chosen = mode === 'all' ? 'all' : 'single';
-    try { localStorage.setItem(CORRECTION_MODE_KEY, chosen); } catch (_) {}
-    document.querySelectorAll('.ur-correction-mode').forEach(select => { select.value = chosen; });
-    document.querySelectorAll(GUIDE_SELECTOR).forEach(container => applyMode(container, chosen));
+    const key = CORRECTION_MODE_KEY + ':' + getContainerKey(container);
+    try {
+      localStorage.setItem(key, chosen);
+      localStorage.setItem(DEFAULT_CORRECTION_MODE_KEY, chosen);
+    } catch (_) {}
+    const guide = Array.from(document.querySelectorAll('.ur-assessment-controls'))
+      .find(node => node.dataset.forContainer === getContainerKey(container));
+    const select = guide && guide.querySelector('.ur-correction-mode');
+    if (select) select.value = chosen;
+    applyMode(container, chosen);
   }
 
   function addGuide(container) {
     if (container.dataset.urGuideBound === '1') {
-      applyMode(container, readCorrectionMode());
+      applyMode(container, readCorrectionMode(container));
       return;
     }
     container.dataset.urGuideBound = '1';
@@ -191,7 +221,7 @@
     select.className = 'ur-correction-mode';
     select.setAttribute('aria-label', text('modeLabel'));
     select.innerHTML = '<option value="single">' + text('singleMode') + '</option><option value="all">' + text('allMode') + '</option>';
-    select.value = readCorrectionMode();
+    select.value = readCorrectionMode(container);
     label.appendChild(select);
 
     const hint = document.createElement('p');
@@ -201,8 +231,8 @@
     guide.appendChild(label);
     guide.appendChild(hint);
     container.parentNode.insertBefore(guide, container);
-    select.addEventListener('change', () => syncCorrectionMode(select.value));
-    applyMode(container, readCorrectionMode());
+    select.addEventListener('change', () => syncCorrectionMode(container, select.value));
+    applyMode(container, readCorrectionMode(container));
   }
 
   function scan(root) {
