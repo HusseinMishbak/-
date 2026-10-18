@@ -3,7 +3,7 @@ window.FRENCH_CURRICULUM = {
     {
       "u": 1,
       "name": "Enchanté !",
-      "focus": "التعارف والتحية، تهجئة الاسم، الأبجدية والأعداد 0–20، لغة الصف، الضمائر الشخصية، أفعال -er، s’appeler، أدوات التعريف، جنس الأسماء وجمعها والضمائر المشددة.",
+      "focus": "التعارف والتحية، تهجئة الاسم، الأبجدية والأعداد 0–60، لغة الصف، الضمائر الشخصية، أفعال -er، s’appeler، أدوات التعريف، جنس الأسماء وجمعها والضمائر المشددة.",
       "grammar": "pronoms sujets · verbes en -er · s’appeler · articles définis · genre/nombre · pronoms toniques",
       "days": [
         {
@@ -352,9 +352,9 @@ window.FRENCH_CURRICULUM = {
           }
         },
         {
-          "title": "أدوات التعريف وجنس الأسماء",
-          "task": "صنّف عشرة أسماء إلى مذكر ومؤنث ومفرد وجمع، مع الأداة.",
-          "explanation": "أداة التعريف توافق الاسم وعدده: le livre، la table، l’école، les livres. احفظ الاسم مع أداته؛ والجمع يكتب غالباً بـ s لا تُنطق في نهاية الكلمة.",
+          "title": "أدوات التعريف ومهمة التعارف النهائية",
+          "task": "صنّف عشرة أسماء إلى مذكر ومؤنث ومفرد وجمع مع الأداة، ثم قدّم نفسك في 45 ثانية وقارن بين التحية الرسمية وغير الرسمية.",
+          "explanation": "أداة التعريف توافق الاسم وعدده: le livre، la table، l’école، les livres. احفظ الاسم مع أداته؛ ثم طبّق المفردات والضمائر في تعريف شفهي من خمس أو ست جمل يتضمن الاسم والبلد والمدينة واللغة والهواية. استخدم je بوصفه ضمير فاعل وmoi بعد حروف الجر أو للتوكيد.",
           "examples": [
             {
               "fr": "Le livre est ici.",
@@ -379,22 +379,7 @@ window.FRENCH_CURRICULUM = {
             {
               "fr": "C’est un ami.",
               "ar": "هذا صديق."
-            }
-          ],
-          "exercise": {
-            "prompt": "Au pluriel : la table → ___.",
-            "answer": "les tables",
-            "accepted": [
-              "les tables"
-            ],
-            "why": "نستعمل les للجمع ونضيف s كتابياً إلى table."
-          }
-        },
-        {
-          "title": "مهمة الوحدة والاستماع",
-          "task": "قدّم نفسك في 45 ثانية، وقارن تحيتين فرنسيتين.",
-          "explanation": "قدّم نفسك في 5–6 جمل: التحية والاسم والبلد والمدينة واللغة والهواية. استخدم je للفاعل وmoi للتوكيد مثل Moi, j’aime le français.",
-          "examples": [
+            },
             {
               "fr": "Moi, j’aime le français.",
               "ar": "أنا أحب الفرنسية"
@@ -421,13 +406,14 @@ window.FRENCH_CURRICULUM = {
             }
           ],
           "exercise": {
-            "prompt": "C’est avec ___. (tu)",
-            "answer": "toi",
+            "prompt": "Au pluriel : la table → ___.",
+            "answer": "les tables",
             "accepted": [
-              "toi"
+              "les tables"
             ],
-            "why": "بعد avec نستخدم الضمير المشدد toi."
-          }
+            "why": "نستعمل les للجمع ونضيف s كتابياً إلى table."
+          },
+          "capstone": "قدّم نفسك في 45 ثانية، وقارن بين التحية الرسمية وغير الرسمية؛ هذا التحدي جزء من الجلسة السادسة وليس جلسة إضافية."
         }
       ],
       "practice": {
@@ -904,6 +890,15 @@ window.FRENCH_CURRICULUM = {
           ]
         ],
         "note": "النطق العربي تقريبي وليس بديلاً عن الصوت الفرنسي. استمع إلى العدد منفرداً ثم كرره داخل جملة."
+      },
+      "weekNumber": 1,
+      "weekHours": 8,
+      "sessionsPerWeek": 6,
+      "sessionMinutes": 80,
+      "sequence": {
+        "prerequisite": "لا توجد متطلبات سابقة؛ هذه نقطة بداية المسار.",
+        "nextLink": "يستخدم الأسبوع الثاني التحية والضمائر والأعداد لبناء بطاقة شخصية تتناول العمر والجنسية والمهنة والبلد.",
+        "learningFocus": "النطق والتعارف وتكوين الجملة الأولى."
       }
     },
     {
@@ -1505,6 +1500,15 @@ window.FRENCH_CURRICULUM = {
           ]
         ],
         "note": "هذه تقريبـات للنطق الفرنسي الشائع في فرنسا. استمع إلى الأعداد المركبة ولا تعتمد على النقل العربي وحده."
+      },
+      "weekNumber": 2,
+      "weekHours": 8,
+      "sessionsPerWeek": 6,
+      "sessionMinutes": 80,
+      "sequence": {
+        "prerequisite": "إتقان التحية والاسم والضمائر الأساسية وأعداد البداية من الوحدة الأولى.",
+        "nextLink": "تنقل الوحدة الثالثة هذه الأسئلة والأفعال إلى وصف المدينة والخدمات وطلب الاتجاهات.",
+        "learningFocus": "تقديم المعلومات الشخصية والتمييز بين être وavoir."
       }
     },
     {
@@ -1889,14 +1893,6 @@ window.FRENCH_CURRICULUM = {
           {
             "fr": "près de",
             "ar": "بالقرب من"
-          },
-          {
-            "fr": "à droite",
-            "ar": "إلى اليمين"
-          },
-          {
-            "fr": "tout droit",
-            "ar": "إلى الأمام مباشرة"
           }
         ],
         "order": [
@@ -2063,6 +2059,15 @@ window.FRENCH_CURRICULUM = {
           ]
         ],
         "note": "عند ذكر عنوان، انطق رقم الشارع بوضوح ثم اسم الشارع. كرّر العدد منفرداً ثم داخل العبارة."
+      },
+      "weekNumber": 3,
+      "weekHours": 8,
+      "sessionsPerWeek": 6,
+      "sessionMinutes": 80,
+      "sequence": {
+        "prerequisite": "معرفة être وavoir، وأدوات الاسم، والسؤال والنفي البسيط من الوحدتين الأولى والثانية.",
+        "nextLink": "توظف الوحدة الرابعة وصف الأشخاص والأماكن في الحديث عن الأسرة والهوايات والتفضيلات وأسبابها.",
+        "learningFocus": "المكان والخدمات والسؤال عن الطريق."
       }
     },
     {
@@ -2633,6 +2638,15 @@ window.FRENCH_CURRICULUM = {
           ]
         ],
         "note": "يمكنك القول J’ai deux frères أو J’ai trois loisirs. انطق العدد أولاً ثم الاسم والجملة كاملة."
+      },
+      "weekNumber": 4,
+      "weekHours": 8,
+      "sessionsPerWeek": 6,
+      "sessionMinutes": 80,
+      "sequence": {
+        "prerequisite": "معرفة الاسم وجنسه وأدواته، وتصريف المضارع، وأساسيات السؤال.",
+        "nextLink": "تستند الوحدة الخامسة إلى الأفعال والتفضيلات لتقديم الروتين والوقت والتكرار، ثم تمهّد لسرد الماضي.",
+        "learningFocus": "الأسرة والذوق وربط الرأي بسبب بسيط."
       }
     },
     {
@@ -2867,7 +2881,7 @@ window.FRENCH_CURRICULUM = {
             }
           ],
           "exercise": {
-            "prompt": "Complétez : D’abord, je me lève. Puis, je ___.",
+            "prompt": "Complétez avec « prendre le petit-déjeuner » : D’abord, je me lève. Puis, je ___.",
             "answer": "prends le petit-déjeuner",
             "accepted": [
               "prends le petit-déjeuner"
@@ -3198,6 +3212,15 @@ window.FRENCH_CURRICULUM = {
           ]
         ],
         "note": "قد يقال الوقت بنظام 12 أو 24 ساعة بحسب السياق. ركّز على فهم العدد وكلمة heure(s)، واستخدم زر النطق."
+      },
+      "weekNumber": 5,
+      "weekHours": 8,
+      "sessionsPerWeek": 6,
+      "sessionMinutes": 80,
+      "sequence": {
+        "prerequisite": "إتقان الأفعال الشائعة في المضارع، وأسئلة الوقت، ومفردات الأنشطة والتفضيلات من الوحدة الرابعة.",
+        "nextLink": "تمهّد الوحدة السادسة للحديث عن الدراسة والعمل والكفاءات وسرد تجارب بسيطة في الماضي.",
+        "learningFocus": "الروتين والوقت والأفعال الانعكاسية ومدخل إلى passé composé."
       }
     },
     {
@@ -3743,6 +3766,15 @@ window.FRENCH_CURRICULUM = {
           ]
         ],
         "note": "نقرأ الأعوام كأعداد كاملة. نستخدم premier عادةً مع اليوم الأول من الشهر، وبقية الأعداد مع الأيام الأخرى."
+      },
+      "weekNumber": 6,
+      "weekHours": 8,
+      "sessionsPerWeek": 6,
+      "sessionMinutes": 80,
+      "sequence": {
+        "prerequisite": "الروتين والوقت والأفعال الشائعة من الوحدة الخامسة، مع فهم أولي لتركيب الماضي المركب.",
+        "nextLink": "تستخدم الوحدة السابعة المفردات الوصفية والأسئلة والطلبات المهذبة في التسوق والملابس والطقس.",
+        "learningFocus": "الخبرات والسيرة والتحدث عن أحداث سابقة."
       }
     },
     {
@@ -3977,7 +4009,7 @@ window.FRENCH_CURRICULUM = {
             }
           ],
           "exercise": {
-            "prompt": "Quel est le bon début pour demander le prix ?",
+            "prompt": "Complétez avec « Combien coûte » : ___ cette robe ?",
             "answer": "Combien coûte… ?",
             "accepted": [
               "Combien coûte… ?"
@@ -4292,6 +4324,15 @@ window.FRENCH_CURRICULUM = {
           ]
         ],
         "note": "هذه أمثلة لغوية وليست أسعاراً سوقية. للسؤال عن الثمن قل Combien coûte…?، وللإجابة Il coûte… أو Elle coûte…"
+      },
+      "weekNumber": 7,
+      "weekHours": 8,
+      "sessionsPerWeek": 6,
+      "sessionMinutes": 80,
+      "sequence": {
+        "prerequisite": "معرفة الصفات والأدوات والأسئلة والأعداد والأسعار، مع أساسيات الطلب المهذب والاتجاهات.",
+        "nextLink": "تجمع الوحدة الثامنة الطلب المهذب والكميات والأدوات في المطعم والوصفات والنصيحة، ثم تنقل المتعلم إلى موضوعات A2.",
+        "learningFocus": "الطقس والملابس والتسوق وطلب المساعدة بأدب."
       }
     },
     {
@@ -4335,7 +4376,7 @@ window.FRENCH_CURRICULUM = {
             }
           ],
           "exercise": {
-            "prompt": "Complétez : Je voudrais ___.",
+            "prompt": "Complétez avec « de l’eau » : Je voudrais ___.",
             "answer": "de l’eau",
             "accepted": [
               "de l’eau",
@@ -4527,7 +4568,7 @@ window.FRENCH_CURRICULUM = {
             }
           ],
           "exercise": {
-            "prompt": "Je ___ l’addition, s’il vous plaît.",
+            "prompt": "Complétez avec le conditionnel de vouloir : Je ___ l’addition, s’il vous plaît.",
             "answer": "voudrais",
             "accepted": [
               "voudrais"
@@ -4688,8 +4729,8 @@ window.FRENCH_CURRICULUM = {
             "ar": "ماء"
           },
           {
-            "fr": "l’addition",
-            "ar": "الفاتورة"
+            "fr": "commander",
+            "ar": "يطلب من المطعم"
           }
         ],
         "order": [
@@ -4860,6 +4901,15 @@ window.FRENCH_CURRICULUM = {
           ]
         ],
         "note": "اقرأ العدد مع وحدة القياس: deux cents grammes، un litre d’eau. الكتابة العربية تقريبية؛ استمع إلى الصوت الفرنسي أيضاً."
+      },
+      "weekNumber": 8,
+      "weekHours": 8,
+      "sessionsPerWeek": 6,
+      "sessionMinutes": 80,
+      "sequence": {
+        "prerequisite": "معرفة الأدوات الأساسية والأسئلة والطلبات المهذبة والمفردات اليومية من الوحدات السابقة.",
+        "nextLink": "الجسر إلى A2: طبّق وصف الأماكن والأسئلة وil y a وطلبات الخدمات في أسبوع المنزل والحي، ثم وسّعها إلى التسوق والصحة والسفر.",
+        "learningFocus": "الطعام والكميات والطلب في المطعم والضرورة والخطط القريبة."
       }
     }
   ],
@@ -5020,7 +5070,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب وصفاً لشقتك أو حيّك من 120 كلمة مع خريطة مبسطة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «المنزل والحي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
+            "modelAnswer": "Dans mon quartier, il y a un parc et une pharmacie. Mon immeuble est près d’un arrêt de bus, mais il n’y a pas de bibliothèque.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "مراجعة تأسيس A1: être وavoir، أدوات التعريف، السؤال والنفي، وصف الأشخاص والأماكن، وطلبات الحياة اليومية.",
             "nextStep": "يمهّد للأسبوع التالي: التسوق والاستهلاك؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -5028,7 +5078,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "المرحلة السابقة: A1؛ راجع التراكيب الأساسية ووظائف التواصل اليومية.",
-            "nextLink": "الموضوع التالي: التسوق والاستهلاك — الأسعار والمقارنة والاستبدال والشكوى المهذبة."
+            "nextLink": "الموضوع التالي: التسوق والاستهلاك — الأسعار والمقارنة والاستبدال والشكوى المهذبة.",
+            "weekNumber": 9,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -5181,7 +5234,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "مثّل شراء سلعة والسؤال عن السعر وطلب الاستبدال.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التسوق والاستهلاك». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
+            "modelAnswer": "J’ai acheté cette veste hier, mais elle est trop petite. Est-ce que je peux l’échanger contre une taille plus grande ?",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: المنزل والحي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: الصحة والمواعيد؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -5189,7 +5242,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: المنزل والحي — وصف السكن والمرافق وقراءة إعلانات قصيرة.",
-            "nextLink": "الموضوع التالي: الصحة والمواعيد — الأعراض وحجز موعد وفهم تعليمات بسيطة."
+            "nextLink": "الموضوع التالي: الصحة والمواعيد — الأعراض وحجز موعد وفهم تعليمات بسيطة.",
+            "weekNumber": 10,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -5342,7 +5398,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "سجّل حوار مريض وموظف استقبال ثم لخّص الموعد.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الصحة والمواعيد». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
+            "modelAnswer": "Bonjour, je voudrais prendre rendez-vous avec un médecin. J’ai mal à la gorge depuis deux jours.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: التسوق والاستهلاك، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: المواصلات والاتجاهات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -5350,7 +5406,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: التسوق والاستهلاك — الأسعار والمقارنة والاستبدال والشكوى المهذبة.",
-            "nextLink": "الموضوع التالي: المواصلات والاتجاهات — فهم الجداول والإعلانات وتحديد مسار رحلة."
+            "nextLink": "الموضوع التالي: المواصلات والاتجاهات — فهم الجداول والإعلانات وتحديد مسار رحلة.",
+            "weekNumber": 11,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -5503,7 +5562,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "أنجز مهمة استماع وقراءة عن رحلة واشرح المسار شفهياً.",
             "writingPrompt": "اكتب فقرة مترابطة عن «المواصلات والاتجاهات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
+            "modelAnswer": "Pour aller à la gare, prenez le bus numéro quatre et descendez à l’arrêt République. Ensuite, traversez la rue.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الصحة والمواعيد، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: التخطيط للسفر؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -5511,7 +5570,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الصحة والمواعيد — الأعراض وحجز موعد وفهم تعليمات بسيطة.",
-            "nextLink": "الموضوع التالي: التخطيط للسفر — الحجز والفندق والتذاكر وتواريخ الوصول والمغادرة."
+            "nextLink": "الموضوع التالي: التخطيط للسفر — الحجز والفندق والتذاكر وتواريخ الوصول والمغادرة.",
+            "weekNumber": 12,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -5672,7 +5734,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب رسالة حجز واطلب توضيحاً عن السعر والخدمات.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التخطيط للسفر». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
+            "modelAnswer": "Bonjour, je voudrais réserver une chambre pour deux personnes du 12 au 15 mai. Le petit-déjeuner est-il compris dans le prix ?",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: المواصلات والاتجاهات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: رواية الماضي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -5680,7 +5742,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: المواصلات والاتجاهات — فهم الجداول والإعلانات وتحديد مسار رحلة.",
-            "nextLink": "الموضوع التالي: رواية الماضي — passé composé والروابط الزمنية وتسلسل الأحداث."
+            "nextLink": "الموضوع التالي: رواية الماضي — passé composé والروابط الزمنية وتسلسل الأحداث.",
+            "weekNumber": 13,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -5833,7 +5898,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب سرداً من 120–150 كلمة عن رحلة أو مناسبة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «رواية الماضي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
+            "modelAnswer": "Le mois dernier, je suis allé(e) à Lyon avec des amis. Nous avons visité le centre-ville et nous avons goûté des spécialités locales.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: التخطيط للسفر، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: الدعوات والخطط؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -5841,7 +5906,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: التخطيط للسفر — الحجز والفندق والتذاكر وتواريخ الوصول والمغادرة.",
-            "nextLink": "الموضوع التالي: الدعوات والخطط — قبول الدعوة أو رفضها وfutur proche."
+            "nextLink": "الموضوع التالي: الدعوات والخطط — قبول الدعوة أو رفضها وfutur proche.",
+            "weekNumber": 14,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -5994,7 +6062,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "مثّل مكالمة لترتيب لقاء وتغيير الموعد.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الدعوات والخطط». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
+            "modelAnswer": "Merci pour l’invitation ! Je peux venir samedi, mais je dois repartir à dix-huit heures. Est-ce que nous pouvons nous retrouver devant la gare ?",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: رواية الماضي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: مقارنة التجارب؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -6002,7 +6070,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: رواية الماضي — passé composé والروابط الزمنية وتسلسل الأحداث.",
-            "nextLink": "الموضوع التالي: مقارنة التجارب — التفضيل والمقارنة وفهم إعلان أو مراجعة."
+            "nextLink": "الموضوع التالي: مقارنة التجارب — التفضيل والمقارنة وفهم إعلان أو مراجعة.",
+            "weekNumber": 15,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -6155,7 +6226,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "قدّم عرضاً من دقيقتين عن مدينة أو رحلة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «مقارنة التجارب». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
+            "modelAnswer": "J’ai préféré Lyon à Marseille parce que le centre était plus facile à visiter à pied. En revanche, Marseille offre de très beaux paysages.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الدعوات والخطط، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: الطعام والعادات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -6163,7 +6234,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الدعوات والخطط — قبول الدعوة أو رفضها وfutur proche.",
-            "nextLink": "الموضوع التالي: الطعام والعادات — الطلب والكميات وعادات الطعام وأسباب التفضيل."
+            "nextLink": "الموضوع التالي: الطعام والعادات — الطلب والكميات وعادات الطعام وأسباب التفضيل.",
+            "weekNumber": 16,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -6324,7 +6398,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "أنشئ قائمة طعام أسبوعية وناقش عادة غذائية.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الطعام والعادات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
+            "modelAnswer": "En semaine, je prépare souvent des légumes et je bois beaucoup d’eau. À mon avis, il est important de varier les aliments.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: مقارنة التجارب، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: الدراسة والعمل؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -6332,7 +6406,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: مقارنة التجارب — التفضيل والمقارنة وفهم إعلان أو مراجعة.",
-            "nextLink": "الموضوع التالي: الدراسة والعمل — الخبرات والمهارات والجدول والرسائل المهنية."
+            "nextLink": "الموضوع التالي: الدراسة والعمل — الخبرات والمهارات والجدول والرسائل المهنية.",
+            "weekNumber": 17,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -6485,7 +6562,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب بريداً لطلب معلومة عن دورة أو تدريب.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الدراسة والعمل». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
+            "modelAnswer": "Bonjour, je vous écris pour obtenir des informations sur votre formation de français. Pourriez-vous m’envoyer le programme et les horaires ?",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الطعام والعادات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: الأسرة والعلاقات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -6493,7 +6570,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الطعام والعادات — الطلب والكميات وعادات الطعام وأسباب التفضيل.",
-            "nextLink": "الموضوع التالي: الأسرة والعلاقات — وصف الأشخاص والطلبات والرسائل الرقمية."
+            "nextLink": "الموضوع التالي: الأسرة والعلاقات — وصف الأشخاص والطلبات والرسائل الرقمية.",
+            "weekNumber": 18,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -6646,7 +6726,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب دعوة واضحة تتضمن الموعد والمكان والتفاصيل.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الأسرة والعلاقات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
+            "modelAnswer": "Salut, je t’invite à dîner chez moi samedi à 19 h. Peux-tu me confirmer ta présence avant jeudi ?",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الدراسة والعمل، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: اختبار A2 تشخيصي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -6654,7 +6734,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الدراسة والعمل — الخبرات والمهارات والجدول والرسائل المهنية.",
-            "nextLink": "الموضوع التالي: اختبار A2 تشخيصي — استماع وقراءة وكتابة ومحادثة وتحليل الأخطاء."
+            "nextLink": "الموضوع التالي: اختبار A2 تشخيصي — استماع وقراءة وكتابة ومحادثة وتحليل الأخطاء.",
+            "weekNumber": 19,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -6807,7 +6890,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "سجّل النتائج وحدد ثلاث نقاط للمراجعة قبل B1.",
             "writingPrompt": "اكتب فقرة مترابطة عن «اختبار A2 تشخيصي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien.",
+            "modelAnswer": "J’ai réussi la lecture, mais je dois améliorer la compréhension orale. La semaine prochaine, je vais écouter un document court chaque jour.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الأسرة والعلاقات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "تمهيد للانتقال إلى B1: استخدام أزمنة الماضي لربط التجارب، ثم بناء رأي معلّل.",
@@ -6815,7 +6898,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الأسرة والعلاقات — وصف الأشخاص والطلبات والرسائل الرقمية.",
-            "nextLink": "الموضوع التالي: قصص وتجارب — ترتيب الأحداث ووصف المكان والظروف."
+            "nextLink": "الموضوع التالي: قصص وتجارب — ترتيب الأحداث ووصف المكان والظروف.",
+            "weekNumber": 20,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -6976,7 +7062,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "احكِ قصة من ثلاث دقائق واكتب ملخصاً.",
             "writingPrompt": "اكتب فقرة مترابطة عن «قصص وتجارب». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Quand j’étais enfant, je passais l’été chez mes grands-parents. Un jour, nous avons trouvé un petit chien devant la maison.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "نقطة تحقق A2: التواصل في المواقف اليومية، سرد تجربة قصيرة، استخدام passé composé وfutur proche، وطلب المعلومات.",
             "nextStep": "يمهّد للأسبوع التالي: imparfait أم passé composé؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -6984,7 +7070,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: اختبار A2 تشخيصي — استماع وقراءة وكتابة ومحادثة وتحليل الأخطاء.",
-            "nextLink": "الموضوع التالي: imparfait أم passé composé — الوصف والخلفية مقابل الحدث المكتمل."
+            "nextLink": "الموضوع التالي: imparfait أم passé composé — الوصف والخلفية مقابل الحدث المكتمل.",
+            "weekNumber": 21,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -7137,7 +7226,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب قصة تجمع الوصف والأحداث.",
             "writingPrompt": "اكتب فقرة مترابطة عن «imparfait أم passé composé». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Il pleuvait depuis le matin lorsque le train est finalement arrivé. Les voyageurs attendaient sur le quai et certains téléphonaient.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: قصص وتجارب، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: السيرة والذكريات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -7145,7 +7234,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: قصص وتجارب — ترتيب الأحداث ووصف المكان والظروف.",
-            "nextLink": "الموضوع التالي: السيرة والذكريات — مراحل الحياة والأحداث المهمة والماضي والحاضر."
+            "nextLink": "الموضوع التالي: السيرة والذكريات — مراحل الحياة والأحداث المهمة والماضي والحاضر.",
+            "weekNumber": 22,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -7298,7 +7390,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب سيرة لشخصية من 180 كلمة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «السيرة والذكريات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Marie Curie est née en Pologne en 1867. Elle a poursuivi ses études à Paris et elle a consacré sa vie à la recherche scientifique.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: imparfait أم passé composé، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: رواية حدث مع رأي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -7306,7 +7398,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: imparfait أم passé composé — الوصف والخلفية مقابل الحدث المكتمل.",
-            "nextLink": "الموضوع التالي: رواية حدث مع رأي — الانطباعات وتفسير ما تعلمته من التجربة."
+            "nextLink": "الموضوع التالي: رواية حدث مع رأي — الانطباعات وتفسير ما تعلمته من التجربة.",
+            "weekNumber": 23,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -7459,7 +7554,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "سجّل قصة ثم أجب عن خمسة أسئلة متابعة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «رواية حدث مع رأي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "L’année dernière, j’ai participé à un projet collectif. Cette expérience m’a appris à mieux répartir le travail et à écouter les autres.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: السيرة والذكريات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: خبر ومقال؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -7467,7 +7562,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: السيرة والذكريات — مراحل الحياة والأحداث المهمة والماضي والحاضر.",
-            "nextLink": "الموضوع التالي: خبر ومقال — الفكرة الرئيسية والتفاصيل والرأي الإعلامي."
+            "nextLink": "الموضوع التالي: خبر ومقال — الفكرة الرئيسية والتفاصيل والرأي الإعلامي.",
+            "weekNumber": 24,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -7628,7 +7726,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "لخّص مقالاً قصيراً في 100–130 كلمة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «خبر ومقال». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "La mairie a annoncé un nouveau plan de transport. Selon l’article, le projet vise à réduire la circulation et à améliorer les trajets quotidiens.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: رواية حدث مع رأي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: الموافقة والاعتراض؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -7636,7 +7734,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: رواية حدث مع رأي — الانطباعات وتفسير ما تعلمته من التجربة.",
-            "nextLink": "الموضوع التالي: الموافقة والاعتراض — pourtant/cependant/en revanche والحجج والأمثلة."
+            "nextLink": "الموضوع التالي: الموافقة والاعتراض — pourtant/cependant/en revanche والحجج والأمثلة.",
+            "weekNumber": 25,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -7789,7 +7890,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "سجّل نقاشاً لثلاث دقائق عن إيجابيات وسلبيات.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الموافقة والاعتراض». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Je comprends l’idée selon laquelle les voitures sont pratiques. Cependant, en centre-ville, les transports publics peuvent être plus rapides et moins polluants.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: خبر ومقال، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: السبب والنتيجة والشرط؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -7797,7 +7898,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: خبر ومقال — الفكرة الرئيسية والتفاصيل والرأي الإعلامي.",
-            "nextLink": "الموضوع التالي: السبب والنتيجة والشرط — parce que/puisque/donc/par conséquent/si."
+            "nextLink": "الموضوع التالي: السبب والنتيجة والشرط — parce que/puisque/donc/par conséquent/si.",
+            "weekNumber": 26,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -7950,7 +8054,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب فقرة تعرض مشكلة وأسبابها وحلولها.",
             "writingPrompt": "اكتب فقرة مترابطة عن «السبب والنتيجة والشرط». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Les transports sont limités le soir, donc beaucoup d’habitants prennent leur voiture. Si la ville ajoutait quelques bus, elle réduirait les embouteillages.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الموافقة والاعتراض، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: عرض رأي منظم؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -7958,7 +8062,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الموافقة والاعتراض — pourtant/cependant/en revanche والحجج والأمثلة.",
-            "nextLink": "الموضوع التالي: عرض رأي منظم — مقدمة وحجتان ومثال وخاتمة."
+            "nextLink": "الموضوع التالي: عرض رأي منظم — مقدمة وحجتان ومثال وخاتمة.",
+            "weekNumber": 27,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -8111,7 +8218,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "قدّم عرضاً لأربع دقائق وأجب عن أسئلة المستمع.",
             "writingPrompt": "اكتب فقرة مترابطة عن «عرض رأي منظم». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "À mon avis, les bibliothèques devraient rester ouvertes plus longtemps. Elles offrent un lieu de travail calme et donnent accès à des ressources gratuites.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: السبب والنتيجة والشرط، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: السيرة الذاتية وإعلان وظيفة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -8119,7 +8226,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: السبب والنتيجة والشرط — parce que/puisque/donc/par conséquent/si.",
-            "nextLink": "الموضوع التالي: السيرة الذاتية وإعلان وظيفة — استخراج المتطلبات ووصف الخبرة والمهارات."
+            "nextLink": "الموضوع التالي: السيرة الذاتية وإعلان وظيفة — استخراج المتطلبات ووصف الخبرة والمهارات.",
+            "weekNumber": 28,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -8280,7 +8390,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب رسالة ترشح مختصرة لوظيفة مناسبة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «السيرة الذاتية وإعلان وظيفة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Madame, Monsieur, je vous adresse ma candidature au poste proposé. Mon expérience en gestion de projets et ma capacité à travailler en équipe correspondent aux besoins annoncés.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: عرض رأي منظم، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: المقابلة المهنية؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -8288,7 +8398,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: عرض رأي منظم — مقدمة وحجتان ومثال وخاتمة.",
-            "nextLink": "الموضوع التالي: المقابلة المهنية — الخبرة والأهداف وأسئلة المتابعة."
+            "nextLink": "الموضوع التالي: المقابلة المهنية — الخبرة والأهداف وأسئلة المتابعة.",
+            "weekNumber": 29,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -8441,7 +8554,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "سجّل مقابلة تجريبية لأربع دقائق.",
             "writingPrompt": "اكتب فقرة مترابطة عن «المقابلة المهنية». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Dans mon poste actuel, je coordonne plusieurs activités et je travaille avec des équipes différentes. Je souhaite développer mes compétences et contribuer à des projets plus ambitieux.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: السيرة الذاتية وإعلان وظيفة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: الرسائل الرسمية؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -8449,7 +8562,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: السيرة الذاتية وإعلان وظيفة — استخراج المتطلبات ووصف الخبرة والمهارات.",
-            "nextLink": "الموضوع التالي: الرسائل الرسمية — طلب معلومة وشكوى مهذبة وبريد منظم."
+            "nextLink": "الموضوع التالي: الرسائل الرسمية — طلب معلومة وشكوى مهذبة وبريد منظم.",
+            "weekNumber": 30,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -8602,7 +8718,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب بريداً رسمياً وراجعه من حيث النبرة والوضوح.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الرسائل الرسمية». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Madame, Monsieur, je vous contacte au sujet de ma demande du 12 juin. Pourriez-vous m’indiquer où en est le dossier ? Je vous remercie par avance.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: المقابلة المهنية، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: عرض خبرة أو مشروع؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -8610,7 +8726,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: المقابلة المهنية — الخبرة والأهداف وأسئلة المتابعة.",
-            "nextLink": "الموضوع التالي: عرض خبرة أو مشروع — تسلسل عملي ونتائج وتحديات وتعلم."
+            "nextLink": "الموضوع التالي: عرض خبرة أو مشروع — تسلسل عملي ونتائج وتحديات وتعلم.",
+            "weekNumber": 31,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -8763,7 +8882,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "قدّم مشروعاً أو تجربة عمل في 4–5 دقائق.",
             "writingPrompt": "اكتب فقرة مترابطة عن «عرض خبرة أو مشروع». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Notre projet vise à réduire le gaspillage alimentaire dans les établissements scolaires. Nous avons testé un système de suivi et les premiers résultats sont encourageants.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الرسائل الرسمية، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: الصحة والرفاه؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -8771,7 +8890,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الرسائل الرسمية — طلب معلومة وشكوى مهذبة وبريد منظم.",
-            "nextLink": "الموضوع التالي: الصحة والرفاه — العادات والنصيحة والمقارنة بين الخيارات."
+            "nextLink": "الموضوع التالي: الصحة والرفاه — العادات والنصيحة والمقارنة بين الخيارات.",
+            "weekNumber": 32,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -8932,7 +9054,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اشرح خطة لتحسين عادة صحية أو تنظيم الوقت.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الصحة والرفاه». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Pour améliorer mon bien-être, j’essaie de marcher trente minutes par jour et de dormir régulièrement. Cette organisation m’aide à mieux gérer le stress.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: عرض خبرة أو مشروع، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: المدينة والبيئة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -8940,7 +9062,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: عرض خبرة أو مشروع — تسلسل عملي ونتائج وتحديات وتعلم.",
-            "nextLink": "الموضوع التالي: المدينة والبيئة — النقل والنفايات والطاقة والمساحات العامة."
+            "nextLink": "الموضوع التالي: المدينة والبيئة — النقل والنفايات والطاقة والمساحات العامة.",
+            "weekNumber": 33,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -9093,7 +9218,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب مقترحاً لحل مشكلة في الحي.",
             "writingPrompt": "اكتب فقرة مترابطة عن «المدينة والبيئة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Dans notre quartier, les déchets s’accumulent près de l’arrêt de bus. Je propose d’installer des poubelles supplémentaires et d’organiser une campagne de sensibilisation.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الصحة والرفاه، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: التكنولوجيا والمجتمع؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -9101,7 +9226,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الصحة والرفاه — العادات والنصيحة والمقارنة بين الخيارات.",
-            "nextLink": "الموضوع التالي: التكنولوجيا والمجتمع — فوائد وعيوب والتواصل والخصوصية."
+            "nextLink": "الموضوع التالي: التكنولوجيا والمجتمع — فوائد وعيوب والتواصل والخصوصية.",
+            "weekNumber": 34,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -9254,7 +9382,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "ناقش التكنولوجيا بحجتين لكل جانب.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التكنولوجيا والمجتمع». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Les outils numériques facilitent l’accès à l’information, mais ils peuvent aussi distraire les élèves. Il faut donc apprendre à les utiliser de manière réfléchie.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: المدينة والبيئة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: شكوى أو مقترح؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -9262,7 +9390,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: المدينة والبيئة — النقل والنفايات والطاقة والمساحات العامة.",
-            "nextLink": "الموضوع التالي: شكوى أو مقترح — رسالة إلى جهة مسؤولة مع أسباب وطلب واضح."
+            "nextLink": "الموضوع التالي: شكوى أو مقترح — رسالة إلى جهة مسؤولة مع أسباب وطلب واضح.",
+            "weekNumber": 35,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -9415,7 +9546,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب رسالة B1 تقترح حلاً عملياً.",
             "writingPrompt": "اكتب فقرة مترابطة عن «شكوى أو مقترح». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Je vous écris pour signaler le manque d’éclairage dans notre rue. L’installation de deux lampadaires améliorerait la sécurité des piétons.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: التكنولوجيا والمجتمع، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: السينما والكتب؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -9423,7 +9554,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: التكنولوجيا والمجتمع — فوائد وعيوب والتواصل والخصوصية.",
-            "nextLink": "الموضوع التالي: السينما والكتب — تلخيص قصة أو فيلم وشرح سبب التوصية به."
+            "nextLink": "الموضوع التالي: السينما والكتب — تلخيص قصة أو فيلم وشرح سبب التوصية به.",
+            "weekNumber": 36,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -9584,7 +9718,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب مراجعة قصيرة وقدّمها شفهياً.",
             "writingPrompt": "اكتب فقرة مترابطة عن «السينما والكتب». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Le film aborde la question de la solidarité avec sensibilité. Malgré un rythme parfois lent, les personnages sont convaincants et la fin invite à réfléchir.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: شكوى أو مقترح، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: السفر والتجارب المحلية؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -9592,7 +9726,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: شكوى أو مقترح — رسالة إلى جهة مسؤولة مع أسباب وطلب واضح.",
-            "nextLink": "الموضوع التالي: السفر والتجارب المحلية — التوصية بمكان وسرد زيارة وفهم الإعلانات."
+            "nextLink": "الموضوع التالي: السفر والتجارب المحلية — التوصية بمكان وسرد زيارة وفهم الإعلانات.",
+            "weekNumber": 37,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -9745,7 +9882,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "أنشئ برنامج زيارة ليوم واحد.",
             "writingPrompt": "اكتب فقرة مترابطة عن «السفر والتجارب المحلية». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Le matin, nous visiterons le musée du centre-ville. Après le déjeuner, nous découvrirons le quartier historique, puis nous terminerons la journée au bord du fleuve.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: السينما والكتب، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: تلخيص مصادر؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -9753,7 +9890,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: السينما والكتب — تلخيص قصة أو فيلم وشرح سبب التوصية به.",
-            "nextLink": "الموضوع التالي: تلخيص مصادر — التقاط الأفكار المشتركة والاختلافات بين نصين."
+            "nextLink": "الموضوع التالي: تلخيص مصادر — التقاط الأفكار المشتركة والاختلافات بين نصين.",
+            "weekNumber": 38,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -9906,7 +10046,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب ملخصاً يقارن مصدرين.",
             "writingPrompt": "اكتب فقرة مترابطة عن «تلخيص مصادر». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Les deux articles soulignent l’importance des transports publics. Toutefois, le premier insiste sur le coût, tandis que le second met l’accent sur les bénéfices environnementaux.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: السفر والتجارب المحلية، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: اختبار B1 تشخيصي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -9914,7 +10054,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: السفر والتجارب المحلية — التوصية بمكان وسرد زيارة وفهم الإعلانات.",
-            "nextLink": "الموضوع التالي: اختبار B1 تشخيصي — المهارات الأربع مع مقياس للطلاقة والدقة."
+            "nextLink": "الموضوع التالي: اختبار B1 تشخيصي — المهارات الأربع مع مقياس للطلاقة والدقة.",
+            "weekNumber": 39,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -10067,7 +10210,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "حلّل الأخطاء؛ أعد أسبوع مراجعة عند الحاجة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «اختبار B1 تشخيصي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites.",
+            "modelAnswer": "Mes résultats montrent que je comprends bien les textes, mais que je dois mieux organiser mes productions écrites. Je vais planifier mes réponses avant de commencer à rédiger.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: تلخيص مصادر، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "تمهيد للانتقال إلى B2: تحويل الرأي المنظم إلى حجة مدعومة بأمثلة واعتراض ورد.",
@@ -10075,7 +10218,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: تلخيص مصادر — التقاط الأفكار المشتركة والاختلافات بين نصين.",
-            "nextLink": "الموضوع التالي: مقال تحليلي — تمييز الفكرة والفرضية والحجة والدليل."
+            "nextLink": "الموضوع التالي: مقال تحليلي — تمييز الفكرة والفرضية والحجة والدليل.",
+            "weekNumber": 40,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -10236,7 +10382,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "لخّص مقالاً وحدد موقف الكاتب وأدلته.",
             "writingPrompt": "اكتب فقرة مترابطة عن «مقال تحليلي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "L’article soutient que la formation continue améliore l’accès à l’emploi. Il s’appuie sur des témoignages et des données, mais il faudrait comparer ces chiffres avec d’autres sources.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "نقطة تحقق B1: سرد التجارب، فهم مقال مألوف، عرض رأي منظم، وكتابة رسالة عملية.",
             "nextStep": "يمهّد للأسبوع التالي: بنية المقال الحجاجي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -10244,7 +10390,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: اختبار B1 تشخيصي — المهارات الأربع مع مقياس للطلاقة والدقة.",
-            "nextLink": "الموضوع التالي: بنية المقال الحجاجي — مقدمة وأطروحة وحجج واعتراض وخاتمة."
+            "nextLink": "الموضوع التالي: بنية المقال الحجاجي — مقدمة وأطروحة وحجج واعتراض وخاتمة.",
+            "weekNumber": 41,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -10397,7 +10546,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "خطط واكتب مسودة مقال منظم.",
             "writingPrompt": "اكتب فقرة مترابطة عن «بنية المقال الحجاجي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "La question mérite d’être examinée sous plusieurs angles. Dans un premier temps, je présenterai les avantages, puis les limites, avant de proposer une solution équilibrée.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: مقال تحليلي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: الأدلة والأمثلة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -10405,7 +10554,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: مقال تحليلي — تمييز الفكرة والفرضية والحجة والدليل.",
-            "nextLink": "الموضوع التالي: الأدلة والأمثلة — الأرقام والمقارنة والأمثلة وتفسير النتائج."
+            "nextLink": "الموضوع التالي: الأدلة والأمثلة — الأرقام والمقارنة والأمثلة وتفسير النتائج.",
+            "weekNumber": 42,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -10558,7 +10710,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "راجع علاقة كل دليل بالفكرة الرئيسية.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الأدلة والأمثلة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "L’exemple d’une ville ayant développé son réseau cyclable montre qu’une politique cohérente peut modifier les habitudes. Cependant, les résultats dépendent aussi de la sécurité et de la qualité des infrastructures.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: بنية المقال الحجاجي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: قياس B2 أولي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -10566,7 +10718,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: بنية المقال الحجاجي — مقدمة وأطروحة وحجج واعتراض وخاتمة.",
-            "nextLink": "الموضوع التالي: قياس B2 أولي — استماع مطول وقراءة تحليلية وكتابة وعرض شفوي."
+            "nextLink": "الموضوع التالي: قياس B2 أولي — استماع مطول وقراءة تحليلية وكتابة وعرض شفوي.",
+            "weekNumber": 43,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -10719,7 +10874,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "أنجز عينة من المهارات الأربع وحدد أضعف اثنتين.",
             "writingPrompt": "اكتب فقرة مترابطة عن «قياس B2 أولي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Le diagnostic révèle une bonne compréhension générale, mais une faiblesse dans l’organisation des arguments. La priorité sera de structurer chaque réponse autour d’une idée, d’une preuve et d’une conclusion.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الأدلة والأمثلة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: المزايا والعيوب؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -10727,7 +10882,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الأدلة والأمثلة — الأرقام والمقارنة والأمثلة وتفسير النتائج.",
-            "nextLink": "الموضوع التالي: المزايا والعيوب — d’une part/d’autre part/certes/toutefois."
+            "nextLink": "الموضوع التالي: المزايا والعيوب — d’une part/d’autre part/certes/toutefois.",
+            "weekNumber": 44,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -10888,7 +11046,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب مناظرة بحجتين لكل جانب.",
             "writingPrompt": "اكتب فقرة مترابطة عن «المزايا والعيوب». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Le télétravail réduit certains déplacements et offre plus de souplesse. En revanche, il peut isoler les salariés et compliquer la coopération si l’organisation est insuffisante.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: قياس B2 أولي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: الرأي المتحفظ؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -10896,7 +11054,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: قياس B2 أولي — استماع مطول وقراءة تحليلية وكتابة وعرض شفوي.",
-            "nextLink": "الموضوع التالي: الرأي المتحفظ — il semble que/à mon sens والاحتمال."
+            "nextLink": "الموضوع التالي: الرأي المتحفظ — il semble que/à mon sens والاحتمال.",
+            "weekNumber": 45,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -11049,7 +11210,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "أعد صياغة رأي مباشر بثلاث درجات تحفظ.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الرأي المتحفظ». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Il me semble que cette mesure pourrait être utile dans certaines conditions. Son efficacité dépendrait notamment des moyens disponibles et de la manière dont elle serait appliquée.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: المزايا والعيوب، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: التفاعل في النقاش؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -11057,7 +11218,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: المزايا والعيوب — d’une part/d’autre part/certes/toutefois.",
-            "nextLink": "الموضوع التالي: التفاعل في النقاش — سؤال متابعة واعتراض مهذب وطلب توضيح."
+            "nextLink": "الموضوع التالي: التفاعل في النقاش — سؤال متابعة واعتراض مهذب وطلب توضيح.",
+            "weekNumber": 46,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -11210,7 +11374,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "شارك في نقاش لست دقائق وسجّل العبارات المتكررة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التفاعل في النقاش». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Je comprends votre inquiétude concernant le coût. Néanmoins, si nous comparons les dépenses à long terme, cette solution pourrait éviter des problèmes plus importants.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الرأي المتحفظ، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: عرض شفوي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -11218,7 +11382,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الرأي المتحفظ — il semble que/à mon sens والاحتمال.",
-            "nextLink": "الموضوع التالي: عرض شفوي — مقدمة ومحاور وأمثلة وانتقالات وخاتمة."
+            "nextLink": "الموضوع التالي: عرض شفوي — مقدمة ومحاور وأمثلة وانتقالات وخاتمة.",
+            "weekNumber": 47,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -11371,7 +11538,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "قدّم عرضاً من 6–8 دقائق ثم أجب عن أسئلة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «عرض شفوي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Aujourd’hui, je voudrais examiner les avantages et les limites du télétravail. Je présenterai d’abord ses effets sur l’organisation, puis son impact sur les équipes, avant de répondre à quelques questions.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: التفاعل في النقاش، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: التعليم والعمل؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -11379,7 +11546,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: التفاعل في النقاش — سؤال متابعة واعتراض مهذب وطلب توضيح.",
-            "nextLink": "الموضوع التالي: التعليم والعمل — فرص متكافئة والتدريب وتغير المهن."
+            "nextLink": "الموضوع التالي: التعليم والعمل — فرص متكافئة والتدريب وتغير المهن.",
+            "weekNumber": 48,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -11540,7 +11710,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "ناقش قضية تعليمية بحجة وحجة مضادة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التعليم والعمل». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "L’université doit transmettre des connaissances, mais aussi préparer les étudiants à résoudre des problèmes réels. Pour y parvenir, elle devrait renforcer les stages et les projets menés avec les entreprises.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: عرض شفوي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: السكن والمدن والتنقل؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -11548,7 +11718,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: عرض شفوي — مقدمة ومحاور وأمثلة وانتقالات وخاتمة.",
-            "nextLink": "الموضوع التالي: السكن والمدن والتنقل — الخدمات والحلول المحلية ومزاياها وعيوبها."
+            "nextLink": "الموضوع التالي: السكن والمدن والتنقل — الخدمات والحلول المحلية ومزاياها وعيوبها.",
+            "weekNumber": 49,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -11701,7 +11874,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "قارن حلين لمشكلة حضرية في تقرير.",
             "writingPrompt": "اكتب فقرة مترابطة عن «السكن والمدن والتنقل». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "La première solution développe les transports en commun, tandis que la seconde favorise les pistes cyclables. Une combinaison des deux semble plus durable, à condition de garantir la sécurité et l’accessibilité.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: التعليم والعمل، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: المواطنة والخدمات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -11709,7 +11882,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: التعليم والعمل — فرص متكافئة والتدريب وتغير المهن.",
-            "nextLink": "الموضوع التالي: المواطنة والخدمات — الإجراءات والشكوى الرسمية وتفسير القواعد."
+            "nextLink": "الموضوع التالي: المواطنة والخدمات — الإجراءات والشكوى الرسمية وتفسير القواعد.",
+            "weekNumber": 50,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -11862,7 +12038,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب رسالة رسمية مسنودة بأسباب واضحة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «المواطنة والخدمات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Je sollicite une révision de la décision concernant mon dossier. Les documents joints montrent que j’ai transmis les pièces demandées dans les délais. Je vous remercie de bien vouloir réexaminer la situation.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: السكن والمدن والتنقل، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: التلخيص والتركيب؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -11870,7 +12046,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: السكن والمدن والتنقل — الخدمات والحلول المحلية ومزاياها وعيوبها.",
-            "nextLink": "الموضوع التالي: التلخيص والتركيب — جمع معلومات من مصدرين دون نسخهما."
+            "nextLink": "الموضوع التالي: التلخيص والتركيب — جمع معلومات من مصدرين دون نسخهما.",
+            "weekNumber": 51,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -12023,7 +12202,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب تركيباً يحدد الاتفاق والاختلاف.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التلخيص والتركيب». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Les deux sources s’accordent sur la nécessité d’améliorer l’accès à la formation. Toutefois, la première privilégie le financement public, alors que la seconde insiste sur les partenariats locaux.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: المواطنة والخدمات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: قراءة صحفية؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -12031,7 +12210,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: المواطنة والخدمات — الإجراءات والشكوى الرسمية وتفسير القواعد.",
-            "nextLink": "الموضوع التالي: قراءة صحفية — العنوان والمصدر والنبرة والحقائق والآراء."
+            "nextLink": "الموضوع التالي: قراءة صحفية — العنوان والمصدر والنبرة والحقائق والآراء.",
+            "weekNumber": 52,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -12192,7 +12374,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "قارن تغطيتين لخبر واحد.",
             "writingPrompt": "اكتب فقرة مترابطة عن «قراءة صحفية». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Le premier média présente la mesure comme une réponse urgente, tandis que le second insiste sur son coût. Pour se faire une opinion, il faut distinguer les faits rapportés des commentaires.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: التلخيص والتركيب، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: التحقق من المعلومات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -12200,7 +12382,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: التلخيص والتركيب — جمع معلومات من مصدرين دون نسخهما.",
-            "nextLink": "الموضوع التالي: التحقق من المعلومات — الادعاء والدليل والتعميم والمبالغة."
+            "nextLink": "الموضوع التالي: التحقق من المعلومات — الادعاء والدليل والتعميم والمبالغة.",
+            "weekNumber": 53,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -12353,7 +12538,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "قدّم تحليلاً يقيّم موثوقية نص.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التحقق من المعلومات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Avant de partager cette information, il convient de vérifier la date, l’auteur et la source originale. Les chiffres cités doivent être comparés à des données indépendantes.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: قراءة صحفية، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: نقل الكلام والتلخيص؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -12361,7 +12546,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: قراءة صحفية — العنوان والمصدر والنبرة والحقائق والآراء.",
-            "nextLink": "الموضوع التالي: نقل الكلام والتلخيص — إعادة الصياغة ونقل رأي دون نسخه."
+            "nextLink": "الموضوع التالي: نقل الكلام والتلخيص — إعادة الصياغة ونقل رأي دون نسخه.",
+            "weekNumber": 54,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -12514,7 +12702,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "استمع إلى تقرير وأعد عرضه في دقيقتين.",
             "writingPrompt": "اكتب فقرة مترابطة عن «نقل الكلام والتلخيص». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Le journaliste explique que la réforme entrera en vigueur l’année prochaine. Il précise que les établissements auront plusieurs mois pour adapter leurs procédures.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: التحقق من المعلومات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: تركيب مصدرين؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -12522,7 +12710,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: التحقق من المعلومات — الادعاء والدليل والتعميم والمبالغة.",
-            "nextLink": "الموضوع التالي: تركيب مصدرين — ربط أفكار متعارضة واستنتاج مشترك."
+            "nextLink": "الموضوع التالي: تركيب مصدرين — ربط أفكار متعارضة واستنتاج مشترك.",
+            "weekNumber": 55,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -12675,7 +12866,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب ملخصاً مقارناً مع استنتاجك.",
             "writingPrompt": "اكتب فقرة مترابطة عن «تركيب مصدرين». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Les deux rapports observent une hausse des coûts, mais ils expliquent cette évolution différemment. Le premier insiste sur l’énergie, tandis que le second souligne les difficultés d’approvisionnement.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: نقل الكلام والتلخيص، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: البيئة والمناخ؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -12683,7 +12874,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: نقل الكلام والتلخيص — إعادة الصياغة ونقل رأي دون نسخه.",
-            "nextLink": "الموضوع التالي: البيئة والمناخ — الأسباب والنتائج والسياسات والحلول."
+            "nextLink": "الموضوع التالي: البيئة والمناخ — الأسباب والنتائج والسياسات والحلول.",
+            "weekNumber": 56,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -12844,7 +13038,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب مقالاً عن حل بيئي بحجتين واعتراض ورد.",
             "writingPrompt": "اكتب فقرة مترابطة عن «البيئة والمناخ». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "La réduction des déchets exige à la fois la prévention et le recyclage. Même si ces mesures demandent des investissements, elles peuvent limiter les coûts environnementaux à long terme.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: تركيب مصدرين، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: العلوم والتكنولوجيا؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -12852,7 +13046,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: تركيب مصدرين — ربط أفكار متعارضة واستنتاج مشترك.",
-            "nextLink": "الموضوع التالي: العلوم والتكنولوجيا — الفوائد والمخاطر والأثر الاجتماعي."
+            "nextLink": "الموضوع التالي: العلوم والتكنولوجيا — الفوائد والمخاطر والأثر الاجتماعي.",
+            "weekNumber": 57,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -13005,7 +13202,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اشرح فكرة علمية مألوفة لجمهور غير متخصص.",
             "writingPrompt": "اكتب فقرة مترابطة عن «العلوم والتكنولوجيا». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Le stockage de l’énergie permet de conserver l’électricité produite à un moment donné pour l’utiliser plus tard. Cette technologie est utile, mais son efficacité dépend du coût, de la capacité et des matériaux employés.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: البيئة والمناخ، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: الحلول العامة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -13013,7 +13210,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: البيئة والمناخ — الأسباب والنتائج والسياسات والحلول.",
-            "nextLink": "الموضوع التالي: الحلول العامة — المشكلة والجهات المعنية والتكلفة والفائدة."
+            "nextLink": "الموضوع التالي: الحلول العامة — المشكلة والجهات المعنية والتكلفة والفائدة.",
+            "weekNumber": 58,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -13166,7 +13366,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "أنشئ عرضاً يوصي بحل ويبرر اختياره.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الحلول العامة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Je recommande de développer les transports publics, car cette mesure peut réduire les embouteillages et la pollution. Pour réussir, elle doit s’accompagner d’horaires fiables et de tarifs accessibles.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: العلوم والتكنولوجيا، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: نقاش مركب؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -13174,7 +13374,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: العلوم والتكنولوجيا — الفوائد والمخاطر والأثر الاجتماعي.",
-            "nextLink": "الموضوع التالي: نقاش مركب — موازنة الأدلة والقيم والقيود العملية."
+            "nextLink": "الموضوع التالي: نقاش مركب — موازنة الأدلة والقيم والقيود العملية.",
+            "weekNumber": 59,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -13327,7 +13530,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "شارك في مناظرة واكتب خلاصة الحجج.",
             "writingPrompt": "اكتب فقرة مترابطة عن «نقاش مركب». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Certains estiment que la croissance économique doit rester prioritaire, tandis que d’autres mettent en avant la protection de l’environnement. Une politique durable devrait chercher à concilier ces objectifs plutôt que les opposer.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الحلول العامة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: التقرير والتحليل؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -13335,7 +13538,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الحلول العامة — المشكلة والجهات المعنية والتكلفة والفائدة.",
-            "nextLink": "الموضوع التالي: التقرير والتحليل — هيكلة تقرير وتحديد الجمهور والغرض."
+            "nextLink": "الموضوع التالي: التقرير والتحليل — هيكلة تقرير وتحديد الجمهور والغرض.",
+            "weekNumber": 60,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -13496,7 +13702,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب تقريراً بعناوين ومحاور وخلاصة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التقرير والتحليل». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Ce rapport présente d’abord la situation actuelle, puis les principales difficultés et enfin plusieurs propositions. Les données disponibles montrent que l’amélioration dépendra surtout de la coordination entre les acteurs.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: نقاش مركب، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: تركيب معلومات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -13504,7 +13710,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: نقاش مركب — موازنة الأدلة والقيم والقيود العملية.",
-            "nextLink": "الموضوع التالي: تركيب معلومات — ملاحظات أثناء الاستماع ومقارنة مصادر."
+            "nextLink": "الموضوع التالي: تركيب معلومات — ملاحظات أثناء الاستماع ومقارنة مصادر.",
+            "weekNumber": 61,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -13657,7 +13866,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اجمع خمس أفكار من مصدرين واكتب تركيباً.",
             "writingPrompt": "اكتب فقرة مترابطة عن «تركيب معلومات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "La première source identifie le manque de financement, tandis que la seconde souligne le besoin de formation. Ensemble, elles indiquent que le projet doit associer ressources financières et accompagnement technique.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: التقرير والتحليل، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: العرض والدفاع؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -13665,7 +13874,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: التقرير والتحليل — هيكلة تقرير وتحديد الجمهور والغرض.",
-            "nextLink": "الموضوع التالي: العرض والدفاع — عرض مطول والجواب عن الاعتراضات والأسئلة."
+            "nextLink": "الموضوع التالي: العرض والدفاع — عرض مطول والجواب عن الاعتراضات والأسئلة.",
+            "weekNumber": 62,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -13818,7 +14030,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "قدّم عرضاً من ثماني دقائق ثم أجب عن أسئلة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «العرض والدفاع». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Notre proposition repose sur trois mesures : améliorer l’information, renforcer l’accompagnement et évaluer les résultats. Les indicateurs permettront de corriger les actions si les effets attendus ne se produisent pas.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: تركيب معلومات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: اختبار B2 تشخيصي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -13826,7 +14038,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: تركيب معلومات — ملاحظات أثناء الاستماع ومقارنة مصادر.",
-            "nextLink": "الموضوع التالي: اختبار B2 تشخيصي — عينة زمنية من المهارات الأربع وفق DELF B2."
+            "nextLink": "الموضوع التالي: اختبار B2 تشخيصي — عينة زمنية من المهارات الأربع وفق DELF B2.",
+            "weekNumber": 63,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -13979,7 +14194,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "راجع النواقص قبل التدريب المكثف.",
             "writingPrompt": "اكتب فقرة مترابطة عن «اختبار B2 تشخيصي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Je réussis mieux la compréhension orale que la production écrite. Avant l’examen, je vais donc m’entraîner à organiser les idées, à formuler une thèse et à relire mes textes.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: العرض والدفاع، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "تمهيد لمرحلة DELF B2: نقل المهارات إلى مهام امتحانية مقيدة بالوقت ومعايير التقييم.",
@@ -13987,7 +14202,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: العرض والدفاع — عرض مطول والجواب عن الاعتراضات والأسئلة.",
-            "nextLink": "الموضوع التالي: الاستماع: الفكرة والبنية — استماع للفكرة العامة ثم التفاصيل والدليل."
+            "nextLink": "الموضوع التالي: الاستماع: الفكرة والبنية — استماع للفكرة العامة ثم التفاصيل والدليل.",
+            "weekNumber": 64,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -14148,7 +14366,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "حل اختبار استماع وسجّل نوع كل خطأ.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الاستماع: الفكرة والبنية». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Lors de la première écoute, j’identifie le sujet et les intervenants. À la deuxième écoute, je note les arguments, les exemples et les liens logiques sans essayer de transcrire chaque mot.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "نقطة تحقق B2: فهم الحجج الأساسية، تنظيم مقال، الدفاع عن رأي، وربط الأفكار بأمثلة.",
             "nextStep": "يمهّد للأسبوع التالي: الاستماع: رأي وحجة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -14156,7 +14374,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: اختبار B2 تشخيصي — عينة زمنية من المهارات الأربع وفق DELF B2.",
-            "nextLink": "الموضوع التالي: الاستماع: رأي وحجة — النبرة وموقف المتحدث والاعتراض والنتيجة."
+            "nextLink": "الموضوع التالي: الاستماع: رأي وحجة — النبرة وموقف المتحدث والاعتراض والنتيجة.",
+            "weekNumber": 65,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -14309,7 +14530,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب مخطط الحجج من مقابلة أو نقاش.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الاستماع: رأي وحجة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "L’intervenante défend cette réforme parce qu’elle réduirait les inégalités. Toutefois, elle reconnaît que sa mise en œuvre demandera du temps et des moyens supplémentaires.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الاستماع: الفكرة والبنية، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: القراءة: وثائق متعددة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -14317,7 +14538,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الاستماع: الفكرة والبنية — استماع للفكرة العامة ثم التفاصيل والدليل.",
-            "nextLink": "الموضوع التالي: القراءة: وثائق متعددة — العناوين والروابط الحجاجية والاستنتاج الضمني."
+            "nextLink": "الموضوع التالي: القراءة: وثائق متعددة — العناوين والروابط الحجاجية والاستنتاج الضمني.",
+            "weekNumber": 66,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -14470,7 +14694,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "أجب تحت الوقت ثم حدد الدليل النصي لكل إجابة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «القراءة: وثائق متعددة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Le premier document explique les objectifs de la réforme, tandis que le second présente les réactions des usagers. La réponse doit s’appuyer sur des indices précis dans les deux textes.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الاستماع: رأي وحجة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: اختبار فهم شامل؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -14478,7 +14702,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الاستماع: رأي وحجة — النبرة وموقف المتحدث والاعتراض والنتيجة.",
-            "nextLink": "الموضوع التالي: اختبار فهم شامل — مهام استماع وقراءة متتابعة مع ضبط الوقت."
+            "nextLink": "الموضوع التالي: اختبار فهم شامل — مهام استماع وقراءة متتابعة مع ضبط الوقت.",
+            "weekNumber": 67,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -14631,7 +14858,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "أنشئ قائمة بأخطاء المفردات والاستنتاج وإدارة الوقت.",
             "writingPrompt": "اكتب فقرة مترابطة عن «اختبار فهم شامل». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "J’ai confondu une opinion avec un fait et négligé un détail dans le deuxième document. Je dois lire les consignes plus attentivement et justifier chaque réponse par un passage précis.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: القراءة: وثائق متعددة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: التخطيط قبل الكتابة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -14639,7 +14866,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: القراءة: وثائق متعددة — العناوين والروابط الحجاجية والاستنتاج الضمني.",
-            "nextLink": "الموضوع التالي: التخطيط قبل الكتابة — تحليل المطلوب والجمهور والأطروحة والحجج."
+            "nextLink": "الموضوع التالي: التخطيط قبل الكتابة — تحليل المطلوب والجمهور والأطروحة والحجج.",
+            "weekNumber": 68,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -14800,7 +15030,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "خطط خلال عشر دقائق ثم اكتب مسودة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «التخطيط قبل الكتابة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Avant de rédiger, je formule ma position en une phrase et je choisis deux arguments complémentaires. Je réserve quelques minutes à la conclusion et à la relecture.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: اختبار فهم شامل، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: خطاب رسمي أو مقال نقدي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -14808,7 +15038,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: اختبار فهم شامل — مهام استماع وقراءة متتابعة مع ضبط الوقت.",
-            "nextLink": "الموضوع التالي: خطاب رسمي أو مقال نقدي — النبرة والإقناع وروابط الحجة والأمثلة."
+            "nextLink": "الموضوع التالي: خطاب رسمي أو مقال نقدي — النبرة والإقناع وروابط الحجة والأمثلة.",
+            "weekNumber": 69,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -14961,7 +15194,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اكتب نصاً حجاجياً من 250 كلمة على الأقل.",
             "writingPrompt": "اكتب فقرة مترابطة عن «خطاب رسمي أو مقال نقدي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Madame, Monsieur, je souhaite attirer votre attention sur la nécessité d’améliorer l’accès aux transports publics. Une offre plus régulière favoriserait les déplacements quotidiens tout en réduisant la congestion urbaine.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: التخطيط قبل الكتابة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: الاعتراض والرد؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -14969,7 +15202,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: التخطيط قبل الكتابة — تحليل المطلوب والجمهور والأطروحة والحجج.",
-            "nextLink": "الموضوع التالي: الاعتراض والرد — الموازنة والاعتراف بالحجة المضادة والرد عليها."
+            "nextLink": "الموضوع التالي: الاعتراض والرد — الموازنة والاعتراف بالحجة المضادة والرد عليها.",
+            "weekNumber": 70,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -15122,7 +15358,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "راجع التماسك والمنطق وتجنب التكرار.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الاعتراض والرد». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Je reconnais que cette proposition présente des avantages, notamment un coût limité. Néanmoins, elle ne répond pas au problème d’accès dans les zones périphériques ; il serait donc préférable de la compléter par un service de proximité.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: خطاب رسمي أو مقال نقدي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: كتابة موقّتة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -15130,7 +15366,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: خطاب رسمي أو مقال نقدي — النبرة والإقناع وروابط الحجة والأمثلة.",
-            "nextLink": "الموضوع التالي: كتابة موقّتة — البنية وعدد الكلمات والإملاء ومراجعة أخيرة."
+            "nextLink": "الموضوع التالي: كتابة موقّتة — البنية وعدد الكلمات والإملاء ومراجعة أخيرة.",
+            "weekNumber": 71,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -15283,7 +15522,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "أنجز اختبار كتابة موقّتاً واحتفظ بنسخة مصححة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «كتابة موقّتة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Malgré les progrès réalisés, la mesure reste insuffisante pour garantir un accès équitable. Il convient donc de renforcer l’accompagnement et d’évaluer les résultats à partir d’indicateurs transparents.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الاعتراض والرد، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: تحليل الموضوع والخطة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -15291,7 +15530,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الاعتراض والرد — الموازنة والاعتراف بالحجة المضادة والرد عليها.",
-            "nextLink": "الموضوع التالي: تحليل الموضوع والخطة — السؤال المركزي والحجتان والأمثلة والحجة المضادة."
+            "nextLink": "الموضوع التالي: تحليل الموضوع والخطة — السؤال المركزي والحجتان والأمثلة والحجة المضادة.",
+            "weekNumber": 72,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -15452,7 +15694,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "استعد في وقت محدد واكتب خطة موجزة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «تحليل الموضوع والخطة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Le sujet pose la question de la place du numérique à l’école. Je distinguerai ses effets sur l’apprentissage de ses conséquences sociales, avant de proposer des conditions d’utilisation.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: كتابة موقّتة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: العرض الشفوي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -15460,7 +15702,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: كتابة موقّتة — البنية وعدد الكلمات والإملاء ومراجعة أخيرة.",
-            "nextLink": "الموضوع التالي: العرض الشفوي — مقدمة ومحاور واستنتاج واضح."
+            "nextLink": "الموضوع التالي: العرض الشفوي — مقدمة ومحاور واستنتاج واضح.",
+            "weekNumber": 73,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -15613,7 +15858,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "سجّل عرضاً حجاجياً من 7–10 دقائق.",
             "writingPrompt": "اكتب فقرة مترابطة عن «العرض الشفوي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "À mon sens, l’accès à la culture ne devrait pas dépendre du revenu. Les bibliothèques, les tarifs réduits et les activités locales peuvent renforcer la participation, à condition d’être accessibles à tous.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: تحليل الموضوع والخطة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: الأسئلة والاعتراضات؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -15621,7 +15866,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: تحليل الموضوع والخطة — السؤال المركزي والحجتان والأمثلة والحجة المضادة.",
-            "nextLink": "الموضوع التالي: الأسئلة والاعتراضات — توضيح الإجابة وإعادة الصياغة والاعتراف بالحدود."
+            "nextLink": "الموضوع التالي: الأسئلة والاعتراضات — توضيح الإجابة وإعادة الصياغة والاعتراف بالحدود.",
+            "weekNumber": 74,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -15774,7 +16022,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "تمرن على ثمانية أسئلة متابعة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «الأسئلة والاعتراضات». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Je comprends votre objection sur les dépenses publiques. Cependant, une analyse complète doit aussi prendre en compte les coûts évités, les effets à long terme et les inégalités que la mesure pourrait réduire.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: العرض الشفوي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: محاكاة الإنتاج الشفوي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -15782,7 +16030,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: العرض الشفوي — مقدمة ومحاور واستنتاج واضح.",
-            "nextLink": "الموضوع التالي: محاكاة الإنتاج الشفوي — التحضير والعرض والنقاش وفق دليل الامتحان."
+            "nextLink": "الموضوع التالي: محاكاة الإنتاج الشفوي — التحضير والعرض والنقاش وفق دليل الامتحان.",
+            "weekNumber": 75,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -15935,7 +16186,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اطلب ملاحظات عن الطلاقة والدقة والإقناع.",
             "writingPrompt": "اكتب فقرة مترابطة عن «محاكاة الإنتاج الشفوي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Pour répondre à cette question, je vais d’abord résumer la position défendue, puis expliquer deux arguments et un exemple. Enfin, je présenterai une limite et proposerai une solution.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: الأسئلة والاعتراضات، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: محاكاة الفهم؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -15943,7 +16194,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: الأسئلة والاعتراضات — توضيح الإجابة وإعادة الصياغة والاعتراف بالحدود.",
-            "nextLink": "الموضوع التالي: محاكاة الفهم — الاستماع والقراءة في توقيت قريب من الامتحان."
+            "nextLink": "الموضوع التالي: محاكاة الفهم — الاستماع والقراءة في توقيت قريب من الامتحان.",
+            "weekNumber": 76,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -16104,7 +16358,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "حلّل الأخطاء حسب المهارة لا الدرجة الإجمالية فقط.",
             "writingPrompt": "اكتب فقرة مترابطة عن «محاكاة الفهم». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "J’ai obtenu de meilleurs résultats en lecture qu’en écoute. Pour progresser, je vais repérer les connecteurs à la deuxième écoute et noter les informations qui répondent précisément aux consignes.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: محاكاة الإنتاج الشفوي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: محاكاة الكتابة؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -16112,7 +16366,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: محاكاة الإنتاج الشفوي — التحضير والعرض والنقاش وفق دليل الامتحان.",
-            "nextLink": "الموضوع التالي: محاكاة الكتابة — نص حجاجي مع تخطيط ومراجعة."
+            "nextLink": "الموضوع التالي: محاكاة الكتابة — نص حجاجي مع تخطيط ومراجعة.",
+            "weekNumber": 77,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -16265,7 +16522,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "اطلب تصحيحاً وراجع الأخطاء المتكررة.",
             "writingPrompt": "اكتب فقرة مترابطة عن «محاكاة الكتابة». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Mon texte présente une position claire, mais les exemples ne sont pas assez précis. Je vais développer un exemple concret, varier les connecteurs et vérifier les accords avant de rendre la version finale.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: محاكاة الفهم، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: محاكاة الشفوي؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -16273,7 +16530,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: محاكاة الفهم — الاستماع والقراءة في توقيت قريب من الامتحان.",
-            "nextLink": "الموضوع التالي: محاكاة الشفوي — التحضير والعرض والتفاعل والأسئلة."
+            "nextLink": "الموضوع التالي: محاكاة الشفوي — التحضير والعرض والتفاعل والأسئلة.",
+            "weekNumber": 78,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -16426,7 +16686,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "قارن تسجيلين لتحديد التحسن.",
             "writingPrompt": "اكتب فقرة مترابطة عن «محاكاة الشفوي». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "En comparant mes deux enregistrements, je remarque que je parle plus longtemps sans hésiter. Je dois encore améliorer les transitions entre les arguments et répondre plus directement aux questions.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: محاكاة الكتابة، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "يمهّد للأسبوع التالي: محاكاة نهائية؛ استخدم المفردات والتراكيب المكتسبة هنا لتوسيع هذا الموضوع.",
@@ -16434,7 +16694,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: محاكاة الكتابة — نص حجاجي مع تخطيط ومراجعة.",
-            "nextLink": "الموضوع التالي: محاكاة نهائية — المهارات الأربع وخطة الوقت والوثائق."
+            "nextLink": "الموضوع التالي: محاكاة نهائية — المهارات الأربع وخطة الوقت والوثائق.",
+            "weekNumber": 79,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ],
         [
@@ -16587,7 +16850,7 @@ window.FRENCH_CURRICULUM = {
             ],
             "speakingPrompt": "انتقل للاختبار الحقيقي بعد استقرار B2 في المهارات الأربع.",
             "writingPrompt": "اكتب فقرة مترابطة عن «محاكاة نهائية». استعمل ثلاثة تعابير من البطاقات ورابطين منطقيين، ثم راجعها.",
-            "modelAnswer": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles.",
+            "modelAnswer": "Mon objectif est de présenter une position claire, de la défendre par des arguments précis et de répondre aux objections. Avant l’épreuve, je vérifierai le temps, la structure et le respect de la consigne.",
             "vocabularyGame": "اكشف بطاقة واحدة، اقرأ المعنى الفرنسي بصوت عال، ثم حاول تكوين جملة من ذاكرتك قبل كشف المثال.",
             "prerequisite": "يبني على الأسبوع السابق: محاكاة الشفوي، مع إعادة استخدام تراكيبه في موضوع الأسبوع الحالي.",
             "nextStep": "خاتمة المسار: استخدام سجل الأخطاء لتحديد مراجعة شخصية قبل الامتحان.",
@@ -16595,7 +16858,10 @@ window.FRENCH_CURRICULUM = {
             "weekSessionPlan": "4 جلسات موجهة مدة كل منها 60 دقيقة، تليها جلسة تطبيق تكاملي لمدة 120 دقيقة، ثم جلسة مراجعة وتصحيح لمدة 120 دقيقة؛ المجموع 480 دقيقة (8 ساعات).",
             "assessmentFocus": "مفردات الموضوع + التركيب النحوي المستهدف + تطبيق المهارة العملية المرتبطة بالأسبوع.",
             "previousLink": "الموضوع السابق: محاكاة الشفوي — التحضير والعرض والتفاعل والأسئلة.",
-            "nextLink": "نهاية المسار؛ استخدم سجل الأخطاء لتحديد مراجعة شخصية قبل الامتحان."
+            "nextLink": "نهاية المسار؛ استخدم سجل الأخطاء لتحديد مراجعة شخصية قبل الامتحان.",
+            "weekNumber": 80,
+            "trainingHours": 8,
+            "reviewConnection": "ابدأ بمراجعة مفردتين وتعبير واحد من الأسبوع السابق، ثم استخدمها في قراءة أو استماع هذا الأسبوع، وأنهِ بمهمة إنتاجية واختبار قصير."
           }
         ]
       ]
@@ -23498,6 +23764,29 @@ window.FRENCH_CURRICULUM = {
         "months": "17–20",
         "purpose": "التدريب على مهام الامتحان الأربع، وإدارة الوقت، والمحاكاة والتصحيح."
       }
+    ],
+    "weeklyRhythm": {
+      "A1": {
+        "weeks": "1–8",
+        "hoursPerWeek": 8,
+        "sessionCount": 6,
+        "sessionMinutes": 80,
+        "totalMinutes": 480,
+        "description": "ست جلسات، مدة كل منها 80 دقيقة؛ تتضمن الاستماع والنطق والقاعدة والممارسة ومهمة ختامية قصيرة."
+      },
+      "A2_B2_DELF": {
+        "weeks": "9–80",
+        "hoursPerWeek": 8,
+        "sessionCount": 6,
+        "totalMinutes": 480,
+        "description": "أربع جلسات موجهة × 60 دقيقة، وجلسة تطبيق تكاملي × 120 دقيقة، وجلسة مراجعة متباعدة وتصحيح × 120 دقيقة."
+      }
+    },
+    "sequencePrinciples": [
+      "يبدأ كل أسبوع بمراجعة قصيرة للمفردات والتراكيب السابقة، ويعيد استخدامها داخل موضوع جديد.",
+      "يتدرج العمل من مدخل مفهوم (استماع أو قراءة) إلى تدريب موجّه، ثم إنتاج شفهي وكتابي، ثم تقويم ومراجعة للأخطاء.",
+      "تُعامل الاختبارات والتمارين وبنك المفردات داخل ساعات الأسبوع المقررة؛ لا تُضاف ساعاتها مرة أخرى إلى مجموع 640 ساعة.",
+      "عتبة إرشادية للانتقال: 75% في الاختبار القصير، مع إعادة مراجعة المهارة التي ظهر فيها الضعف قبل المتابعة."
     ]
   }
 };
