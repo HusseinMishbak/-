@@ -189,3 +189,14 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
     document.body.appendChild(script);
   }
 })();
+
+
+/* UR Gamification layer: daily challenge styling */
+(function(){
+  if(document.querySelector('link[data-ur-gamification]'))return;
+  var link=document.createElement('link');
+  link.rel='stylesheet';
+  link.href='./ui/gamification-layer.css?v=20261019-gamification1';
+  link.setAttribute('data-ur-gamification','true');
+  document.head.appendChild(link);
+})();
