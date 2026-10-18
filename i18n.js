@@ -82,7 +82,7 @@ function setLocale(next,save=true){
  document.body.dir=root.dir;
  const selector=document.getElementById(SELECTOR_ID);if(selector&&selector.value!==locale)selector.value=locale;
  try{if(save)localStorage.setItem(STORAGE_KEY,locale);}catch(_){}
- document.title=locale==='ar'?'منصة أور التعليمية لتعليم اللغة الفرنسية | A1–C2':locale==='en'?'Orr French Learning Platform | A1–C2':'Plateforme éducative Our pour apprendre le français | A1–C2';
+ document.title=locale==='ar'?'منصة أور التعليمية لتعليم اللغة الفرنسية | A1–C2':locale==='en'?'Orr French Learning Platform | A1–C2':'Plateforme éducative Orr pour apprendre le français | A1–C2';
  const description=document.querySelector('meta[name="description"]');
  if(description)description.content=locale==='ar'?'أور: منصة تفاعلية لتعلّم الفرنسية من A1 إلى C2، مع اختبار تحديد مستوى وتمارين ومفردات واستماع.':locale==='en'?'Orr: an interactive French learning platform from A1 to C2, with placement testing, exercises, vocabulary and listening.':'Orr : une plateforme interactive pour apprendre le français de A1 à C2, avec test de niveau, exercices, vocabulaire et écoute.';
  scan(document.body);
