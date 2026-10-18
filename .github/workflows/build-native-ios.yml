@@ -1,0 +1,44 @@
+name: Build native SwiftUI iOS app
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'ios-native/**'
+      - '.github/workflows/build-native-ios.yml'
+  push:
+    paths:
+      - 'ios-native/**'
+      - '.github/workflows/build-native-ios.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build-native:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show Xcode version
+        run: xcodebuild -version
+      - name: Build native iOS simulator app
+        run: |
+          xcodebuild \
+            -project ios-native/OrrFrench.xcodeproj \
+            -scheme OrrFrench \
+            -sdk iphonesimulator \
+            -configuration Debug \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build-native \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+      - name: Package simulator app
+        run: |
+          cd build-native/Build/Products/Debug-iphonesimulator
+          ditto -c -k --sequesterRsrc --keepParent OrrFrench.app "$GITHUB_WORKSPACE/orr-native-ios-simulator.zip"
+      - name: Upload native iOS simulator artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: orr-native-ios-simulator
+          path: orr-native-ios-simulator.zip
+          retention-days: 14
