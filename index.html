@@ -1,16 +1,17 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-ui-lang="ar">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#102d42"><meta name="description" content="أور الفرنسية: مسار تفاعلي لتعلّم الفرنسية من المبتدئ A1 إلى المتقدم C2، مع اختبار تحديد مستوى وتمارين ومفردات واستماع.">
+<meta name="theme-color" content="#25295b"><meta name="description" content="أور الفرنسية: مسار تفاعلي لتعلّم الفرنسية من المبتدئ A1 إلى المتقدم C2، مع اختبار تحديد مستوى وتمارين ومفردات واستماع.">
 <title>منصة أور التعليمية لتعليم اللغة الفرنسية | A1–C2</title>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script>tailwind.config={theme:{extend:{fontFamily:{sans:['Tajawal','Inter','sans-serif']},colors:{ink:'#162B3B',navy:'#102D42',teal:'#0D7A70',mint:'#DFF4EF',gold:'#E5B45D'}}}};</script>
+<script>tailwind.config={theme:{extend:{fontFamily:{sans:['Tajawal','Inter','sans-serif']},colors:{ink:'#252B45',navy:'#25295B',teal:'#139A95',mint:'#E3F6F2',gold:'#F3B54A'}}}};</script>
 <style>
-:root{--navy:#102d42;--ink:#1d3242;--muted:#65798a;--teal:#0d7a70;--teal-dark:#075e57;--gold:#e5b45d;--paper:#f4f7fa;--line:#dce5ec;--pale:#eaf2f7;--mint:#e4f6f1;--white:#fff;--shadow:0 12px 34px rgba(16,45,66,.07)}
+:root{--navy:#25295b;--ink:#252b45;--muted:#66718b;--teal:#139a95;--teal-dark:#0b7775;--gold:#f3b54a;--paper:#f5f7fc;--line:#e0e5f0;--pale:#edf0ff;--mint:#e3f6f2;--white:#fff;--shadow:0 14px 38px rgba(37,41,91,.09);--brand-violet:#6558f5;--brand-blue:#3f5bd8;--brand-teal:#139e9a;--brand-gold:#f4b544}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Tajawal',Inter,Arial,sans-serif;font-size:16px;line-height:1.75;direction:rtl;text-align:right}button,input,textarea,select{font:inherit}button{cursor:pointer}a{color:#1268a5;text-underline-offset:3px}a:hover{color:#0b766b}
 .app-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.header-inner{max-width:1500px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px}.brand{display:flex;align-items:center;gap:12px;min-width:0}.brand-mark{width:44px;height:44px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(135deg,var(--navy),var(--teal));color:white;font:800 16px Inter,sans-serif;direction:ltr;box-shadow:0 6px 16px #0d7a702b}.brand-title{font-weight:800;color:var(--navy);font-size:18px;line-height:1.25}.brand-sub{color:var(--muted);font-size:12px;margin-top:2px}.header-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.offline-pill{display:inline-flex;align-items:center;gap:6px;color:#0b665d;background:#e4f6f1;border:1px solid #c7e9e1;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:700}
 .app-layout{max-width:1500px;margin:0 auto;padding:22px;display:grid;grid-template-columns:270px minmax(0,1fr);gap:22px;align-items:start}.sidebar{position:sticky;top:86px;max-height:calc(100vh - 108px);overflow:auto;background:white;border:1px solid var(--line);border-radius:22px;padding:14px;box-shadow:var(--shadow)}.side-kicker{font:800 10px Inter,sans-serif;letter-spacing:.12em;color:#8b9dac;text-transform:uppercase;padding:8px 10px;direction:ltr;text-align:left}.nav-list{display:flex;flex-direction:column;gap:5px}.nav-item{border:1px solid transparent;border-radius:14px;background:transparent;width:100%;display:flex;align-items:center;gap:11px;padding:10px;text-align:right;color:var(--ink);transition:.18s ease}.nav-item:hover{background:#f3f8fa;border-color:#e2ebf0}.nav-item.active{background:var(--navy);color:#fff;box-shadow:0 7px 18px #102d4224}.nav-icon{width:34px;height:34px;flex:0 0 34px;border-radius:11px;display:grid;place-items:center;background:#edf3f6;color:var(--navy);font:700 12px Inter,sans-serif;direction:ltr}.nav-item.active .nav-icon{background:rgba(255,255,255,.14);color:white}.nav-text{display:flex;flex-direction:column;line-height:1.3;min-width:0}.nav-label{font-weight:800;font-size:14px}.nav-desc{font-size:11px;opacity:.72;margin-top:4px}.nav-complete{margin-right:auto;border-radius:999px;background:#e4f6f1;color:#0b665d;font:700 10px Inter,sans-serif;padding:3px 7px}.nav-item.active .nav-complete{background:#d5f3e9;color:#075e57}.sidebar-bottom{border-top:1px solid var(--line);margin-top:14px;padding:14px 8px 6px}.sidebar-bottom p{font-size:12px;color:var(--muted);margin:0 0 8px}.side-progress{height:7px;background:#e9eff3;border-radius:999px;overflow:hidden}.side-progress span{height:100%;display:block;background:linear-gradient(90deg,var(--teal),#62b8aa);width:0%;transition:width .3s}
@@ -371,10 +372,59 @@
 #panel-listening #listeningConversationLines .listening-transcript{color:#172f40!important;opacity:1!important;font-size:15px!important;line-height:2!important}
 #panel-listening #listeningConversationLines button{color:#143d3a!important}
 #panel-listening .listening-progress-track{background:#547b83!important}
+
+/* ORR DESIGN SYSTEM — indigo, turquoise and warm amber */
+:root{--navy:#25295b;--ink:#252b45;--muted:#66718b;--teal:#139a95;--teal-dark:#0b7775;--gold:#f3b54a;--paper:#f5f7fc;--line:#e0e5f0;--pale:#edf0ff;--mint:#e3f6f2;--white:#fff;--shadow:0 14px 38px rgba(37,41,91,.09);--brand-violet:#6558f5;--brand-blue:#3f5bd8;--brand-teal:#139e9a;--brand-gold:#f4b544}
+body{background:radial-gradient(ellipse at 94% -8%,rgba(101,88,245,.075),transparent 31%),linear-gradient(180deg,#f8f9ff 0%,var(--paper) 48%,#f1f5fb 100%);color:var(--ink)}
+.app-header{background:rgba(255,255,255,.94);border-bottom-color:rgba(224,229,240,.92);box-shadow:0 4px 18px rgba(37,41,91,.035)}
+.brand-mark{position:relative;border-radius:15px 15px 15px 5px;background:linear-gradient(135deg,var(--brand-violet),var(--brand-teal));box-shadow:0 8px 22px rgba(101,88,245,.25);letter-spacing:-.04em}
+.brand-title{color:var(--navy);letter-spacing:-.02em}
+.brand-sub{color:#68718a}
+.sidebar,.panel section,.card{border-color:var(--line)}
+.sidebar{box-shadow:0 16px 34px rgba(37,41,91,.065)}
+.nav-item.active{background:linear-gradient(125deg,var(--brand-violet),var(--brand-blue) 56%,var(--brand-teal));box-shadow:0 9px 22px rgba(75,83,207,.22)}
+.nav-item:hover{background:#f2f4ff;border-color:#d9def9}
+.nav-icon{background:#edf0ff;color:#464fc3}
+.side-progress span,.side-progress{border-radius:999px}
+.side-progress span{background:linear-gradient(90deg,var(--brand-violet),var(--brand-teal))}
+.cover{background:radial-gradient(circle at 88% 8%,rgba(244,181,68,.22),transparent 26%),radial-gradient(circle at 4% 85%,rgba(20,158,154,.22),transparent 32%),linear-gradient(128deg,#25295b 0%,#3f5bd8 54%,#139e9a 100%)!important;box-shadow:0 20px 48px rgba(37,41,91,.2)}
+.cover .mini{color:#e2e6ff}
+.cover .pill{border-color:rgba(255,255,255,.27);background:rgba(255,255,255,.11);color:#fff}
+.cover-level-ladder{color:#d5fbf3!important}
+.btn-primary,.placement-start-btn{background:linear-gradient(130deg,var(--brand-violet),var(--brand-blue));border-color:transparent;color:#fff;box-shadow:0 8px 18px rgba(71,82,210,.18)}
+.btn-primary:hover,.placement-start-btn:hover{filter:brightness(1.045);box-shadow:0 10px 22px rgba(71,82,210,.25)}
+.btn-soft{border-color:#dce2f1;background:#fff;color:var(--navy)}
+.btn-soft:hover{background:#f0f3ff;border-color:#c8d1fb}
+.home-shortcut{border-color:#dfe4f2;background:#fff;color:var(--navy);box-shadow:0 6px 16px rgba(37,41,91,.045)}
+.home-shortcut:hover{border-color:#bfc8fb;background:#f7f8ff;transform:translateY(-1px)}
+.metric .value,.value{color:var(--brand-violet)}
+.banner,.callout{border-color:#dfe4f2}
+.banner{background:linear-gradient(135deg,#f0f1ff,#e7f8f5)}
+a{color:#405bd3}a:hover{color:#0b7775}
+:focus-visible{outline:3px solid rgba(101,88,245,.42)!important;outline-offset:3px}
+.language-switch{display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:5px 9px;border:1px solid #dce2f1;border-radius:13px;background:rgba(255,255,255,.96);box-shadow:0 3px 10px rgba(37,41,91,.035);color:var(--navy);white-space:nowrap}
+.language-glyph{display:grid;place-items:center;width:27px;height:27px;border-radius:8px;background:#edf0ff;color:#4b50c7;font:800 11px Inter,Tajawal,sans-serif;letter-spacing:-.05em}
+.language-switch select{border:0;outline:0;background:transparent;color:var(--navy);font-size:13px;font-weight:800;min-width:80px;max-width:105px;cursor:pointer;padding:3px 1px}
+.language-switch:focus-within{border-color:var(--brand-violet);box-shadow:0 0 0 3px rgba(101,88,245,.12)}
+html[data-ui-lang="en"] body,html[data-ui-lang="fr"] body{direction:ltr!important;text-align:left!important;font-family:Inter,Tajawal,Arial,sans-serif}
+html[data-ui-lang="en"] .app-layout,html[data-ui-lang="fr"] .app-layout{direction:ltr}
+html[data-ui-lang="en"] .sidebar,html[data-ui-lang="fr"] .sidebar{direction:ltr;text-align:left}
+html[data-ui-lang="en"] .main-column,html[data-ui-lang="fr"] .main-column{direction:ltr;text-align:left}
+html[data-ui-lang="en"] .nav-item,html[data-ui-lang="fr"] .nav-item{text-align:left}
+html[data-ui-lang="en"] .nav-text,html[data-ui-lang="fr"] .nav-text{text-align:left}
+html[data-ui-lang="en"] .side-kicker,html[data-ui-lang="fr"] .side-kicker{text-align:left}
+html[data-ui-lang="en"] .sidebar-bottom,html[data-ui-lang="fr"] .sidebar-bottom{text-align:left}
+html[data-ui-lang="en"] .civ-intro-block,html[data-ui-lang="fr"] .civ-intro-block,html[data-ui-lang="en"] .civ-learning-block,html[data-ui-lang="fr"] .civ-learning-block{border-right-width:1px;border-left:4px solid var(--brand-violet)}
+html[data-ui-lang="en"] .civ-phrase .fr,html[data-ui-lang="fr"] .civ-phrase .fr,html[data-ui-lang="en"] .civ-dialogue-line .fr,html[data-ui-lang="fr"] .civ-dialogue-line .fr{text-align:left}
+html[data-ui-lang="en"] .header-inner,html[data-ui-lang="fr"] .header-inner{direction:ltr}
+html[data-ui-lang="en"] .panel-head,html[data-ui-lang="fr"] .panel-head{text-align:left}
+html[data-ui-lang="en"] .section-title,html[data-ui-lang="fr"] .section-title{text-align:left}
+@media(max-width:760px){.language-switch{min-height:36px;padding:4px 7px}.language-switch select{min-width:70px;max-width:86px}.header-actions{gap:6px}}
+
 </style>
 </head>
 <body>
-<header class="app-header"><div class="header-inner"><div class="brand"><div class="brand-mark">أور</div><div><div class="brand-title">منصة أور التعليمية لتعليم اللغة الفرنسية <span class="latin" lang="fr" dir="ltr">A1–C2</span></div><div class="brand-sub">تعليم اللغة الفرنسية من المبتدئ إلى المتقدم · A1–C2</div></div></div><div class="header-actions"><span class="offline-pill" id="syncStatus">● حفظ محلي مفعّل</span><button class="btn btn-soft" type="button" id="authHeaderBtn">حساب الطالب</button><button class="btn btn-soft" type="button" id="voiceDiagnosticBtn" aria-label="اختيار الصوت الفرنسي">🔊 اختيار الصوت</button><button class="btn btn-soft" type="button" id="continueBtn">متابعة آخر قسم</button></div></div></header>
+<header class="app-header"><div class="header-inner"><div class="brand"><div class="brand-mark">أور</div><div><div class="brand-title">منصة أور التعليمية لتعليم اللغة الفرنسية <span class="latin" lang="fr" dir="ltr">A1–C2</span></div><div class="brand-sub">تعليم اللغة الفرنسية من المبتدئ إلى المتقدم · A1–C2</div></div></div><div class="header-actions"><label class="language-switch" for="uiLanguageSelect" title="لغة الواجهة"><span class="language-glyph" aria-hidden="true">文A</span><select id="uiLanguageSelect" aria-label="لغة الواجهة" title="لغة الواجهة"><option value="ar">العربية</option><option value="en">English</option><option value="fr">Français</option></select></label><span class="offline-pill" id="syncStatus">● حفظ محلي مفعّل</span><button class="btn btn-soft" type="button" id="authHeaderBtn">حساب الطالب</button><button class="btn btn-soft" type="button" id="voiceDiagnosticBtn" aria-label="اختيار الصوت الفرنسي">🔊 اختيار الصوت</button><button class="btn btn-soft" type="button" id="continueBtn">متابعة آخر قسم</button></div></div></header>
 <div class="app-layout">
 <aside class="sidebar"><div class="side-kicker">YOUR LEARNING PATH</div><nav class="nav-list" id="desktopNav" aria-label="التنقل الرئيسي"></nav><div class="sidebar-bottom"><p>التقدم العام</p><div class="side-progress"><span id="sideProgressBar"></span></div><p id="sideProgressText" style="margin-top:7px">0% مكتمل</p></div></aside>
 <main class="main-column"><nav class="mobile-nav" id="mobileNav" aria-label="التنقل على الهاتف"></nav><div id="panels">
@@ -2413,4 +2463,5 @@ window.OUR_FRENCH_APP={
 <script src="./conversation-podcast.js?v=20261012-contrast2"></script>
 <script src="./podcast-six-minutes.js?v=20261012-v1"></script>
 <script src="./learning-games.js?v=20261011-games1"></script>
+<script src="./i18n.js?v=20261018-i18n1"></script>
 </body></html>
