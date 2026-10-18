@@ -34,10 +34,13 @@ jobs:
         run: npm install
       - name: Prepare bundled learning platform
         working-directory: mobile-app
-        run: npm run build:web
+        run: npm run build:assets
       - name: Generate Android project
         working-directory: mobile-app
         run: npx cap add android
+      - name: Generate Android icon and splash assets
+        working-directory: mobile-app
+        run: npx capacitor-assets generate --android
       - name: Sync Capacitor assets
         working-directory: mobile-app
         run: npx cap sync android
