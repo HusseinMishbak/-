@@ -170,3 +170,22 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
   link.setAttribute('data-ur-ui-refresh', 'true');
   document.head.appendChild(link);
 })();
+
+
+/* UR Learning Experience upgrade: dashboard, study timer and spaced-review cards. */
+(function(){
+  if(!document.querySelector('link[data-ur-learning-experience]')){
+    var link=document.createElement('link');
+    link.rel='stylesheet';
+    link.href='./ui/learning-experience.css?v=20261019-experience1';
+    link.setAttribute('data-ur-learning-experience','true');
+    document.head.appendChild(link);
+  }
+  if(!document.querySelector('script[data-ur-learning-experience]')){
+    var script=document.createElement('script');
+    script.src='./learning-experience.js?v=20261019-experience1';
+    script.defer=true;
+    script.setAttribute('data-ur-learning-experience','true');
+    document.body.appendChild(script);
+  }
+})();
