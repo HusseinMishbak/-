@@ -1388,8 +1388,8 @@ window.FRENCH_CURRICULUM = {
             "ar": "أنا عراقية."
           },
           {
-            "fr": "J’habite en France, à Bucarest.",
-            "ar": "أسكن في فرنسا، في بوخارست."
+            "fr": "J’habite en Roumanie, à Bucarest.",
+            "ar": "أسكن في رومانيا، في بوخارست."
           },
           {
             "fr": "J’ai vingt-deux ans.",
@@ -4960,7 +4960,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Je cherche un logement près du centre."
+                "model": "Dans mon quartier, il y a un parc et une pharmacie."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -4973,7 +4973,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب وصفاً لشقتك أو حيّك من 120 كلمة مع خريطة مبسطة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+                "model": "Dans mon quartier, il y a un parc et une pharmacie. Mon immeuble est près d’un arrêt de bus, mais il n’y a pas de bibliothèque."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -5124,7 +5124,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Je cherche un logement près du centre."
+                "model": "J’ai acheté cette veste hier, mais elle est trop petite."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -5137,7 +5137,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "مثّل شراء سلعة والسؤال عن السعر وطلب الاستبدال.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+                "model": "J’ai acheté cette veste hier, mais elle est trop petite. Est-ce que je peux l’échanger contre une taille plus grande ?"
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -5288,7 +5288,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Je cherche un logement près du centre."
+                "model": "Bonjour, je voudrais prendre rendez-vous avec un médecin."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -5301,7 +5301,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "سجّل حوار مريض وموظف استقبال ثم لخّص الموعد.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+                "model": "Bonjour, je voudrais prendre rendez-vous avec un médecin. J’ai mal à la gorge depuis deux jours."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -5452,7 +5452,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Je cherche un logement près du centre."
+                "model": "Pour aller à la gare, prenez le bus numéro quatre et descendez à l’arrêt République."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -5465,7 +5465,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "أنجز مهمة استماع وقراءة عن رحلة واشرح المسار شفهياً.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+                "model": "Pour aller à la gare, prenez le bus numéro quatre et descendez à l’arrêt République. Ensuite, traversez la rue."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -5624,7 +5624,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Je cherche un logement près du centre."
+                "model": "Bonjour, je voudrais réserver une chambre pour deux personnes du 12 au 15 mai."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -5637,7 +5637,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب رسالة حجز واطلب توضيحاً عن السعر والخدمات.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+                "model": "Bonjour, je voudrais réserver une chambre pour deux personnes du 12 au 15 mai. Le petit-déjeuner est-il compris dans le prix ?"
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -5788,7 +5788,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Le mois dernier, je suis allé(e) à Lyon avec des amis."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -5801,7 +5801,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب سرداً من 120–150 كلمة عن رحلة أو مناسبة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+                "model": "Le mois dernier, je suis allé(e) à Lyon avec des amis. Nous avons visité le centre-ville et nous avons goûté des spécialités locales."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -5952,7 +5952,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Je cherche un logement près du centre."
+                "model": "Merci pour l’invitation !"
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -5965,7 +5965,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "مثّل مكالمة لترتيب لقاء وتغيير الموعد.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+                "model": "Merci pour l’invitation ! Je peux venir samedi, mais je dois repartir à dix-huit heures. Est-ce que nous pouvons nous retrouver devant la gare ?"
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -6116,7 +6116,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Je cherche un logement près du centre."
+                "model": "J’ai préféré Lyon à Marseille parce que le centre était plus facile à visiter à pied."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -6129,7 +6129,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "قدّم عرضاً من دقيقتين عن مدينة أو رحلة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+                "model": "J’ai préféré Lyon à Marseille parce que le centre était plus facile à visiter à pied. En revanche, Marseille offre de très beaux paysages."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -6288,7 +6288,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Je cherche un logement près du centre."
+                "model": "En semaine, je prépare souvent des légumes et je bois beaucoup d’eau."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -6301,7 +6301,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "أنشئ قائمة طعام أسبوعية وناقش عادة غذائية.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+                "model": "En semaine, je prépare souvent des légumes et je bois beaucoup d’eau. À mon avis, il est important de varier les aliments."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -6452,7 +6452,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Je cherche un logement près du centre."
+                "model": "Bonjour, je vous écris pour obtenir des informations sur votre formation de français."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -6465,7 +6465,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب بريداً لطلب معلومة عن دورة أو تدريب.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+                "model": "Bonjour, je vous écris pour obtenir des informations sur votre formation de français. Pourriez-vous m’envoyer le programme et les horaires ?"
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -6616,7 +6616,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Je cherche un logement près du centre."
+                "model": "Salut, je t’invite à dîner chez moi samedi à 19 h."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -6629,7 +6629,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب دعوة واضحة تتضمن الموعد والمكان والتفاصيل.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+                "model": "Salut, je t’invite à dîner chez moi samedi à 19 h. Peux-tu me confirmer ta présence avant jeudi ?"
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -6780,7 +6780,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Je cherche un logement près du centre."
+                "model": "J’ai réussi la lecture, mais je dois améliorer la compréhension orale."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -6793,7 +6793,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "سجّل النتائج وحدد ثلاث نقاط للمراجعة قبل B1.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Pour moi, cette solution est pratique parce qu’elle répond à un besoin quotidien."
+                "model": "J’ai réussi la lecture, mais je dois améliorer la compréhension orale. La semaine prochaine, je vais écouter un document court chaque jour."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -6952,7 +6952,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Quand j’étais enfant, je passais l’été chez mes grands-parents."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -6965,7 +6965,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "احكِ قصة من ثلاث دقائق واكتب ملخصاً.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Quand j’étais enfant, je passais l’été chez mes grands-parents. Un jour, nous avons trouvé un petit chien devant la maison."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -7116,7 +7116,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Il pleuvait depuis le matin lorsque le train est finalement arrivé."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -7129,7 +7129,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب قصة تجمع الوصف والأحداث.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Il pleuvait depuis le matin lorsque le train est finalement arrivé. Les voyageurs attendaient sur le quai et certains téléphonaient."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -7280,7 +7280,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Marie Curie est née en Pologne en 1867."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -7293,7 +7293,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب سيرة لشخصية من 180 كلمة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Marie Curie est née en Pologne en 1867. Elle a poursuivi ses études à Paris et elle a consacré sa vie à la recherche scientifique."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -7444,7 +7444,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "L’année dernière, j’ai participé à un projet collectif."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -7457,7 +7457,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "سجّل قصة ثم أجب عن خمسة أسئلة متابعة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "L’année dernière, j’ai participé à un projet collectif. Cette expérience m’a appris à mieux répartir le travail et à écouter les autres."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -7616,7 +7616,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "La mairie a annoncé un nouveau plan de transport."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -7629,7 +7629,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "لخّص مقالاً قصيراً في 100–130 كلمة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "La mairie a annoncé un nouveau plan de transport. Selon l’article, le projet vise à réduire la circulation et à améliorer les trajets quotidiens."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -7780,7 +7780,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Je comprends l’idée selon laquelle les voitures sont pratiques."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -7793,7 +7793,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "سجّل نقاشاً لثلاث دقائق عن إيجابيات وسلبيات.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Je comprends l’idée selon laquelle les voitures sont pratiques. Cependant, en centre-ville, les transports publics peuvent être plus rapides et moins polluants."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -7944,7 +7944,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Les transports sont limités le soir, donc beaucoup d’habitants prennent leur voiture."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -7957,7 +7957,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب فقرة تعرض مشكلة وأسبابها وحلولها.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Les transports sont limités le soir, donc beaucoup d’habitants prennent leur voiture. Si la ville ajoutait quelques bus, elle réduirait les embouteillages."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -8108,7 +8108,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "À mon avis, les bibliothèques devraient rester ouvertes plus longtemps."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -8121,7 +8121,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "قدّم عرضاً لأربع دقائق وأجب عن أسئلة المستمع.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "À mon avis, les bibliothèques devraient rester ouvertes plus longtemps. Elles offrent un lieu de travail calme et donnent accès à des ressources gratuites."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -8280,7 +8280,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Madame, Monsieur, je vous adresse ma candidature au poste proposé."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -8293,7 +8293,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب رسالة ترشح مختصرة لوظيفة مناسبة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Madame, Monsieur, je vous adresse ma candidature au poste proposé. Mon expérience en gestion de projets et ma capacité à travailler en équipe correspondent aux besoins annoncés."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -8444,7 +8444,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Dans mon poste actuel, je coordonne plusieurs activités et je travaille avec des équipes différentes."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -8457,7 +8457,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "سجّل مقابلة تجريبية لأربع دقائق.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Dans mon poste actuel, je coordonne plusieurs activités et je travaille avec des équipes différentes. Je souhaite développer mes compétences et contribuer à des projets plus ambitieux."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -8608,7 +8608,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Madame, Monsieur, je vous contacte au sujet de ma demande du 12 juin."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -8621,7 +8621,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب بريداً رسمياً وراجعه من حيث النبرة والوضوح.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Madame, Monsieur, je vous contacte au sujet de ma demande du 12 juin. Pourriez-vous m’indiquer où en est le dossier ? Je vous remercie par avance."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -8772,7 +8772,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Notre projet vise à réduire le gaspillage alimentaire dans les établissements scolaires."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -8785,7 +8785,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "قدّم مشروعاً أو تجربة عمل في 4–5 دقائق.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Notre projet vise à réduire le gaspillage alimentaire dans les établissements scolaires. Nous avons testé un système de suivi et les premiers résultats sont encourageants."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -8944,7 +8944,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Pour améliorer mon bien-être, j’essaie de marcher trente minutes par jour et de dormir régulièrement."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -8957,7 +8957,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اشرح خطة لتحسين عادة صحية أو تنظيم الوقت.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Pour améliorer mon bien-être, j’essaie de marcher trente minutes par jour et de dormir régulièrement. Cette organisation m’aide à mieux gérer le stress."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -9108,7 +9108,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Dans notre quartier, les déchets s’accumulent près de l’arrêt de bus."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -9121,7 +9121,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب مقترحاً لحل مشكلة في الحي.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Dans notre quartier, les déchets s’accumulent près de l’arrêt de bus. Je propose d’installer des poubelles supplémentaires et d’organiser une campagne de sensibilisation."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -9272,7 +9272,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Les outils numériques facilitent l’accès à l’information, mais ils peuvent aussi distraire les élèves."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -9285,7 +9285,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "ناقش التكنولوجيا بحجتين لكل جانب.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Les outils numériques facilitent l’accès à l’information, mais ils peuvent aussi distraire les élèves. Il faut donc apprendre à les utiliser de manière réfléchie."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -9436,7 +9436,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Je vous écris pour signaler le manque d’éclairage dans notre rue."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -9449,7 +9449,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب رسالة B1 تقترح حلاً عملياً.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Je vous écris pour signaler le manque d’éclairage dans notre rue. L’installation de deux lampadaires améliorerait la sécurité des piétons."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -9608,7 +9608,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Le film aborde la question de la solidarité avec sensibilité."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -9621,7 +9621,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب مراجعة قصيرة وقدّمها شفهياً.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Le film aborde la question de la solidarité avec sensibilité. Malgré un rythme parfois lent, les personnages sont convaincants et la fin invite à réfléchir."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -9772,7 +9772,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Le matin, nous visiterons le musée du centre-ville."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -9785,7 +9785,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "أنشئ برنامج زيارة ليوم واحد.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Le matin, nous visiterons le musée du centre-ville. Après le déjeuner, nous découvrirons le quartier historique, puis nous terminerons la journée au bord du fleuve."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -9936,7 +9936,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Les deux articles soulignent l’importance des transports publics."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -9949,7 +9949,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب ملخصاً يقارن مصدرين.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Les deux articles soulignent l’importance des transports publics. Toutefois, le premier insiste sur le coût, tandis que le second met l’accent sur les bénéfices environnementaux."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -10100,7 +10100,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Auparavant, j’habitais à Bagdad."
+                "model": "Mes résultats montrent que je comprends bien les textes, mais que je dois mieux organiser mes productions écrites."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -10113,7 +10113,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "حلّل الأخطاء؛ أعد أسبوع مراجعة عند الحاجة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "À mon avis, cette expérience montre que plusieurs solutions sont possibles. Il faut comparer leurs avantages et leurs limites."
+                "model": "Mes résultats montrent que je comprends bien les textes, mais que je dois mieux organiser mes productions écrites. Je vais planifier mes réponses avant de commencer à rédiger."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -10272,7 +10272,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "L’article soutient que la formation continue améliore l’accès à l’emploi."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -10285,7 +10285,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "لخّص مقالاً وحدد موقف الكاتب وأدلته.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "L’article soutient que la formation continue améliore l’accès à l’emploi. Il s’appuie sur des témoignages et des données, mais il faudrait comparer ces chiffres avec d’autres sources."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -10436,7 +10436,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "La question mérite d’être examinée sous plusieurs angles."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -10449,7 +10449,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "خطط واكتب مسودة مقال منظم.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "La question mérite d’être examinée sous plusieurs angles. Dans un premier temps, je présenterai les avantages, puis les limites, avant de proposer une solution équilibrée."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -10600,7 +10600,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "L’exemple d’une ville ayant développé son réseau cyclable montre qu’une politique cohérente peut modifier les habitudes."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -10613,7 +10613,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "راجع علاقة كل دليل بالفكرة الرئيسية.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "L’exemple d’une ville ayant développé son réseau cyclable montre qu’une politique cohérente peut modifier les habitudes. Cependant, les résultats dépendent aussi de la sécurité et de la qualité des infrastructures."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -10764,7 +10764,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Le diagnostic révèle une bonne compréhension générale, mais une faiblesse dans l’organisation des arguments."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -10777,7 +10777,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "أنجز عينة من المهارات الأربع وحدد أضعف اثنتين.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Le diagnostic révèle une bonne compréhension générale, mais une faiblesse dans l’organisation des arguments. La priorité sera de structurer chaque réponse autour d’une idée, d’une preuve et d’une conclusion."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -10936,7 +10936,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Le télétravail réduit certains déplacements et offre plus de souplesse."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -10949,7 +10949,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب مناظرة بحجتين لكل جانب.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Le télétravail réduit certains déplacements et offre plus de souplesse. En revanche, il peut isoler les salariés et compliquer la coopération si l’organisation est insuffisante."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -11100,7 +11100,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Il me semble que cette mesure pourrait être utile dans certaines conditions."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -11113,7 +11113,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "أعد صياغة رأي مباشر بثلاث درجات تحفظ.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Il me semble que cette mesure pourrait être utile dans certaines conditions. Son efficacité dépendrait notamment des moyens disponibles et de la manière dont elle serait appliquée."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -11264,7 +11264,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Je comprends votre inquiétude concernant le coût."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -11277,7 +11277,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "شارك في نقاش لست دقائق وسجّل العبارات المتكررة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Je comprends votre inquiétude concernant le coût. Néanmoins, si nous comparons les dépenses à long terme, cette solution pourrait éviter des problèmes plus importants."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -11428,7 +11428,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Aujourd’hui, je voudrais examiner les avantages et les limites du télétravail."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -11441,7 +11441,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "قدّم عرضاً من 6–8 دقائق ثم أجب عن أسئلة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Aujourd’hui, je voudrais examiner les avantages et les limites du télétravail. Je présenterai d’abord ses effets sur l’organisation, puis son impact sur les équipes, avant de répondre à quelques questions."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -11600,7 +11600,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "L’université doit transmettre des connaissances, mais aussi préparer les étudiants à résoudre des problèmes réels."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -11613,7 +11613,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "ناقش قضية تعليمية بحجة وحجة مضادة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "L’université doit transmettre des connaissances, mais aussi préparer les étudiants à résoudre des problèmes réels. Pour y parvenir, elle devrait renforcer les stages et les projets menés avec les entreprises."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -11764,7 +11764,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "La première solution développe les transports en commun, tandis que la seconde favorise les pistes cyclables."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -11777,7 +11777,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "قارن حلين لمشكلة حضرية في تقرير.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "La première solution développe les transports en commun, tandis que la seconde favorise les pistes cyclables. Une combinaison des deux semble plus durable, à condition de garantir la sécurité et l’accessibilité."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -11928,7 +11928,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Je sollicite une révision de la décision concernant mon dossier."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -11941,7 +11941,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب رسالة رسمية مسنودة بأسباب واضحة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Je sollicite une révision de la décision concernant mon dossier. Les documents joints montrent que j’ai transmis les pièces demandées dans les délais. Je vous remercie de bien vouloir réexaminer la situation."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -12092,7 +12092,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Les deux sources s’accordent sur la nécessité d’améliorer l’accès à la formation."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -12105,7 +12105,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب تركيباً يحدد الاتفاق والاختلاف.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Les deux sources s’accordent sur la nécessité d’améliorer l’accès à la formation. Toutefois, la première privilégie le financement public, alors que la seconde insiste sur les partenariats locaux."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -12264,7 +12264,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Le premier média présente la mesure comme une réponse urgente, tandis que le second insiste sur son coût."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -12277,7 +12277,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "قارن تغطيتين لخبر واحد.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Le premier média présente la mesure comme une réponse urgente, tandis que le second insiste sur son coût. Pour se faire une opinion, il faut distinguer les faits rapportés des commentaires."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -12428,7 +12428,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Avant de partager cette information, il convient de vérifier la date, l’auteur et la source originale."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -12441,7 +12441,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "قدّم تحليلاً يقيّم موثوقية نص.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Avant de partager cette information, il convient de vérifier la date, l’auteur et la source originale. Les chiffres cités doivent être comparés à des données indépendantes."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -12592,7 +12592,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Le journaliste explique que la réforme entrera en vigueur l’année prochaine."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -12605,7 +12605,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "استمع إلى تقرير وأعد عرضه في دقيقتين.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Le journaliste explique que la réforme entrera en vigueur l’année prochaine. Il précise que les établissements auront plusieurs mois pour adapter leurs procédures."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -12756,7 +12756,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Les deux rapports observent une hausse des coûts, mais ils expliquent cette évolution différemment."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -12769,7 +12769,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب ملخصاً مقارناً مع استنتاجك.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Les deux rapports observent une hausse des coûts, mais ils expliquent cette évolution différemment. Le premier insiste sur l’énergie, tandis que le second souligne les difficultés d’approvisionnement."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -12928,7 +12928,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "La réduction des déchets exige à la fois la prévention et le recyclage."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -12941,7 +12941,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب مقالاً عن حل بيئي بحجتين واعتراض ورد.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "La réduction des déchets exige à la fois la prévention et le recyclage. Même si ces mesures demandent des investissements, elles peuvent limiter les coûts environnementaux à long terme."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -13092,7 +13092,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Le stockage de l’énergie permet de conserver l’électricité produite à un moment donné pour l’utiliser plus tard."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -13105,7 +13105,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اشرح فكرة علمية مألوفة لجمهور غير متخصص.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Le stockage de l’énergie permet de conserver l’électricité produite à un moment donné pour l’utiliser plus tard. Cette technologie est utile, mais son efficacité dépend du coût, de la capacité et des matériaux employés."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -13256,7 +13256,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Je recommande de développer les transports publics, car cette mesure peut réduire les embouteillages et la pollution."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -13269,7 +13269,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "أنشئ عرضاً يوصي بحل ويبرر اختياره.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Je recommande de développer les transports publics, car cette mesure peut réduire les embouteillages et la pollution. Pour réussir, elle doit s’accompagner d’horaires fiables et de tarifs accessibles."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -13420,7 +13420,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Certains estiment que la croissance économique doit rester prioritaire, tandis que d’autres mettent en avant la protection de l’environnement."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -13433,7 +13433,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "شارك في مناظرة واكتب خلاصة الحجج.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Certains estiment que la croissance économique doit rester prioritaire, tandis que d’autres mettent en avant la protection de l’environnement. Une politique durable devrait chercher à concilier ces objectifs plutôt que les opposer."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -13592,7 +13592,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Ce rapport présente d’abord la situation actuelle, puis les principales difficultés et enfin plusieurs propositions."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -13605,7 +13605,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب تقريراً بعناوين ومحاور وخلاصة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Ce rapport présente d’abord la situation actuelle, puis les principales difficultés et enfin plusieurs propositions. Les données disponibles montrent que l’amélioration dépendra surtout de la coordination entre les acteurs."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -13640,7 +13640,7 @@ window.FRENCH_CURRICULUM = {
                 "options": [
                   "un constat",
                   "un rapport circonstancié",
-                  "un constat",
+                  "une observation",
                   "une synthèse"
                 ],
                 "answer": 3,
@@ -13756,7 +13756,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "La première source identifie le manque de financement, tandis que la seconde souligne le besoin de formation."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -13769,7 +13769,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اجمع خمس أفكار من مصدرين واكتب تركيباً.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "La première source identifie le manque de financement, tandis que la seconde souligne le besoin de formation. Ensemble, elles indiquent que le projet doit associer ressources financières et accompagnement technique."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -13920,7 +13920,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "Il faut réduire les émissions de carbone."
+                "model": "Notre proposition repose sur trois mesures : améliorer l’information, renforcer l’accompagnement et évaluer les résultats."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -13933,7 +13933,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "قدّم عرضاً من ثماني دقائق ثم أجب عن أسئلة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Notre proposition repose sur trois mesures : améliorer l’information, renforcer l’accompagnement et évaluer les résultats. Les indicateurs permettront de corriger les actions si les effets attendus ne se produisent pas."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -14084,7 +14084,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "Je réussis mieux la compréhension orale que la production écrite."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -14097,7 +14097,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "راجع النواقص قبل التدريب المكثف.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Je réussis mieux la compréhension orale que la production écrite. Avant l’examen, je vais donc m’entraîner à organiser les idées, à formuler une thèse et à relire mes textes."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -14256,7 +14256,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "Lors de la première écoute, j’identifie le sujet et les intervenants."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -14269,7 +14269,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "حل اختبار استماع وسجّل نوع كل خطأ.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Lors de la première écoute, j’identifie le sujet et les intervenants. À la deuxième écoute, je note les arguments, les exemples et les liens logiques sans essayer de transcrire chaque mot."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -14304,7 +14304,7 @@ window.FRENCH_CURRICULUM = {
                 "options": [
                   "une consigne",
                   "un indice sonore",
-                  "une consigne",
+                  "une hypothèse",
                   "un brouillon"
                 ],
                 "answer": 3,
@@ -14315,7 +14315,7 @@ window.FRENCH_CURRICULUM = {
                 "options": [
                   "تعليمات السؤال",
                   "مسودة",
-                  "تعليمات السؤال",
+                  "رأي الكاتب",
                   "علامة صوتية"
                 ],
                 "answer": 0,
@@ -14420,7 +14420,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "L’intervenante défend cette réforme parce qu’elle réduirait les inégalités."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -14433,7 +14433,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب مخطط الحجج من مقابلة أو نقاش.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "L’intervenante défend cette réforme parce qu’elle réduirait les inégalités. Toutefois, elle reconnaît que sa mise en œuvre demandera du temps et des moyens supplémentaires."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -14584,7 +14584,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "Le premier document explique les objectifs de la réforme, tandis que le second présente les réactions des usagers."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -14597,7 +14597,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "أجب تحت الوقت ثم حدد الدليل النصي لكل إجابة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Le premier document explique les objectifs de la réforme, tandis que le second présente les réactions des usagers. La réponse doit s’appuyer sur des indices précis dans les deux textes."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -14748,7 +14748,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "J’ai confondu une opinion avec un fait et négligé un détail dans le deuxième document."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -14761,7 +14761,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "أنشئ قائمة بأخطاء المفردات والاستنتاج وإدارة الوقت.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "J’ai confondu une opinion avec un fait et négligé un détail dans le deuxième document. Je dois lire les consignes plus attentivement et justifier chaque réponse par un passage précis."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -14920,7 +14920,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "Avant de rédiger, je formule ma position en une phrase et je choisis deux arguments complémentaires."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -14933,7 +14933,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "خطط خلال عشر دقائق ثم اكتب مسودة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Avant de rédiger, je formule ma position en une phrase et je choisis deux arguments complémentaires. Je réserve quelques minutes à la conclusion et à la relecture."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -15084,7 +15084,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "Madame, Monsieur, je souhaite attirer votre attention sur la nécessité d’améliorer l’accès aux transports publics."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -15097,7 +15097,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب نصاً حجاجياً من 250 كلمة على الأقل.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Madame, Monsieur, je souhaite attirer votre attention sur la nécessité d’améliorer l’accès aux transports publics. Une offre plus régulière favoriserait les déplacements quotidiens tout en réduisant la congestion urbaine."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -15248,7 +15248,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "Je reconnais que cette proposition présente des avantages, notamment un coût limité."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -15261,7 +15261,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "راجع التماسك والمنطق وتجنب التكرار.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Je reconnais que cette proposition présente des avantages, notamment un coût limité. Néanmoins, elle ne répond pas au problème d’accès dans les zones périphériques ; il serait donc préférable de la compléter par un service de proximité."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -15295,7 +15295,7 @@ window.FRENCH_CURRICULUM = {
                 "q": "Quel terme correspond à la définition : « إقرار بجزء من الرأي الآخر » ?",
                 "options": [
                   "justifier",
-                  "une concession",
+                  "une opposition",
                   "une réfutation",
                   "une concession"
                 ],
@@ -15308,7 +15308,7 @@ window.FRENCH_CURRICULUM = {
                   "دحض",
                   "إقرار بجزء من الرأي الآخر",
                   "يبرّر",
-                  "إقرار بجزء من الرأي الآخر"
+                  "سبب"
                 ],
                 "answer": 2,
                 "why": "Dans ce contexte, « justifier » signifie « يبرّر ». "
@@ -15412,7 +15412,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "Malgré les progrès réalisés, la mesure reste insuffisante pour garantir un accès équitable."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -15425,7 +15425,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "أنجز اختبار كتابة موقّتاً واحتفظ بنسخة مصححة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Malgré les progrès réalisés, la mesure reste insuffisante pour garantir un accès équitable. Il convient donc de renforcer l’accompagnement et d’évaluer les résultats à partir d’indicateurs transparents."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -15584,7 +15584,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "Le sujet pose la question de la place du numérique à l’école."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -15597,7 +15597,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "استعد في وقت محدد واكتب خطة موجزة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Le sujet pose la question de la place du numérique à l’école. Je distinguerai ses effets sur l’apprentissage de ses conséquences sociales, avant de proposer des conditions d’utilisation."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -15748,7 +15748,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "À mon sens, l’accès à la culture ne devrait pas dépendre du revenu."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -15761,7 +15761,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "سجّل عرضاً حجاجياً من 7–10 دقائق.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "À mon sens, l’accès à la culture ne devrait pas dépendre du revenu. Les bibliothèques, les tarifs réduits et les activités locales peuvent renforcer la participation, à condition d’être accessibles à tous."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -15912,7 +15912,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "Je comprends votre objection sur les dépenses publiques."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -15925,7 +15925,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "تمرن على ثمانية أسئلة متابعة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Je comprends votre objection sur les dépenses publiques. Cependant, une analyse complète doit aussi prendre en compte les coûts évités, les effets à long terme et les inégalités que la mesure pourrait réduire."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -16076,7 +16076,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "Pour répondre à cette question, je vais d’abord résumer la position défendue, puis expliquer deux arguments et un exemple."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -16089,7 +16089,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اطلب ملاحظات عن الطلاقة والدقة والإقناع.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Pour répondre à cette question, je vais d’abord résumer la position défendue, puis expliquer deux arguments et un exemple. Enfin, je présenterai une limite et proposerai une solution."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -16248,7 +16248,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "J’ai obtenu de meilleurs résultats en lecture qu’en écoute."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -16261,7 +16261,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "حلّل الأخطاء حسب المهارة لا الدرجة الإجمالية فقط.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "J’ai obtenu de meilleurs résultats en lecture qu’en écoute. Pour progresser, je vais repérer les connecteurs à la deuxième écoute et noter les informations qui répondent précisément aux consignes."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -16412,7 +16412,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "Mon texte présente une position claire, mais les exemples ne sont pas assez précis."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -16425,7 +16425,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اطلب تصحيحاً وراجع الأخطاء المتكررة.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Mon texte présente une position claire, mais les exemples ne sont pas assez précis. Je vais développer un exemple concret, varier les connecteurs et vérifier les accords avant de rendre la version finale."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -16460,7 +16460,7 @@ window.FRENCH_CURRICULUM = {
                 "options": [
                   "un brouillon",
                   "une révision linguistique",
-                  "un brouillon",
+                  "une conclusion",
                   "une concession"
                 ],
                 "answer": 3,
@@ -16471,7 +16471,7 @@ window.FRENCH_CURRICULUM = {
                 "options": [
                   "مسودة",
                   "إقرار بجزء من الرأي الآخر",
-                  "مسودة",
+                  "خطة",
                   "مراجعة لغوية"
                 ],
                 "answer": 0,
@@ -16576,7 +16576,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "En comparant mes deux enregistrements, je remarque que je parle plus longtemps sans hésiter."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -16589,7 +16589,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "قارن تسجيلين لتحديد التحسن.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "En comparant mes deux enregistrements, je remarque que je parle plus longtemps sans hésiter. Je dois encore améliorer les transitions entre les arguments et répondre plus directement aux questions."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
@@ -16740,7 +16740,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "اكتب خمس جمل من موضوع الأسبوع باستخدام التركيب المستهدف. ضع خطاً تحت الفعل أو الرابط، ثم راجع التصحيح النموذجي.",
                 "output": "استعمل التركيب نفسه مرة في سؤال ومرة في إجابة ومرة في النفي أو المقارنة.",
-                "model": "La thèse doit être exprimée clairement."
+                "model": "Mon objectif est de présenter une position claire, de la défendre par des arguments précis et de répondre aux objections."
               },
               {
                 "title": "فهم مسموع أو مقروء",
@@ -16753,7 +16753,7 @@ window.FRENCH_CURRICULUM = {
                 "time": "60 دقيقة",
                 "instructions": "انتقل للاختبار الحقيقي بعد استقرار B2 في المهارات الأربع.",
                 "output": "سجّل إجابة من 60–120 ثانية، ثم اكتب ملخصاً من 80–180 كلمة بحسب مستوى الأسبوع. قارن عملك بالنموذج وحسّن ثلاث جمل.",
-                "model": "Certes, cette proposition présente des avantages ; toutefois, son efficacité dépend des conditions de mise en œuvre et des moyens disponibles."
+                "model": "Mon objectif est de présenter une position claire, de la défendre par des arguments précis et de répondre aux objections. Avant l’épreuve, je vérifierai le temps, la structure et le respect de la consigne."
               },
               {
                 "title": "التطبيق التكاملي وربط المهارات",
