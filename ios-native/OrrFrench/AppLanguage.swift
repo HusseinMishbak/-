@@ -56,6 +56,7 @@ private enum AppCopy {
         "sessionFinished": [.arabic: "أحسنت! اكتملت الجلسة", .english: "Well done! Session complete", .french: "Bravo ! Séance terminée"],
         "done": [.arabic: "تم", .english: "Done", .french: "Terminé"],
         "dueReview": [.arabic: "بطاقات للمراجعة", .english: "Cards due", .french: "Cartes à réviser"],
+        "frenchAudio": [.arabic: "استمع إلى النطق", .english: "Listen to pronunciation", .french: "Écouter la prononciation"],
         "reveal": [.arabic: "إظهار المعنى", .english: "Reveal meaning", .french: "Afficher le sens"],
         "knewIt": [.arabic: "عرفتها", .english: "I knew it", .french: "Je la connaissais"],
         "reviewAgain": [.arabic: "أحتاج إلى مراجعتها", .english: "Review again", .french: "À revoir"],
