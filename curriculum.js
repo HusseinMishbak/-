@@ -4986,14 +4986,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "La question « Est-ce qu’il y a… ? » est correcte."
               },
               {
-                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "q": "Pour décrire son quartier, on peut dire :",
                 "options": [
-                  "Combien je suis le loyer ?",
-                  "Je comprends le loyer demain.",
-                  "Les charges sont-elles comprises dans le loyer ?"
+                  "Il y a une pharmacie près de chez moi.",
+                  "J’ai une pharmacie hier.",
+                  "Je suis pharmacie."
                 ],
-                "answer": 2,
-                "why": "La question porte directement sur les charges et le loyer."
+                "answer": 0,
+                "why": "« Il y a » présente un service disponible dans un lieu."
               }
             ],
             "resources": [
@@ -5147,14 +5147,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Le comparatif « moins… que » compare deux éléments."
               },
               {
-                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "q": "Pour comparer deux produits, on peut dire :",
                 "options": [
-                  "Je comprends le loyer demain.",
-                  "Les charges sont-elles comprises dans le loyer ?",
-                  "Combien je suis le loyer ?"
+                  "Ce modèle est moins cher que l’autre.",
+                  "Ce modèle est moins cher de l’autre.",
+                  "Ce modèle moins cher hier."
                 ],
-                "answer": 1,
-                "why": "La question porte directement sur les charges et le loyer."
+                "answer": 0,
+                "why": "« Moins… que » sert à comparer deux éléments."
               }
             ],
             "resources": [
@@ -5308,14 +5308,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Une ordonnance est un document médical."
               },
               {
-                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "q": "Pour prendre rendez-vous chez un médecin, on contacte :",
                 "options": [
-                  "Les charges sont-elles comprises dans le loyer ?",
-                  "Combien je suis le loyer ?",
-                  "Je comprends le loyer demain."
+                  "le cabinet médical",
+                  "le quai de la gare",
+                  "le service des bagages"
                 ],
                 "answer": 0,
-                "why": "La question porte directement sur les charges et le loyer."
+                "why": "Le cabinet médical organise les consultations."
               }
             ],
             "resources": [
@@ -5469,14 +5469,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "L’impératif de « vous » est « continuez »."
               },
               {
-                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "q": "Pour organiser un trajet, il faut vérifier :",
                 "options": [
-                  "Combien je suis le loyer ?",
-                  "Je comprends le loyer demain.",
-                  "Les charges sont-elles comprises dans le loyer ?"
+                  "les horaires et les correspondances",
+                  "seulement la couleur du billet",
+                  "uniquement le nom du voyageur"
                 ],
-                "answer": 2,
-                "why": "La question porte directement sur les charges et le loyer."
+                "answer": 0,
+                "why": "Les horaires et les correspondances facilitent le trajet."
               }
             ],
             "resources": [
@@ -5638,14 +5638,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Le conditionnel présent permet d’atténuer une demande."
               },
               {
-                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "q": "Pour connaître la voie de départ d’un train, on cherche :",
                 "options": [
-                  "Je comprends le loyer demain.",
-                  "Les charges sont-elles comprises dans le loyer ?",
-                  "Combien je suis le loyer ?"
+                  "le quai",
+                  "le loyer",
+                  "l’ordonnance"
                 ],
-                "answer": 1,
-                "why": "La question porte directement sur les charges et le loyer."
+                "answer": 0,
+                "why": "Le quai indique l’endroit où prendre le train."
               }
             ],
             "resources": [
@@ -5799,14 +5799,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Aller » utilise être au passé composé ; le participe s’accorde avec le sujet."
               },
               {
-                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "q": "Pour décrire une habitude dans le passé, on utilise souvent :",
                 "options": [
-                  "Les charges sont-elles comprises dans le loyer ?",
-                  "Combien je suis le loyer ?",
-                  "Je comprends le loyer demain."
+                  "l’imparfait",
+                  "le futur simple",
+                  "l’impératif"
                 ],
                 "answer": 0,
-                "why": "La question porte directement sur les charges et le loyer."
+                "why": "L’imparfait peut décrire une habitude passée."
               }
             ],
             "resources": [
@@ -5960,14 +5960,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Visiter » se conjugue avec avoir au passé composé."
               },
               {
-                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "q": "Pour accepter poliment une invitation, on peut dire :",
                 "options": [
-                  "Combien je suis le loyer ?",
-                  "Je comprends le loyer demain.",
-                  "Les charges sont-elles comprises dans le loyer ?"
+                  "Avec plaisir, merci pour l’invitation !",
+                  "Je refuse demain hier.",
+                  "Tu invitation moi."
                 ],
-                "answer": 2,
-                "why": "La question porte directement sur les charges et le loyer."
+                "answer": 0,
+                "why": "Cette formule exprime une acceptation polie."
               }
             ],
             "resources": [
@@ -6123,12 +6123,12 @@ window.FRENCH_CURRICULUM = {
               {
                 "q": "Pour demander si le loyer comprend les charges, on dit :",
                 "options": [
-                  "Je comprends le loyer demain.",
                   "Les charges sont-elles comprises dans le loyer ?",
-                  "Combien je suis le loyer ?"
+                  "Le loyer comprend hier ?",
+                  "Je comprends le loyer demain."
                 ],
-                "answer": 1,
-                "why": "La question porte directement sur les charges et le loyer."
+                "answer": 0,
+                "why": "La question porte sur l’inclusion des charges dans le loyer."
               }
             ],
             "resources": [
@@ -6290,14 +6290,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Le comparatif « moins… que » compare deux éléments."
               },
               {
-                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "q": "Pour commander poliment au restaurant, on dit :",
                 "options": [
-                  "Les charges sont-elles comprises dans le loyer ?",
-                  "Combien je suis le loyer ?",
-                  "Je comprends le loyer demain."
+                  "Je voudrais une soupe, s’il vous plaît.",
+                  "Je suis une soupe.",
+                  "Je voudrais soupe hier."
                 ],
                 "answer": 0,
-                "why": "La question porte directement sur les charges et le loyer."
+                "why": "« Je voudrais » est une formule polie pour commander."
               }
             ],
             "resources": [
@@ -6451,14 +6451,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« En » peut remplacer une quantité ou un groupe introduit par « de »."
               },
               {
-                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "q": "Dans un courriel professionnel, le ton doit être :",
                 "options": [
-                  "Combien je suis le loyer ?",
-                  "Je comprends le loyer demain.",
-                  "Les charges sont-elles comprises dans le loyer ?"
+                  "clair et courtois",
+                  "agressif et familier",
+                  "sans lien avec la demande"
                 ],
-                "answer": 2,
-                "why": "La question porte directement sur les charges et le loyer."
+                "answer": 0,
+                "why": "Un registre professionnel reste clair et courtois."
               }
             ],
             "resources": [
@@ -6612,14 +6612,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Parce que » introduit une cause."
               },
               {
-                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "q": "Pour accepter poliment une invitation, on peut dire :",
                 "options": [
-                  "Je comprends le loyer demain.",
-                  "Les charges sont-elles comprises dans le loyer ?",
-                  "Combien je suis le loyer ?"
+                  "Avec plaisir, merci pour l’invitation !",
+                  "Je refuse demain hier.",
+                  "Tu invitation moi."
                 ],
-                "answer": 1,
-                "why": "La question porte directement sur les charges et le loyer."
+                "answer": 0,
+                "why": "Cette formule exprime une acceptation polie."
               }
             ],
             "resources": [
@@ -6773,14 +6773,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Les notes doivent aider à reconstruire l’idée et la structure."
               },
               {
-                "q": "Pour demander si le loyer comprend les charges, on dit :",
+                "q": "Pendant une compréhension orale, les notes utiles reprennent :",
                 "options": [
-                  "Les charges sont-elles comprises dans le loyer ?",
-                  "Combien je suis le loyer ?",
-                  "Je comprends le loyer demain."
+                  "les idées clés, les chiffres et les liens logiques",
+                  "chaque mot sans tri",
+                  "les opinions personnelles du candidat"
                 ],
                 "answer": 0,
-                "why": "La question porte directement sur les charges et le loyer."
+                "why": "Les notes doivent soutenir la compréhension du message."
               }
             ],
             "resources": [
@@ -6942,14 +6942,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Aller » utilise être au passé composé ; le participe s’accorde avec le sujet."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour rendre un récit clair, il est utile de :",
                 "options": [
-                  "uniquement le futur",
-                  "l’impératif dans chaque phrase",
-                  "l’imparfait"
+                  "ordonner les événements dans le temps",
+                  "mélanger les événements",
+                  "supprimer les liens chronologiques"
                 ],
-                "answer": 2,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "Les marqueurs temporels clarifient le déroulement."
               }
             ],
             "resources": [
@@ -7103,14 +7103,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Visiter » se conjugue avec avoir au passé composé."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour décrire une habitude dans le passé, on utilise souvent :",
                 "options": [
-                  "l’impératif dans chaque phrase",
                   "l’imparfait",
-                  "uniquement le futur"
+                  "le futur simple",
+                  "l’impératif"
                 ],
-                "answer": 1,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "L’imparfait peut décrire une habitude passée."
               }
             ],
             "resources": [
@@ -7264,14 +7264,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Que » reprend le complément direct du verbe."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour rendre un récit clair, il est utile de :",
                 "options": [
-                  "l’imparfait",
-                  "uniquement le futur",
-                  "l’impératif dans chaque phrase"
+                  "ordonner les événements dans le temps",
+                  "mélanger les événements",
+                  "supprimer les liens chronologiques"
                 ],
                 "answer": 0,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "why": "Les marqueurs temporels clarifient le déroulement."
               }
             ],
             "resources": [
@@ -7425,14 +7425,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "L’habitude passée se décrit avec l’imparfait."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour décrire une habitude dans le passé, on utilise souvent :",
                 "options": [
-                  "uniquement le futur",
-                  "l’impératif dans chaque phrase",
-                  "l’imparfait"
+                  "l’imparfait",
+                  "le futur simple",
+                  "l’impératif"
                 ],
-                "answer": 2,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "L’imparfait peut décrire une habitude passée."
               }
             ],
             "resources": [
@@ -7594,14 +7594,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« En définitive » introduit une conclusion."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour vérifier une information, il faut consulter :",
                 "options": [
-                  "l’impératif dans chaque phrase",
-                  "l’imparfait",
-                  "uniquement le futur"
+                  "l’auteur, la date et plusieurs sources fiables",
+                  "seulement le titre",
+                  "uniquement le nombre de partages"
                 ],
-                "answer": 1,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "La source, la date et le recoupement aident à vérifier l’information."
               }
             ],
             "resources": [
@@ -7755,14 +7755,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Certes… toutefois… » exprime une concession nuancée."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "l’imparfait",
-                  "uniquement le futur",
-                  "l’impératif dans chaque phrase"
+                  "montrer qu’on l’a comprise puis justifier sa réponse",
+                  "l’ignorer systématiquement",
+                  "attaquer la personne"
                 ],
                 "answer": 0,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
             "resources": [
@@ -7916,14 +7916,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Par conséquent » introduit une conséquence."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour rendre un récit clair, il est utile de :",
                 "options": [
-                  "uniquement le futur",
-                  "l’impératif dans chaque phrase",
-                  "l’imparfait"
+                  "ordonner les événements dans le temps",
+                  "mélanger les événements",
+                  "supprimer les liens chronologiques"
                 ],
-                "answer": 2,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "Les marqueurs temporels clarifient le déroulement."
               }
             ],
             "resources": [
@@ -8077,14 +8077,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« En définitive » introduit une conclusion."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour décrire une habitude dans le passé, on utilise souvent :",
                 "options": [
-                  "l’impératif dans chaque phrase",
                   "l’imparfait",
-                  "uniquement le futur"
+                  "le futur simple",
+                  "l’impératif"
                 ],
-                "answer": 1,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "L’imparfait peut décrire une habitude passée."
               }
             ],
             "resources": [
@@ -8246,14 +8246,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Pour + infinitif » exprime le but."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Dans un CV, on met surtout en valeur :",
                 "options": [
-                  "l’imparfait",
-                  "uniquement le futur",
-                  "l’impératif dans chaque phrase"
+                  "les expériences et compétences utiles au poste",
+                  "les informations sans rapport avec le poste",
+                  "des opinions sans exemples"
                 ],
                 "answer": 0,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "why": "Le CV met en avant les éléments pertinents pour la candidature."
               }
             ],
             "resources": [
@@ -8407,14 +8407,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Le conditionnel présent permet d’atténuer une demande."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Dans un courriel professionnel, le ton doit être :",
                 "options": [
-                  "uniquement le futur",
-                  "l’impératif dans chaque phrase",
-                  "l’imparfait"
+                  "clair et courtois",
+                  "agressif et familier",
+                  "sans lien avec la demande"
                 ],
-                "answer": 2,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "Un registre professionnel reste clair et courtois."
               }
             ],
             "resources": [
@@ -8568,14 +8568,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Le participe passé s’accorde avec « les données » dans cette phrase passive."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour rendre un récit clair, il est utile de :",
                 "options": [
-                  "l’impératif dans chaque phrase",
-                  "l’imparfait",
-                  "uniquement le futur"
+                  "ordonner les événements dans le temps",
+                  "mélanger les événements",
+                  "supprimer les liens chronologiques"
                 ],
-                "answer": 1,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "Les marqueurs temporels clarifient le déroulement."
               }
             ],
             "resources": [
@@ -8729,14 +8729,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Pour + infinitif » exprime le but."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour décrire une habitude dans le passé, on utilise souvent :",
                 "options": [
                   "l’imparfait",
-                  "uniquement le futur",
-                  "l’impératif dans chaque phrase"
+                  "le futur simple",
+                  "l’impératif"
                 ],
                 "answer": 0,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "why": "L’imparfait peut décrire une habitude passée."
               }
             ],
             "resources": [
@@ -8898,14 +8898,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "L’habitude passée se décrit avec l’imparfait."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour prendre rendez-vous chez un médecin, on contacte :",
                 "options": [
-                  "uniquement le futur",
-                  "l’impératif dans chaque phrase",
-                  "l’imparfait"
+                  "le cabinet médical",
+                  "le quai de la gare",
+                  "le service des bagages"
                 ],
-                "answer": 2,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "Le cabinet médical organise les consultations."
               }
             ],
             "resources": [
@@ -9059,14 +9059,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "L’imparfait décrit l’action en cours interrompue par un événement."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour analyser une politique publique, on compare :",
                 "options": [
-                  "l’impératif dans chaque phrase",
-                  "l’imparfait",
-                  "uniquement le futur"
+                  "les objectifs, les coûts et les effets",
+                  "seulement le slogan",
+                  "uniquement le nom du programme"
                 ],
-                "answer": 1,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "Ces critères permettent une évaluation plus structurée."
               }
             ],
             "resources": [
@@ -9220,14 +9220,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Donc » relie une cause à sa conséquence."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour présenter une solution environnementale, il faut préciser :",
                 "options": [
-                  "l’imparfait",
-                  "uniquement le futur",
-                  "l’impératif dans chaque phrase"
+                  "le problème, la mesure et ses effets attendus",
+                  "un slogan sans explication",
+                  "uniquement le nom de la mesure"
                 ],
                 "answer": 0,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "why": "Une proposition relie un problème à une action et à ses effets."
               }
             ],
             "resources": [
@@ -9381,14 +9381,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Cette structure présente une concession et une opposition."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour décrire une habitude dans le passé, on utilise souvent :",
                 "options": [
-                  "uniquement le futur",
-                  "l’impératif dans chaque phrase",
-                  "l’imparfait"
+                  "l’imparfait",
+                  "le futur simple",
+                  "l’impératif"
                 ],
-                "answer": 2,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "L’imparfait peut décrire une habitude passée."
               }
             ],
             "resources": [
@@ -9550,14 +9550,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "La synthèse suppose de comparer les documents."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour recommander un film, il est utile de présenter :",
                 "options": [
-                  "l’impératif dans chaque phrase",
-                  "l’imparfait",
-                  "uniquement le futur"
+                  "le sujet et les raisons de son intérêt",
+                  "seulement sa durée",
+                  "des détails sans lien"
                 ],
-                "answer": 1,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "Une recommandation s’appuie sur le contenu et des raisons précises."
               }
             ],
             "resources": [
@@ -9711,14 +9711,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Qui » est sujet du verbe « a aidé »."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pour organiser un trajet, il faut vérifier :",
                 "options": [
-                  "l’imparfait",
-                  "uniquement le futur",
-                  "l’impératif dans chaque phrase"
+                  "les horaires et les correspondances",
+                  "seulement la couleur du billet",
+                  "uniquement le nom du voyageur"
                 ],
                 "answer": 0,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "why": "Les horaires et les correspondances facilitent le trajet."
               }
             ],
             "resources": [
@@ -9872,14 +9872,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "L’imparfait décrit l’action en cours interrompue par un événement."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Une synthèse réussie doit :",
                 "options": [
-                  "uniquement le futur",
-                  "l’impératif dans chaque phrase",
-                  "l’imparfait"
+                  "mettre en relation les idées de plusieurs documents",
+                  "copier un seul document",
+                  "ajouter un avis sans lien avec les sources"
                 ],
-                "answer": 2,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "Une synthèse croise les idées principales des documents."
               }
             ],
             "resources": [
@@ -10033,14 +10033,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Un compte rendu formel exige précision et neutralité."
               },
               {
-                "q": "Pour décrire le contexte d’un événement passé, on utilise souvent :",
+                "q": "Pendant une compréhension orale, les notes utiles reprennent :",
                 "options": [
-                  "l’impératif dans chaque phrase",
-                  "l’imparfait",
-                  "uniquement le futur"
+                  "les idées clés, les chiffres et les liens logiques",
+                  "chaque mot sans tri",
+                  "les opinions personnelles du candidat"
                 ],
-                "answer": 1,
-                "why": "L’imparfait sert souvent à décrire le décor ou une habitude passée."
+                "answer": 0,
+                "why": "Les notes doivent soutenir la compréhension du message."
               }
             ],
             "resources": [
@@ -10202,14 +10202,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Une preuve, une donnée ou un exemple renforce l’argument."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "donner des raisons et des exemples précis",
+                  "répéter sa position sans explication",
+                  "éviter tout lien logique"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
             "resources": [
@@ -10363,14 +10363,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« En revanche » introduit un contraste."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement"
+                  "montrer qu’on l’a comprise puis justifier sa réponse",
+                  "l’ignorer systématiquement",
+                  "attaquer la personne"
                 ],
-                "answer": 2,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
             "resources": [
@@ -10524,14 +10524,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Le participe passé s’accorde avec « les données » dans cette phrase passive."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Une synthèse réussie doit :",
                 "options": [
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement"
+                  "mettre en relation les idées de plusieurs documents",
+                  "copier un seul document",
+                  "ajouter un avis sans lien avec les sources"
                 ],
-                "answer": 1,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Une synthèse croise les idées principales des documents."
               }
             ],
             "resources": [
@@ -10685,14 +10685,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Une preuve, une donnée ou un exemple renforce l’argument."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour construire un rapport solide, il faut :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "distinguer les constats, les preuves et les recommandations",
+                  "mélanger résultats et opinions",
+                  "omettre la source des chiffres"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "Cette structure distingue les faits de leur interprétation."
               }
             ],
             "resources": [
@@ -10854,14 +10854,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "On dit « avoir mal à la tête »."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement"
+                  "donner des raisons et des exemples précis",
+                  "répéter sa position sans explication",
+                  "éviter tout lien logique"
                 ],
-                "answer": 2,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
             "resources": [
@@ -11015,14 +11015,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Cependant » marque une opposition."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement"
+                  "montrer qu’on l’a comprise puis justifier sa réponse",
+                  "l’ignorer systématiquement",
+                  "attaquer la personne"
                 ],
-                "answer": 1,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
             "resources": [
@@ -11176,14 +11176,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Donc » relie une cause à sa conséquence."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Une synthèse réussie doit :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "mettre en relation les idées de plusieurs documents",
+                  "copier un seul document",
+                  "ajouter un avis sans lien avec les sources"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "Une synthèse croise les idées principales des documents."
               }
             ],
             "resources": [
@@ -11337,14 +11337,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Le participe passé s’accorde avec « les données » dans cette phrase passive."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour construire un rapport solide, il faut :",
                 "options": [
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement"
+                  "distinguer les constats, les preuves et les recommandations",
+                  "mélanger résultats et opinions",
+                  "omettre la source des chiffres"
                 ],
-                "answer": 2,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Cette structure distingue les faits de leur interprétation."
               }
             ],
             "resources": [
@@ -11506,14 +11506,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "La première formule est polie et adaptée au registre professionnel."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Dans un CV, on met surtout en valeur :",
                 "options": [
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement"
+                  "les expériences et compétences utiles au poste",
+                  "les informations sans rapport avec le poste",
+                  "des opinions sans exemples"
                 ],
-                "answer": 1,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Le CV met en avant les éléments pertinents pour la candidature."
               }
             ],
             "resources": [
@@ -11667,14 +11667,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Le participe passé s’accorde avec « les données » dans cette phrase passive."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour demander si le loyer comprend les charges, on dit :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "Les charges sont-elles comprises dans le loyer ?",
+                  "Le loyer comprend hier ?",
+                  "Je comprends le loyer demain."
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "La question porte sur l’inclusion des charges dans le loyer."
               }
             ],
             "resources": [
@@ -11828,14 +11828,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Dans la voix passive, on emploie être + participe passé."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour décrire son quartier, on peut dire :",
                 "options": [
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement"
+                  "Il y a une pharmacie près de chez moi.",
+                  "J’ai une pharmacie hier.",
+                  "Je suis pharmacie."
                 ],
-                "answer": 2,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "« Il y a » présente un service disponible dans un lieu."
               }
             ],
             "resources": [
@@ -11989,14 +11989,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Un compte rendu formel exige précision et neutralité."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour construire un rapport solide, il faut :",
                 "options": [
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement"
+                  "distinguer les constats, les preuves et les recommandations",
+                  "mélanger résultats et opinions",
+                  "omettre la source des chiffres"
                 ],
-                "answer": 1,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Cette structure distingue les faits de leur interprétation."
               }
             ],
             "resources": [
@@ -12158,14 +12158,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Après « si » + imparfait, on emploie souvent le conditionnel présent."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour vérifier une information, il faut consulter :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "l’auteur, la date et plusieurs sources fiables",
+                  "seulement le titre",
+                  "uniquement le nombre de partages"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "La source, la date et le recoupement aident à vérifier l’information."
               }
             ],
             "resources": [
@@ -12319,14 +12319,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Un compte rendu formel exige précision et neutralité."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Un fait se distingue d’une opinion parce qu’il peut être :",
                 "options": [
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement"
+                  "vérifié à l’aide d’éléments précis",
+                  "seulement ressenti",
+                  "toujours personnel"
                 ],
-                "answer": 2,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Un fait est vérifiable à partir d’éléments ou de preuves."
               }
             ],
             "resources": [
@@ -12480,14 +12480,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Le participe passé s’accorde avec « les données » dans cette phrase passive."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Une synthèse réussie doit :",
                 "options": [
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement"
+                  "mettre en relation les idées de plusieurs documents",
+                  "copier un seul document",
+                  "ajouter un avis sans lien avec les sources"
                 ],
-                "answer": 1,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Une synthèse croise les idées principales des documents."
               }
             ],
             "resources": [
@@ -12641,14 +12641,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Une preuve, une donnée ou un exemple renforce l’argument."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Un fait se distingue d’une opinion parce qu’il peut être :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "vérifié à l’aide d’éléments précis",
+                  "seulement ressenti",
+                  "toujours personnel"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "Un fait est vérifiable à partir d’éléments ou de preuves."
               }
             ],
             "resources": [
@@ -12810,14 +12810,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Parce que » introduit une cause."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour présenter une solution environnementale, il faut préciser :",
                 "options": [
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement"
+                  "le problème, la mesure et ses effets attendus",
+                  "un slogan sans explication",
+                  "uniquement le nom de la mesure"
                 ],
-                "answer": 2,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Une proposition relie un problème à une action et à ses effets."
               }
             ],
             "resources": [
@@ -12971,14 +12971,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Par conséquent » introduit une conséquence."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour analyser une politique publique, on compare :",
                 "options": [
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement"
+                  "les objectifs, les coûts et les effets",
+                  "seulement le slogan",
+                  "uniquement le nom du programme"
                 ],
-                "answer": 1,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Ces critères permettent une évaluation plus structurée."
               }
             ],
             "resources": [
@@ -13132,14 +13132,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Un compte rendu formel exige précision et neutralité."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour présenter une solution environnementale, il faut préciser :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "le problème, la mesure et ses effets attendus",
+                  "un slogan sans explication",
+                  "uniquement le nom de la mesure"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "Une proposition relie un problème à une action et à ses effets."
               }
             ],
             "resources": [
@@ -13293,14 +13293,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Parce que » introduit une cause."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour construire un rapport solide, il faut :",
                 "options": [
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement"
+                  "distinguer les constats, les preuves et les recommandations",
+                  "mélanger résultats et opinions",
+                  "omettre la source des chiffres"
                 ],
-                "answer": 2,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Cette structure distingue les faits de leur interprétation."
               }
             ],
             "resources": [
@@ -13462,14 +13462,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Un compte rendu formel exige précision et neutralité."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Une synthèse réussie doit :",
                 "options": [
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement"
+                  "mettre en relation les idées de plusieurs documents",
+                  "copier un seul document",
+                  "ajouter un avis sans lien avec les sources"
                 ],
-                "answer": 1,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Une synthèse croise les idées principales des documents."
               }
             ],
             "resources": [
@@ -13623,14 +13623,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Cette structure présente une concession et une opposition."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour construire un rapport solide, il faut :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "distinguer les constats, les preuves et les recommandations",
+                  "mélanger résultats et opinions",
+                  "omettre la source des chiffres"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "Cette structure distingue les faits de leur interprétation."
               }
             ],
             "resources": [
@@ -13784,14 +13784,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Dans la voix passive, on emploie être + participe passé."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Une synthèse réussie doit :",
                 "options": [
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement"
+                  "mettre en relation les idées de plusieurs documents",
+                  "copier un seul document",
+                  "ajouter un avis sans lien avec les sources"
                 ],
-                "answer": 2,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Une synthèse croise les idées principales des documents."
               }
             ],
             "resources": [
@@ -13945,14 +13945,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Un compte rendu formel exige précision et neutralité."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pendant une compréhension orale, les notes utiles reprennent :",
                 "options": [
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement"
+                  "les idées clés, les chiffres et les liens logiques",
+                  "chaque mot sans tri",
+                  "les opinions personnelles du candidat"
                 ],
-                "answer": 1,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Les notes doivent soutenir la compréhension du message."
               }
             ],
             "resources": [
@@ -14114,14 +14114,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Une preuve, une donnée ou un exemple renforce l’argument."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Avant de répondre à une consigne d’examen, il faut :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "identifier la tâche, le format et le destinataire",
+                  "lire seulement les options",
+                  "écrire sans analyser le sujet"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "Analyser la consigne aide à répondre exactement à la demande."
               }
             ],
             "resources": [
@@ -14275,14 +14275,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "La problématique organise le raisonnement."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pendant une compréhension orale, les notes utiles reprennent :",
                 "options": [
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement"
+                  "les idées clés, les chiffres et les liens logiques",
+                  "chaque mot sans tri",
+                  "les opinions personnelles du candidat"
                 ],
-                "answer": 2,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Les notes doivent soutenir la compréhension du message."
               }
             ],
             "resources": [
@@ -14436,14 +14436,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Un fait peut être confronté à des éléments vérifiables."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Avant de répondre à une consigne d’examen, il faut :",
                 "options": [
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement"
+                  "identifier la tâche, le format et le destinataire",
+                  "lire seulement les options",
+                  "écrire sans analyser le sujet"
                 ],
-                "answer": 1,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Analyser la consigne aide à répondre exactement à la demande."
               }
             ],
             "resources": [
@@ -14597,14 +14597,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Les notes doivent aider à reconstruire l’idée et la structure."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pendant une compréhension orale, les notes utiles reprennent :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "les idées clés, les chiffres et les liens logiques",
+                  "chaque mot sans tri",
+                  "les opinions personnelles du candidat"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "Les notes doivent soutenir la compréhension du message."
               }
             ],
             "resources": [
@@ -14766,14 +14766,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Cette structure présente une concession et une opposition."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement"
+                  "donner des raisons et des exemples précis",
+                  "répéter sa position sans explication",
+                  "éviter tout lien logique"
                 ],
-                "answer": 2,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
             "resources": [
@@ -14927,14 +14927,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Une preuve, une donnée ou un exemple renforce l’argument."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement"
+                  "montrer qu’on l’a comprise puis justifier sa réponse",
+                  "l’ignorer systématiquement",
+                  "attaquer la personne"
                 ],
-                "answer": 1,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
             "resources": [
@@ -15088,14 +15088,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« En revanche » introduit un contraste."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "donner des raisons et des exemples précis",
+                  "répéter sa position sans explication",
+                  "éviter tout lien logique"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
             "resources": [
@@ -15249,14 +15249,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Un fait peut être confronté à des éléments vérifiables."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement"
+                  "montrer qu’on l’a comprise puis justifier sa réponse",
+                  "l’ignorer systématiquement",
+                  "attaquer la personne"
                 ],
-                "answer": 2,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
             "resources": [
@@ -15418,14 +15418,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "La problématique organise le raisonnement."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement"
+                  "donner des raisons et des exemples précis",
+                  "répéter sa position sans explication",
+                  "éviter tout lien logique"
                 ],
-                "answer": 1,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
             "resources": [
@@ -15579,14 +15579,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Les arguments et les exemples rendent le propos convaincant."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "montrer qu’on l’a comprise puis justifier sa réponse",
+                  "l’ignorer systématiquement",
+                  "attaquer la personne"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
             "resources": [
@@ -15740,14 +15740,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "« Cependant » marque une opposition."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement"
+                  "donner des raisons et des exemples précis",
+                  "répéter sa position sans explication",
+                  "éviter tout lien logique"
                 ],
-                "answer": 2,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
             "resources": [
@@ -15901,14 +15901,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Une réponse constructive reconnaît la question et développe une justification."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement"
+                  "montrer qu’on l’a comprise puis justifier sa réponse",
+                  "l’ignorer systématiquement",
+                  "attaquer la personne"
                 ],
-                "answer": 1,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
             "resources": [
@@ -16070,14 +16070,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Les notes doivent aider à reconstruire l’idée et la structure."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "donner des raisons et des exemples précis",
+                  "répéter sa position sans explication",
+                  "éviter tout lien logique"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
             "resources": [
@@ -16231,14 +16231,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "La problématique organise le raisonnement."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement"
+                  "montrer qu’on l’a comprise puis justifier sa réponse",
+                  "l’ignorer systématiquement",
+                  "attaquer la personne"
                 ],
-                "answer": 2,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
             "resources": [
@@ -16392,14 +16392,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Un plan clarifie la thèse, les arguments et la progression."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour défendre une opinion, il est préférable de :",
                 "options": [
-                  "transformée en attaque personnelle",
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement"
+                  "donner des raisons et des exemples précis",
+                  "répéter sa position sans explication",
+                  "éviter tout lien logique"
                 ],
-                "answer": 1,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "answer": 0,
+                "why": "Une opinion convaincante s’appuie sur des raisons et des exemples."
               }
             ],
             "resources": [
@@ -16553,14 +16553,14 @@ window.FRENCH_CURRICULUM = {
                 "why": "Une structure claire facilite le suivi du raisonnement."
               },
               {
-                "q": "Dans un débat, une objection pertinente doit être :",
+                "q": "Pour répondre à une objection, il faut :",
                 "options": [
-                  "écoutée puis traitée avec un raisonnement",
-                  "ignorée systématiquement",
-                  "transformée en attaque personnelle"
+                  "montrer qu’on l’a comprise puis justifier sa réponse",
+                  "l’ignorer systématiquement",
+                  "attaquer la personne"
                 ],
                 "answer": 0,
-                "why": "Le débat argumenté répond aux idées, pas aux personnes."
+                "why": "Le débat argumenté répond à l’idée et la justifie."
               }
             ],
             "resources": [
