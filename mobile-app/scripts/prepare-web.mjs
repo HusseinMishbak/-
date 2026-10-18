@@ -96,7 +96,7 @@ for (const file of [...requiredFiles, ...requiredStyles.map(name => 'ui/' + name
 }
 const i18n = await readFile(resolve(out, 'i18n.js'), 'utf8');
 for (const file of requiredFiles.filter(name => name.endsWith('.js'))) {
-  const isRuntimeLoaded = file === 'learning-experience.js' || file === 'curriculum-audit.js';
+  const isRuntimeLoaded = file === 'learning-experience.js';
   const referenced = isRuntimeLoaded ? i18n.includes(file) : html.includes(file);
   if (!referenced) throw new Error(`Required script is not referenced by the app loader: ${file}`);
 }
