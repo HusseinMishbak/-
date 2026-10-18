@@ -5,12 +5,13 @@ const config: CapacitorConfig = {
   appName: 'Orr French',
   webDir: 'www',
   bundledWebRuntime: false,
-  server: {
-    // The first version opens the existing hosted learning platform.
-    // Keep HTTPS enabled; remove this URL when bundling the full web app locally.
-    url: 'https://husseinmishbak.github.io/-/',
-    cleartext: false,
-    allowNavigation: ['husseinmishbak.github.io', '*.supabase.co']
+  backgroundColor: '#f5f7fc',
+  ios: {
+    contentInset: 'automatic',
+    scrollEnabled: true
+  },
+  android: {
+    allowMixedContent: false
   }
 };
 
