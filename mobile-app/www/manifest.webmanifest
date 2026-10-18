@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "Orr French — منصة أور",
+  "short_name": "Orr French",
+  "description": "منصة أور لتعلّم اللغة الفرنسية والاستعداد لـ DELF B2",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f5f7fc",
+  "theme_color": "#25295b",
+  "categories": [
+    "education",
+    "language"
+  ],
+  "icons": [
+    {
+      "src": "./app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
