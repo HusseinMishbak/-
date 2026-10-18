@@ -22,8 +22,11 @@ create table if not exists public.student_progress (
   notes text not null default '',
   last_section text not null default 'home',
   latest_quiz jsonb not null default '{}'::jsonb,
+  learning_experience jsonb not null default '{}'::jsonb,
   updated_at timestamptz not null default now()
 );
+
+alter table public.student_progress add column if not exists learning_experience jsonb not null default '{}'::jsonb;
 
 create table if not exists public.quiz_attempts (
   id uuid primary key default gen_random_uuid(),
