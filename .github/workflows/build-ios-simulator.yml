@@ -33,6 +33,9 @@ jobs:
       - name: Generate iOS project
         working-directory: mobile-app
         run: npx cap add ios
+      - name: Configure native iOS metadata and microphone permission
+        working-directory: mobile-app
+        run: npm run configure:ios
       - name: Generate iOS icon and splash assets
         working-directory: mobile-app
         run: npx capacitor-assets generate --ios
