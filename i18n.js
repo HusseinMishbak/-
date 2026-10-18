@@ -159,3 +159,14 @@ function boot(){
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
 })();
+
+
+/* UR Frello-inspired responsive UI refresh */
+(function(){
+  if (document.querySelector('link[data-ur-ui-refresh]')) return;
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = './ui/frello-inspired-refresh.css';
+  link.setAttribute('data-ur-ui-refresh', 'true');
+  document.head.appendChild(link);
+})();
