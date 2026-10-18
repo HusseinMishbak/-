@@ -15,13 +15,13 @@ jobs:
     runs-on: macos-latest
     timeout-minutes: 60
     env:
-      APPLE_TEAM_ID: \${{ secrets.APPLE_TEAM_ID }}
-      IOS_CERTIFICATE_P12_BASE64: \${{ secrets.IOS_CERTIFICATE_P12_BASE64 }}
-      IOS_CERTIFICATE_PASSWORD: \${{ secrets.IOS_CERTIFICATE_PASSWORD }}
-      IOS_PROVISIONING_PROFILE_BASE64: \${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}
-      APP_STORE_CONNECT_KEY_ID: \${{ secrets.APP_STORE_CONNECT_KEY_ID }}
-      APP_STORE_CONNECT_ISSUER_ID: \${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
-      APP_STORE_CONNECT_API_KEY_P8: \${{ secrets.APP_STORE_CONNECT_API_KEY_P8 }}
+      APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+      IOS_CERTIFICATE_P12_BASE64: ${{ secrets.IOS_CERTIFICATE_P12_BASE64 }}
+      IOS_CERTIFICATE_PASSWORD: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
+      IOS_PROVISIONING_PROFILE_BASE64: ${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}
+      APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+      APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+      APP_STORE_CONNECT_API_KEY_P8: ${{ secrets.APP_STORE_CONNECT_API_KEY_P8 }}
       BUNDLE_ID: com.husseinmishbak.orrfrench
     steps:
       - name: Check required signing secrets
@@ -30,10 +30,10 @@ jobs:
           set -euo pipefail
           missing=()
           for name in APPLE_TEAM_ID IOS_CERTIFICATE_P12_BASE64 IOS_CERTIFICATE_PASSWORD IOS_PROVISIONING_PROFILE_BASE64 APP_STORE_CONNECT_KEY_ID APP_STORE_CONNECT_ISSUER_ID APP_STORE_CONNECT_API_KEY_P8; do
-            if [ -z "\${!name:-}" ]; then missing+=("$name"); fi
+            if [ -z "${!name:-}" ]; then missing+=("$name"); fi
           done
-          if [ "\${#missing[@]}" -gt 0 ]; then
-            printf 'Missing repository Actions secrets: %s\n' "\${missing[*]}"
+          if [ "${#missing[@]}" -gt 0 ]; then
+            printf 'Missing repository Actions secrets: %s\n' "${missing[*]}"
             echo 'Follow mobile-app/IOS_RELEASE.md before running this workflow.'
             exit 1
           fi
@@ -143,7 +143,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: orr-french-ios-ipa
-          path: \${{ runner.temp }}/export/*.ipa
+          path: ${{ runner.temp }}/export/*.ipa
           if-no-files-found: error
           retention-days: 14
       - name: Install fastlane
