@@ -10,7 +10,8 @@
     "cap:sync": "cap sync",
     "cap:android": "cap open android",
     "cap:ios": "cap open ios",
-    "build:assets": "npm run build:web && node scripts/prepare-assets.mjs"
+    "build:assets": "npm run build:web && node scripts/prepare-assets.mjs",
+    "configure:ios": "node scripts/configure-ios.mjs"
   },
   "dependencies": {
     "@capacitor/core": "^8.0.0"
