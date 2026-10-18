@@ -241,7 +241,8 @@
     hint.textContent = text(select.value === 'all' ? 'allHint' : 'singleHint');
     guide.appendChild(label);
     guide.appendChild(hint);
-    container.parentNode.insertBefore(guide, container);
+    if (container.matches('#panel-placement')) container.insertBefore(guide, container.firstChild);
+    else container.parentNode.insertBefore(guide, container);
     select.addEventListener('change', () => syncCorrectionMode(container, select.value));
     applyMode(container, readCorrectionMode(container));
   }
