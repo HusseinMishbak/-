@@ -1,0 +1,53 @@
+name: Build Android test APK
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'mobile-app/**'
+      - 'index.html'
+      - 'curriculum.js'
+      - 'i18n.js'
+      - 'assessment-controls.js'
+      - 'pronunciation-lesson.js'
+      - 'curriculum-review.js'
+      - 'speaking-assessment.js'
+      - 'conversation-podcast.js'
+      - 'podcast-six-minutes.js'
+      - 'learning-games.js'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: android-actions/setup-android@v3
+      - name: Install dependencies
+        working-directory: mobile-app
+        run: npm install
+      - name: Prepare bundled learning platform
+        working-directory: mobile-app
+        run: npm run build:web
+      - name: Generate Android project
+        working-directory: mobile-app
+        run: npx cap add android
+      - name: Sync Capacitor assets
+        working-directory: mobile-app
+        run: npx cap sync android
+      - name: Build debug APK
+        working-directory: mobile-app/android
+        run: ./gradlew assembleDebug
+      - name: Upload test APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: orr-french-android-debug
+          path: mobile-app/android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 14
