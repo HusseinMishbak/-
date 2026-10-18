@@ -497,6 +497,7 @@ button{touch-action:manipulation}
 
  
 /* Curriculum sequencing and transparent weekly workload */
+.ur-mode-hidden{display:none!important}
 .course-workload-card{margin:18px 0 22px;padding:clamp(15px,2.4vw,24px);border:1px solid #d5dceb;border-radius:18px;background:linear-gradient(135deg,#fff 0%,#f5f8ff 100%);color:#20263d}
 .course-workload-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;flex-wrap:wrap}
 .course-workload-heading h2{margin:4px 0 6px;color:#25295b;font-size:22px}
@@ -1577,7 +1578,7 @@ button{touch-action:manipulation}
   <textarea class="voice-diagnostic-report" id="voiceDiagnosticReport" readonly spellcheck="false" placeholder="ستظهر هنا أسماء الأصوات الفرنسية التي يعرضها Chrome."></textarea>
  </section>
 </div>
-<script src="./curriculum.js?v=20261018-audit5"></script>
+<script src="./curriculum.js?v=20261018-sequence7"></script>
 <script src="./pronunciation-lesson.js?v=20261012-pron1"></script>
 <script>
 (()=>{
@@ -1800,7 +1801,7 @@ function buildBookPracticeHtml(unit){
  '<details class="book-exercise-group" open><summary><span>١. اختر الإجابة الصحيحة</span><small>اختبار وتصحيح فوري</small></summary><div class="book-exercise-body"><div class="book-practice-quiz">'+quiz+'</div><div class="book-exercise-actions"><button type="button" class="btn btn-primary" data-grade-book-quiz="'+unit.u+'">صحّح الاختبار</button><button type="button" class="btn btn-soft" data-reset-book-quiz="'+unit.u+'">أعد المحاولة</button><div class="book-exercise-result" id="book-quiz-result-'+unit.u+'" hidden aria-live="polite"></div></div></div></details>'+
  '<details class="book-exercise-group"><summary><span>٢. املأ الفراغ</span><small>اكتب الكلمة أو التركيب</small></summary><div class="book-exercise-body"><p class="muted">اكتب الإجابة بالفرنسية، ثم اضغط «تصحيح الإجابات». زر التلميح يساعدك على التفكير دون كشف الإجابة مباشرة.</p><div class="book-fill-grid">'+fill+'</div><div class="book-exercise-actions"><button type="button" class="btn btn-primary" data-grade-book-fill="'+unit.u+'">صحّح الإجابات</button><button type="button" class="btn btn-soft" data-reset-book-fill="'+unit.u+'">امسح الإجابات</button><div class="book-exercise-result" id="book-fill-result-'+unit.u+'" hidden aria-live="polite"></div></div></div></details>'+
  '<details class="book-exercise-group"><summary><span>٣. طابق التعبير مع معناه</span><small>اختيار من قائمة</small></summary><div class="book-exercise-body"><div class="book-match-grid">'+match+'</div><div class="book-exercise-actions"><button type="button" class="btn btn-primary" data-grade-book-match="'+unit.u+'">تحقق من المطابقة</button><button type="button" class="btn btn-soft" data-reset-book-match="'+unit.u+'">أعد المطابقة</button><div class="book-exercise-result" id="book-match-result-'+unit.u+'" hidden aria-live="polite"></div></div></div></details>'+
- '<details class="book-exercise-group"><summary><span>٤. رتّب الكلمات</span><small>اضغط الكلمات بالترتيب الصحيح</small></summary><div class="book-exercise-body"><p class="muted">اضغط كل كلمة بالتتابع لتكوين الجملة. يمكنك إعادة المحاولة في أي وقت.</p><div class="book-order-grid">'+order+'</div></div></details>'+
+ '<details class="book-exercise-group"><summary><span>٤. رتّب الكلمات</span><small>اضغط الكلمات بالترتيب الصحيح</small></summary><div class="book-exercise-body"><p class="muted">اختر طريقة التصحيح أعلاه: صحّح كل جملة على حدة أو كوّن جميع الجمل ثم صحّحها دفعة واحدة.</p><div class="book-order-grid">'+order+'</div><div class="book-exercise-actions"><button type="button" class="btn btn-primary" data-grade-book-order="'+unit.u+'">صحّح جميع الجمل</button><button type="button" class="btn btn-soft" data-reset-book-order="'+unit.u+'">أعد ترتيب الجميع</button><div class="book-exercise-result" id="book-order-result-'+unit.u+'" hidden aria-live="polite"></div></div></div></details>'+
  '<details class="book-exercise-group"><summary><span>٥. تحدّي التحدث والكتابة</span><small>إنتاج شخصي ومراجعة ذاتية</small></summary><div class="book-exercise-body"><p class="book-production-prompt">'+E(p.production.prompt)+'</p><textarea class="book-production-input" data-book-writing="'+unit.u+'" lang="fr" dir="ltr" rows="5" placeholder="Écrivez ici en français…"></textarea><div class="book-exercise-actions"><button type="button" class="btn btn-primary" data-save-book-writing="'+unit.u+'">احفظ المسودة</button><button type="button" class="btn btn-soft" data-show-book-model="'+unit.u+'">اعرض نموذجاً للمقارنة</button><span class="book-writing-status" id="book-writing-status-'+unit.u+'" aria-live="polite"></span></div><div class="book-model-answer" id="book-model-'+unit.u+'" hidden><strong>نموذج للمقارنة — لا تحفظه حرفياً</strong><p class="latin" lang="fr" dir="ltr">'+E(p.production.model)+'</p><button type="button" class="btn btn-soft" data-speak="'+E(p.production.model)+'">🔊 استمع إلى النموذج</button></div><h4>مراجعة ذاتية قبل إنهاء المهمة</h4><div class="book-self-checklist">'+criteria+'</div><p class="muted">هذه مهمة إنتاج مفتوحة؛ استخدم النموذج لتحسين عملك، ولا تعتبره الإجابة الوحيدة الممكنة.</p></div></details></section>';
 }
 function buildUnitIntroductionHtml(unit){
