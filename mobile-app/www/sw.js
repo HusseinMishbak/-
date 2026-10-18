@@ -19,7 +19,7 @@ self.addEventListener('fetch', event => {
     return;
   }
   event.respondWith(caches.match(request).then(cached => cached || fetch(request).then(response => {
-    if (response.ok && /\\.(js|svg|webmanifest)$/.test(url.pathname)) caches.open(CACHE).then(cache => cache.put(request, response.clone()));
+    if (response.ok && /\.(js|svg|webmanifest)$/.test(url.pathname)) caches.open(CACHE).then(cache => cache.put(request, response.clone()));
     return response;
   })));
 });
