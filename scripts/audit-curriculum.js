@@ -173,7 +173,7 @@ if (sortedWeekNumbers.length !== uniqueWeekNumbers.size) addError('Duplicate roa
 for (const week of weeks) {
   const n = week.weekNumber;
   const expectedLevel = n <= 20 ? 'A2' : n <= 40 ? 'B1' : n <= 64 ? 'B2' : 'DELF B2';
-  if (week.level !== expectedLevel) addError('CEFR/exam level does not match week ' + n + ': expected ' + expectedLevel + ', got ' + week.level + '.');
+  if (week.monthLevel !== expectedLevel) addError('CEFR/exam level does not match week ' + n + ': expected ' + expectedLevel + ', got ' + week.monthLevel + '.');
 }
 
 const promptLocations = new Map();
