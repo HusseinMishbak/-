@@ -149,7 +149,7 @@ private struct MetricTile: View {
             Image(systemName: symbol).font(.title3).foregroundStyle(tint)
                 .frame(width: 42, height: 42).background(fill, in: RoundedRectangle(cornerRadius: 14))
             VStack(alignment: .leading, spacing: 4) {
-                Text(value).font(.title2.bold().rounded()).foregroundStyle(OrrTheme.ink)
+                Text(value).font(.system(size: 22, weight: .bold, design: .rounded)).foregroundStyle(OrrTheme.ink)
                 Text(title).font(.caption).foregroundStyle(OrrTheme.muted).lineLimit(2)
             }
             Spacer(minLength: 0)
@@ -195,7 +195,7 @@ struct VocabularyView: View {
                             Button {
                                 speak(card.french)
                             } label: {
-                                Label(app.language.text("frenchAudio", fallback: "🔊"), systemImage: "speaker.wave.2.fill")
+                                Label("🔊", systemImage: "speaker.wave.2.fill")
                                     .font(.subheadline.bold()).padding(.horizontal, 18).padding(.vertical, 11)
                                     .background(OrrTheme.sky, in: Capsule())
                             }.buttonStyle(.plain).foregroundStyle(OrrTheme.violet)
