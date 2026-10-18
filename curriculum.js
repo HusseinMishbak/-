@@ -3654,9 +3654,12 @@ window.FRENCH_CURRICULUM = {
               "qui m’aide."
             ],
             "answer": [
-              "C’est",
-              "un collègue",
-              "qui m’aide."
+              "Je",
+              "connais",
+              "une ville",
+              "qui",
+              "est",
+              "calme."
             ],
             "translation": "هذا زميل يساعدني."
           },
