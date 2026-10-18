@@ -166,3 +166,19 @@ details[open]>summary{color:var(--ur-accent-dark)}
 @media(prefers-reduced-motion:reduce){
   .panel{animation:none}
 }
+
+
+/* Language selection, dialogs, and sheet surfaces */
+dialog,[role="dialog"],[aria-modal="true"]{
+  border:1px solid var(--ur-line);border-radius:26px;background:#fff;color:var(--ur-ink);
+  box-shadow:0 24px 80px rgba(32,24,72,.2);max-width:min(94vw,620px)
+}
+dialog::backdrop{background:rgba(28,24,53,.38);backdrop-filter:blur(4px)}
+[role="dialog"] [class*="language"],[role="dialog"] [class*="lang-"],
+dialog [class*="language"],dialog [class*="lang-"]{border-radius:15px}
+[role="dialog"] button,dialog button{min-height:44px;border-radius:13px}
+[role="dialog"] input,dialog input{border:1px solid #ded9ee;border-radius:13px;min-height:44px}
+[role="dialog"] button[aria-selected="true"],[role="dialog"] button[aria-pressed="true"],
+dialog button[aria-selected="true"],dialog button[aria-pressed="true"]{
+  background:var(--ur-lilac);border-color:#b9aaff;color:var(--ur-accent-dark)
+}
