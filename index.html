@@ -495,6 +495,34 @@ button{touch-action:manipulation}
 @media(max-width:1000px){.course-sequence{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:600px){.course-sequence{grid-template-columns:repeat(2,minmax(0,1fr))}.course-sequence article{padding:10px}.roadmap-linkage{padding:11px}}
 
+ 
+/* Curriculum sequencing and transparent weekly workload */
+.course-workload-card{margin:18px 0 22px;padding:clamp(15px,2.4vw,24px);border:1px solid #d5dceb;border-radius:18px;background:linear-gradient(135deg,#fff 0%,#f5f8ff 100%);color:#20263d}
+.course-workload-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.course-workload-heading h2{margin:4px 0 6px;color:#25295b;font-size:22px}
+.course-workload-heading p{margin:0;color:#515d76;font-size:14px}
+.course-total-hours{min-width:112px;border-radius:14px;background:#25295b;color:#fff;padding:12px 16px;text-align:center;display:grid;gap:2px}
+.course-total-hours strong{font-size:29px;line-height:1.1}.course-total-hours span,.course-total-hours small{font-size:12px;color:#eef2ff}
+.course-phase-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin:16px 0}
+.course-phase{border:1px solid #dce3ef;border-radius:12px;background:#fff;padding:11px;min-width:0}
+.course-phase-top{display:grid;gap:4px}.course-phase-top strong{font-size:15px;color:#25295b}.course-phase-top span{font-size:11px;color:#515d76}.course-phase-top b{font-size:13px;color:#0b665d}
+.course-phase p{margin:8px 0 0;font-size:12px;line-height:1.7;color:#35405a}
+.course-rhythm-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.course-rhythm{border:1px solid #cfd9e9;border-radius:12px;padding:12px;background:#fff}
+.course-rhythm strong{color:#25295b}.course-rhythm p{margin:5px 0 0;font-size:13px;color:#35405a;line-height:1.8}
+.course-linkage-note{margin:14px 0 8px}.course-time-note{margin:9px 0 0;font-size:12px;line-height:1.8;color:#515d76}
+.unit-sequence-card{margin:14px 0;padding:14px;border:1px solid #cfd9e9;border-radius:13px;background:#f4f7fc;color:#20263d;line-height:1.8}
+.unit-sequence-top{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:8px}.unit-sequence-top strong{color:#25295b;margin-inline-end:4px}
+.unit-sequence-card p{margin:5px 0;color:#35405a;font-size:13px}.unit-sequence-card p strong{color:#25295b}.unit-hours-note{border-top:1px solid #d8e0ee;padding-top:7px;color:#515d76!important}
+.book-index-pages{font-size:11px;color:#515d76}
+.ur-assessment-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:7px 0 12px;padding:10px 12px;border:1px solid #d5dceb;border-radius:10px;background:#f4f7fc;color:#20263d}
+.ur-assessment-controls label{font-size:12px;font-weight:800;color:#25295b}
+.ur-assessment-controls select{max-width:100%;min-width:210px;border:1px solid #9eacc4!important;background:#fff!important;color:#20263d!important;border-radius:8px;padding:7px 9px}
+.ur-assessment-guide{flex-basis:100%;margin:0;font-size:12px;line-height:1.7;color:#515d76}
+.ur-assessment-controls [hidden],.ur-grade-single[hidden],[data-check-order][hidden],[data-grade-book-order][hidden],[data-grade-book-quiz][hidden],[data-grade-book-fill][hidden],[data-grade-book-match][hidden],[data-grade-week][hidden],[data-grade-unit-vocab][hidden],#gradeQuiz[hidden]{display:none!important}
+@media(max-width:980px){.course-phase-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.course-phase-grid,.course-rhythm-grid{grid-template-columns:minmax(0,1fr)}.course-workload-heading h2{font-size:19px}.ur-assessment-controls{align-items:stretch}.ur-assessment-controls select{width:100%;min-width:0}}
+
 </style>
 </head>
 <body>
@@ -1736,6 +1764,7 @@ async function recordQuizAttempt(attempt){if(!supabaseClient||!authSession?.user
 
 
 const BOOK_PLAN=(window.FRENCH_CURRICULUM&&window.FRENCH_CURRICULUM.bookUnits)||[];
+const COURSE_PLAN=(window.FRENCH_CURRICULUM&&window.FRENCH_CURRICULUM.coursePlan)||{};
 const ROADMAP_MONTHS=(window.FRENCH_CURRICULUM&&window.FRENCH_CURRICULUM.roadmapMonths)||[];
 const CITIZENSHIP_TRACK=(window.FRENCH_CURRICULUM&&window.FRENCH_CURRICULUM.citizenshipTrack)||[];
 const CITIZENSHIP_OFFICIAL=(window.FRENCH_CURRICULUM&&window.FRENCH_CURRICULUM.citizenshipOfficial)||{};
@@ -1781,7 +1810,7 @@ function buildUnitIntroductionHtml(unit){
  const points=(intro.keyPoints||[]).map(x=>'<li>'+E(x)+'</li>').join('');
  const examples=(intro.examples||[]).map(x=>'<div class="unit-intro-example"><span class="latin" lang="fr" dir="ltr">'+E(x.fr)+'</span><button type="button" class="audio-btn book-example-audio" data-example-audio="'+E(x.fr)+'" title="استمع ببطء إلى المثال" aria-label="استمع ببطء إلى: '+E(x.fr)+'">🔊 استمع ببطء</button><span>'+E(x.ar)+'</span></div>').join('');
  const nums=(intro.numbers||[]).map(n=>'<div class="unit-number-card"><span class="unit-number-value">'+E(n[0])+'</span><span class="latin" lang="fr" dir="ltr">'+E(n[1])+'</span><button type="button" class="audio-btn book-example-audio" data-example-audio="'+E(n[1])+'" data-example-rate="slow" title="استمع ببطء إلى العدد" aria-label="استمع ببطء إلى: '+E(n[1])+'">🔊 استمع ببطء</button><span class="unit-number-pronunciation">النطق التقريبي: <b dir="rtl">'+E(n[2])+'</b></span><span class="unit-number-meaning">'+E(n[3])+'</span></div>').join('');
- return '<section class="unit-introduction"><div class="unit-intro-header"><div><div class="kicker">OBJECTIFS · VOCABULAIRE · PRONONCIATION</div><h3>ابدأ من هنا: شرح الوحدة وأهدافها</h3></div><span class="book-chip">شرح مبسّط</span></div><p class="unit-intro-overview">'+E(intro.overview||unit.focus)+'</p><div class="unit-intro-columns"><div class="unit-intro-subpanel"><h4>ماذا ستتعلم؟</h4><ul>'+outcomes+'</ul></div><div class="unit-intro-subpanel"><h4>قواعد وتراكيب المستوى B2</h4><ul>'+points+'</ul></div></div><div class="unit-intro-subpanel"><h4>أمثلة أساسية</h4><div class="unit-intro-examples">'+examples+'</div></div>'+(nums?'<details class="unit-number-panel" open><summary>'+E(intro.numbersTitle||'الأعداد وطريقة نطقها')+' <span>استمع إلى كل عدد منفرداً</span></summary><p class="unit-number-note">'+E(intro.note||'النطق العربي تقريبي، فاستمع إلى الصوت الفرنسي أيضاً.')+'</p><div class="unit-number-grid">'+nums+'</div></details>':'')+'</section>';
+ return '<section class="unit-introduction"><div class="unit-intro-header"><div><div class="kicker">OBJECTIFS · VOCABULAIRE · PRONONCIATION</div><h3>ابدأ من هنا: شرح الوحدة وأهدافها</h3></div><span class="book-chip">شرح مبسّط</span></div><p class="unit-intro-overview">'+E(intro.overview||unit.focus)+'</p><div class="unit-intro-columns"><div class="unit-intro-subpanel"><h4>ماذا ستتعلم؟</h4><ul>'+outcomes+'</ul></div><div class="unit-intro-subpanel"><h4>القواعد والتراكيب المستهدفة</h4><ul>'+points+'</ul></div></div><div class="unit-intro-subpanel"><h4>أمثلة أساسية</h4><div class="unit-intro-examples">'+examples+'</div></div>'+(nums?'<details class="unit-number-panel" open><summary>'+E(intro.numbersTitle||'الأعداد وطريقة نطقها')+' <span>استمع إلى كل عدد منفرداً</span></summary><p class="unit-number-note">'+E(intro.note||'النطق العربي تقريبي، فاستمع إلى الصوت الفرنسي أيضاً.')+'</p><div class="unit-number-grid">'+nums+'</div></details>':'')+'</section>';
 }
 function readUnitVocabProgress(){
  try{const p=JSON.parse(localStorage.getItem(UNIT_VOCAB_PROGRESS_KEY)||'{}');return {units:p.units||{},learned:Array.isArray(p.learned)?p.learned:[]};}
@@ -1805,7 +1834,8 @@ function buildUnitGuide(unit){
  const guide=document.createElement('section');guide.className='book-integration';
  guide.innerHTML='<div class="book-integration-top"><div><div class="kicker">FRENCH · UNITÉ '+unit.u+'</div><h3>المسار الأساسي: '+unit.name+'</h3></div><span class="book-chip">A1 · '+unit.u+'/8</span></div>'+
  buildUnitIntroductionHtml(unit)+
- '<p class="book-focus">'+unit.focus+'</p><p class="book-grammar"><strong>القواعد والتراكيب:</strong> <span class="latin" lang="fr" dir="ltr">'+unit.grammar+'</span></p>'+
+ '<div class="unit-sequence-card"><div class="unit-sequence-top"><strong>مكان هذه الوحدة في المنهج</strong><span class="book-chip">الأسبوع '+Number(unit.weekNumber||unit.u)+' من 8</span><span class="book-chip">8 ساعات · 6 جلسات</span></div><p><strong>المتطلبات السابقة:</strong> '+E((unit.sequence||{}).prerequisite||'راجع الوحدة السابقة قبل المتابعة.')+'</p><p><strong>الترابط مع الوحدة التالية:</strong> '+E((unit.sequence||{}).nextLink||'استخدم ما تعلمته في المهمة التالية.')+'</p><p class="unit-hours-note">توزيع الوقت: 6 جلسات × 80 دقيقة = 480 دقيقة (8 ساعات). الاختبار والتمارين المرفقة جزء من هذا الوقت وليست ساعات إضافية.</p></div>'+ 
+ '<p class="book-focus">'+E(unit.focus)+'</p><p class="book-grammar"><strong>القواعد والتراكيب:</strong> <span class="latin" lang="fr" dir="ltr">'+E(unit.grammar)+'</span></p>'+
  '<p class="book-instruction">لكل جلسة شرح مبسّط وأمثلة مترجمة وتطبيق سريع يمكن تصحيحه، ثم مختبر موسّع للاختيار من متعدد وملء الفراغات والمطابقة وترتيب الجمل والكتابة. لا تحتاج إلى الرجوع إلى الكتاب أو أرقام الصفحات.</p>'+
  '<ol class="book-day-list">'+unit.days.map((d,i)=>buildBookDayHtml(unit,d,i)).join('')+'</ol>'+
  buildBookPracticeHtml(unit)+buildUnitVocabCheckHtml(unit);
@@ -1839,14 +1869,20 @@ function renderBookPlanIndex(){
  if(document.getElementById('panel-bookplan')||!BOOK_PLAN.length)return;
  const panel=document.createElement('section');panel.className='panel';panel.id='panel-bookplan';
  const E=v=>String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+ const escPlan=v=>String(v==null?'':v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+ const coursePhases=(COURSE_PLAN.levels||[]).map(level=>'<div class="course-phase"><div class="course-phase-top"><strong>'+escPlan(level.level)+'</strong><span>الأسابيع '+escPlan(level.weeks)+'</span><b>'+Number(level.hours||0)+' ساعة</b></div><p>'+escPlan(level.purpose||'')+'</p></div>').join('');
+ const weeklyRhythm=COURSE_PLAN.weeklyRhythm||{};
+ const a1Rhythm=weeklyRhythm.A1||{};
+ const laterRhythm=weeklyRhythm.A2_B2_DELF||{};
+ const workloadHtml='<section class="course-workload-card"><div class="course-workload-heading"><div><div class="kicker">PLAN D’ÉTUDE · A1 → B2</div><h2>الخطة الزمنية وتسلسل المستويات</h2><p>المنهج الأساسي محدد بـ 80 أسبوعاً، بمعدل 8 ساعات أسبوعياً؛ أي 640 ساعة تدريب مخططة.</p></div><div class="course-total-hours"><strong>'+Number(COURSE_PLAN.totalHours||640)+'</strong><span>ساعة إجمالاً</span><small>'+Number(COURSE_PLAN.totalWeeks||80)+' أسبوعاً</small></div></div><div class="course-phase-grid">'+coursePhases+'</div><div class="course-rhythm-grid"><div class="course-rhythm"><strong>إيقاع A1 · الأسابيع 1–8</strong><p>'+escPlan(a1Rhythm.description||'ست جلسات × 80 دقيقة = 8 ساعات أسبوعياً.')+'</p></div><div class="course-rhythm"><strong>إيقاع A2 وB1 وB2 والتحضير للامتحان</strong><p>'+escPlan(laterRhythm.description||'أربع جلسات موجهة، وتطبيق تكاملي، ثم مراجعة وتصحيح؛ المجموع 8 ساعات أسبوعياً.')+'</p></div></div><div class="callout course-linkage-note"><strong>كيف ترتبط الوحدات ببعضها؟</strong> يبدأ كل أسبوع بمراجعة تراكيب سابقة، ثم يضيف وظيفة تواصلية وقاعدة جديدة، وينتهي بمهمة تجمع الاستماع أو القراءة مع الكتابة أو التحدث. نتيجة 75% مؤشر إرشادي للمراجعة، وليست شهادة رسمية بالمستوى.</div><p class="course-time-note">مهم: الجلسات، والاختبارات، وبنك المفردات، ومختبر التمارين أجزاء من الساعات الأسبوعية المحددة، ولا تُحسب مرة أخرى عند الانتقال بين تبويب الوحدات وتبويب خارطة التعلم.</p></section>';
  let cards='';
  BOOK_PLAN.forEach(unit=>{
   const days=unit.days.map((day,index)=>'<li><strong>الجلسة '+(index+1)+' — '+E(day.title)+'</strong><p>'+E(day.task)+'</p>'+(day.explanation?'<p class="book-index-explanation"><strong>الشرح:</strong> '+E(day.explanation)+'</p>':'')+(day.examples||[]).map(ex=>'<p class="book-index-example"><span class="latin" lang="fr" dir="ltr">'+E(ex.fr)+'</span> <button type="button" class="audio-btn book-example-audio" data-example-audio="'+E(ex.fr)+'" title="استمع ببطء إلى المثال" aria-label="استمع ببطء إلى: '+E(ex.fr)+'">🔊 استمع ببطء</button><span class="book-index-example-translation"> — '+E(ex.ar)+'</span></p>').join('')+(day.exercise?'<details class="book-index-mini-exercise"><summary>تطبيق الجلسة</summary><p>'+E(day.exercise.prompt)+'</p><p><strong>الإجابة النموذجية:</strong> <span class="latin" lang="fr" dir="ltr">'+E(day.exercise.answer)+'</span></p></details>':'')+'</li>').join('');
-  cards+='<details class="book-index-unit"'+(unit.u===1?' open':'')+'><summary><span class="book-index-number">الوحدة '+unit.u+'</span><span class="book-index-title">'+E(unit.name)+'</span><span class="book-index-pages">تمارين تفاعلية</span></summary><div class="book-index-body"><p>'+E(unit.focus)+'</p>'+(unit.introduction?'<div class="book-index-unit-overview"><strong>مدخل الوحدة:</strong><p>'+E(unit.introduction.overview)+'</p><strong>الأهداف:</strong><ul>'+unit.introduction.outcomes.map(x=>'<li>'+E(x)+'</li>').join('')+'</ul></div>':'')+'<p class="book-grammar"><strong>القواعد والتراكيب:</strong> <span class="latin" lang="fr" dir="ltr">'+E(unit.grammar)+'</span></p><ol class="book-index-days">'+days+'</ol><button type="button" class="btn btn-primary" data-open-unit="'+unit.u+'">افتح الوحدة ودروسها ←</button></div></details>';
+  cards+='<details class="book-index-unit"'+(unit.u===1?' open':'')+'><summary><span class="book-index-number">الوحدة '+unit.u+'</span><span class="book-index-title">'+E(unit.name)+'</span><span class="book-index-pages">الأسبوع '+Number(unit.weekNumber||unit.u)+' · 8 ساعات · 6 جلسات</span></summary><div class="book-index-body"><p>'+E(unit.focus)+'</p>'+(unit.introduction?'<div class="book-index-unit-overview"><strong>مدخل الوحدة:</strong><p>'+E(unit.introduction.overview)+'</p><strong>الأهداف:</strong><ul>'+unit.introduction.outcomes.map(x=>'<li>'+E(x)+'</li>').join('')+'</ul></div>':'')+'<p class="book-grammar"><strong>القواعد والتراكيب:</strong> <span class="latin" lang="fr" dir="ltr">'+E(unit.grammar)+'</span></p><ol class="book-index-days">'+days+'</ol><button type="button" class="btn btn-primary" data-open-unit="'+unit.u+'">افتح الوحدة ودروسها ←</button></div></details>';
  });
  panel.innerHTML='<div class="panel-head"><div><h1>محتوى الوحدات والتمارين التفاعلية</h1><p>مسار متكامل من ثماني وحدات: دروس عملية وتمارين يمكن حلها وتصحيحها داخل المنصة.</p></div><span class="chip">8 وحدات · 48 جلسة</span></div>'+
  '<div class="banner"><div class="kicker">PARCOURS FRANÇAIS · A1</div><h2>تعلّم، استمع، جرّب، ثم راجع أخطاءك</h2><p>كل وحدة تحتوي على جلسات تعلم ومختبر تفاعلي. لن تحتاج إلى الرجوع إلى الكتاب أثناء التمرين، ولا تظهر هنا أرقام الصفحات.</p></div>'+
- '<div class="callout"><strong>طريقة مقترحة:</strong> ادرس الجلسات أولاً، ثم اختبر نفسك من دون مساعدة، وصحّح الإجابات، وأكمل مهمة الكتابة أو التحدث وسجّلها. التمارين أصلية ومصممة لتغطية أهداف الوحدات وليست نسخاً حرفياً من صفحات الكتاب.</div>'+cards;
+ '<div class="callout"><strong>طريقة مقترحة:</strong> ادرس الجلسات أولاً، ثم اختبر نفسك من دون مساعدة، وصحّح الإجابات، وأكمل مهمة الكتابة أو التحدث وسجّلها. التمارين أصلية ومصممة لتغطية أهداف الوحدات وليست نسخاً حرفياً من صفحات الكتاب.</div>'+workloadHtml+cards;
  const before=document.getElementById('panel-week1');
  if(before)before.before(panel);else document.getElementById('panels').appendChild(panel);
  panel.querySelectorAll('[data-open-unit]').forEach(button=>{
@@ -2546,5 +2582,5 @@ window.OUR_FRENCH_APP={
 <script src="./podcast-six-minutes.js?v=20261012-v1"></script>
 <script src="./learning-games.js?v=20261011-games1"></script>
 <script src="./i18n.js?v=20261018-i18n7"></script>
-<script src="./assessment-controls.js?v=20261018-itemgrade3"></script>
+<script src="./assessment-controls.js?v=20261018-correctionmode6"></script>
 </body></html>
