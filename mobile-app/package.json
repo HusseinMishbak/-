@@ -4,6 +4,9 @@
   "private": true,
   "description": "Orr French learning app for iOS and Android",
   "scripts": {
+    "build:web": "node scripts/prepare-web.mjs",
+    "cap:add:android": "cap add android",
+    "cap:add:ios": "cap add ios",
     "cap:sync": "cap sync",
     "cap:android": "cap open android",
     "cap:ios": "cap open ios"
