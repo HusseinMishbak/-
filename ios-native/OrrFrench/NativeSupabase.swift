@@ -175,6 +175,45 @@ final class NativeAuthStore: ObservableObject {
         statusMessage = "تم تسجيل الخروج. بقيت نسختك المحلية محفوظة على هذا الجهاز."
     }
 
+    func submitSpeakingRecording(fileURL: URL, assessmentKey: String, prompt: String, durationSeconds: TimeInterval) async throws {
+        let value = try await validSession()
+        let audio = try Data(contentsOf: fileURL)
+        let objectPath = "\(value.userID)/\(UUID().uuidString).m4a"
+        let uploadURL = endpointURL(path: "storage/v1/object/student-audio/\(objectPath)")
+        var uploadRequest = URLRequest(url: uploadURL)
+        uploadRequest.httpMethod = "POST"
+        uploadRequest.httpBody = audio
+        setHeaders(on: &uploadRequest, bearer: value.accessToken)
+        uploadRequest.setValue("audio/mp4", forHTTPHeaderField: "Content-Type")
+        uploadRequest.setValue("false", forHTTPHeaderField: "x-upsert")
+        _ = try await perform(uploadRequest)
+
+        let row: [String: Any] = [
+            "user_id": value.userID,
+            "assessment_key": assessmentKey,
+            "prompt": prompt,
+            "storage_path": objectPath,
+            "mime_type": "audio/mp4",
+            "duration_seconds": min(max(durationSeconds, 0), 300)
+        ]
+        do {
+            let body = try JSONSerialization.data(withJSONObject: row)
+            var insertRequest = URLRequest(url: endpointURL(path: "rest/v1/speaking_submissions"))
+            insertRequest.httpMethod = "POST"
+            insertRequest.httpBody = body
+            setHeaders(on: &insertRequest, bearer: value.accessToken)
+            insertRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            insertRequest.setValue("return=minimal", forHTTPHeaderField: "Prefer")
+            _ = try await perform(insertRequest)
+        } catch {
+            var cleanup = URLRequest(url: endpointURL(path: "storage/v1/object/student-audio/\(objectPath)"))
+            cleanup.httpMethod = "DELETE"
+            setHeaders(on: &cleanup, bearer: value.accessToken)
+            _ = try? await perform(cleanup)
+            throw error
+        }
+    }
+
     func fetchLearningSnapshot() async throws -> NativeLearningSnapshot? {
         let value = try await validSession()
         var components = URLComponents(url: baseURL.appendingPathComponent("rest/v1/student_progress"), resolvingAgainstBaseURL: false)!
@@ -245,14 +284,16 @@ final class NativeAuthStore: ObservableObject {
         return fresh
     }
 
+    private func endpointURL(path: String) -> URL {
+        let parts = path.split(separator: "?", maxSplits: 1, omittingEmptySubsequences: false)
+        var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: false)!
+        components.path = "/" + String(parts[0])
+        if parts.count > 1 { components.percentEncodedQuery = String(parts[1]) }
+        return components.url!
+    }
+
     private func request(path: String, method: String, body: Data?, bearer: String? = nil) async throws -> Data {
-        let pathParts = path.split(separator: "?", maxSplits: 1, omittingEmptySubsequences: false)
-        var url = baseURL.appendingPathComponent(String(pathParts[0]))
-        if pathParts.count > 1, var components = URLComponents(url: url, resolvingAgainstBaseURL: false) {
-            components.percentEncodedQuery = String(pathParts[1])
-            url = components.url ?? url
-        }
-        var request = URLRequest(url: url)
+        var request = URLRequest(url: endpointURL(path: path))
         request.httpMethod = method
         request.httpBody = body
         setHeaders(on: &request, bearer: bearer)
