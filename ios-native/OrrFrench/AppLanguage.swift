@@ -103,6 +103,7 @@ private enum AppCopy {
         "signIn": [.arabic: "تسجيل الدخول", .english: "Sign in", .french: "Se connecter"],
         "signUp": [.arabic: "إنشاء حساب", .english: "Create account", .french: "Créer un compte"],
         "signOut": [.arabic: "تسجيل الخروج", .english: "Sign out", .french: "Se déconnecter"],
+        "forgotPassword": [.arabic: "نسيت كلمة المرور؟", .english: "Forgot password?", .french: "Mot de passe oublié ?"],
         "email": [.arabic: "البريد الإلكتروني", .english: "Email", .french: "E-mail"],
         "password": [.arabic: "كلمة المرور", .english: "Password", .french: "Mot de passe"],
         "fullName": [.arabic: "الاسم الكامل", .english: "Full name", .french: "Nom complet"],
