@@ -144,6 +144,25 @@ final class NativeAuthStore: ObservableObject {
         }
     }
 
+    func sendPasswordRecovery(email: String) async -> Bool {
+        isBusy = true
+        defer { isBusy = false }
+        do {
+            let normalizedEmail = email.trimmingCharacters(in: .whitespacesAndNewlines)
+            guard !normalizedEmail.isEmpty else {
+                statusMessage = "أدخل البريد الإلكتروني أولاً."
+                return false
+            }
+            let body = try JSONSerialization.data(withJSONObject: ["email": normalizedEmail])
+            _ = try await request(path: "auth/v1/recover", method: "POST", body: body)
+            statusMessage = "إذا كان البريد مسجلاً، فستصلك رسالة لاستعادة كلمة المرور. تحقق من البريد ومجلد الرسائل غير المرغوب فيها."
+            return true
+        } catch {
+            statusMessage = error.localizedDescription
+            return false
+        }
+    }
+
     func signOut() async {
         isBusy = true
         defer { isBusy = false }
