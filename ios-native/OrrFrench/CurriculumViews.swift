@@ -3,7 +3,6 @@ import AVFoundation
 
 struct CourseView: View {
     @EnvironmentObject private var app: AppState
-    @State private var category: CourseCategory = .textbook
     @State private var selectedEntry: CourseEntry?
     private let catalog = NativeCurriculumCatalog.shared
 
@@ -36,15 +35,17 @@ struct CourseView: View {
                         summaryBadge("\(catalog.citizenship.count)", app.language.text("citizenship"))
                     }
 
-                    if entries.isEmpty {
+                    if app.libraryCategory == .vocabulary {
+                        vocabularyList
+                    } else if entries.isEmpty {
                         OrrCard { Text(app.language.text("curriculumLoadFailed")).foregroundStyle(OrrTheme.muted) }
                     } else {
                         ForEach(entries) { entry in
                             Button { selectedEntry = entry } label: {
                                 HStack(spacing: 13) {
                                     ZStack {
-                                        RoundedRectangle(cornerRadius: 16).fill(categoryColor(category).opacity(0.12))
-                                        Image(systemName: categorySymbol(category)).font(.title3).foregroundStyle(categoryColor(category))
+                                        RoundedRectangle(cornerRadius: 16).fill(categoryColor(app.libraryCategory).opacity(0.12))
+                                        Image(systemName: categorySymbol(app.libraryCategory)).font(.title3).foregroundStyle(categoryColor(category))
                                     }.frame(width: 51, height: 51)
                                     VStack(alignment: .leading, spacing: 5) {
                                         HStack(spacing: 6) {
@@ -92,7 +93,7 @@ struct CourseView: View {
 
     private var vocabularyList: some View {
         VStack(alignment: .leading, spacing: 11) {
-            SectionHeading(title: app.language.text("vocabulary"), subtitle: "\\(app.vocabulary.count) " + app.language.text("availableCards"))
+            SectionHeading(title: app.language.text("vocabulary"), subtitle: "\(app.vocabulary.count) " + app.language.text("availableCards"))
             ForEach(app.vocabulary) { word in
                 HStack(spacing: 11) {
                     VStack(alignment: .leading, spacing: 5) {
@@ -117,6 +118,7 @@ struct CourseView: View {
         case .textbook: return OrrTheme.violet
         case .roadmap: return OrrTheme.cyan
         case .citizenship: return OrrTheme.pink
+        case .vocabulary: return OrrTheme.violet
         }
     }
 
@@ -125,6 +127,7 @@ struct CourseView: View {
         case .textbook: return "book.closed.fill"
         case .roadmap: return "map.fill"
         case .citizenship: return "person.2.fill"
+        case .vocabulary: return "rectangle.stack.fill"
         }
     }
 }
@@ -293,6 +296,7 @@ struct NativeQuizView: View {
 
                     if !finished {
                         Button {
+                            app.recordQuiz(title: title, correct: correctCount, total: questions.count)
                             finished = true
                         } label: {
                             Text(app.language.text("finishQuiz"))
