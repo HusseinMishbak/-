@@ -21,8 +21,9 @@ Deno.serve(async (req) => {
   const anon = Deno.env.get("SUPABASE_ANON_KEY") || Deno.env.get("SUPABASE_PUBLISHABLE_KEY") || "";
   const site = (Deno.env.get("PUBLIC_SITE_URL") || "https://husseinmishbak.github.io/-/").replace(/\/$/, "");
   if (!secret || !service || !anon) return json({ error: "billing_not_configured", message: "لم تُفعّل إدارة الاشتراكات بعد." }, 503);
-  const userClient = createClient(url, anon, { global: { headers: { Authorization: authHeader } }, auth: { persistSession: false } });
-  const { data: { user }, error } = await userClient.auth.getUser();
+  const accessToken = authHeader.slice("Bearer ".length);
+  const userClient = createClient(url, anon, { auth: { persistSession: false, autoRefreshToken: false } });
+  const { data: { user }, error } = await userClient.auth.getUser(accessToken);
   if (error || !user) return json({ error: "invalid_session", message: "سجّل الدخول مجدداً." }, 401);
   const admin = createClient(url, service, { auth: { persistSession: false } });
   const { data: billing } = await admin.from("billing_subscriptions")
