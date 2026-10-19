@@ -14,27 +14,37 @@ Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
   const stripeSecret = Deno.env.get("STRIPE_SECRET_KEY") || "";
   const billingEnabled = Deno.env.get("STRIPE_BILLING_ENABLED") === "true";
+  const supabaseUrl = Deno.env.get("SUPABASE_URL") || "";
+  const anonKey = Deno.env.get("SUPABASE_ANON_KEY") || Deno.env.get("SUPABASE_PUBLISHABLE_KEY") || "";
+  const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
+  const serverConfigReady = Boolean(supabaseUrl && anonKey && serviceKey && stripeSecret);
   const priceIds: Record<string, string> = {
     monthly: Deno.env.get("STRIPE_PRICE_MONTHLY") || "",
     annual: Deno.env.get("STRIPE_PRICE_ANNUAL") || "",
   };
-  // Safe public readiness probe; reveals booleans only, never provider secrets.
+  // Safe readiness probe: enable buttons only when keys, opt-in flag, Prices,
+  // and billing schema are all present. Never return secrets or amounts.
   if (req.method === "GET") {
+    let billingTablesReady = false;
+    if (serverConfigReady) {
+      try {
+        const admin = createClient(supabaseUrl, serviceKey, { auth: { persistSession: false } });
+        const { error } = await admin.from("billing_subscriptions").select("user_id").limit(1);
+        billingTablesReady = !error;
+      } catch (_) { billingTablesReady = false; }
+    }
     return json({
-      billing_enabled: billingEnabled && Boolean(stripeSecret),
-      monthly_enabled: billingEnabled && Boolean(stripeSecret && priceIds.monthly),
-      annual_enabled: billingEnabled && Boolean(stripeSecret && priceIds.annual),
+      billing_enabled: billingEnabled && serverConfigReady && billingTablesReady,
+      monthly_enabled: billingEnabled && serverConfigReady && billingTablesReady && Boolean(priceIds.monthly),
+      annual_enabled: billingEnabled && serverConfigReady && billingTablesReady && Boolean(priceIds.annual),
     });
   }
   if (req.method !== "POST") return json({ error: "method_not_allowed" }, 405);
   const authHeader = req.headers.get("Authorization");
   if (!authHeader?.startsWith("Bearer ")) return json({ error: "login_required", message: "سجّل الدخول أولاً." }, 401);
 
-  const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
-  const anonKey = Deno.env.get("SUPABASE_ANON_KEY") || Deno.env.get("SUPABASE_PUBLISHABLE_KEY") || "";
-  const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
   const siteUrl = (Deno.env.get("PUBLIC_SITE_URL") || "https://husseinmishbak.github.io/-/").replace(/\/$/, "");
-  if (!billingEnabled || !anonKey || !serviceKey || !stripeSecret) return json({ error: "billing_not_configured", message: "لم يُفعّل الدفع بعد. يلزم إكمال حماية المحتوى وإعداد مزوّد الدفع والأسعار في إعدادات الخادم." }, 503);
+  if (!billingEnabled || !serverConfigReady) return json({ error: "billing_not_configured", message: "لم يُفعّل الدفع بعد. يلزم إكمال حماية المحتوى وإعداد مزوّد الدفع والأسعار في إعدادات الخادم." }, 503);
 
   const accessToken = authHeader.slice("Bearer ".length);
   const userClient = createClient(supabaseUrl, anonKey, { auth: { persistSession: false, autoRefreshToken: false } });
@@ -50,8 +60,12 @@ Deno.serve(async (req) => {
   const plan = body.plan === "annual" ? "annual" : body.plan === "monthly" ? "monthly" : "";
   if (!plan) return json({ error: "invalid_plan", message: "اختر خطة شهرية أو سنوية." }, 400);
   if (!priceIds[plan]) return json({ error: "price_not_configured", message: "لم يحدد مالك المنصة سعر هذه الخطة بعد." }, 503);
-  const { data: existing } = await admin.from("billing_subscriptions")
+  const { data: existing, error: billingLookupError } = await admin.from("billing_subscriptions")
     .select("stripe_customer_id,status").eq("user_id", user.id).maybeSingle();
+  if (billingLookupError) {
+    console.error("Subscription table unavailable; Checkout blocked:", billingLookupError.message);
+    return json({ error: "billing_database_not_ready", message: "لم تجهز قاعدة الاشتراكات بعد؛ لم تبدأ عملية الدفع." }, 503);
+  }
   if (existing && ["active", "trialing", "past_due"].includes(existing.status)) {
     return json({ error: "subscription_exists", message: "لديك اشتراك قائم أو يحتاج إلى تحديث طريقة الدفع. استخدم إدارة الاشتراك." }, 409);
   }
