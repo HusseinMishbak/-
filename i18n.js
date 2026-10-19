@@ -166,7 +166,7 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
   if (document.querySelector('link[data-ur-ui-refresh]')) return;
   var link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.href = './ui/frello-inspired-refresh.css';
+  link.href = './ui/frello-inspired-refresh.css?v=20261019-contrast1';
   link.setAttribute('data-ur-ui-refresh', 'true');
   document.head.appendChild(link);
 })();
