@@ -289,9 +289,11 @@ private enum SpeechService {
 
 struct StudySessionView: View {
     @EnvironmentObject private var app: AppState
+    @EnvironmentObject private var auth: NativeAuthStore
     @State private var selectedSkill: StudySkill = .vocabulary
     @State private var selectedDuration = 25
     @State private var showingTimer = false
+    @State private var showingSpeakingSheet = false
 
     var body: some View {
         NavigationStack {
@@ -341,6 +343,19 @@ struct StudySessionView: View {
                         }
                     }
                     OrrCard {
+                        Label(app.language.text("speakingSubmission"), systemImage: "mic.badge.plus")
+                            .font(.headline).foregroundStyle(OrrTheme.ink)
+                        Text(app.language.text("speakingSubmissionHint"))
+                            .font(.subheadline).foregroundStyle(OrrTheme.muted).lineSpacing(3).padding(.top, 4)
+                        Button {
+                            showingSpeakingSheet = true
+                        } label: {
+                            Label(app.language.text("startRecording"), systemImage: "mic.fill")
+                                .font(.headline).frame(maxWidth: .infinity).padding(.vertical, 14)
+                                .background(OrrTheme.hero, in: RoundedRectangle(cornerRadius: 15)).foregroundStyle(.white)
+                        }.buttonStyle(.plain).padding(.top, 6)
+                    }
+                    OrrCard {
                         Label(app.language.text("thisWeek"), systemImage: "calendar")
                             .font(.headline).foregroundStyle(OrrTheme.ink)
                         Text("\(app.minutesThisWeek) / 480 " + app.language.text("minutesRemaining"))
@@ -355,6 +370,11 @@ struct StudySessionView: View {
             .sheet(isPresented: $showingTimer) {
                 StudyTimerSheet(duration: selectedDuration, skill: selectedSkill)
                     .environmentObject(app)
+            }
+            .sheet(isPresented: $showingSpeakingSheet) {
+                SpeakingSubmissionSheet()
+                    .environmentObject(app)
+                    .environmentObject(auth)
             }
         }
     }
