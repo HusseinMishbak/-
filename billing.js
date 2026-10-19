@@ -15,6 +15,8 @@
   const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   let sessionUserId = null;
   let busy = false;
+  let paymentConfig = { billing_enabled: false, monthly_enabled: false, annual_enabled: false };
+  let canManageSubscription = false;
 
   async function getUser() {
     const db = client();
@@ -27,10 +29,12 @@
   }
 
   function setButtonsEnabled(enabled) {
-    ['urfreSubscribeMonthly','urfreSubscribeAnnual','urfreManageSubscription'].forEach(id => {
-      const button = $(id);
-      if (button) button.disabled = !enabled || busy;
-    });
+    const monthly = $('urfreSubscribeMonthly');
+    const annual = $('urfreSubscribeAnnual');
+    const manage = $('urfreManageSubscription');
+    if (monthly) monthly.disabled = !enabled || busy || !paymentConfig.monthly_enabled;
+    if (annual) annual.disabled = !enabled || busy || !paymentConfig.annual_enabled;
+    if (manage) manage.disabled = !enabled || busy || !canManageSubscription;
   }
 
   async function refresh() {
@@ -47,6 +51,14 @@
       return;
     }
     sessionUserId = user.id;
+    try {
+      const { data: readiness, error: readinessError } = await db.functions.invoke('create-checkout-session', { method: 'GET' });
+      paymentConfig = (!readinessError && readiness) ? readiness : { billing_enabled: false, monthly_enabled: false, annual_enabled: false };
+    } catch (_) {
+      paymentConfig = { billing_enabled: false, monthly_enabled: false, annual_enabled: false };
+    }
+    const readyBadge = $('urfreBillingBadge');
+    if (readyBadge) readyBadge.textContent = (paymentConfig.monthly_enabled || paymentConfig.annual_enabled) ? 'بوابة الدفع مهيأة' : 'الدفع غير مفعّل بعد';
     const card = $('urfreBillingIdentity');
     if (card) card.textContent = 'الحساب: ' + (user.email || user.id);
     const teacher = profile?.role === 'teacher';
@@ -67,12 +79,13 @@
     $('urfreTeacherBillingActions')?.classList.add('hidden');
 
     const { data: sub, error } = await db.from('billing_subscriptions')
-      .select('status,plan_key,current_period_end,cancel_at_period_end').eq('user_id', user.id).maybeSingle();
+      .select('status,plan_key,current_period_end,cancel_at_period_end,stripe_customer_id').eq('user_id', user.id).maybeSingle();
     if (error) {
       setStatus('لم تجهز جداول الاشتراك بعد. يلزم تطبيق ترحيل قاعدة البيانات ونشر وظائف الدفع أولاً.', 'warn');
       setButtonsEnabled(false);
       return;
     }
+    canManageSubscription = Boolean(sub?.stripe_customer_id);
     if (sub && ['active','trialing'].includes(sub.status)) {
       const end = sub.current_period_end ? new Date(sub.current_period_end).toLocaleDateString() : 'غير محدد';
       setStatus('الاشتراك نشط (' + (sub.plan_key === 'annual' ? 'سنوي' : 'شهري') + '). حتى: ' + end + (sub.cancel_at_period_end ? ' — مقرر الإلغاء عند نهاية الفترة.' : ''), 'success');
@@ -80,6 +93,8 @@
       setStatus('هناك مشكلة في دفعة الاشتراك. افتح إدارة الاشتراك لتحديث طريقة الدفع.', 'warn');
     } else if (sub?.status === 'canceled') {
       setStatus('انتهى الاشتراك أو أُلغي. يمكنك اختيار خطة جديدة.', 'info');
+    } else if (!(paymentConfig.monthly_enabled || paymentConfig.annual_enabled)) {
+      setStatus('لم يفعّل مالك المنصة بوابة الدفع بعد. لا يمكن بدء تحصيل الأموال حالياً.', 'warn');
     } else {
       setStatus('لا يوجد اشتراك مدفوع نشط على هذا الحساب. أسعار الخطط وطرق الدفع تُحدد في صفحة الدفع الآمنة.', 'info');
     }
