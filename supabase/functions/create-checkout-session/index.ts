@@ -53,8 +53,13 @@ Deno.serve(async (req) => {
   if (userError || !user) return json({ error: "invalid_session", message: "انتهت جلسة الدخول؛ سجّل الدخول مجدداً." }, 401);
 
   const admin = createClient(supabaseUrl, serviceKey, { auth: { persistSession: false } });
-  const { data: profile } = await admin.from("profiles").select("role,referred_by_teacher_id").eq("id", user.id).maybeSingle();
-  if (profile?.role === "teacher") return json({ error: "teacher_free", message: "حساب المدرّس المخوّل مجاني ولا يحتاج إلى اشتراك." }, 409);
+  const { data: profile, error: profileError } = await admin.from("profiles").select("role,referred_by_teacher_id").eq("id", user.id).maybeSingle();
+  if (profileError) {
+    console.error("Profile lookup failed; Checkout blocked:", profileError.message);
+    return json({ error: "profile_not_ready", message: "تعذر التحقق من ملف الحساب؛ لم تبدأ عملية الدفع." }, 503);
+  }
+  if (!profile) return json({ error: "profile_not_ready", message: "لم يكتمل إعداد ملف الحساب؛ لم تبدأ عملية الدفع." }, 409);
+  if (profile.role === "teacher") return json({ error: "teacher_free", message: "حساب المدرّس المخوّل مجاني ولا يحتاج إلى اشتراك." }, 409);
 
   let body: { plan?: string; promotion_code?: string } = {};
   try { body = await req.json(); } catch { return json({ error: "invalid_json" }, 400); }
