@@ -17,6 +17,7 @@
   let busy = false;
   let paymentConfig = { billing_enabled: false, monthly_enabled: false, annual_enabled: false };
   let canManageSubscription = false;
+  let canStartCheckout = false;
 
   async function getUser() {
     const db = client();
@@ -32,8 +33,8 @@
     const monthly = $('urfreSubscribeMonthly');
     const annual = $('urfreSubscribeAnnual');
     const manage = $('urfreManageSubscription');
-    if (monthly) monthly.disabled = !enabled || busy || !paymentConfig.monthly_enabled;
-    if (annual) annual.disabled = !enabled || busy || !paymentConfig.annual_enabled;
+    if (monthly) monthly.disabled = !enabled || busy || !canStartCheckout || !paymentConfig.monthly_enabled;
+    if (annual) annual.disabled = !enabled || busy || !canStartCheckout || !paymentConfig.annual_enabled;
     if (manage) manage.disabled = !enabled || busy || !canManageSubscription;
   }
 
@@ -46,6 +47,18 @@
     }
     if (!user) {
       sessionUserId = null;
+      canStartCheckout = false;
+      canManageSubscription = false;
+      paymentConfig = { billing_enabled: false, monthly_enabled: false, annual_enabled: false };
+      $('urfreTeacherBillingActions')?.classList.add('hidden');
+      $('urfreStudentBillingActions')?.classList.remove('hidden');
+      $('urfreBillingIdentity').textContent = '';
+      $('urfreTeacherCode').textContent = '';
+      $('urfreTeacherReferrals').textContent = '0';
+      $('urfreTeacherPaidCount').textContent = '0';
+      $('urfreTeacherPastDueCount').textContent = '0';
+      const readyBadge = $('urfreBillingBadge');
+      if (readyBadge) readyBadge.textContent = 'الدفع غير مفعّل بعد';
       setStatus('أنشئ حساباً أو سجّل الدخول لعرض حالة الاشتراك. الدفع غير مفعّل حتى إعداد حساب Stripe والأسعار.', 'info');
       setButtonsEnabled(false);
       return;
@@ -63,6 +76,8 @@
     if (card) card.textContent = 'الحساب: ' + (user.email || user.id);
     const teacher = profile?.role === 'teacher';
     if (teacher) {
+      canStartCheckout = false;
+      canManageSubscription = false;
       setStatus('حساب مدرّس معتمد — مجاني. رمز الدعوة لا يمنح صلاحية المدرّس ولا يستلزم اشتراكاً من المدرّس.', 'success');
       $('urfreTeacherInvite')?.classList.remove('hidden');
       $('urfreStudentBillingActions')?.classList.add('hidden');
@@ -102,15 +117,20 @@
     }
     canManageSubscription = Boolean(sub?.stripe_customer_id);
     if (sub && ['active','trialing'].includes(sub.status)) {
+      canStartCheckout = false;
       const end = sub.current_period_end ? new Date(sub.current_period_end).toLocaleDateString() : 'غير محدد';
       setStatus('الاشتراك نشط (' + (sub.plan_key === 'annual' ? 'سنوي' : 'شهري') + '). حتى: ' + end + (sub.cancel_at_period_end ? ' — مقرر الإلغاء عند نهاية الفترة.' : ''), 'success');
     } else if (sub?.status === 'past_due') {
+      canStartCheckout = false;
       setStatus('هناك مشكلة في دفعة الاشتراك. افتح إدارة الاشتراك لتحديث طريقة الدفع.', 'warn');
     } else if (sub?.status === 'canceled') {
+      canStartCheckout = true;
       setStatus('انتهى الاشتراك أو أُلغي. يمكنك اختيار خطة جديدة.', 'info');
     } else if (!(paymentConfig.monthly_enabled || paymentConfig.annual_enabled)) {
+      canStartCheckout = false;
       setStatus('لم يفعّل مالك المنصة بوابة الدفع بعد. لا يمكن بدء تحصيل الأموال حالياً.', 'warn');
     } else {
+      canStartCheckout = true;
       setStatus('لا يوجد اشتراك مدفوع نشط على هذا الحساب. أسعار الخطط وطرق الدفع تُحدد في صفحة الدفع الآمنة.', 'info');
     }
     setButtonsEnabled(true);
