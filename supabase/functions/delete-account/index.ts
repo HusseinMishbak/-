@@ -1,5 +1,6 @@
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { createClient } from "npm:@supabase/supabase-js@2";
+import Stripe from "npm:stripe@^22";
 
 const allowedOrigins = new Set([
   "https://husseinmishbak.github.io",
@@ -113,8 +114,37 @@ Deno.serve(async (req: Request) => {
     console.error("Could not verify account role:", profileError.message);
     return reply(500, { error: "تعذر التحقق من نوع الحساب؛ لم يُحذف شيء." }, origin);
   }
-  if (!profile || profile.role !== "student") {
-    return reply(403, { error: "الحذف الذاتي متاح لحسابات الطلاب فقط. تواصل مع إدارة المنصة لحذف حساب المدرّس." }, origin);
+  if (!profile || !["student", "teacher"].includes(profile.role)) {
+    return reply(403, { error: "لا يمكن حذف هذا النوع من الحسابات ذاتياً. تواصل مع إدارة المنصة." }, origin);
+  }
+
+  // Cancel a paid subscription before deleting the account so the customer
+  // cannot continue to be billed after losing access to URFRE.
+  const { data: billing, error: billingError } = await admin
+    .from("billing_subscriptions")
+    .select("stripe_subscription_id,status")
+    .eq("user_id", userId)
+    .maybeSingle();
+  const billingTableMissing = Boolean(billingError && /billing_subscriptions.*schema cache|relation .*billing_subscriptions.*does not exist/i.test(billingError.message || ""));
+  if (billingError && !billingTableMissing) {
+    console.error("Could not check billing before account deletion:", billingError.message);
+    return reply(500, { error: "تعذر التحقق من الاشتراك؛ لم يُحذف الحساب." }, origin);
+  }
+  if (billing?.stripe_subscription_id && !["canceled", "incomplete_expired"].includes(billing.status || "")) {
+    const stripeSecret = Deno.env.get("STRIPE_SECRET_KEY");
+    if (!stripeSecret) {
+      return reply(503, { error: "تعذر حذف الحساب بأمان قبل إعداد إلغاء الاشتراك المدفوع. تواصل مع الدعم." }, origin);
+    }
+    try {
+      const stripe = new Stripe(stripeSecret, { httpClient: Stripe.createFetchHttpClient() });
+      const current = await stripe.subscriptions.retrieve(billing.stripe_subscription_id);
+      if (!["canceled", "incomplete_expired"].includes(current.status)) {
+        await stripe.subscriptions.cancel(current.id);
+      }
+    } catch (error) {
+      console.error("Subscription cancellation failed; account retained:", error instanceof Error ? error.message : "Unknown Stripe error");
+      return reply(502, { error: "تعذر إلغاء الاشتراك لدى مزوّد الدفع؛ لم يُحذف الحساب ولن نحاول حذف بياناته حتى تُحل المشكلة." }, origin);
+    }
   }
 
   // Remove all objects in the account folder before auth deletion. If any
@@ -128,12 +158,12 @@ Deno.serve(async (req: Request) => {
     }, origin);
   }
 
-  // Foreign keys cascade removal to profiles, progress, quiz attempts and
-  // speaking submissions when the auth user is deleted.
+  // Foreign keys cascade removal to profiles, progress, quiz attempts,
+  // billing row, and speaking submissions when the auth user is deleted.
   const { error: deleteError } = await admin.auth.admin.deleteUser(userId);
   if (deleteError) {
     console.error("Auth user deletion failed:", deleteError.message);
     return reply(500, { error: "تعذر حذف الحساب. يرجى التواصل مع إدارة المنصة." }, origin);
   }
-  return reply(200, { success: true, message: "تم حذف حساب الطالب وبياناته وتسجيلاته الصوتية." }, origin);
+  return reply(200, { success: true, message: "تم حذف الحساب وبيانات التعلم والتسجيلات الصوتية المرتبطة به." }, origin);
 });

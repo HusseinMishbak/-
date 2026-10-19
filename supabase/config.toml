@@ -1,0 +1,15 @@
+[functions.create-checkout-session]
+verify_jwt = true
+
+[functions.create-billing-portal-session]
+verify_jwt = true
+
+# Stripe authenticates this endpoint using the raw-body Stripe-Signature header.
+[functions.stripe-webhook]
+verify_jwt = false
+
+[functions.delete-account]
+verify_jwt = true
+
+[functions.teacher-referral-stats]
+verify_jwt = true

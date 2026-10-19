@@ -1,0 +1,806 @@
+{
+  "version": "2026-10-19",
+  "disclaimer": "Original practice items; not official exam questions or a certificate.",
+  "questions": [
+    {
+      "t": 0,
+      "fr": "Quelle est la devise de la République française ?",
+      "ar": "ما شعار الجمهورية الفرنسية؟",
+      "o": [
+        "Liberté, Égalité, Fraternité",
+        "Travail, Famille, Patrie",
+        "Unité, Justice, Paix",
+        "Honneur, Force, Nation"
+      ],
+      "oa": [
+        "الحرية والمساواة والإخاء",
+        "العمل والأسرة والوطن",
+        "الوحدة والعدالة والسلام",
+        "الشرف والقوة والأمة"
+      ],
+      "a": 0,
+      "ef": "La devise de la République est « Liberté, Égalité, Fraternité ». ",
+      "ea": "شعار الجمهورية هو «الحرية والمساواة والإخاء»."
+    },
+    {
+      "t": 0,
+      "fr": "Quelle est la langue officielle de la République française ?",
+      "ar": "ما اللغة الرسمية للجمهورية الفرنسية؟",
+      "o": [
+        "L’anglais",
+        "Le français",
+        "L’allemand",
+        "L’espagnol"
+      ],
+      "oa": [
+        "الإنجليزية",
+        "الفرنسية",
+        "الألمانية",
+        "الإسبانية"
+      ],
+      "a": 1,
+      "ef": "La langue de la République est le français.",
+      "ea": "لغة الجمهورية هي الفرنسية."
+    },
+    {
+      "t": 0,
+      "fr": "Quelles sont les couleurs du drapeau français ?",
+      "ar": "ما ألوان العلم الفرنسي؟",
+      "o": [
+        "Vert, blanc, rouge",
+        "Bleu, jaune, rouge",
+        "Bleu, blanc, rouge",
+        "Noir, blanc, bleu"
+      ],
+      "oa": [
+        "الأخضر والأبيض والأحمر",
+        "الأزرق والأصفر والأحمر",
+        "الأزرق والأبيض والأحمر",
+        "الأسود والأبيض والأزرق"
+      ],
+      "a": 2,
+      "ef": "Le drapeau français est bleu, blanc et rouge.",
+      "ea": "العلم الفرنسي أزرق وأبيض وأحمر."
+    },
+    {
+      "t": 0,
+      "fr": "Quel est l’hymne national français ?",
+      "ar": "ما النشيد الوطني الفرنسي؟",
+      "o": [
+        "La Marseillaise",
+        "L’Ode à la joie",
+        "Le Chant du départ",
+        "Le Temps des cerises"
+      ],
+      "oa": [
+        "المارسييز",
+        "نشيد الفرح",
+        "نشيد الرحيل",
+        "زمن الكرز"
+      ],
+      "a": 0,
+      "ef": "L’hymne national est La Marseillaise.",
+      "ea": "النشيد الوطني هو المارسييز."
+    },
+    {
+      "t": 0,
+      "fr": "Que signifie l’égalité devant la loi ?",
+      "ar": "ماذا تعني المساواة أمام القانون؟",
+      "o": [
+        "La loi dépend du revenu",
+        "La loi s’applique de la même manière à chacun",
+        "Les élus ne respectent pas la loi",
+        "Chaque personne choisit sa propre loi"
+      ],
+      "oa": [
+        "القانون يعتمد على الدخل",
+        "يُطبّق القانون على الجميع على قدم المساواة",
+        "المسؤولون المنتخبون لا يخضعون للقانون",
+        "يختار كل شخص قانونه الخاص"
+      ],
+      "a": 1,
+      "ef": "L’égalité devant la loi signifie que les mêmes règles s’appliquent à tous.",
+      "ea": "المساواة أمام القانون تعني أن القواعد نفسها تسري على الجميع."
+    },
+    {
+      "t": 0,
+      "fr": "La laïcité implique notamment que l’État…",
+      "ar": "تعني العلمانية في فرنسا، من جملة أمور، أن الدولة…",
+      "o": [
+        "favorise une religion",
+        "impose la même religion à tous",
+        "reste neutre envers les religions et protège la liberté de conscience",
+        "interdit toute conviction personnelle"
+      ],
+      "oa": [
+        "تفضّل دينًا معينًا",
+        "تفرض الدين نفسه على الجميع",
+        "تلتزم الحياد تجاه الأديان وتحمي حرية الضمير",
+        "تحظر كل معتقد شخصي"
+      ],
+      "a": 2,
+      "ef": "La laïcité garantit la neutralité de l’État et la liberté de conscience dans le cadre de la loi.",
+      "ea": "تضمن العلمانية حياد الدولة وحرية الضمير في إطار القانون."
+    },
+    {
+      "t": 0,
+      "fr": "La liberté d’expression s’exerce…",
+      "ar": "تُمارَس حرية التعبير…",
+      "o": [
+        "sans aucune limite",
+        "dans le respect de la loi et des droits d’autrui",
+        "uniquement avec l’autorisation du maire",
+        "seulement en privé"
+      ],
+      "oa": [
+        "من دون أي حدود",
+        "مع احترام القانون وحقوق الآخرين",
+        "بإذن رئيس البلدية فقط",
+        "في الحياة الخاصة فقط"
+      ],
+      "a": 1,
+      "ef": "La liberté d’expression est fondamentale, mais elle s’exerce dans le cadre de la loi.",
+      "ea": "حرية التعبير أساسية، لكنها تُمارَس ضمن حدود القانون."
+    },
+    {
+      "t": 0,
+      "fr": "La Constitution définit la République française comme une République…",
+      "ar": "يعرّف الدستور الجمهورية الفرنسية بأنها جمهورية…",
+      "o": [
+        "indivisible, laïque, démocratique et sociale",
+        "dirigée par une seule religion",
+        "sans institutions élues",
+        "où les droits dépendent de l’origine"
+      ],
+      "oa": [
+        "موحّدة غير قابلة للتجزئة، علمانية، ديمقراطية واجتماعية",
+        "تديرها ديانة واحدة",
+        "بلا مؤسسات منتخبة",
+        "تتوقف الحقوق فيها على الأصل"
+      ],
+      "a": 0,
+      "ef": "L’article premier de la Constitution énonce ces caractéristiques de la République.",
+      "ea": "تنص المادة الأولى من الدستور على هذه الخصائص للجمهورية."
+    },
+    {
+      "t": 1,
+      "fr": "Qui est le chef de l’État en France ?",
+      "ar": "من هو رئيس الدولة في فرنسا؟",
+      "o": [
+        "Le maire de Paris",
+        "Le président du Sénat",
+        "Le président de la République",
+        "Le préfet"
+      ],
+      "oa": [
+        "رئيس بلدية باريس",
+        "رئيس مجلس الشيوخ",
+        "رئيس الجمهورية",
+        "المحافظ الإداري"
+      ],
+      "a": 2,
+      "ef": "Le président de la République est le chef de l’État.",
+      "ea": "رئيس الجمهورية هو رئيس الدولة."
+    },
+    {
+      "t": 1,
+      "fr": "Quelles sont les deux chambres du Parlement français ?",
+      "ar": "ما غرفتا البرلمان الفرنسي؟",
+      "o": [
+        "L’Assemblée nationale et le Sénat",
+        "Le Conseil d’État et la Cour de cassation",
+        "Le gouvernement et les mairies",
+        "La préfecture et le Conseil constitutionnel"
+      ],
+      "oa": [
+        "الجمعية الوطنية ومجلس الشيوخ",
+        "مجلس الدولة ومحكمة النقض",
+        "الحكومة والبلديات",
+        "المحافظة والمجلس الدستوري"
+      ],
+      "a": 0,
+      "ef": "Le Parlement comprend l’Assemblée nationale et le Sénat.",
+      "ea": "يتكوّن البرلمان من الجمعية الوطنية ومجلس الشيوخ."
+    },
+    {
+      "t": 1,
+      "fr": "Quel est le rôle principal du Premier ministre ?",
+      "ar": "ما الدور الأساسي لرئيس الوزراء؟",
+      "o": [
+        "Administrer toutes les communes",
+        "Diriger l’action du gouvernement",
+        "Présider tous les tribunaux",
+        "Remplacer les députés"
+      ],
+      "oa": [
+        "إدارة جميع البلديات",
+        "قيادة عمل الحكومة",
+        "رئاسة جميع المحاكم",
+        "الحلول محل النواب"
+      ],
+      "a": 1,
+      "ef": "Le Premier ministre dirige l’action du gouvernement dans le cadre des règles constitutionnelles.",
+      "ea": "يقود رئيس الوزراء عمل الحكومة في إطار القواعد الدستورية."
+    },
+    {
+      "t": 1,
+      "fr": "Quel est le rôle du maire ?",
+      "ar": "ما دور رئيس البلدية؟",
+      "o": [
+        "Voter seul les lois nationales",
+        "Commander l’armée nationale",
+        "Nommer le président de la République",
+        "Administrer la commune et ses services locaux"
+      ],
+      "oa": [
+        "التصويت منفردًا على القوانين الوطنية",
+        "قيادة الجيش الوطني",
+        "تعيين رئيس الجمهورية",
+        "إدارة البلدية وخدماتها المحلية"
+      ],
+      "a": 3,
+      "ef": "Le maire dirige l’administration communale et met en œuvre les décisions municipales.",
+      "ea": "يدير رئيس البلدية الإدارة البلدية وينفّذ القرارات البلدية."
+    },
+    {
+      "t": 1,
+      "fr": "Quelle institution participe au vote des lois avec le Sénat ?",
+      "ar": "أي مؤسسة تشارك مجلس الشيوخ في التصويت على القوانين؟",
+      "o": [
+        "L’Assemblée nationale",
+        "La mairie",
+        "La préfecture",
+        "Le tribunal judiciaire"
+      ],
+      "oa": [
+        "الجمعية الوطنية",
+        "البلدية",
+        "المحافظة الإدارية",
+        "المحكمة القضائية"
+      ],
+      "a": 0,
+      "ef": "L’Assemblée nationale et le Sénat participent au vote de la loi.",
+      "ea": "تشارك الجمعية الوطنية ومجلس الشيوخ في التصويت على القوانين."
+    },
+    {
+      "t": 1,
+      "fr": "La France est un État membre de…",
+      "ar": "فرنسا دولة عضو في…",
+      "o": [
+        "L’Union africaine",
+        "L’Union européenne",
+        "L’Association des nations de l’Asie du Sud-Est",
+        "Le Conseil nordique"
+      ],
+      "oa": [
+        "الاتحاد الأفريقي",
+        "الاتحاد الأوروبي",
+        "رابطة دول جنوب شرق آسيا",
+        "مجلس دول الشمال"
+      ],
+      "a": 1,
+      "ef": "La France est membre de l’Union européenne.",
+      "ea": "فرنسا عضو في الاتحاد الأوروبي."
+    },
+    {
+      "t": 1,
+      "fr": "Pourquoi l’indépendance de la justice est-elle importante ?",
+      "ar": "لماذا يُعدّ استقلال القضاء مهمًا؟",
+      "o": [
+        "Pour que les juges obéissent aux candidats",
+        "Pour qu’un ministre annule tous les jugements",
+        "Pour que les décisions soient rendues selon le droit, sans pression illégitime",
+        "Pour remplacer les élections"
+      ],
+      "oa": [
+        "لكي يطيع القضاة المرشحين",
+        "لكي يستطيع الوزير إلغاء جميع الأحكام",
+        "لكي تصدر الأحكام وفق القانون دون ضغط غير مشروع",
+        "لاستبدال الانتخابات"
+      ],
+      "a": 2,
+      "ef": "L’indépendance de la justice protège l’impartialité et l’application du droit.",
+      "ea": "يحمي استقلال القضاء الحياد وتطبيق القانون."
+    },
+    {
+      "t": 1,
+      "fr": "Quel est le rôle général du Parlement ?",
+      "ar": "ما الدور العام للبرلمان؟",
+      "o": [
+        "Voter la loi et contrôler l’action du gouvernement",
+        "Diriger les communes au quotidien",
+        "Rendre tous les jugements",
+        "Gérer chaque entreprise privée"
+      ],
+      "oa": [
+        "التصويت على القوانين ومراقبة عمل الحكومة",
+        "إدارة البلديات يوميًا",
+        "إصدار جميع الأحكام القضائية",
+        "إدارة كل شركة خاصة"
+      ],
+      "a": 0,
+      "ef": "Le Parlement vote la loi et exerce notamment une mission de contrôle du gouvernement.",
+      "ea": "يصوّت البرلمان على القوانين ويمارس، من جملة مهامه، مراقبة الحكومة."
+    },
+    {
+      "t": 2,
+      "fr": "À quel âge peut-on voter aux élections nationales en France, si les autres conditions sont remplies ?",
+      "ar": "في أي عمر يمكن التصويت في الانتخابات الوطنية في فرنسا إذا استوفيت الشروط الأخرى؟",
+      "o": [
+        "À 18 ans",
+        "À 16 ans",
+        "À 21 ans",
+        "À 25 ans"
+      ],
+      "oa": [
+        "في 18 عامًا",
+        "في 16 عامًا",
+        "في 21 عامًا",
+        "في 25 عامًا"
+      ],
+      "a": 0,
+      "ef": "Le droit de vote est ouvert à partir de 18 ans aux personnes qui remplissent les conditions légales.",
+      "ea": "يُتاح حق التصويت ابتداءً من سن 18 عامًا لمن يستوفون الشروط القانونية."
+    },
+    {
+      "t": 2,
+      "fr": "À quoi servent principalement les impôts ?",
+      "ar": "ما الغرض الأساسي من الضرائب؟",
+      "o": [
+        "À financer uniquement les campagnes électorales",
+        "À financer les services publics et les dépenses collectives",
+        "À payer uniquement les loisirs privés",
+        "À remplacer toutes les cotisations sociales"
+      ],
+      "oa": [
+        "تمويل الحملات الانتخابية فقط",
+        "تمويل الخدمات العامة والنفقات المشتركة",
+        "دفع تكاليف الترفيه الخاص فقط",
+        "استبدال جميع اشتراكات الضمان الاجتماعي"
+      ],
+      "a": 1,
+      "ef": "Les impôts contribuent au financement des services et équipements collectifs.",
+      "ea": "تساهم الضرائب في تمويل الخدمات والمرافق العامة."
+    },
+    {
+      "t": 2,
+      "fr": "Jusqu’à quel âge l’instruction est-elle obligatoire en France ?",
+      "ar": "حتى أي عمر يكون التعليم إلزاميًا في فرنسا؟",
+      "o": [
+        "De 6 à 14 ans seulement",
+        "Jusqu’à 12 ans",
+        "Jusqu’à 18 ans dans tous les cas",
+        "De 3 à 16 ans"
+      ],
+      "oa": [
+        "من 6 إلى 14 عامًا فقط",
+        "حتى 12 عامًا",
+        "حتى 18 عامًا في جميع الحالات",
+        "من 3 إلى 16 عامًا"
+      ],
+      "a": 3,
+      "ef": "L’instruction est obligatoire de 3 à 16 ans, sous réserve des règles et situations particulières.",
+      "ea": "التعليم إلزامي من سن 3 إلى 16 عامًا، مع مراعاة القواعد والحالات الخاصة."
+    },
+    {
+      "t": 2,
+      "fr": "Que protège la liberté de conscience ?",
+      "ar": "ما الذي تحميه حرية الضمير؟",
+      "o": [
+        "Le droit d’imposer ses croyances aux autres",
+        "Le droit d’avoir, de changer ou de ne pas avoir de convictions",
+        "Le droit de refuser toute loi",
+        "Le droit de discriminer les voisins"
+      ],
+      "oa": [
+        "حق فرض المعتقدات على الآخرين",
+        "حق امتلاك المعتقدات أو تغييرها أو عدم اعتناق أي معتقد",
+        "حق رفض كل قانون",
+        "حق التمييز ضد الجيران"
+      ],
+      "a": 1,
+      "ef": "La liberté de conscience protège les convictions personnelles dans le cadre de la loi.",
+      "ea": "تحمي حرية الضمير المعتقدات الشخصية في إطار القانون."
+    },
+    {
+      "t": 2,
+      "fr": "L’égalité entre les femmes et les hommes signifie que…",
+      "ar": "تعني المساواة بين النساء والرجال أن…",
+      "o": [
+        "certains métiers sont réservés par principe aux hommes",
+        "les femmes ne peuvent pas voter",
+        "chacun doit avoir les mêmes droits, sans discrimination fondée sur le sexe",
+        "les femmes doivent demander l’autorisation d’un homme pour travailler"
+      ],
+      "oa": [
+        "بعض المهن مخصصة للرجال من حيث المبدأ",
+        "لا تستطيع النساء التصويت",
+        "لكل شخص الحقوق نفسها دون تمييز قائم على الجنس",
+        "يجب أن تطلب النساء إذن رجل للعمل"
+      ],
+      "a": 2,
+      "ef": "L’égalité entre les femmes et les hommes est un principe fondamental du droit français.",
+      "ea": "المساواة بين النساء والرجال مبدأ أساسي في القانون الفرنسي."
+    },
+    {
+      "t": 2,
+      "fr": "Vous n’êtes pas d’accord avec une décision administrative. Que pouvez-vous faire ?",
+      "ar": "لا توافق على قرار إداري. ماذا يمكنك أن تفعل؟",
+      "o": [
+        "Ignorer automatiquement toute loi",
+        "Menacer l’agent public",
+        "Utiliser les voies de recours prévues",
+        "Détruire le document officiel"
+      ],
+      "oa": [
+        "تجاهل كل قانون تلقائيًا",
+        "تهديد الموظف العام",
+        "استخدام طرق الطعن المقررة",
+        "إتلاف الوثيقة الرسمية"
+      ],
+      "a": 2,
+      "ef": "Selon la situation, des recours administratifs ou judiciaires peuvent être disponibles.",
+      "ea": "قد تتاح، بحسب الحالة، طرق للطعن الإداري أو القضائي."
+    },
+    {
+      "t": 2,
+      "fr": "Quel organisme peut informer et orienter une personne qui estime subir une discrimination ?",
+      "ar": "ما الجهة التي يمكنها إرشاد شخص يعتقد أنه تعرض للتمييز؟",
+      "o": [
+        "Le Défenseur des droits",
+        "La Banque de France uniquement",
+        "Le Sénat directement pour chaque plainte",
+        "Le bureau de vote"
+      ],
+      "oa": [
+        "المدافع عن الحقوق",
+        "بنك فرنسا فقط",
+        "مجلس الشيوخ مباشرة لكل شكوى",
+        "مركز الاقتراع"
+      ],
+      "a": 0,
+      "ef": "Le Défenseur des droits peut informer et orienter les personnes concernées.",
+      "ea": "يمكن للمدافع عن الحقوق تقديم المعلومات والإرشاد للأشخاص المعنيين."
+    },
+    {
+      "t": 2,
+      "fr": "Pourquoi doit-on respecter les lois et les droits d’autrui ?",
+      "ar": "لماذا يجب احترام القوانين وحقوق الآخرين؟",
+      "o": [
+        "Parce que chacun peut imposer sa volonté",
+        "Pour permettre la vie collective et protéger les droits de chacun",
+        "Uniquement pour éviter les discussions",
+        "Seulement dans les bâtiments publics"
+      ],
+      "oa": [
+        "لأن لكل شخص فرض إرادته",
+        "لتمكين الحياة المشتركة وحماية حقوق الجميع",
+        "فقط لتجنب النقاشات",
+        "داخل المباني العامة فقط"
+      ],
+      "a": 1,
+      "ef": "Le respect des règles et des droits d’autrui permet une vie collective pacifique.",
+      "ea": "يسمح احترام القواعد وحقوق الآخرين بحياة مشتركة سلمية."
+    },
+    {
+      "t": 3,
+      "fr": "En quelle année la Révolution française a-t-elle commencé ?",
+      "ar": "في أي عام بدأت الثورة الفرنسية؟",
+      "o": [
+        "1789",
+        "1689",
+        "1815",
+        "1905"
+      ],
+      "oa": [
+        "1789",
+        "1689",
+        "1815",
+        "1905"
+      ],
+      "a": 0,
+      "ef": "La Révolution française commence en 1789.",
+      "ea": "بدأت الثورة الفرنسية عام 1789."
+    },
+    {
+      "t": 3,
+      "fr": "À quelle date la fête nationale française est-elle célébrée ?",
+      "ar": "في أي تاريخ يُحتفل بالعيد الوطني الفرنسي؟",
+      "o": [
+        "Le 1er mai",
+        "Le 14 juillet",
+        "Le 11 novembre",
+        "Le 8 mai"
+      ],
+      "oa": [
+        "الأول من مايو",
+        "14 يوليو",
+        "11 نوفمبر",
+        "8 مايو"
+      ],
+      "a": 1,
+      "ef": "La fête nationale française est célébrée le 14 juillet.",
+      "ea": "يُحتفل بالعيد الوطني الفرنسي في 14 يوليو."
+    },
+    {
+      "t": 3,
+      "fr": "En quelle année la loi de séparation des Églises et de l’État a-t-elle été adoptée ?",
+      "ar": "في أي عام اعتُمد قانون الفصل بين الكنائس والدولة؟",
+      "o": [
+        "1789",
+        "1905",
+        "1945",
+        "1958"
+      ],
+      "oa": [
+        "1789",
+        "1905",
+        "1945",
+        "1958"
+      ],
+      "a": 1,
+      "ef": "La loi de séparation des Églises et de l’État date de 1905.",
+      "ea": "يعود قانون الفصل بين الكنائس والدولة إلى عام 1905."
+    },
+    {
+      "t": 3,
+      "fr": "Quel fleuve traverse Paris ?",
+      "ar": "أي نهر يمر عبر باريس؟",
+      "o": [
+        "La Seine",
+        "Le Rhône",
+        "La Loire",
+        "La Garonne"
+      ],
+      "oa": [
+        "السين",
+        "الرون",
+        "اللوار",
+        "الغارون"
+      ],
+      "a": 0,
+      "ef": "La Seine traverse Paris.",
+      "ea": "يمر نهر السين عبر باريس."
+    },
+    {
+      "t": 3,
+      "fr": "Que représente Marianne en France ?",
+      "ar": "ماذا تمثل ماريان في فرنسا؟",
+      "o": [
+        "Une entreprise publique",
+        "La famille royale",
+        "La République française",
+        "Une région européenne"
+      ],
+      "oa": [
+        "شركة عامة",
+        "العائلة الملكية",
+        "الجمهورية الفرنسية",
+        "منطقة أوروبية"
+      ],
+      "a": 2,
+      "ef": "Marianne est une représentation symbolique de la République.",
+      "ea": "ماريان رمز تمثيلي للجمهورية."
+    },
+    {
+      "t": 3,
+      "fr": "En quelle année la Seconde Guerre mondiale s’est-elle terminée en Europe ?",
+      "ar": "في أي عام انتهت الحرب العالمية الثانية في أوروبا؟",
+      "o": [
+        "1918",
+        "1939",
+        "1945",
+        "1962"
+      ],
+      "oa": [
+        "1918",
+        "1939",
+        "1945",
+        "1962"
+      ],
+      "a": 2,
+      "ef": "La guerre en Europe se termine en 1945.",
+      "ea": "انتهت الحرب في أوروبا عام 1945."
+    },
+    {
+      "t": 3,
+      "fr": "Quelle est la capitale de la France ?",
+      "ar": "ما عاصمة فرنسا؟",
+      "o": [
+        "Lyon",
+        "Marseille",
+        "Bordeaux",
+        "Paris"
+      ],
+      "oa": [
+        "ليون",
+        "مرسيليا",
+        "بوردو",
+        "باريس"
+      ],
+      "a": 3,
+      "ef": "Paris est la capitale de la France.",
+      "ea": "باريس هي عاصمة فرنسا."
+    },
+    {
+      "t": 3,
+      "fr": "En quelle année la Constitution de la Ve République a-t-elle été adoptée ?",
+      "ar": "في أي عام اعتُمد دستور الجمهورية الخامسة؟",
+      "o": [
+        "1789",
+        "1905",
+        "1958",
+        "2002"
+      ],
+      "oa": [
+        "1789",
+        "1905",
+        "1958",
+        "2002"
+      ],
+      "a": 2,
+      "ef": "La Constitution de la Ve République date de 1958.",
+      "ea": "يعود دستور الجمهورية الخامسة إلى عام 1958."
+    },
+    {
+      "t": 4,
+      "fr": "Vous avez besoin d’une aide médicale urgente. Quel numéro permet de joindre le SAMU en France ?",
+      "ar": "تحتاج إلى مساعدة طبية عاجلة. ما الرقم الذي يتيح الاتصال بخدمة الإسعاف الطبي في فرنسا؟",
+      "o": [
+        "15",
+        "17",
+        "18",
+        "119"
+      ],
+      "oa": [
+        "15",
+        "17",
+        "18",
+        "119"
+      ],
+      "a": 0,
+      "ef": "Le 15 permet de joindre le SAMU pour une urgence médicale.",
+      "ea": "يتيح الرقم 15 الاتصال بخدمة الإسعاف الطبي."
+    },
+    {
+      "t": 4,
+      "fr": "Vous avez besoin de joindre la police pour une urgence. Quel numéro appeler en France ?",
+      "ar": "تحتاج إلى الاتصال بالشرطة في حالة طوارئ. ما الرقم في فرنسا؟",
+      "o": [
+        "16",
+        "17",
+        "36 15",
+        "118"
+      ],
+      "oa": [
+        "16",
+        "17",
+        "36 15",
+        "118"
+      ],
+      "a": 1,
+      "ef": "Le 17 permet de joindre la police ou la gendarmerie pour une urgence.",
+      "ea": "يتيح الرقم 17 الاتصال بالشرطة أو الدرك في حالة الطوارئ."
+    },
+    {
+      "t": 4,
+      "fr": "Quel numéro européen permet de joindre les services d’urgence dans l’Union européenne ?",
+      "ar": "ما الرقم الأوروبي للاتصال بخدمات الطوارئ في الاتحاد الأوروبي؟",
+      "o": [
+        "911",
+        "999",
+        "112",
+        "101"
+      ],
+      "oa": [
+        "911",
+        "999",
+        "112",
+        "101"
+      ],
+      "a": 2,
+      "ef": "Le 112 est le numéro européen d’urgence.",
+      "ea": "الرقم 112 هو رقم الطوارئ الأوروبي."
+    },
+    {
+      "t": 4,
+      "fr": "Vous voulez inscrire votre enfant dans une école publique de votre commune. Quel est souvent le premier interlocuteur local ?",
+      "ar": "تريد تسجيل طفلك في مدرسة عامة في منطقتك. ما الجهة المحلية الأولى غالبًا؟",
+      "o": [
+        "La mairie",
+        "Le Parlement",
+        "Le Sénat",
+        "La Banque de France"
+      ],
+      "oa": [
+        "البلدية",
+        "البرلمان",
+        "مجلس الشيوخ",
+        "بنك فرنسا"
+      ],
+      "a": 0,
+      "ef": "La mairie renseigne souvent sur les inscriptions scolaires dans la commune.",
+      "ea": "غالبًا ما تقدم البلدية معلومات عن التسجيل المدرسي في المنطقة."
+    },
+    {
+      "t": 4,
+      "fr": "Avant de signer un contrat de travail, il est préférable de…",
+      "ar": "قبل توقيع عقد عمل، من الأفضل أن…",
+      "o": [
+        "signer sans le lire",
+        "donner son mot de passe bancaire à l’employeur",
+        "lire les conditions, poser des questions et conserver une copie",
+        "refuser tout document écrit"
+      ],
+      "oa": [
+        "التوقيع دون قراءة",
+        "إعطاء كلمة مرور البنك لصاحب العمل",
+        "قراءة الشروط وطرح الأسئلة والاحتفاظ بنسخة",
+        "رفض كل وثيقة مكتوبة"
+      ],
+      "a": 2,
+      "ef": "Il est important de comprendre le contrat et de conserver une copie.",
+      "ea": "من المهم فهم العقد والاحتفاظ بنسخة."
+    },
+    {
+      "t": 4,
+      "fr": "Vous louez un logement. Quel document précise les principales conditions de location ?",
+      "ar": "استأجرت مسكنًا. ما الوثيقة التي توضح الشروط الأساسية للإيجار؟",
+      "o": [
+        "Le contrat de location (bail)",
+        "Le bulletin de vote",
+        "La carte d’identité du voisin",
+        "Le livret de famille du propriétaire"
+      ],
+      "oa": [
+        "عقد الإيجار",
+        "ورقة التصويت",
+        "بطاقة هوية الجار",
+        "دفتر عائلة المالك"
+      ],
+      "a": 0,
+      "ef": "Le bail fixe les principales conditions de la location.",
+      "ea": "يحدد عقد الإيجار الشروط الأساسية للإيجار."
+    },
+    {
+      "t": 4,
+      "fr": "Un agent vous demande un paiement en espèces sans reçu pour accélérer un dossier. Que faire ?",
+      "ar": "طلب منك موظف دفعًا نقديًا بلا إيصال لتسريع معاملة. ماذا تفعل؟",
+      "o": [
+        "Payer et garder le secret",
+        "Demander une procédure officielle et un reçu, puis signaler la demande suspecte",
+        "Donner aussi un cadeau",
+        "Abandonner tous ses droits"
+      ],
+      "oa": [
+        "الدفع وإبقاء الأمر سرًا",
+        "طلب إجراء رسمي وإيصال ثم الإبلاغ عن الطلب المشبوه",
+        "تقديم هدية أيضًا",
+        "التنازل عن جميع الحقوق"
+      ],
+      "a": 1,
+      "ef": "Les démarches administratives doivent suivre les procédures officielles.",
+      "ea": "يجب أن تتبع المعاملات الإدارية الإجراءات الرسمية."
+    },
+    {
+      "t": 4,
+      "fr": "Vous déménagez. Que faut-il faire pour éviter des problèmes dans vos démarches ?",
+      "ar": "انتقلت إلى عنوان جديد. ماذا تفعل لتجنب مشكلات المعاملات؟",
+      "o": [
+        "Ne prévenir aucune administration",
+        "Mettre à jour son adresse auprès des organismes concernés selon sa situation",
+        "Utiliser l’adresse d’un inconnu",
+        "Supprimer tous ses documents"
+      ],
+      "oa": [
+        "عدم إبلاغ أي جهة",
+        "تحديث العنوان لدى الجهات المعنية حسب الحالة",
+        "استخدام عنوان شخص مجهول",
+        "حذف جميع الوثائق"
+      ],
+      "a": 1,
+      "ef": "Mettez à jour votre adresse auprès des organismes concernés par votre situation.",
+      "ea": "حدّث عنوانك لدى الجهات المعنية بوضعك."
+    }
+  ]
+}
