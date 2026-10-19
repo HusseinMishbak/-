@@ -46,6 +46,39 @@
 3. لا تعط صلاحية تعديل جداول الاشتراك/الإحالات مباشرة للطلاب.
 4. لا تمنح عمولة أو مكافآت مالية للمدرسين حتى تُعرّف شروط البرنامج، وضوابط إساءة الاستخدام، والتقارير والموافقات القانونية.
 
+### منح المدرّس المجاني وإنشاء رمز الدعوة
+
+بعد أن ينشئ المدرّس حسابه ويؤكد بريده، نفّذ ذلك من لوحة الإدارة فقط، مع استبدال البريد والرمز بقيم صحيحة وفريدة. لا تمنح دور المدرّس لأي شخص لم تتحقق من هويته:
+
+```sql
+begin;
+
+update public.profiles
+set role = 'teacher'
+where email = 'teacher@example.com';
+
+insert into public.teacher_referral_codes (teacher_id, code, is_active)
+select id, 'URTEACHER-2026-001', true
+from public.profiles
+where email = 'teacher@example.com' and role = 'teacher'
+on conflict (teacher_id) do update
+set code = excluded.code, is_active = true;
+
+commit;
+```
+
+تحقق من عدد الصفوف المتأثرة ومن عدم استخدام الرمز من قبل. إذا لم يعد المدرّس يعمل مع المنصة، عطّل الرمز بدل إعادة استخدامه:
+
+```sql
+update public.teacher_referral_codes
+set is_active = false
+where teacher_id = (
+  select id from public.profiles where email = 'teacher@example.com'
+);
+```
+
+وظيفة `teacher-referral-stats` تعيد **إحصاءات مجمّعة فقط**: عدد التسجيلات المنسوبة، وعدد الاشتراكات النشطة، وعدد الاشتراكات التي تحتاج إلى متابعة دفع. لا تعرض بيانات الطالب أو بطاقته. هذه ليست آلية عمولة؛ أضف قواعد العمولة/المكافآت والتدقيق المحاسبي بشكل منفصل قبل وعد المدرّسين بمبالغ.
+
 ## حسابات الطلاب والخصوصية
 - لا تحفظ بيانات البطاقة في قاعدة بيانات URFRE. يستضيف Stripe صفحة الدفع ويدير بيانات البطاقة.
 - لا تتجاوز قاعدة RLS؛ مفاتيح الخدمة تبقى داخل أسرار الوظائف.
