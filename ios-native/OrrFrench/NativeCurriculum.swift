@@ -44,7 +44,7 @@ struct PracticeQuestion: Identifiable, Hashable {
 }
 
 enum CourseCategory: String, CaseIterable, Identifiable {
-    case textbook, roadmap, citizenship
+    case textbook, roadmap, citizenship, vocabulary
     var id: String { rawValue }
 }
 
