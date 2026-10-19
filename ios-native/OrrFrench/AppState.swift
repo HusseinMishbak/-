@@ -194,6 +194,53 @@ final class AppState: ObservableObject {
         UserDefaults.standard.set(data, forKey: Self.sessionsKey)
     }
 
+    func makeCloudSnapshot() -> NativeLearningSnapshot {
+        NativeLearningSnapshot(updatedAt: .now, vocabulary: vocabulary, sessions: sessions, quizAttempts: quizAttempts)
+    }
+
+    func mergeCloudSnapshot(_ remote: NativeLearningSnapshot) {
+        let localByID = Dictionary(vocabulary.map { ($0.id, $0) }, uniquingKeysWith: { _, latest in latest })
+        let remoteByID = Dictionary(remote.vocabulary.map { ($0.id, $0) }, uniquingKeysWith: { _, latest in latest })
+        var merged: [VocabularyCard] = vocabulary.map { local in
+            guard let cloud = remoteByID[local.id] else { return local }
+            if cloud.reviewCount > local.reviewCount { return cloud }
+            if cloud.reviewCount < local.reviewCount { return local }
+            if cloud.reviewStage > local.reviewStage { return cloud }
+            if cloud.reviewStage < local.reviewStage { return local }
+            return cloud.dueAt > local.dueAt ? cloud : local
+        }
+        let localIDs = Set(localByID.keys)
+        merged.append(contentsOf: remote.vocabulary.filter { !localIDs.contains($0.id) })
+        vocabulary = merged
+
+        var sessionMap = Dictionary(remote.sessions.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
+        sessions.forEach { sessionMap[$0.id] = $0 }
+        sessions = sessionMap.values.sorted { $0.completedAt > $1.completedAt }
+
+        var quizMap = Dictionary(remote.quizAttempts.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
+        quizAttempts.forEach { quizMap[$0.id] = $0 }
+        quizAttempts = quizMap.values.sorted { $0.completedAt > $1.completedAt }
+
+        persistVocabulary()
+        persistSessions()
+        if let data = try? JSONEncoder().encode(quizAttempts) {
+            UserDefaults.standard.set(data, forKey: Self.quizzesKey)
+        }
+    }
+
+    func synchronize(with auth: NativeAuthStore) async {
+        guard auth.session != nil else { return }
+        do {
+            if let remote = try await auth.fetchLearningSnapshot() {
+                mergeCloudSnapshot(remote)
+            }
+            try await auth.saveLearningSnapshot(makeCloudSnapshot())
+            auth.setStatus(language.text("synced"))
+        } catch {
+            auth.setStatus(error.localizedDescription)
+        }
+    }
+
     private static let seedVocabulary: [VocabularyCard] = [
         .init(id: "bonjour", french: "Bonjour", arabic: "مرحباً", english: "Hello", example: "Bonjour, comment allez-vous ?"),
         .init(id: "merci", french: "Merci", arabic: "شكراً", english: "Thank you", example: "Merci beaucoup pour votre aide."),
