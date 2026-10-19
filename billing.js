@@ -74,7 +74,14 @@
     if (readyBadge) readyBadge.textContent = (paymentConfig.monthly_enabled || paymentConfig.annual_enabled) ? 'بوابة الدفع مهيأة' : 'الدفع غير مفعّل بعد';
     const card = $('urfreBillingIdentity');
     if (card) card.textContent = 'الحساب: ' + (user.email || user.id);
-    const teacher = profile?.role === 'teacher';
+    if (!profile || !['student','teacher'].includes(profile.role)) {
+      canStartCheckout = false;
+      canManageSubscription = false;
+      setStatus('تعذر تحميل ملف حسابك أو التحقق من صلاحياته. لم تُفتح بوابة الدفع.', 'warn');
+      setButtonsEnabled(false);
+      return;
+    }
+    const teacher = profile.role === 'teacher';
     if (teacher) {
       canStartCheckout = false;
       canManageSubscription = false;
