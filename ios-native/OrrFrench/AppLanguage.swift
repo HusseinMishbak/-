@@ -69,7 +69,7 @@ private enum AppCopy {
         "noSessions": [.arabic: "ابدأ أول جلسة لتظهر هنا.", .english: "Start your first session to see it here.", .french: "Commencez votre première séance pour la voir ici."],
         "language": [.arabic: "لغة التطبيق", .english: "App language", .french: "Langue de l’application"],
         "nativeApp": [.arabic: "تطبيق آيفون أصلي", .english: "Native iPhone app", .french: "Application iPhone native"],
-        "nativeNote": [.arabic: "هذه النسخة تستخدم واجهات iOS الأصلية وتحفظ تقدّمك على هذا الجهاز. ربط الحساب والمزامنة السحابية ونقل المنهج الكامل ستُضاف وتُختبر في مراحل لاحقة.", .english: "This build uses native iOS screens and saves progress on this device. Account sign-in, cloud sync, and the complete curriculum migration will be added and tested in later phases.", .french: "Cette version utilise des écrans iOS natifs et enregistre la progression sur cet appareil. La connexion, la synchronisation cloud et la migration du programme complet seront ajoutées et testées dans les prochaines étapes."],
+        "nativeNote": [.arabic: "تستخدم هذه النسخة واجهات iOS الأصلية وتضم المنهج الذي تم نقله. يمكن حفظ الجلسات والمراجعات محلياً أو مزامنتها مع حساب المنصة عند تسجيل الدخول. بعض الوظائف المتقدمة ما زالت قيد النقل والاختبار.", .english: "This build uses native iOS screens and bundles the migrated curriculum. Sessions and reviews save locally or sync to your platform account after sign-in. Some advanced features are still being migrated and tested.", .french: "Cette version utilise des écrans iOS natifs et intègre le programme transféré. Les séances et révisions sont enregistrées localement ou synchronisées après connexion. Certaines fonctions avancées restent à migrer et à tester."],
         "about": [.arabic: "عن أور", .english: "About Orr", .french: "À propos d’Orr"],
         "level": [.arabic: "المسار التعليمي", .english: "Learning pathway", .french: "Parcours d’apprentissage"],
         "levelDetail": [.arabic: "من A1 إلى B2", .english: "A1 to B2", .french: "De A1 à B2"],
@@ -113,8 +113,7 @@ private enum AppCopy {
         "synced": [.arabic: "تمت مزامنة التقدّم", .english: "Progress synced", .french: "Progression synchronisée"],
         "authHint": [.arabic: "استخدم حساب المنصة نفسه لحفظ تقدّمك عبر الأجهزة.", .english: "Use your existing platform account to keep progress across devices.", .french: "Utilisez le même compte pour retrouver votre progression sur vos appareils."],
         "checkEmail": [.arabic: "تحقق من بريدك لتأكيد الحساب إن طُلب ذلك، ثم سجّل الدخول.", .english: "Check your email to confirm the account if requested, then sign in.", .french: "Consultez votre e-mail pour confirmer le compte si nécessaire, puis connectez-vous."],
-        "quizPoints": [.arabic: "نقاط الاختبارات", .english: "Quiz points", .french: "Points des quiz"]
-,
+        "quizPoints": [.arabic: "نقاط الاختبارات", .english: "Quiz points", .french: "Points des quiz"],
         "dayShort": [.arabic: "يوم", .english: "day", .french: "jour"]
     ]
 }
