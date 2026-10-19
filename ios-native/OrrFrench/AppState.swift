@@ -49,8 +49,24 @@ enum StudySkill: String, CaseIterable, Identifiable {
     }
 }
 
+struct QuizRecord: Identifiable, Codable {
+    let id: UUID
+    let completedAt: Date
+    let title: String
+    let correct: Int
+    let total: Int
+
+    init(completedAt: Date = .now, title: String, correct: Int, total: Int) {
+        self.id = UUID()
+        self.completedAt = completedAt
+        self.title = title
+        self.correct = correct
+        self.total = total
+    }
+}
+
 enum AppTab: Hashable {
-    case home, vocabulary, study, progress, settings
+    case home, course, study, progress, settings
 }
 
 @MainActor
@@ -59,29 +75,54 @@ final class AppState: ObservableObject {
         didSet { UserDefaults.standard.set(language.rawValue, forKey: Self.languageKey) }
     }
     @Published var selectedTab: AppTab = .home
+    @Published var libraryCategory: CourseCategory = .textbook
     @Published private(set) var vocabulary: [VocabularyCard]
     @Published private(set) var sessions: [StudyRecord]
+    @Published private(set) var quizAttempts: [QuizRecord]
+    @Published private(set) var dataVersion = 0
 
     private static let languageKey = "orr.native.language.v1"
     private static let wordsKey = "orr.native.vocabulary.v1"
     private static let sessionsKey = "orr.native.sessions.v1"
+    private static let quizzesKey = "orr.native.quizzes.v1"
 
     init() {
         let savedLanguage = UserDefaults.standard.string(forKey: Self.languageKey) ?? AppLanguage.arabic.rawValue
         self.language = AppLanguage(rawValue: savedLanguage) ?? .arabic
-        if let data = UserDefaults.standard.data(forKey: Self.wordsKey),
-           let saved = try? JSONDecoder().decode([VocabularyCard].self, from: data) {
-            self.vocabulary = saved
-        } else {
-            self.vocabulary = Self.seedVocabulary
+
+        let savedWords: [VocabularyCard] = {
+            guard let data = UserDefaults.standard.data(forKey: Self.wordsKey),
+                  let decoded = try? JSONDecoder().decode([VocabularyCard].self, from: data) else { return [] }
+            return decoded
+        }()
+        let importedWords = NativeCurriculumCatalog.shared.vocabulary.map {
+            VocabularyCard(id: $0.id, french: $0.french, arabic: $0.arabic, english: $0.english, example: $0.example)
         }
+        let baseWords = importedWords.isEmpty ? Self.seedVocabulary : importedWords
+        let savedByID = Dictionary(savedWords.map { ($0.id, $0) }, uniquingKeysWith: { _, latest in latest })
+        let baseIDs = Set(baseWords.map(\.id))
+        self.vocabulary = baseWords.map { word in
+            guard let saved = savedByID[word.id] else { return word }
+            var updated = word
+            updated.reviewStage = saved.reviewStage
+            updated.dueAt = saved.dueAt
+            updated.reviewCount = saved.reviewCount
+            return updated
+        } + savedWords.filter { !baseIDs.contains($0.id) }
+
         if let data = UserDefaults.standard.data(forKey: Self.sessionsKey),
            let saved = try? JSONDecoder().decode([StudyRecord].self, from: data) {
             self.sessions = saved
         } else {
             self.sessions = []
         }
-        if UserDefaults.standard.data(forKey: Self.wordsKey) == nil { persistVocabulary() }
+        if let data = UserDefaults.standard.data(forKey: Self.quizzesKey),
+           let saved = try? JSONDecoder().decode([QuizRecord].self, from: data) {
+            self.quizAttempts = saved
+        } else {
+            self.quizAttempts = []
+        }
+        persistVocabulary()
     }
 
     var dueVocabulary: [VocabularyCard] {
@@ -95,7 +136,7 @@ final class AppState: ObservableObject {
     }
 
     var minutesThisWeek: Int { completedThisWeek.reduce(0) { $0 + $1.minutes } }
-    var points: Int { sessions.reduce(0) { $0 + ($1.minutes * 2) } + vocabulary.reduce(0) { $0 + ($1.reviewCount * 5) } }
+    var points: Int { sessions.reduce(0) { $0 + ($1.minutes * 2) } + vocabulary.reduce(0) { $0 + ($1.reviewCount * 5) } + quizAttempts.reduce(0) { $0 + ($1.correct * 3) } }
 
     var streak: Int {
         let calendar = Calendar.current
@@ -115,6 +156,16 @@ final class AppState: ObservableObject {
         guard minutes > 0 else { return }
         sessions.insert(StudyRecord(minutes: minutes, skill: skill.rawValue), at: 0)
         persistSessions()
+        dataVersion += 1
+    }
+
+    func recordQuiz(title: String, correct: Int, total: Int) {
+        guard total > 0 else { return }
+        quizAttempts.insert(QuizRecord(title: title, correct: correct, total: total), at: 0)
+        if quizAttempts.count > 200 { quizAttempts = Array(quizAttempts.prefix(200)) }
+        guard let data = try? JSONEncoder().encode(quizAttempts) else { return }
+        UserDefaults.standard.set(data, forKey: Self.quizzesKey)
+        dataVersion += 1
     }
 
     func review(_ card: VocabularyCard, knewIt: Bool) {
@@ -130,6 +181,7 @@ final class AppState: ObservableObject {
             vocabulary[index].dueAt = .now.addingTimeInterval(10 * 60)
         }
         persistVocabulary()
+        dataVersion += 1
     }
 
     private func persistVocabulary() {
