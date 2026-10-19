@@ -63,7 +63,7 @@ struct DashboardView: View {
                                 VStack(alignment: .leading, spacing: 6) {
                                     Text(app.language.text("lessonTitle")).font(.headline).foregroundStyle(OrrTheme.ink)
                                     Text("Bonjour · Je m’appelle…").font(.subheadline).foregroundStyle(OrrTheme.violet)
-                                    Button(app.language.text("continueLesson")) { app.selectedTab = .vocabulary }
+                                    Button(app.language.text("continueLesson")) { app.libraryCategory = .textbook; app.selectedTab = .course }
                                         .font(.subheadline.bold())
                                         .padding(.top, 3)
                                 }
