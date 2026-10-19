@@ -101,10 +101,16 @@
       const { data, error } = await db.functions.invoke('create-checkout-session', {
         body: { plan, promotion_code: promo }
       });
-      if (error || !data?.url) {
-        const detail = data?.message || data?.error || error?.message || 'الدفع غير مهيأ بعد';
-        setStatus(detail === 'billing_not_configured' ? 'لم يفعّل مالك المنصة الدفع بعد. لا تُدخل بيانات البطاقة في هذه الصفحة.' :
-          (String(detail).includes('price_not_configured') ? 'لم يحدد مالك المنصة سعر هذه الخطة بعد.' : String(detail)), 'warn');
+      let payload = data;
+      if (error && !payload && error.context?.clone) {
+        try { payload = await error.context.clone().json(); } catch (_) {}
+      }
+      if (error || !payload?.url) {
+        const code = payload?.error || '';
+        const detail = payload?.message || error?.message || 'الدفع غير مهيأ بعد';
+        if (code === 'billing_not_configured') setStatus('لم يفعّل مالك المنصة الدفع بعد. لا تُدخل بيانات البطاقة في هذه الصفحة.', 'warn');
+        else if (code === 'price_not_configured') setStatus('لم يحدد مالك المنصة سعر هذه الخطة بعد.', 'warn');
+        else setStatus(String(detail), 'warn');
         return;
       }
       window.location.assign(data.url);
@@ -124,11 +130,15 @@
     busy = true; setButtonsEnabled(false);
     try {
       const { data, error } = await db.functions.invoke('create-billing-portal-session', { body: {} });
-      if (error || !data?.url) {
-        setStatus(data?.message || 'تعذر فتح إدارة الاشتراك. قد لا يوجد حساب دفع مرتبط بعد.', 'warn');
+      let payload = data;
+      if (error && !payload && error.context?.clone) {
+        try { payload = await error.context.clone().json(); } catch (_) {}
+      }
+      if (error || !payload?.url) {
+        setStatus(payload?.message || error?.message || 'تعذر فتح إدارة الاشتراك. قد لا يوجد حساب دفع مرتبط بعد.', 'warn');
         return;
       }
-      window.location.assign(data.url);
+      window.location.assign(payload.url);
     } catch {
       setStatus('تعذر فتح إدارة الاشتراك حالياً.', 'error');
     } finally {
