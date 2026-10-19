@@ -65,7 +65,7 @@ create policy "teacher can read own referral code"
 drop policy if exists "student or referring teacher can read attribution" on public.student_referrals;
 create policy "student or referring teacher can read attribution"
   on public.student_referrals for select to authenticated
-  using (student_id = (select auth.uid()) or teacher_id = (select auth.uid()));
+  using (student_id = (select auth.uid()) or (teacher_id = (select auth.uid()) and (select private.is_teacher())));
 
 drop policy if exists "user can read own subscription" on public.billing_subscriptions;
 create policy "user can read own subscription"
