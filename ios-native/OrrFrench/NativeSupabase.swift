@@ -226,7 +226,13 @@ final class NativeAuthStore: ObservableObject {
     }
 
     private func request(path: String, method: String, body: Data?, bearer: String? = nil) async throws -> Data {
-        var request = URLRequest(url: baseURL.appendingPathComponent(path))
+        let pathParts = path.split(separator: "?", maxSplits: 1, omittingEmptySubsequences: false)
+        var url = baseURL.appendingPathComponent(String(pathParts[0]))
+        if pathParts.count > 1, var components = URLComponents(url: url, resolvingAgainstBaseURL: false) {
+            components.percentEncodedQuery = String(pathParts[1])
+            url = components.url ?? url
+        }
+        var request = URLRequest(url: url)
         request.httpMethod = method
         request.httpBody = body
         setHeaders(on: &request, bearer: bearer)
