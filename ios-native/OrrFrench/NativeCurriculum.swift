@@ -105,7 +105,7 @@ struct NativeCurriculumCatalog {
                 id: "book-\(number)", category: .textbook, level: "A1",
                 title: name, subtitle: "Unité \(number) · \(days.count) leçons",
                 description: string(unit["focus"]), grammar: string(unit["grammar"]),
-                task: string(unit["sequence"] as? [String: Any]? ?? [:], key: "learningFocus"),
+                task: string(unit["sequence"] as? [String: Any] ?? [:], key: "learningFocus"),
                 days: days, questions: questions, vocabulary: vocab
             )
         }
