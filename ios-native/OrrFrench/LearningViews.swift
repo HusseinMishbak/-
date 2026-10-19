@@ -85,7 +85,7 @@ struct DashboardView: View {
                             Spacer()
                             Text("\(app.dueVocabulary.count)").font(.title2.bold()).foregroundStyle(OrrTheme.violet)
                         }
-                        Button { app.selectedTab = .vocabulary } label: {
+                        Button { app.libraryCategory = .vocabulary; app.selectedTab = .course } label: {
                             Text(app.language.text("vocabulary"))
                                 .font(.subheadline.bold()).frame(maxWidth: .infinity)
                                 .padding(.vertical, 12).background(OrrTheme.lavender, in: RoundedRectangle(cornerRadius: 14))
