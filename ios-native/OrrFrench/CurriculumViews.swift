@@ -252,7 +252,7 @@ private struct CourseEntryDetailView: View {
         utterance.voice = AVSpeechSynthesisVoice(language: "fr-FR")
         utterance.rate = 0.46
         NativeSpeech.synthesizer.stopSpeaking(at: .immediate)
-        SpeechServiceNative.synthesizer.speak(utterance)
+        NativeSpeech.synthesizer.speak(utterance)
     }
 }
 
