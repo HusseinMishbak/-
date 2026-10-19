@@ -649,6 +649,17 @@ struct SettingsView: View {
                                     .background(OrrTheme.hero, in: RoundedRectangle(cornerRadius: 15)).foregroundStyle(.white)
                                 }.buttonStyle(.plain).disabled(auth.isBusy || email.isEmpty || password.isEmpty || (isCreatingAccount && fullName.isEmpty))
 
+                                if !isCreatingAccount {
+                                    Button {
+                                        Task { await auth.sendPasswordRecovery(email: email) }
+                                    } label: {
+                                        Text(app.language.text("forgotPassword"))
+                                            .font(.subheadline).frame(maxWidth: .infinity).padding(.vertical, 5)
+                                    }
+                                    .buttonStyle(.plain)
+                                    .disabled(auth.isBusy || email.isEmpty)
+                                }
+
                                 Button {
                                     isCreatingAccount.toggle()
                                     auth.setStatus("")
