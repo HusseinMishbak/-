@@ -51,6 +51,6 @@ jobs:
           grep -q 'STRIPE_BILLING_ENABLED' supabase/functions/create-checkout-session/index.ts
           grep -q 'PREMIUM_CONTENT_GATE_ENABLED' supabase/functions/create-checkout-session/index.ts
           grep -q 'constructEventAsync' supabase/functions/stripe-webhook/index.ts
-          grep -q 'billing_subscriptions' supabase/migrations/202610190001_global_billing_referrals.sql
-          grep -q 'teacher_referral_codes' supabase/migrations/202610190001_global_billing_referrals.sql
+          grep -q 'billing_subscriptions' supabase/migrations/20261019144739_add_global_billing_referrals.sql
+          grep -q 'teacher_referral_codes' supabase/migrations/20261019144739_add_global_billing_referrals.sql
           echo "Payment remains disabled until explicit billing and paid-content flags and the provider configuration are completed."
