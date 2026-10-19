@@ -37,6 +37,7 @@
 في المشروع `Learning French` (`yycilzamasypqpvevrup`):
 - طُبّق ترحيل `add_global_billing_referrals` بنجاح.
 - طُبّق ترحيل `billing_security_tuning` بنجاح.
+- أسماء ملفات الترحيل في المستودع طُوبقت مع النسخ المسجلة: `supabase/migrations/20261019144739_add_global_billing_referrals.sql` و`supabase/migrations/20261019144851_billing_security_tuning.sql`.
 - نُشرت وظائف `create-checkout-session` و`create-billing-portal-session` و`stripe-webhook` و`teacher-referral-stats` و`delete-account`.
 - أكد فحص قاعدة البيانات وجود جداول الاشتراكات والإحالات وسجل إشعارات Stripe؛ RLS مفعّل للجداول الجديدة، ومفاتيح الخدمة تملك صلاحياتها اللازمة.
 - لم تتغير سجلات التعلم الحالية؛ بقيت حسابات الملفات/التقدم التي فُحصت موجودة.
