@@ -68,9 +68,24 @@
       $('urfreStudentBillingActions')?.classList.add('hidden');
       $('urfreTeacherBillingActions')?.classList.remove('hidden');
       const { data: code } = await db.from('teacher_referral_codes').select('code,is_active').eq('teacher_id', user.id).eq('is_active', true).maybeSingle();
-      const { count } = await db.from('student_referrals').select('student_id', { count: 'exact', head: true }).eq('teacher_id', user.id);
       $('urfreTeacherCode').textContent = code?.code || 'لم يخصص رمز بعد — يفعّله مدير المنصة.';
-      $('urfreTeacherReferrals').textContent = String(count ?? 0);
+      try {
+        const { data: stats, error: statsError } = await db.functions.invoke('teacher-referral-stats', { method: 'GET' });
+        if (!statsError && stats) {
+          $('urfreTeacherReferrals').textContent = String(stats.total_referrals ?? 0);
+          $('urfreTeacherPaidCount').textContent = String(stats.active_paid_subscribers ?? 0);
+          $('urfreTeacherPastDueCount').textContent = String(stats.past_due_subscribers ?? 0);
+        } else {
+          $('urfreTeacherReferrals').textContent = '—';
+          $('urfreTeacherPaidCount').textContent = '—';
+          $('urfreTeacherPastDueCount').textContent = '—';
+          setStatus('تعذر تحميل إحصاءات الإحالة. تأكد من نشر وظيفة إحصاءات المدرّس وتطبيق ترحيل قاعدة البيانات.', 'warn');
+        }
+      } catch (_) {
+        $('urfreTeacherReferrals').textContent = '—';
+        $('urfreTeacherPaidCount').textContent = '—';
+        $('urfreTeacherPastDueCount').textContent = '—';
+      }
       setButtonsEnabled(false);
       return;
     }
