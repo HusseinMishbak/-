@@ -118,17 +118,6 @@ Deno.serve(async (req: Request) => {
     return reply(403, { error: "لا يمكن حذف هذا النوع من الحسابات ذاتياً. تواصل مع إدارة المنصة." }, origin);
   }
 
-  // Remove all objects in the account folder before auth deletion. If any
-  // storage cleanup fails, stop so account data is not half-deleted silently.
-  try {
-    await removeFolderRecursively(admin, userId);
-  } catch (error) {
-    console.error("Audio cleanup failed:", error instanceof Error ? error.message : "Unknown storage error");
-    return reply(500, {
-      error: error instanceof Error ? error.message : "تعذر حذف التسجيلات؛ لم يُحذف الحساب.",
-    }, origin);
-  }
-
   // Cancel a paid subscription before deleting the account so the customer
   // cannot continue to be billed after losing access to URFRE.
   const { data: billing, error: billingError } = await admin
@@ -156,6 +145,17 @@ Deno.serve(async (req: Request) => {
       console.error("Subscription cancellation failed; account retained:", error instanceof Error ? error.message : "Unknown Stripe error");
       return reply(502, { error: "تعذر إلغاء الاشتراك لدى مزوّد الدفع؛ لم يُحذف الحساب ولن نحاول حذف بياناته حتى تُحل المشكلة." }, origin);
     }
+  }
+
+  // Remove all objects in the account folder before auth deletion. If any
+  // storage cleanup fails, stop so account data is not half-deleted silently.
+  try {
+    await removeFolderRecursively(admin, userId);
+  } catch (error) {
+    console.error("Audio cleanup failed:", error instanceof Error ? error.message : "Unknown storage error");
+    return reply(500, {
+      error: error instanceof Error ? error.message : "تعذر حذف التسجيلات؛ لم يُحذف الحساب.",
+    }, origin);
   }
 
   // Foreign keys cascade removal to profiles, progress, quiz attempts,
