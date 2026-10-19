@@ -81,7 +81,11 @@ Deno.serve(async (req) => {
       event.type === "customer.subscription.updated" ||
       event.type === "customer.subscription.deleted"
     ) {
-      const sub = event.data.object as Stripe.Subscription;
+      const eventSubscription = event.data.object as Stripe.Subscription;
+      // Webhook deliveries may arrive out of order. Retrieve current provider
+      // state instead of overwriting a newer subscription state with an older
+      // event snapshot.
+      const sub = await stripe.subscriptions.retrieve(eventSubscription.id);
       await upsertSubscription(sub);
     } else if (event.type === "invoice.payment_failed") {
       const invoice = event.data.object as Stripe.Invoice;
