@@ -563,12 +563,18 @@ private struct StatCard: View {
 
 struct SettingsView: View {
     @EnvironmentObject private var app: AppState
+    @EnvironmentObject private var auth: NativeAuthStore
+    @State private var email = ""
+    @State private var password = ""
+    @State private var fullName = ""
+    @State private var isCreatingAccount = false
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
                     SectionHeading(title: app.language.text("account"), subtitle: app.language.text("appTitle"))
+
                     OrrCard {
                         HStack(spacing: 14) {
                             Image(systemName: "globe").font(.title2).foregroundStyle(OrrTheme.violet)
@@ -584,6 +590,78 @@ struct SettingsView: View {
                                 }
                             }
                             .labelsHidden().pickerStyle(.menu)
+                        }
+                    }
+
+                    VStack(alignment: .leading, spacing: 14) {
+                        SectionHeading(title: app.language.text("accountCloud"), subtitle: app.language.text("authHint"))
+                        OrrCard {
+                            if let session = auth.session {
+                                Label(app.language.text("signedInAs"), systemImage: "person.crop.circle.fill")
+                                    .font(.subheadline.bold()).foregroundStyle(OrrTheme.ink)
+                                Text(session.email).font(.body).foregroundStyle(OrrTheme.violet).textSelection(.enabled)
+                                HStack(spacing: 10) {
+                                    Button {
+                                        Task { await app.synchronize(with: auth) }
+                                    } label: {
+                                        Label(app.language.text("syncNow"), systemImage: "arrow.triangle.2.circlepath")
+                                            .font(.subheadline.bold()).frame(maxWidth: .infinity).padding(.vertical, 13)
+                                            .background(OrrTheme.violet, in: RoundedRectangle(cornerRadius: 14)).foregroundStyle(.white)
+                                    }.buttonStyle(.plain).disabled(auth.isBusy)
+                                    Button {
+                                        Task { await auth.signOut() }
+                                    } label: {
+                                        Text(app.language.text("signOut")).font(.subheadline.bold())
+                                            .padding(.horizontal, 14).padding(.vertical, 13)
+                                            .background(OrrTheme.blush, in: RoundedRectangle(cornerRadius: 14)).foregroundStyle(OrrTheme.pink)
+                                    }.buttonStyle(.plain).disabled(auth.isBusy)
+                                }.padding(.top, 5)
+                            } else {
+                                if isCreatingAccount {
+                                    TextField(app.language.text("fullName"), text: $fullName)
+                                        .textContentType(.name)
+                                        .padding(12).background(OrrTheme.canvas, in: RoundedRectangle(cornerRadius: 13))
+                                }
+                                TextField(app.language.text("email"), text: $email)
+                                    .textContentType(.emailAddress).keyboardType(.emailAddress)
+                                    .textInputAutocapitalization(.never).autocorrectionDisabled()
+                                    .padding(12).background(OrrTheme.canvas, in: RoundedRectangle(cornerRadius: 13))
+                                SecureField(app.language.text("password"), text: $password)
+                                    .textContentType(isCreatingAccount ? .newPassword : .password)
+                                    .padding(12).background(OrrTheme.canvas, in: RoundedRectangle(cornerRadius: 13))
+
+                                Button {
+                                    Task {
+                                        if isCreatingAccount {
+                                            let created = await auth.signUp(email: email, password: password, fullName: fullName)
+                                            if created { await app.synchronize(with: auth) }
+                                        } else {
+                                            let signedIn = await auth.signIn(email: email, password: password)
+                                            if signedIn { await app.synchronize(with: auth) }
+                                        }
+                                    }
+                                } label: {
+                                    HStack {
+                                        if auth.isBusy { ProgressView().tint(.white) }
+                                        Text(app.language.text(isCreatingAccount ? "signUp" : "signIn"))
+                                    }
+                                    .font(.headline).frame(maxWidth: .infinity).padding(.vertical, 14)
+                                    .background(OrrTheme.hero, in: RoundedRectangle(cornerRadius: 15)).foregroundStyle(.white)
+                                }.buttonStyle(.plain).disabled(auth.isBusy || email.isEmpty || password.isEmpty || (isCreatingAccount && fullName.isEmpty))
+
+                                Button {
+                                    isCreatingAccount.toggle()
+                                    auth.setStatus("")
+                                } label: {
+                                    Text(app.language.text(isCreatingAccount ? "signIn" : "signUp"))
+                                        .font(.subheadline.bold()).frame(maxWidth: .infinity).padding(.vertical, 8)
+                                }.buttonStyle(.plain)
+                            }
+
+                            if !auth.statusMessage.isEmpty {
+                                Text(auth.statusMessage).font(.caption).foregroundStyle(OrrTheme.muted)
+                                    .lineSpacing(3).textSelection(.enabled).padding(.top, 3)
+                            }
                         }
                     }
 
@@ -604,9 +682,9 @@ struct SettingsView: View {
                     OrrCard {
                         Label(app.language.text("about"), systemImage: "info.circle")
                             .font(.headline).foregroundStyle(OrrTheme.ink)
-                        Text(app.language.text("appTitle") + " · 0.1 Native Preview")
+                        Text(app.language.text("appTitle") + " · 0.2 Native")
                             .font(.subheadline).foregroundStyle(OrrTheme.muted).padding(.top, 5)
-                        Text(app.language.text("level"))
+                        Text(app.language.text("levelDetail"))
                             .font(.caption.bold()).foregroundStyle(OrrTheme.violet).padding(.top, 8)
                     }
                 }.padding(17).padding(.bottom, 25)
