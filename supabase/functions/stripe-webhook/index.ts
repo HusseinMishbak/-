@@ -42,7 +42,7 @@ Deno.serve(async (req) => {
       plan_key: sub.metadata?.plan_key || null,
       price_id: firstItem?.price?.id || null,
       status: sub.status,
-      current_period_end: sub.current_period_end ? new Date(sub.current_period_end * 1000).toISOString() : null,
+      current_period_end: firstItem?.current_period_end ? new Date(firstItem.current_period_end * 1000).toISOString() : null,
       cancel_at_period_end: Boolean(sub.cancel_at_period_end),
       updated_at: new Date().toISOString(),
     };
