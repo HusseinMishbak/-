@@ -16,6 +16,7 @@
         A10000000000000000000026 /* NativeCurriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000017 /* NativeCurriculum.swift */; };
         A10000000000000000000027 /* CurriculumViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000018 /* CurriculumViews.swift */; };
         A10000000000000000000028 /* NativeCurriculum.json in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000019 /* NativeCurriculum.json */; };
+        A10000000000000000000029 /* NativeSupabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000000000001A /* NativeSupabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
         A10000000000000000000017 /* NativeCurriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeCurriculum.swift; sourceTree = "<group>"; };
         A10000000000000000000018 /* CurriculumViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumViews.swift; sourceTree = "<group>"; };
         A10000000000000000000019 /* NativeCurriculum.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NativeCurriculum.json; sourceTree = "<group>"; };
+        A1000000000000000000001A /* NativeSupabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeSupabase.swift; sourceTree = "<group>"; };
         A10000000000000000000006 /* OrrFrench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrrFrench.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
                 A10000000000000000000017 /* NativeCurriculum.swift */,
                 A10000000000000000000018 /* CurriculumViews.swift */,
                 A10000000000000000000019 /* NativeCurriculum.json */,
+                A1000000000000000000001A /* NativeSupabase.swift */,
             );
             path = OrrFrench;
             sourceTree = "<group>";
@@ -153,6 +156,7 @@
                 A10000000000000000000025 /* LearningViews.swift in Sources */,
                 A10000000000000000000026 /* NativeCurriculum.swift in Sources */,
                 A10000000000000000000027 /* CurriculumViews.swift in Sources */,
+                A10000000000000000000029 /* NativeSupabase.swift in Sources */,
             );
             runOnlyForDeploymentPostprocessing = 0;
         };
