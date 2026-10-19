@@ -62,6 +62,7 @@
     else navigation.appendChild(button(l.submit,'btn-primary',()=>finish(false)));
     navigation.appendChild(button(l.restart,'btn-soft',()=>{if(confirm(l.confirmRestart))start();}));state.root.appendChild(navigation);
     const answered=Object.keys(state.answers).length;state.root.appendChild(text('p',answered+' / 40','small'));
+    state.root.scrollIntoView({block:'start',behavior:'smooth'});
   }
   function finish(auto){
     if(!state.started||state.submitted)return;const l=LABELS[state.lang];
@@ -80,6 +81,7 @@
       const chosen=state.answers[idx];card.appendChild(text('p',l.your+': '+(chosen===undefined?l.none:q.o[chosen]+' — '+q.oa[chosen])));card.appendChild(text('p',l.correct+': '+q.o[q.a]+' — '+q.oa[q.a]));card.appendChild(text('p',l.explain+': '+(state.lang==='fr'?q.ef:q.ea)));state.root.appendChild(card);
     });
     const link=document.createElement('a');link.href='https://www.immigration.interieur.gouv.fr/devenir-francais/procedures-dacces-a-nationalite-francaise';link.target='_blank';link.rel='noopener';link.textContent=l.official;state.root.appendChild(link);
+    state.root.scrollIntoView({block:'start',behavior:'smooth'});
   }
   function onLanguageChange(){state.lang=language();if(!state.root)return;if(state.started)renderQuestion();else if(state.submitted){const score=state.order.filter(idx=>state.answers[idx]===state.bank[idx].a).length;showResults(score,Math.round(score/40*100));}else if(state.bank.length)renderIntro();}
   function boot(){if(install())return;const observer=new MutationObserver(()=>{if(install())observer.disconnect();});observer.observe(document.body,{childList:true,subtree:true});}
