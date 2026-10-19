@@ -9,9 +9,9 @@ struct ContentView: View {
                 .tabItem { Label(app.language.text("home"), systemImage: "house.fill") }
                 .tag(AppTab.home)
 
-            VocabularyView()
-                .tabItem { Label(app.language.text("vocabulary"), systemImage: "rectangle.stack.fill") }
-                .tag(AppTab.vocabulary)
+            CourseView()
+                .tabItem { Label(app.language.text("course"), systemImage: "books.vertical.fill") }
+                .tag(AppTab.course)
 
             StudySessionView()
                 .tabItem { Label(app.language.text("study"), systemImage: "timer") }
