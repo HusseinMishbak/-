@@ -83,7 +83,6 @@ private enum AppCopy {
         "textbook": [.arabic: "وحدات A1", .english: "A1 Units", .french: "Unités A1"],
         "roadmap": [.arabic: "خارطة A2–B2", .english: "A2–B2 Roadmap", .french: "Parcours A2–B2"],
         "citizenship": [.arabic: "الاندماج", .english: "Integration", .french: "Intégration"],
-        "vocabulary": [.arabic: "المفردات", .english: "Vocabulary", .french: "Vocabulaire"],
         "curriculumLoadFailed": [.arabic: "تعذّر تحميل محتوى المنهج المضمّن. أعد بناء التطبيق بعد التأكد من إضافة ملف المنهج إلى موارد المشروع.", .english: "The bundled curriculum could not be loaded. Rebuild after checking the curriculum resource in the Xcode target.", .french: "Le programme intégré n’a pas pu être chargé. Vérifiez la ressource dans la cible Xcode."],
         "nativeCurriculumNote": [.arabic: "المحتوى مضمّن في التطبيق؛ الروابط الخارجية وبعض الموارد الإضافية قد تحتاج إلى الإنترنت.", .english: "Course content is bundled with the app; external links and some extra resources may require internet access.", .french: "Le contenu est intégré à l’application ; les liens externes et certaines ressources nécessitent Internet."],
         "lessons": [.arabic: "دروس", .english: "lessons", .french: "leçons"],
