@@ -20,6 +20,7 @@
 - أنشئ منتجي اشتراك recurring monthly وannual بالعملة والمبلغ الصحيحين. املأ قيم السعر فقط بعد اتخاذ قرار تجاري ومراجعة الضرائب.
 - انشر الوظائف بعد إعداد الأسرار في Supabase Edge Function Secrets:
   - `STRIPE_SECRET_KEY`
+  - `STRIPE_BILLING_ENABLED=true` (إيقاف افتراضي: لا تفعّله قبل حماية المحتوى المدفوع واختبارات ما قبل الإطلاق)
   - `STRIPE_WEBHOOK_SECRET`
   - `STRIPE_PRICE_MONTHLY`
   - `STRIPE_PRICE_ANNUAL`
