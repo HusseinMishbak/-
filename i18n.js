@@ -100,6 +100,10 @@ ROWS.push(
  ["يمكن للطالب أو المدرّس حذف الحساب؛ وسيحاول النظام إلغاء الاشتراك المدفوع قبل حذف البيانات.", "Students and teachers can delete their accounts; the system attempts to cancel any paid subscription before deleting data.", "Les étudiants et les enseignants peuvent supprimer leur compte ; le système tente de résilier tout abonnement payant avant la suppression des données."],
  ["حذف الحساب الذاتي متاح للطلاب المسجلين فقط.", "Self-service account deletion is available to signed-in students only.", "La suppression autonome du compte est réservée aux étudiants connectés."]
 );
+ROWS.push(
+ ["بوابة الدفع مهيأة", "Payment gateway configured", "Passerelle de paiement configurée"],
+ ["لم يفعّل مالك المنصة بوابة الدفع بعد. لا يمكن بدء تحصيل الأموال حالياً.", "The platform owner has not enabled the payment gateway yet. No charges can be started at this time.", "Le propriétaire de la plateforme n’a pas encore activé la passerelle de paiement. Aucun prélèvement ne peut commencer pour le moment."]
+);
 const DICT={en:Object.create(null),fr:Object.create(null)};
 for(const [ar,en,fr] of ROWS){const key=normalise(ar);DICT.en[key]=en;DICT.fr[key]=fr;}
 const SELECTOR_ID='uiLanguageSelect';
