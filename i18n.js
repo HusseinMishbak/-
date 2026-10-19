@@ -118,6 +118,12 @@ ROWS.push(
  ["أسئلة المعرفة الرسمية", "Official knowledge questions", "Questions officielles de connaissance"],
  ["كتيّب المواطن", "Citizen’s booklet", "Livret du citoyen"]
 );
+ROWS.push(
+ ["المسجلون عبر الرمز:", "Registrations attributed to this code:", "Inscriptions attribuées à ce code :"],
+ ["الاشتراكات المدفوعة النشطة:", "Active paid subscriptions:", "Abonnements payants actifs :"],
+ ["اشتراكات تحتاج متابعة الدفع:", "Subscriptions needing payment follow-up:", "Abonnements nécessitant un suivi de paiement :"],
+ ["الدفع مغلق لحين تفعيل حماية المحتوى المدفوع وإعداد مزوّد الدفع والأسعار في إعدادات الخادم.", "Checkout remains disabled until paid-content protection, the payment provider and prices are configured on the server.", "Le paiement reste désactivé jusqu’à la mise en place de la protection du contenu payant, du prestataire et des tarifs sur le serveur."]
+);
 const DICT={en:Object.create(null),fr:Object.create(null)};
 for(const [ar,en,fr] of ROWS){const key=normalise(ar);DICT.en[key]=en;DICT.fr[key]=fr;}
 const SELECTOR_ID='uiLanguageSelect';
