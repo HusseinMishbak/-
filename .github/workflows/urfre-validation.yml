@@ -1,0 +1,56 @@
+name: URFRE validation
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches:
+      - main
+      - feature/urfre-global-billing-referrals
+
+permissions:
+  contents: read
+
+jobs:
+  validate-learning-and-billing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check JavaScript syntax
+        run: |
+          node --check billing.js
+          node --check citizenship-mock-exam.js
+      - name: Validate civic exam question bank
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const bank = JSON.parse(fs.readFileSync('citizenship-mock-bank.json', 'utf8'));
+          if (!Array.isArray(bank.questions) || bank.questions.length !== 40) {
+            throw new Error('Expected exactly 40 civic practice questions');
+          }
+          const topics = Array(5).fill(0);
+          for (const [i, q] of bank.questions.entries()) {
+            if (!Number.isInteger(q.t) || q.t < 0 || q.t > 4) throw new Error(`Invalid topic at question ${i + 1}`);
+            topics[q.t]++;
+            if (!q.fr || !q.ar || !q.ef || !q.ea) throw new Error(`Missing bilingual question/explanation at question ${i + 1}`);
+            if (!Array.isArray(q.o) || q.o.length !== 4 || !Array.isArray(q.oa) || q.oa.length !== 4) {
+              throw new Error(`Expected four French and Arabic answer options at question ${i + 1}`);
+            }
+            if (!Number.isInteger(q.a) || q.a < 0 || q.a > 3) throw new Error(`Invalid answer index at question ${i + 1}`);
+          }
+          if (topics.some(n => n !== 8)) throw new Error('Expected eight questions in each of five themes: ' + topics.join(','));
+          console.log('Validated 40 questions, five balanced topics, bilingual options, and answer indexes.');
+          NODE
+      - name: Check payment safety release gates
+        run: |
+          grep -q 'STRIPE_BILLING_ENABLED' supabase/functions/create-checkout-session/index.ts
+          grep -q 'PREMIUM_CONTENT_GATE_ENABLED' supabase/functions/create-checkout-session/index.ts
+          grep -q 'constructEventAsync' supabase/functions/stripe-webhook/index.ts
+          grep -q 'billing_subscriptions' supabase/migrations/202610190001_global_billing_referrals.sql
+          grep -q 'teacher_referral_codes' supabase/migrations/202610190001_global_billing_referrals.sql
+          echo "Payment remains disabled until explicit billing and paid-content flags and the provider configuration are completed."
