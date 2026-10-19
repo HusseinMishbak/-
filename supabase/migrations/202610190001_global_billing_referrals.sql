@@ -60,7 +60,7 @@ grant select on public.billing_subscriptions to authenticated;
 drop policy if exists "teacher can read own referral code" on public.teacher_referral_codes;
 create policy "teacher can read own referral code"
   on public.teacher_referral_codes for select to authenticated
-  using (teacher_id = (select auth.uid()));
+  using (teacher_id = (select auth.uid()) and (select private.is_teacher()));
 
 drop policy if exists "student or referring teacher can read attribution" on public.student_referrals;
 create policy "student or referring teacher can read attribution"
