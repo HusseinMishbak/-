@@ -81,6 +81,23 @@ struct CourseView: View {
         }
     }
 
+    private func summaryBadge(_ count: String, _ title: String) -> some View {
+        VStack(alignment: .leading, spacing: 3) {
+            Text(count).font(.title3.bold().monospacedDigit()).foregroundStyle(OrrTheme.ink)
+            Text(title).font(.caption2).foregroundStyle(OrrTheme.muted).lineLimit(1)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(11).background(.white, in: RoundedRectangle(cornerRadius: 15))
+    }
+
+    private func speak(_ phrase: String) {
+        let utterance = AVSpeechUtterance(string: phrase)
+        utterance.voice = AVSpeechSynthesisVoice(language: "fr-FR")
+        utterance.rate = 0.46
+        NativeSpeech.synthesizer.stopSpeaking(at: .immediate)
+        NativeSpeech.synthesizer.speak(utterance)
+    }
+
     private func categoryButton(_ value: CourseCategory, title: String) -> some View {
         Button { app.libraryCategory = value } label: {
             Text(title).font(.subheadline.bold())
@@ -234,12 +251,12 @@ private struct CourseEntryDetailView: View {
         let utterance = AVSpeechUtterance(string: phrase)
         utterance.voice = AVSpeechSynthesisVoice(language: "fr-FR")
         utterance.rate = 0.46
-        SpeechServiceNative.synthesizer.stopSpeaking(at: .immediate)
+        NativeSpeech.synthesizer.stopSpeaking(at: .immediate)
         SpeechServiceNative.synthesizer.speak(utterance)
     }
 }
 
-private enum SpeechServiceNative {
+private enum NativeSpeech {
     static let synthesizer = AVSpeechSynthesizer()
 }
 
