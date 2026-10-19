@@ -21,6 +21,7 @@
 - انشر الوظائف بعد إعداد الأسرار في Supabase Edge Function Secrets:
   - `STRIPE_SECRET_KEY`
   - `STRIPE_BILLING_ENABLED=true` (إيقاف افتراضي: لا تفعّله قبل حماية المحتوى المدفوع واختبارات ما قبل الإطلاق)
+  - `PREMIUM_CONTENT_GATE_ENABLED=true` (قفل مستقل؛ لا تفعّله حتى تُنقل المواد المدفوعة إلى مسار خلفي خاص وتُختبر صلاحيات الاستحقاق فعلياً)
   - `STRIPE_WEBHOOK_SECRET`
   - `STRIPE_PRICE_MONTHLY`
   - `STRIPE_PRICE_ANNUAL`
