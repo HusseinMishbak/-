@@ -12,6 +12,20 @@ const json = (body: unknown, status = 200) =>
 
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
+  const stripeSecret = Deno.env.get("STRIPE_SECRET_KEY") || "";
+  const billingEnabled = Deno.env.get("STRIPE_BILLING_ENABLED") === "true";
+  const priceIds: Record<string, string> = {
+    monthly: Deno.env.get("STRIPE_PRICE_MONTHLY") || "",
+    annual: Deno.env.get("STRIPE_PRICE_ANNUAL") || "",
+  };
+  // Safe public readiness probe; reveals booleans only, never provider secrets.
+  if (req.method === "GET") {
+    return json({
+      billing_enabled: billingEnabled && Boolean(stripeSecret),
+      monthly_enabled: billingEnabled && Boolean(stripeSecret && priceIds.monthly),
+      annual_enabled: billingEnabled && Boolean(stripeSecret && priceIds.annual),
+    });
+  }
   if (req.method !== "POST") return json({ error: "method_not_allowed" }, 405);
   const authHeader = req.headers.get("Authorization");
   if (!authHeader?.startsWith("Bearer ")) return json({ error: "login_required", message: "سجّل الدخول أولاً." }, 401);
@@ -19,13 +33,8 @@ Deno.serve(async (req) => {
   const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
   const anonKey = Deno.env.get("SUPABASE_ANON_KEY") || Deno.env.get("SUPABASE_PUBLISHABLE_KEY") || "";
   const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
-  const stripeSecret = Deno.env.get("STRIPE_SECRET_KEY") || "";
   const siteUrl = (Deno.env.get("PUBLIC_SITE_URL") || "https://husseinmishbak.github.io/-/").replace(/\/$/, "");
-  const priceIds: Record<string, string> = {
-    monthly: Deno.env.get("STRIPE_PRICE_MONTHLY") || "",
-    annual: Deno.env.get("STRIPE_PRICE_ANNUAL") || "",
-  };
-  if (!anonKey || !serviceKey || !stripeSecret) return json({ error: "billing_not_configured", message: "لم يُفعّل الدفع بعد. يلزم إعداد حساب مزوّد الدفع والأسعار في إعدادات الخادم." }, 503);
+  if (!billingEnabled || !anonKey || !serviceKey || !stripeSecret) return json({ error: "billing_not_configured", message: "لم يُفعّل الدفع بعد. يلزم إكمال حماية المحتوى وإعداد مزوّد الدفع والأسعار في إعدادات الخادم." }, 503);
 
   const accessToken = authHeader.slice("Bearer ".length);
   const userClient = createClient(supabaseUrl, anonKey, { auth: { persistSession: false, autoRefreshToken: false } });
