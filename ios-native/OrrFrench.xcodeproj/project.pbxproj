@@ -13,6 +13,9 @@
         A10000000000000000000023 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000013 /* Theme.swift */; };
         A10000000000000000000024 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000014 /* ContentView.swift */; };
         A10000000000000000000025 /* LearningViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000015 /* LearningViews.swift */; };
+        A10000000000000000000026 /* NativeCurriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000017 /* NativeCurriculum.swift */; };
+        A10000000000000000000027 /* CurriculumViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000018 /* CurriculumViews.swift */; };
+        A10000000000000000000028 /* NativeCurriculum.json in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000019 /* NativeCurriculum.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
         A10000000000000000000014 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
         A10000000000000000000015 /* LearningViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningViews.swift; sourceTree = "<group>"; };
         A10000000000000000000016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        A10000000000000000000017 /* NativeCurriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeCurriculum.swift; sourceTree = "<group>"; };
+        A10000000000000000000018 /* CurriculumViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumViews.swift; sourceTree = "<group>"; };
+        A10000000000000000000019 /* NativeCurriculum.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NativeCurriculum.json; sourceTree = "<group>"; };
         A10000000000000000000006 /* OrrFrench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrrFrench.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,6 +61,9 @@
                 A10000000000000000000014 /* ContentView.swift */,
                 A10000000000000000000015 /* LearningViews.swift */,
                 A10000000000000000000016 /* Info.plist */,
+                A10000000000000000000017 /* NativeCurriculum.swift */,
+                A10000000000000000000018 /* CurriculumViews.swift */,
+                A10000000000000000000019 /* NativeCurriculum.json */,
             );
             path = OrrFrench;
             sourceTree = "<group>";
@@ -125,6 +134,7 @@
             isa = PBXResourcesBuildPhase;
             buildActionMask = 2147483647;
             files = (
+                A10000000000000000000028 /* NativeCurriculum.json in Resources */,
             );
             runOnlyForDeploymentPostprocessing = 0;
         };
@@ -141,6 +151,8 @@
                 A10000000000000000000023 /* Theme.swift in Sources */,
                 A10000000000000000000024 /* ContentView.swift in Sources */,
                 A10000000000000000000025 /* LearningViews.swift in Sources */,
+                A10000000000000000000026 /* NativeCurriculum.swift in Sources */,
+                A10000000000000000000027 /* CurriculumViews.swift in Sources */,
             );
             runOnlyForDeploymentPostprocessing = 0;
         };
