@@ -89,8 +89,10 @@ begin
     select trc.teacher_id
       into v_teacher_id
       from public.teacher_referral_codes trc
+      join public.profiles teacher_profile on teacher_profile.id = trc.teacher_id
      where trc.code = v_code
        and trc.is_active = true
+       and teacher_profile.role = 'teacher'
      limit 1;
   end if;
 
