@@ -143,7 +143,7 @@
         else setStatus(String(detail), 'warn');
         return;
       }
-      window.location.assign(data.url);
+      window.location.assign(payload.url);
     } catch (e) {
       setStatus('تعذر الاتصال بخدمة الدفع. لم تُخصم أي أموال من هذه المحاولة؛ تحقق من حالة البنك فقط إذا ظهرت لك صفحة دفع فعلية.', 'error');
     } finally {
