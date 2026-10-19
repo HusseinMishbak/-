@@ -15,6 +15,10 @@ Deno.serve(async (req) => {
   const stripeSecret = Deno.env.get("STRIPE_SECRET_KEY") || "";
   const billingEnabled = Deno.env.get("STRIPE_BILLING_ENABLED") === "true";
   const premiumGateEnabled = Deno.env.get("PREMIUM_CONTENT_GATE_ENABLED") === "true";
+  // Fail-closed release switch. This remains false while premium lesson content
+  // is served from public static assets. Change only after server-side content
+  // entitlement enforcement has been implemented and tested.
+  const premiumContentGateImplemented = false;
   const supabaseUrl = Deno.env.get("SUPABASE_URL") || "";
   const anonKey = Deno.env.get("SUPABASE_ANON_KEY") || Deno.env.get("SUPABASE_PUBLISHABLE_KEY") || "";
   const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
@@ -35,9 +39,9 @@ Deno.serve(async (req) => {
       } catch (_) { billingTablesReady = false; }
     }
     return json({
-      billing_enabled: billingEnabled && premiumGateEnabled && serverConfigReady && billingTablesReady,
-      monthly_enabled: billingEnabled && premiumGateEnabled && serverConfigReady && billingTablesReady && Boolean(priceIds.monthly),
-      annual_enabled: billingEnabled && premiumGateEnabled && serverConfigReady && billingTablesReady && Boolean(priceIds.annual),
+      billing_enabled: billingEnabled && premiumGateEnabled && premiumContentGateImplemented && serverConfigReady && billingTablesReady,
+      monthly_enabled: billingEnabled && premiumGateEnabled && premiumContentGateImplemented && serverConfigReady && billingTablesReady && Boolean(priceIds.monthly),
+      annual_enabled: billingEnabled && premiumGateEnabled && premiumContentGateImplemented && serverConfigReady && billingTablesReady && Boolean(priceIds.annual),
     });
   }
   if (req.method !== "POST") return json({ error: "method_not_allowed" }, 405);
@@ -45,7 +49,7 @@ Deno.serve(async (req) => {
   if (!authHeader?.startsWith("Bearer ")) return json({ error: "login_required", message: "سجّل الدخول أولاً." }, 401);
 
   const siteUrl = (Deno.env.get("PUBLIC_SITE_URL") || "https://husseinmishbak.github.io/-/").replace(/\/$/, "");
-  if (!billingEnabled || !premiumGateEnabled || !serverConfigReady) return json({ error: "billing_not_configured", message: "الدفع مغلق لحين تفعيل حماية المحتوى المدفوع وإعداد مزوّد الدفع والأسعار في إعدادات الخادم." }, 503);
+  if (!billingEnabled || !premiumGateEnabled || !premiumContentGateImplemented || !serverConfigReady) return json({ error: "billing_not_configured", message: "الدفع مغلق لحين اكتمال حماية المحتوى المدفوع ومراجعة جاهزية الإطلاق وإعداد مزوّد الدفع والأسعار." }, 503);
 
   const accessToken = authHeader.slice("Bearer ".length);
   const userClient = createClient(supabaseUrl, anonKey, { auth: { persistSession: false, autoRefreshToken: false } });
