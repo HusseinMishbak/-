@@ -27,8 +27,9 @@ Deno.serve(async (req) => {
   };
   if (!anonKey || !serviceKey || !stripeSecret) return json({ error: "billing_not_configured", message: "لم يُفعّل الدفع بعد. يلزم إعداد حساب مزوّد الدفع والأسعار في إعدادات الخادم." }, 503);
 
-  const userClient = createClient(supabaseUrl, anonKey, { global: { headers: { Authorization: authHeader } }, auth: { persistSession: false } });
-  const { data: { user }, error: userError } = await userClient.auth.getUser();
+  const accessToken = authHeader.slice("Bearer ".length);
+  const userClient = createClient(supabaseUrl, anonKey, { auth: { persistSession: false, autoRefreshToken: false } });
+  const { data: { user }, error: userError } = await userClient.auth.getUser(accessToken);
   if (userError || !user) return json({ error: "invalid_session", message: "انتهت جلسة الدخول؛ سجّل الدخول مجدداً." }, 401);
 
   const admin = createClient(supabaseUrl, serviceKey, { auth: { persistSession: false } });
