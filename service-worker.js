@@ -1,6 +1,6 @@
 /* UR Version 2 — installable web-app shell. */
 'use strict';
-const CACHE_NAME = 'ur-v2-shell-20261019-1';
+const CACHE_NAME = 'ur-v2-shell-20261019-2';
 const CORE_ASSETS = [
   './',
   './index.html',
@@ -16,6 +16,7 @@ const CORE_ASSETS = [
   './i18n.js?v=20261019-v2foundation1',
   './curriculum-audit.js?v=20261018-audit1',
   './assessment-controls.js?v=20261018-correctionmode13',
+  './billing.js?v=20261019-billing1',
   './learning-experience.js?v=20261019-v2foundation1',
   './ui/frello-inspired-refresh.css',
   './ui/learning-experience.css?v=20261019-v2foundation1'
