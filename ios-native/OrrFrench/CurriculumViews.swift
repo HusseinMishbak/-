@@ -8,10 +8,11 @@ struct CourseView: View {
     private let catalog = NativeCurriculumCatalog.shared
 
     private var entries: [CourseEntry] {
-        switch category {
+        switch app.libraryCategory {
         case .textbook: return catalog.textbook
         case .roadmap: return catalog.roadmap
         case .citizenship: return catalog.citizenship
+        case .vocabulary: return []
         }
     }
 
@@ -20,12 +21,14 @@ struct CourseView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 17) {
                     SectionHeading(title: app.language.text("course"), subtitle: app.language.text("courseSubtitle"))
-                    Picker(app.language.text("course"), selection: $category) {
-                        Text(app.language.text("textbook")).tag(CourseCategory.textbook)
-                        Text(app.language.text("roadmap")).tag(CourseCategory.roadmap)
-                        Text(app.language.text("citizenship")).tag(CourseCategory.citizenship)
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 8) {
+                            categoryButton(.textbook, title: app.language.text("textbook"))
+                            categoryButton(.roadmap, title: app.language.text("roadmap"))
+                            categoryButton(.citizenship, title: app.language.text("citizenship"))
+                            categoryButton(.vocabulary, title: app.language.text("vocabulary"))
+                        }
                     }
-                    .pickerStyle(.segmented)
 
                     HStack(spacing: 9) {
                         summaryBadge("\(catalog.textbook.count)", app.language.text("textbook"))
@@ -69,6 +72,7 @@ struct CourseView: View {
             .background(OrrTheme.canvas.ignoresSafeArea())
             .navigationTitle(app.language.text("course"))
             .navigationBarTitleDisplayMode(.inline)
+            .onChange(of: app.libraryCategory) { _, _ in selectedEntry = nil }
             .sheet(item: $selectedEntry) { entry in
                 CourseEntryDetailView(entry: entry)
                     .environmentObject(app)
@@ -76,13 +80,36 @@ struct CourseView: View {
         }
     }
 
-    private func summaryBadge(_ count: String, _ title: String) -> some View {
-        VStack(alignment: .leading, spacing: 3) {
-            Text(count).font(.title3.bold().monospacedDigit()).foregroundStyle(OrrTheme.ink)
-            Text(title).font(.caption2).foregroundStyle(OrrTheme.muted).lineLimit(1)
+    private func categoryButton(_ value: CourseCategory, title: String) -> some View {
+        Button { app.libraryCategory = value } label: {
+            Text(title).font(.subheadline.bold())
+                .padding(.horizontal, 14).padding(.vertical, 10)
+                .foregroundStyle(app.libraryCategory == value ? .white : OrrTheme.ink)
+                .background(app.libraryCategory == value ? OrrTheme.violet : .white, in: Capsule())
+                .overlay(Capsule().stroke(app.libraryCategory == value ? OrrTheme.violet : OrrTheme.line, lineWidth: 1))
+        }.buttonStyle(.plain)
+    }
+
+    private var vocabularyList: some View {
+        VStack(alignment: .leading, spacing: 11) {
+            SectionHeading(title: app.language.text("vocabulary"), subtitle: "\\(app.vocabulary.count) " + app.language.text("availableCards"))
+            ForEach(app.vocabulary) { word in
+                HStack(spacing: 11) {
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text(word.french).font(.headline).foregroundStyle(OrrTheme.ink)
+                        Text(app.language == .arabic ? word.arabic : word.english).font(.subheadline).foregroundStyle(OrrTheme.muted)
+                        if !word.example.isEmpty { Text(word.example).font(.caption).foregroundStyle(OrrTheme.violet) }
+                    }
+                    Spacer(minLength: 0)
+                    Button { speak(word.french) } label: { Image(systemName: "speaker.wave.2.fill").padding(10).background(OrrTheme.lavender, in: Circle()) }
+                        .buttonStyle(.plain)
+                    if word.dueAt > .now {
+                        Image(systemName: "checkmark.circle.fill").foregroundStyle(.green)
+                    }
+                }
+                .padding(13).background(.white, in: RoundedRectangle(cornerRadius: 16))
+            }
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(11).background(.white, in: RoundedRectangle(cornerRadius: 15))
     }
 
     private func categoryColor(_ value: CourseCategory) -> Color {
