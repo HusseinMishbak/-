@@ -45,11 +45,11 @@ struct CourseView: View {
                                 HStack(spacing: 13) {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 16).fill(categoryColor(app.libraryCategory).opacity(0.12))
-                                        Image(systemName: categorySymbol(app.libraryCategory)).font(.title3).foregroundStyle(categoryColor(category))
+                                        Image(systemName: categorySymbol(app.libraryCategory)).font(.title3).foregroundStyle(categoryColor(app.libraryCategory))
                                     }.frame(width: 51, height: 51)
                                     VStack(alignment: .leading, spacing: 5) {
                                         HStack(spacing: 6) {
-                                            Text(entry.level).font(.caption2.bold()).foregroundStyle(categoryColor(category))
+                                            Text(entry.level).font(.caption2.bold()).foregroundStyle(categoryColor(app.libraryCategory))
                                             Text("·").foregroundStyle(OrrTheme.muted)
                                             Text(entry.subtitle).font(.caption2).foregroundStyle(OrrTheme.muted).lineLimit(1)
                                         }
