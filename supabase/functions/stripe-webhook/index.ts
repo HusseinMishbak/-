@@ -34,6 +34,21 @@ Deno.serve(async (req) => {
   async function upsertSubscription(sub: Stripe.Subscription, fallbackUserId?: string) {
     const userId = sub.metadata?.app_user_id || fallbackUserId;
     if (!userId) throw new Error("No app_user_id in Stripe subscription metadata");
+
+    // A deleted URFRE account must never be recreated by a late webhook.
+    // If an orphaned active subscription exists (for example, the user deleted
+    // their account while Checkout was still open), cancel it and acknowledge
+    // the webhook rather than retrying forever or continuing to bill the user.
+    const { data: userProfile, error: profileLookupError } = await admin
+      .from("profiles").select("id").eq("id", userId).maybeSingle();
+    if (profileLookupError) throw profileLookupError;
+    if (!userProfile) {
+      if (!["canceled", "incomplete_expired"].includes(sub.status)) {
+        await stripe.subscriptions.cancel(sub.id);
+      }
+      return;
+    }
+
     const firstItem = sub.items.data[0];
     const row = {
       user_id: userId,
