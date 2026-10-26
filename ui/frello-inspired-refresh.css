@@ -1,7 +1,7 @@
 /* UR mobile-first refresh — inspired by Frello's clarity, not its branding. */
 :root{
   --ur-accent:#6b5ce7;--ur-accent-dark:#5143c8;--ur-lilac:#f2eaff;--ur-lilac-strong:#e9ddff;
-  --ur-ink:#20243a;--ur-muted:#6e7184;--ur-line:#eceaf3;--ur-bg:#fbfaff;
+  --ur-ink:#20243a;--ur-muted:#666a7b;--ur-line:#eceaf3;--ur-bg:#fbfaff;
   --ur-mint:#eaf8f3;--ur-yellow:#fff5d9;--ur-radius:22px;
   --ur-shadow:0 8px 26px rgba(45,34,100,.07);
 }
