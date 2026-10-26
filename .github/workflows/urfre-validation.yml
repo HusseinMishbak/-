@@ -35,8 +35,8 @@ jobs:
           import fs from 'node:fs';
           import vm from 'node:vm';
           const html = fs.readFileSync('index.html', 'utf8');
-          const blocks = [...html.matchAll(/<script\\b([^>]*)>([\\s\\S]*?)<\\/script\\s*>/gi)]
-            .filter(([, attrs]) => !/\\bsrc\\s*=/.test(attrs) && !/application\\/ld\\+json/i.test(attrs));
+          const blocks = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*>/gi)]
+            .filter(([, attrs]) => !/\bsrc\s*=/.test(attrs) && !/application\/ld\+json/i.test(attrs));
           if (!blocks.length) throw new Error('No inline JavaScript blocks found');
           for (const [i, match] of blocks.entries()) {
             new vm.Script(match[2], { filename: `index.inline-${i + 1}.js` });
