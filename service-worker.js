@@ -1,6 +1,6 @@
 /* UR Version 2 — installable web-app shell. */
 'use strict';
-const CACHE_NAME = 'ur-v2-shell-20261026-1';
+const CACHE_NAME = 'ur-v2-shell-20261026-2';
 const CORE_ASSETS = [
   './',
   './index.html',
