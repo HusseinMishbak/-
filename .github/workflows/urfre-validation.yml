@@ -25,6 +25,24 @@ jobs:
         run: |
           node --check billing.js
           node --check citizenship-mock-exam.js
+      - name: Check all app JavaScript and inline scripts
+        run: |
+          for file in *.js; do
+            echo "Checking $file"
+            node --check "$file"
+          done
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import vm from 'node:vm';
+          const html = fs.readFileSync('index.html', 'utf8');
+          const blocks = [...html.matchAll(/<script\\b([^>]*)>([\\s\\S]*?)<\\/script\\s*>/gi)]
+            .filter(([, attrs]) => !/\\bsrc\\s*=/.test(attrs) && !/application\\/ld\\+json/i.test(attrs));
+          if (!blocks.length) throw new Error('No inline JavaScript blocks found');
+          for (const [i, match] of blocks.entries()) {
+            new vm.Script(match[2], { filename: `index.inline-${i + 1}.js` });
+          }
+          console.log(`Validated ${blocks.length} inline JavaScript blocks.`);
+          NODE
       - name: Validate civic exam question bank
         run: |
           node --input-type=module <<'NODE'
