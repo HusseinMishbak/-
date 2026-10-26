@@ -1,6 +1,6 @@
 /* UR Version 2 — installable web-app shell. */
 'use strict';
-const CACHE_NAME = 'ur-v2-shell-20261019-7';
+const CACHE_NAME = 'ur-v2-shell-20261026-1';
 const CORE_ASSETS = [
   './',
   './index.html',
@@ -13,14 +13,14 @@ const CORE_ASSETS = [
   './conversation-podcast.js?v=20261012-contrast2',
   './podcast-six-minutes.js?v=20261012-v1',
   './learning-games.js?v=20261011-games1',
-  './i18n.js?v=20261019-v2foundation7',
+  './i18n.js?v=20261026-v2foundation8',
   './curriculum-audit.js?v=20261018-audit1',
   './assessment-controls.js?v=20261018-correctionmode13',
   './billing.js?v=20261019-billing3',
   './citizenship-mock-exam.js?v=20261019-civic2',
   './citizenship-mock-bank.json?v=20261019-civic1',
   './learning-experience.js?v=20261019-v2foundation1',
-  './ui/frello-inspired-refresh.css',
+  './ui/frello-inspired-refresh.css?v=20261026-contrast2',
   './ui/learning-experience.css?v=20261019-v2foundation1'
 ];
 
